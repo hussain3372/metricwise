@@ -1,0 +1,253 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.demoparent {
+  background-image: url(../../public/demobg.png);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.faq {
+  background-image: url(../../public/faqbg.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.blog {
+  background-image: url(../../public/blogbg.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.aboutbg {
+  background-image: url(../../public/aboutbg.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.cardbg {
+  background-image: url(../../public/cardsbg.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.pricebg {
+  background-image: url(../../public/pricebg.png);
+  background-position: top right;
+  background-size: 70%;
+  background-repeat: no-repeat;
+}
+.monbg {
+  background-image: url(../../public/monbg.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+
+}
+/* styles/globals.css */
+
+.widthclass {
+  max-width: 1440px;
+  margin: 0 auto; /* Centers the content */
+}
+
+.black {
+  color: #000000;
+}
+.white {
+  color: #FFF;
+}
+.primaryblue {
+  color: #042440;
+}
+.secondaryellow {
+  color: #D9c666;
+}
+.gray {
+  color: #666666;
+}
+.textcolor {
+  color: #042440;
+}
+.paragraph {
+  color: #000000;
+  opacity: 60%;
+}
+.borderclass {
+  border-top: none;
+  border-bottom: 1px solid #042440;
+  border-left: none;
+  border-right: none;
+}
+
+.fontthin {
+  font-family: 'Inter', sans-serif;
+  font-weight: 100;
+}
+.fontextralight {
+  font-family: 'Inter', sans-serif;
+  font-weight: 200;
+}
+.fontlight {
+  font-family: 'Inter', sans-serif;
+  font-weight: 300;
+}
+.fontregular {
+  font-family: 'Inter', sans-serif;
+  font-weight: 400;
+}
+.fontmedium {
+  font-family: 'Inter', sans-serif;
+  font-weight: 500;
+}
+.fontsemibold {
+  font-family: 'Inter', sans-serif;
+  font-weight: 600;
+}
+.fontbold {
+  font-family: 'Inter', sans-serif;
+  font-weight: 700;
+}
+.fontextrabold {
+  font-family: 'Inter', sans-serif;
+  font-weight: 800;
+}
+.fontblack {
+  font-family: 'Inter', sans-serif;
+  font-weight: 900;
+}
+
+/* .herobg {
+  animation: moveImage 4000ms ease-in-out 0s infinite alternate forwards;
+  position: relative;
+}
+
+@keyframes moveImage {
+  0% { left: 0; }
+  50% { left: 50px; }
+  100% { left: 0; }
+} */
+
+
+
+
+.font-96 {
+  font-size: 96px;
+}
+.font-86 {
+  font-size: 86px;
+}
+.font-80 {
+  font-size: 805px;
+}
+.font-78 {
+  font-size: 78px;
+}
+.font-72 {
+  font-size: 72px;
+}
+.font-64 {
+  font-size: 64px;
+}
+.font-60 {
+  font-size: 60px;
+}
+.font-56 {
+  font-size: 56px;
+}
+.font-48 {
+  font-size: 48px;
+}
+.font-44 {
+  font-size: 44px;
+}
+.font-40 {
+  font-size: 40px;
+}
+.font-36 {
+  font-size: 36px;
+}
+.font-32 {
+  font-size: 32px;
+}
+.font-28 {
+  font-size: 28px;
+}
+.font-26 {
+  font-size: 26px;
+}
+.font-24 {
+  font-size: 24px;
+}
+.font-20 {
+  font-size: 20px;
+}
+.font-16 {
+  font-size: 16px;
+}
+
+@media (max-width: 1240px) {
+  .font-64 {
+    font-size: 58px;
+}
+.font-32 {
+  font-size: 30px;
+}
+.font-20 {
+  font-size: 18px;
+}
+.font-36 {
+  font-size: 32px;
+}
+.font-24 {
+  font-size: 20px;
+}
+}
+@media (max-width: 768px) {
+  .font-64 {
+    font-size: 48px;
+}
+.font-32 {
+  font-size: 26px;
+}
+.font-36 {
+  font-size: 28px;
+}
+.font-24 {
+  font-size: 18px;
+}
+.faq {
+  background-image: url(../../public/faqbg.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+}
+
+@media (max-width: 630px) {
+  .font-64 {
+    font-size: 40px;
+} 
+.font-32 {
+  font-size: 22px;
+}
+
+}
+
+@media  (max-width: 500px) {
+  .font-64 {
+    font-size: 27px;
+}
+.font-32 {
+  font-size: 20px;
+}
+.font-20 {
+  font-size: 16px;
+}
+}
