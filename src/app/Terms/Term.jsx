@@ -41,9 +41,9 @@ const Term = () => {
         <div className="mt-16">
           <div>
             <p className="font-20 font-normal font-inter leading-6 mt-5 mb-6">
-              Welcome to Metricwise (the "Platform"). By accessing or using
+              Welcome to Metricwise the Platform. By accessing or using
               Metricwise, you agree to be bound by the following Terms of Use
-              ("Terms"). If you do not agree with these Terms, please refrain
+              Terms. If you do not agree with these Terms, please refrain
               from using Metricwise. Acceptance of Terms: By accessing or using
               Metricwise, you acknowledge that you are entering into a legal
               agreement with us and agree to comply with these Terms.
@@ -57,8 +57,8 @@ const Term = () => {
               We reserve the right to modify these Terms at any time. Your
               continued use of Metricwise after any such changes indicates your
               acceptance of the modified Terms. Age Requirement: Metricwise is
-              intended for individuals aged eighteen (18) years or older. If you
-              are under eighteen (18) years, please do not use Metricwise.
+              intended for individuals aged eighteen 18 years or older. If you
+              are under eighteen 18 years, please do not use Metricwise.
             </p>
           </div>
           <div>
@@ -136,7 +136,7 @@ const Term = () => {
               Warranty Disclaimer and Limitation of Liability:
             </h1>
             <p className="font-20 font-normal font-inter leading-6 mt-5 mb-6">
-              Metricwise is provided "as is" without warranties. We do not
+              Metricwise is provided as is without warranties. We do not
               guarantee its availability or security. We are not liable for any
               damages arising from your use of Metricwise
             </p>

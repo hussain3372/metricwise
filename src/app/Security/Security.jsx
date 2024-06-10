@@ -41,7 +41,7 @@ const Term = () => {
             <p className="font-20 font-normal font-inter leading-6 mt-5 mb-6">
               <span className="pl-10"> At Metricwise,</span> we consider product
               security as an utmost priority. Our software development lifecycle
-              (SDLC) adheres to Agile principles, ensuring a dynamic and
+              SDLC adheres to Agile principles, ensuring a dynamic and
               responsive approach to security. By integrating security efforts
               throughout the Agile release cycle, we expedite the discovery and
               resolution of security-oriented software defects compared to
@@ -63,7 +63,7 @@ const Term = () => {
               place. This philosophy aligns seamlessly with DevSecOps and the
               overarching development methodologies guiding Metricwise. This
               concerted approach enables us to achieve an exceptionally short
-              mean time to resolve (MTTR) for both security vulnerabilities and
+              mean time to resolve MTTR for both security vulnerabilities and
               functional issues. Our commitment to continuous improvement is
               embedded in an iterative evolution of our DevSecOps practices,
               ensuring that we stay at the forefront of security measures.
@@ -80,7 +80,7 @@ const Term = () => {
               control and regulate access to our systems.
               <br />
               <br />
-              <span className="pl-10">A core</span> facet of Metricwise's
+              <span className="pl-10">A core</span> facet of Metricwises
               security strategy revolves around the continuous development of
               its workforce through regular security and privacy awareness
               training. This training is inclusive, catering to both technical
@@ -122,7 +122,7 @@ const Term = () => {
               <br />
               <span className="pl-10">This</span> document serves as an
               exhaustive resource, outlining the meticulous privacy and security
-              measures implemented to safeguard both your and your customers'
+              measures implemented to safeguard both your and your customers
               data privacy. Our suite of monitoring tools operates on a
               data-agnostic principle, eliminating the necessity for sensitive
               materials. Notably, a significant proportion of these tools does
@@ -142,7 +142,7 @@ const Term = () => {
               <br />
               <br />
               <span className="pl-10">Metricwise</span> adheres to the
-              fundamental tenets of "privacy by design" as an integral component
+              fundamental tenets of privacy by design as an integral component
               of our comprehensive security program. This approach ensures that
               privacy considerations are embedded into the very fabric of our
               operations, from the outset of system architecture to the

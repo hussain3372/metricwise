@@ -57,7 +57,7 @@ const Education = () => {
             Empower Your Education Efforts <br /> with AI Model Monitoring
             </h1>
             <p className="font-24 font-inter font-normal leading-8 mt-5 opacity-60">
-            In today's educational landscape, building trust and transparency in <br /> AI-powered systems is vital.
+            In todays educational landscape, building trust and transparency in <br /> AI-powered systems is vital.
 
             </p>
           </div>

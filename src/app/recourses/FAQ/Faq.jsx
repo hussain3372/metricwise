@@ -105,7 +105,7 @@ const Faq = () => {
           <h1 className="text-black pl-16 pt-16 font-24 font-normal font-inter flex items-center gap-2">
             Metricwise
             <span className="text-black font-20 font-normal font-inter opacity-50 flex items-center gap-2">
-            <PiGreaterThanLight/> Resources <PiGreaterThanLight/> FAQ's
+            <PiGreaterThanLight/> Resources <PiGreaterThanLight/> FAQs
             </span>
           </h1>
         </div>

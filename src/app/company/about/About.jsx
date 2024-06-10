@@ -108,7 +108,7 @@ const About = () => {
             <p className="font-24 font-inter font-normal leading-8 mb-10 text-center opacity-60">
               Embark on a journey with our dynamic tech team, where innovation
               and collaboration converge to shape the future. At Metricwise
-              we're more than just colleagues – we're a family of diverse minds
+              we are more than just colleagues  we are a family of diverse minds
               united by a shared passion for pushing boundaries to make AI
               responsible and accessible to all in a safe and secure way.
               Together, we redefine possibilities and make an impact that
