@@ -3,27 +3,30 @@
 import React from "react";
 import { BlogCard } from "../../data/BlogCard";
 import OtherCards from "./OtherCards";
+import Image from "next/image";
+import { PiGreaterThanLight } from "react-icons/pi";
+
 const Blog = () => {
   return (
-    <div>
+    <div className="">
       <div className="blog">
         <div className="flex items-center widthclass">
-          <h1 className="text-white pl-16 pt-16 pb-28  font-24 font-normal font-inter">
-            Metricwise{" "}
-            <span className="text-white font-24 font-normal font-inter opacity-50">
-              &gt; Resources &gt; Blogs
+          <h1 className="black pl-16 pt-16 pb-28  font-24 font-normal font-inter flex items-center gap-2">
+            Metricwise
+            <span className="text-black font-20 font-normal font-inter opacity-50 flex items-center gap-2">
+              <PiGreaterThanLight /> Resources <PiGreaterThanLight /> Blogs
             </span>
           </h1>
         </div>
-        <div className="grid md:grid-cols-2 items-center white pl-16 pb-24 relative widthclass">
+        <div className="grid md:grid-cols-2 items-center white pl-8 sm:pl-16 pb-24 relative widthclass ">
           <div>
             <div className="absolute -top-44 left-0">
-              <img src="hr1.png" alt="" />
+              <Image width={138} height={138} src="/hr1.png" alt="" />
             </div>
-            <h1 className="font-36 fontbold lg:leading-40 mb-5">
+            <h1 className="font-36 fontbold lg:leading-40 mb-5 text-black">
               Monitoring V/S Observability
             </h1>
-            <p className="font-16 fontregular leading-5">
+            <p className="font-16 font-inter font-normal leading-5 text-black">
               The terms monitoring and observability are prevalent in the field
               of AI/ML systems. Although they may initially appear similar,
               there are notable distinctions between the two concepts. This
@@ -32,12 +35,12 @@ const Blog = () => {
               their respective roles and significant importance in the current
               landscape of machine learning.
             </p>
-            <button className="w-[196px] h-[48px] flex justify-center items-center bg-white rounded-lg mt-8 textcolor font-20 fontregular leading-6 gap-2">
+            <button className="w-[196px] h-[48px] flex justify-center items-center text-white rounded-lg mt-8 font-20 fontregular leading-6 gap-2 bg-[#042440]">
               Learn More
-              <img src="free2.png" alt="" />
+              <Image width={24} height={24} src="/free.png" alt="" />
             </button>
-            <div className="absolute left-0 bottom-0">
-              <img src="hr2.png" alt="" />
+            <div className="absolute left-0 bottom-0 -z-10">
+              <Image width={108} height={136} src="/hr2.png" alt="" />
             </div>
           </div>
         </div>
@@ -67,13 +70,15 @@ const Blog = () => {
                       className="sm:flex bg-white gap-4 p-5 rounded-[20px] mb-10"
                     >
                       <div className="w-[128px] h-[160px] mb-8 sm:mb-0">
-                        <img
+                        <Image
+                          width={128}
+                          height={60}
                           src={item.logoimg}
-                          className="rounded-[20px] w-full h-full object-cover"
+                          className="rounded-[20px]"
                           alt=""
                         />
                       </div>
-                      <div className="flex flex-col justify-between">
+                      <div className="flex flex-col justify-around">
                         <div>
                           <h3 className="text-[20px] font-inter font-semibold leading-6">
                             {item.name}
@@ -83,7 +88,7 @@ const Blog = () => {
                             dangerouslySetInnerHTML={{ __html: item.data }}
                           />
                         </div>
-                        <button className="w-[134px] h-[40px] bg-[#042440] text-white text-[16px] font-regular rounded-lg mt-5 mt-sm-0">
+                        <button className="w-[134px] h-[40px] bg-[#042440] text-white text-[16px] font-regular rounded-lg mt-3 sm:mt-0">
                           {item.btn}
                         </button>
                       </div>

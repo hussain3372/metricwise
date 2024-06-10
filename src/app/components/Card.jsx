@@ -6,11 +6,11 @@ import Image from "next/image";
 
 const Card = () => {
   return (
-    <div className="mt-10 widthclass  ">
+    <div className="mt-10 widthclass">
       {CardData.map((item, index) => (
         <div 
           key={index} 
-          className={`grid md:grid-cols-2 p-10 items-center ${index === 1 ? 'md:flex-row-reverse' : ''}`}
+          className={`grid md:grid-cols-2 p-10 pb-20 items-center ${index === 1 ? 'md:flex-row-reverse' : ''}`}
         >
           <div className={`${index === 1 ? 'order-last' : ''}`}>
             <h1 className="text-4xl font-36 fontbold leading-10">{item.name}</h1>
@@ -42,8 +42,8 @@ const Card = () => {
               )}
             </ul>
           </div>
-          <div>
-            <Image src={item.img} alt="Card image" width={500} height={300} />
+          <div className={`${index % 2 === 0 ? 'flex justify-end' : ''}`}>
+            <Image src={item.img} alt="Card image" width={539} height={567} />
           </div>
         </div>
       ))}

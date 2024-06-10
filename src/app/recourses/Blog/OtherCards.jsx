@@ -1,6 +1,7 @@
 // OtherCards.jsx
 import React from "react";
 import { otherCardsData } from "../../data/BlogCard";
+import Image from "next/image";
 
 const OtherCards = () => {
   return (
@@ -13,7 +14,9 @@ const OtherCards = () => {
               className="sm:flex bg-white shadow-lg gap-5 p-6 rounded-[20px] mb-10"
             >
               <div className="w-[128px] h-[160px] mb-5 sm:mb-0">
-                <img
+                <Image
+                width={129}
+                height={160}
                   src={item.logoimg}
                   className="rounded-[20px] w-full h-full object-cover"
                   alt=""

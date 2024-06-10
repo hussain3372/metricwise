@@ -1,14 +1,17 @@
+import Image from "next/image";
 import React from "react";
+import { PiGreaterThanLight } from "react-icons/pi";
+
 const Monitoring = () => {
   return (
     <div>
       <div className="widthclass">
         <div className="p-16">
-          <div className="flex items-center">
-            <h1 className="pt-16 font-24 font-normal font-inter">
+        <div className="flex items-center">
+            <h1 className="pt-16 font-24 font-normal font-inter flex items-center gap-2">
               Metricwise
-              <span className="font-24 font-normal font-inter opacity-50">
-                &gt; Products &gt; Monitoring
+              <span className="font-20 font-normal font-inter opacity-50 flex items-center gap-2">
+                <PiGreaterThanLight/> Products <PiGreaterThanLight/> Monitoring Hub
               </span>
             </h1>
           </div>
@@ -27,11 +30,11 @@ const Monitoring = () => {
               </p>
               <button className="font-20 font-normal font-inter leading-6 bg-[#042440] white rounded-[8px] w-[214px] h-[52px] flex gap-3 justify-center items-center">
                 Book a Demo
-                <img src="/free.png" className="w-[26px]" alt="" />
+                <Image width={24} height={24} src="/free.png" className="w-[26px]" alt="" />
               </button>
             </div>
             <div className="flex justify-end items-end">
-              <img src="/moni.png" alt="moni" />
+            <Image src="/moni.png" width={483} height={590} alt="moni" />
             </div>
           </div>
         </div>
@@ -40,10 +43,10 @@ const Monitoring = () => {
           <div>
             <div className="grid md:grid-cols-2 items-center gap-36 mt-20">
               <div className=" order-2 md:order-1">
-                <img src="/mon1.png" alt="" />
+              <Image src="/mon1.png" width={690} height={717} alt="" />
               </div>
               <div className="p-16 order-1 md:order-2">
-                <img src="/lambu.png" alt="lambu" className="mb-10" />
+              <Image src="/lambu.png" width={32} height={56} alt="lambu" className="mb-10" />
                 <h1 className="font-36 font-inter font-bold leading-10">
                   Data Integrity & Completeness
                 </h1>
@@ -60,10 +63,10 @@ const Monitoring = () => {
             </div>
             <div className="grid md:grid-cols-2 items-center gap-36 mt-20">
               <div className="order-2 md:order-2 flex justify-end">
-                <img src="/mon2.png" alt="" />
+              <Image width={483} height={590} src="/mon2.png" alt="" />
               </div>
               <div className="order-1 md:order-1 p-16">
-                <img src="/lambu.png" alt="lambu" className="mb-10" />
+                <Image src="/lambu.png" width={32} height={56} alt="lambu" className="mb-10" />
                 <h1 className="font-36 font-inter font-bold leading-10">
                   Data Integrity & Completeness
                 </h1>
@@ -80,10 +83,10 @@ const Monitoring = () => {
             </div>
             <div className="grid md:grid-cols-2 items-center gap-36 mt-20">
               <div className="order-2 md:order-1">
-                <img src="/mon3.png" alt="" />
+              <Image width={483} height={590} src="/mon3.png" alt="" />
               </div>
               <div className="order-1 md:order-2 p-16">
-                <img src="/lambu.png" alt="lambu" className="mb-10" />
+                <Image src="/lambu.png" width={32} height={56} alt="lambu" className="mb-10" />
                 <h1 className="font-36 font-inter font-bold leading-10">
                   Data Integrity & Completeness
                 </h1>
@@ -100,10 +103,10 @@ const Monitoring = () => {
             </div>
             <div className="grid md:grid-cols-2 items-center gap-36 mt-20">
               <div className="order-2 md:order-2 flex justify-end">
-                <img src="/mon4.png" alt="" />
+              <Image width={483} height={590} src="/mon4.png" alt="" />
               </div>
               <div className="order-1 md:order-1 p-16">
-                <img src="/lambu.png" alt="lambu" className="mb-10" />
+                <Image src="/lambu.png" width={32} height={56} alt="lambu" className="mb-10" />
                 <h1 className="font-36 font-inter font-bold leading-10">
                   Data Integrity & Completeness
                 </h1>
@@ -138,7 +141,7 @@ const Monitoring = () => {
             </p>
             <button className="font-20 font-normal font-inter leading-6 bg-[#042440] white rounded-[8px] w-[214px] h-[52px] flex gap-3 justify-center items-center">
               Book a Demo
-              <img src="/free.png" className="w-[26px]" alt="" />
+              <Image width={24} height={24} src="/free.png" className="w-[26px]" alt="" />
             </button>
           </div>
         </div>

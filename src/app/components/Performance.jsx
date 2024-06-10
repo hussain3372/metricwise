@@ -1,3 +1,4 @@
+import Image from "next/image";
 import React from "react";
 
 const Platform = () => {
@@ -11,7 +12,7 @@ const Platform = () => {
         Enhance the reliability of your AI systems and instill confidence with our platform.
         </p>
         <div className="flex justify-center items-center">
-            <img src="/performanceimg.png" className="mt-10" alt="" />
+            <Image width={1102} height={364} src="/performanceimg.png" className="mt-10" alt="" />
         </div>
       </div>
     </div>

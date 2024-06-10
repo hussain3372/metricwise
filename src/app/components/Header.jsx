@@ -30,36 +30,41 @@ import {
 import { Fragment, useState } from "react";
 import {
   Products,
-  Solutions,
   Pricing,
   Docs,
   Recources,
   Company,
+  DataTypes,
+  Industry,
 } from "../data/Head";
 import Link from "next/link";
-
+import Image from "next/image";
 function classNames(...classes) {
   return classes.filter(Boolean).join(" ");
 }
+
+// const DataTypes = [{ name: "Data Types", description: new Date().toString() }];
 
 export default function Example() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
   const [isOpen, setIsOpen] = useState(false);
   const [isOpen1, setIsOpen1] = useState(false);
-  const [isOpen2, setIsOpen2] = useState(false);
   const [isOpen3, setIsOpen3] = useState(false);
   const [isOpen4, setIsOpen4] = useState(false);
   const [isOpen5, setIsOpen5] = useState(false);
 
+  const [isOpen8, setIsOpen8] = useState(false);
+  const [activeTab, setActiveTab] = useState("Industries");
+
   return (
     <header className="bg-white border-[#042440] border border-1 border-opacity-[12%]">
       <nav
-        className="mx-auto flex items-center justify-between p-4"
+        className="mx-auto flex items-center justify-between px-10 py-4"
         aria-label="Global"
       >
         <div className="flex xl:flex-1">
           <Link href="/" className="-m-1.5 p-1.5">
-            <img className="h-7 mx-auto" src="/logo.png" alt="logo" />
+            <Image width={184} height={25}  className="mx-auto" src="/logo.png" alt="logo" />
           </Link>
         </div>
         <div className="flex xl:hidden">
@@ -114,7 +119,7 @@ export default function Example() {
                       className="group relative flex items-center gap-x-6 rounded-lg p-4 text-sm leading-6 hover:bg-gray-50"
                     >
                       <div className="flex h-11 w-11 flex-none items-center justify-center rounded-lg bg-gray-50 group-hover:bg-white">
-                        <img src={item.icon} alt="" className="h-10 w-10" />
+                        <Image width={40} height={40} src={item.icon} alt="" />
                       </div>
                       <div className="flex-auto">
                         <Link
@@ -158,23 +163,44 @@ export default function Example() {
               leaveTo="opacity-0 translate-y-1"
             >
               <PopoverPanel
-                className="absolute flex justify-around -left-80 top-full z-10 mt-9 w-screen max-w-5xl overflow-hidden rounded-3xl bg-white shadow-lg ring-1 ring-gray-900/5"
+                className="absolute flex flex-col -left-80 top-full z-10 mt-9 w-screen max-w-5xl overflow-hidden rounded-3xl bg-white shadow-lg ring-1 ring-gray-900/5"
                 onMouseEnter={() => setIsOpen1(true)}
                 onMouseLeave={() => setIsOpen1(false)}
               >
-                <div className="">
-                  <h1 className="p-10 font-32 font-bold leading-10">
-                    Solution
-                  </h1>
-                </div>
-                <div className="p-4 grid grid-cols-2">
-                  {Solutions.map((item) => (
+                <div className="flex ">
+                  <div className="flex flex-col p-10">
+                    <h1 className="font-32 font-bold leading-10">Solution</h1>
+                    <div className="flex-col space-y-9 mt-6">
+                      <button
+                        className={`font-semibold ${
+                          activeTab === "Industries"
+                            ? "text-gray-600"
+                            : "text-gray-900"
+                        }`}
+                        onClick={() => setActiveTab("Industries")}
+                      >
+                        Industries
+                      </button>
+                      <button
+                        className={`font-semibold ${
+                          activeTab === "Data Types"
+                            ? "text-gray-600"
+                            : "text-gray-900"
+                        }`}
+                        onClick={() => setActiveTab("DataTypes")}
+                      >
+                        Data Types
+                      </button>
+                    </div>
+                  </div>
+                  <div className="p-4 grid grid-cols-2">
+                    {(activeTab === "Industries" ? Industry : DataTypes).map((item) => (
                     <div
                       key={item.name}
                       className="group relative flex items-center gap-x-6 rounded-lg p-4 text-sm leading-6 hover:bg-gray-50"
                     >
                       <div className="flex h-11 w-11 flex-none items-center justify-center rounded-lg bg-gray-50 group-hover:bg-white">
-                        <img src={item.icon} alt="" className="h-10 w-10" />
+                        <Image width={40} height={40} src={item.icon} alt="" />
                       </div>
                       <div className="flex-auto">
                         <Link
@@ -188,6 +214,7 @@ export default function Example() {
                       </div>
                     </div>
                   ))}
+                  </div>
                 </div>
               </PopoverPanel>
             </Transition>
@@ -196,61 +223,11 @@ export default function Example() {
           <Popover className="relative">
             <div
               className="flex items-center gap-x-1 font-16 font-medium leading-6 textcolor"
-              onMouseEnter={() => setIsOpen2(true)}
-              onMouseLeave={() => setIsOpen2(false)}
             >
               <PopoverButton className="flex items-center gap-x-1">
-                Pricing
-                <ChevronDownIcon
-                  className="h-5 w-5 flex-none text-gray-400"
-                  aria-hidden="true"
-                />
+                <Link href="/Pricing">Pricing</Link>
               </PopoverButton>
             </div>
-
-            <Transition
-              show={isOpen2}
-              enter="transition ease-out duration-200"
-              enterFrom="opacity-0 translate-y-1"
-              enterTo="opacity-100 translate-y-0"
-              leave="transition ease-in duration-150"
-              leaveFrom="opacity-100 translate-y-0"
-              leaveTo="opacity-0 translate-y-1"
-            >
-              <PopoverPanel
-                className="absolute flex justify-around -left-[400px] top-full z-10 mt-9 w-screen max-w-5xl overflow-hidden rounded-3xl bg-white shadow-lg ring-1 ring-gray-900/5"
-                onMouseEnter={() => setIsOpen2(true)}
-                onMouseLeave={() => setIsOpen2(false)}
-              >
-                <div className="">
-                  <h1 className="p-10 font-32 font-bold leading-10">
-                  Pricing
-                  </h1>
-                </div>
-                <div className="p-4 grid grid-cols-2">
-                  {Pricing.map((item) => (
-                    <div
-                      key={item.name}
-                      className="group relative flex items-center gap-x-6 rounded-lg p-4 text-sm leading-6 hover:bg-gray-50"
-                    >
-                      <div className="flex h-11 w-11 flex-none items-center justify-center rounded-lg bg-gray-50 group-hover:bg-white">
-                        <img src={item.icon} alt="" className="h-10 w-10" />
-                      </div>
-                      <div className="flex-auto">
-                        <Link
-                          href={item.href}
-                          className="block font-semibold text-gray-900"
-                        >
-                          {item.name}
-                          <span className="absolute inset-0" />
-                        </Link>
-                        <p className="mt-1 text-gray-600">{item.description}</p>
-                      </div>
-                    </div>
-                  ))}
-                </div>
-              </PopoverPanel>
-            </Transition>
           </Popover>
 
           <Popover className="relative">
@@ -283,9 +260,7 @@ export default function Example() {
                 onMouseLeave={() => setIsOpen3(false)}
               >
                 <div className="">
-                  <h1 className="p-10 font-32 font-bold leading-10">
-                    Docs
-                  </h1>
+                  <h1 className="p-10 font-32 font-bold leading-10">Docs</h1>
                 </div>
                 <div className="p-4 grid grid-cols-2">
                   {Docs.map((item) => (
@@ -294,7 +269,7 @@ export default function Example() {
                       className="group relative flex items-center gap-x-6 rounded-lg p-4 text-sm leading-6 hover:bg-gray-50"
                     >
                       <div className="flex h-11 w-11 flex-none items-center justify-center rounded-lg bg-gray-50 group-hover:bg-white">
-                        <img src={item.icon} alt="" className="h-10 w-10" />
+                        <Image width={40} height={40} src={item.icon} alt="" />
                       </div>
                       <div className="flex-auto">
                         <Link
@@ -344,7 +319,7 @@ export default function Example() {
               >
                 <div className="">
                   <h1 className="p-10 font-32 font-bold leading-10">
-                  Recources
+                    Recources
                   </h1>
                 </div>
                 <div className="p-4 grid grid-cols-2">
@@ -354,7 +329,7 @@ export default function Example() {
                       className="group relative flex items-center gap-x-6 rounded-lg p-4 text-sm leading-6 hover:bg-gray-50"
                     >
                       <div className="flex h-11 w-11 flex-none items-center justify-center rounded-lg bg-gray-50 group-hover:bg-white">
-                        <img src={item.icon} alt="" className="h-10 w-10" />
+                        <Image width={40} height={40} src={item.icon} alt="" />
                       </div>
                       <div className="flex-auto">
                         <Link
@@ -403,9 +378,7 @@ export default function Example() {
                 onMouseLeave={() => setIsOpen5(false)}
               >
                 <div className="">
-                  <h1 className="p-10 font-32 font-bold leading-10">
-                  Company
-                  </h1>
+                  <h1 className="p-10 font-32 font-bold leading-10">Company</h1>
                 </div>
                 <div className="p-4 grid grid-cols-2">
                   {Company.map((item) => (
@@ -414,7 +387,7 @@ export default function Example() {
                       className="group relative flex items-center gap-x-6 rounded-lg p-4 text-sm leading-6 hover:bg-gray-50"
                     >
                       <div className="flex h-11 w-11 flex-none items-center justify-center rounded-lg bg-gray-50 group-hover:bg-white">
-                        <img src={item.icon} alt="" className="h-10 w-10" />
+                        <Image width={40} height={40} src={item.icon} alt="" />
                       </div>
                       <div className="flex-auto">
                         <Link
@@ -455,7 +428,7 @@ export default function Example() {
         <DialogPanel className="fixed inset-y-0 right-0 z-10 w-full overflow-y-auto bg-white px-6 py-6 sm:max-w-sm sm:ring-1 sm:ring-gray-900/10">
           <div className="flex items-center justify-between">
             <a href="#" className="-m-1.5 p-1.5">
-              <img className="h-8 w-auto" src="/logo.png" alt="" />
+              <Image width={184} height={25}  className="w-auto" src="/logo.png" alt="logo" />
             </a>
             <button
               type="button"
@@ -512,7 +485,7 @@ export default function Example() {
                         />
                       </DisclosureButton>
                       <DisclosurePanel className="mt-2 space-y-2">
-                        {[...Solutions].map((item) => (
+                        {[...Industry].map((item) => (
                           <DisclosureButton
                             key={item.name}
                             as="a"
@@ -528,32 +501,9 @@ export default function Example() {
                 </Disclosure>
 
                 <Disclosure as="div" className="-mx-3">
-                  {({ open }) => (
-                    <>
                       <DisclosureButton className="flex text-Inter font-medium w-full items-center justify-between rounded-lg py-2 pl-3 pr-3.5 text-base leading-7 textcolor hover:bg-gray-50">
-                        Pricing
-                        <ChevronDownIcon
-                          className={classNames(
-                            open ? "rotate-180" : "",
-                            "h-5 w-5 flex-none"
-                          )}
-                          aria-hidden="true"
-                        />
+                        <Link href="/Pricing">Pricing</Link>
                       </DisclosureButton>
-                      <DisclosurePanel className="mt-2 space-y-2">
-                        {[...Pricing].map((item) => (
-                          <DisclosureButton
-                            key={item.name}
-                            as="a"
-                            href={item.href}
-                            className="block rounded-lg py-2 pl-6 pr-3 text-sm font-semibold leading-7 text-gray-900 hover:bg-gray-50"
-                          >
-                            {item.name}
-                          </DisclosureButton>
-                        ))}
-                      </DisclosurePanel>
-                    </>
-                  )}
                 </Disclosure>
 
                 <Disclosure as="div" className="-mx-3">

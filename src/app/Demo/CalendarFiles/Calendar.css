@@ -1,0 +1,40 @@
+@media (max-width:876px) {
+    .calendarclass {
+        width: 447px;
+    }
+}
+@media (max-width:835px) {
+    .calendarclass {
+        width: 353px;
+    }
+}
+@media (max-width:768px) {
+    .calendarclass {
+        width: 477px;
+    }
+}
+@media (max-width:768px) and (min-width: 630px) {
+    .calendarclass {
+        width: 335px;
+    }
+}
+@media (max-width:600px) {
+    .calendarclass {
+        width: 407px;
+    }
+}
+@media (max-width:500px) {
+    .calendarclass {
+        width: 335px;
+    }
+}
+@media (max-width:430px) {
+    .calendarclass {
+        width: 282px;
+    }
+}
+@media (max-width:400px) {
+    .calendarclass {
+        width: 200px;
+    }
+}

@@ -2,7 +2,7 @@
 
 import React from "react";
 import Typewriter from "typewriter-effect";
-import ForceGraph from "./Graph";
+import Image from "next/image";
 const HeroSection = () => {
   return (
     <div className="border-b border-[#042440] border-opacity-[12%]">
@@ -39,13 +39,12 @@ const HeroSection = () => {
             </button>
             <button className="flex mt-5 sm:mt-0 items-center gap-3 border border-[#042440] rounded-[10px] bg-[#042440] white font-20 fontmedium leading-6 pt-2 md:pt-3 pb-2 md:pb-3 pl-2 md:pl-5 pr-2 md:pr-5">
               Get Started For Free
-              <img src="/free.png" className="w-8 h-8" alt="" />
+              <Image width={24} height={24} src="/free.png" alt="" />
             </button>
           </div>
         </div>
         <div className=" absolute top-24 w-5xl md:top-20 -z-10">
           {/* <img src="herobg1.png" className="herobg" alt="" /> */}
-          {/* <ForceGraph/> */}
         </div>
       </div>
 

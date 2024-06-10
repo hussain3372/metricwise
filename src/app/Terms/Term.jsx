@@ -1,33 +1,35 @@
 "use client";
 
+import Image from "next/image";
 import React from "react";
+import { PiGreaterThanLight } from "react-icons/pi";
 
 const Term = () => {
   return (
     <div>
       <div className="bg-[#042440]">
         <div className="flex items-center widthclass">
-          <h1 className="text-white pl-16 pt-16  font-24 font-normal font-inter">
-            Metricwise{" "}
-            <span className="text-white font-24 font-normal font-inter opacity-50">
-              &gt; Resources &gt; Blogs
+          <h1 className="text-white pl-16 pt-16  font-24 font-normal font-inter flex items-center gap-2">
+            Metricwise
+            <span className="text-white font-24 font-normal font-inter opacity-50 flex items-center gap-2">
+            <PiGreaterThanLight/> Resources <PiGreaterThanLight/> Blogs
             </span>
           </h1>
         </div>
         <div className="grid md:grid-cols-2 items-center white p-16 relative widthclass">
           <div>
             <div className="absolute -top-16 left-0">
-              <img src="hr1.png" alt="" />
+              <Image width={138} height={138} src="/hrblack1.png" alt="" />
             </div>
             <h1 className="font-64 fontbold lg:leading-40 mb-5">
               Terms of Use 
             </h1>
-            <div className="absolute left-0 bottom-2">
-              <img src="hr2.png" alt="" />
-            </div>
+            {/* <div className="absolute left-0 bottom-2">
+              <Image width={108} height={136} src="/hr2.png" alt="" />
+            </div> */}
           </div>
           <div className="flex justify-center md:justify-end mt-10 md:mt-0">
-            <img src="gov.jpg" alt="" />
+            <Image width={1246} height={517} src="/gov.jpg" alt="" />
           </div>
         </div>
       </div>

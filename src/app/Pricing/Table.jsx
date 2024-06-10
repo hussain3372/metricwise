@@ -1,5 +1,6 @@
 "use client";
 
+import Image from "next/image";
 import React, { useState } from "react";
 
 const AccordionItem = ({ title, content }) => {
@@ -22,13 +23,13 @@ const AccordionItem = ({ title, content }) => {
             <div className="grid grid-cols-4 bg-[#F4F4F4] p-5 rounded-md">
               <div>SaaS</div>
               <div className="flex justify-center items-center">
-                <img src="tick.png" alt="" />
+                <Image width={20} height={20} src="/tick.png" alt="" />
               </div>
               <div className="flex justify-center items-center">
-                <img src="tick.png" alt="" />
+              <Image width={20} height={20} src="/tick.png" alt="" />
               </div>
               <div className="flex justify-center items-center">
-                <img src="tick.png" alt="" />
+              <Image width={20} height={20} src="/tick.png" alt="" />
               </div>
             </div>
             <div className="grid grid-cols-4 p-5 rounded-md">
@@ -36,7 +37,7 @@ const AccordionItem = ({ title, content }) => {
               <div className="flex justify-center items-center"></div>
               <div className="flex justify-center items-center"></div>
               <div className="flex justify-center items-center">
-                <img src="tick.png" alt="" />
+              <Image width={20} height={20} src="/tick.png" alt="" />
               </div>
             </div>
           </div>
@@ -97,7 +98,7 @@ const Faq = () => {
             Specialist
           </li>
           <li className="font-20 fontsemibold leading-6 opacity-60">
-            Enterprise{" "}
+            Enterprise
           </li>
         </ul>
         <div>

@@ -1,7 +1,8 @@
 import React from "react";
 import { Price } from "../data/Price";
 import Table from "./Table";
-import Faq from "./FAQ";
+import Faq from "./Accordion";
+import Image from "next/image";
 const Pricing = () => {
   return (
     <div>
@@ -9,10 +10,10 @@ const Pricing = () => {
         <div className="widthclass">
           <div className="flex flex-col justify-center items-center m-auto pt-36 xl:pb-56">
             <h1 className="font-36 font-inter font-bold leading-10 p-20">
-              Unlock Business Potential with <br /> Scalable,{" "}
+              Unlock Business Potential with <br /> Scalable,
               <span className="underline underline-offset-8 decoration-[#D9C666]">
                 Responsible
-              </span>{" "}
+              </span>
               AI Solutions.
             </h1>
           </div>
@@ -36,7 +37,7 @@ const Pricing = () => {
                       key={listIndex}
                       className="font-20 fontregular leading-6 flex items-center gap-2 mb-3"
                     >
-                      <img src={item.icon} alt="tick" />
+                      <Image width={24} height={24} src={item.icon} alt="tick" />
                       {listItem}
                     </li>
                   ))}
@@ -45,7 +46,7 @@ const Pricing = () => {
                       key={listIndex}
                       className="font-20 fontregular leading-6 flex items-center gap-2 mb-3 opacity-50"
                     >
-                      <img src={item.icon2} alt="tick" />
+                      <Image width={24} height={24} src={item.icon2} alt="tick" />
                       {listItem}
                     </li>
                   ))}

@@ -1,5 +1,6 @@
 'use client'
 
+import Image from "next/image"
 import Link from "next/link"
 
 export default () => {
@@ -9,15 +10,15 @@ export default () => {
             label: "About",
             items: [
                 {
-                    href: '/About',
+                    href: '/company/about',
                     name: 'About Us'
                 },
                 {
-                    href: '#',
+                    href: '/company/career',
                     name: 'Careers'
                 },
                 {
-                    href: '#',
+                    href: '/company/contact_us',
                     name: 'Contact Us'
                 },
                 {
@@ -102,12 +103,12 @@ export default () => {
                 </div>
                 <div className="flex-1 gap-20 float-end flex flex-col justify-end items-end mt-16 lg:mt-0">
                     <div className="max-w-xs">
-                        <img src="/footerlogo.png" className="" />
+                        <Image width={992} height={40} src="/footerlogo.png" className="" />
                     </div>
                     <div className="flex gap-5">
-                        <img src="/linked.png" className="w-16 h-16" alt="linked" />
-                        <img src="/face.png" className="w-16 h-16" alt="face" />
-                        <img src="/twit.png" className="w-16 h-16" alt="twit" />
+                    <Image width={48} height={48} src="/linked.png" alt="linked" />
+                    <Image width={48} height={48} src="/face.png" alt="face" />
+                    <Image width={48} height={48} src="/twit.png" alt="twit" />
                     </div>
                 </div>
             </div>
