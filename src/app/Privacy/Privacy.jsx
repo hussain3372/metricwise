@@ -51,7 +51,7 @@ const Term = () => {
           <div>
             <h1 className="font-24 font-inter font-semibold">Information Directly From You:</h1>
             <p className="font-20 font-normal font-inter leading-6 mt-5 mb-6">
-              While access to Metricwise is currently free, we may charge fees in the future. Any applicable charges will be clearly communicated. The details we collect depend on how you use our Site. To create an account, you'll need to provide your email address.
+              While access to Metricwise is currently free, we may charge fees in the future. Any applicable charges will be clearly communicated. The details we collect depend on how you use our Site. To create an account, you will need to provide your email address.
             </p>
           </div>
           <div>
@@ -200,5 +200,8 @@ const Term = () => {
     </div>
   );
 };
+
+
+Term.displayName = "Term";
 
 export default Term;
