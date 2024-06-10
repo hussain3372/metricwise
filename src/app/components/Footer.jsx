@@ -3,8 +3,7 @@
 import Image from "next/image"
 import Link from "next/link"
 
-export default () => {
-
+const Footer = () => {
     const footerNavs = [
         {
             label: "About",
@@ -72,8 +71,8 @@ export default () => {
     ]
 
     return (
-        <footer className=" text-white bg-[#042440] md:pt-20 pl-10 md:pl-40 pr-10 md:pr-40 pb-10">
-            <div className=" grid lg:grid-cols-2">
+        <footer className="text-white bg-[#042440] md:pt-20 pl-10 md:pl-40 pr-10 md:pr-40 pb-10">
+            <div className="grid lg:grid-cols-2">
                 <div className="font-16 font-light flex-1 mt-10 space-y-6 justify-between flex flex-wrap md:space-y-0 md:mt-0">
                     {
                         footerNavs.map((item, idx) => (
@@ -82,7 +81,7 @@ export default () => {
                                 key={idx}
                             >
                                 <h4 className="font-20 fontbold mt-10 xl:mt-0">
-                                    { item.label }
+                                    {item.label}
                                 </h4>
                                 {
                                     item.items.map(((el, idx) => (
@@ -90,9 +89,8 @@ export default () => {
                                             <Link
                                                 href={el.href}
                                                 className="hover:underline hover:text-[#798794]"
-                                            
                                             >
-                                                { el.name }
+                                                {el.name}
                                             </Link>
                                         </li>
                                     )))
@@ -103,12 +101,12 @@ export default () => {
                 </div>
                 <div className="flex-1 gap-20 float-end flex flex-col justify-end items-end mt-16 lg:mt-0">
                     <div className="max-w-xs">
-                        <Image width={992} height={40} src="/footerlogo.png" className="" />
+                        <Image width={992} height={40} src="/footerlogo.png" className="" alt="footer logo" />
                     </div>
                     <div className="flex gap-5">
-                    <Image width={48} height={48} src="/linked.png" alt="linked" />
-                    <Image width={48} height={48} src="/face.png" alt="face" />
-                    <Image width={48} height={48} src="/twit.png" alt="twit" />
+                        <Image width={48} height={48} src="/linked.png" alt="LinkedIn" />
+                        <Image width={48} height={48} src="/face.png" alt="Facebook" />
+                        <Image width={48} height={48} src="/twit.png" alt="Twitter" />
                     </div>
                 </div>
             </div>
@@ -120,3 +118,7 @@ export default () => {
         </footer>
     )
 }
+
+Footer.displayName = "Footer";
+
+export default Footer;
