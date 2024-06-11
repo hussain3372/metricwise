@@ -8,7 +8,7 @@ const Pricing = () => {
     <div>
       <div className="pricebg">
         <div className="widthclass">
-          <div className="flex flex-col justify-center items-center m-auto pt-36 xl:pb-56">
+          <div className="flex flex-col justify-center items-center m-auto pt-10">
             <h1 className="font-36 font-inter font-bold leading-10 p-20">
               Unlock Business Potential with <br /> Scalable,
               <span className="underline underline-offset-8 decoration-[#D9C666]">
@@ -21,12 +21,12 @@ const Pricing = () => {
       </div>
 
       <div className="widthclass">
-        <div className="grid sm:grid-cols-2 xl:grid-cols-3 gap-10 xl:p-20">
+        <div className="grid sm:grid-cols-2 xl:grid-cols-3 gap-10 p-10 md:p-20">
           {Price && Price.length > 0 ? (
             Price.map((item, index) => (
               <div
                 key={index}
-                className="bg-[#FFF] shadow-lg p-6 rounded-[20px] mb-10"
+                className="bg-[#FFF] shadow-xl p-6 rounded-[20px] mb-10"
               >
                 <h1 className="font-36 fontbold leading-40 textcolor">
                   {item.title}
@@ -70,10 +70,10 @@ const Pricing = () => {
         </div>
 
         <div>
-          <div className=" mt-28 mb-16 xl:p-20">
+          <div className=" mt-10 mb-16 xl:p-20">
             <div className="flex flex-col justify-center m-auto text-center">
-              <p className="font-24 font-inter font-normal leading-8 mb-4">Plan Comparison</p>
-              <h1 className="font-36 font-inter font-bold leading-10 mb-10">Explore Detailed Plan Comparisons</h1>
+              <p className="font-24 font-inter font-normal leading-8 mb-4 opacity-60">Plan Comparison</p>
+              <h1 className="font-36 font-inter font-bold leading-10 mb-10 textcolor">Explore Detailed Plan Comparisons</h1>
             </div>  
               <Table/>
               <Faq/>

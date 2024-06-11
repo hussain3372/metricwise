@@ -18,7 +18,7 @@
 .faq {
   background-image: url(../../public/faqbg.png);
   background-size: 100%;
-  background-position: right;
+  background-position: top right;
   background-repeat: no-repeat;
 }
 .career {
@@ -48,7 +48,7 @@
 .pricebg {
   background-image: url(../../public/pricebg.png);
   background-position: top right;
-  background-size: 70%;
+  background-size: 80%;
   background-repeat: no-repeat;
 }
 .monbg {
@@ -252,12 +252,15 @@
 }
 .faq {
   background-image: url(../../public/faqbg.png);
-  background-size: cover;
+  background-size: 100%;
   background-repeat: no-repeat;
-  background-position: center;
+  background-position: top right;
 }
 .blog {
   background-size: cover;
+}
+.featurebg {
+  background-size: 50%;
 }
 }
 
@@ -281,4 +284,17 @@
 .font-20 {
   font-size: 16px;
 }
+.pricebg {
+  background-image: url(../../public/pricebg.png);
+  background-position: center;
+  background-size: 80%;
+  background-repeat: no-repeat;
+}
+}
+
+.featurebg {
+  background-image: url(../../public/circlebg.png);
+  background-position: center;
+  background-size: 30%;
+  background-repeat: no-repeat;
 }

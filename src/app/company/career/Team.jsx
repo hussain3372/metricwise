@@ -106,8 +106,8 @@ const Team = () => {
       </div>
 
       <div className="bg-white">
-        <div>
-          <div className="widthclass p-8 md:p-16 flex-col flex justify-center items-center">
+        <div className="widthclass">
+          <div className=" p-8 md:p-16 flex-col flex justify-center items-center">
             <h1 className="font-40 fon-inter font-bold textcolor leading-[72px] mb-10">
               Our Perks
             </h1>
@@ -117,17 +117,17 @@ const Team = () => {
                   key={perks}
                   className="h-full rounded-lg flex flex-col justify-start items-start text-start p-7 bg-white shadow-xl"
                 >
-                  <div className="grid md:grid-cols-2">
-                    <div className="font-bold gont-inter font-36 leading-10 mb-2 mt-3">
+                  <div className="flex items-center justify-between w-full">
+                    <div className="font-bold font-inter font-36 leading-10 mb-2 mt-3">
                       {item.name}
                     </div>
-                    <div className="flex md:justify-end">
+                    <div className="">
                       <Image
                         width={60}
                         height={60}
                         className=""
                         src={item.icon}
-                        alt="Sunset in the mountains"
+                        alt="Icon"
                       />
                     </div>
                   </div>

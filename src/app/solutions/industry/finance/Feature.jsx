@@ -5,7 +5,7 @@ import Image from "next/image";
 const Feature = () => {
 
   return (
-    <div>
+    <div className="featurebg">
       <div className="widthclass">
         <div className="p-8 sm:p-16 2xl:p-10">
           <div className="flex flex-col justify-center items-center text-center m-auto">

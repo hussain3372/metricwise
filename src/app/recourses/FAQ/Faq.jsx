@@ -4,19 +4,26 @@ import React, { useState } from "react";
 import Head from "next/head";
 import Image from "next/image";
 import { PiGreaterThanLight } from "react-icons/pi";
+import { ChevronUpIcon, ChevronDownIcon } from "@heroicons/react/24/outline";
 
 const AccordionItem = ({ title, content }) => {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
-    <div className="mt-8 font-16 font-inter font-normal leading-6 border border-[#0000001F] rounded-lg shadow-lg overflow-hidden">
+    <div className="mt-5 font-16 font-inter font-normal leading-6 border border-[#0000001F] rounded-lg shadow-md overflow-hidden">
       <button
         onClick={() => setIsOpen(!isOpen)}
         className="w-full text-left p-4 bg-[#FFFFFF] font-20 font-inter font-normal leading-6"
       >
         <div className="flex justify-between items-center">
           <span>{title}</span>
-          <span>{isOpen ? "-" : "+"}</span>
+          <span>
+            {isOpen ? (
+              <ChevronUpIcon className="h-5 w-5 text-gray-400" />
+            ) : (
+              <ChevronDownIcon className="h-5 w-5 text-gray-400" />
+            )}
+          </span>
         </div>
       </button>
       {isOpen && <div className="p-4 bg-white">{content}</div>}
@@ -99,17 +106,17 @@ const Faq = () => {
   ];
 
   return (
-    <div>
-      <div className="faq relative">
+    <div className="faq">
+      <div className="relative">
         <div className="flex items-center widthclass">
-          <h1 className="text-black pl-16 pt-16 font-24 font-normal font-inter flex items-center gap-2">
+          <h1 className="text-black pl-5 pt-10 font-24 font-normal font-inter flex items-center flex-wrap gap-2">
             Metricwise
             <span className="text-black font-20 font-normal font-inter opacity-50 flex items-center gap-2">
-            <PiGreaterThanLight/> Resources <PiGreaterThanLight/> FAQs
+              <PiGreaterThanLight /> Resources <PiGreaterThanLight /> FAQs
             </span>
           </h1>
         </div>
-        <div className="flex flex-col pt-36 pb-64 justify-center items-center m-auto text-black widthclass">
+        <div className="flex flex-col pt-10 pb-20 justify-center items-center m-auto text-black widthclass">
           <h1 className="font-64 font-inter font-bold leading-[80px] mb-8">
             We are here to help you
           </h1>
@@ -138,7 +145,7 @@ const Faq = () => {
       <div className="widthclass">
         <div>
           <div>
-            <div className="min-h-screen p-6 bg-white">
+            <div className="min-h-screen p-6">
               <Head>
                 <title>FAQ - Metricwise</title>
               </Head>
@@ -188,10 +195,11 @@ const Faq = () => {
             />
             <div class="px-6 py-4">
               <div class="font-medium gont-inter font-20 leading-7 mb-2 mt-3">
-              Demos:  
+                Demos:
               </div>
               <p class="text-gray-700 text-base">
-                Explore the features of Metricwise through brief and informative video presentations.
+                Explore the features of Metricwise through brief and informative
+                video presentations.
               </p>
             </div>
             <div class="px-6 pt-4 pb-2">
@@ -210,15 +218,17 @@ const Faq = () => {
             />
             <div class="px-6 py-4">
               <div class="font-medium gont-inter font-20 leading-7 mb-2 mt-3">
-              Integrations:
+                Integrations:
               </div>
               <p class="text-gray-700 text-base">
-              Enable observability and governance for your ML model and data monitoring effortlessly with Metricwise integrations, requiring just a few lines of code.
+                Enable observability and governance for your ML model and data
+                monitoring effortlessly with Metricwise integrations, requiring
+                just a few lines of code.
               </p>
             </div>
             <div class="px-6 pt-4 pb-2">
               <span class="inline-block bg-[#042440] rounded-full px-8 py-2 text-sm font-semibold text-white mr-2 mb-2">
-              Explore Guidebooks
+                Explore Guidebooks
               </span>
             </div>
           </div>

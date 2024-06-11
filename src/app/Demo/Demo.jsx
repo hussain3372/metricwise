@@ -18,7 +18,7 @@ const Demo = () => {
 
   return (
     <div className="relative">
-      <div className="sm:p-20 md:p-36 demoparent">
+      <div className="px-10 py-16 demoparent">
         {section === 1 && (
           <div className="grid lg:grid-cols-2 max-w-[1040px] bg-[#FFFFFF] m-auto rounded-[40px] p-20 gap-10 shadow-xl">
             <div>

@@ -16,7 +16,7 @@ export const Price = [
         "Traditional Models",
         "LLMs"
       ],
-      moths: "$80",
+      months: "$80",
       span: "/month",
       btn: "Get Started"
     },
@@ -58,7 +58,7 @@ export const Price = [
         "Traditional Models",
         "LLMs"
       ],
-      moths: "Custom",
+      months: "Custom",
       span: "",
       btn: "Request a Demo"
     }

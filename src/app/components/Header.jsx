@@ -116,9 +116,9 @@ export default function Example() {
                   {Products.map((item) => (
                     <div
                       key={item.name}
-                      className="group relative flex items-center gap-x-6 rounded-lg p-4 text-sm leading-6 hover:bg-gray-50"
+                      className="group relative flex items-center gap-x-6 rounded-lg text-sm leading-6 p-2 hover:bg-gray-50"
                     >
-                      <div className="flex h-11 w-11 flex-none items-center justify-center rounded-lg bg-gray-50 group-hover:bg-white">
+                      <div className="flex h-11 w-11 flex-none items-center justify-center rounded-lg bg-gray-50 group-hover:bg-white p-2">
                         <Image width={40} height={40} src={item.icon} alt="" />
                       </div>
                       <div className="flex-auto">
@@ -163,7 +163,7 @@ export default function Example() {
               leaveTo="opacity-0 translate-y-1"
             >
               <PopoverPanel
-                className="absolute flex flex-col -left-80 top-full z-10 mt-9 w-screen max-w-5xl overflow-hidden rounded-3xl bg-white shadow-lg ring-1 ring-gray-900/5"
+                className="absolute flex flex-col -left-80 top-full z-10 mt-9 w-screen max-w-5xl overflow-hidden rounded-lg bg-white shadow-lg ring-1 ring-gray-900/5"
                 onMouseEnter={() => setIsOpen1(true)}
                 onMouseLeave={() => setIsOpen1(false)}
               >
@@ -197,7 +197,7 @@ export default function Example() {
                     {(activeTab === "Industries" ? Industry : DataTypes).map((item) => (
                     <div
                       key={item.name}
-                      className="group relative flex items-center gap-x-6 rounded-lg p-4 text-sm leading-6 hover:bg-gray-50"
+                      className="group relative flex items-center gap-x-6 rounded-lg text-sm leading-6 p-2 hover:bg-gray-50"
                     >
                       <div className="flex h-11 w-11 flex-none items-center justify-center rounded-lg bg-gray-50 group-hover:bg-white">
                         <Image width={40} height={40} src={item.icon} alt="" />
@@ -255,7 +255,7 @@ export default function Example() {
               leaveTo="opacity-0 translate-y-1"
             >
               <PopoverPanel
-                className="absolute flex justify-around -left-[580px] top-full z-10 mt-9 w-screen max-w-5xl overflow-hidden rounded-3xl bg-white shadow-lg ring-1 ring-gray-900/5"
+                className="absolute flex justify-around -left-[580px] top-full z-10 mt-9 w-screen max-w-5xl overflow-hidden rounded-lg bg-white shadow-lg ring-1 ring-gray-900/5"
                 onMouseEnter={() => setIsOpen3(true)}
                 onMouseLeave={() => setIsOpen3(false)}
               >
@@ -266,7 +266,7 @@ export default function Example() {
                   {Docs.map((item) => (
                     <div
                       key={item.name}
-                      className="group relative flex items-center gap-x-6 rounded-lg p-4 text-sm leading-6 hover:bg-gray-50"
+                      className="group relative flex items-center gap-x-6 rounded-lg text-sm leading-6 p-2 hover:bg-gray-50"
                     >
                       <div className="flex h-11 w-11 flex-none items-center justify-center rounded-lg bg-gray-50 group-hover:bg-white">
                         <Image width={40} height={40} src={item.icon} alt="" />
@@ -313,7 +313,7 @@ export default function Example() {
               leaveTo="opacity-0 translate-y-1"
             >
               <PopoverPanel
-                className="absolute flex justify-around -left-[650px] top-full z-10 mt-9 w-screen max-w-5xl overflow-hidden rounded-3xl bg-white shadow-lg ring-1 ring-gray-900/5"
+                className="absolute flex justify-around -left-[650px] top-full z-10 mt-9 w-screen max-w-5xl overflow-hidden rounded-lg bg-white shadow-lg ring-1 ring-gray-900/5"
                 onMouseEnter={() => setIsOpen4(true)}
                 onMouseLeave={() => setIsOpen4(false)}
               >
@@ -326,7 +326,7 @@ export default function Example() {
                   {Recources.map((item) => (
                     <div
                       key={item.name}
-                      className="group relative flex items-center gap-x-6 rounded-lg p-4 text-sm leading-6 hover:bg-gray-50"
+                      className="group relative flex items-center gap-x-6 rounded-lg text-sm leading-6 p-2 hover:bg-gray-50"
                     >
                       <div className="flex h-11 w-11 flex-none items-center justify-center rounded-lg bg-gray-50 group-hover:bg-white">
                         <Image width={40} height={40} src={item.icon} alt="" />
@@ -373,7 +373,7 @@ export default function Example() {
               leaveTo="opacity-0 translate-y-1"
             >
               <PopoverPanel
-                className="absolute flex justify-around -left-[800px] top-full z-10 mt-9 w-screen max-w-5xl overflow-hidden rounded-3xl bg-white shadow-lg ring-1 ring-gray-900/5"
+                className="absolute flex justify-around -left-[800px] top-full z-10 mt-9 w-screen max-w-5xl overflow-hidden rounded-lg bg-white shadow-lg ring-1 ring-gray-900/5"
                 onMouseEnter={() => setIsOpen5(true)}
                 onMouseLeave={() => setIsOpen5(false)}
               >
@@ -384,7 +384,7 @@ export default function Example() {
                   {Company.map((item) => (
                     <div
                       key={item.name}
-                      className="group relative flex items-center gap-x-6 rounded-lg p-4 text-sm leading-6 hover:bg-gray-50"
+                      className="group relative flex items-center gap-x-6 rounded-lg text-sm leading-6 p-2 hover:bg-gray-50"
                     >
                       <div className="flex h-11 w-11 flex-none items-center justify-center rounded-lg bg-gray-50 group-hover:bg-white">
                         <Image width={40} height={40} src={item.icon} alt="" />
@@ -600,12 +600,12 @@ export default function Example() {
                 >
                   Log in
                 </a>
-                <a
-                  href="#"
+                <Link
+                  href="/Demo"
                   className="-mx-3 font-16 white fontregular border-[#042440] rounded-[15px] pt-3 pb-3 pl-4 pr-4 bg-[#042440] block px-3 py-2.5 leading-7"
                 >
                   Book a Demo
-                </a>
+                </Link>
               </div>
             </div>
           </div>

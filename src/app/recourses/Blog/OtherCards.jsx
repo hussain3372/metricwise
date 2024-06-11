@@ -6,12 +6,12 @@ import Image from "next/image";
 const OtherCards = () => {
   return (
     <div>
-      <div className="grid md:grid-cols-2 gap-10 ">
+      <div className="grid md:grid-cols-2 gap-10 mb-20">
         {otherCardsData && otherCardsData.length > 0 ? (
           otherCardsData.map((item, index) => (
             <div
               key={index}
-              className="sm:flex bg-white shadow-lg gap-5 p-6 rounded-[20px] mb-10"
+              className="sm:flex bg-white shadow-xl gap-5 p-6 rounded-[20px]"
             >
               <div className="w-[128px] h-[160px] mb-5 sm:mb-0">
                 <Image

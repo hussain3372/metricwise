@@ -6,11 +6,11 @@ import Image from "next/image";
 
 const Healthcard = () => {
   return (
-    <div className="widthclass">
+    <div className="">
       {health.map((item, index) => (
         <div
           key={index}
-          className={`grid md:grid-cols-2 items-center p-8 sm:p-16 2xl:p-16 ${index % 2 === 0 ? 'bg-[#F4F4F4]' : ''}`}
+          className={`grid md:grid-cols-2 items-center px-10 sm:px-20 xl:px-64 py-10 ${index % 2 === 0 ? 'bg-[#F4F4F4]' : ''}`}
         >
           <div className={`${index % 2 === 1 ? 'md:order-last' : ''}`}>
             <h1 className="font-36 fontbold font-inter leading-10">{item.main}</h1>

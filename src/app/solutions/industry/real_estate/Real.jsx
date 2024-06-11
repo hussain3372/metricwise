@@ -10,7 +10,7 @@ const Finance = () => {
       <div className="widthclass">
         <div className="p-8 sm:p-16 2xl:p-10">
           <div className="flex items-center">
-            <h1 className="pt-16 font-24 black font-normal font-inter flex items-center gap-2">
+            <h1 className="font-24 black font-normal font-inter flex items-center flex-wrap gap-2">
               Metricwise
               <span className="font-20 font-normal font-inter opacity-50 flex items-center gap-2">
               <PiGreaterThanLight size={15}/> Solutions <PiGreaterThanLight size={15}/> Industries <PiGreaterThanLight size={15}/> Real Estate

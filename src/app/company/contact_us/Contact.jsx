@@ -3,7 +3,7 @@ import React from "react";
 
 const Contact = () => {
   return (
-    <div className="contact">
+    <div className="bg-[#F3F6FF]">
       <div className="contact1">
         <div className="widthclass">
           <div className="grid md:grid-cols-2 items-center p-10 gap-40">

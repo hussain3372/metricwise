@@ -11,7 +11,7 @@ const Blog = () => {
     <div className="">
       <div className="blog">
         <div className="flex items-center widthclass">
-          <h1 className="black pl-16 pt-16 pb-28  font-24 font-normal font-inter flex items-center gap-2">
+          <h1 className="black pl-16 pt-10 pb-28  font-24 font-normal font-inter flex items-center gap-2">
             Metricwise
             <span className="text-black font-20 font-normal font-inter opacity-50 flex items-center gap-2">
               <PiGreaterThanLight /> Resources <PiGreaterThanLight /> Blogs
@@ -46,8 +46,8 @@ const Blog = () => {
         </div>
       </div>
 
-      <div className="widthclass p-10 md:p-16">
-        <div className="bg-[#1D285614] p-5 md:p-10 mt-20 mb-20 rounded-[20px]">
+      <div className="widthclass px-10">
+        <div className="bg-[#1D285614] p-5 md:p-10 mb-28 rounded-[20px]">
           <div className="grid xl:grid-cols-2 gap-10">
             <div className="flex flex-col justify-end items-start cardbg white rounded-[20px] w-[100%] h-[680px] p-10">
               <h3 className="font-20 font-inter font-semibold leading-6">

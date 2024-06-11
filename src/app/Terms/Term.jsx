@@ -9,9 +9,9 @@ const Term = () => {
     <div>
       <div className="bg-[#042440]">
         <div className="flex items-center widthclass">
-          <h1 className="text-white pl-16 pt-16  font-24 font-normal font-inter flex items-center gap-2">
+          <h1 className="text-white pl-16 pt-10  font-24 font-normal font-inter flex items-center gap-2">
             Metricwise
-            <span className="text-white font-24 font-normal font-inter opacity-50 flex items-center gap-2">
+            <span className="text-white font-20 font-normal font-inter opacity-50 flex items-center gap-2">
             <PiGreaterThanLight/> Resources <PiGreaterThanLight/> Blogs
             </span>
           </h1>

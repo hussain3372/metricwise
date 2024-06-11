@@ -9,9 +9,9 @@ const Finance = () => {
   return (
     <div>
       <div className="widthclass">
-        <div className="p-8 sm:p-16 2xl:p-10">
+        <div className="p-4 sm:p-10 2xl:p-10">
           <div className="flex items-center">
-            <h1 className="pt-16 font-24 black font-normal font-inter flex items-center gap-2">
+            <h1 className="font-24 black font-normal font-inter flex items-center gap-2 flex-wrap">
               Metricwise
               <span className="font-20 font-normal font-inter opacity-50 flex gap-2 items-center">
                 <PiGreaterThanLight size={15}/> Solutions  <PiGreaterThanLight size={15}/> Industries  <PiGreaterThanLight size={15}/> Financial & Banking

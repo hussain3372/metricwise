@@ -7,7 +7,7 @@ const About = () => {
       <div className="aboutbg relative">
         <div className="widthclass ">
           <div className="flex items-center">
-            <h1 className="black pl-20 pt-16 font-24 font-normal font-inter flex items-center gap-2">
+            <h1 className="black pl-20 pt-10 font-24 font-normal font-inter flex items-center gap-2">
               Metricwise
               <span className="black font-20 font-normal font-inter opacity-50 flex items-center gap-2">
                 <PiGreaterThanLight /> Company <PiGreaterThanLight /> About Us

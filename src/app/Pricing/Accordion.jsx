@@ -2,23 +2,31 @@
 
 import React, { useState } from "react";
 import Head from "next/head";
+import { ChevronUpIcon, ChevronDownIcon } from "@heroicons/react/24/outline";
+
 
 const AccordionItem = ({ title, content }) => {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
-    <div className="mt-10 font-16 font-inter font-normal leading-6">
-      <button
-        onClick={() => setIsOpen(!isOpen)}
-        className="w-full text-left p-4 bg-[#FFFFFF] font-20 font-inter font-normal leading-6 shadow-lg border border-[#0000001F] rounded-lg"
-      >
-        <div className="flex justify-between items-center">
-          <span>{title}</span>
-          <span>{isOpen ? "-" : "+"}</span>
-        </div>
-      </button>
-      {isOpen && <div className="p-4 bg-white">{content}</div>}
-    </div>
+    <div className="mt-5 font-16 font-inter font-normal leading-6 border border-[#0000001F] rounded-lg shadow-md overflow-hidden">
+    <button
+      onClick={() => setIsOpen(!isOpen)}
+      className="w-full text-left p-4 bg-[#FFFFFF] font-20 font-inter font-normal leading-6"
+    >
+      <div className="flex justify-between items-center">
+        <span>{title}</span>
+        <span>
+          {isOpen ? (
+            <ChevronUpIcon className="h-5 w-5 text-gray-400" />
+          ) : (
+            <ChevronDownIcon className="h-5 w-5 text-gray-400" />
+          )}
+        </span>
+      </div>
+    </button>
+    {isOpen && <div className="p-4 bg-white">{content}</div>}
+  </div>
   );
 };
 

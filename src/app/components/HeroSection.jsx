@@ -9,14 +9,11 @@ const HeroSection = () => {
       <div className="flex items-center relative widthclass">
         <div className=" p-5 md:p-32">
           <h1 className=" font-64 fontbold leading-[43px] md:leading-[50px] xl:leading-[60px]">
-            AI Observability <br className="hidden md:block"/> and Governance
+            AI Observability <br className="hidden md:block" /> and Governance
           </h1>
           <div className="font-32 font-regular leading-[30px] md:leading-[40px] opacity-50 mt-4">
             <Typewriter
               options={{
-                strings: [
-                  "Detect, analyze, and mitigate",
-                ],
                 autoStart: true,
                 loop: true,
                 delay: 75,
@@ -26,9 +23,11 @@ const HeroSection = () => {
               }}
               onInit={(typewriter) => {
                 typewriter
-                  .typeString("Detect, analyze, and mitigate")
-                  .pauseFor(500)
-                  // .typeString("<br /> model and data issues faster")
+                  .typeString(
+                    "Detect, analyze, and mitigate"
+                  )
+                  .pauseFor(2000) // Adjust the pause duration to your preference
+                  .deleteAll()
                   .start();
               }}
             />
@@ -47,7 +46,6 @@ const HeroSection = () => {
           {/* <img src="herobg1.png" className="herobg" alt="" /> */}
         </div>
       </div>
-
     </div>
   );
 };
