@@ -1,3 +1,5 @@
+'use client'
+
 import React from "react";
 import Link from "next/link";
 import { careerapply, careerdata, careerperks } from "../../data/careerdata";
@@ -15,10 +17,10 @@ const Team = () => {
               </h1>
               <p className="font-24 font-inter font-normal leading-8 mb-10 text-center opacity-60">
                 Embark on a journey with our dynamic tech team, where innovation
-                and collaboration converge to shape the future. At Metricwise
-                we are more than just colleagues we are a family of diverse
-                minds united by a shared passion for pushing boundaries to make
-                AI responsible and accessible to all in a safe and secure way.
+                and collaboration converge to shape the future. At Metricwise we
+                are more than just colleagues we are a family of diverse minds
+                united by a shared passion for pushing boundaries to make AI
+                responsible and accessible to all in a safe and secure way.
                 Together, we redefine possibilities and make an impact that
                 resonates across industries. Welcome to a place where your
                 expertise is valued, your ideas are heard, and your growth is
@@ -77,7 +79,7 @@ const Team = () => {
             <h1 className="font-40 fon-inter font-bold textcolor leading-[72px] mb-10">
               Our Values
             </h1>
-            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5 gap-10 items-center">
+            <div className=" grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5 gap-10 items-center">
               {careerdata.map((item, index) => (
                 <div
                   key={index}

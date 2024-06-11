@@ -304,3 +304,18 @@
   background-size: 30%;
   background-repeat: no-repeat;
 }
+
+
+
+.card {
+  position: relative;
+  z-index: 1;
+}
+
+.card:hover {
+  z-index: 50 !important;
+}
+
+.backdrop-blur-sm {
+  backdrop-filter: blur(5px);
+}

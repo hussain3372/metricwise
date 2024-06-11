@@ -3,10 +3,11 @@
 import React from "react";
 import Typewriter from "typewriter-effect";
 import Image from "next/image";
+import Cube from "./Cube";
 const HeroSection = () => {
   return (
     <div className="border-b border-[#042440] border-opacity-[12%]">
-      <div className="flex items-center relative widthclass">
+      <div className="md:flex items-center relative widthclass">
         <div className=" p-5 md:p-32">
           <h1 className=" font-64 fontbold leading-[43px] md:leading-[50px] xl:leading-[60px]">
             AI Observability <br className="hidden md:block" /> and Governance
@@ -23,9 +24,7 @@ const HeroSection = () => {
               }}
               onInit={(typewriter) => {
                 typewriter
-                  .typeString(
-                    "Detect, analyze, and mitigate"
-                  )
+                  .typeString("Detect, analyze, and mitigate")
                   .pauseFor(2000) // Adjust the pause duration to your preference
                   .deleteAll()
                   .start();
@@ -42,8 +41,9 @@ const HeroSection = () => {
             </button>
           </div>
         </div>
-        <div className=" absolute top-24 w-5xl md:top-20 -z-10">
+        <div className=" absolute top-24 w-5xl md:top-20 -z-10 cubes">
           {/* <img src="herobg1.png" className="herobg" alt="" /> */}
+            {/* <Cube/> */}
         </div>
       </div>
     </div>

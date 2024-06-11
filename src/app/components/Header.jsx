@@ -57,7 +57,7 @@ export default function Example() {
   const [activeTab, setActiveTab] = useState("Industries");
 
   return (
-    <header className="bg-white border-[#042440] border border-1 border-opacity-[12%]">
+    <header className="bg-white border-[#042440] border border-1 border-opacity-[12%] sticky top-0 z-50">
       <nav
         className="mx-auto flex items-center justify-between px-10 py-4"
         aria-label="Global"

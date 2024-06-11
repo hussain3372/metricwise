@@ -8,7 +8,7 @@ const Pricing = () => {
     <div>
       <div className="pricebg">
         <div className="widthclass">
-          <div className="flex flex-col justify-center items-center m-auto pt-10">
+          <div className="flex flex-col justify-center items-center text-center m-auto pt-10">
             <h1 className="font-36 font-inter font-bold leading-10 p-20">
               Unlock Business Potential with <br /> Scalable,
               <span className="underline underline-offset-8 decoration-[#D9C666]">
