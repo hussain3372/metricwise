@@ -7,7 +7,7 @@ const About = () => {
       <div className="aboutbg relative">
         <div className="widthclass ">
           <div className="flex items-center">
-            <h1 className="black pl-20 pt-10 font-24 font-normal font-inter flex items-center gap-2">
+            <h1 className="black pl-5 sm:pl-16 pt-10 font-24 font-normal font-inter flex items-center flex-wrap gap-2">
               Metricwise
               <span className="black font-20 font-normal font-inter opacity-50 flex items-center gap-2">
                 <PiGreaterThanLight /> Company <PiGreaterThanLight /> About Us
@@ -31,7 +31,7 @@ const About = () => {
       </div>
 
       <div className="border-b border-[#042440] border-opacity-[12%] mt-10">
-        <div className="grid md:grid-cols-2 items-center widthclass p-20">
+        <div className="grid md:grid-cols-2 items-center widthclass p-10 md:p-20">
           <div>
             <h1 className="font-36 font-bold  font-inter leading-40 textcolor">
               Our Story
@@ -53,18 +53,18 @@ const About = () => {
               ethical soundness and comprehensibility.
             </p>
           </div>
-          <div className="flex justify-center">
+          <div className="flex justify-center mt-10 md:mt-0">
             <Image width={436} height={474} src="/our.png" alt="" />
           </div>
         </div>
       </div>
 
       <div className=" border-b border-[#042440] border-opacity-[12%]">
-        <div className="p-20 widthclass">
+        <div className="p-10 md:p-20 widthclass">
           <h1 className="font-36 font-bold  font-inter leading-40 textcolor">
             Our Vision
           </h1>
-          <div className="p-8 grid sm:grid-cols-2 lg:grid-cols-4 xl:grid-cols-5 2xl:grid-cols-5 gap-y-10 items-center justify-center">
+          <div className="p-8 grid sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 2xl:grid-cols-5 gap-y-10 items-center justify-center">
             <div className="flex flex-col justify-center items-center text-center p-8 h-[264px] w-[220px] rounded-lg border border-[#00000033] bg-[#0424401F] shadow-lg shadow-[#0000001F]">
               <Image width={80} height={80} src="/v1.png" alt="" />
               <h1 className="font-24 font-inter font-normal opacity-50">
@@ -101,7 +101,7 @@ const About = () => {
 
       <div className="">
         <div className="widthclass">
-          <div className="flex flex-col justif-center items-center m-auto p-20">
+          <div className="flex flex-col justif-center items-center m-auto p-7 md:p-20">
             <h1 className="font-36 font-inter font-bold leading-10 mb-10">
               Our Team
             </h1>

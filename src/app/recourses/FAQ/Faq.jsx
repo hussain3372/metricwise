@@ -109,7 +109,7 @@ const Faq = () => {
     <div className="faq">
       <div className="relative">
         <div className="flex items-center widthclass">
-          <h1 className="text-black pl-5 pt-10 font-24 font-normal font-inter flex items-center flex-wrap gap-2">
+          <h1 className="text-black pl-16 pt-10 font-24 font-normal font-inter flex items-center flex-wrap gap-2">
             Metricwise
             <span className="text-black font-20 font-normal font-inter opacity-50 flex items-center gap-2">
               <PiGreaterThanLight /> Resources <PiGreaterThanLight /> FAQs

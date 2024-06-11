@@ -9,7 +9,7 @@ const Insurance = () => {
   return (
     <div>
       <div className="widthclass">
-        <div className="p-8 sm:p-16 2xl:p-10">
+        <div className="p-4 sm:p-10 2xl:p-10">
           <div className="flex items-center">
             <h1 className="font-24 black font-normal font-inter flex gap-2 items-center flex-wrap">
               Metricwise

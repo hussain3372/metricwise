@@ -91,7 +91,7 @@ const Card = () => {
             Lets Get Started
           </h1>
           <p className="font-24 font-inter font-normal leading-8 mt-4 textcolor opacity-60">
-            you are looking to streamline operations, enhance customer
+            you're looking to streamline operations, enhance customer
             experiences, or drive <br /> innovation, we have the expertise and
             technology to help you succeed.
           </p>

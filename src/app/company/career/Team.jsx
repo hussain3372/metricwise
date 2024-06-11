@@ -77,7 +77,7 @@ const Team = () => {
             <h1 className="font-40 fon-inter font-bold textcolor leading-[72px] mb-10">
               Our Values
             </h1>
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5 gap-10 items-center">
+            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5 gap-10 items-center">
               {careerdata.map((item, index) => (
                 <div
                   key={index}
@@ -91,10 +91,10 @@ const Team = () => {
                     alt="Sunset in the mountains"
                   />
                   <div className="py-4">
-                    <div className="font-bold gont-inter font-36 leading-10 mb-2 mt-3">
+                    <div className="font-bold gont-inter font-36 leading-8 2xl:leading-10 mb-2 mt-3">
                       {item.name}
                     </div>
-                    <p className="text-[#9F9E9E] font-16 leading-5 ">
+                    <p className="text-[#9F9E9E] font-16 leading-5 mt-4">
                       {item.para}
                     </p>
                   </div>
@@ -117,8 +117,8 @@ const Team = () => {
                   key={perks}
                   className="h-full rounded-lg flex flex-col justify-start items-start text-start p-7 bg-white shadow-xl"
                 >
-                  <div className="flex items-center justify-between w-full">
-                    <div className="font-bold font-inter font-36 leading-10 mb-2 mt-3">
+                  <div className="md:flex items-center justify-between w-full">
+                    <div className="font-bold font-inter font-36 leading-8 md:leading-10 mb-2 mt-3">
                       {item.name}
                     </div>
                     <div className="">
@@ -146,7 +146,7 @@ const Team = () => {
       <div className="bg-[#0424401F] p-8 md:p-16">
         <div className="widthclass">
           <div className="p-16 pb-5 flex-col flex justify-center items-center">
-            <h1 className="font-40 fon-inter font-bold textcolor md:leading-[72px]">
+            <h1 className="font-40 fon-inter font-bold textcolor leading-10 md:leading-[72px] text-center">
               List of Open Position
             </h1>
           </div>

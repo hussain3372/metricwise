@@ -24,7 +24,7 @@
 .career {
   background-image: url(../../public/careebg.png);
   background-size: 100%;
-  background-position: right;
+  background-position: bottom;
   background-repeat: no-repeat;
 }
 .blog {
@@ -215,6 +215,12 @@
 }
 .font-12 {
   font-size: 12px;
+}
+
+@media (max-width: 1440px) {
+  .font-36 {
+    font-size: 25px;
+  }
 }
 
 @media (max-width: 1240px) {

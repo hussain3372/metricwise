@@ -21,7 +21,7 @@ const Pricing = () => {
       </div>
 
       <div className="widthclass">
-        <div className="grid sm:grid-cols-2 xl:grid-cols-3 gap-10 p-10 md:p-20">
+        <div className="grid sm:grid-cols-2 xl:grid-cols-3 gap-10 px-10">
           {Price && Price.length > 0 ? (
             Price.map((item, index) => (
               <div
