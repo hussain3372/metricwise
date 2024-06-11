@@ -6,14 +6,14 @@ const About = () => {
     <div>
       <div className="aboutbg relative">
         <div className="widthclass ">
-          <div className="flex items-center">
+          {/* <div className="flex items-center">
             <h1 className="black pl-5 sm:pl-16 pt-10 font-24 font-normal font-inter flex items-center flex-wrap gap-2">
               Metricwise
               <span className="black font-20 font-normal font-inter opacity-50 flex items-center gap-2">
                 <PiGreaterThanLight /> Company <PiGreaterThanLight /> About Us
               </span>
             </h1>
-          </div>
+          </div> */}
           <div className="flex flex-col justify-center items-center m-auto pt-16 pb-24 black">
             <label
               htmlFor=""

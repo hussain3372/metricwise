@@ -8,18 +8,18 @@ const Term = () => {
   return (
     <div>
       <div className="bg-[#042440]">
-        <div className="flex items-center widthclass">
+        {/* <div className="flex items-center widthclass">
           <h1 className="text-white pl-16 pt-10 font-24 font-normal font-inter flex items-center gap-2">
             Metricwise
             <span className="text-white font-20 font-normal font-inter opacity-50 flex items-center gap-2">
               <PiGreaterThanLight /> Company <PiGreaterThanLight /> Privacy Policy
             </span>
           </h1>
-        </div>
+        </div> */}
         <div className="grid md:grid-cols-2 items-center white pl-16 relative widthclass">
           <div>
             <div className="absolute -top-16 left-0">
-              <Image width={138} height={138} src="/hrblack1.png" alt="" />
+              {/* <Image width={138} height={138} src="/hrblack1.png" alt="" /> */}
             </div>
             <h1 className="font-64 fontbold lg:leading-40 mb-5">Privacy Policy</h1>
           </div>

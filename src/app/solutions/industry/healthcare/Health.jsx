@@ -10,14 +10,14 @@ const Finance = () => {
     <div>
       <div className="widthclass">
         <div className="p-4 sm:p-10 2xl:p-10">
-          <div className="flex items-center">
+          {/* <div className="flex items-center">
             <h1 className="font-24 black font-normal font-inter flex items-center flex-wrap gap-2">
               Metricwise
               <span className="font-20 font-normal font-inter opacity-50 flex items-center gap-2">
               <PiGreaterThanLight size={15}/> Solutions  <PiGreaterThanLight size={15}/> Industries  <PiGreaterThanLight size={15}/> Healthcare
               </span>
             </h1>
-          </div>
+          </div> */}
           <div className="grid md:grid-cols-2 items-center mt-10 md:mt-0">
             <div>
               <h1 className="font-36 font-inter font-bold leading-10">

@@ -6,15 +6,15 @@ const Monitoring = () => {
   return (
     <div>
       <div className="widthclass">
-        <div className="p-9">
-          <div className="flex items-center">
+        <div className="px-9">
+          {/* <div className="flex items-center">
             <h1 className="font-24 font-normal font-inter flex items-center gap-2">
               Metricwise
               <span className="font-20 font-normal font-inter opacity-50 flex items-center gap-2">
                 <PiGreaterThanLight/> Products <PiGreaterThanLight/> Observability Hub
               </span>
             </h1>
-          </div>
+          </div> */}
           <div className="grid md:grid-cols-2 items-center">
             <div>
               <h1 className="font-26 font-inter font-bold leading-10">
