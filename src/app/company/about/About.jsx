@@ -14,7 +14,7 @@ const About = () => {
               </span>
             </h1>
           </div> */}
-          <div className="flex flex-col justify-center items-center m-auto pt-16 pb-24 black">
+          <div className="flex flex-col justify-center items-center m-auto p-10 md:pt-16 pb-24 black">
             <label
               htmlFor=""
               className="font-24 font-inter font-normal leading-8 opacity-50"
@@ -30,8 +30,8 @@ const About = () => {
         </div>
       </div>
 
-      <div className="border-b border-[#042440] border-opacity-[12%] mt-10">
-        <div className="grid md:grid-cols-2 items-center widthclass p-10 md:p-20">
+      <div className="border-b border-[#042440] border-opacity-[12%] mt-5 md:mt-10">
+        <div className="grid md:grid-cols-2 items-center widthclass p-5 md:p-20">
           <div>
             <h1 className="font-36 font-bold  font-inter leading-40 textcolor">
               Our Story
@@ -60,11 +60,11 @@ const About = () => {
       </div>
 
       <div className=" border-b border-[#042440] border-opacity-[12%]">
-        <div className="p-10 md:p-20 widthclass">
+        <div className="p-5 md:p-20 widthclass">
           <h1 className="font-36 font-bold  font-inter leading-40 textcolor">
             Our Vision
           </h1>
-          <div className="p-8 grid sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 2xl:grid-cols-5 gap-y-10 items-center justify-center">
+          <div className="p-6 md:p-8 grid sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 2xl:grid-cols-5 gap-y-10 items-center justify-center">
             <div className="flex flex-col justify-center items-center text-center p-8 h-[264px] w-[220px] rounded-lg border border-[#00000033] bg-[#0424401F] shadow-lg shadow-[#0000001F]">
               <Image width={80} height={80} src="/v1.png" alt="" />
               <h1 className="font-24 font-inter font-normal opacity-50">
@@ -101,7 +101,7 @@ const About = () => {
 
       <div className="">
         <div className="widthclass">
-          <div className="flex flex-col justif-center items-center m-auto p-7 md:p-20">
+          <div className="flex flex-col justif-center items-center m-auto p-5 md:p-20">
             <h1 className="font-36 font-inter font-bold leading-10 mb-10">
               Our Team
             </h1>

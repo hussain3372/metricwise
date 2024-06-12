@@ -6,24 +6,24 @@ const Contact = () => {
     <div className="bg-[#F3F6FF]">
       <div className="contact1">
         <div className="widthclass">
-          <div className="grid md:grid-cols-2 items-center p-10 gap-40">
+          <div className="grid md:grid-cols-2 items-center p-5 md:p-10 gap-40">
             <div>
               <div>
                 <label htmlFor="" className="font-64 fontbold leading-[80px]">
                   Contact Us
                 </label>
-                <p className="fontregular font-20 leading-6 mt-5">
+                <p className="font-normal font-inter font-20 leading-6 mt-5">
                   Metricwise - A Comprehensive AI Observability and Governance
                   Platform If you fall into any of the following categories:
                 </p>
                 <ul className="mt-8 list-disc list-inside">
-                  <li className="list-disc font-20 fontregular leading-6">
+                  <li className="list-disc font-20 font-normal font-inter leading-6">
                     An inquisitive prospect
                   </li>
-                  <li className="list-disc font-20 fontregular leading-6">
+                  <li className="list-disc font-20 font-normal font-inter leading-6">
                     A potential partner
                   </li>
-                  <li className="list-disc font-20 fontregular leading-6">
+                  <li className="list-disc font-20 font-normal font-inter leading-6">
                     A vendor with a tool we should know about
                   </li>
                 </ul>
@@ -113,7 +113,7 @@ const Contact = () => {
             </div>
           </div>
           <div>
-            <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-10 p-10 sm:p-16">
+            <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-10 p-5 sm:p-16">
               <div className="grid grid-cols-2 bg-[#FFFFFF] p-5 border border-t-0 border-b-0 border-r-0 border-l-[#042440] border-l-4 rounded-lg">
                 <div className="flex flex-col font-20 font-inter font-semibold textcolor leading-6">
                   Sales

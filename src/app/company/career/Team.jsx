@@ -11,7 +11,7 @@ const Team = () => {
       <div>
         <div className="">
           <div className="widthclass">
-            <div className="flex flex-col justif-center items-center m-auto p-10 md:p-20">
+            <div className="flex flex-col justif-center items-center m-auto p-5 md:p-20">
               <h1 className="font-36 font-inter font-bold leading-10 mb-10">
                 Our Team
               </h1>
@@ -75,8 +75,8 @@ const Team = () => {
 
       <div className="bg-[#0424401F] border-t border-[#042440]">
         <div>
-          <div className="widthclass p-8 md:p-16 flex-col flex justify-center items-center">
-            <h1 className="font-40 fon-inter font-bold textcolor leading-[72px] mb-10">
+          <div className="widthclass p-3 md:p-16 flex-col flex justify-center items-center">
+            <h1 className="font-40 fon-inter font-bold textcolor leading-[72px] mb-5 md:mb-10">
               Our Values
             </h1>
             <div className=" grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5 gap-10 items-center">
@@ -109,8 +109,8 @@ const Team = () => {
 
       <div className="bg-white">
         <div className="widthclass">
-          <div className=" p-8 md:p-16 flex-col flex justify-center items-center">
-            <h1 className="font-40 fon-inter font-bold textcolor leading-[72px] mb-10">
+          <div className=" p-3 md:p-16 flex-col flex justify-center items-center">
+            <h1 className="font-40 fon-inter font-bold textcolor leading-[72px] mb-3 md:mb-10">
               Our Perks
             </h1>
             <div className="grid md:grid-cols-2 gap-10 items-center">
@@ -145,14 +145,14 @@ const Team = () => {
         </div>
       </div>
 
-      <div className="bg-[#0424401F] p-8 md:p-16">
+      <div className="bg-[#0424401F]">
         <div className="widthclass">
-          <div className="p-16 pb-5 flex-col flex justify-center items-center">
+          <div className="p-5 md:p-16 flex-col flex justify-center items-center ">
             <h1 className="font-40 fon-inter font-bold textcolor leading-10 md:leading-[72px] text-center">
               List of Open Position
             </h1>
           </div>
-          <div>
+          <div className="p-3 md:p-16">
             {careerapply.map((apply, apple) => (
               <div
                 key={apple}
@@ -167,7 +167,7 @@ const Team = () => {
                   </p>
                 </div>
                 <div>
-                  <button className="font-20 font-inter font-normal leading-6 bg-[#042440] rounded-lg w-[110px] h-[52px] white mt-5 md:mt-0">
+                  <button className="font-20 font-inter font-normal leading-6 bg-[#042440] rounded-lg w-[80px] md:w-[110px] h-[40px] md:h-[52px] white mt-5 md:mt-0">
                     <Link href="/company/apply">{apply.applys}</Link>
                   </button>
                 </div>

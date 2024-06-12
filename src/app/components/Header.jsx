@@ -59,24 +59,21 @@ export default function Example() {
   return (
     <header className="bg-white border-[#042440] border border-1 border-opacity-[12%] sticky top-0 z-50">
       <nav
-        className="mx-auto flex items-center justify-between px-10 py-4"
+        className="mx-auto flex items-center justify-between px-5 md:px-10 py-4"
         aria-label="Global"
       >
         <div className="flex xl:flex-1">
           <Link href="/" className="-m-1.5 p-1.5">
-            <Image width={184} height={25}  className="mx-auto" src="/logo.png" alt="logo" />
+            <Image
+              width={184}
+              height={25}
+              className="mx-auto"
+              src="/logo.png"
+              alt="logo"
+            />
           </Link>
         </div>
-        <div className="flex xl:hidden">
-          <button
-            type="button"
-            className="-m-2.5 inline-flex items-center justify-center rounded-md p-2.5 text-gray-700"
-            onClick={() => setMobileMenuOpen(true)}
-          >
-            <span className="sr-only">Open main menu</span>
-            <Bars3Icon className="h-6 w-6" aria-hidden="true" />
-          </button>
-        </div>
+
         <PopoverGroup className="hidden xl:flex xl:gap-x-8">
           <Popover className="relative">
             <div
@@ -194,26 +191,35 @@ export default function Example() {
                     </div>
                   </div>
                   <div className="p-4 grid grid-cols-2">
-                    {(activeTab === "Industries" ? Industry : DataTypes).map((item) => (
-                    <div
-                      key={item.name}
-                      className="group relative flex items-center gap-x-6 rounded-lg text-sm leading-6 p-2 hover:bg-gray-50"
-                    >
-                      <div className="flex h-11 w-11 flex-none items-center justify-center rounded-lg bg-gray-50 group-hover:bg-white">
-                        <Image width={40} height={40} src={item.icon} alt="" />
-                      </div>
-                      <div className="flex-auto">
-                        <Link
-                          href={item.href}
-                          className="block font-semibold text-gray-900"
+                    {(activeTab === "Industries" ? Industry : DataTypes).map(
+                      (item) => (
+                        <div
+                          key={item.name}
+                          className="group relative flex items-center gap-x-6 rounded-lg text-sm leading-6 p-2 hover:bg-gray-50"
                         >
-                          {item.name}
-                          <span className="absolute inset-0" />
-                        </Link>
-                        <p className="mt-1 text-gray-600">{item.description}</p>
-                      </div>
-                    </div>
-                  ))}
+                          <div className="flex h-11 w-11 flex-none items-center justify-center rounded-lg bg-gray-50 group-hover:bg-white">
+                            <Image
+                              width={40}
+                              height={40}
+                              src={item.icon}
+                              alt=""
+                            />
+                          </div>
+                          <div className="flex-auto">
+                            <Link
+                              href={item.href}
+                              className="block font-semibold text-gray-900"
+                            >
+                              {item.name}
+                              <span className="absolute inset-0" />
+                            </Link>
+                            <p className="mt-1 text-gray-600">
+                              {item.description}
+                            </p>
+                          </div>
+                        </div>
+                      )
+                    )}
                   </div>
                 </div>
               </PopoverPanel>
@@ -221,9 +227,7 @@ export default function Example() {
           </Popover>
 
           <Popover className="relative">
-            <div
-              className="flex items-center gap-x-1 font-16 font-medium leading-6 textcolor"
-            >
+            <div className="flex items-center gap-x-1 font-16 font-medium leading-6 textcolor">
               <PopoverButton className="flex items-center gap-x-1">
                 <Link href="/Pricing">Pricing</Link>
               </PopoverButton>
@@ -407,7 +411,7 @@ export default function Example() {
           </Popover>
         </PopoverGroup>
 
-        <div className="hidden xl:flex xl:flex-1 xl:justify-end gap-5 items-center">
+        <div className="hidden md:flex md:flex-1 md:justify-end gap-5 items-center">
           <a href="#" className="font-16 fontregular leading-[20px] textcolor">
             Sign Up
           </a>
@@ -417,6 +421,16 @@ export default function Example() {
           >
             Book a Demo
           </Link>
+        </div>
+        <div className="flex xl:hidden pl-20">
+          <button
+            type="button"
+            className="-m-2.5 inline-flex items-center justify-center rounded-md p-2.5 text-gray-700"
+            onClick={() => setMobileMenuOpen(true)}
+          >
+            <span className="sr-only">Open main menu</span>
+            <Bars3Icon className="h-6 w-6" aria-hidden="true" />
+          </button>
         </div>
       </nav>
       <Dialog
@@ -428,7 +442,13 @@ export default function Example() {
         <DialogPanel className="fixed inset-y-0 right-0 z-10 w-full overflow-y-auto bg-white px-6 py-6 sm:max-w-sm sm:ring-1 sm:ring-gray-900/10">
           <div className="flex items-center justify-between">
             <a href="#" className="-m-1.5 p-1.5">
-              <Image width={184} height={25}  className="w-auto" src="/logo.png" alt="logo" />
+              <Image
+                width={184}
+                height={25}
+                className="w-auto"
+                src="/logo.png"
+                alt="logo"
+              />
             </a>
             <button
               type="button"
@@ -501,9 +521,9 @@ export default function Example() {
                 </Disclosure>
 
                 <Disclosure as="div" className="-mx-3">
-                      <DisclosureButton className="flex text-Inter font-medium w-full items-center justify-between rounded-lg py-2 pl-3 pr-3.5 text-base leading-7 textcolor hover:bg-gray-50">
-                        <Link href="/Pricing">Pricing</Link>
-                      </DisclosureButton>
+                  <DisclosureButton className="flex text-Inter font-medium w-full items-center justify-between rounded-lg py-2 pl-3 pr-3.5 text-base leading-7 textcolor hover:bg-gray-50">
+                    <Link href="/Pricing">Pricing</Link>
+                  </DisclosureButton>
                 </Disclosure>
 
                 <Disclosure as="div" className="-mx-3">

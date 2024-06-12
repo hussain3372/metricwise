@@ -9,7 +9,7 @@ import { PiGreaterThanLight } from "react-icons/pi";
 const Blog = () => {
   return (
     <div className="">
-      <div className="blog">
+      <div className="blog mt-10 md:mt-0">
         {/* <div className="flex items-center widthclass">
           <h1 className="black pl-16 pt-10 pb-28  font-24 font-normal font-inter flex items-center gap-2">
             Metricwise
@@ -18,7 +18,7 @@ const Blog = () => {
             </span>
           </h1>
         </div> */}
-        <div className="grid md:grid-cols-2 items-center white pl-8 sm:pl-16 pb-24 relative widthclass ">
+        <div className="grid md:grid-cols-2 items-center white  px-5 md:px-10 py-10 relative widthclass ">
           <div>
             <div className="absolute -top-44 left-0">
               {/* <Image width={138} height={138} src="/hr1.png" alt="" /> */}
@@ -35,7 +35,7 @@ const Blog = () => {
               their respective roles and significant importance in the current
               landscape of machine learning.
             </p>
-            <button className="w-[196px] h-[48px] flex justify-center items-center text-white rounded-lg mt-8 font-20 fontregular leading-6 gap-2 bg-[#042440]">
+            <button className=" w-[170px] md:w-[196px] h-[48px] flex justify-center items-center text-white rounded-lg mt-8 font-20 fontregular leading-6 gap-2 bg-[#042440]">
               Learn More
               <Image width={24} height={24} src="/free.png" alt="" />
             </button>
@@ -46,8 +46,8 @@ const Blog = () => {
         </div>
       </div>
 
-      <div className="widthclass px-10">
-        <div className="bg-[#1D285614] p-5 md:p-10 mb-28 rounded-[20px]">
+      <div className="widthclass px-3 md:px-10">
+        <div className="bg-[#1D285614] p-2 md:p-10 mb-10 md:mb-28 rounded-[20px]">
           <div className="grid xl:grid-cols-2 gap-10">
             <div className="flex flex-col justify-end items-start cardbg white rounded-[20px] w-[100%] h-[680px] p-10">
               <h3 className="font-20 font-inter font-semibold leading-6">
@@ -62,7 +62,7 @@ const Blog = () => {
               </button>
             </div>
             <div>
-              <div className="p-5 md:p-0">
+              <div className="">
                 {BlogCard && BlogCard.length > 0 ? (
                   BlogCard.map((item, index) => (
                     <div

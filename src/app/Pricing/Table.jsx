@@ -7,7 +7,7 @@ import Governance from "./Governance";
 const Faq = () => {
   return (
     <div>
-      <div className="widthclass p-10">
+      <div className="widthclass p-5 md:p-10">
         <ul className="flex items-center justify-around mt-10">
           <li className="font-20 fontsemibold leading-6 opacity-60">
             Features

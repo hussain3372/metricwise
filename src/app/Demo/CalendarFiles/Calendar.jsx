@@ -1,18 +1,27 @@
-'use state'
+"use state";
 
 import React, { useState, useEffect } from "react";
 import Image from "next/image";
 import CalendarTable from "./CalendarTable";
-import "./Calendar.css"
-
+import "./Calendar.css";
 
 const Calendar = () => {
   const [month, setMonth] = useState(new Date().getMonth()); // 0-based index (0 = January, 11 = December)
   const [year, setYear] = useState(new Date().getFullYear());
 
   const monthNames = [
-    "January", "February", "March", "April", "May", "June",
-    "July", "August", "September", "October", "November", "December"
+    "January",
+    "February",
+    "March",
+    "April",
+    "May",
+    "June",
+    "July",
+    "August",
+    "September",
+    "October",
+    "November",
+    "December",
   ];
 
   const handleMonthChange = (increment) => {
@@ -37,8 +46,10 @@ const Calendar = () => {
   return (
     <div>
       <div className="bg-white shadow-lg overflow-hidden rounded-lg calendarclass">
-        <div className="p-5 grid grid-cols-2 border-b border-[#00000033]">
-          <p className="font-16 font-inter font-medium leading-5">Select Date & Time</p>
+        <div className="p-5 grid md:grid-cols-2 border-b border-[#00000033]">
+          <p className="font-16 font-inter font-medium leading-5">
+            Select Date & Time
+          </p>
           <div className="flex justify-end items-end">
             <Image width={20} height={20} src="/contact_calendar.png" />
           </div>
@@ -50,20 +61,20 @@ const Calendar = () => {
                 {monthNames[month]}
               </h1>
             </div>
-            <div className="flex flex-col items-end justify-end">
+            <div className="flex items-end justify-end gap-3 mt-2 md:mt-0">
               <Image
                 width={16}
                 height={16}
                 className="cursor-pointer"
-                src="/up.png"
-                onClick={() => handleMonthChange(1)}
+                src="/prev.png"
+                onClick={() => handleMonthChange(-1)}
               />
               <Image
                 width={16}
                 height={16}
                 className="cursor-pointer"
-                src="/down.png"
-                onClick={() => handleMonthChange(-1)}
+                src="/next.png"
+                onClick={() => handleMonthChange(1)}
               />
             </div>
           </div>
@@ -73,20 +84,20 @@ const Calendar = () => {
                 {year}
               </h1>
             </div>
-            <div className="flex flex-col items-end justify-end">
+            <div className="flex items-end justify-end gap-3 mt-2 md:mt-0">
               <Image
                 width={16}
                 height={16}
                 className="cursor-pointer"
-                src="/up.png"
-                onClick={() => handleYearChange(1)}
+                src="/prev.png"
+                onClick={() => handleYearChange(-1)}
               />
               <Image
                 width={16}
                 height={16}
                 className="cursor-pointer"
-                src="/down.png"
-                onClick={() => handleYearChange(-1)}
+                src="/next.png"
+                onClick={() => handleYearChange(1)}
               />
             </div>
           </div>

@@ -3,7 +3,6 @@
 import React, { useState } from "react";
 import Head from "next/head";
 import Image from "next/image";
-import { PiGreaterThanLight } from "react-icons/pi";
 import { ChevronUpIcon, ChevronDownIcon } from "@heroicons/react/24/outline";
 
 const AccordionItem = ({ title, content }) => {
@@ -116,7 +115,7 @@ const Faq = () => {
             </span>
           </h1>
         </div> */}
-        <div className="flex flex-col pt-10 pb-20 justify-center items-center m-auto text-black widthclass">
+        <div className="flex flex-col pt-10 pb-2 md:pb-20 justify-center items-center m-auto text-black widthclass">
           <h1 className="font-64 font-inter font-bold leading-[80px] mb-8">
             We are here to help you
           </h1>
@@ -145,7 +144,7 @@ const Faq = () => {
       <div className="widthclass">
         <div>
           <div>
-            <div className="min-h-screen p-6">
+            <div className="min-h-screen p-3 md:p-6">
               <Head>
                 <title>FAQ - Metricwise</title>
               </Head>
@@ -157,7 +156,7 @@ const Faq = () => {
         </div>
       </div>
 
-      <div className="widthclass p-16 flex-col flex justify-center items-center">
+      <div className="widthclass p-3 md:p-16 flex-col flex justify-center items-center">
         <h1 className="font-40 fon-inter font-bold textcolor leading-[72px] mb-10">
           Support
         </h1>

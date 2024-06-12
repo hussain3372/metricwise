@@ -16,7 +16,7 @@ const Card = () => {
                 index === 1 ? "md:flex-row-reverse" : ""
               }`}
             >
-              <div className={`${index === 1 ? "order-last" : ""}`}>
+              <div className={`${index === 1 ? "md:order-last" : ""}`}>
                 <h1 className="text-4xl font-36 fontbold leading-10">
                   {item.name}
                 </h1>
@@ -73,7 +73,7 @@ const Card = () => {
                   )}
                 </ul>
               </div>
-              <div className={`${index % 2 === 0 ? "flex justify-end" : ""}`}>
+              <div className={` flex justify-center md:justify-start ${index % 2 === 0 ? "flex justify-center md:justify-end" : ""}`}>
                 <Image
                   src={item.img}
                   alt="Card image"
@@ -86,7 +86,7 @@ const Card = () => {
         </div>
       </div>
       <div className="widthclass">
-        <div className="bg-white flex flex-col mt-40 mb-36 justify-center items-center text-center shadow-lg rounded-[20px] p-10 sm:p-20 m-10">
+        <div className="bg-white flex flex-col mt-20 md:mt-40 mb-36 justify-center items-center text-center shadow-lg rounded-[20px] p-5 sm:p-20 m-5 md:m-10">
           <h1 className="font-36 font-inter font-bold leading-10 textcolor">
             Lets Get Started
           </h1>

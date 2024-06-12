@@ -23,11 +23,11 @@ const Finance = () => {
                 Real Estate
               </h1>
               <p className="font-24 font-normal font-inter leading-8 mt-8 mb-10 opacity-60">
-              AI transforms property management and investment decisions, optimizing processes and maximizing returns. However, effective oversight is crucial to mitigate risks such as data privacy breaches and algorithmic biases.
+                AI transforms property management and investment decisions, optimizing processes and maximizing returns. However, effective oversight is crucial to mitigate risks such as data privacy breaches and algorithmic biases.
               </p>
               <Link
                 href="/Demo"
-                className="font-20 font-normal font-inter leading-6 bg-[#042440] white rounded-[8px] w-[214px] h-[52px] flex gap-3 justify-center   items-center"
+                className="font-20 font-normal font-inter leading-6 bg-[#042440] white rounded-[8px] w-[180px] md:w-[214px] h-[50px] md:h-[52px] flex gap-3 justify-center   items-center"
               >
                 Book a Demo
                 <Image
@@ -39,7 +39,7 @@ const Finance = () => {
                 />
               </Link>
             </div>
-            <div className="flex justify-end items-end">
+            <div className="flex justify-end items-end mt-10 md:mt-0">
               <Image src="/estate.png" width={540} height={540} alt="moni" />
             </div>
           </div>
@@ -53,10 +53,10 @@ const Finance = () => {
       <div className="bg-[#042440]">
         <div className="widthclass">  
           <div className="flex flex-col justify-center items-center text-center m-auto p-8 sm:p-16 white">
-            <h1 className="font-36 font-inter font-bold leading-10">
+            <h1 className="font-36 font-inter font-bold leading-8 md:leading-10">
             Transform Your Real Estate <br /> Strategy with AI Model Monitoring
             </h1>
-            <p className="font-24 font-inter font-normal leading-8 mt-5 opacity-60">
+            <p className="font-24 font-inter font-normal leading-6 md:leading-8 mt-5 opacity-60">
             In the ever-evolving realm of healthcare, ensuring the reliability and <br /> transparency of AI-powered systems is paramount to delivering <br /> exceptional patient care and maintaining trust within the industry.
             </p>
           </div>

@@ -4,7 +4,6 @@ import { useState } from "react";
 import Calendar from "./CalendarFiles/Calendar"
 import Image from "next/image";
 import Schedule from "./Shedule/Schedule";
-
 const Demo = () => {
   const [section, setSection] = useState(1);
 
@@ -18,9 +17,9 @@ const Demo = () => {
 
   return (
     <div className="relative">
-      <div className="px-10 py-16 demoparent">
+      <div className="px-5 md:px-10 py-10 md:py-14 demoparent">
         {section === 1 && (
-          <div className="grid lg:grid-cols-2 max-w-[1040px] bg-[#FFFFFF] m-auto rounded-[40px] p-20 gap-10 shadow-xl">
+          <div className="grid lg:grid-cols-2 max-w-[1040px] bg-[#FFFFFF] m-auto rounded-[40px] p-5 md:p-20 gap-10 shadow-xl">
             <div>
               <Image width={140} height={20} src="/logo.png" alt="logo" className="mb-5" />
               <label
@@ -51,7 +50,7 @@ const Demo = () => {
               </p>
             </div>
             <div className="">
-              <div className="">
+              <div className="flex flex-col justify-center items-center">
                 {/* <img src="calendar.png" alt="calendar" /> */}
                 <Calendar />
               </div>
@@ -68,7 +67,7 @@ const Demo = () => {
         )}
 
         {section === 2 && (
-          <div className="grid lg:grid-cols-2 max-w-[1040px] bg-[#FFFFFF] m-auto rounded-[40px] p-20 gap-10 shadow-xl">
+          <div className="grid lg:grid-cols-2 max-w-[1040px] bg-[#FFFFFF] m-auto rounded-[40px] p-5 md:p-20 gap-10 shadow-xl">
             <div>
               <div>
               <Image width={140} height={20} src="/logo.png" alt="logo" className="mb-5" />
@@ -123,7 +122,7 @@ const Demo = () => {
         )}
 
         {section === 3 && (
-          <div className="grid lg:grid-cols-2 max-w-[1040px] bg-[#FFFFFF] flex-col justify-center m-auto rounded-[40px] p-20 gap-10 shadow-xl">
+          <div className="grid lg:grid-cols-2 max-w-[1040px] bg-[#FFFFFF] flex-col justify-center m-auto rounded-[40px] p-5 md:p-20 gap-10 shadow-xl">
             <div>
               <div>
               <Image width={140} height={20} src="/logo.png" alt="logo" className="mb-5" />
