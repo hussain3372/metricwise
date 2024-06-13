@@ -144,7 +144,7 @@ const Faq = () => {
       <div className="widthclass">
         <div>
           <div>
-            <div className="min-h-screen px-7 py-20">
+            <div className="px-7 py-20">
               <Head>
                 <title>FAQ - Metricwise</title>
               </Head>

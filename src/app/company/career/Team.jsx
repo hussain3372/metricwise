@@ -2,7 +2,7 @@
 
 import React from "react";
 import Link from "next/link";
-import { careerapply, careerdata, careerperks } from "../../data/careerdata";
+import { careerapply, careerdata, careerperks, careerdatalast } from "../../data/careerdata";
 import Image from "next/image";
 
 const Team = () => {
@@ -79,11 +79,35 @@ const Team = () => {
             <h1 className="font-40 fon-inter font-bold textcolor leading-[72px] mb-5 md:mb-10">
               Our Values
             </h1>
-            <div className=" grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5 gap-5 items-center">
+            <div className=" grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-2 gap-5">
               {careerdata.map((item, index) => (
                 <div
                   key={index}
-                  className="max-w-sm h-full rounded-lg border-2 border-[#EBECF2] flex flex-col justify-start items-start text-start p-7 bg-white shadow-xl"
+                  className=" h-full rounded-lg border-2 border-[#EBECF2] flex flex-col justify-start items-start text-start p-7 bg-white shadow-xl"
+                >
+                  <Image
+                    width={60}
+                    height={60}
+                    className=""
+                    src={item.icon}
+                    alt="Sunset in the mountains"
+                  />
+                  <div className="py-4">
+                    <div className="font-bold gont-inter font-36 leading-8 2xl:leading-10 mb-2 mt-3">
+                      {item.name}
+                    </div>
+                    <p className="text-[#9F9E9E] font-16 leading-5 mt-4">
+                      {item.para}
+                    </p>
+                  </div>
+                </div>
+              ))}
+            </div>
+            <div className=" grid grid-cols-1 mt-5">
+              {careerdatalast.map((item, index) => (
+                <div
+                  key={index}
+                  className=" h-full rounded-lg border-2 border-[#EBECF2] flex flex-col justify-start items-start text-start p-7 bg-white shadow-xl"
                 >
                   <Image
                     width={60}
@@ -147,12 +171,12 @@ const Team = () => {
 
       <div className="bg-[#0424401F] positionbg">
         <div className="widthclass">
-          <div className="p-5 md:p-16 flex-col flex justify-center items-center ">
+          <div className="px-5 pt-10 pb-8 flex-col flex justify-center items-center ">
             <h1 className="font-40 fon-inter font-bold textcolor leading-10 md:leading-[72px] text-center">
               List of Open Position
             </h1>
           </div>
-          <div className="p-3 md:p-16">
+          <div className="px-3 md:px-10 pb-10">
             {careerapply.map((apply, apple) => (
               <div
                 key={apple}

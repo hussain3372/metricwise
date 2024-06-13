@@ -5,11 +5,6 @@ export const careerdata = [
     para: "Foster a culture of continuous innovation, encouraging team members to explore novel ideas, embrace emerging technologies, and challenge the status quo. ",
   },
   {
-    icon: "/val2.png",
-    name: "Curiosity",
-    para: "Seek continuous growth and absorb knowledge at every opportunity. We thrive on thinking beyond conventional boundaries. Refusing to rest on our current understanding,we commit to perpetual learning. This approach sparks our most innovative ideas and provides an avenue to embrace novel perspectives.",
-  },
-  {
     icon: "/val3.png",
     name: "User-Centric Mindset",
     para: "Prioritize a user-centric mindset in product development. Empathize with end-users, ensuring that solutions are not only technologically advanced but also intuitive, accessible, and designed to enhance users. ",
@@ -23,6 +18,13 @@ export const careerdata = [
     icon: "/val5.png",
     name: "Passion",
     para: "Our endeavors are driven by a shared passion for collaborative teamwork and the creation of extraordinary achievements. We draw strength from surpassing conventional expectations, allowing us to unleash the highest potential within ourselves.",
+  },
+];
+export const careerdatalast = [
+  {
+    icon: "/val2.png",
+    name: "Curiosity",
+    para: "Seek continuous growth and absorb knowledge at every opportunity. We thrive on thinking beyond conventional boundaries. Refusing to rest on our current understanding,we commit to perpetual learning. This approach sparks our most innovative ideas and provides an avenue to embrace novel perspectives.",
   },
 ];
 

@@ -5,7 +5,7 @@ const Monitoring = () => {
   return (
     <div>
       <div className="widthclass">
-        <div className="px-9 mt-10 md:mt-28">
+        <div className="px-9 mt-10 md:mt-20">
           {/* <div className="flex items-center">
             <h1 className="font-24 font-normal font-inter flex items-center gap-2">
               Metricwise
@@ -17,7 +17,7 @@ const Monitoring = () => {
           </div> */}
           <div className="grid md:grid-cols-2 items-center">
             <div>
-              <h1 className="font-26 font-inter font-bold leading-10">
+              <h1 className="font-36 font-inter font-bold leading-10">
                 Monitoring Hub
               </h1>
               <p className="font-24 font-normal font-inter leading-8 mt-8 mb-10 opacity-60">
@@ -47,7 +47,7 @@ const Monitoring = () => {
 
         <div>
           <div>
-            <div className="grid md:grid-cols-2 items-center md:gap-36 mt-20">
+            <div className="grid md:grid-cols-2 items-center md:gap-36 md:mt-20">
               <div className=" order-2 md:order-1">
                 <Image src="/mon1.png" width={690} height={717} alt="" />
               </div>

@@ -7,7 +7,7 @@ const Monitoring = () => {
   return (
     <div>
       <div className="widthclass">
-        <div className="px-9 mt-10 md:mt-30">
+        <div className="px-9 mt-10 md:mt-20">
           {/* <div className="flex items-center">
             <h1 className="font-24 font-normal font-inter flex items-center gap-2">
               Metricwise
@@ -18,7 +18,7 @@ const Monitoring = () => {
           </div> */}
           <div className="grid md:grid-cols-2 items-center">
             <div>
-              <h1 className="font-26 font-inter font-bold leading-10">
+              <h1 className="font-36 font-inter font-bold leading-10">
                 Governance Hub
               </h1>
               <p className="font-24 font-normal font-inter leading-8 mt-8 mb-10 opacity-60">
@@ -42,12 +42,12 @@ const Monitoring = () => {
 
         <div>
           <div>
-            <div className="grid md:grid-cols-2 items-center gap-36 mt-20">
+            <div className="grid md:grid-cols-2 items-center md:gap-36 md:mt-20">
               <div className=" order-2 md:order-1">
                 <Image width={690} height={717} src="/mon1.png" alt="" />
               </div>
-              <div className="p-10 md:p-16 order-1 md:order-2">
-                <Image src="/lambu.png" width={32} height={56} alt="lambu" className="mb-10" />
+              <div className="p-5 md:p-16 order-1 md:order-2">
+                <Image src="/lambu.png" width={32} height={56} alt="lambu" className="md:mb-10" />
                 <h1 className="font-36 font-inter font-bold leading-10">
                   Model Explainability & Fairness
                 </h1>

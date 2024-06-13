@@ -81,9 +81,9 @@
   background-position: bottom left;
 }
 .dangerbgimg {
-  background-image: url(../../public/dangerbg.svg);
+  background-image: url(../../public/pricebg.png);
   background-size: 60%;
-  background-position: bottom right;
+  background-position: top right;
   background-repeat: no-repeat;
 }
 /* styles/globals.css */
@@ -257,8 +257,8 @@
   font-size: 20px;
 }
 .dangerbgimg {
-  background-image: url(../../public/dangerbg.svg);
-  background-size: 90%;
+  background-image: url(../../public/pricebg.png);
+  background-size: 70%;
   background-position: bottom right;
   background-repeat: no-repeat;
 }
