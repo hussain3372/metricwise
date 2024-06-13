@@ -26,8 +26,8 @@ const HeroSection = () => {
               }}
               onInit={(typewriter) => {
                 typewriter
-                  .typeString("Detect, analyze, and mitigate")
-                  // .typeString("Detect, analyze, and mitigate <br/> model and data issues faster")
+                  // .typeString("Detect, analyze, and mitigate")
+                  .typeString("Detect, analyze, and mitigate <br/> model and data issues faster")
                   .pauseFor(200) // Adjust the pause duration to your preference
                   .deleteAll()
                   .start();

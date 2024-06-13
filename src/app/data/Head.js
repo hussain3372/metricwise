@@ -105,14 +105,14 @@ export const Docs = [
   {
     name: "Resource Library",
     description:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+      "Explore our extensive collection of whitepapers, case studies, and tutorials to deepen your AI knowledge.",
     href: "#",
     icon: "/doc1.png",
   },
   {
     name: "Documentation",
     description:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. ",
+      "Access technical manuals and best practices to support your development and implementation efforts.",
     href: "#",
     icon: "/doc2.png",
   },

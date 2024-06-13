@@ -6,8 +6,8 @@ import Image from "next/image";
 const Pricing = () => {
   return (
     <div>
-      <div >
-        <div className="pricebg">
+      <div className="pricebg">
+        <div>
           <div className="widthclass">
             <div className="flex flex-col justify-center items-center text-center m-auto pt-10">
               <h1 className="font-36 font-inter font-bold leading-10 p-0 md:p-20">

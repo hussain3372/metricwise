@@ -81,9 +81,9 @@
   background-position: bottom left;
 }
 .dangerbgimg {
-  background-image: url(../../public/pricebg.png);
-  background-size: 60%;
-  background-position: top right;
+  background-image: url(../../public/dangerbgimg.png);
+  background-size: 80%;
+  background-position:top right;
   background-repeat: no-repeat;
 }
 /* styles/globals.css */
@@ -236,7 +236,7 @@
 
 @media (max-width: 1440px) {
   .font-36 {
-    font-size: 25px;
+    font-size: 30px;
   }
 }
 
@@ -257,7 +257,7 @@
   font-size: 20px;
 }
 .dangerbgimg {
-  background-image: url(../../public/pricebg.png);
+  background-image: url(../../public/dangerbgimg.png);
   background-size: 70%;
   background-position: bottom right;
   background-repeat: no-repeat;
@@ -344,4 +344,8 @@ textarea {
   --tw-ring-color: #0000001F !important;
     box-shadow: #0000001F !important;
     border-color: #0000001F !important;
+}
+
+.custom-shadow {
+  box-shadow: 0 3px 5px rgba(0, 0, 0, 0.2);
 }

@@ -122,9 +122,11 @@ const Faq = () => {
           <div className="relative">
             <input
               type="text"
-              className="shadow-[0_3px_5px_rgb(0,0,0,0.2)] rounded-xl w-[290px] sm:w-[500px] md:w-[700px] xl:w-[800px] h-[60px] sm:h-[72px] p-6 pl-16 pr-24 textcolor"
+              style={{ boxShadow: "0 3px 10px rgba(0, 0, 0, 0.2)" }}
+              className="relative shadow-[0_10px_20px_rgba(0,0,0,0.3)] rounded-xl w-[290px] sm:w-[500px] md:w-[700px] xl:w-[800px] h-[60px] sm:h-[72px] p-6 pl-16 pr-24 textcolor"
               placeholder="Ask a question..."
             />
+
             <div className="absolute top-4 sm:top-5 pl-3">
               <Image width={28} height={28} src="/search.png" alt="" />
             </div>
