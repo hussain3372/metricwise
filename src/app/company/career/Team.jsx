@@ -79,7 +79,7 @@ const Team = () => {
             <h1 className="font-40 fon-inter font-bold textcolor leading-[72px] mb-5 md:mb-10">
               Our Values
             </h1>
-            <div className=" grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-2 gap-5">
+            <div className=" grid sm:grid-cols-2 gap-5">
               {careerdata.map((item, index) => (
                 <div
                   key={index}
