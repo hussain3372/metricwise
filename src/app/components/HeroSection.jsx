@@ -5,9 +5,10 @@ import Typewriter from "typewriter-effect";
 import Image from "next/image";
 import Cube from "./Cube";
 import Space from "./Space";
+import Graph from "./Graphs/Graph";
 const HeroSection = () => {
   return (
-    <div className="border-b border-[#042440] border-opacity-[12%] mt-10 md:mt-0">
+    <div className="border-b border-[#042440] border-opacity-[12%] mt-10 md:mt-0 dangerbgimg">
       <div className="md:flex items-center relative widthclass">
         <div className=" p-5 md:p-32">
           <h1 className=" font-64 fontbold leading-[30px] md:leading-[50px] xl:leading-[60px]">
@@ -25,14 +26,15 @@ const HeroSection = () => {
               }}
               onInit={(typewriter) => {
                 typewriter
-                  .typeString("Detect, analyze, and mitigate <br/> model and data issues faster")
+                  .typeString("Detect, analyze, and mitigate")
+                  // .typeString("Detect, analyze, and mitigate <br/> model and data issues faster")
                   .pauseFor(200) // Adjust the pause duration to your preference
                   .deleteAll()
                   .start();
               }}
             />
           </div>
-          <div className="sm:flex items-center gap-5 mt-16">
+          <div className="sm:flex items-center gap-5 mt-10">
             <button className="flex mt-5 sm:mt-0 items-center gap-3 border border-[#042440] rounded-[10px] bg-[#042440] white font-20 font-inter font-medium leading-6 pt-2 md:pt-3 pb-2 md:pb-3 pl-2 md:pl-5 pr-2 md:pr-5 mb-4 md:mb-0">
               Get Started For Free
               <Image width={24} height={24} src="/free.png" alt="" />
@@ -49,6 +51,8 @@ const HeroSection = () => {
       </div>
 
       {/* <Space/> */}
+
+      <Graph/>
 
     </div>
   );
