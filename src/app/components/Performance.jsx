@@ -12,7 +12,7 @@ const Platform = () => {
         Enhance the reliability of your AI systems and instill confidence with our platform.
         </p>
         <div className="flex justify-center items-center">
-            <Image width={1102} height={364} src="/performanceimg.png" className="mt-10" alt="" />
+            <Image width={1102} height={364} src="/performanceimg.png" className="mt-10 performanceimgbg" alt="" />
         </div>
       </div>
     </div>

@@ -13,7 +13,7 @@ const Obsevability = () => {
   return (
     <div>
       {/* Model Inference */}
-      <div className="mt-10 shadow-lg rounded-lg">
+      <div className="mt-10 shadow-sm rounded-lg">
         <button
           onClick={() => setIsInference(!isInference)}
           className="w-full text-left p-4 bg-[#DCEAF7] font-20 font-inter font-normal leading-6 rounded-lg border border-[#0000001F]"
@@ -77,7 +77,7 @@ const Obsevability = () => {
         )}
       </div>
       {/* Bias & Drift Tracing */}
-      <div className="mt-5 shadow-lg rounded-lg">
+      <div className="mt-5 shadow-sm rounded-lg">
         <button
           onClick={() => setIsPerformance(!isPerformance)}
           className="w-full text-left p-4 bg-[#DCEAF7] font-20 font-inter font-normal leading-6 rounded-lg border border-[#0000001F]"
@@ -121,7 +121,7 @@ const Obsevability = () => {
         )}
       </div>
       {/* Benchmarking and Baselining */}
-      <div className="mt-5 shadow-lg rounded-lg">
+      <div className="mt-5 shadow-sm rounded-lg">
         <button
           onClick={() => setIsBenchmarking(!isBenchmarking)}
           className="w-full text-left p-4 bg-[#DCEAF7] font-20 font-inter font-normal leading-6 rounded-lg border border-[#0000001F]"
@@ -181,7 +181,7 @@ const Obsevability = () => {
         )}
       </div>
       {/* Feature Performance */}
-      <div className="mt-5 shadow-lg rounded-lg">
+      <div className="mt-5 shadow-sm rounded-lg">
         <button
           onClick={() => setIsFeature(!isFeature)}
           className="w-full text-left p-4 bg-[#DCEAF7] font-20 font-inter font-normal leading-6 rounded-lg border border-[#0000001F]"

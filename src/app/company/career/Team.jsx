@@ -79,7 +79,7 @@ const Team = () => {
             <h1 className="font-40 fon-inter font-bold textcolor leading-[72px] mb-5 md:mb-10">
               Our Values
             </h1>
-            <div className=" grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5 gap-10 items-center">
+            <div className=" grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5 gap-5 items-center">
               {careerdata.map((item, index) => (
                 <div
                   key={index}
@@ -117,7 +117,7 @@ const Team = () => {
               {careerperks.map((item, perks) => (
                 <div
                   key={perks}
-                  className="h-full rounded-lg flex flex-col justify-start items-start text-start p-7 bg-white shadow-xl"
+                  className="h-full rounded-lg flex flex-col justify-start items-start text-start p-7 bg-white shadow-[0_3px_10px_rgb(0,0,0,0.2)]"
                 >
                   <div className="md:flex items-center justify-between w-full">
                     <div className="font-bold font-inter font-36 leading-8 md:leading-10 mb-2 mt-3">
@@ -145,7 +145,7 @@ const Team = () => {
         </div>
       </div>
 
-      <div className="bg-[#0424401F]">
+      <div className="bg-[#0424401F] positionbg">
         <div className="widthclass">
           <div className="p-5 md:p-16 flex-col flex justify-center items-center ">
             <h1 className="font-40 fon-inter font-bold textcolor leading-10 md:leading-[72px] text-center">

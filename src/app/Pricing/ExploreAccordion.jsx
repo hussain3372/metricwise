@@ -13,7 +13,7 @@ const ExploreAccordion = () => {
   return (
     <div>
       {/* Platform Deployment */}
-      <div className="mt-14 shadow-lg rounded-lg">
+      <div className="mt-14 shadow-sm rounded-lg">
         <button
           onClick={() => setIsPlatform(!isPlatform)}
           className="w-full text-left p-4 bg-[#DCEAF7] font-20 font-inter font-normal leading-6 rounded-lg border border-[#0000001F]"

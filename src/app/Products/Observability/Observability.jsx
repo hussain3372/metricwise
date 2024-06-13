@@ -5,7 +5,7 @@ const Monitoring = () => {
   return (
     <div>
       <div className="widthclass">
-        <div className="px-9 mt-10 md:mt-0">
+        <div className="px-9 mt-10 md:mt-30">
           {/* <div className="flex items-center">
             <h1 className="font-24 font-normal font-inter flex items-center gap-2">
               Metricwise
@@ -40,7 +40,7 @@ const Monitoring = () => {
 
         <div>
           <div>
-            <div className="grid md:grid-cols-2 items-center gap-36 mt-20">
+            <div className="grid md:grid-cols-2 items-center md:gap-36 mt-20">
               <div className=" order-2 md:order-1">
               <Image src="/mon1.png" width={690} height={717} alt="" />
               </div>
@@ -55,7 +55,7 @@ const Monitoring = () => {
                 </p>
               </div>
             </div>
-            <div className="grid md:grid-cols-2 items-center gap-36 mt-20">
+            <div className="grid md:grid-cols-2 items-center md:gap-36">
               <div className="order-2 md:order-2 flex justify-end">
               <Image width={483} height={590} src="/mon2.png" alt="" />
               </div>
@@ -71,7 +71,7 @@ const Monitoring = () => {
                 </p>
               </div>
             </div>
-            <div className="grid md:grid-cols-2 items-center gap-36 mt-20">
+            <div className="grid md:grid-cols-2 items-center md:gap-36">
               <div className="order-2 md:order-1">
               <Image width={483} height={590} src="/mon3.png" alt="" />
               </div>
@@ -87,7 +87,7 @@ const Monitoring = () => {
                 </p>
               </div>
             </div>
-            <div className="grid md:grid-cols-2 items-center gap-36 mt-20">
+            <div className="grid md:grid-cols-2 items-center md:gap-36">
               <div className="order-2 md:order-2 flex justify-end">
               <Image width={483} height={590} src="/mon4.png" alt="" />
               </div>

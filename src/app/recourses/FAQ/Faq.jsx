@@ -9,7 +9,7 @@ const AccordionItem = ({ title, content }) => {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
-    <div className="mt-5 font-16 font-inter font-normal leading-6 border border-[#0000001F] rounded-lg shadow-md overflow-hidden">
+    <div className="mt-5 font-16 font-inter font-normal leading-6 border border-[#0000001F] rounded-lg shadow-[0_3px_5px_rgb(0,0,0,0.2)] overflow-hidden">
       <button
         onClick={() => setIsOpen(!isOpen)}
         className="w-full text-left p-4 bg-[#FFFFFF] font-20 font-inter font-normal leading-6"
@@ -105,8 +105,8 @@ const Faq = () => {
   ];
 
   return (
-    <div className="faq">
-      <div className="relative">
+    <div className="">
+      <div className="faq relative">
         {/* <div className="flex items-center widthclass">
           <h1 className="text-black pl-16 pt-10 font-24 font-normal font-inter flex items-center flex-wrap gap-2">
             Metricwise
@@ -115,21 +115,21 @@ const Faq = () => {
             </span>
           </h1>
         </div> */}
-        <div className="flex flex-col pt-10 pb-2 md:pb-20 justify-center items-center m-auto text-black widthclass">
+        <div className="flex flex-col pt-10 md:pt-40 pb-2 md:pb-20 justify-center items-center m-auto text-black widthclass">
           <h1 className="font-64 font-inter font-bold leading-[80px] mb-8">
             We are here to help you
           </h1>
           <div className="relative">
             <input
               type="text"
-              className="shadow-lg rounded-xl w-[290px] sm:w-[500px] md:w-[700px] xl:w-[800px] h-[60px] sm:h-[72px] p-6 pl-16 pr-24 textcolor"
+              className="shadow-[0_3px_5px_rgb(0,0,0,0.2)] rounded-xl w-[290px] sm:w-[500px] md:w-[700px] xl:w-[800px] h-[60px] sm:h-[72px] p-6 pl-16 pr-24 textcolor"
               placeholder="Ask a question..."
             />
             <div className="absolute top-4 sm:top-5 pl-3">
               <Image width={28} height={28} src="/search.png" alt="" />
             </div>
             <div className="absolute top-3 sm:top-4 right-0 pr-3">
-              <button className="font-16 fontregular leading-5 text-white bg-[#042440] pt-2 pb-2 pl-3 pr-3 rounded-[8px]">
+              <button className="font-16 font-inter font-normal leading-5 text-white bg-[#042440] pt-2 pb-2 pl-3 pr-3 rounded-[8px]">
                 Search
               </button>
             </div>
@@ -144,7 +144,7 @@ const Faq = () => {
       <div className="widthclass">
         <div>
           <div>
-            <div className="min-h-screen p-3 md:p-6">
+            <div className="min-h-screen px-7 py-20">
               <Head>
                 <title>FAQ - Metricwise</title>
               </Head>
@@ -184,7 +184,7 @@ const Faq = () => {
               </span>
             </div>
           </div>
-          <div class="max-w-sm h-full rounded-lg overflow-hidden border-2 border-[#EBECF2] shadow-lg flex flex-col justify-center items-center text-center p-7">
+          <div class="max-w-sm h-full rounded-lg overflow-hidden border-2 border-[#EBECF2] flex flex-col justify-center items-center text-center p-7">
             <Image
               width={55}
               height={55}
@@ -207,7 +207,7 @@ const Faq = () => {
               </span>
             </div>
           </div>
-          <div class="max-w-sm h-full rounded-lg overflow-hidden border-2 border-[#EBECF2] shadow-lg flex flex-col justify-center items-center text-center p-7">
+          <div class="max-w-sm h-full rounded-lg overflow-hidden border-2 border-[#EBECF2] flex flex-col justify-center items-center text-center p-7">
             <Image
               width={55}
               height={55}
@@ -221,8 +221,7 @@ const Faq = () => {
               </div>
               <p class="text-gray-700 text-base">
                 Enable observability and governance for your ML model and data
-                monitoring effortlessly with Metricwise integrations, requiring
-                just a few lines of code.
+                monitoring.
               </p>
             </div>
             <div class="px-6 pt-4 pb-2">

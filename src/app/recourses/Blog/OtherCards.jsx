@@ -11,7 +11,7 @@ const OtherCards = () => {
           otherCardsData.map((item, index) => (
             <div
               key={index}
-              className="sm:flex bg-white shadow-xl gap-5 p-6 rounded-[20px]"
+              className="sm:flex bg-white shadow-[0_3px_15px_rgb(0,0,0,0.2)] gap-5 p-6 rounded-[20px]"
             >
               <div className="w-[128px] h-[160px] mb-5 sm:mb-0">
                 <Image

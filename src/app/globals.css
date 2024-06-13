@@ -8,7 +8,12 @@
   margin: 0;
   padding: 0;
 }
-
+  /* .performanceimgbg {
+    background-image: url(../../public/performanceimgbg.png);
+    background-position: center;
+    background-size: 60%;
+    background-repeat: no-repeat;
+  } */
 .demoparent {
   background-image: url(../../public/wavebg1.png);
   background-position: center;
@@ -18,7 +23,7 @@
 .faq {
   background-image: url(../../public/faqbg.png);
   background-size: 100%;
-  background-position: top right;
+  background-position: bottom right;
   background-repeat: no-repeat;
 }
 .career {
@@ -29,8 +34,8 @@
 }
 .blog {
   background-image: url(../../public/blogbg.png);
-  background-size: 70%;
-  background-position: right;
+  background-position: bottom right;
+  background-size: 60%;
   background-repeat: no-repeat;
 }
 .aboutbg {
@@ -48,7 +53,7 @@
 .pricebg {
   background-image: url(../../public/pricebg.png);
   background-position: top right;
-  background-size: 80%;
+  background-size: 50%;
   background-repeat: no-repeat;
 }
 .monbg {
@@ -68,6 +73,12 @@
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
+}
+.positionbg {
+  background-image: url(../../public/positionbg.png);
+  background-size: 30%;
+  background-repeat: no-repeat;
+  background-position: bottom left;
 }
 /* styles/globals.css */
 
@@ -256,12 +267,7 @@
 .font-40 {
   font-size: 30px;
 }
-.faq {
-  background-image: url(../../public/faqbg.png);
-  background-size: 100%;
-  background-repeat: no-repeat;
-  background-position: top right;
-}
+
 .blog {
   background-size: cover;
 }
@@ -293,9 +299,6 @@
 .pricebg {
   background-image: none;
 }
-}
-.faq {
-  background-image: none;
 }
 .featurebg {
   background-image: url(../../public/circlebg.png);

@@ -4,6 +4,7 @@ import React from "react";
 import Typewriter from "typewriter-effect";
 import Image from "next/image";
 import Cube from "./Cube";
+import Space from "./Space";
 const HeroSection = () => {
   return (
     <div className="border-b border-[#042440] border-opacity-[12%] mt-10 md:mt-0">
@@ -24,8 +25,8 @@ const HeroSection = () => {
               }}
               onInit={(typewriter) => {
                 typewriter
-                  .typeString("Detect, analyze, and mitigate")
-                  .pauseFor(2000) // Adjust the pause duration to your preference
+                  .typeString("Detect, analyze, and mitigate <br/> model and data issues faster")
+                  .pauseFor(200) // Adjust the pause duration to your preference
                   .deleteAll()
                   .start();
               }}
@@ -46,6 +47,9 @@ const HeroSection = () => {
           {/* <Cube/> */}
         </div>
       </div>
+
+      {/* <Space/> */}
+
     </div>
   );
 };

@@ -73,7 +73,11 @@ const Card = () => {
                   )}
                 </ul>
               </div>
-              <div className={` flex justify-center md:justify-start ${index % 2 === 0 ? "flex justify-center md:justify-end" : ""}`}>
+              <div
+                className={` flex justify-center md:justify-start ${
+                  index % 2 === 0 ? "flex justify-center md:justify-end" : ""
+                }`}
+              >
                 <Image
                   src={item.img}
                   alt="Card image"
@@ -85,18 +89,19 @@ const Card = () => {
           ))}
         </div>
       </div>
+      
       <div className="widthclass">
-        <div className="bg-white flex flex-col mt-20 md:mt-40 mb-36 justify-center items-center text-center shadow-lg rounded-[20px] p-5 sm:p-20 m-5 md:m-10">
+        <div className="bg-white flex flex-col mt-20 md:mt-40 mb-36 justify-center items-center text-center shadow-[0_3px_10px_rgb(0,0,0,0.2)] rounded-[20px] p-5 sm:p-20 m-5 md:m-10">
           <h1 className="font-36 font-inter font-bold leading-10 textcolor">
             Lets Get Started
           </h1>
           <p className="font-24 font-inter font-normal leading-8 mt-4 textcolor opacity-60">
-            you are looking to streamline operations, enhance customer
+            You are looking to streamline operations, enhance customer
             experiences, or drive <br /> innovation, we have the expertise and
             technology to help you succeed.
           </p>
           <div className="mt-6">
-            <button className="flex sm:mt-0 items-center gap-3 border border-[#042440] rounded-[10px] bg-[#042440] white font-20 fontmedium leading-6 pt-2 md:pt-3 pb-2 md:pb-3 pl-2 md:pl-5 pr-2 md:pr-5">
+            <button className="flex sm:mt-0 items-center gap-3 border border-[#042440] rounded-[10px] bg-[#042440] text-white font-20 font-medium leading-6 pt-2 md:pt-3 pb-2 md:pb-3 pl-2 md:pl-5 pr-2 md:pr-5">
               Get Started For Free
               <Image width={24} height={24} src="/free.png" alt="" />
             </button>

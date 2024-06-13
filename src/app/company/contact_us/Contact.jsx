@@ -117,7 +117,7 @@ const Contact = () => {
               <div className="grid grid-cols-2 bg-[#FFFFFF] p-5 border border-t-0 border-b-0 border-r-0 border-l-[#042440] border-l-4 rounded-lg">
                 <div className="flex flex-col font-20 font-inter font-semibold textcolor leading-6">
                   Sales
-                  <span className="font-12 fontregular leading-4 mt-4">
+                  <span className="font-12 font-inter font-normal leading-4 mt-2">
                     sales@metricwise.ai
                   </span>
                 </div>
@@ -127,35 +127,35 @@ const Contact = () => {
               </div>
               <div className="grid grid-cols-2 bg-[#FFFFFF] p-5 border border-t-0 border-b-0 border-r-0 border-l-[#042440] border-l-4 rounded-lg">
                 <div className="flex flex-col font-20 font-inter font-semibold textcolor leading-6">
-                  Sales
-                  <span className="font-12 fontregular leading-4 mt-4">
-                    sales@metricwise.ai
+                Support
+                  <span className="font-12 font-inter font-normal leading-4 mt-2">
+                  support@metricwise.ai
                   </span>
                 </div>
                 <div className="flex justify-end items-center">
-                  <Image width={44} height={44} src="/contact1.png" alt="" />
+                  <Image width={44} height={44} src="/contact2.png" alt="" />
                 </div>
               </div>
               <div className="grid grid-cols-2 bg-[#FFFFFF] p-5 border border-t-0 border-b-0 border-r-0 border-l-[#042440] border-l-4 rounded-lg">
                 <div className="flex flex-col font-20 font-inter font-semibold textcolor leading-6">
-                  Sales
-                  <span className="font-12 fontregular leading-4 mt-4">
-                    sales@metricwise.ai
+                Careers
+                  <span className="font-12 font-inter font-normal leading-4 mt-2">
+                  careers@metricwise.ai
                   </span>
                 </div>
                 <div className="flex justify-end items-center">
-                  <Image width={44} height={44} src="/contact1.png" alt="" />
+                  <Image width={44} height={44} src="/contact3.png" alt="" />
                 </div>
               </div>
               <div className="grid grid-cols-2 bg-[#FFFFFF] p-5 border border-t-0 border-b-0 border-r-0 border-l-[#042440] border-l-4 rounded-lg">
                 <div className="flex flex-col font-20 font-inter font-semibold textcolor leading-6">
-                  Sales
-                  <span className="font-12 fontregular leading-4 mt-4">
-                    sales@metricwise.ai
+                General
+                  <span className="font-12 font-inter font-normal leading-4 mt-2">
+                  info@metricwise.ai
                   </span>
                 </div>
                 <div className="flex justify-end items-center">
-                  <Image width={44} height={44} src="/contact1.png" alt="" />
+                  <Image width={44} height={44} src="/contact4.png" alt="" />
                 </div>
               </div>
             </div>

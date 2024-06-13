@@ -13,7 +13,7 @@ const Monitoring = () => {
   return (
     <div>
       {/* Platform Deployment */}
-      <div className="mt-10 shadow-lg rounded-lg">
+      <div className="mt-10 shadow-md rounded-lg">
         <button
           onClick={() => setIsIntegrity(!isIntegrity)}
           className="w-full text-left p-4 bg-[#DCEAF7] font-20 font-inter font-normal leading-6 rounded-lg border border-[#0000001F]"

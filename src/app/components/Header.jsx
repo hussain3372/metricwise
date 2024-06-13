@@ -81,13 +81,13 @@ export default function Example() {
               onMouseEnter={() => setIsOpen(true)}
               onMouseLeave={() => setIsOpen(false)}
             >
-              <PopoverButton className="flex items-center gap-x-1">
+              <Popover.Button className="flex items-center gap-x-1">
                 Product
                 <ChevronDownIcon
                   className="h-5 w-5 flex-none text-gray-400"
                   aria-hidden="true"
                 />
-              </PopoverButton>
+              </Popover.Button>
             </div>
 
             <Transition
@@ -99,7 +99,7 @@ export default function Example() {
               leaveFrom="opacity-100 translate-y-0"
               leaveTo="opacity-0 translate-y-1"
             >
-              <PopoverPanel
+              <Popover.Panel
                 className="absolute flex justify-around -left-48 top-full z-10 mt-9 w-screen max-w-5xl overflow-hidden rounded-lg bg-white shadow-lg ring-1 ring-gray-900/5"
                 onMouseEnter={() => setIsOpen(true)}
                 onMouseLeave={() => setIsOpen(false)}
@@ -114,6 +114,7 @@ export default function Example() {
                     <div
                       key={item.name}
                       className="group relative flex items-center gap-x-6 rounded-lg text-sm leading-6 p-2 hover:bg-gray-50"
+                      onClick={() => setIsOpen(false)}
                     >
                       <div className="flex h-11 w-11 flex-none items-center justify-center rounded-lg bg-gray-50 group-hover:bg-white p-2">
                         <Image width={40} height={40} src={item.icon} alt="" />
@@ -122,6 +123,7 @@ export default function Example() {
                         <Link
                           href={item.href}
                           className="block font-semibold text-gray-900"
+                          onClick={() => setIsOpen(false)}
                         >
                           {item.name}
                           <span className="absolute inset-0" />
@@ -131,7 +133,7 @@ export default function Example() {
                     </div>
                   ))}
                 </div>
-              </PopoverPanel>
+              </Popover.Panel>
             </Transition>
           </Popover>
 
@@ -141,13 +143,13 @@ export default function Example() {
               onMouseEnter={() => setIsOpen1(true)}
               onMouseLeave={() => setIsOpen1(false)}
             >
-              <PopoverButton className="flex items-center gap-x-1">
+              <Popover.Button className="flex items-center gap-x-1">
                 Solution
                 <ChevronDownIcon
                   className="h-5 w-5 flex-none text-gray-400"
                   aria-hidden="true"
                 />
-              </PopoverButton>
+              </Popover.Button>
             </div>
 
             <Transition
@@ -159,12 +161,12 @@ export default function Example() {
               leaveFrom="opacity-100 translate-y-0"
               leaveTo="opacity-0 translate-y-1"
             >
-              <PopoverPanel
-                className="absolute flex flex-col -left-80 top-full z-10 mt-9 w-screen max-w-5xl overflow-hidden rounded-lg bg-white shadow-lg ring-1 ring-gray-900/5"
+              <Popover.Panel
+                className="absolute flex flex-col -left-80 top-full z-10 mt-9 w-screen max-w-5xl sm:h-[400px] md:h-[500px] lg:h-[417px] 2xl:h-[580px] overflow-auto rounded-lg bg-white shadow-lg ring-1 ring-gray-900/5"
                 onMouseEnter={() => setIsOpen1(true)}
                 onMouseLeave={() => setIsOpen1(false)}
               >
-                <div className="flex ">
+                <div className="flex">
                   <div className="flex flex-col p-10">
                     <h1 className="font-32 font-bold leading-10">Solution</h1>
                     <div className="flex-col space-y-9 mt-6">
@@ -196,6 +198,7 @@ export default function Example() {
                         <div
                           key={item.name}
                           className="group relative flex items-center gap-x-6 rounded-lg text-sm leading-6 p-2 hover:bg-gray-50"
+                          onClick={() => setIsOpen1(false)}
                         >
                           <div className="flex h-11 w-11 flex-none items-center justify-center rounded-lg bg-gray-50 group-hover:bg-white">
                             <Image
@@ -209,6 +212,7 @@ export default function Example() {
                             <Link
                               href={item.href}
                               className="block font-semibold text-gray-900"
+                              onClick={() => setIsOpen1(false)}
                             >
                               {item.name}
                               <span className="absolute inset-0" />
@@ -222,7 +226,7 @@ export default function Example() {
                     )}
                   </div>
                 </div>
-              </PopoverPanel>
+              </Popover.Panel>
             </Transition>
           </Popover>
 
@@ -240,13 +244,13 @@ export default function Example() {
               onMouseEnter={() => setIsOpen3(true)}
               onMouseLeave={() => setIsOpen3(false)}
             >
-              <PopoverButton className="flex items-center gap-x-1">
+              <Popover.Button className="flex items-center gap-x-1">
                 Docs
                 <ChevronDownIcon
                   className="h-5 w-5 flex-none text-gray-400"
                   aria-hidden="true"
                 />
-              </PopoverButton>
+              </Popover.Button>
             </div>
 
             <Transition
@@ -258,7 +262,7 @@ export default function Example() {
               leaveFrom="opacity-100 translate-y-0"
               leaveTo="opacity-0 translate-y-1"
             >
-              <PopoverPanel
+              <Popover.Panel
                 className="absolute flex justify-around -left-[580px] top-full z-10 mt-9 w-screen max-w-5xl overflow-hidden rounded-lg bg-white shadow-lg ring-1 ring-gray-900/5"
                 onMouseEnter={() => setIsOpen3(true)}
                 onMouseLeave={() => setIsOpen3(false)}
@@ -271,6 +275,7 @@ export default function Example() {
                     <div
                       key={item.name}
                       className="group relative flex items-center gap-x-6 rounded-lg text-sm leading-6 p-2 hover:bg-gray-50"
+                      onClick={() => setIsOpen3(false)}
                     >
                       <div className="flex h-11 w-11 flex-none items-center justify-center rounded-lg bg-gray-50 group-hover:bg-white">
                         <Image width={40} height={40} src={item.icon} alt="" />
@@ -279,6 +284,7 @@ export default function Example() {
                         <Link
                           href={item.href}
                           className="block font-semibold text-gray-900"
+                          onClick={() => setIsOpen3(false)}
                         >
                           {item.name}
                           <span className="absolute inset-0" />
@@ -288,7 +294,7 @@ export default function Example() {
                     </div>
                   ))}
                 </div>
-              </PopoverPanel>
+              </Popover.Panel>
             </Transition>
           </Popover>
 
@@ -298,13 +304,13 @@ export default function Example() {
               onMouseEnter={() => setIsOpen4(true)}
               onMouseLeave={() => setIsOpen4(false)}
             >
-              <PopoverButton className="flex items-center gap-x-1">
-                Recources
+              <Popover.Button className="flex items-center gap-x-1">
+                Resources
                 <ChevronDownIcon
                   className="h-5 w-5 flex-none text-gray-400"
                   aria-hidden="true"
                 />
-              </PopoverButton>
+              </Popover.Button>
             </div>
 
             <Transition
@@ -316,14 +322,14 @@ export default function Example() {
               leaveFrom="opacity-100 translate-y-0"
               leaveTo="opacity-0 translate-y-1"
             >
-              <PopoverPanel
+              <Popover.Panel
                 className="absolute flex justify-around -left-[650px] top-full z-10 mt-9 w-screen max-w-5xl overflow-hidden rounded-lg bg-white shadow-lg ring-1 ring-gray-900/5"
                 onMouseEnter={() => setIsOpen4(true)}
                 onMouseLeave={() => setIsOpen4(false)}
               >
                 <div className="">
                   <h1 className="p-10 font-32 font-bold leading-10">
-                    Recources
+                    Resources
                   </h1>
                 </div>
                 <div className="p-4 grid grid-cols-2">
@@ -331,6 +337,7 @@ export default function Example() {
                     <div
                       key={item.name}
                       className="group relative flex items-center gap-x-6 rounded-lg text-sm leading-6 p-2 hover:bg-gray-50"
+                      onClick={() => setIsOpen4(false)}
                     >
                       <div className="flex h-11 w-11 flex-none items-center justify-center rounded-lg bg-gray-50 group-hover:bg-white">
                         <Image width={40} height={40} src={item.icon} alt="" />
@@ -339,6 +346,7 @@ export default function Example() {
                         <Link
                           href={item.href}
                           className="block font-semibold text-gray-900"
+                          onClick={() => setIsOpen4(false)}
                         >
                           {item.name}
                           <span className="absolute inset-0" />
@@ -348,7 +356,7 @@ export default function Example() {
                     </div>
                   ))}
                 </div>
-              </PopoverPanel>
+              </Popover.Panel>
             </Transition>
           </Popover>
 
@@ -358,13 +366,13 @@ export default function Example() {
               onMouseEnter={() => setIsOpen5(true)}
               onMouseLeave={() => setIsOpen5(false)}
             >
-              <PopoverButton className="flex items-center gap-x-1">
+              <Popover.Button className="flex items-center gap-x-1">
                 Company
                 <ChevronDownIcon
                   className="h-5 w-5 flex-none text-gray-400"
                   aria-hidden="true"
                 />
-              </PopoverButton>
+              </Popover.Button>
             </div>
 
             <Transition
@@ -376,7 +384,7 @@ export default function Example() {
               leaveFrom="opacity-100 translate-y-0"
               leaveTo="opacity-0 translate-y-1"
             >
-              <PopoverPanel
+              <Popover.Panel
                 className="absolute flex justify-around -left-[800px] top-full z-10 mt-9 w-screen max-w-5xl overflow-hidden rounded-lg bg-white shadow-lg ring-1 ring-gray-900/5"
                 onMouseEnter={() => setIsOpen5(true)}
                 onMouseLeave={() => setIsOpen5(false)}
@@ -389,6 +397,7 @@ export default function Example() {
                     <div
                       key={item.name}
                       className="group relative flex items-center gap-x-6 rounded-lg text-sm leading-6 p-2 hover:bg-gray-50"
+                      onClick={() => setIsOpen5(false)}
                     >
                       <div className="flex h-11 w-11 flex-none items-center justify-center rounded-lg bg-gray-50 group-hover:bg-white">
                         <Image width={40} height={40} src={item.icon} alt="" />
@@ -397,6 +406,7 @@ export default function Example() {
                         <Link
                           href={item.href}
                           className="block font-semibold text-gray-900"
+                          onClick={() => setIsOpen5(false)}
                         >
                           {item.name}
                           <span className="absolute inset-0" />
@@ -406,18 +416,18 @@ export default function Example() {
                     </div>
                   ))}
                 </div>
-              </PopoverPanel>
+              </Popover.Panel>
             </Transition>
           </Popover>
         </PopoverGroup>
 
         <div className="hidden md:flex md:flex-1 md:justify-end gap-5 items-center">
-          <a href="#" className="font-16 fontregular leading-[20px] textcolor">
+          <a href="#" className="font-16 font-inter font-normal leading-[20px] textcolor">
             Sign Up
           </a>
           <Link
             href="/Demo"
-            className="font-16 fontregular leading-[20px] white border border-[#042440] rounded-[15px] pt-3 pb-3 pl-4 pr-4 bg-[#042440]"
+            className="font-16 font-inter font-normal leading-[20px] white border border-[#042440] rounded-[15px] pt-3 pb-3 pl-4 pr-4 bg-[#042440]"
           >
             Book a Demo
           </Link>

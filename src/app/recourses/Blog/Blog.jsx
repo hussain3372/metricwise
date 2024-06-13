@@ -9,7 +9,7 @@ import { PiGreaterThanLight } from "react-icons/pi";
 const Blog = () => {
   return (
     <div className="">
-      <div className="blog mt-10 md:mt-0">
+      <div className="blog mt-10 pb-36 md:mt-20">
         {/* <div className="flex items-center widthclass">
           <h1 className="black pl-16 pt-10 pb-28  font-24 font-normal font-inter flex items-center gap-2">
             Metricwise
@@ -18,11 +18,11 @@ const Blog = () => {
             </span>
           </h1>
         </div> */}
-        <div className="grid md:grid-cols-2 items-center white  px-5 md:px-10 py-10 relative widthclass ">
+        <div className="grid md:grid-cols-2 items-center white px-5 md:px-10 py-20 relative widthclass ">
           <div>
-            <div className="absolute -top-44 left-0">
-              {/* <Image width={138} height={138} src="/hr1.png" alt="" /> */}
-            </div>
+            {/* <div className="absolute -top-44 left-0">
+              <Image width={138} height={138} src="/hr1.png" alt="" />
+            </div> */}
             <h1 className="font-36 fontbold lg:leading-40 mb-5 text-black">
               Monitoring V/S Observability
             </h1>
@@ -39,9 +39,9 @@ const Blog = () => {
               Learn More
               <Image width={24} height={24} src="/free.png" alt="" />
             </button>
-            <div className="absolute left-0 bottom-0 -z-10">
+            {/* <div className="absolute left-0 bottom-0 -z-10">
               <Image width={108} height={136} src="/hr2.png" alt="" />
-            </div>
+            </div> */}
           </div>
         </div>
       </div>

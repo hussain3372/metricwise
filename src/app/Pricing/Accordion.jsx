@@ -9,7 +9,7 @@ const AccordionItem = ({ title, content }) => {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
-    <div className="mt-5 font-16 font-inter font-normal leading-6 border border-[#0000001F] rounded-lg shadow-md overflow-hidden">
+    <div className="mt-5 font-16 font-inter font-normal leading-6 border border-[#0000001F] rounded-lg shadow-[0_3px_5px_rgb(0,0,0,0.2)] overflow-hidden">
     <button
       onClick={() => setIsOpen(!isOpen)}
       className="w-full text-left p-4 bg-[#FFFFFF] font-20 font-inter font-normal leading-6"
