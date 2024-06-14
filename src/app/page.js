@@ -1,8 +1,8 @@
 import React from 'react'
-import HeroSection from './components/HeroSection'
-import Platform from './components/Platform'
-import Performance from "./components/Performance"
-import Card from './components/Card'
+import HeroSection from './components/Home/HeroSection'
+import Platform from './components/Home/Platform'
+import Performance from "./components/Home/Performance"
+import Card from './components/Home/Card'
 const page = () => {
   return (
     <div>

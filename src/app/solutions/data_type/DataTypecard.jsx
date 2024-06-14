@@ -3,38 +3,41 @@
 import React from "react";
 import { dataType } from "../../data/trust"; // Ensure this path is correct
 import Image from "next/image";
+import { Fade } from "react-reveal";
 
 const DataTypecard = () => {
   return (
     <div className="">
       {dataType.map((item, index) => (
-        <div
-          key={index}
-          className={`grid md:grid-cols-2 items-center px-10 sm:px-20 xl:px-64 py-10 ${
-            index % 2 === 0 ? "bg-[#F4F4F4]" : ""
-          }`}
-        >
-          <div className={`${index % 2 === 1 ? "md:order-last" : ""}`}>
-            <h1 className="font-36 fontbold font-inter leading-10">
-              {item.main}
-            </h1>
-            {item.Paragraph.map((para, paraIndex) => (
-              <p
-                key={paraIndex}
-                className="font-16 font-inter font-normal leading-[20px] mt-10"
-              >
-                {para}
-              </p>
-            ))}
-          </div>
+        <Fade key={index} left={index % 2 === 0} right={index % 2 !== 0}>
           <div
-            className={` flex justify-center mt-10 md:mt-0 ${
-              index % 2 === 0 ? "md:justify-end" : ""
+            key={index}
+            className={`grid md:grid-cols-2 items-center px-10 sm:px-20 xl:px-64 py-10 ${
+              index % 2 === 0 ? "bg-[#F4F4F4]" : ""
             }`}
           >
-            <Image src={item.pic} alt="Card image" width={400} height={200} />
+            <div className={`${index % 2 === 1 ? "md:order-last" : ""}`}>
+              <h1 className="font-36 fontbold font-inter leading-10">
+                {item.main}
+              </h1>
+              {item.Paragraph.map((para, paraIndex) => (
+                <p
+                  key={paraIndex}
+                  className="font-16 font-inter font-normal leading-[20px] mt-10"
+                >
+                  {para}
+                </p>
+              ))}
+            </div>
+            <div
+              className={` flex justify-center mt-10 md:mt-0 ${
+                index % 2 === 0 ? "md:justify-end" : ""
+              }`}
+            >
+              <Image src={item.pic} alt="Card image" width={400} height={200} />
+            </div>
           </div>
-        </div>
+        </Fade>
       ))}
     </div>
   );

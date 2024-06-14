@@ -3,30 +3,30 @@
 import React, { useState } from "react";
 import Head from "next/head";
 import { ChevronUpIcon, ChevronDownIcon } from "@heroicons/react/24/outline";
-
+import { Zoom } from "react-reveal";
 
 const AccordionItem = ({ title, content }) => {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
     <div className="mt-5 font-16 font-inter font-normal leading-6 border border-[#0000001F] rounded-lg shadow-[0_3px_5px_rgb(0,0,0,0.2)] overflow-hidden">
-    <button
-      onClick={() => setIsOpen(!isOpen)}
-      className="w-full text-left p-4 bg-[#FFFFFF] font-20 font-inter font-normal leading-6"
-    >
-      <div className="flex justify-between items-center">
-        <span>{title}</span>
-        <span>
-          {isOpen ? (
-            <ChevronUpIcon className="h-5 w-5 text-gray-400" />
-          ) : (
-            <ChevronDownIcon className="h-5 w-5 text-gray-400" />
-          )}
-        </span>
-      </div>
-    </button>
-    {isOpen && <div className="p-4 bg-white">{content}</div>}
-  </div>
+      <button
+        onClick={() => setIsOpen(!isOpen)}
+        className="w-full text-left p-4 bg-[#FFFFFF] font-20 font-inter font-normal leading-6"
+      >
+        <div className="flex justify-between items-center">
+          <span>{title}</span>
+          <span>
+            {isOpen ? (
+              <ChevronUpIcon className="h-5 w-5 text-gray-400" />
+            ) : (
+              <ChevronDownIcon className="h-5 w-5 text-gray-400" />
+            )}
+          </span>
+        </div>
+      </button>
+      {isOpen && <div className="p-4 bg-white">{content}</div>}
+    </div>
   );
 };
 
@@ -98,20 +98,22 @@ const Faq = () => {
     <div>
       <div className="widthclass">
         <div>
-          <div className="mt-16">
-            <h1 className="font-36 font-inter  font-bold leading-10 flex justify-center items-center">
-              FAQ’s
-            </h1>
+          <Zoom>
+            <div className="mt-16">
+              <h1 className="font-36 font-inter  font-bold leading-10 flex justify-center items-center">
+                FAQ’s
+              </h1>
 
-            <div className="p-6 bg-white">
-              <Head>
-                <title>FAQ - Metricwise</title>
-              </Head>
-              <main className=" mx-auto">
-                <Accordion items={accordionItems} />
-              </main>
+              <div className="p-6 bg-white">
+                <Head>
+                  <title>FAQ - Metricwise</title>
+                </Head>
+                <main className=" mx-auto">
+                  <Accordion items={accordionItems} />
+                </main>
+              </div>
             </div>
-          </div>
+          </Zoom>
         </div>
       </div>
     </div>

@@ -349,3 +349,26 @@ textarea {
 .custom-shadow {
   box-shadow: 0 3px 5px rgba(0, 0, 0, 0.2);
 }
+
+.image {
+  animation: animate 2s linear infinite;
+}
+@keyframes animate {
+  0% {
+    filter: hue-rotate(0deg);
+  }
+  100% {
+    filter: hue-rotate(360deg);
+  }
+}
+
+
+.animated-path {
+  animation: dash 5s linear infinite;
+}
+
+@keyframes dash {
+  to {
+    stroke-dashoffset: -100;
+  }
+}

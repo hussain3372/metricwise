@@ -3,6 +3,7 @@ import ExploreAccordion from "./ExploreAccordion";
 import Monitoring from "./Monitoring";
 import Observability from "./Observability";
 import Governance from "./Governance";
+import { Fade } from "react-reveal";
 
 const Faq = () => {
   return (
@@ -12,9 +13,7 @@ const Faq = () => {
           <li className="font-20 fontsemibold leading-6 opacity-60">
             Features
           </li>
-          <li className="font-20 fontsemibold leading-6 opacity-60">
-            Basic
-          </li>
+          <li className="font-20 fontsemibold leading-6 opacity-60">Basic</li>
           <li className="font-20 fontsemibold leading-6 opacity-60">
             Specialist
           </li>
@@ -29,22 +28,27 @@ const Faq = () => {
           <h1 className="font-36 font-inter font-bold leading-10 flex justify-center items-center mt-10">
             Monitoring Hub
           </h1>
-
-          <Monitoring />
+          <Fade right>
+            <Monitoring />
+          </Fade>
         </div>
 
         <div>
           <h1 className="font-36 font-inter font-bold leading-10 flex justify-center items-center mt-10">
             Observability Hub
           </h1>
-          <Observability />
+          <Fade left>
+            <Observability />
+          </Fade>
         </div>
 
         <div>
           <h1 className="font-36 font-inter font-bold leading-10 flex justify-center items-center mt-10">
             Governance Hub
           </h1>
-          <Governance />
+          <Fade right>
+            <Governance />
+          </Fade>
         </div>
       </div>
     </div>

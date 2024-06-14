@@ -4,6 +4,8 @@ import React, { useState } from "react";
 import Head from "next/head";
 import Image from "next/image";
 import { ChevronUpIcon, ChevronDownIcon } from "@heroicons/react/24/outline";
+import Tilt from "react-parallax-tilt";
+import { Fade, Zoom } from "react-reveal";
 
 const AccordionItem = ({ title, content }) => {
   const [isOpen, setIsOpen] = useState(false);
@@ -123,7 +125,7 @@ const Faq = () => {
             <input
               type="text"
               style={{ boxShadow: "0 3px 10px rgba(0, 0, 0, 0.2)" }}
-              className="relative shadow-[0_10px_20px_rgba(0,0,0,0.3)] rounded-xl w-[290px] sm:w-[500px] md:w-[700px] xl:w-[800px] h-[60px] sm:h-[72px] p-6 pl-16 pr-24 textcolor"
+              className="relative rounded-xl w-[290px] sm:w-[500px] md:w-[700px] xl:w-[800px] h-[60px] sm:h-[72px] p-6 pl-16 pr-24 textcolor"
               placeholder="Ask a question..."
             />
 
@@ -145,16 +147,18 @@ const Faq = () => {
 
       <div className="widthclass">
         <div>
-          <div>
-            <div className="px-7 py-20">
-              <Head>
-                <title>FAQ - Metricwise</title>
-              </Head>
-              <main className=" mx-auto">
-                <Accordion items={accordionItems} />
-              </main>
+          <Zoom>
+            <div>
+              <div className="px-7 py-20">
+                <Head>
+                  <title>FAQ - Metricwise</title>
+                </Head>
+                <main className=" mx-auto">
+                  <Accordion items={accordionItems} />
+                </main>
+              </div>
             </div>
-          </div>
+          </Zoom>
         </div>
       </div>
 
@@ -162,80 +166,90 @@ const Faq = () => {
         <h1 className="font-40 fon-inter font-bold textcolor leading-[72px] mb-10">
           Support
         </h1>
-        <div className="grid md:grid-cols-3 gap-10 items-center">
-          <div class="max-w-sm h-full rounded-lg border-2 border-[#EBECF2] flex flex-col justify-center items-center text-center p-7">
-            <Image
-              width={55}
-              height={55}
-              class=""
-              src="/sup1.png"
-              alt="Sunset in the mountains"
-            />
-            <div class="px-6 py-4">
-              <div class="font-medium gont-inter font-20 leading-7 mb-2 mt-3">
-                Documentation:
+        <Fade top>
+          <div className="grid md:grid-cols-3 gap-10 items-center">
+            <Tilt>
+              <div class="max-w-sm h-full rounded-lg border-2 border-[#EBECF2] flex flex-col justify-center items-center text-center p-7">
+                <Image
+                  width={55}
+                  height={55}
+                  class=""
+                  src="/sup1.png"
+                  alt="Sunset in the mountains"
+                />
+                <div class="px-6 py-4">
+                  <div class="font-medium gont-inter font-20 leading-7 mb-2 mt-3">
+                    Documentation:
+                  </div>
+                  <p class="text-gray-700 text-base">
+                    Gain insights into how Metricwise operates and receive
+                    assistance on common issues.
+                  </p>
+                </div>
+                <div class="px-6 pt-4 pb-2">
+                  <span class="inline-block bg-[#042440] rounded-full px-8 py-2 text-sm font-semibold text-white mr-2 mb-2">
+                    Head to Docs
+                  </span>
+                </div>
               </div>
-              <p class="text-gray-700 text-base">
-                Gain insights into how Metricwise operates and receive
-                assistance on common issues.
-              </p>
-            </div>
-            <div class="px-6 pt-4 pb-2">
-              <span class="inline-block bg-[#042440] rounded-full px-8 py-2 text-sm font-semibold text-white mr-2 mb-2">
-                Head to Docs
-              </span>
-            </div>
-          </div>
-          <div class="max-w-sm h-full rounded-lg overflow-hidden border-2 border-[#EBECF2] flex flex-col justify-center items-center text-center p-7">
-            <Image
-              width={55}
-              height={55}
-              class=""
-              src="/sup2.png"
-              alt="Sunset in the mountains"
-            />
-            <div class="px-6 py-4">
-              <div class="font-medium gont-inter font-20 leading-7 mb-2 mt-3">
-                Demos:
+            </Tilt>
+            <Tilt>
+              <div class="max-w-sm h-full rounded-lg overflow-hidden border-2 border-[#EBECF2] flex flex-col justify-center items-center text-center p-7">
+                <Image
+                  width={55}
+                  height={55}
+                  class=""
+                  src="/sup2.png"
+                  alt="Sunset in the mountains"
+                />
+                <div class="px-6 py-4">
+                  <div class="font-medium gont-inter font-20 leading-7 mb-2 mt-3">
+                    Demos:
+                  </div>
+                  <p class="text-gray-700 text-base">
+                    Explore the features of Metricwise through brief and
+                    informative video presentations.
+                  </p>
+                </div>
+                <div class="px-6 pt-4 pb-2">
+                  <span class="inline-block bg-[#042440] rounded-full px-8 py-2 text-sm font-semibold text-white mr-2 mb-2">
+                    Explore Demos
+                  </span>
+                </div>
               </div>
-              <p class="text-gray-700 text-base">
-                Explore the features of Metricwise through brief and informative
-                video presentations.
-              </p>
-            </div>
-            <div class="px-6 pt-4 pb-2">
-              <span class="inline-block bg-[#042440] rounded-full px-8 py-2 text-sm font-semibold text-white mr-2 mb-2">
-                Explore Demos
-              </span>
-            </div>
-          </div>
-          <div class="max-w-sm h-full rounded-lg overflow-hidden border-2 border-[#EBECF2] flex flex-col justify-center items-center text-center p-7">
-            <Image
-              width={55}
-              height={55}
-              class=""
-              src="/sup3.png"
-              alt="Sunset in the mountains"
-            />
-            <div class="px-6 py-4">
-              <div class="font-medium gont-inter font-20 leading-7 mb-2 mt-3">
-                Integrations:
+            </Tilt>
+
+            <Tilt>
+              <div class="max-w-sm h-full rounded-lg overflow-hidden border-2 border-[#EBECF2] flex flex-col justify-center items-center text-center p-7">
+                <Image
+                  width={55}
+                  height={55}
+                  class=""
+                  src="/sup3.png"
+                  alt="Sunset in the mountains"
+                />
+                <div class="px-6 py-4">
+                  <div class="font-medium gont-inter font-20 leading-7 mb-2 mt-3">
+                    Integrations:
+                  </div>
+                  <p class="text-gray-700 text-base">
+                    Enable observability and governance for your ML model and
+                    data monitoring.
+                  </p>
+                </div>
+                <div class="px-6 pt-4 pb-2">
+                  <span class="inline-block bg-[#042440] rounded-full px-8 py-2 text-sm font-semibold text-white mr-2 mb-2">
+                    Explore Guidebooks
+                  </span>
+                </div>
               </div>
-              <p class="text-gray-700 text-base">
-                Enable observability and governance for your ML model and data
-                monitoring.
-              </p>
-            </div>
-            <div class="px-6 pt-4 pb-2">
-              <span class="inline-block bg-[#042440] rounded-full px-8 py-2 text-sm font-semibold text-white mr-2 mb-2">
-                Explore Guidebooks
-              </span>
-            </div>
+            </Tilt>
           </div>
-        </div>
+        </Fade>
       </div>
     </div>
   );
 };
 
 export default Faq;
+  

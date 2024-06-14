@@ -36,7 +36,7 @@ import {
   Company,
   DataTypes,
   Industry,
-} from "../data/Head";
+} from "../../data/Head";
 import Link from "next/link";
 import Image from "next/image";
 function classNames(...classes) {
@@ -116,7 +116,7 @@ export default function Example() {
                       className="group relative flex items-center gap-x-6 rounded-lg text-sm leading-6 p-2 hover:bg-gray-50"
                       onClick={() => setIsOpen(false)}
                     >
-                      <div className="flex h-11 w-11 flex-none items-center justify-center rounded-lg bg-gray-50 group-hover:bg-white p-2">
+                      <div className="flex h-11 w-11 flex-none items-center justify-center rounded-lg">
                         <Image width={40} height={40} src={item.icon} alt="" />
                       </div>
                       <div className="flex-auto">
@@ -173,7 +173,7 @@ export default function Example() {
                       <button
                         className={`font-semibold ${
                           activeTab === "Industries"
-                            ? "text-gray-600"
+                            ? "text-gray-900"
                             : "text-gray-900"
                         }`}
                         onClick={() => setActiveTab("Industries")}
@@ -183,7 +183,7 @@ export default function Example() {
                       <button
                         className={`font-semibold ${
                           activeTab === "Data Types"
-                            ? "text-gray-600"
+                            ? "text-gray-900"
                             : "text-gray-900"
                         }`}
                         onClick={() => setActiveTab("DataTypes")}
@@ -200,7 +200,7 @@ export default function Example() {
                           className="group relative flex items-center gap-x-6 rounded-lg text-sm leading-6 p-2 hover:bg-gray-50"
                           onClick={() => setIsOpen1(false)}
                         >
-                          <div className="flex h-11 w-11 flex-none items-center justify-center rounded-lg bg-gray-50 group-hover:bg-white">
+                          <div className="flex h-11 w-11 flex-none items-center justify-center rounded-lg">
                             <Image
                               width={40}
                               height={40}
@@ -277,7 +277,7 @@ export default function Example() {
                       className="group relative flex items-center gap-x-6 rounded-lg text-sm leading-6 p-2 hover:bg-gray-50"
                       onClick={() => setIsOpen3(false)}
                     >
-                      <div className="flex h-11 w-11 flex-none items-center justify-center rounded-lg bg-gray-50 group-hover:bg-white">
+                      <div className="flex h-11 w-11 flex-none items-center justify-center rounded-lg">
                         <Image width={40} height={40} src={item.icon} alt="" />
                       </div>
                       <div className="flex-auto">
@@ -339,7 +339,7 @@ export default function Example() {
                       className="group relative flex items-center gap-x-6 rounded-lg text-sm leading-6 p-2 hover:bg-gray-50"
                       onClick={() => setIsOpen4(false)}
                     >
-                      <div className="flex h-11 w-11 flex-none items-center justify-center rounded-lg bg-gray-50 group-hover:bg-white">
+                      <div className="flex h-11 w-11 flex-none items-center justify-center rounded-lg">
                         <Image width={40} height={40} src={item.icon} alt="" />
                       </div>
                       <div className="flex-auto">
@@ -399,7 +399,7 @@ export default function Example() {
                       className="group relative flex items-center gap-x-6 rounded-lg text-sm leading-6 p-2 hover:bg-gray-50"
                       onClick={() => setIsOpen5(false)}
                     >
-                      <div className="flex h-11 w-11 flex-none items-center justify-center rounded-lg bg-gray-50 group-hover:bg-white">
+                      <div className="flex h-11 w-11 flex-none items-center justify-center rounded-lg">
                         <Image width={40} height={40} src={item.icon} alt="" />
                       </div>
                       <div className="flex-auto">

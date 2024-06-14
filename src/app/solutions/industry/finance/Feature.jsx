@@ -1,9 +1,11 @@
+'use client'
+
 import React from "react";
 import { Banking } from "../../../data/Finance";
 import Image from "next/image";
+import { Fade } from "react-reveal";
 
 const Feature = () => {
-
   return (
     <div className="featurebg">
       <div className="widthclass">
@@ -19,39 +21,42 @@ const Feature = () => {
           <div>
             <div className="grid md:grid-cols-2 items-center gap-40 mt-24">
               <div>
-                {Banking.map((item, index) => (
-                  <div
-                  key={index}
-                    className={`pb-5 mb-7 ${
-                      index !== Banking.length - 1
-                        ? "border border-t-0 border-l-0 border-r-0 border-[#000000] border-opacity-[40%] border-x-8"
-                        : ""
-                    }`}
-                  >
-                    <div className="flex items-center gap-5">
-                    <Image src={item.icon} width={60} height={60} alt="" />
-                      <h1 className="font-20 font-inter font-bold leading-6">
-                        {item.head}
-                      </h1>
+                <Fade left>
+                  {Banking.map((item, index) => (
+                    <div
+                      key={index}
+                      className={`pb-5 mb-7 ${
+                        index !== Banking.length - 1
+                          ? "border border-t-0 border-l-0 border-r-0 border-[#000000] border-opacity-[40%] border-x-8"
+                          : ""
+                      }`}
+                    >
+                      <div className="flex items-center gap-5">
+                        <Image src={item.icon} width={60} height={60} alt="" />
+                        <h1 className="font-20 font-inter font-bold leading-6">
+                          {item.head}
+                        </h1>
+                      </div>
+                      <ul className="list-disc list-inside mt-6">
+                        {item.Items.map((listItem, idx) => (
+                          <li
+                            key={idx}
+                            className="font-16 font-inter font-normal leading-6"
+                          >
+                            {listItem}
+                          </li>
+                        ))}
+                      </ul>
                     </div>
-                    <ul className="list-disc list-inside mt-6">
-                      {item.Items.map((listItem, idx) => (
-                        <li
-                          key={idx}
-                          className="font-16 font-inter font-normal leading-6"
-                        >
-                          {listItem}
-                        </li>
-                      ))}
-                    </ul>
-                  </div>
-                ))}
+                  ))}
+                </Fade>
               </div>
-              <div className="">
-                <Image src="/banking.png" width={990} height={750} alt="" />
-              </div>
+              <Fade right>
+                <div className="">
+                  <Image src="/banking.png" width={990} height={750} alt="" />
+                </div>
+              </Fade>
             </div>
-            <div></div>
           </div>
         </div>
       </div>

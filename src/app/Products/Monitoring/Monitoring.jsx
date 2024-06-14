@@ -1,6 +1,8 @@
+'use client'
+
 import Image from "next/image";
 import React from "react";
-
+import { Fade } from "react-reveal";
 const Monitoring = () => {
   return (
     <div>
@@ -47,84 +49,91 @@ const Monitoring = () => {
 
         <div>
           <div>
-            <div className="grid md:grid-cols-2 items-center md:gap-36 md:mt-20">
-              <div className=" order-2 md:order-1">
-                <Image src="/mon1.png" width={690} height={717} alt="" />
+            <Fade right>
+              <div className="grid md:grid-cols-2 items-center md:gap-36 md:mt-20">
+                <div className=" order-2 md:order-1">
+                  <Image src="/mon1.png" width={690} height={717} alt="" />
+                </div>
+                <div className="p-10 md:p-16 order-1 md:order-2">
+                  <Image
+                    src="/lambu.png"
+                    width={32}
+                    height={56}
+                    alt="lambu"
+                    className="mb-10"
+                  />
+                  <h1 className="font-36 font-inter font-bold leading-10">
+                    Data Integrity & Completeness
+                  </h1>
+                  <p className="font-24 font-normal font-inter leading-8 mt-8 mb-10 opacity-60">
+                    Optimize your AI/ML models effortlessly with our Monitoring
+                    Hub. Our user-friendly platform allows enterprises to easily
+                    monitor model performance and data integrity in real-time,
+                    enabling quick optimization and accurate predictions. With
+                    customizable dashboards and intuitive interfaces,
+                    implementation is seamless, ensuring rapid integration into
+                    existing workflows
+                  </p>
+                </div>
               </div>
-              <div className="p-10 md:p-16 order-1 md:order-2">
-                <Image
-                  src="/lambu.png"
-                  width={32}
-                  height={56}
-                  alt="lambu"
-                  className="mb-10"
-                />
-                <h1 className="font-36 font-inter font-bold leading-10">
-                  Data Integrity & Completeness
-                </h1>
-                <p className="font-24 font-normal font-inter leading-8 mt-8 mb-10 opacity-60">
-                  Optimize your AI/ML models effortlessly with our Monitoring
-                  Hub. Our user-friendly platform allows enterprises to easily
-                  monitor model performance and data integrity in real-time,
-                  enabling quick optimization and accurate predictions. With
-                  customizable dashboards and intuitive interfaces,
-                  implementation is seamless, ensuring rapid integration into
-                  existing workflows
-                </p>
+            </Fade>
+            <Fade left>
+              <div className="grid md:grid-cols-2 items-center md:gap-36">
+                <div className="order-2 md:order-2 flex justify-end">
+                  <Image width={483} height={590} src="/mon2.png" alt="" />
+                </div>
+                <div className="order-1 md:order-1 p-10 md:p-16">
+                  <Image
+                    src="/lambu.png"
+                    width={32}
+                    height={56}
+                    alt="lambu"
+                    className="mb-10"
+                  />
+                  <h1 className="font-36 font-inter font-bold leading-10">
+                    Data Integrity & Completeness
+                  </h1>
+                  <p className="font-24 font-normal font-inter leading-8 mt-8 mb-10 opacity-60">
+                    Optimize your AI/ML models effortlessly with our Monitoring
+                    Hub. Our user-friendly platform allows enterprises to easily
+                    monitor model performance and data integrity in real-time,
+                    enabling quick optimization and accurate predictions. With
+                    customizable dashboards and intuitive interfaces,
+                    implementation is seamless, ensuring rapid integration into
+                    existing workflows
+                  </p>
+                </div>
               </div>
-            </div>
-            <div className="grid md:grid-cols-2 items-center md:gap-36">
-              <div className="order-2 md:order-2 flex justify-end">
-                <Image width={483} height={590} src="/mon2.png" alt="" />
+            </Fade>
+            <Fade right>
+              <div className="grid md:grid-cols-2 items-center md:gap-36">
+                <div className="order-2 md:order-1">
+                  <Image width={483} height={590} src="/mon3.png" alt="" />
+                </div>
+                <div className="order-1 md:order-2 p-10 md:p-16">
+                  <Image
+                    src="/lambu.png"
+                    width={32}
+                    height={56}
+                    alt="lambu"
+                    className="mb-10"
+                  />
+                  <h1 className="font-36 font-inter font-bold leading-10">
+                    Data Integrity & Completeness
+                  </h1>
+                  <p className="font-24 font-normal font-inter leading-8 mt-8 mb-10 opacity-60">
+                    Optimize your AI/ML models effortlessly with our Monitoring
+                    Hub. Our user-friendly platform allows enterprises to easily
+                    monitor model performance and data integrity in real-time,
+                    enabling quick optimization and accurate predictions. With
+                    customizable dashboards and intuitive interfaces,
+                    implementation is seamless, ensuring rapid integration into
+                    existing workflows
+                  </p>
+                </div>
               </div>
-              <div className="order-1 md:order-1 p-10 md:p-16">
-                <Image
-                  src="/lambu.png"
-                  width={32}
-                  height={56}
-                  alt="lambu"
-                  className="mb-10"
-                />
-                <h1 className="font-36 font-inter font-bold leading-10">
-                  Data Integrity & Completeness
-                </h1>
-                <p className="font-24 font-normal font-inter leading-8 mt-8 mb-10 opacity-60">
-                  Optimize your AI/ML models effortlessly with our Monitoring
-                  Hub. Our user-friendly platform allows enterprises to easily
-                  monitor model performance and data integrity in real-time,
-                  enabling quick optimization and accurate predictions. With
-                  customizable dashboards and intuitive interfaces,
-                  implementation is seamless, ensuring rapid integration into
-                  existing workflows
-                </p>
-              </div>
-            </div>
-            <div className="grid md:grid-cols-2 items-center md:gap-36">
-              <div className="order-2 md:order-1">
-                <Image width={483} height={590} src="/mon3.png" alt="" />
-              </div>
-              <div className="order-1 md:order-2 p-10 md:p-16">
-                <Image
-                  src="/lambu.png"
-                  width={32}
-                  height={56}
-                  alt="lambu"
-                  className="mb-10"
-                />
-                <h1 className="font-36 font-inter font-bold leading-10">
-                  Data Integrity & Completeness
-                </h1>
-                <p className="font-24 font-normal font-inter leading-8 mt-8 mb-10 opacity-60">
-                  Optimize your AI/ML models effortlessly with our Monitoring
-                  Hub. Our user-friendly platform allows enterprises to easily
-                  monitor model performance and data integrity in real-time,
-                  enabling quick optimization and accurate predictions. With
-                  customizable dashboards and intuitive interfaces,
-                  implementation is seamless, ensuring rapid integration into
-                  existing workflows
-                </p>
-              </div>
-            </div>
+            </Fade>
+
             <div className="grid md:grid-cols-2 items-center md:gap-36">
               <div className="order-2 md:order-2 flex justify-end">
                 <Image width={483} height={590} src="/mon4.png" alt="" />
