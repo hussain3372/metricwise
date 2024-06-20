@@ -57,7 +57,7 @@ const Demo = () => {
               </p>
             </div>
             <div className="">
-              <Fade direction="top-right">
+              <Fade direction="left">
                 <div className="flex flex-col justify-center items-center">
                   {/* <img src="calendar.png" alt="calendar" /> */}
                   <Calendar />
@@ -126,7 +126,7 @@ const Demo = () => {
             </div>
 
             <div className="">
-              <Fade direction="top-right">
+              <Fade direction="left">
                 <div>
                   <Schedule />
                 </div>
@@ -198,7 +198,7 @@ const Demo = () => {
                 </p>
               </div>
             </div>
-            <Fade direction="top-right">
+            <Fade direction="left">
               <div className="bg-[#FFFFFF] shadow-lg rounded-2xl">
                 <form className="p-6">
                   <label
