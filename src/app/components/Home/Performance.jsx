@@ -26,7 +26,7 @@ const Platform = () => {
               alt="Performance Image"
             />
             <svg
-              className="absolute inset-0 z-0"
+              className="absolute inset-0 z-0 svgicons"
               xmlns="http://www.w3.org/2000/svg"
               viewBox="0 0 1102 364"
             >

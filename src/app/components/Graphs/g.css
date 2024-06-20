@@ -26,8 +26,8 @@ canvas {
 }
 @media (max-width: 980px) {
     canvas {
-        left: 100px;
-        top: 100px;
+        left: 400px;
+        top: 200px;
       }
 }
 @media (max-width: 768px) {

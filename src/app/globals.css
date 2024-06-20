@@ -282,6 +282,10 @@
   font-size: 12px;
 }
 
+.svgicons {
+  top: 20px;
+}
+
 @media (max-width: 1440px) {
   .font-36 {
     font-size: 30px;
@@ -333,6 +337,9 @@
 }
 .featurebg {
   background-size: 50%;
+}
+.svgicons {
+  top: 50px;
 }
 }
 
