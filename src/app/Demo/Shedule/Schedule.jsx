@@ -36,8 +36,8 @@ const Schedule = () => {
         <div className='grid grid-cols-2'>
           <p>{formattedDate}</p>
           <div className='flex items-center justify-end gap-2'>
-            <Image width={16} height={16} src="/prev.png" onClick={handlePrevDay} className="cursor-pointer" />
-            <Image width={16} height={16} src="/next.png" onClick={handleNextDay} className="cursor-pointer" />
+            <Image width={16} height={16} src="/prev.png" alt='prev' onClick={handlePrevDay} className="cursor-pointer" />
+            <Image width={16} height={16} src="/next.png" alt='next' onClick={handleNextDay} className="cursor-pointer" />
           </div>
         </div>
 

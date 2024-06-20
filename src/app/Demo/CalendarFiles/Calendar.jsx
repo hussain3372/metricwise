@@ -51,7 +51,7 @@ const Calendar = () => {
             Select Date & Time
           </p>
           <div className="flex justify-end items-end">
-            <Image width={20} height={20} src="/contact_calendar.png" />
+            <Image width={20} height={20} src="/contact_calendar.png" alt="contact_calendar" />
           </div>
         </div>
         <div className="flex justify-between items-center px-5 py-3 relative border-b border-[#00000033]">
@@ -67,6 +67,7 @@ const Calendar = () => {
                 height={16}
                 className="cursor-pointer"
                 src="/prev.png"
+                alt="contact_calendar"
                 onClick={() => handleMonthChange(-1)}
               />
               <Image
@@ -74,6 +75,7 @@ const Calendar = () => {
                 height={16}
                 className="cursor-pointer"
                 src="/next.png"
+                alt="contact_calendar"
                 onClick={() => handleMonthChange(1)}
               />
             </div>
@@ -90,6 +92,7 @@ const Calendar = () => {
                 height={16}
                 className="cursor-pointer"
                 src="/prev.png"
+                alt="contact_calendar"
                 onClick={() => handleYearChange(-1)}
               />
               <Image
@@ -97,6 +100,7 @@ const Calendar = () => {
                 height={16}
                 className="cursor-pointer"
                 src="/next.png"
+                alt="contact_calendar"
                 onClick={() => handleYearChange(1)}
               />
             </div>

@@ -32,7 +32,7 @@ const Platform = () => {
 
         <div className="p-5">
           <Fade direction="left">
-            <img
+            <Image
               width={811}
               height={582}
               src="/platformimg.png"
