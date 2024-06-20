@@ -422,12 +422,12 @@ export default function Example() {
         </PopoverGroup>
 
         <div className="hidden md:flex md:flex-1 md:justify-end gap-5 items-center">
-          <a href="#" className="font-16 font-inter font-normal leading-[20px] textcolor">
+          <a href="#" className="font-16 fontregular leading-[20px] textcolor">
             Sign Up
           </a>
           <Link
             href="/Demo"
-            className="font-16 font-inter font-normal leading-[20px] white border border-[#042440] rounded-[15px] pt-3 pb-3 pl-4 pr-4 bg-[#042440]"
+            className="font-16 fontregular leading-[20px] white border border-[#042440] rounded-[15px] pt-3 pb-3 pl-4 pr-4 bg-[#042440]"
           >
             Book a Demo
           </Link>

@@ -2,7 +2,7 @@
 
 import Image from "next/image";
 import React from "react";
-import { Zoom } from "react-reveal";
+import { Zoom } from "react-awesome-reveal";
 
 const Platform = () => {
   return (

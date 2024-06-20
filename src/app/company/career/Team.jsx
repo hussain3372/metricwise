@@ -10,7 +10,7 @@ import {
   careerdatalast,
 } from "../../data/careerdata";
 import Image from "next/image";
-import { Fade, Zoom } from "react-reveal";
+import { Fade, Zoom } from "react-awesome-reveal";
 import Tilt from "react-parallax-tilt";
 
 const Team = () => {
@@ -35,7 +35,7 @@ const Team = () => {
                 our priority.
               </p>
               <div className="grid sm:grid-cols-2 lg:grid-cols-4 items-center gap-20 mt-10">
-                <Fade left>
+                <Fade direction="left">
                   <div className="flex flex-col gap-y-2 text-center">
                     <Image width={417} height={344} src="/t1.png" alt="" />
                     <h5 className="font-20 font-inter font-semibold leadin-6">
@@ -57,7 +57,7 @@ const Team = () => {
                     </span>
                   </div>
                 </Fade>
-                <Fade right>
+                <Fade direction="right">
                   <div className="flex flex-col gap-y-2 text-center">
                     <Image width={417} height={344} src="/t3.png" alt="" />
                     <h5 className="font-20 font-inter font-semibold leadin-6">
@@ -91,7 +91,7 @@ const Team = () => {
             <h1 className="font-36 fon-inter font-bold textcolor leading-[72px] mb-5 md:mb-10">
               Our Values
             </h1>
-            <Fade left>
+            <Fade direction="left">
               <div className=" grid sm:grid-cols-2 gap-5">
                 {careerdata.map((item, index) => (
                   <Tilt>
@@ -119,7 +119,7 @@ const Team = () => {
                 ))}
               </div>
             </Fade>
-            <Fade right>
+            <Fade direction="right">
               <div className=" grid grid-cols-1 mt-5">
                 <Tilt>
                   {careerdatalast.map((item, index) => (
@@ -157,7 +157,7 @@ const Team = () => {
             <h1 className="font-36 fon-inter font-bold textcolor leading-[72px] mb-3 md:mb-10">
               Our Perks
             </h1>
-            <Fade left>
+            <Fade direction="left">
               <div className="grid md:grid-cols-2 gap-10 items-center">
                 {careerperks.map((item, perks) => (
                   <Tilt reset={false}>

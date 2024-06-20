@@ -4,7 +4,7 @@ import React from "react";
 import { BlogCard } from "../../data/BlogCard";
 import OtherCards from "./OtherCards";
 import Image from "next/image";
-import { Fade, Zoom } from "react-reveal";
+import { Fade, Zoom } from "react-awesome-reveal";
 import Tilt from "react-parallax-tilt";
 
 const Blog = () => {

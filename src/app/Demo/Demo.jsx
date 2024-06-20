@@ -4,7 +4,7 @@ import { useState } from "react";
 import Calendar from "./CalendarFiles/Calendar";
 import Image from "next/image";
 import Schedule from "./Shedule/Schedule";
-import { Fade } from "react-reveal";
+import { Fade } from "react-awesome-reveal";
 const Demo = () => {
   const [section, setSection] = useState(1);
 
@@ -57,7 +57,7 @@ const Demo = () => {
               </p>
             </div>
             <div className="">
-              <Fade top>
+              <Fade direction="top-right">
                 <div className="flex flex-col justify-center items-center">
                   {/* <img src="calendar.png" alt="calendar" /> */}
                   <Calendar />
@@ -126,7 +126,7 @@ const Demo = () => {
             </div>
 
             <div className="">
-              <Fade top>
+              <Fade direction="top-right">
                 <div>
                   <Schedule />
                 </div>
@@ -198,7 +198,7 @@ const Demo = () => {
                 </p>
               </div>
             </div>
-            <Fade top>
+            <Fade direction="top-right">
               <div className="bg-[#FFFFFF] shadow-lg rounded-2xl">
                 <form className="p-6">
                   <label

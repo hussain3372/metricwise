@@ -2,7 +2,7 @@
 import React from "react";
 import { otherCardsData } from "../../data/BlogCard";
 import Image from "next/image";
-import { Fade } from "react-reveal";
+import { Fade } from "react-awesome-reveal";
 import Tilt from "react-parallax-tilt"
 
 const OtherCards = () => {

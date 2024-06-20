@@ -2,7 +2,7 @@
 
 import Image from "next/image";
 import React from "react";
-import { Fade } from "react-reveal";
+import { Fade } from "react-awesome-reveal";
 
 const Monitoring = () => {
   return (
@@ -49,7 +49,7 @@ const Monitoring = () => {
 
         <div>
           <div>
-            <Fade right>
+            <Fade direction="right">
               <div className="grid md:grid-cols-2 items-center md:gap-36 md:mt-20">
                 <div className=" order-2 md:order-1">
                   <Image src="/mon1.png" width={690} height={717} alt="" />
@@ -73,7 +73,7 @@ const Monitoring = () => {
                 </div>
               </div>
             </Fade>
-            <Fade left>
+            <Fade direction="left">
               <div className="grid md:grid-cols-2 items-center md:gap-36">
                 <div className="order-2 md:order-2 flex justify-end">
                   <Image width={483} height={590} src="/mon2.png" alt="" />
@@ -97,7 +97,7 @@ const Monitoring = () => {
                 </div>
               </div>
             </Fade>
-            <Fade right>
+            <Fade direction="right">
               <div className="grid md:grid-cols-2 items-center md:gap-36">
                 <div className="order-2 md:order-1">
                   <Image width={483} height={590} src="/mon3.png" alt="" />
@@ -121,7 +121,7 @@ const Monitoring = () => {
                 </div>
               </div>
             </Fade>
-            <Fade left>
+            <Fade direction="left">
               <div className="grid md:grid-cols-2 items-center md:gap-36">
                 <div className="order-2 md:order-2 flex justify-end">
                   <Image width={483} height={590} src="/mon4.png" alt="" />

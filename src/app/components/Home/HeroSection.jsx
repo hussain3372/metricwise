@@ -4,6 +4,7 @@ import React from "react";
 import Typewriter from "typewriter-effect";
 import Image from "next/image";
 import Graph from "../Graphs/Graph";
+
 const HeroSection = () => {
   return (
     <div className="border-b border-[#042440] border-opacity-[12%] mt-10 md:mt-0 dangerbgimg">

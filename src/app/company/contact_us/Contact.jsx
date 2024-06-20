@@ -2,7 +2,7 @@
 
 import Image from "next/image";
 import React from "react";
-import { Fade } from "react-reveal";
+import { Fade } from "react-awesome-reveal";
 
 const Contact = () => {
   return (
@@ -11,7 +11,7 @@ const Contact = () => {
         <div className="widthclass">
           <div className="grid md:grid-cols-2 items-center p-5 md:p-10 gap-40">
             <div>
-              <Fade left>
+              <Fade direction="left">
                 <div>
                   <label htmlFor="" className="font-64 fontbold leading-[80px]">
                     Contact Us
@@ -34,7 +34,7 @@ const Contact = () => {
                 </div>
               </Fade>
             </div>
-            <Fade top>
+            <Fade direction="right">
               <div className="bg-[#FFFFFF] shadow-lg rounded-2xl">
                 <form className="p-6">
                   <div className="flex flex-col justify-center items-center">
@@ -121,7 +121,7 @@ const Contact = () => {
           </div>
           <div>
             <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-10 p-5 sm:p-16">
-              <Fade top>
+              <Fade direction="left">
                 <div className="grid grid-cols-2 bg-[#FFFFFF] p-5 border border-t-0 border-b-0 border-r-0 border-l-[#042440] border-l-4 rounded-lg">
                   <div className="flex flex-col font-20 font-inter font-semibold textcolor leading-6">
                     Sales
@@ -134,7 +134,7 @@ const Contact = () => {
                   </div>
                 </div>
               </Fade>
-              <Fade bottom>
+              <Fade direction="left">
                 <div className="grid grid-cols-2 bg-[#FFFFFF] p-5 border border-t-0 border-b-0 border-r-0 border-l-[#042440] border-l-4 rounded-lg">
                   <div className="flex flex-col font-20 font-inter font-semibold textcolor leading-6">
                     Support
@@ -147,7 +147,7 @@ const Contact = () => {
                   </div>
                 </div>
               </Fade>
-              <Fade top>
+              <Fade direction="right">
                 <div className="grid grid-cols-2 bg-[#FFFFFF] p-5 border border-t-0 border-b-0 border-r-0 border-l-[#042440] border-l-4 rounded-lg">
                   <div className="flex flex-col font-20 font-inter font-semibold textcolor leading-6">
                     Careers
@@ -160,7 +160,7 @@ const Contact = () => {
                   </div>
                 </div>
               </Fade>
-              <Fade bottom>
+              <Fade direction="right">
                 <div className="grid grid-cols-2 bg-[#FFFFFF] p-5 border border-t-0 border-b-0 border-r-0 border-l-[#042440] border-l-4 rounded-lg">
                   <div className="flex flex-col font-20 font-inter font-semibold textcolor leading-6">
                     General

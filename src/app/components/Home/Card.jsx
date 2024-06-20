@@ -3,8 +3,7 @@
 import React from "react";
 import CardData from "../../data/CardData"; // Ensure this path is correct
 import Image from "next/image";
-import Fade from "react-reveal/Fade";
-import Tilt from "react-parallax-tilt";
+import {Fade} from "react-awesome-reveal";
 
 const Card = () => {
   return (
@@ -12,7 +11,7 @@ const Card = () => {
       <div className="border-b border-black border-opacity-[60%]">
         <div className="widthclass">
           {CardData.map((item, index) => (
-            <Fade left={index !== 1} right={index === 1}>
+            <Fade direction={index === 1 ? "right" : "left"}>
               <div
                 key={index}
                 className={`grid md:grid-cols-2 pb-20 items-center ${
@@ -76,8 +75,6 @@ const Card = () => {
                     )}
                   </ul>
                 </div>
-
-                <Tilt className="background-stripes parallax-effect" perspective={500}>
                   <div
                     className={` flex ${
                       index % 2 === 0
@@ -92,7 +89,6 @@ const Card = () => {
                       height={567}
                     />
                   </div>
-                </Tilt>
               </div>
             </Fade>
           ))}

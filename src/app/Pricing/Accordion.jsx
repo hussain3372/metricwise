@@ -3,7 +3,7 @@
 import React, { useState } from "react";
 import Head from "next/head";
 import { ChevronUpIcon, ChevronDownIcon } from "@heroicons/react/24/outline";
-import { Zoom } from "react-reveal";
+import { Zoom } from "react-awesome-reveal";
 
 const AccordionItem = ({ title, content }) => {
   const [isOpen, setIsOpen] = useState(false);

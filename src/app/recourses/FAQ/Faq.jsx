@@ -5,7 +5,7 @@ import Head from "next/head";
 import Image from "next/image";
 import { ChevronUpIcon, ChevronDownIcon } from "@heroicons/react/24/outline";
 import Tilt from "react-parallax-tilt";
-import { Fade, Zoom } from "react-reveal";
+import { Fade, Zoom } from "react-awesome-reveal";
 
 const AccordionItem = ({ title, content }) => {
   const [isOpen, setIsOpen] = useState(false);
