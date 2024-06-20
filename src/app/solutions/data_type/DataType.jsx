@@ -1,7 +1,6 @@
 import Link from "next/link";
 import React from "react";
 import DataTypecard from "./DataTypecard"
-import { PiGreaterThanLight } from "react-icons/pi";
 import Image from "next/image";
 const DataType = () => {
   return (
