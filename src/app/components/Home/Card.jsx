@@ -7,7 +7,7 @@ import { Fade } from "react-awesome-reveal";
 
 const Card = () => {
   return (
-    <div className="mt-10">
+    <div className="">
       <div className="border-b border-black border-opacity-[60%]">
         <div className="widthclass">
           {CardData.map((item, index) => (
@@ -17,12 +17,12 @@ const Card = () => {
                 key={`card-${index}`}
               >
                 <div className={`p-10 ${index === 1 ? "md:order-last" : ""}`} key={`text-${index}`}>
-                  <h1 className="text-4xl font-36 fontbold leading-10">{item.name}</h1>
-                  <p className="text-lg font-24 fontregular leading-8 mt-5">{item.para}</p>
-                  <ul className="mt-4">
+                  <h1 className="text-4xl font-36 font-bold leading-10">{item.name}</h1>
+                  <p className="text-lg font-24 font-normal opacity-60 leading-8 mt-5">{item.para}</p>
+                  <ul className="mt-8">
                     {[item.list, item.list1, item.list2, item.list3, item.list4].map((listItem, listIndex) => 
                       listItem && (
-                        <li key={`list-${index}-${listIndex}`} className="mb-5 font-24 fontregular leading-8 flex items-center gap-3">
+                        <li key={`list-${index}-${listIndex}`} className="mb-5 font-24 font-normal opacity-60  leading-8 flex items-center gap-3">
                           <Image src={item.logo} alt="List item icon" width={20} height={20} />
                           {listItem}
                         </li>

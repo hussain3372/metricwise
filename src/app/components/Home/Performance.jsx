@@ -13,7 +13,7 @@ const Platform = () => {
             Detect, Analyze, mitigate model and data <br /> performance issues
             faster
           </h1>
-          <p className="font-24 fontregular leading-8 mt-10 black opacity-60">
+          <p className="font-24 font-normal leading-8 mt-10 black opacity-60">
             Enhance the reliability of your AI systems and instill confidence
             with our platform.
           </p>

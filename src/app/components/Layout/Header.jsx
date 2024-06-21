@@ -171,21 +171,19 @@ export default function Example() {
                     <h1 className="font-32 font-bold leading-10">Solution</h1>
                     <div className="flex-col space-y-9 mt-6">
                       <button
-                        className={`font-semibold ${
-                          activeTab === "Industries"
+                        className={`font-semibold ${activeTab === "Industries"
                             ? "text-gray-900"
                             : "text-gray-900"
-                        }`}
+                          }`}
                         onClick={() => setActiveTab("Industries")}
                       >
                         Industries
                       </button>
                       <button
-                        className={`font-semibold ${
-                          activeTab === "Data Types"
+                        className={`font-semibold ${activeTab === "Data Types"
                             ? "text-gray-900"
                             : "text-gray-900"
-                        }`}
+                          }`}
                         onClick={() => setActiveTab("DataTypes")}
                       >
                         Data Types
