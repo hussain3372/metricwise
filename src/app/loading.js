@@ -5,7 +5,7 @@ const loading = () => {
   return (
     <div>
     <div className='flex justify-center items-center m-auto h-96'>
-      <Image src="/gif-metric.gif" width={300} height={300}/>
+      <Image src="/gif-metric.gif" width={300} height={300} alt='loading...'/>
     </div>
     </div>
   )

@@ -2,7 +2,7 @@
 
 import Image from "next/image";
 import React from "react";
-import { Zoom } from "react-reveal";
+import { Zoom } from "react-awesome-reveal";
 
 const Platform = () => {
   return (
@@ -13,7 +13,7 @@ const Platform = () => {
             Detect, Analyze, mitigate model and data <br /> performance issues
             faster
           </h1>
-          <p className="font-24 fontregular leading-8 mt-10 black opacity-60">
+          <p className="font-24 font-normal leading-8 mt-10 black opacity-60">
             Enhance the reliability of your AI systems and instill confidence
             with our platform.
           </p>
@@ -26,7 +26,7 @@ const Platform = () => {
               alt="Performance Image"
             />
             <svg
-              className="absolute inset-0 z-0"
+              className="absolute inset-0 z-0 svgicons"
               xmlns="http://www.w3.org/2000/svg"
               viewBox="0 0 1102 364"
             >

@@ -4,12 +4,13 @@ import React from "react";
 import Typewriter from "typewriter-effect";
 import Image from "next/image";
 import Graph from "../Graphs/Graph";
+
 const HeroSection = () => {
   return (
     <div className="border-b border-[#042440] border-opacity-[12%] mt-10 md:mt-0 dangerbgimg">
       <div className="md:flex items-center relative widthclass">
         <div className=" p-5 md:p-32">
-          <h1 className=" font-64 fontbold leading-[30px] sm:leading-[40px] md:leading-[50px] xl:leading-[60px]">
+          <h1 className=" font-64 font-bold leading-[30px] sm:leading-[40px] md:leading-[50px] xl:leading-[80px]">
             AI Observability <br className="hidden md:block" /> and Governance
           </h1>
           <div className="font-32 font-regular leading-[30px] md:leading-[40px] opacity-50 mt-4">
@@ -42,14 +43,8 @@ const HeroSection = () => {
             </button>
           </div>
         </div>
-        <div className=" absolute top-24 w-5xl md:top-20 -z-10 cubes">
-          {/* <img src="herobg1.png" className="herobg" alt="" /> */}
-          {/* <Cube/> */}
-        </div>
       </div>
-
-      {/* <Space/> */}
-
+      
       <Graph/>
 
     </div>

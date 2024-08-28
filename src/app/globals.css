@@ -8,12 +8,7 @@
   margin: 0;
   padding: 0;
 }
-  /* .performanceimgbg {
-    background-image: url(../../public/performanceimgbg.png);
-    background-position: center;
-    background-size: 60%;
-    background-repeat: no-repeat;
-  } */
+
 .demoparent {
   background-image: url(../../public/wavebg1.png);
   background-position: center;
@@ -23,7 +18,7 @@
 .faq {
   background-image: url(../../public/faqbg.png);
   background-size: 100%;
-  background-position: bottom right;
+  background-position: top right;
   background-repeat: no-repeat;
 }
 .career {
@@ -123,39 +118,39 @@
 }
 
 .fontthin {
-  font-family: 'Inter', sans-serif;
+  font-family: 'Inter';
   font-weight: 100;
 }
 .fontextralight {
-  font-family: 'Inter', sans-serif;
+  font-family: 'Inter';
   font-weight: 200;
 }
 .fontlight {
-  font-family: 'Inter', sans-serif;
+  font-family: 'Inter';
   font-weight: 300;
 }
 .fontregular {
-  font-family: 'Inter', sans-serif;
+  font-family: 'Inter';
   font-weight: 400;
 }
 .fontmedium {
-  font-family: 'Inter', sans-serif;
+  font-family: 'Inter';
   font-weight: 500;
 }
 .fontsemibold {
-  font-family: 'Inter', sans-serif;
+  font-family: 'Inter';
   font-weight: 600;
 }
 .fontbold {
-  font-family: 'Inter', sans-serif;
+  font-family: 'Inter';
   font-weight: 700;
 }
 .fontextrabold {
-  font-family: 'Inter', sans-serif;
+  font-family: 'Inter';
   font-weight: 800;
 }
 .fontblack {
-  font-family: 'Inter', sans-serif;
+  font-family: 'Inter';
   font-weight: 900;
 }
 
@@ -224,6 +219,9 @@
 .font-20 {
   font-size: 20px;
 }
+.font-18 {
+  font-size: 18px;
+}
 .font-16 {
   font-size: 16px;
 }
@@ -232,6 +230,10 @@
 }
 .font-12 {
   font-size: 12px;
+}
+
+.svgicons {
+  top: 20px;
 }
 
 @media (max-width: 1440px) {
@@ -280,11 +282,18 @@
   font-size: 30px;
 }
 
+.font-56 {
+  font-size: 40px;
+}
+
 .blog {
   background-size: cover;
 }
 .featurebg {
   background-size: 50%;
+}
+.svgicons {
+  top: 50px;
 }
 }
 
@@ -310,6 +319,9 @@
 }
 .pricebg {
   background-image: none;
+}
+.font-56 {
+  font-size: 35px;
 }
 }
 .featurebg {

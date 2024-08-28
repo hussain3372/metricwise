@@ -2,7 +2,7 @@
 
 import Image from "next/image";
 import React from "react";
-import { Fade } from "react-reveal";
+import { Fade } from "react-awesome-reveal";
 import Tilt from "react-parallax-tilt";
 import { useState } from "react";
 const About = () => {
@@ -50,7 +50,7 @@ const About = () => {
               ethical soundness and comprehensibility.
             </p>
           </div>
-          <Fade right>
+          <Fade direction="right">
             <div className="flex justify-center mt-10 md:mt-0">
               <Image width={436} height={474} src="/our.png" alt="" />
             </div>
@@ -63,7 +63,7 @@ const About = () => {
           <h1 className="font-36 font-bold  font-inter leading-40 textcolor">
             Our Vision
           </h1>
-          <Fade bottom>
+          <Fade direction="bottom">
             <div className="p-6 md:p-8 grid sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 2xl:grid-cols-5 gap-y-10 items-center justify-center">
               <Tilt scale={scale} transitionSpeed={2500}>
                 <div className="flex flex-col justify-center items-center text-center p-8 h-[264px] w-[220px] rounded-lg border border-[#00000033] bg-[#0424401F] shadow-lg shadow-[#0000001F]">
@@ -128,7 +128,7 @@ const About = () => {
               priority.
             </p>
             <div className="grid sm:grid-cols-2 lg:grid-cols-4 items-center gap-20 mt-10">
-              <Fade left>
+              <Fade direction="left">
                 <div className="flex flex-col gap-y-2 text-center">
                   <Image width={417} height={344} src="/t1.png" alt="" />
                   <h5 className="font-20 font-inter font-semibold leadin-6">
@@ -150,7 +150,7 @@ const About = () => {
                   </span>
                 </div>
               </Fade>
-              <Fade right>
+              <Fade direction="right">
                 <div className="flex flex-col gap-y-2 text-center">
                   <Image width={417} height={344} src="/t3.png" alt="" />
                   <h5 className="font-20 font-inter font-semibold leadin-6">

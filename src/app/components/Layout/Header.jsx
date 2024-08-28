@@ -171,21 +171,19 @@ export default function Example() {
                     <h1 className="font-32 font-bold leading-10">Solution</h1>
                     <div className="flex-col space-y-9 mt-6">
                       <button
-                        className={`font-semibold ${
-                          activeTab === "Industries"
+                        className={`font-semibold ${activeTab === "Industries"
                             ? "text-gray-900"
                             : "text-gray-900"
-                        }`}
+                          }`}
                         onClick={() => setActiveTab("Industries")}
                       >
                         Industries
                       </button>
                       <button
-                        className={`font-semibold ${
-                          activeTab === "Data Types"
+                        className={`font-semibold ${activeTab === "Data Types"
                             ? "text-gray-900"
                             : "text-gray-900"
-                        }`}
+                          }`}
                         onClick={() => setActiveTab("DataTypes")}
                       >
                         Data Types
@@ -233,7 +231,8 @@ export default function Example() {
           <Popover className="relative">
             <div className="flex items-center gap-x-1 font-16 font-medium leading-6 textcolor">
               <PopoverButton className="flex items-center gap-x-1">
-                <Link href="/Pricing">Pricing</Link>
+                <Link href="#">Pricing</Link>
+                {/* <Link href="/Pricing">Pricing</Link> */}
               </PopoverButton>
             </div>
           </Popover>
@@ -422,12 +421,12 @@ export default function Example() {
         </PopoverGroup>
 
         <div className="hidden md:flex md:flex-1 md:justify-end gap-5 items-center">
-          <a href="#" className="font-16 font-inter font-normal leading-[20px] textcolor">
+          <a href="#" className="font-16 font-normal leading-[20px] textcolor">
             Sign Up
           </a>
           <Link
             href="/Demo"
-            className="font-16 font-inter font-normal leading-[20px] white border border-[#042440] rounded-[15px] pt-3 pb-3 pl-4 pr-4 bg-[#042440]"
+            className="font-16 font-normal leading-[20px] white border border-[#042440] rounded-[15px] pt-3 pb-3 pl-4 pr-4 bg-[#042440]"
           >
             Book a Demo
           </Link>

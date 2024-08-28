@@ -3,21 +3,24 @@ export const Products = [
     name: "Monitoring Hub",
     description:
       "Stay ahead with real-time monitoring and optimization of AI/ML model performance",
-    href: "/Products/Monitoring",
+    // // href: "/Products/Monitoring",
+    href: "#",
     icon: "/pr1.png",
   },
   {
     name: "Observability Hub",
     description:
       "Unlock the full potential of your AI/ML models with comprehensive observability and actionable insights",
-    href: "/Products/Observability",
+    // href: "/Products/Observability",
+    href: "#",
     icon: "/pr2.png",
   },
   {
     name: "Governance Hub",
     description:
       "Effortlessly govern your AI/ML models enterprise-wide for compliance and risk management",
-    href: "/Products/Governance",
+    // href: "/Products/Governance",
+    href: "#",
     icon: "/pr3.png",
   },
 ];
@@ -25,49 +28,57 @@ export const Industry = [
   {
     name: "Finance and Banking ",
     description:"Monitor AI/ML algorithms for regulatory compliance, ensuring transparency and accountability in financial services.",
-    href: "/solutions/industry/finance",
+    // href: "/solutions/industry/finance",
+    href: "#",
     icon: "/so1.png",
   },
   {
     name: "Insurance Monitoring ",
     description:"Ensure transparency and compliance in insurance AI and ML models through rigorous governance, observability, and monitoring of data.",
-    href: "/solutions/industry/insurance",
+    // href: "/solutions/industry/insurance",
+    href: "#",
     icon: "/so5.png",
   },
   {
     name: "Real Estate",
     description:"Monitor AI algorithms to uphold fair housing laws and maintain transparency in property pricing, establishing governance in real estate AI.",
-    href: "/solutions/industry/real_estate",
+    // href: "/solutions/industry/real_estate",
+    href: "#",
     icon: "/so2.png",
   },
   {
     name: "Retail and E-commerce",
     description:"Refine decision-making in retail operations by optimizing models for accuracy and reliability.",
-    href: "/solutions/industry/e_commerce",
+    // href: "/solutions/industry/e_commerce",
+    href: "#",
     icon: "/so6.png",
   },
   {
     name: "Healthcare",
     description:"Maintain transparency and regulatory compliance in healthcare AI models with comprehensive observability and monitoring.",
-    href: "/solutions/industry/healthcare",
+    // href: "/solutions/industry/healthcare",
+    href: "#",
     icon: "/so3.png",
   },
   {
     name: "Autonoumus Vehicle",
     description:"Enhance the interpretation and interaction of real-world data to facilitate AI-driven decision-making.",
-    href: "/solutions/industry/vehicle",
+    // href: "/solutions/industry/vehicle",
+    href: "#",
     icon: "/so7.png",
   },
   {
     name: "Social Media ",
     description:"Maintain platform integrity and regulatory adherence in social media AI through the implementation of governance protocols and ongoing observability.",
-    href: "/solutions/industry/social_media",
+    // href: "/solutions/industry/social_media",
+    href: "#",
     icon: "/so4.png",
   },
   {
     name: "Education",
     description:"Secure transparency and fairness in education AI/ML models with stringent governance and perpetual observability.",
-    href: "/solutions/industry/education",
+    // href: "/solutions/industry/education",
+    href: "#",
     icon: "/so8.png",
   },
 ];
@@ -76,7 +87,8 @@ export const DataTypes = [
     name: "Tabular",
     description:
       "Monitor structured, tabular data to ensure accuracy, bias and fairness.",
-    href: "/solutions/data_type",
+    // href: "/solutions/data_type",
+    href: "#",
     icon: "/pri1.png",
   },
   {
@@ -122,7 +134,8 @@ export const Recources = [
     name: "Blog",
     description:
       "Stay informed with the latest AI trends, news, and in-depth analysis from industry leaders. ",
-    href: "/recourses/Blog",
+    // href: "/recourses/Blog",
+    href: "#",
     icon: "/r1.png",
   },
   {
@@ -152,13 +165,15 @@ export const Company = [
     name: "Career",
     description:
       "Explore rewarding career opportunities and unleash your potential with us.",
-    href: "/company/career",
+    // href: "/company/career",
+    href: "#",
     icon: "/co1.png",
   },
   {
     name: "About Us",
     description: "Discover who we are, what we do, and why we're passionate ",
-    href: "/company/about",
+    // href: "/company/about",
+    href: "#",
     icon: "/co3.png",
   },
   {

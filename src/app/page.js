@@ -1,15 +1,17 @@
 import React from 'react'
-import HeroSection from './components/Home/HeroSection'
 import Platform from './components/Home/Platform'
-import Performance from "./components/Home/Performance"
+import NewPerformance from "./components/Home/NewPerformance"
 import Card from './components/Home/Card'
+import NewHero from './components/Home/NewHero'
+import Blogs from './components/Home/Blogs'
 const page = () => {
   return (
     <div>
-      <HeroSection/>
+      <NewHero />
       <Platform/>
-      <Performance/>
+      <NewPerformance />
       <Card/>
+      <Blogs />
     </div>
   )
 }

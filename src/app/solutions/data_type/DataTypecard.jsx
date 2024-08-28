@@ -3,16 +3,16 @@
 import React from "react";
 import { dataType } from "../../data/trust"; // Ensure this path is correct
 import Image from "next/image";
-import { Fade } from "react-reveal";
+import { Fade } from "react-awesome-reveal";
 
 const DataTypecard = () => {
   return (
     <div className="">
       {dataType.map((item, index) => (
-        <Fade key={index} left={index % 2 === 0} right={index % 2 !== 0}>
+        <Fade key={index} direction={index % 2 === 0 ? "left" : "right"}>
           <div
             key={index}
-            className={`grid md:grid-cols-2 items-center px-10 sm:px-20 xl:px-64 py-10 ${
+            className={`grid md:grid-cols-2 items-center px-10 sm:px-20 px-64 py-10 ${
               index % 2 === 0 ? "bg-[#F4F4F4]" : ""
             }`}
           >
@@ -30,7 +30,7 @@ const DataTypecard = () => {
               ))}
             </div>
             <div
-              className={` flex justify-center mt-10 md:mt-0 ${
+              className={` flex justify-start mt-10 md:mt-0 ${
                 index % 2 === 0 ? "md:justify-end" : ""
               }`}
             >

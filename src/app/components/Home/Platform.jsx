@@ -2,44 +2,32 @@
 
 import Image from "next/image";
 import React from "react";
-import Fade from "react-reveal/Fade";
 
 const Platform = () => {
   return (
-    <div className="mt-10 border-b border-[#042440] border-opacity-[12%]">
-      <div className="flex flex-col justify-center items-center text-center widthclass">
-          <div>
-            <h1 className="font-36 fontbold leading-10">
-              A Comprehensive AI Observability and <br /> Governance Platform
-            </h1>
-            <p className="font-24 fontregular leading-8 mt-10 black opacity-60 p-5 md:p-10">
-              Our platform empowers organizations to gain comprehensive insights
-              into the inner workings of their{" "}
-              <br className="hidden md:block" /> ML and AI solutions, ensuring
-              optimal performance, reliability, and compliance. We enable
-              real-time <br className="hidden md:block" /> surveillance,
-              alerting, and performance tracking throughout the entire AI life
-              cycle. With our <br className="hidden md:block" /> observability
-              module, stakeholders get detailed insights, enabling them to
-              understand system <br className="hidden md:block" /> behavior,
-              identify anomalies, and enhance model performance. Additionally,
-              our governance module <br className="hidden md:block" /> ensures
-              compliance, fairness, and accountability in the ever-changing
-              landscape of artificial <br className="hidden md:block" />
-              intelligence.
-            </p>
-          </div>
+    <div className="mt-44 md:mt-72 lg:mt-96 bg-[url('/platforms-bg.png')] bg-cover bg-center bg-no-repeat">
+      <div className="flex flex-col justify-center items-center text-center widthclass ">
+        <div>
+          <h1 className="text-[20px] sm:text-[40px] font-bold leading-5 sm:leading-10">
+            Detect, Analyze, mitigate model <br /> and data performance issues
+            faster
+          </h1>
+          <p className="font-16 font-normal leading-2 black opacity-60 p-4">
+            Enhance the reliability of your AI systems and instill confidence
+            <br className="hidden md:block" /> with our platform.
+          </p>
+        </div>
 
         <div className="p-5">
-          <Fade left>
+          {/* <Fade direction="left"> */}
             <Image
-              width={811}
-              height={582}
-              src="/platformimg.png"
-              className="mt-10 image"
+              width={961}
+              height={396}
+              src="/platforms.png"
+              className="mt-10"
               alt="Platform Image"
             />
-          </Fade>
+          {/* </Fade> */}
         </div>
       </div>
     </div>

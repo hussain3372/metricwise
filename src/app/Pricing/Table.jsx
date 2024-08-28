@@ -3,7 +3,7 @@ import ExploreAccordion from "./ExploreAccordion";
 import Monitoring from "./Monitoring";
 import Observability from "./Observability";
 import Governance from "./Governance";
-import { Fade } from "react-reveal";
+import { Fade } from "react-awesome-reveal";
 
 const Faq = () => {
   return (
@@ -28,7 +28,7 @@ const Faq = () => {
           <h1 className="font-36 font-inter font-bold leading-10 flex justify-center items-center mt-10">
             Monitoring Hub
           </h1>
-          <Fade right>
+          <Fade direction="right">
             <Monitoring />
           </Fade>
         </div>
@@ -37,7 +37,7 @@ const Faq = () => {
           <h1 className="font-36 font-inter font-bold leading-10 flex justify-center items-center mt-10">
             Observability Hub
           </h1>
-          <Fade left>
+          <Fade direction="left">
             <Observability />
           </Fade>
         </div>
@@ -46,7 +46,7 @@ const Faq = () => {
           <h1 className="font-36 font-inter font-bold leading-10 flex justify-center items-center mt-10">
             Governance Hub
           </h1>
-          <Fade right>
+          <Fade direction="right">
             <Governance />
           </Fade>
         </div>

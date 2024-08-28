@@ -2,7 +2,7 @@
 
 import Image from "next/image";
 import React from "react";
-import { Fade } from "react-reveal";
+import { Fade } from "react-awesome-reveal";
 
 const Contact = () => {
   return (
@@ -11,12 +11,12 @@ const Contact = () => {
         <div className="widthclass">
           <div className="grid md:grid-cols-2 items-center p-5 md:p-10 gap-40">
             <div>
-              <Fade left>
+              <Fade direction="left">
                 <div>
-                  <label htmlFor="" className="font-64 fontbold leading-[80px]">
+                  <label htmlFor="" className="font-64 font-bold leading-[80px]">
                     Contact Us
                   </label>
-                  <p className="font-normal font-inter font-20 leading-6 mt-5">
+                  <p className="font-normal font-20 leading-6 mt-5">
                     Metricwise - A Comprehensive AI Observability and Governance
                     Platform If you fall into any of the following categories:
                   </p>
@@ -34,29 +34,29 @@ const Contact = () => {
                 </div>
               </Fade>
             </div>
-            <Fade top>
-              <div className="bg-[#FFFFFF] shadow-lg rounded-2xl">
+            <Fade direction="down">
+              <div className="bg-[#FFFFFF] shadow-lg rounded-2xl pb-4">
                 <form className="p-6">
                   <div className="flex flex-col justify-center items-center">
                     <label
                       htmlFor=""
-                      className="fontbold font-36 leading-10 textcolor"
+                      className="font-bold font-36 leading-10 textcolor"
                     >
                       Contact Us
                     </label>
-                    <p className="font-16 font-inter font-normal leading-5 mt-5">
+                    <p className="font-16 font-inter font-normal leading-5 mt-3">
                       You can reach us anytime
                     </p>
                   </div>
                   <div className="grid sm:grid-cols-2 gap-5 mt-4">
                     <input
                       type="text"
-                      className="rounded-[36px] p-3 border border-[#0000001F] font-16 fontregular leading-5 paragraph"
+                      className="rounded-[36px] p-3 border border-[#0000001F] font-16 font-normal leading-5 paragraph"
                       placeholder="First name"
                     />
                     <input
                       type="text"
-                      className="rounded-[36px] p-3 border border-[#0000001F] font-16 fontregular leading-5 paragraph"
+                      className="rounded-[36px] p-3 border border-[#0000001F] font-16 font-normal leading-5 paragraph"
                       placeholder="Last name"
                     />
                   </div>
@@ -64,7 +64,7 @@ const Contact = () => {
                     <input
                       type="email"
                       required
-                      className="w-full rounded-[36px] pl-10 p-3 border border-[#0000001F] font-16 fontregular leading-5 paragraph mt-3"
+                      className="w-full rounded-[36px] pl-10 p-3 border border-[#0000001F] font-16 font-normal leading-5 paragraph mt-3"
                       placeholder="Your email"
                     />
                     <div className="absolute top-6 left-3">
@@ -75,7 +75,7 @@ const Contact = () => {
                     <input
                       type="tel"
                       required
-                      className="w-full rounded-[36px] pl-24 p-3 border border-[#0000001F] font-16 fontregular leading-5 paragraph"
+                      className="w-full rounded-[36px] pl-24 p-3 border border-[#0000001F] font-16 font-normal leading-5 paragraph"
                       placeholder="Phone number"
                     />
                     <div className="absolute inset-y-0 left-0 flex items-center">
@@ -88,28 +88,28 @@ const Contact = () => {
                   </div>
                   <input
                     type="text"
-                    className="w-full rounded-[36px] p-3 border border-[#0000001F] font-16 fontregular leading-5 paragraph mt-3"
+                    className="w-full rounded-[36px] p-3 border border-[#0000001F] font-16 font-normal leading-5 paragraph mt-3"
                     placeholder="Organization"
                   />
                   <input
                     type="text"
-                    className="w-full rounded-[36px] p-3 border border-[#0000001F] font-16 fontregular leading-5 paragraph mt-3"
+                    className="w-full rounded-[36px] p-3 border border-[#0000001F] font-16 font-normal leading-5 paragraph mt-3"
                     placeholder="Role"
                   />
                   <input
                     type="text"
-                    className="w-full rounded-[36px] p-3 border border-[#0000001F] font-16 fontregular leading-5 paragraph mt-3"
+                    className="w-full rounded-[36px] p-3 border border-[#0000001F] font-16 font-normal leading-5 paragraph mt-3"
                     placeholder="How did you hear about Metricwise?"
                   />
                   <textarea
                     type="text"
                     maxLength={50}
-                    className="w-full h-20 rounded-[17px] p-3 border border-[#0000001F] font-16 fontregular leading-5 paragraph mt-3"
+                    className="w-full h-20 rounded-[17px] p-3 border border-[#0000001F] font-16 font-normal leading-5 paragraph mt-3"
                     placeholder="Message"
                   />
                   <input
                     type="submit"
-                    className="w-full flex items-center justify-center border border-[#042440] rounded-[36px] bg-[#042440] text-white font-16 fontmedium leading-5 p-3 mt-3 cursor-pointer"
+                    className="w-full flex items-center justify-center border border-[#042440] rounded-[36px] bg-[#042440] text-white font-16 font-medium leading-5 p-3 mt-3 cursor-pointer"
                   />
                 </form>
                 <p className="font-16 font-inter font-normal items-center flex-col flex justify-center text-center opacity-60 mb-4">
@@ -121,7 +121,7 @@ const Contact = () => {
           </div>
           <div>
             <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-10 p-5 sm:p-16">
-              <Fade top>
+              <Fade direction="down">
                 <div className="grid grid-cols-2 bg-[#FFFFFF] p-5 border border-t-0 border-b-0 border-r-0 border-l-[#042440] border-l-4 rounded-lg">
                   <div className="flex flex-col font-20 font-inter font-semibold textcolor leading-6">
                     Sales
@@ -134,7 +134,7 @@ const Contact = () => {
                   </div>
                 </div>
               </Fade>
-              <Fade bottom>
+              <Fade direction="up">
                 <div className="grid grid-cols-2 bg-[#FFFFFF] p-5 border border-t-0 border-b-0 border-r-0 border-l-[#042440] border-l-4 rounded-lg">
                   <div className="flex flex-col font-20 font-inter font-semibold textcolor leading-6">
                     Support
@@ -147,7 +147,7 @@ const Contact = () => {
                   </div>
                 </div>
               </Fade>
-              <Fade top>
+              <Fade direction="down">
                 <div className="grid grid-cols-2 bg-[#FFFFFF] p-5 border border-t-0 border-b-0 border-r-0 border-l-[#042440] border-l-4 rounded-lg">
                   <div className="flex flex-col font-20 font-inter font-semibold textcolor leading-6">
                     Careers
@@ -160,7 +160,7 @@ const Contact = () => {
                   </div>
                 </div>
               </Fade>
-              <Fade bottom>
+              <Fade direction="up">
                 <div className="grid grid-cols-2 bg-[#FFFFFF] p-5 border border-t-0 border-b-0 border-r-0 border-l-[#042440] border-l-4 rounded-lg">
                   <div className="flex flex-col font-20 font-inter font-semibold textcolor leading-6">
                     General

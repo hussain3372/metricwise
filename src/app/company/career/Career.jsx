@@ -1,6 +1,5 @@
 import React from "react";
 import Team from "./Team";
-import { PiGreaterThanLight } from "react-icons/pi";
 
 const Career = () => {
   return (
