@@ -1,5 +1,6 @@
 "use client";
 
+import { governance } from "@/app/data/Product";
 import Image from "next/image";
 import React from "react";
 import { Fade } from "react-awesome-reveal";
@@ -47,113 +48,52 @@ const Monitoring = () => {
           </div>
         </div>
 
-        <div>
+         {/* cards */}
+
+         <div>
           <div>
-            <Fade direction="right">
-              <div className="grid md:grid-cols-2 items-center md:gap-36 md:mt-20">
-                <div className=" order-2 md:order-1">
-                  <Image width={690} height={717} src="/mon1.png" alt="" />
+            {governance.map((item, index) => (
+              <Fade direction={index % 2 === 0 ? "left" : "right"} key={index}>
+                <div className="grid lg:grid-cols-2 items-center xl:gap-36 md:mt-20 pb-10">
+                  <div
+                    className={`${
+                      index % 2 !== 0
+                        ? "order-2 lg:order-2"
+                        : "order-2 lg:order-1"
+                    }`}
+                  >
+                    <Image
+                      src={item.src}
+                      width={item.w}
+                      height={item.h}
+                      alt={item.alt}
+                    />
+                  </div>
+                  <div
+                    className={`p-10 md:p-16 ${
+                      index % 2 !== 0 ? "order-1 lg:order-1" : "order-1"
+                    }`}
+                  >
+                    <Image
+                      src={item.titleImage}
+                      width={32}
+                      height={56}
+                      alt="lambu"
+                      className="mb-10"
+                    />
+                    <h1 className="font-36 font-inter font-bold leading-10">
+                      {item.title}
+                    </h1>
+                    <p className="font-24 font-normal font-inter leading-8 mt-3 mb-10 opacity-60">
+                      {item.para}
+                    </p>
+                  </div>
                 </div>
-                <div className="p-5 md:p-16 order-1 md:order-2">
-                  <Image
-                    src="/lambu.png"
-                    width={32}
-                    height={56}
-                    alt="lambu"
-                    className="md:mb-10"
-                  />
-                  <h1 className="font-36 font-inter font-bold leading-10">
-                    Model Explainability & Fairness
-                  </h1>
-                  <p className="font-24 font-normal font-inter leading-8 mt-8 mb-10 opacity-60">
-                    This feature helps in demystifying the decision-making
-                    processes and ethical considerations of machine learning
-                    models. It helps provide users with insights into how a
-                    model arrives at specific predictions or decisions,
-                    enhancing transparency and interpretability. By visualizing
-                    the factors influencing model outputs and generating
-                    interpretable summaries, the platform enables stakeholders
-                    to comprehend the rationale behind model decisions.
-                  </p>
-                </div>
-              </div>
-            </Fade>
-            <Fade direction="left">
-              <div className="grid md:grid-cols-2 items-center md:gap-36">
-                <div className="order-2 md:order-2 flex justify-end">
-                  <Image width={690} height={717} src="/mon2.png" alt="" />
-                </div>
-                <div className="order-1 md:order-1 p-10 md:p-16">
-                  <Image
-                    src="/lambu.png"
-                    width={32}
-                    height={56}
-                    alt="lambu"
-                    className="mb-10"
-                  />
-                  <h1 className="font-36 font-inter font-bold leading-10">
-                    Regulatory Compliance Scorecards
-                  </h1>
-                  <p className="font-24 font-normal font-inter leading-8 mt-8 mb-10 opacity-60">
-                    Monitor compliance with regulatory requirements through
-                    intuitive scorecards that provide actionable insights and
-                    recommendations for improvement.
-                  </p>
-                </div>
-              </div>
-            </Fade>
-            <Fade direction="right">
-              <div className="grid md:grid-cols-2 items-center md:gap-36">
-                <div className="order-2 md:order-1">
-                  <Image width={690} height={717} src="/mon3.png" alt="" />
-                </div>
-                <div className="order-1 md:order-2 p-10 md:p-16">
-                  <Image
-                    src="/lambu.png"
-                    width={32}
-                    height={56}
-                    alt="lambu"
-                    className="mb-10"
-                  />
-                  <h1 className="font-36 font-inter font-bold leading-10">
-                    Granular Access Controls
-                  </h1>
-                  <p className="font-24 font-normal font-inter leading-8 mt-8 mb-10 opacity-60">
-                    Implement fine-grained access controls to protect sensitive
-                    data and ensure compliance with regulatory mandates, with
-                    role-based permissions tailored to individual user roles and
-                    responsibilities.
-                  </p>
-                </div>
-              </div>
-            </Fade>
-            <Fade direction="left">
-              <div className="grid md:grid-cols-2 items-center md:gap-36">
-                <div className="order-2 md:order-2 flex justify-end">
-                  <Image width={690} height={717} src="/mon4.png" alt="" />
-                </div>
-                <div className="order-1 md:order-1 p-10 md:p-16">
-                  <Image
-                    src="/lambu.png"
-                    width={32}
-                    height={56}
-                    alt="lambu"
-                    className="mb-10"
-                  />
-                  <h1 className="font-36 font-inter font-bold leading-10">
-                    Automated Compliance Audits
-                  </h1>
-                  <p className="font-24 font-normal font-inter leading-8 mt-8 mb-10 opacity-60">
-                    Streamline compliance audits with automated workflows that
-                    track changes to models, data, and policies, ensuring
-                    transparency and accountability at every stage of the model
-                    lifecycle
-                  </p>
-                </div>
-              </div>
-            </Fade>
+              </Fade>
+            ))}
           </div>
         </div>
+
       </div>
 
       <div className="border border-t-[#000000] border-b-0 border-l-0 border-r-0 border-opacity-[12%] monbg">

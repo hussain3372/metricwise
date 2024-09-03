@@ -9,11 +9,13 @@ const Footer = () => {
       label: "About",
       items: [
         {
-          href: "/company/about",
+          // href: "/company/about",
+          href: "#",
           name: "About Us",
         },
         {
-          href: "/company/career",
+          // href: "/company/career",
+          href: "#",
           name: "Careers",
         },
         {
@@ -38,7 +40,8 @@ const Footer = () => {
       label: "Resources",
       items: [
         {
-          href: "/recourses/Blog",
+          // href: "/recourses/Blog",
+          href: "#",
           name: "Blogs",
         },
         {
@@ -71,7 +74,7 @@ const Footer = () => {
   ];
 
   return (
-    <footer className="text-white bg-[#042440] pt-20 pl-5 sm:pl-10 xl:pl-40 pr-5 sm:pr-10 xl:pr-40 pb-10">
+    <footer className="text-white bg-[#042440] pt-20">
         <div className="pb-20 flex flex-col justify-center items-center text-center">
             <h1 className="font-56 font-semibold leading-10 sm:leading-[50px] md:leading-[60px]">Get noticed online with <br /> Metricwise</h1>
             <p className="font-16 font-normal leading-5 mt-5 opacity-60">Empower your enterprise to mitigate risks and build confidence in your AI-driven decisions</p>
@@ -80,9 +83,9 @@ const Footer = () => {
                 <button className="bg-transparent border border-[#FFFFFF33] h-[40px] w-[128px] rounded-[4px] text-[#FFFFFF] font-12 leading-4 font-medium">Book a demo</button>
             </div>
         </div>
-      <div className="bg-[#041E35] widthclass rounded-lg p-10">
+      <div className="bg-[#041E35] rounded-lg p-10">
         <div className="grid lg:grid-cols-2 gap-20">
-          <div className="font-16 font-light flex-1 mt-10 space-y-6 justify-between flex flex-wrap md:space-y-0 md:mt-0">
+          <div className="font-16 font-light flex-1 mt-10 space-y-6 justify-around flex flex-wrap md:space-y-0 md:mt-0">
             {footerNavs.map((item, idx) => (
               <ul className="space-y-4" key={idx}>
                 <h4 className="font-20 font-bold mt-10 xl:mt-0">{item.label}</h4>
@@ -104,15 +107,15 @@ const Footer = () => {
               <Image
                 width={992}
                 height={40}
-                src="/footerlogo.png"
+                src="/footerlogo.svg"
                 className=""
                 alt="footer logo"
               />
             </div>
             <div className="flex gap-5">
-              <Image width={48} height={48} src="/linked.png" alt="LinkedIn" />
-              <Image width={48} height={48} src="/face.png" alt="Facebook" />
-              <Image width={48} height={48} src="/twit.png" alt="Twitter" />
+              <Image width={48} height={48} src="/linked.svg" alt="LinkedIn" />
+              <Image width={48} height={48} src="/face.svg" alt="Facebook" />
+              <Image width={48} height={48} src="/twit.svg" alt="Twitter" />
             </div>
           </div>
         </div>

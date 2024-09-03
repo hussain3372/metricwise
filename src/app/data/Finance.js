@@ -1,6 +1,6 @@
 export const Banking = [
     {
-      icon: "/f1.png",
+      icon: "/f1.svg",
       head: "Fraud Detection and Prevention",
       Items: [
         "Utilize AI/ML models to analyze transactional data and detect anomalies indicative of fraudulent activities.",
@@ -8,7 +8,7 @@ export const Banking = [
       ],
     },
     {
-      icon: "/f2.png",
+      icon: "/f2.svg",
       head: "Credit Risk Assessment",
       Items: [
         "Enhance credit risk assessment processes by leveraging AI/ML algorithms to analyze borrower data and predict default probabilities.",
@@ -16,7 +16,7 @@ export const Banking = [
       ],
     },
     {
-      icon: "/f3.png",
+      icon: "/f3.svg",
       head: "Customer Service Optimization",
       Items: [
         "Implement chatbots powered by AI/ML to provide personalized customer support and assistance with account inquiries and transactions.",
@@ -26,7 +26,7 @@ export const Banking = [
   ];
 export const Ins = [
     {
-      icon: "/in1.png",
+      icon: "/in1.svg",
       head: "Claims Processing Automation",
       Items: [
         "Streamline claims processing workflows by automating manual tasks such as data entry and document verification using AI/ML technologies. ",
@@ -34,7 +34,7 @@ export const Ins = [
       ],
     },
     {
-      icon: "/in2.png",
+      icon: "/in2.svg",
       head: "Risk Prediction and Mitigation",
       Items: [
         "Predict and mitigate risks associated with insurance claims by leveraging AI/ML models to analyze historical data and identify emerging trends.",
@@ -42,7 +42,7 @@ export const Ins = [
       ],
     },
     {
-      icon: "/in3.png",
+      icon: "/in3.svg",
       head: "Customer Relationship Management",
       Items: [
         "Enhance customer engagement and retention by leveraging AI-driven insights to personalize insurance offerings and services based on individual needs and preferences.",
@@ -52,7 +52,7 @@ export const Ins = [
   ];
 export const commerce = [
     {
-      icon: "/e1.png",
+      icon: "/e1.svg",
       head: "Demand Forcasting and Inventory Optimization",
       Items: [
         "Improve inventory management and reduce stockouts by leveraging AI/ML models to forecast demand accurately and optimize inventory levels.",
@@ -60,7 +60,7 @@ export const commerce = [
       ],
     },
     {
-      icon: "/e2.png",
+      icon: "/e2.svg",
       head: "Personalized Marketing and Customer Experienced",
       Items: [
         "Enhance customer engagement and loyalty by delivering personalized marketing campaigns and promotions tailored to individual preferences and purchase histories.",
@@ -68,7 +68,7 @@ export const commerce = [
       ],
     },
     {
-      icon: "/e3.png",
+      icon: "/e3.svg",
       head: "Loss Prevention and Security",
       Items: [
         "Mitigate losses due to theft and fraud by implementing AI-powered video surveillance systems to monitor store premises and identify suspicious activities.",
@@ -78,7 +78,7 @@ export const commerce = [
   ];
 export const health = [
     {
-      icon: "/h1.png",
+      icon: "/h1.svg",
       head: "Medical Diagnosis and Treatment Planning ",
       Items: [
         "Assist healthcare professionals in diagnosing medical conditions and developing treatment plans by leveraging AI/ML models to analyze patient data and medical imaging.",
@@ -86,7 +86,7 @@ export const health = [
       ],
     },
     {
-      icon: "/h2.png",
+      icon: "/h2.svg",
       head: "Patient Monitoring and Remote Care",
       Items: [
         "Enhance patient care and management by deploying AI-driven monitoring systems to track vital signs and symptoms remotely and alert healthcare providers to potential health risks.",
@@ -94,7 +94,7 @@ export const health = [
       ],
     },
     {
-      icon: "/h3.png",
+      icon: "/h3.svg",
       head: "Drug Discovery and Development",
       Items: [
         "Accelerate drug discovery processes and reduce R&D costs by leveraging AI/ML algorithms to analyze molecular structures and predict drug efficacy and safety.",
@@ -104,7 +104,7 @@ export const health = [
   ];
 export const social = [
     {
-      icon: "/s1.png",
+      icon: "/s1.svg",
       head: "Content Moderation ",
       Items: [
         "Utilize AI/ML models to analyze and flag inappropriate or harmful content, ensuring a safe and positive user experience.",
@@ -112,7 +112,7 @@ export const social = [
       ],
     },
     {
-      icon: "/s2.png",
+      icon: "/s2.svg",
       head: "Recommendation Algorithms",
       Items: [
         "Enhance user engagement by leveraging AI/ML algorithms to personalize content recommendations based on user preferences and behavior.",
@@ -120,7 +120,7 @@ export const social = [
       ],
     },
     {
-      icon: "/s3.png",
+      icon: "/s3.svg",
       head: "Ad Targeting",
       Items: [
         "Regular monitoring ensures that ad targeting practices adhere to privacy regulations and ethical standards, safeguarding user data and trust.",
@@ -130,7 +130,7 @@ export const social = [
   ];
 export const estate = [
     {
-      icon: "/es1.png",
+      icon: "/es1.svg",
       head: "Property Valuation ",
       Items: [
         "Utilize AI/ML models to analyze market trends and property data, accurately estimating property values and rental yields.",
@@ -138,7 +138,7 @@ export const estate = [
       ],
     },
     {
-      icon: "/es2.png",
+      icon: "/es2.svg",
       head: "Tenant Screening",
       Items: [
         "Enhance user engagement by leveraging AI/ML algorithms to personalize content recommendations based on user preferences and behavior.",
@@ -146,7 +146,7 @@ export const estate = [
       ],
     },
     {
-      icon: "/es3.png",
+      icon: "/es3.svg",
       head: "Portfolio Optimization",
       Items: [
         "Regular monitoring ensures that ad targeting practices adhere to privacy regulations and ethical standards, safeguarding user data and trust.",
@@ -156,7 +156,7 @@ export const estate = [
   ];
 export const education = [
     {
-      icon: "/edu1.png",
+      icon: "/edu1.svg",
       head: "Personalized Learning",
       Items: [
         "Utilize AI/ML models to analyze market trends and property data, accurately estimating property values and rental yields.",
@@ -164,7 +164,7 @@ export const education = [
       ],
     },
     {
-      icon: "/edu2.png",
+      icon: "/edu2.svg",
       head: "Student Performance Prediction",
       Items: [
         "Enhance user engagement by leveraging AI/ML algorithms to personalize content recommendations based on user preferences and behavior.",
@@ -172,7 +172,7 @@ export const education = [
       ],
     },
     {
-      icon: "/edu3.png",
+      icon: "/edu3.svg",
       head: "Teacher Support",
       Items: [
         "Support educators with AI-powered tools for lesson planning, student assessment, and classroom management.",
@@ -182,7 +182,7 @@ export const education = [
   ];
 export const vehicle = [
     {
-      icon: "/ve1.png",
+      icon: "/ve1.svg",
       head: "Safety Systems",
       Items: [
         "Utilize AI/ML models to analyze market trends and property data, accurately estimating property values and rental yields.",
@@ -190,7 +190,7 @@ export const vehicle = [
       ],
     },
     {
-      icon: "/ve2.png",
+      icon: "/ve2.svg",
       head: "Ethical Decisions",
       Items: [
         "Enhance user engagement by leveraging AI/ML algorithms to personalize content recommendations based on user preferences and behavior.",
@@ -198,7 +198,7 @@ export const vehicle = [
       ],
     },
     {
-      icon: "/ve3.png",
+      icon: "/ve3.svg",
       head: "Data Vehicles",
       Items: [
         "Safeguard passenger data and privacy by implementing robust data encryption and anonymization techniques in autonomous vehicle systems.",

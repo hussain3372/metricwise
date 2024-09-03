@@ -24,6 +24,7 @@ export const Trust = [
       "Silos hinder progress and innovation. Our platform breaks down these barriers by providing a shared source of truth for all stakeholders. From data scientists to product managers to executives, everyone gains transparent access to AI model performance, data quality, and business KPIs.",
   },
 ];
+
 export const insuranceTrust = [
   {
     pic: "/ba1.png",
@@ -44,6 +45,7 @@ export const insuranceTrust = [
       "Data privacy and security are top priorities in the financial sector. Our platform allows organizations to monitor AI applications without compromising on data privacy. With granular monitoring over both AI models and underlying data, stakeholders can rest assured that sensitive information remains protected at all times.",
   },
 ];
+
 export const commerceTrut = [
   {
     pic: "/ba1.png",
@@ -70,6 +72,7 @@ export const commerceTrut = [
       "Data integrity and privacy compliance are paramount concerns for retail and e-commerce businesses. Our platform facilitates robust monitoring of AI applications, ensuring the protection of sensitive information and adherence to regulatory standards. With comprehensive oversight of AI models and data processes, stakeholders can mitigate risks and maintain trust with customers.",
   },
 ];
+
 export const health = [
   {
     pic: "/ba1.png",
@@ -96,6 +99,7 @@ export const health = [
       "Silos inhibit collaboration and innovation within healthcare organizations. Our platform transcends these barriers by providing a unified source of truth for all stakeholders. From healthcare providers to data scientists to regulatory compliance teams, everyone gains transparent access to AI model performance, data integrity, and key performance indicators, fostering a collaborative environment focused on enhancing patient care ",
   },
 ];
+
 export const social = [
   {
     pic: "/ba1.png",
@@ -122,6 +126,7 @@ export const social = [
       "Optimize user experiences with tailored content and interactions. Our platform provides insights to enhance engagement through personalized recommendations and targeted content delivery.",
   },
 ];
+
 export const estate = [
   {
     pic: "/ba1.png",
@@ -148,6 +153,7 @@ export const estate = [
       "Optimize user experiences with tailored content and interactions. Our platform provides insights to enhance engagement through personalized recommendations and targeted content delivery.",
   },
 ];
+
 export const education = [
   {
     pic: "/ba1.png",
@@ -174,6 +180,7 @@ export const education = [
       "Break down barriers and encourage collaboration across educational communities. Our platform provides clear insights into AI model performance and educational outcomes, empowering educators and stakeholders to work together and drive innovation.",
   },  
 ];
+
 export const vehicle = [
   {
     pic: "/ba1.png",

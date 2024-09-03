@@ -14,10 +14,10 @@ const AccordionItem = ({ title, content }) => {
     <div className="mt-5 font-16 font-inter font-normal leading-6 border border-[#0000001F] rounded-lg shadow-[0_3px_5px_rgb(0,0,0,0.2)] overflow-hidden">
       <button
         onClick={() => setIsOpen(!isOpen)}
-        className="w-full text-left p-4 bg-[#FFFFFF] font-20 font-normal leading-6"
+        className="w-full text-left px-4 pt-4 pb-3 bg-[#FFFFFF] text-[#00000099] font-20 font-light leading-5"
       >
         <div className="flex justify-between items-center">
-          <span>{title}</span>
+          <span className="text-[#042440] font-20 font-medium">{title}</span>
           <span>
             {isOpen ? (
               <ChevronUpIcon className="h-5 w-5 text-gray-400" />
@@ -27,7 +27,7 @@ const AccordionItem = ({ title, content }) => {
           </span>
         </div>
       </button>
-      {isOpen && <div className="p-4 bg-white">{content}</div>}
+      {isOpen && <div className="px-4 pb-4 bg-white">{content}</div>}
     </div>
   );
 };
@@ -148,7 +148,7 @@ const Faq = () => {
 
         <div className="widthclass">
           <div>
-            <Zoom>
+           
               <div>
                 <div className="px-7">
                   <Head>
@@ -159,7 +159,7 @@ const Faq = () => {
                   </main>
                 </div>
               </div>
-            </Zoom>
+            
           </div>
         </div>
       </div>
@@ -168,15 +168,15 @@ const Faq = () => {
         <h1 className="font-40 font-bold textcolor leading-[72px] mb-10">
           Support
         </h1>
-        {/* <Fade top> */}
+
         <div className="grid md:grid-cols-3 gap-10 items-center">
-          {/* <Tilt> */}
+          
           <div class="max-w-sm h-full rounded-lg border-2 border-[#EBECF2] flex flex-col justify-center items-center text-center p-7">
             <Image
               width={55}
               height={55}
               class=""
-              src="/sup1.png"
+              src="/sup1.svg"
               alt="Sunset in the mountains"
             />
             <div class="px-6 py-4">
@@ -194,14 +194,13 @@ const Faq = () => {
               </span>
             </div>
           </div>
-          {/* </Tilt> */}
-          {/* <Tilt> */}
+         
           <div class="max-w-sm h-full rounded-lg overflow-hidden border-2 border-[#EBECF2] flex flex-col justify-center items-center text-center p-7">
             <Image
               width={55}
               height={55}
               class=""
-              src="/sup2.png"
+              src="/sup2.svg"
               alt="Sunset in the mountains"
             />
             <div class="px-6 py-4">
@@ -219,15 +218,12 @@ const Faq = () => {
               </span>
             </div>
           </div>
-          {/* </Tilt> */}
-
-          {/* <Tilt> */}
           <div class="max-w-sm h-full rounded-lg overflow-hidden border-2 border-[#EBECF2] flex flex-col justify-center items-center text-center p-7">
             <Image
               width={55}
               height={55}
               class=""
-              src="/sup3.png"
+              src="/sup3.svg"
               alt="Sunset in the mountains"
             />
             <div class="px-6 py-4">
@@ -245,9 +241,7 @@ const Faq = () => {
               </span>
             </div>
           </div>
-          {/* </Tilt> */}
         </div>
-        {/* </Fade> */}
       </div>
     </div>
   );

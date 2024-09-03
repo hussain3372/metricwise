@@ -7,7 +7,7 @@ import { Fade } from "react-awesome-reveal";
 
 const Card = () => {
   return (
-    <div className="">
+    <div className="space-y-10"> {/* Add space between the cards */}
       {Trust.map((item, index) => (
         <Fade key={index} direction={index % 2 === 0 ? "left" : "right"}>
           <div
@@ -15,8 +15,12 @@ const Card = () => {
               index % 2 === 0 ? "bg-[#F4F4F4]" : ""
             }`}
           >
-            <div className={`${index % 2 === 1 ? "md:order-last" : ""}`}>
-              <h1 className="font-36 fontbold font-inter leading-8 md:leading-10">
+            <div
+              className={`${
+                index % 2 === 1 ? "md:order-last" : ""
+              } flex flex-col justify-center`}
+            >
+              <h1 className="font-36 font-bold font-inter leading-8 md:leading-10">
                 {item.main}
               </h1>
               <p className="font-16 font-inter font-normal leading-[20px] mt-10">
@@ -25,12 +29,16 @@ const Card = () => {
             </div>
             <div
               className={`flex justify-center mt-10 md:mt-0 ${
-                index % 2 === 0 ? "md:justify-end" : ""
-              } ${
-                index % 1 === 0 ? "md:justify-start" : ""
+                index % 2 === 0 ? "md:justify-end" : "md:justify-start"
               }`}
             >
-              <Image src={item.pic} alt="Card image" width={400} height={200} />
+              <Image
+                src={item.pic}
+                alt="Card image"
+                width={400}
+                height={200}
+                className="object-contain"
+              />
             </div>
           </div>
         </Fade>

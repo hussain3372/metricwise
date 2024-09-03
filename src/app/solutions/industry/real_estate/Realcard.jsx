@@ -17,7 +17,7 @@ const Realcard = () => {
             }`}
           >
             <div className={`${index % 2 === 1 ? "md:order-last" : ""}`}>
-              <h1 className="font-36 fontbold font-inter leading-8 md:leading-10">
+              <h1 className="font-36 font-bold font-inter leading-8 md:leading-10">
                 {item.main}
               </h1>
               <p className="font-16 font-inter font-normal leading-[20px] mt-10">

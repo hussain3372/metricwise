@@ -68,7 +68,7 @@ export default function Example() {
               width={184}
               height={25}
               className="mx-auto"
-              src="/logo.png"
+              src="/logo.svg"
               alt="logo"
             />
           </Link>
@@ -171,18 +171,18 @@ export default function Example() {
                     <h1 className="font-32 font-bold leading-10">Solution</h1>
                     <div className="flex-col space-y-9 mt-6">
                       <button
-                        className={`font-semibold ${activeTab === "Industries"
-                            ? "text-gray-900"
-                            : "text-gray-900"
+                        className={`font-semibold font-20 ${activeTab === "Industries"
+                            ? "text-[#000000] hover:text-gray-500 focus:text-gray-500 active:text-gray-500"
+                            : "text-[#000000] hover:text-gray-500 focus:text-gray-500 active:text-gray-500"
                           }`}
                         onClick={() => setActiveTab("Industries")}
                       >
                         Industries
                       </button>
                       <button
-                        className={`font-semibold ${activeTab === "Data Types"
-                            ? "text-gray-900"
-                            : "text-gray-900"
+                        className={`font-semibold font-20 ${activeTab === "Data Types"
+                            ? "text-[#000000] hover:text-gray-500 focus:text-gray-500 active:text-gray-500"
+                            : "text-[#000000] hover:text-gray-500 focus:text-gray-500 active:text-gray-500"
                           }`}
                         onClick={() => setActiveTab("DataTypes")}
                       >

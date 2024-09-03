@@ -10,7 +10,7 @@ const Term = () => {
       <div className="bg-[#042440]">
         <div className="grid md:grid-cols-2 items-center white p-16 relative widthclass">
           <div>
-            <h1 className="font-64 fontbold lg:leading-40 mb-5">
+            <h1 className="font-64 font-bold lg:leading-40 mb-5">
               Data Security & <br /> Privacy Policy
             </h1>
           </div>

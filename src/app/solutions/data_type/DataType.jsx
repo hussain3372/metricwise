@@ -44,7 +44,7 @@ const DataType = () => {
         </div>
       </div>
 
-      <div className="mb-36">
+      <div className="mb-10">
         <div>
           <DataTypecard/>
         </div>

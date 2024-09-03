@@ -5,7 +5,6 @@ import Typewriter from "typewriter-effect";
 import Image from "next/image";
 import Graph from "../Graphs/Graph";
 
-
 const HeroSection = () => {
   return (
     <div className="border-b border-[#042440] border-opacity-[12%] mt-10 md:mt-0 dangerbgimg">
@@ -44,8 +43,14 @@ const HeroSection = () => {
             </button>
           </div>
         </div>
+        <div className=" absolute top-24 w-5xl md:top-20 -z-10 cubes">
+          {/* <img src="herobg1.png" className="herobg" alt="" /> */}
+          {/* <Cube/> */}
+        </div>
       </div>
-      
+
+      {/* <Space/> */}
+
       <Graph/>
 
     </div>

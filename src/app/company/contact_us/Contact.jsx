@@ -1,26 +1,54 @@
 "use client";
 
 import Image from "next/image";
+import { useEffect } from "react";
 import React from "react";
 import { Fade } from "react-awesome-reveal";
+import "intl-tel-input/build/css/intlTelInput.css";
+import intlTelInput from "intl-tel-input";
 
 const Contact = () => {
+  const handleEmailClick = (email) => {
+    window.location.href = `mailto:${email}`;
+  };
+
+  useEffect(() => {
+    if (typeof window !== "undefined") {
+      const input = document.querySelector("#mobile_code");
+
+      // Initialize intlTelInput
+      const iti = intlTelInput(input, {
+        initialCountry: "am", // Specify your desired initial country
+        separateDialCode: true,
+      });
+
+      // Cleanup function to destroy the instance when component unmounts or updates
+      return () => {
+        if (iti) iti.destroy();
+      };
+    }
+  }, []); // Make sure this only runs once or when dependencies change
+  
+
   return (
     <div className="bg-[#F3F6FF]">
       <div className="contact1">
         <div className="widthclass">
-          <div className="grid md:grid-cols-2 items-center p-5 md:p-10 gap-40">
+          <div className="grid lg:grid-cols-2 items-center p-5 md:py-10 md:px-20 gap-20 2xl:gap-40">
             <div>
               <Fade direction="left">
                 <div>
-                  <label htmlFor="" className="font-64 font-bold leading-[80px]">
+                  <label
+                    htmlFor=""
+                    className="font-64 font-bold leading-[80px]"
+                  >
                     Contact Us
                   </label>
-                  <p className="font-normal font-20 leading-6 mt-5">
+                  <p className="font-normal font-20 leading-6 mt-2">
                     Metricwise - A Comprehensive AI Observability and Governance
                     Platform If you fall into any of the following categories:
                   </p>
-                  <ul className="mt-8 list-disc list-inside">
+                  <ul className="mt-4 list-disc list-inside">
                     <li className="list-disc font-20 font-normal font-inter leading-6">
                       An inquisitive prospect
                     </li>
@@ -35,7 +63,7 @@ const Contact = () => {
               </Fade>
             </div>
             <Fade direction="down">
-              <div className="bg-[#FFFFFF] shadow-lg rounded-2xl pb-4">
+              <div className="bg-[#FFFFFF] shadow-lg rounded-2xl pb-2">
                 <form className="p-6">
                   <div className="flex flex-col justify-center items-center">
                     <label
@@ -60,6 +88,7 @@ const Contact = () => {
                       placeholder="Last name"
                     />
                   </div>
+
                   <div className="relative">
                     <input
                       type="email"
@@ -71,21 +100,17 @@ const Contact = () => {
                       <Image width={20} height={20} src="/email.png" alt="" />
                     </div>
                   </div>
+
                   <div className="relative mt-3">
                     <input
-                      type="tel"
+                      type="text"
                       required
-                      className="w-full rounded-[36px] pl-24 p-3 border border-[#0000001F] font-16 font-normal leading-5 paragraph"
+                      id="mobile_code"
+                      className="w-full rounded-[36px] pl-96 p-3 border border-[#0000001F] font-16 font-normal leading-5 paragraph"
                       placeholder="Phone number"
                     />
-                    <div className="absolute inset-y-0 left-0 flex items-center">
-                      <select className="appearance-none bg-transparent border-2 border-t-0 border-b-0 border-l-0 bprder-r border-[#00000066] pr-8 pl-3 py-1">
-                        <option>+92</option>
-                        <option>+1</option>
-                        <option>+44</option>
-                      </select>
-                    </div>
                   </div>
+
                   <input
                     type="text"
                     className="w-full rounded-[36px] p-3 border border-[#0000001F] font-16 font-normal leading-5 paragraph mt-3"
@@ -121,58 +146,85 @@ const Contact = () => {
           </div>
           <div>
             <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-10 p-5 sm:p-16">
-              <Fade direction="down">
-                <div className="grid grid-cols-2 bg-[#FFFFFF] p-5 border border-t-0 border-b-0 border-r-0 border-l-[#042440] border-l-4 rounded-lg">
-                  <div className="flex flex-col font-20 font-inter font-semibold textcolor leading-6">
-                    Sales
-                    <span className="font-12 font-inter font-normal leading-4 mt-2">
-                      sales@metricwise.ai
-                    </span>
-                  </div>
-                  <div className="flex justify-end items-center">
-                    <Image width={44} height={44} src="/contact1.png" alt="" />
-                  </div>
+              <div
+                onClick={() => handleEmailClick("sales@metricwise.ai")}
+                className="cursor-pointer grid grid-cols-2 bg-[#FFFFFF] p-5 border border-t-0 border-b-0 border-r-0 border-l-[#042440] border-l-4 rounded-lg"
+              >
+                <div className="flex flex-col font-20 font-inter font-semibold textcolor leading-6">
+                  Sales
+                  <span className="font-12 font-inter font-normal leading-4 mt-2">
+                    sales@metricwise.ai
+                  </span>
                 </div>
-              </Fade>
-              <Fade direction="up">
-                <div className="grid grid-cols-2 bg-[#FFFFFF] p-5 border border-t-0 border-b-0 border-r-0 border-l-[#042440] border-l-4 rounded-lg">
-                  <div className="flex flex-col font-20 font-inter font-semibold textcolor leading-6">
-                    Support
-                    <span className="font-12 font-inter font-normal leading-4 mt-2">
-                      support@metricwise.ai
-                    </span>
-                  </div>
-                  <div className="flex justify-end items-center">
-                    <Image width={44} height={44} src="/contact2.png" alt="" />
-                  </div>
+                <div className="flex justify-end items-center">
+                  <Image
+                    width={44}
+                    height={44}
+                    src="/contact1.svg"
+                    alt="Contact Icon"
+                  />
                 </div>
-              </Fade>
-              <Fade direction="down">
-                <div className="grid grid-cols-2 bg-[#FFFFFF] p-5 border border-t-0 border-b-0 border-r-0 border-l-[#042440] border-l-4 rounded-lg">
-                  <div className="flex flex-col font-20 font-inter font-semibold textcolor leading-6">
-                    Careers
-                    <span className="font-12 font-inter font-normal leading-4 mt-2">
-                      careers@metricwise.ai
-                    </span>
-                  </div>
-                  <div className="flex justify-end items-center">
-                    <Image width={44} height={44} src="/contact3.png" alt="" />
-                  </div>
+              </div>
+
+              <div
+                onClick={() => handleEmailClick("support@metricwise.ai")}
+                className="cursor-pointer grid grid-cols-2 bg-[#FFFFFF] p-5 border border-t-0 border-b-0 border-r-0 border-l-[#042440] border-l-4 rounded-lg"
+              >
+                <div className="flex flex-col font-20 font-inter font-semibold textcolor leading-6">
+                  Support
+                  <span className="font-12 font-inter font-normal leading-4 mt-2">
+                    support@metricwise.ai
+                  </span>
                 </div>
-              </Fade>
-              <Fade direction="up">
-                <div className="grid grid-cols-2 bg-[#FFFFFF] p-5 border border-t-0 border-b-0 border-r-0 border-l-[#042440] border-l-4 rounded-lg">
-                  <div className="flex flex-col font-20 font-inter font-semibold textcolor leading-6">
-                    General
-                    <span className="font-12 font-inter font-normal leading-4 mt-2">
-                      info@metricwise.ai
-                    </span>
-                  </div>
-                  <div className="flex justify-end items-center">
-                    <Image width={44} height={44} src="/contact4.png" alt="" />
-                  </div>
+                <div className="flex justify-end items-center">
+                  <Image
+                    width={44}
+                    height={44}
+                    src="/contact2.svg"
+                    alt="Support Icon"
+                  />
                 </div>
-              </Fade>
+              </div>
+
+              <div
+                onClick={() => handleEmailClick("careers@metricwise.ai")}
+                className="cursor-pointer grid grid-cols-2 bg-[#FFFFFF] p-5 border border-t-0 border-b-0 border-r-0 border-l-[#042440] border-l-4 rounded-lg"
+              >
+                <div className="flex flex-col font-20 font-inter font-semibold textcolor leading-6">
+                  Careers
+                  <span className="font-12 font-inter font-normal leading-4 mt-2">
+                    careers@metricwise.ai
+                  </span>
+                </div>
+                <div className="flex justify-end items-center">
+                  <Image
+                    width={44}
+                    height={44}
+                    src="/contact3.svg"
+                    alt="Careers Icon"
+                  />
+                </div>
+              </div>
+
+              <div
+                onClick={() => handleEmailClick("info@metricwise.ai")}
+                className="cursor-pointer grid grid-cols-2 bg-[#FFFFFF] p-5 border border-t-0 border-b-0 border-r-0 border-l-[#042440] border-l-4 rounded-lg"
+              >
+                <div className="flex flex-col font-20 font-inter font-semibold textcolor leading-6">
+                  General
+                  <span className="font-12 font-inter font-normal leading-4 mt-2">
+                    info@metricwise.ai
+                  </span>
+                </div>
+                <div className="flex justify-end items-center">
+                  <Image
+                    width={44}
+                    height={44}
+                    src="/contact4.svg"
+                    alt="General Icon"
+                  />
+                </div>
+              </div>
             </div>
           </div>
         </div>

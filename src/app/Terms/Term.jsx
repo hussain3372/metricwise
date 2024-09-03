@@ -21,7 +21,7 @@ const Term = () => {
             {/* <div className="absolute -top-16 left-0">
               <Image width={138} height={138} src="/hrblack1.png" alt="" />
             </div> */}
-            <h1 className="font-64 fontbold lg:leading-40 mb-5">
+            <h1 className="font-64 font-bold lg:leading-40 mb-5">
               Terms of Use
             </h1>
             {/* <div className="absolute left-0 bottom-2">
@@ -34,9 +34,9 @@ const Term = () => {
         </div>
       </div>
 
-      <div className="p-16 widthclass">
+      <div className="px-5 md:px-24 py-16 2xl:p-16 widthclass">
       <h1 className="font-36 font-inter font-semibold leading-10">
-        Terms and Use
+        Terms of Use
       </h1>
       <div className="mt-16">
         {Terms.map((term, termIndex) => (

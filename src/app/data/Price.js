@@ -20,6 +20,7 @@ export const Price = [
       span: "/month",
       btn: "Get Started"
     },
+
     {
       title: "Specialist",
       icon: "/tick.png",
@@ -41,6 +42,7 @@ export const Price = [
       span: "/month",
       btn: "Request a Demo"
     },
+    
     {
       title: "Enterprise",
       icon: "/tick.png",

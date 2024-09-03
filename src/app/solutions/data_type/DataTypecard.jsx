@@ -12,12 +12,12 @@ const DataTypecard = () => {
         <Fade key={index} direction={index % 2 === 0 ? "left" : "right"}>
           <div
             key={index}
-            className={`grid md:grid-cols-2 items-center px-10 sm:px-20 px-64 py-10 ${
+            className={`grid md:grid-cols-2 items-center px-64 py-10 ${
               index % 2 === 0 ? "bg-[#F4F4F4]" : ""
             }`}
           >
             <div className={`${index % 2 === 1 ? "md:order-last" : ""}`}>
-              <h1 className="font-36 fontbold font-inter leading-10">
+              <h1 className="font-36 font-bold font-inter leading-10">
                 {item.main}
               </h1>
               {item.Paragraph.map((para, paraIndex) => (
