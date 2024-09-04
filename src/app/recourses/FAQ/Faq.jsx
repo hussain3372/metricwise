@@ -14,10 +14,10 @@ const AccordionItem = ({ title, content }) => {
     <div className="mt-5 font-16 font-inter font-normal leading-6 border border-[#0000001F] rounded-lg shadow-[0_3px_5px_rgb(0,0,0,0.2)] overflow-hidden">
       <button
         onClick={() => setIsOpen(!isOpen)}
-        className="w-full text-left px-4 pt-4 pb-3 bg-[#FFFFFF] text-[#00000099] font-20 font-light leading-5"
+        className="w-full text-left px-4 pt-4 pb-4 bg-[#FFFFFF] text-[#00000099] font-20 font-light leading-5"
       >
         <div className="flex justify-between items-center">
-          <span className="text-[#042440] font-20 font-medium">{title}</span>
+          <span className="text-[#042440] font-20 font-normal">{title}</span>
           <span>
             {isOpen ? (
               <ChevronUpIcon className="h-5 w-5 text-gray-400" />
@@ -27,7 +27,7 @@ const AccordionItem = ({ title, content }) => {
           </span>
         </div>
       </button>
-      {isOpen && <div className="px-4 pb-4 bg-white">{content}</div>}
+      {isOpen && <div className="px-4 pb-4 bg-white font-light">{content}</div>}
     </div>
   );
 };

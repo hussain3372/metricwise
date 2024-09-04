@@ -18,7 +18,8 @@ export const Price = [
       ],
       months: "$80",
       span: "/month",
-      btn: "Get Started"
+      btn: "Get Started",
+      width: "152px",
     },
 
     {
@@ -40,7 +41,11 @@ export const Price = [
       ],
       months: "$200",
       span: "/month",
-      btn: "Request a Demo"
+      showBtn1: true,
+      btn1: "Get Started",
+      btn: "Request a Demo",
+      width: "196px",
+      width1: "152px",
     },
     
     {
@@ -62,7 +67,8 @@ export const Price = [
       ],
       months: "Custom",
       span: "",
-      btn: "Request a Demo"
+      btn: "Request a Demo",
+      width: "196px",
     }
   ];
   

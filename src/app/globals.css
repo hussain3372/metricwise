@@ -2,7 +2,7 @@
 @tailwind components;
 @tailwind utilities;
 
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap");
 
 * {
   margin: 0;
@@ -47,8 +47,8 @@
 }
 .pricebg {
   background-image: url(../../public/pricebg.png);
-  background-position: top right;
-  background-size: 50%;
+  background-position: 101% -1%;
+  background-size: 73%;
   background-repeat: no-repeat;
 }
 .monbg {
@@ -78,7 +78,7 @@
 .dangerbgimg {
   background-image: url(../../public/dangerbgimg.png);
   background-size: 80%;
-  background-position:top right;
+  background-position: top right;
   background-repeat: no-repeat;
 }
 /* styles/globals.css */
@@ -92,13 +92,13 @@
   color: #000000;
 }
 .white {
-  color: #FFF;
+  color: #fff;
 }
 .primaryblue {
   color: #042440;
 }
 .secondaryellow {
-  color: #D9c666;
+  color: #d9c666;
 }
 .gray {
   color: #666666;
@@ -118,39 +118,39 @@
 }
 
 .fontthin {
-  font-family: 'Inter';
+  font-family: "Inter";
   font-weight: 100;
 }
 .fontextralight {
-  font-family: 'Inter';
+  font-family: "Inter";
   font-weight: 200;
 }
 .fontlight {
-  font-family: 'Inter';
+  font-family: "Inter";
   font-weight: 300;
 }
 .fontregular {
-  font-family: 'Inter';
+  font-family: "Inter";
   font-weight: 400;
 }
 .fontmedium {
-  font-family: 'Inter';
+  font-family: "Inter";
   font-weight: 500;
 }
 .fontsemibold {
-  font-family: 'Inter';
+  font-family: "Inter";
   font-weight: 600;
 }
 .fontbold {
-  font-family: 'Inter';
+  font-family: "Inter";
   font-weight: 700;
 }
 .fontextrabold {
-  font-family: 'Inter';
+  font-family: "Inter";
   font-weight: 800;
 }
 .fontblack {
-  font-family: 'Inter';
+  font-family: "Inter";
   font-weight: 900;
 }
 
@@ -164,9 +164,6 @@
   50% { left: 50px; }
   100% { left: 0; }
 } */
-
-
-
 
 .font-96 {
   font-size: 96px;
@@ -191,6 +188,9 @@
 }
 .font-56 {
   font-size: 56px;
+}
+.font-52 {
+  font-size: 52px;
 }
 .font-48 {
   font-size: 48px;
@@ -245,84 +245,93 @@
 @media (max-width: 1240px) {
   .font-64 {
     font-size: 58px;
+  }
+  .font-32 {
+    font-size: 30px;
+  }
+  .font-20 {
+    font-size: 18px;
+  }
+  .font-36 {
+    font-size: 32px;
+  }
+  .font-24 {
+    font-size: 20px;
+  }
+  .dangerbgimg {
+    background-image: url(../../public/dangerbgimg.png);
+    background-size: 70%;
+    background-position: bottom right;
+    background-repeat: no-repeat;
+  }
 }
-.font-32 {
-  font-size: 30px;
+
+@media (max-width: 768px) {
+  .font-52 {
+    font-size: 44px;
+  }
 }
-.font-20 {
-  font-size: 18px;
-}
-.font-36 {
-  font-size: 32px;
-}
-.font-24 {
-  font-size: 20px;
-}
-.dangerbgimg {
-  background-image: url(../../public/dangerbgimg.png);
-  background-size: 70%;
-  background-position: bottom right;
-  background-repeat: no-repeat;
-}
-}
+
 @media (max-width: 768px) {
   .font-64 {
     font-size: 48px;
-}
-.font-32 {
-  font-size: 26px;
-}
-.font-36 {
-  font-size: 28px;
-}
-.font-24 {
-  font-size: 18px;
-}
-.font-40 {
-  font-size: 30px;
-}
+  }
+  .font-32 {
+    font-size: 26px;
+  }
+  .font-36 {
+    font-size: 28px;
+  }
+  .font-24 {
+    font-size: 18px;
+  }
+  .font-40 {
+    font-size: 30px;
+  }
 
-.font-56 {
-  font-size: 40px;
-}
+  .font-56 {
+    font-size: 40px;
+  }
 
-.blog {
-  background-size: cover;
-}
-.featurebg {
-  background-size: 50%;
-}
-.svgicons {
-  top: 50px;
-}
+  .blog {
+    background-size: cover;
+  }
+  .featurebg {
+    background-size: 50%;
+  }
+  .svgicons {
+    top: 50px;
+  }
 }
 
 @media (max-width: 630px) {
+  .font-52 {
+    font-size: 34px;
+  }
   .font-64 {
     font-size: 40px;
-} 
-.font-32 {
-  font-size: 22px;
+  }
+  .font-32 {
+    font-size: 22px;
+  }
 }
 
-}
-
-@media  (max-width: 500px) {
+@media (max-width: 500px) {
   .font-64 {
     font-size: 27px;
-}
-.font-32 {
-  font-size: 20px;
-}
-.font-20 {
-  font-size: 16px;
-}
-.pricebg {
-  background-image: none;
-}
-.font-56 {
-  font-size: 35px;
-}
+  }
+  .font-32 {
+    font-size: 20px;
+  }
+  .font-20 {
+    font-size: 16px;
+  }
+  .pricebg {
+    background-image: none;
+  }
+  .font-56 {
+    font-size: 35px;
+  }
 }
 .featurebg {
   background-image: url(../../public/circlebg.png);
@@ -330,8 +339,6 @@
   background-size: 30%;
   background-repeat: no-repeat;
 }
-
-
 
 .card {
   position: relative;
@@ -346,16 +353,15 @@
   backdrop-filter: blur(5px);
 }
 
-
 input {
-  --tw-ring-color: #0000001F !important;
-    box-shadow: #0000001F !important;
-    border-color: #0000001F !important;
+  --tw-ring-color: #0000001f !important;
+  box-shadow: #0000001f !important;
+  border-color: #0000001f !important;
 }
 textarea {
-  --tw-ring-color: #0000001F !important;
-    box-shadow: #0000001F !important;
-    border-color: #0000001F !important;
+  --tw-ring-color: #0000001f !important;
+  box-shadow: #0000001f !important;
+  border-color: #0000001f !important;
 }
 
 .custom-shadow {
@@ -374,7 +380,6 @@ textarea {
   }
 }
 
-
 .animated-path {
   animation: dash 5s linear infinite;
 }
@@ -384,8 +389,6 @@ textarea {
     stroke-dashoffset: -100;
   }
 }
-
-
 
 .iti--allow-dropdown {
   width: 100% !important;
@@ -398,6 +401,16 @@ textarea {
   padding-right: 4px;
 }
 
-.iti--allow-dropdown .iti__country-container:not(:has(+ input[disabled])):not(:has(+ input[readonly])) .iti__selected-country-primary:hover, .iti--allow-dropdown .iti__country-container:not(:has(+ input[disabled])):not(:has(+ input[readonly])) .iti__selected-country:has(+ .iti__dropdown-content:hover) .iti__selected-country-primary:hover {
+.iti--allow-dropdown
+  .iti__country-container:not(:has(+ input[disabled])):not(
+    :has(+ input[readonly])
+  )
+  .iti__selected-country-primary:hover,
+.iti--allow-dropdown
+  .iti__country-container:not(:has(+ input[disabled])):not(
+    :has(+ input[readonly])
+  )
+  .iti__selected-country:has(+ .iti__dropdown-content:hover)
+  .iti__selected-country-primary:hover {
   background-color: transparent !important;
 }

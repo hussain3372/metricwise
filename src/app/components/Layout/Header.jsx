@@ -231,8 +231,7 @@ export default function Example() {
           <Popover className="relative">
             <div className="flex items-center gap-x-1 font-16 font-medium leading-6 textcolor">
               <PopoverButton className="flex items-center gap-x-1">
-                <Link href="#">Pricing</Link>
-                {/* <Link href="/Pricing">Pricing</Link> */}
+                <Link href="/Pricing">Pricing</Link>
               </PopoverButton>
             </div>
           </Popover>

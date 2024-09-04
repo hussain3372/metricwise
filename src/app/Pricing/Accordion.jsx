@@ -12,10 +12,10 @@ const AccordionItem = ({ title, content }) => {
     <div className="mt-5 font-16 font-inter font-normal leading-6 border border-[#0000001F] rounded-lg shadow-[0_3px_5px_rgb(0,0,0,0.2)] overflow-hidden">
       <button
         onClick={() => setIsOpen(!isOpen)}
-        className="w-full text-left p-4 bg-[#FFFFFF] font-20 font-inter font-normal leading-6"
+        className="w-full text-left px-4 pt-4 pb-4 bg-[#FFFFFF] text-[#00000099] font-20 font-light leading-5"
       >
         <div className="flex justify-between items-center">
-          <span>{title}</span>
+          <span className="text-[#042440] font-20 font-normal">{title}</span>
           <span>
             {isOpen ? (
               <ChevronUpIcon className="h-5 w-5 text-gray-400" />
@@ -25,7 +25,7 @@ const AccordionItem = ({ title, content }) => {
           </span>
         </div>
       </button>
-      {isOpen && <div className="p-4 bg-white">{content}</div>}
+      {isOpen && <div className="px-4 pb-4 bg-white font-light">{content}</div>}
     </div>
   );
 };
@@ -98,22 +98,20 @@ const Faq = () => {
     <div>
       <div className="widthclass">
         <div>
-          <Zoom>
-            <div className="mt-16">
-              <h1 className="font-36 font-inter  font-bold leading-10 flex justify-center items-center">
-                FAQ’s
-              </h1>
+          <div className="mt-28">
+            <h1 className="font-36 font-inter  font-bold leading-10 flex justify-center items-center">
+              FAQ’s
+            </h1>
 
-              <div className="p-6 bg-white">
-                <Head>
-                  <title>FAQ - Metricwise</title>
-                </Head>
-                <main className=" mx-auto">
-                  <Accordion items={accordionItems} />
-                </main>
-              </div>
+            <div className="py-6 px-5 sm:px-20 bg-white mt-14">
+              <Head>
+                <title>FAQ - Metricwise</title>
+              </Head>
+              <main className=" mx-auto">
+                <Accordion items={accordionItems} />
+              </main>
             </div>
-          </Zoom>
+          </div>
         </div>
       </div>
     </div>
