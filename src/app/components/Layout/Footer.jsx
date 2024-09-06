@@ -76,11 +76,11 @@ const Footer = () => {
   return (
     <footer className="text-black bg-[url('/hero-gradient.png')] bg-no-repeat bg-cover bg-center bg pt-20 pb-16">
       <div className="widthclass">
-        <div className="pt-10 pb-0 sm:pb-16 px-5 sm:px-10 xl:px-28 ">
-          <div className="border-b pb-20 border-[#00000033] md:flex justify-between items-center text-center md:text-start">
+        <div className="pt-10 pb-0 sm:pb-16 px-5 sm:px-10 xl:px-20 xxl:px-28 ">
+          <div className="border-b pb-20 border-[#00000033] md:flex justify-between items-center text-center md:text-start gap-10">
             <h1 className="font-28 font-semibold leading-9">
-              Start your AI monitoring, observability and governance journey{" "}
-              <br className="hidden lg:block" /> with Metricwise.
+              Start your AI monitoring, observability and governance journey
+              <br className="hidden xxl:block" /> with Metricwise.
             </h1>
             <div className="mt-6 flex justify-center items-center gap-4">
               <button className="bg-[#000000] h-[40px] w-[128px] rounded-[4px] border-none text-[#fff] font-12 leading-4 font-medium">
@@ -92,9 +92,9 @@ const Footer = () => {
             </div>
           </div>
         </div>
-        <div className="py-10 px-5 sm:px-16 xl:px-40">
-          <div className="grid md:grid-cols-2 gap-20">
-            <div className="font-16 font-light mt-10 space-y-6 grid grid-cols-1 sm:grid-cols-3 md:grid-cols-2 lg:grid-cols-3 md:space-y-0 md:mt-0">
+        <div className="py-10 px-5 sm:px-16 xl:px-28 xxl:px-40">
+          <div className="grid md:grid-cols-2">
+            <div className="font-16 font-light mt-10 space-y-6 lg:space-x-16 grid grid-cols-1 sm:grid-cols-3 md:grid-cols-2 lg:grid-cols-3 md:space-y-0 md:mt-0">
               {footerNavs.map((item, idx) => (
                 <ul className="space-y-4" key={idx}>
                   <h4 className="font-20 font-bold mt-10 xl:mt-0">
@@ -113,7 +113,7 @@ const Footer = () => {
                 </ul>
               ))}
             </div>
-            <div className="flex-1 flex flex-col justify-start sm:items-center text-start mt-5 sm:mt-16 lg:mt-0">
+            <div className="flex-1 flex flex-col justify-start sm:items-end text-start mt-5 sm:mt-16 lg:mt-0">
               <div>
                 <div className="max-w-xs">
                   <Image

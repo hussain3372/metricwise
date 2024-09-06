@@ -18,7 +18,7 @@ const Governance = () => {
       <div className="mt-10 shadow-sm rounded-lg">
         <button
           onClick={() => setIsInference(!isInference)}
-          className="w-full text-left p-4 bg-[#DCEAF7] font-20 font-inter font-normal leading-6 rounded-lg border border-[#0000001F]"
+          className="w-full text-left p-4 bg-[#DCEAF7] font-18 font-inter font-normal leading-6 rounded-lg border border-[#0000001F]"
         >
           <div className="flex justify-between items-center">
             Explainability
@@ -64,7 +64,7 @@ const Governance = () => {
       <div className="mt-5 shadow-sm rounded-lg">
         <button
           onClick={() => setIsPerformance(!isPerformance)}
-          className="w-full text-left p-4 bg-[#DCEAF7] font-20 font-inter font-normal leading-6 rounded-lg border border-[#0000001F]"
+          className="w-full text-left p-4 bg-[#DCEAF7] font-18 font-inter font-normal leading-6 rounded-lg border border-[#0000001F]"
         >
           <div className="flex justify-between items-center">
             Security & Privacy
@@ -132,7 +132,7 @@ const Governance = () => {
       <div className="mt-5 shadow-sm rounded-lg">
         <button
           onClick={() => setIsBenchmarking(!isBenchmarking)}
-          className="w-full text-left p-4 bg-[#DCEAF7] font-20 font-inter font-normal leading-6 rounded-lg border border-[#0000001F]"
+          className="w-full text-left p-4 bg-[#DCEAF7] font-18 font-inter font-normal leading-6 rounded-lg border border-[#0000001F]"
         >
           <div className="flex justify-between items-center">
             Compliance Monitoring
@@ -176,7 +176,7 @@ const Governance = () => {
       <div className="mt-5 shadow-sm rounded-lg">
         <button
           onClick={() => setIsFeature(!isFeature)}
-          className="w-full text-left p-4 bg-[#DCEAF7] font-20 font-inter font-normal leading-6 rounded-lg border border-[#0000001F]"
+          className="w-full text-left p-4 bg-[#DCEAF7] font-18 font-inter font-normal leading-6 rounded-lg border border-[#0000001F]"
         >
           <div className="flex justify-between items-center">
             Security
@@ -215,7 +215,7 @@ const Governance = () => {
       <div className="mt-5 shadow-sm rounded-lg">
         <button
           onClick={() => setIsCompliance(!isCompliance)}
-          className="w-full text-left p-4 bg-[#DCEAF7] font-20 font-inter font-normal leading-6 rounded-lg border border-[#0000001F]"
+          className="w-full text-left p-4 bg-[#DCEAF7] font-18 font-inter font-normal leading-6 rounded-lg border border-[#0000001F]"
         >
           <div className="flex justify-between items-center">
           Compliance
@@ -265,7 +265,7 @@ const Governance = () => {
       <div className="mt-5 shadow-sm rounded-lg">
         <button
           onClick={() => setIsSupport(!isSupport)}
-          className="w-full text-left p-4 bg-[#DCEAF7] font-20 font-inter font-normal leading-6 rounded-lg border border-[#0000001F]"
+          className="w-full text-left p-4 bg-[#DCEAF7] font-18 font-inter font-normal leading-6 rounded-lg border border-[#0000001F]"
         >
           <div className="flex justify-between items-center">
           Support

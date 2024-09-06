@@ -17,7 +17,7 @@ const AccordionItem = ({ title, content }) => {
         className="w-full text-left px-4 pt-4 pb-4 bg-[#FFFFFF] text-[#00000099] font-20 font-light leading-5"
       >
         <div className="flex justify-between items-center">
-          <span className="text-[#042440] font-20 font-normal">{title}</span>
+          <span className="text-[#042440] font-18 font-normal">{title}</span>
           <span>
             {isOpen ? (
               <ChevronUpIcon className="h-5 w-5 text-gray-400" />

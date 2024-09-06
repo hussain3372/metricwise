@@ -2,7 +2,6 @@
 
 import Image from "next/image";
 import React from "react";
-import { PiGreaterThanLight } from "react-icons/pi";
 import Terms from "../data/Term";
 const Term = () => {
   return (
@@ -42,19 +41,19 @@ const Term = () => {
         {Terms.map((term, termIndex) => (
           <div key={termIndex}>
               <div>
-                <h2 className="font-24 font-inter font-semibold mt-5">
+                <h2 className="font-20 font-inter font-semibold mt-5">
                   {term.name}
                 </h2>
-                <p className="font-20 font-normal font-inter leading-6 mt-2 mb-6">
+                <p className="font-18 font-normal font-inter leading-6 mt-2 mb-6">
                   {term.para}
                 </p>
                 {term.list && term.list1 && (
                   <div>
                     <ul className="list-disc pl-8 space-y-2 pb-6">
-                      <li className="font-20 font-normal font-inter leading-6 mt-5">
+                      <li className="font-18 font-normal font-inter leading-6 mt-5">
                         {term.list}
                       </li>
-                      <li className="font-20 font-normal font-inter leading-6 mt-5">
+                      <li className="font-18 font-normal font-inter leading-6 mt-5">
                         {term.list1}
                       </li>
                     </ul>

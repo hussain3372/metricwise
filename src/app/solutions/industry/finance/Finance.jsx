@@ -2,7 +2,6 @@ import Link from "next/link";
 import React from "react";
 import Feature from "./Feature";
 import Featurecard from "./Featurecard"
-import { PiGreaterThanLight } from "react-icons/pi";
 import Image from "next/image";
 
 const Finance = () => {

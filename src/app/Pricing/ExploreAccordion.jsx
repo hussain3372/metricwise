@@ -16,7 +16,7 @@ const ExploreAccordion = () => {
       <div className="mt-14 shadow-sm rounded-lg">
         <button
           onClick={() => setIsPlatform(!isPlatform)}
-          className="w-full text-left p-4 bg-[#DCEAF7] font-20 font-inter font-normal leading-6 rounded-lg border border-[#0000001F]"
+          className="w-full text-left p-4 bg-[#DCEAF7] font-18 font-inter font-normal leading-6 rounded-lg border border-[#0000001F]"
         >
           <div className="flex justify-between items-center">
             Platform Deployment
@@ -56,7 +56,7 @@ const ExploreAccordion = () => {
       <div className="mt-5 shadow-lg rounded-lg">
         <button
           onClick={() => setIsScale(!isScale)}
-          className="w-full text-left p-4 bg-[#DCEAF7] font-20 font-inter font-normal leading-6 rounded-lg border border-[#0000001F]"
+          className="w-full text-left p-4 bg-[#DCEAF7] font-18 font-inter font-normal leading-6 rounded-lg border border-[#0000001F]"
         >
           <div className="flex justify-between items-center">
             Scale
@@ -124,7 +124,7 @@ const ExploreAccordion = () => {
       <div className="mt-5 shadow-lg rounded-lg">
         <button
           onClick={() => setIsData(!isData)}
-          className="w-full text-left p-4 bg-[#DCEAF7] font-20 font-inter font-normal leading-6 rounded-lg border border-[#0000001F]"
+          className="w-full text-left p-4 bg-[#DCEAF7] font-18 font-inter font-normal leading-6 rounded-lg border border-[#0000001F]"
         >
           <div className="flex justify-between items-center">
             Data
@@ -196,7 +196,7 @@ const ExploreAccordion = () => {
       <div className="mt-5 shadow-lg rounded-lg">
         <button
           onClick={() => setIsModels(!isModels)}
-          className="w-full text-left p-4 bg-[#DCEAF7] font-20 font-inter font-normal leading-6 rounded-lg border border-[#0000001F]"
+          className="w-full text-left p-4 bg-[#DCEAF7] font-18 font-inter font-normal leading-6 rounded-lg border border-[#0000001F]"
         >
           <div className="flex justify-between items-center">
           AI/ML Models

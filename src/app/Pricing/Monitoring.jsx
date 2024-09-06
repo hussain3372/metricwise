@@ -16,7 +16,7 @@ const Monitoring = () => {
       <div className="mt-10 shadow-md rounded-lg">
         <button
           onClick={() => setIsIntegrity(!isIntegrity)}
-          className="w-full text-left p-4 bg-[#DCEAF7] font-20 font-inter font-normal leading-6 rounded-lg border border-[#0000001F]"
+          className="w-full text-left p-4 bg-[#DCEAF7] font-18 font-inter font-normal leading-6 rounded-lg border border-[#0000001F]"
         >
           <div className="flex justify-between items-center">
             Data Integrity & Completeness
@@ -72,7 +72,7 @@ const Monitoring = () => {
       <div className="mt-5 shadow-lg rounded-lg">
         <button
           onClick={() => setIsPerformance(!isPerformance)}
-          className="w-full text-left p-4 bg-[#DCEAF7] font-20 font-inter font-normal leading-6 rounded-lg border border-[#0000001F]"
+          className="w-full text-left p-4 bg-[#DCEAF7] font-18 font-inter font-normal leading-6 rounded-lg border border-[#0000001F]"
         >
           <div className="flex justify-between items-center">
             Model Performance
@@ -124,7 +124,7 @@ const Monitoring = () => {
       <div className="mt-5 shadow-lg rounded-lg">
         <button
           onClick={() => setIsFeature(!isFeature)}
-          className="w-full text-left p-4 bg-[#DCEAF7] font-20 font-inter font-normal leading-6 rounded-lg border border-[#0000001F]"
+          className="w-full text-left p-4 bg-[#DCEAF7] font-18 font-inter font-normal leading-6 rounded-lg border border-[#0000001F]"
         >
           <div className="flex justify-between items-center">
             Feature Performance
@@ -168,7 +168,7 @@ const Monitoring = () => {
       <div className="mt-5 shadow-lg rounded-lg">
         <button
           onClick={() => setIsDetection(!isDetection)}
-          className="w-full text-left p-4 bg-[#DCEAF7] font-20 font-inter font-normal leading-6 rounded-lg border border-[#0000001F]"
+          className="w-full text-left p-4 bg-[#DCEAF7] font-18 font-inter font-normal leading-6 rounded-lg border border-[#0000001F]"
         >
           <div className="flex justify-between items-center">
             Anomaly Detection

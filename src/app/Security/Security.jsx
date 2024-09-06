@@ -2,7 +2,6 @@
 
 import Image from "next/image";
 import React from "react";
-import { PiGreaterThanLight } from "react-icons/pi";
 
 const Term = () => {
   return (
@@ -26,8 +25,8 @@ const Term = () => {
         </h1>
         <div className="mt-16">
           <div>
-            <h1 className="font-24 font-inter font-semibold">Data Security:</h1>
-            <p className="font-20 font-normal font-inter leading-6 mt-5 mb-6">
+            <h1 className="font-20 font-inter font-semibold">Data Security:</h1>
+            <p className="font-18 font-normal font-inter leading-6 mt-5 mb-6">
               <span className="pl-10"> At Metricwise,</span> we consider product
               security as an utmost priority. Our software development lifecycle
               SDLC adheres to Agile principles, ensuring a dynamic and
@@ -84,8 +83,8 @@ const Term = () => {
             </p>
           </div>
           <div>
-            <h1 className="font-24 font-inter font-semibold">Data Privacy:</h1>
-            <p className="font-20 font-normal font-inter leading-6 mt-5 mb-6">
+            <h1 className="font-20 font-inter font-semibold">Data Privacy:</h1>
+            <p className="font-18 font-normal font-inter leading-6 mt-5 mb-6">
               <span className="pl-10">At Metricwise,</span> data privacy and
               security stand as our paramount concerns. Our approach, rooted in
               principles, transcends conventional monitoring methodologies by

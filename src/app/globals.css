@@ -395,7 +395,8 @@ textarea {
 }
 
 .iti__selected-dial-code {
-  color: #00000066 !important;
+  color: #000 !important;
+  opacity: 60%;
   font-size: 16px;
   border-right: 1px solid #00000066 !important;
   padding-right: 4px;

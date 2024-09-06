@@ -27,8 +27,7 @@ const Contact = () => {
         if (iti) iti.destroy();
       };
     }
-  }, []); // Make sure this only runs once or when dependencies change
-  
+  }, []);
 
   return (
     <div className="bg-[#F3F6FF]">
@@ -81,11 +80,13 @@ const Contact = () => {
                       type="text"
                       className="rounded-[36px] p-3 border border-[#0000001F] font-16 font-normal leading-5 paragraph"
                       placeholder="First name"
+                      name="name"
                     />
                     <input
                       type="text"
                       className="rounded-[36px] p-3 border border-[#0000001F] font-16 font-normal leading-5 paragraph"
                       placeholder="Last name"
+                      name="name"
                     />
                   </div>
 
@@ -103,11 +104,14 @@ const Contact = () => {
 
                   <div className="relative mt-3">
                     <input
-                      type="text"
+                      type="tel" // Keep 'tel' to work with intl-tel-input
                       required
                       id="mobile_code"
                       className="w-full rounded-[36px] pl-96 p-3 border border-[#0000001F] font-16 font-normal leading-5 paragraph"
                       placeholder="Phone number"
+                      onInput={(e) => {
+                        e.target.value = e.target.value.replace(/[^0-9]/g, ""); // Only allow numeric input
+                      }}
                     />
                   </div>
 

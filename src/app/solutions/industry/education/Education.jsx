@@ -2,7 +2,6 @@ import Link from "next/link";
 import React from "react";
 import Feature from "./Feature";
 import Educationcard from "./Educationcard"
-import { PiGreaterThanLight } from "react-icons/pi";
 import Image from "next/image";
 const Education = () => {
   return (
