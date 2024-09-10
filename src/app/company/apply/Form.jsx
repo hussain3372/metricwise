@@ -1,8 +1,36 @@
+"use client";
+
 import Image from "next/image";
-import React from "react";
+import React, { useEffect } from "react";
 import Resumeinput from "./Resumeinput";
+import "intl-tel-input/build/css/intlTelInput.css";
+import intlTelInput from "intl-tel-input";
 
 const Form = () => {
+  useEffect(() => {
+    // Use a small delay to ensure the DOM is fully rendered
+    if (typeof window !== "undefined") {
+      setTimeout(() => {
+        const input = document.querySelector("#phone");
+        console.log(input); // This should now log the input element, not null
+
+        if (input) {
+          const iti = intlTelInput(input, {
+            initialCountry: "us",
+            separateDialCode: true,
+            nationalMode: false,
+            utilsScript:
+              "https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/js/utils.js",
+          });
+
+          return () => {
+            if (iti) iti.destroy();
+          };
+        }
+      }, 100); // Adjust delay if necessary
+    }
+  }, []); // This ensures intlTelInput runs every time section changes
+
   return (
     <div>
       <div>
@@ -12,12 +40,12 @@ const Form = () => {
               <form className="p-6">
                 <label
                   htmlFor=""
-                  className="fontbold font-20 leading-6 font-inter font-semibold"
+                  className="font-bold font-20 leading-6 font-inter"
                 >
                   Submit Your Application
                 </label>
                 <div>
-                  <Resumeinput/>
+                  <Resumeinput />
                 </div>
                 <div className="grid sm:grid-cols-2 gap-5 mt-4">
                   <input
@@ -33,6 +61,7 @@ const Form = () => {
                     required
                   />
                 </div>
+                
                 <div className="relative">
                   <input
                     type="email"
@@ -44,21 +73,20 @@ const Form = () => {
                     <Image width={20} height={20} src="/email.png" alt="" />
                   </div>
                 </div>
+
                 <div className="relative mt-5">
                   <input
                     type="tel"
-                    required
-                    className="w-full rounded-[36px] pl-24 p-3 border border-[#0000001F] hover:border-gray-500 transition-colors duration-300 font-16 font-normal leading-5 paragraph"
+                    id="phone"
+                    className="w-full rounded-[36px] p-3 paragraph"
                     placeholder="Phone number"
+                    required
+                    onInput={(e) => {
+                      e.target.value = e.target.value.replace(/[^0-9]/g, ""); // Only allow numeric input
+                    }}
                   />
-                  <div className="absolute inset-y-0 left-0 flex items-center">
-                    <select className=" border-t-0 border-b-0 border-l-0 border-r-2 border-[#0000001F]  pr-8 pl-3 py-1">
-                      <option>+92</option>
-                      <option>+1</option>
-                      <option>+44</option>
-                    </select>
-                  </div>
                 </div>
+
                 <input
                   type="text"
                   className="w-full rounded-[36px] p-3 border border-[#0000001F] hover:border-gray-500 transition-colors duration-300 font-16 font-normal leading-5 paragraph mt-5"
@@ -71,7 +99,7 @@ const Form = () => {
                 />
                 <label
                   htmlFor=""
-                  className="fontbold font-20 leading-6 font-inter font-semibold"
+                  className=" font-20 leading-6 font-inter font-bold"
                 >
                   Links
                 </label>

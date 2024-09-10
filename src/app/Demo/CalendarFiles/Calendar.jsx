@@ -45,7 +45,7 @@ const Calendar = () => {
 
   return (
     <div>
-      <div className="bg-white shadow-lg overflow-hidden rounded-lg calendarclass">
+      <div className="bg-white shadow-[0_0_10px_rgba(0,0,16,0.1)] overflow-hidden rounded-lg calendarclass">
         <div className="p-5 grid md:grid-cols-2 border-b border-[#00000033]">
           <p className="font-16 font-inter font-medium leading-5">
             Select Date & Time
@@ -54,8 +54,8 @@ const Calendar = () => {
             <Image width={20} height={20} src="/contact_calendar.png" alt="contact_calendar" />
           </div>
         </div>
-        <div className="flex justify-between items-center px-5 py-3 relative border-b border-[#00000033]">
-          <div className="grid sm:grid-cols-2 items-center">
+        <div className="grid grid-cols-2 items-center px-5 py-3 relative border-b border-[#00000033]">
+          <div className="flex justify-between items-center px-2">
             <div>
               <h1 className="font-16 font-inter font-medium leading-5">
                 {monthNames[month]}
@@ -80,7 +80,8 @@ const Calendar = () => {
               />
             </div>
           </div>
-          <div className="grid sm:grid-cols-2 items-center">
+
+          <div className="flex justify-between items-center px-2">
             <div>
               <h1 className="font-16 font-inter font-medium leading-5">
                 {year}

@@ -17,7 +17,7 @@ const DataType = () => {
           </div> */}
           <div className="grid md:grid-cols-2 items-center pt-20 md:mt-0">
             <div>
-              <h1 className="font-36 font-inter font-bold leading-10">
+              <h1 className="font-36 font-inter font-bold leading-10 text-[#042440]">
               Data Type
               </h1>
               <p className="font-24 font-normal font-inter leading-8 mt-8 mb-10 opacity-60">

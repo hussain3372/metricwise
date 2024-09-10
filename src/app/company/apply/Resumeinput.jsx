@@ -53,9 +53,11 @@ const Resumeinput = () => {
               />
             </g>
           </svg>
-          <span className="text-gray-600 mt-3" key="fileText">
-            Upload Resume/CV
-          </span>
+          {!file && (
+            <span className="text-gray-600 mt-3" key="fileText">
+              Upload Resume/CV
+            </span>
+          )}
           {file && (
             <div className="mt-4" key="filePreview">
               {file.type.startsWith("image/") ? (

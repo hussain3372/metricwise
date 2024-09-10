@@ -2,7 +2,6 @@
 import React from "react";
 import { estate } from "../../../data/Finance";
 import Image from "next/image";
-import { Fade } from "react-awesome-reveal";
 
 const Feature = () => {
   return (
@@ -20,7 +19,6 @@ const Feature = () => {
           <div>
             <div className="grid md:grid-cols-2 items-center gap-40 mt-24">
               <div>
-                <Fade direction="left">
                   {estate.map((item, index) => (
                     <div
                       key={index}
@@ -48,13 +46,10 @@ const Feature = () => {
                       </ul>
                     </div>
                   ))}
-                </Fade>
               </div>
-              <Fade direction="right">
                 <div className="">
                   <Image src="/banking.png" width={540} height={540} alt="" />
                 </div>
-              </Fade>
             </div>
             <div></div>
           </div>

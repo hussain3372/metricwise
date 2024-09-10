@@ -9,7 +9,6 @@ const DataTypecard = () => {
   return (
     <div className="">
       {dataType.map((item, index) => (
-        <Fade key={index} direction={index % 2 === 0 ? "left" : "right"}>
           <div
             key={index}
             className={`grid md:grid-cols-2 items-center px-64 py-10 ${
@@ -37,7 +36,6 @@ const DataTypecard = () => {
               <Image src={item.pic} alt="Card image" width={400} height={200} />
             </div>
           </div>
-        </Fade>
       ))}
     </div>
   );

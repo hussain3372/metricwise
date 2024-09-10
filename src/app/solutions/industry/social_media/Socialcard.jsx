@@ -3,13 +3,11 @@
 import React from "react";
 import { social } from "../../../data/trust";
 import Image from "next/image";
-import { Fade } from "react-awesome-reveal";
 
 const Socialcard = () => {
   return (
     <div className="">
       {social.map((item, index) => (
-        <Fade key={index} direction={index % 2 === 0 ? "left" : "right"}>
           <div
             key={index}
             className={`grid md:grid-cols-2 items-center px-10 sm:px-20 xl:px-40 2xl:px-64 py-10 ${
@@ -32,7 +30,6 @@ const Socialcard = () => {
               <Image src={item.pic} alt="Card image" width={400} height={200} />
             </div>
           </div>
-        </Fade>
       ))}
     </div>
   );

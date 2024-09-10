@@ -7,25 +7,11 @@ const Term = () => {
   return (
     <div>
       <div className="bg-[#042440]">
-        {/* <div className="flex items-center widthclass">
-          <h1 className="text-white pl-16 pt-10  font-24 font-normal font-inter flex items-center gap-2">
-            Metricwise
-            <span className="text-white font-20 font-normal font-inter opacity-50 flex items-center gap-2">
-              <PiGreaterThanLight /> Resources <PiGreaterThanLight /> Blogs
-            </span>
-          </h1>
-        </div> */}
-        <div className="grid md:grid-cols-2 items-center white p-16 relative widthclass">
+        <div className="grid md:grid-cols-2 items-center white py-7 md:py-10 px-5 sm:px-10 lg:px-36 2xl:px-16 relative widthclass">
           <div>
-            {/* <div className="absolute -top-16 left-0">
-              <Image width={138} height={138} src="/hrblack1.png" alt="" />
-            </div> */}
             <h1 className="font-64 font-bold lg:leading-40 mb-5">
               Terms of Use
             </h1>
-            {/* <div className="absolute left-0 bottom-2">
-              <Image width={108} height={136} src="/hr2.png" alt="" />
-            </div> */}
           </div>
           <div className="flex justify-center md:justify-end mt-10 md:mt-0">
             <Image width={1246} height={517} src="/gov.jpg" alt="" />
@@ -33,8 +19,8 @@ const Term = () => {
         </div>
       </div>
 
-      <div className="px-5 md:px-24 py-16 2xl:p-16 widthclass">
-      <h1 className="font-36 font-inter font-semibold leading-10">
+      <div className="px-5 sm:px-10 lg:px-36 py-16 2xl:p-16 widthclass">
+      <h1 className="font-36 font-inter font-bold leading-10 text-[#042440]">
         Terms of Use
       </h1>
       <div className="mt-16">
@@ -44,16 +30,16 @@ const Term = () => {
                 <h2 className="font-20 font-inter font-semibold mt-5">
                   {term.name}
                 </h2>
-                <p className="font-18 font-normal font-inter leading-6 mt-2 mb-6">
+                <p className="font-16 font-normal font-inter leading-6 mt-4 mb-6 opacity-70">
                   {term.para}
                 </p>
                 {term.list && term.list1 && (
                   <div>
                     <ul className="list-disc pl-8 space-y-2 pb-6">
-                      <li className="font-18 font-normal font-inter leading-6 mt-5">
+                      <li className="font-16 font-normal font-inter leading-6 mt-5 opacity-70">
                         {term.list}
                       </li>
-                      <li className="font-18 font-normal font-inter leading-6 mt-5">
+                      <li className="font-16 font-normal font-inter leading-6 mt-5 opacity-70">
                         {term.list1}
                       </li>
                     </ul>

@@ -7,17 +7,17 @@ import { ChevronUpIcon, ChevronDownIcon } from "@heroicons/react/24/outline";
 import Tilt from "react-parallax-tilt";
 import { Fade, Zoom } from "react-awesome-reveal";
 
-const AccordionItem = ({ title, content }) => {
+const AccordionItem = ({ title, content, list }) => {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
-    <div className="mt-5 font-16 font-inter font-normal leading-6 border border-[#0000001F] rounded-lg shadow-[0_3px_5px_rgb(0,0,0,0.2)] overflow-hidden">
+    <div className="mt-5 mb-8 font-18 font-inter font-normal leading-6 border border-[#0000001F] rounded-lg shadow-[0_3px_5px_rgb(0,0,0,0.2)] overflow-hidden">
       <button
         onClick={() => setIsOpen(!isOpen)}
         className="w-full text-left px-4 pt-4 pb-4 bg-[#FFFFFF] text-[#00000099] font-20 font-light leading-5"
       >
         <div className="flex justify-between items-center">
-          <span className="text-[#042440] font-18 font-normal">{title}</span>
+          <span className="text-[#402604] font-20 font-normal">{title}</span>
           <span>
             {isOpen ? (
               <ChevronUpIcon className="h-5 w-5 text-gray-400" />
@@ -27,7 +27,22 @@ const AccordionItem = ({ title, content }) => {
           </span>
         </div>
       </button>
-      {isOpen && <div className="px-4 pb-4 bg-white font-light">{content}</div>}
+      {isOpen && (
+        <div className="px-4 pb-4 bg-white font-normal text-[#00000099]">
+          <div dangerouslySetInnerHTML={{ __html: content }}></div>
+
+          {/* Render the list if present */}
+          {list && list.length > 0 && (
+            <div>
+              <ul className="mt-5 list-disc list-inside space-y-2">
+                {list.map((item, index) => (
+                  <li key={index}>{item}</li>
+                ))}
+              </ul>
+            </div>
+          )}
+        </div>
+      )}
     </div>
   );
 };
@@ -47,27 +62,47 @@ const Faq = () => {
     {
       title: "What is Metricwise?",
       content:
-        "Metricwise is a company that prioritizes product security and adheres to Agile principles in its SDLC.",
+        "Metricwise serves as a platform for monitoring, observability, and governance, empowering AI practitioners with confidence in their AI endeavors. We simplify the process of model monitoring, offering real-time insights into both model and data health. Our platform facilitates context-driven, comprehensive, and continuous governance, oversight, and accountability of AI systems.",
+      list: [
+        "How is the model performing in real-time?",
+        "Does the accuracy align with training expectations?",
+        "Are variations in data quality impacting model outcomes?",
+        "What alterations occurred in the model's behavior over time?",
+        "Can the application explain the specifics of a particular prediction?",
+        "Which features exerted the most significant influence on a given prediction?",
+        "How is fairness maintained across various data subgroups?",
+        "Is the model in compliance with regulatory requirements?",
+      ],
     },
     {
       title: "What can be done with Metricwise?",
       content:
         "We integrate security efforts throughout the Agile release cycle and conduct continuous security and vulnerability scanning.",
+        list: [
+          "Monitor the real-time quality and health of both data and models.",
+          "Establish a connection between predictions and contextual alignment with business values",
+          "Ensure the clarity, reliability, and accuracy of every Large Language Model (LLM) response.",
+          "Establish a baseline for tracking the behavior of models over time.",
+          "Develop tailored dashboards for each of your production models.",
+          "Apply governance effectively to unleash the full potential of your AI systems.",
+          "Assign, monitor, and track controls for behavior and performance, effortlessly storing evidence and generating reports for various AI use cases.",
+          "Visualize the risk posture of your AI applications, allowing you to identify critical areas that require prioritized governance measures.",
+        ],
     },
     {
       title: "How can I begin using Metricwise?",
       content:
-        "Our practices include monitoring containers, VM images, and network traffic, and engaging external organizations for penetration tests.",
+        "Starting your journey with Metricwise is both easy and straightforward. Dive into the Metricwise platform by registering for a free Basic Plan account. Explore the documentation available here, or feel free to contact us at info@metricwise.ai for additional details.",
     },
     {
       title: "How can I establish a partnership with Metricwise?",
       content:
-        "Our practices include monitoring containers, VM images, and network traffic, and engaging external organizations for penetration tests.",
+        "Feel free to reach out to us; you can email us at sales@metricwise.ai.",
     },
     {
       title: "Can I access Metricwise without any charges?",
       content:
-        "Our practices include monitoring containers, VM images, and network traffic, and engaging external organizations for penetration tests.",
+        "Absolutely! There are two options for using Metricwise at no cost.<br><br> The Metricwise Basic plan is currently free and will remain so indefinitely, allowing you to manage two projects.<br>This plan provides all the advantages of monitoring your model performance, coupled with data profiling and various other fantastic features, all at no cost.<br> <br> Additionally, the Metricwise Enterprise plan comes with a tailored free trial period designed to meet your specific needs.<br>Feel free to contact us, and we will be delighted to arrange a customized trial period for you.",
     },
     {
       title: "What integrations do you support?",
@@ -77,32 +112,22 @@ const Faq = () => {
     {
       title: "How do I get started?",
       content:
-        "Our practices include monitoring containers, VM images, and network traffic, and engaging external organizations for penetration tests.",
+        "Click here to register for a free account and kickstart your journey! The platform will guide you through the process in just a few minutes. <br> <br>If you prefer an overview of the process, check out the Getting Started guide available in the documentation center <br> <br> .Alternatively, contact us to arrange acall with our team. We're delighted to assist you in gaining more insights.",
     },
     {
       title: "What kinds of data can I use?",
       content:
-        "Our practices include monitoring containers, VM images, and network traffic, and engaging external organizations for penetration tests.",
+        "Our platform accommodates both structured and unstructured data, including tabular, text, images, time series, and more.",
+    },
+    {
+      title: "What integrations do you support?",
+      content:
+        "Our platform seamlessly integrates with your current data pipelines and ML deployment tools. For additional information on integrations, please visit this page.",
     },
     {
       title: "How to upgrade your plan?",
       content:
-        "Our practices include monitoring containers, VM images, and network traffic, and engaging external organizations for penetration tests.",
-    },
-    {
-      title: "How can I access support for Metricwise?",
-      content:
-        "Our practices include monitoring containers, VM images, and network traffic, and engaging external organizations for penetration tests.",
-    },
-    {
-      title: "Which payment methods are accepted?",
-      content:
-        "Our practices include monitoring containers, VM images, and network traffic, and engaging external organizations for penetration tests.",
-    },
-    {
-      title: "Has Metricwise obtained SOC 2 certification?",
-      content:
-        "Our practices include monitoring containers, VM images, and network traffic, and engaging external organizations for penetration tests.",
+        "Upgrading becomes a breeze when you're ready to progress beyond the Basic plan! When you decide to monitor additional projects,  or add more users, you can simply choose the Specialist plan in your profile or contact us  to discuss your account upgrade for the Enterprise upgrade.",
     },
   ];
 
@@ -110,14 +135,6 @@ const Faq = () => {
     <div className="">
       <div className="faq">
         <div className=" relative">
-          {/* <div className="flex items-center widthclass">
-          <h1 className="text-black pl-16 pt-10 font-24 font-normal font-inter flex items-center flex-wrap gap-2">
-            Metricwise
-            <span className="text-black font-20 font-normal font-inter opacity-50 flex items-center gap-2">
-              <PiGreaterThanLight /> Resources <PiGreaterThanLight /> FAQs
-            </span>
-          </h1>
-        </div> */}
           <div className="flex flex-col pt-10 md:pt-40 pb-2 md:pb-14 justify-center items-center m-auto text-black widthclass">
             <h1 className="font-64 font-bold leading-[80px] mb-8">
               We are here to help you
@@ -148,97 +165,15 @@ const Faq = () => {
 
         <div className="widthclass">
           <div>
-           
-              <div>
-                <div className="px-7">
-                  <Head>
-                    <title>FAQ - Metricwise</title>
-                  </Head>
-                  <main className=" mx-auto">
-                    <Accordion items={accordionItems} />
-                  </main>
-                </div>
+            <div>
+              <div className="px-7">
+                <Head>
+                  <title>FAQ - Metricwise</title>
+                </Head>
+                <main className=" mx-auto">
+                  <Accordion items={accordionItems} />
+                </main>
               </div>
-            
-          </div>
-        </div>
-      </div>
-
-      <div className="widthclass p-3 md:p-16 flex-col flex justify-center items-center">
-        <h1 className="font-40 font-bold textcolor leading-[72px] mb-10">
-          Support
-        </h1>
-
-        <div className="grid md:grid-cols-3 gap-10 items-center">
-          
-          <div class="max-w-sm h-full rounded-lg border-2 border-[#EBECF2] flex flex-col justify-center items-center text-center p-7">
-            <Image
-              width={55}
-              height={55}
-              class=""
-              src="/sup1.svg"
-              alt="Sunset in the mountains"
-            />
-            <div class="px-6 py-4">
-              <div class="font-medium gont-inter font-20 leading-7 mb-2 mt-3">
-                Documentation:
-              </div>
-              <p class="text-gray-700 text-base">
-                Gain insights into how Metricwise operates and receive
-                assistance on common issues.
-              </p>
-            </div>
-            <div class="px-6 pt-4 pb-2">
-              <span class="inline-block bg-[#042440] rounded-full px-8 py-2 text-sm font-semibold text-white mr-2 mb-2">
-                Head to Docs
-              </span>
-            </div>
-          </div>
-         
-          <div class="max-w-sm h-full rounded-lg overflow-hidden border-2 border-[#EBECF2] flex flex-col justify-center items-center text-center p-7">
-            <Image
-              width={55}
-              height={55}
-              class=""
-              src="/sup2.svg"
-              alt="Sunset in the mountains"
-            />
-            <div class="px-6 py-4">
-              <div class="font-medium gont-inter font-20 leading-7 mb-2 mt-3">
-                Demos:
-              </div>
-              <p class="text-gray-700 text-base">
-                Explore the features of Metricwise through brief and informative
-                video presentations.
-              </p>
-            </div>
-            <div class="px-6 pt-4 pb-2">
-              <span class="inline-block bg-[#042440] rounded-full px-8 py-2 text-sm font-semibold text-white mr-2 mb-2">
-                Explore Demos
-              </span>
-            </div>
-          </div>
-          <div class="max-w-sm h-full rounded-lg overflow-hidden border-2 border-[#EBECF2] flex flex-col justify-center items-center text-center p-7">
-            <Image
-              width={55}
-              height={55}
-              class=""
-              src="/sup3.svg"
-              alt="Sunset in the mountains"
-            />
-            <div class="px-6 py-4">
-              <div class="font-medium gont-inter font-20 leading-7 mb-2 mt-3">
-                Integrations:
-              </div>
-              <p class="text-gray-700 text-base">
-                Enable observability and governance for your ML model and data
-                monitoring.
-              </p>
-            </div>
-            <div class="px-6 pt-4 pb-2">
-              <span class="inline-block bg-[#042440] rounded-full px-8 py-2 text-sm font-semibold text-white mr-2 mb-2">
-                Explore Guidebooks
-              </span>
             </div>
           </div>
         </div>

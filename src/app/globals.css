@@ -314,6 +314,9 @@
   .font-32 {
     font-size: 22px;
   }
+  .font-18 {
+    font-size: 14px;
+  }
 }
 
 @media (max-width: 500px) {
@@ -415,3 +418,4 @@ textarea {
   .iti__selected-country-primary:hover {
   background-color: transparent !important;
 }
+  

@@ -165,15 +165,13 @@ export const Company = [
     name: "Career",
     description:
       "Explore rewarding career opportunities and unleash your potential with us.",
-    // href: "/company/career",
-    href: "#",
+    href: "/company/career",
     icon: "/co1.svg",
   },
   {
     name: "About Us",
     description: "Discover who we are, what we do, and why we're passionate ",
-    // href: "/company/about",
-    href: "#",
+    href: "/company/about",
     icon: "/co2.svg",
   },
   {

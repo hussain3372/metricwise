@@ -7,7 +7,7 @@ const Apply = () => {
     <div className="">
       <div className="widthclass pt-16 pb-16">
         <div className="flex flex-col justify-center items-center m-auto text-center">
-          <h1 className="font-36 fontbold leading-10">
+          <h1 className="font-36 font-bold leading-10">
             Senior Backend <br /> Software Engineer
           </h1>
           <p className="font-16 font-inter font-normal leading-5 pt-5">

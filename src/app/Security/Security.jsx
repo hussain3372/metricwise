@@ -7,7 +7,7 @@ const Term = () => {
   return (
     <div>
       <div className="bg-[#042440]">
-        <div className="grid md:grid-cols-2 items-center white p-16 relative widthclass">
+        <div className="grid md:grid-cols-2 items-center white py-7 md:py-0 px-5 sm:px-10 lg:px-36 2xl:px-16 relative widthclass">
           <div>
             <h1 className="font-64 font-bold lg:leading-40 mb-5">
               Data Security & <br /> Privacy Policy
@@ -19,14 +19,14 @@ const Term = () => {
         </div>
       </div>
 
-      <div className="p-16 widthclass">
-        <h1 className="font-36 font-inter font-semibold leading-10">
+      <div className="px-5 sm:px-10 lg:px-36 py-16 2xl:p-16 widthclass">
+      <h1 className="font-36 font-inter font-bold leading-10 text-[#042440]">
           Metricwise Inc Data Security & Privacy Policy
         </h1>
         <div className="mt-16">
           <div>
             <h1 className="font-20 font-inter font-semibold">Data Security:</h1>
-            <p className="font-18 font-normal font-inter leading-6 mt-5 mb-6">
+            <p className="font-16 font-normal font-inter leading-6 mt-5 mb-6 opacity-60">
               <span className="pl-10"> At Metricwise,</span> we consider product
               security as an utmost priority. Our software development lifecycle
               SDLC adheres to Agile principles, ensuring a dynamic and
@@ -84,7 +84,7 @@ const Term = () => {
           </div>
           <div>
             <h1 className="font-20 font-inter font-semibold">Data Privacy:</h1>
-            <p className="font-18 font-normal font-inter leading-6 mt-5 mb-6">
+            <p className="font-16 font-normal font-inter leading-6 mt-5 mb-6 opacity-60">
               <span className="pl-10">At Metricwise,</span> data privacy and
               security stand as our paramount concerns. Our approach, rooted in
               principles, transcends conventional monitoring methodologies by

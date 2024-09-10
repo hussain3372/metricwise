@@ -1,12 +1,39 @@
 "use client";
 import React from "react";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import Calendar from "./CalendarFiles/Calendar";
 import Image from "next/image";
 import Schedule from "./Shedule/Schedule";
 import { Fade } from "react-awesome-reveal";
+import intlTelInput from "intl-tel-input";
+import "intl-tel-input/build/css/intlTelInput.css";
+
 const Demo = () => {
   const [section, setSection] = useState(1);
+
+  useEffect(() => {
+    // Use a small delay to ensure the DOM is fully rendered
+    if (typeof window !== "undefined") {
+      setTimeout(() => {
+        const input = document.querySelector("#phone");
+        console.log(input); // This should now log the input element, not null
+
+        if (input) {
+          const iti = intlTelInput(input, {
+            initialCountry: "us",
+            separateDialCode: true,
+            nationalMode: false,
+            utilsScript:
+              "https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/js/utils.js",
+          });
+
+          return () => {
+            if (iti) iti.destroy();
+          };
+        }
+      }, 100); // Adjust delay if necessary
+    }
+  }, [section]); // This ensures intlTelInput runs every time section changes
 
   const handleNext = () => {
     setSection(section + 1);
@@ -20,12 +47,12 @@ const Demo = () => {
     <div className="relative">
       <div className="px-5 md:px-10 py-10 md:py-14 demoparent">
         {section === 1 && (
-          <div className="grid lg:grid-cols-2 max-w-[1040px] bg-[#FFFFFF] m-auto rounded-[40px] p-5 md:p-20 gap-20 shadow-2xl">
+          <div className="grid lg:grid-cols-2 max-w-[1040px] bg-[#FFFFFF] m-auto rounded-[40px] p-5 md:p-20 gap-20 shadow-[0_0_10px_rgba(0,0,16,0.1)]">
             <div>
               <Image
                 width={140}
                 height={20}
-                src="/logo.png"
+                src="/logo.svg"
                 alt="logo"
                 className="mb-5"
               />
@@ -35,17 +62,17 @@ const Demo = () => {
               >
                 Metricwise
               </label>
-              <h1 className="font-semibold font-20 leading-6 textcolor mt-5">
+              <h1 className="font-semibold font-20 leading-6 textcolor mt-5 text-[#042440]">
                 A Comprehensive AI Observability and Governance Platform
               </h1>
               <ul className="mt-8">
                 <li className="flex items-center gap-4 font-16 font-medium leading-5 text-[#747273]">
-                  <Image width={24} height={24} src="/demo1.png" alt="demo1" />
+                  <Image width={24} height={24} src="/demo1.svg" alt="demo1" />
                   Find a time to explore the capabilities of Metricwise tailored
                   to your needs.
                 </li>
                 <li className="flex items-center gap-4 font-16 font-medium leading-5 text-[#747273] mt-5">
-                  <Image width={24} height={24} src="/demo2.png" alt="demo2" />
+                  <Image width={24} height={24} src="/demo2.svg" alt="demo2" />
                   Upon confirmation, you will receive the details for the web
                   conferencing session.
                 </li>
@@ -76,13 +103,13 @@ const Demo = () => {
         )}
 
         {section === 2 && (
-          <div className="grid lg:grid-cols-2 max-w-[1040px] bg-[#FFFFFF] m-auto rounded-[40px] p-5 md:p-20 gap-10 shadow-xl">
+          <div className="grid lg:grid-cols-2 max-w-[1040px] bg-[#FFFFFF] m-auto rounded-[40px] p-5 md:p-20 gap-10 shadow-[0_0_10px_rgba(0,0,16,0.1)]">
             <div>
               <div>
                 <Image
                   width={140}
                   height={20}
-                  src="/logo.png"
+                  src="/logo.svg"
                   alt="logo"
                   className="mb-5"
                 />
@@ -92,7 +119,7 @@ const Demo = () => {
                 >
                   Metricwise
                 </label>
-                <h1 className="font-semibold font-20 leading-6 textcolor mt-5">
+                <h1 className="font-semibold font-20 leading-6 textcolor mt-5 text-[#042440]">
                   A Comprehensive AI Observability and Governance Platform
                 </h1>
                 <ul className="mt-8">
@@ -100,7 +127,7 @@ const Demo = () => {
                     <Image
                       width={24}
                       height={24}
-                      src="/demo1.png"
+                      src="/demo1.svg"
                       alt="demo1"
                     />
                     Find a time to explore the capabilities of Metricwise
@@ -110,7 +137,7 @@ const Demo = () => {
                     <Image
                       width={24}
                       height={24}
-                      src="/demo2.png"
+                      src="/demo2.svg"
                       alt="demo2"
                     />
                     Upon confirmation, you will receive the details for the web
@@ -150,13 +177,13 @@ const Demo = () => {
         )}
 
         {section === 3 && (
-          <div className="grid lg:grid-cols-2 max-w-[1040px] bg-[#FFFFFF] flex-col justify-center m-auto rounded-[40px] p-5 md:p-20 gap-10 shadow-xl">
+          <div className="grid lg:grid-cols-2 max-w-[1040px] bg-[#FFFFFF] flex-col justify-center m-auto rounded-[40px] p-5 md:p-20 gap-10 shadow-[0_0_10px_rgba(0,0,16,0.1)]">
             <div>
               <div>
                 <Image
                   width={140}
                   height={20}
-                  src="/logo.png"
+                  src="/logo.svg"
                   alt="logo"
                   className="mb-5"
                 />
@@ -166,7 +193,7 @@ const Demo = () => {
                 >
                   Metricwise
                 </label>
-                <h1 className="font-semibold font-20 leading-6 textcolor mt-5">
+                <h1 className="font-semibold font-20 leading-6 textcolor mt-5 text-[#042440]">
                   A Comprehensive AI Observability and Governance Platform
                 </h1>
                 <ul className="mt-8">
@@ -174,7 +201,7 @@ const Demo = () => {
                     <Image
                       width={24}
                       height={24}
-                      src="/demo1.png"
+                      src="/demo1.svg"
                       alt="demo1"
                     />
                     Find a time to explore the capabilities of Metricwise
@@ -184,7 +211,7 @@ const Demo = () => {
                     <Image
                       width={24}
                       height={24}
-                      src="/demo2.png"
+                      src="/demo2.svg"
                       alt="demo2"
                     />
                     Upon confirmation, you will receive the details for the web
@@ -230,21 +257,20 @@ const Demo = () => {
                       <Image width={20} height={20} src="/email.png" alt="" />
                     </div>
                   </div>
+
                   <div className="relative mt-5">
                     <input
                       type="tel"
-                      required
-                      className="w-full rounded-[36px] pl-24 p-3 border border-[#0000001F] font-16 font-normal leading-5 paragraph"
+                      id="phone"
+                      className="w-full rounded-[36px] p-3 border border-gray-300 paragraph"
                       placeholder="Phone number"
+                      required
+                      onInput={(e) => {
+                        e.target.value = e.target.value.replace(/[^0-9]/g, ""); // Only allow numeric input
+                      }}  
                     />
-                    <div className="absolute inset-y-0 left-0 flex items-center">
-                      <select className="appearance-none bg-transparent border border-t-0 border-l-0 border-b-0 border-r-2 border-[#0000001F] pr-8 pl-3 py-1">
-                        <option>+92</option>
-                        <option>+1</option>
-                        <option>+44</option>
-                      </select>
-                    </div>
                   </div>
+
                   <input
                     type="text"
                     className="w-full rounded-[36px] p-3 border border-[#0000001F] font-16 font-normal leading-5 paragraph mt-5"

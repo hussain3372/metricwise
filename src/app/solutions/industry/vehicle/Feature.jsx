@@ -3,7 +3,6 @@
 import React from "react";
 import { vehicle } from "../../../data/Finance";
 import Image from "next/image";
-import { Fade } from "react-awesome-reveal";
 
 const Feature = () => {
 
@@ -22,7 +21,6 @@ const Feature = () => {
           <div>
             <div className="grid md:grid-cols-2 items-center gap-40 mt-24">
               <div>
-              <Fade direction="left">
                 {vehicle.map((item, index) => (
                   <div
                   key={index}
@@ -50,13 +48,10 @@ const Feature = () => {
                     </ul>
                   </div>
                 ))}
-                </Fade>
               </div>
-              <Fade direction="right">
               <div className="">
                 <Image src="/banking.png" width={990} height={540} alt="" />
               </div>
-              </Fade>
             </div>
             <div></div>
           </div>

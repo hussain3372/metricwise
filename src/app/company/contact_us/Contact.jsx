@@ -39,15 +39,15 @@ const Contact = () => {
                 <div>
                   <label
                     htmlFor=""
-                    className="font-64 font-bold leading-[80px]"
+                    className="font-64 font-bold leading-[80px] text-[#042440]"
                   >
                     Contact Us
                   </label>
-                  <p className="font-normal font-20 leading-6 mt-2">
+                  <p className="font-normal font-20 leading-6 mt-2 opacity-60">
                     Metricwise - A Comprehensive AI Observability and Governance
                     Platform If you fall into any of the following categories:
                   </p>
-                  <ul className="mt-4 list-disc list-inside">
+                  <ul className="mt-4 list-disc list-inside opacity-60">
                     <li className="list-disc font-20 font-normal font-inter leading-6">
                       An inquisitive prospect
                     </li>

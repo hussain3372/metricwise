@@ -4,10 +4,10 @@ const Data = () => {
   return (
     <div>
       <div>
-        <h1 className="font-36 fontbold leading-10">Responsibilities</h1>
+        <h1 className="font-36 font-bold leading-10">Responsibilities</h1>
         <div>
           <div className="mt-7">
-            <h3 className="font-20 fontsemibold leading-6">Create</h3>
+            <h3 className="font-20 font-semibold leading-6">Create</h3>
             <ul className="list-disc list-inside pl-4">
               <li className="list-disc font-16 font-inter font-normal leading-5 mt-4">
                 Design software systems centered around advanced ML models,
@@ -17,7 +17,7 @@ const Data = () => {
             </ul>
           </div>
           <div className="mt-7">
-            <h3 className="font-20 fontsemibold leading-6">Assume Ownership</h3>
+            <h3 className="font-20 font-semibold leading-6">Assume Ownership</h3>
             <ul className="list-disc list-inside pl-4">
               <li className="list-disc font-16 font-inter font-normal leading-5 mt-4">
                 Directly report to co-founders
@@ -28,7 +28,7 @@ const Data = () => {
             </ul>
           </div>
           <div className="mt-7">
-            <h3 className="font-20 fontsemibold leading-6">
+            <h3 className="font-20 font-semibold leading-6">
               Establish culture and methodology
             </h3>
             <ul className="list-disc list-inside pl-4">
@@ -46,7 +46,7 @@ const Data = () => {
             </ul>
           </div>
           <div className="mt-7">
-            <h3 className="font-20 fontsemibold leading-6">
+            <h3 className="font-20 font-semibold leading-6">
               Take on different roles and responsibilities
             </h3>
             <ul className="list-disc list-inside pl-4">
@@ -63,7 +63,7 @@ const Data = () => {
         </div>
       </div>
       <div className="mt-20">
-        <h1 className="font-36 fontbold leading-10">Qualifications</h1>
+        <h1 className="font-36 font-bold leading-10">Qualifications</h1>
         <div>
           <div className="mt-7">
             <ul className="list-disc list-inside pl-4">
@@ -121,7 +121,7 @@ const Data = () => {
         </div>
       </div>
       <div className="mt-20">
-        <h1 className="font-36 fontbold leading-10">what we Offer</h1>
+        <h1 className="font-36 font-bold leading-10">what we Offer</h1>
         <div>
           <div className="mt-7">
             <ul className="list-disc list-inside pl-4">

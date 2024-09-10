@@ -40,7 +40,7 @@ const Finance = () => {
               </Link>
             </div>
             <div className="flex justify-end items-end mt-10 md:mt-0">
-              <Image src="/insurance.png" width={540} height={540} alt="moni" />
+              <Image src="/health.png" width={540} height={540} alt="moni" />
             </div>
           </div>
         </div>

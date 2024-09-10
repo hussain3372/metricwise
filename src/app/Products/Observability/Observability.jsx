@@ -55,8 +55,7 @@ const Monitoring = () => {
         <div>
           <div>
             {observability.map((item, index) => (
-              <Fade direction={index % 2 === 0 ? "left" : "right"} key={index}>
-                <div className="grid lg:grid-cols-2 items-center xl:gap-36 md:mt-20 pb-10">
+                <div key={index} className="grid lg:grid-cols-2 items-center xl:gap-36 md:mt-20 pb-10">
                   <div
                     className={`${
                       index % 2 !== 0
@@ -91,7 +90,6 @@ const Monitoring = () => {
                     </p>
                   </div>
                 </div>
-              </Fade>
             ))}
           </div>
         </div>
