@@ -1,5 +1,6 @@
 "use client";
 
+import Image from "next/image";
 import React from "react";
 import { PiGreaterThanLight } from "react-icons/pi";
 
@@ -21,6 +22,9 @@ const Term = () => {
             Privacy Policy
             </h1>
           </div>
+          {/* <div className="flex justify-center md:justify-end mt-10 md:mt-0">
+            <Image width={1246} height={517} src="/gov.jpg" alt="" />
+          </div> */}
         </div>
       </div>
 

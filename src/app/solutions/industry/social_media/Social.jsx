@@ -3,6 +3,7 @@ import React from "react";
 import Feature from "./Feature";
 import Socialcard from "./Socialcard";
 import Image from "next/image";
+import { PiGreaterThanLight } from "react-icons/pi";
 
 const Social = () => {
   return (
