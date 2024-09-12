@@ -56,7 +56,7 @@ const Education = () => {
       </div>
 
 
-      <div className="mb-36">
+      <div className="">
         <div>
           <Educationcard/>
         </div>

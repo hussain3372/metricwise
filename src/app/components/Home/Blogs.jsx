@@ -5,7 +5,7 @@ import React from "react";
 const Blogs = () => {
   return (
     <div className="bg-[url('/platforms-bg.png')] bg-cover bg-center bg-no-repeat">
-      <div className=" widthclass p-5 lg:p-20">
+      <div className=" widthclass p-5 lg:px-20">
         <div className="sm:flex justify-between items-center p-10 md:px-44">
           <h1 className="text-[20px] sm:text-[30px] md:text-[40px] font-semibold leadin-8 md:leading-[44px] text-[#222222]">
             Go through our latest <br /> blogs to learn more
@@ -14,7 +14,7 @@ const Blogs = () => {
             Book a demo
           </button>
         </div>
-        <div className="flex flex-col md:flex-row justify-center items-center gap-5 md:gap-8 mt-10">
+        <div className="flex flex-col md:flex-row justify-center items-center gap-5 md:gap-8">
           {HomeBolgs.map((item, index) => (
             <div
               key={index}

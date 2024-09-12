@@ -8,10 +8,9 @@ import Tilt from "react-parallax-tilt";
 const OtherCards = () => {
   return (
     <div>
-      <div className="grid md:grid-cols-2 gap-10 mb-20">
+      <div className="grid md:grid-cols-2 gap-10">
         {otherCardsData && otherCardsData.length > 0 ? (
           otherCardsData.map((item, index) => (
-            <Fade key={`fade-${index}`} direction="right">
               <Tilt
                 key={`tilt-${index}`}
                 glareEnable={true}
@@ -22,7 +21,7 @@ const OtherCards = () => {
               >
                 <div
                   key={`card-${index}`}
-                  className="sm:flex bg-white shadow-[0_3px_15px_rgb(0,0,0,0.2)] gap-5 p-6 rounded-[20px]"
+                  className="sm:flex  bg-white shadow-[0_3px_15px_rgb(0,0,0,0.2)] gap-5 p-6 rounded-[20px]"
                 >
                   <div className="w-[128px] h-[160px] mb-5 sm:mb-0" key={`image-container-${index}`}>
                     <Image
@@ -48,7 +47,6 @@ const OtherCards = () => {
                   </div>
                 </div>
               </Tilt>
-            </Fade>
           ))
         ) : (
           <p>No blog posts available.</p>

@@ -9,13 +9,11 @@ const Footer = () => {
       label: "About",
       items: [
         {
-          // href: "/company/about",
-          href: "#",
+          href: "/company/about",
           name: "About Us",
         },
         {
-          // href: "/company/career",
-          href: "#",
+          href: "/company/career",
           name: "Careers",
         },
         {
@@ -40,8 +38,7 @@ const Footer = () => {
       label: "Resources",
       items: [
         {
-          // href: "/recourses/Blog",
-          href: "#",
+          href: "/recourses/Blog",
           name: "Blogs",
         },
         {
@@ -74,26 +71,26 @@ const Footer = () => {
   ];
 
   return (
-    <footer className="text-black bg-[url('/hero-gradient.png')] bg-no-repeat bg-cover bg-center bg pt-20 pb-16">
+    <footer className="text-black bg pt-20 pb-5">
       <div className="widthclass">
-        <div className="pt-10 pb-0 sm:pb-16 px-5 sm:px-10 xl:px-20 xxl:px-28 ">
-          <div className="border-b pb-20 border-[#00000033] md:flex justify-between items-center text-center md:text-start gap-10">
-            <h1 className="font-28 font-semibold leading-9">
-              Start your AI monitoring, observability and governance journey
-              <br className="hidden xxl:block" /> with Metricwise.
+        <div className="pt-10 pb-0 sm:pb-8 px-5 sm:px-10 xl:px-20 xxl:px-28">
+          <div className="bg-[url('/cta-bg.png')] bg-no-repeat bg-cover bg-center rounded-[20px] mx-0 sm:mx-10 md:mx-20 lg:mx-32 py-10 md:py-20 flex justify-between items-center text-center flex-col gap-10">
+            <h1 className="font-28 font-semibold leading-9 p-5">
+              Start your AI monitoring, observability and
+              <br className="hidden xl:block"/> governance journey with Metricwise.
             </h1>
-            <div className="mt-6 flex justify-center items-center gap-4">
-              <button className="bg-[#000000] h-[40px] w-[128px] rounded-[4px] border-none text-[#fff] font-12 leading-4 font-medium">
+            <div className="mt-2 flex flex-col sm:flex-row justify-center items-center gap-4">
+              <Link href="/company/contact_us" className="flex justify-center items-center bg-[#000000] h-[44px] w-[160px] rounded-[4px] border-none text-[#fff] font-16 leading-4 font-medium">
                 Get Started Now
-              </button>
-              <button className="bg-transparent border border-[#00000033] h-[40px] w-[128px] rounded-[4px] text-[#000000] font-12 leading-4 font-medium">
+              </Link>
+              <Link href="/Demo" className="flex justify-center items-center bg-transparent border border-[#00000033] h-[44px] w-[128px] rounded-[4px] text-[#000000] font-16 leading-4 font-medium">
                 Book a demo
-              </button>
+              </Link>
             </div>
           </div>
         </div>
-        <div className="py-10 px-5 sm:px-16 xl:px-28 xxl:px-40">
-          <div className="grid md:grid-cols-2">
+        <div className="py-10 px-5 sm:px-16 xl:px-32 xxl:px-40">
+          <div className="grid md:grid-cols-2 border-t border-[#00000033] md:pt-16">
             <div className="font-16 font-light mt-10 space-y-6 lg:space-x-16 grid grid-cols-1 sm:grid-cols-3 md:grid-cols-2 lg:grid-cols-3 md:space-y-0 md:mt-0">
               {footerNavs.map((item, idx) => (
                 <ul className="space-y-4" key={idx}>
@@ -113,7 +110,7 @@ const Footer = () => {
                 </ul>
               ))}
             </div>
-            <div className="flex-1 flex flex-col justify-start sm:items-end text-start mt-5 sm:mt-16 lg:mt-0">
+            <div className="flex-1 flex flex-col justify-start sm:items-end text-start mt-10 sm:mt-16 lg:mt-0">
               <div>
                 <div className="max-w-xs">
                   <Image
@@ -147,13 +144,12 @@ const Footer = () => {
                     />
                   </div>
                 </div>
-
-                <div className="mt-24 text-[#00000099] font-16 font-light">
-                  Copyright © 2024 • Metricwise
-                </div>
               </div>
             </div>
           </div>
+            <div className="mt-16 text-[#00000099] font-16 font-light text-center">
+              Copyright © 2024 • Metricwise
+            </div>
         </div>
       </div>
     </footer>

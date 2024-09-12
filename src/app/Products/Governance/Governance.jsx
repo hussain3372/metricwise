@@ -9,7 +9,7 @@ const Monitoring = () => {
   return (
     <div>
       <div className="widthclass">
-        <div className="px-9 mt-10 md:mt-20">
+        <div className="px-16 mt-5">
           {/* <div className="flex items-center">
             <h1 className="font-24 font-normal font-inter flex items-center gap-2">
               Metricwise

@@ -4,8 +4,6 @@ import React, { useState } from "react";
 import Head from "next/head";
 import Image from "next/image";
 import { ChevronUpIcon, ChevronDownIcon } from "@heroicons/react/24/outline";
-import Tilt from "react-parallax-tilt";
-import { Fade, Zoom } from "react-awesome-reveal";
 
 const AccordionItem = ({ title, content, list }) => {
   const [isOpen, setIsOpen] = useState(false);
@@ -129,6 +127,41 @@ const Faq = () => {
       content:
         "Upgrading becomes a breeze when you're ready to progress beyond the Basic plan! When you decide to monitor additional projects,  or add more users, you can simply choose the Specialist plan in your profile or contact us  to discuss your account upgrade for the Enterprise upgrade.",
     },
+    {
+      title: "How can I access support for Metricwise?",
+      content:
+        "For our Basic and Specialist customers, there are two avenues for assistance: opening a support ticket or posing a question in the community Slack. To initiate a ticket, log in to your Metricwise account, go to the top left-hand side, and select Support Center. Follow the prompts to submit your support request. To ask a question via Slack, join the Metricwise Slack Community. <br> <br> For Enterprise customers, you can use the two methods listed above, in addition to this we offer around-the-clock support availability, complemented by dedicated customer support engineers to assist them with their challenges and issues."
+    },
+    {
+      title: "Which payment methods are accepted?",
+      content:
+        "For the Specialist and Enterprise plans, we currently accept credit card payments through the Metricwise Platform, as well as ACH or wire payments. If you prefer, you can also contact us for a private offer. For inquiries regarding alternative payment options, please reach out to us at support@metricwise.ai.",
+    },
+    {
+      title: "Has Metricwise obtained SOC 2 certification?",
+      content:
+        "Absolutely, Metricwise has successfully undergone our SOC 2 Type 2 examination without any exceptions. If you'd like to receive our SOC 2 Type 2 report, please reach out to us at support@metricwise.ai. For further insights into security at Metricwise, feel free to explore the data security and privacy page.",
+    },
+    {
+      title: "How can I determine the amount of data required?",
+      content:
+        "To estimate the volume of data you'll be sending, calculate the size of the baseline data, model prediction volume, and the size of the model features and artifacts for each of your models, then aggregate these values.",
+    },
+    {
+      title: "Is the pricing model for Metricwise based on consumption?",
+      content:
+        "No, a pre-commitment to a monthly volume is required, and users will baseline their usage throughout the duration of an annual commitment.",
+    },
+    {
+      title: "What additional data does Metricwise gather?",
+      content:
+        "Metricwise refrains from collecting any additional data. All customer data is treated as confidential and Metricwise securely backs up the customer's encrypted data to guarantee its safety. For additional details, please refer to our data security and privacy page.",
+    },
+    {
+      title: "What is the data retention policy of Metricwise?",
+      content:
+        "The data retention policy varies depending on the chosen plan. The Basic plan retains data for a period of 6 months, while the Specialist plan retains data for 12 months. Enterprise plan customers have the flexibility to select the duration of their data retention.",
+    },
   ];
 
   return (
@@ -150,7 +183,7 @@ const Faq = () => {
               <div className="absolute top-4 sm:top-5 pl-3">
                 <Image width={28} height={28} src="/search.png" alt="" />
               </div>
-              <div className="absolute top-3 sm:top-4 right-0 pr-3">
+              <div className="absolute top-3 sm:top-[18px] right-0 pr-3">
                 <button className="font-16 font-normal leading-5 text-white bg-[#042440] pt-2 pb-2 pl-3 pr-3 rounded-[8px]">
                   Search
                 </button>

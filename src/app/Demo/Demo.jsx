@@ -77,7 +77,7 @@ const Demo = () => {
                   conferencing session.
                 </li>
               </ul>
-              <p className="mt-8 font-16 fonregular black">
+              <p className="mt-8 font-16 font-normal paragraph">
                 We are eager to delve into your monitoring and observability
                 objectives. Feel free to get in touch for any inquiries or to
                 reschedule.
@@ -144,7 +144,7 @@ const Demo = () => {
                     conferencing session.
                   </li>
                 </ul>
-                <p className="mt-8 font-16 fonregular black">
+                <p className="mt-8 font-16 font-normal paragraph">
                   We are eager to delve into your monitoring and observability
                   objectives. Feel free to get in touch for any inquiries or to
                   reschedule.
@@ -218,7 +218,7 @@ const Demo = () => {
                     conferencing session.
                   </li>
                 </ul>
-                <p className="mt-8 font-16 fonregular black">
+                <p className="mt-8 font-16 font-normal paragraph">
                   We are eager to delve into your monitoring and observability
                   objectives. Feel free to get in touch for any inquiries or to
                   reschedule.

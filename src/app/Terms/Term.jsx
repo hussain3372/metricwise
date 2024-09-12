@@ -1,20 +1,25 @@
 "use client";
 
-import Image from "next/image";
 import React from "react";
 import Terms from "../data/Term";
+import { PiGreaterThanLight } from "react-icons/pi";
 const Term = () => {
   return (
     <div>
-      <div className="bg-[#042440]">
-        <div className="grid md:grid-cols-2 items-center white py-7 md:py-10 px-5 sm:px-10 lg:px-36 2xl:px-16 relative widthclass">
+      <div className="bg-[url('/term-bg.png')] bg-no-repeat bg-cover bg-center">
+         <div className="flex items-center widthclass">
+          <h1 className="text-black pl-16 pt-10  font-24 font-normal font-inter flex items-center gap-2">
+            Metricwise
+            <span className="paragraph font-20 font-normal font-inter opacity-50 flex items-center gap-2">
+              <PiGreaterThanLight /> Resources <PiGreaterThanLight /> Blogs
+            </span>
+          </h1>
+        </div>
+        <div className="flex justify-center items-center py-28 relative widthclass">
           <div>
-            <h1 className="font-64 font-bold lg:leading-40 mb-5">
+            <h1 className="font-64 font-bold lg:leading-40 mb-5 text-black">
               Terms of Use
             </h1>
-          </div>
-          <div className="flex justify-center md:justify-end mt-10 md:mt-0">
-            <Image width={1246} height={517} src="/gov.jpg" alt="" />
           </div>
         </div>
       </div>

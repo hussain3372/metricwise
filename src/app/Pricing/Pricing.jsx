@@ -106,12 +106,12 @@ const Pricing = () => {
       </div>
       <div className="widthclass">
         <div>
-          <div className="mt-16 mb-16 xl:p-10">
+          <div className="mt-24 mb-16 xl:p-10">
             <div className="flex flex-col justify-center m-auto text-center">
               <p className="font-24 font-inter font-normal leading-8 mb-4 opacity-60">
                 Plan Comparison
               </p>
-              <h1 className="font-36 font-inter font-bold leading-10 mb-10 textcolor">
+              <h1 className="font-36 font-inter font-bold leading-10 mb-16 textcolor">
                 Explore Detailed Plan Comparisons
               </h1>
             </div>

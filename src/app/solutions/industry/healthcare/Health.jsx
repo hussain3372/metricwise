@@ -64,7 +64,7 @@ const Finance = () => {
       </div>
 
 
-      <div className="mb-36">
+      <div className="">
         <div>
           <Healthcard/>
         </div>

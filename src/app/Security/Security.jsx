@@ -1,26 +1,31 @@
 "use client";
 
-import Image from "next/image";
 import React from "react";
+import { PiGreaterThanLight } from "react-icons/pi";
 
 const Term = () => {
   return (
     <div>
-      <div className="bg-[#042440]">
-        <div className="grid md:grid-cols-2 items-center white py-7 md:py-0 px-5 sm:px-10 lg:px-36 2xl:px-16 relative widthclass">
+      <div className="bg-[url('/term-bg.png')] bg-no-repeat bg-cover bg-center">
+        <div className="flex items-center widthclass">
+          <h1 className="text-black pl-16 pt-10  font-24 font-normal font-inter flex items-center gap-2">
+            Metricwise
+            <span className="paragraph font-20 font-normal font-inter opacity-50 flex items-center gap-2">
+              <PiGreaterThanLight /> Company <PiGreaterThanLight /> Data Security & Privacy Policy
+            </span>
+          </h1>
+        </div>
+        <div className="flex justify-center items-center py-28 relative widthclass">
           <div>
-            <h1 className="font-64 font-bold lg:leading-40 mb-5">
-              Data Security & <br /> Privacy Policy
+            <h1 className="font-64 font-bold lg:leading-40 mb-5 text-black">
+            Data Security & Privacy Policy
             </h1>
-          </div>
-          <div className="flex justify-center md:justify-end mt-10 md:mt-0">
-            <Image width={637} height={359} src="/Security.jpg" alt="" />
           </div>
         </div>
       </div>
 
       <div className="px-5 sm:px-10 lg:px-36 py-16 2xl:p-16 widthclass">
-      <h1 className="font-36 font-inter font-bold leading-10 text-[#042440]">
+        <h1 className="font-36 font-inter font-bold leading-10 text-[#042440]">
           Metricwise Inc Data Security & Privacy Policy
         </h1>
         <div className="mt-16">

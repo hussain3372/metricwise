@@ -67,7 +67,7 @@ const About = () => {
             <div className="p-6 md:p-8 grid sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 2xl:grid-cols-5 gap-y-10 items-center justify-center">
               <Tilt scale={scale} transitionSpeed={2500}>
                 <div className="flex flex-col justify-center items-center text-center p-8 h-[264px] w-[220px] rounded-lg border border-[#00000033] bg-[#0424401F] shadow-lg shadow-[#0000001F]">
-                  <Image width={80} height={80} src="/v1.png" alt="" />
+                  <Image width={80} height={80} src="/v1.svg" alt="" />
                   <h1 className="font-24 font-inter font-normal opacity-50">
                     Innovative Excellence
                   </h1>
@@ -75,7 +75,7 @@ const About = () => {
               </Tilt>
               <Tilt scale={scale} transitionSpeed={2500}>
                 <div className="flex flex-col justify-center items-center text-center p-8 h-[264px] w-[220px] rounded-lg border border-[#00000033] bg-[#0424401F] shadow-lg shadow-[#0000001F]">
-                  <Image width={80} height={80} src="/v2.png" alt="" />
+                  <Image width={80} height={80} src="/v2.svg" alt="" />
                   <h1 className="font-24 font-inter font-normal opacity-50">
                     Transparency First
                   </h1>
@@ -83,7 +83,7 @@ const About = () => {
               </Tilt>
               <Tilt scale={scale} transitionSpeed={2500}>
                 <div className="flex flex-col justify-center items-center text-center p-8 h-[264px] w-[220px] rounded-lg border border-[#00000033] bg-[#0424401F] shadow-lg shadow-[#0000001F]">
-                  <Image width={80} height={80} src="/v3.png" alt="" />
+                  <Image width={80} height={80} src="/v3.svg" alt="" />
                   <h1 className="font-24 font-inter font-normal opacity-50">
                     Ethical Governance
                   </h1>
@@ -91,7 +91,7 @@ const About = () => {
               </Tilt>
               <Tilt scale={scale} transitionSpeed={2500}>
                 <div className="flex flex-col justify-center items-center text-center p-8 h-[264px] w-[220px] rounded-lg border border-[#00000033] bg-[#0424401F] shadow-lg shadow-[#0000001F]">
-                  <Image width={80} height={80} src="/v4.png" alt="" />
+                  <Image width={80} height={80} src="/v5.svg" alt="" />
                   <h1 className="font-24 font-inter font-normal opacity-50">
                     Collaborative Synergy
                   </h1>
@@ -99,7 +99,7 @@ const About = () => {
               </Tilt>
               <Tilt scale={scale} transitionSpeed={2500}>
                 <div className="flex flex-col justify-center items-center text-center p-8 h-[264px] w-[220px] rounded-lg border border-[#00000033] bg-[#0424401F] shadow-lg shadow-[#0000001F]">
-                  <Image width={80} height={80} src="/v5.png" alt="" />
+                  <Image width={80} height={80} src="/v4.svg" alt="" />
                   <h1 className="font-24 font-inter font-normal opacity-50">
                     Sustainability and Social Responsibility
                   </h1>

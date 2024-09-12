@@ -21,7 +21,7 @@ const Apply = () => {
       </div>
 
 
-      <div className="bg-[#F4F4F4] mt-10 mb-20">
+      <div className="bg-[#F4F4F4] mt-10">
         <div className="widthclass pl-5 md:pl-20  lg:pl-56 pr-5 md:pr-20 lg:pr-56 pt-20 pb-20">
           <Form/>
         </div>

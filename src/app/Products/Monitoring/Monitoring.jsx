@@ -10,7 +10,7 @@ const Monitoring = () => {
       <div className="widthclass">
         {/* hero */}
 
-        <div className="px-16 mt-10 md:mt-20">
+        <div className="px-16 mt-5">
           {/* <div className="flex items-center">
             <h1 className="font-24 font-normal font-inter flex items-center gap-2">
               Metricwise
@@ -98,7 +98,7 @@ const Monitoring = () => {
 
       {/* cta Section */}
 
-      <div className="border border-t-[#000000] border-b-0 border-l-0 border-r-0 border-opacity-[12%] monbg">
+      <div className="border border-t-[#000000] border-b-[#000000] border-l-0 border-r-0 border-opacity-[12%] monbg">
         <div className="widthclass ">
           <div className="flex flex-col justify-center items-center text-center p-10 md:p-16 pt-20 pb-20">
             <h1 className="font-36 font-inter font-bold leading-10">

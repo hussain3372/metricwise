@@ -3,11 +3,11 @@ import React from 'react'
 
 const NewPlatform = () => {
   return (
-    <div className='pt-20 pb-20 pl-5 md:pl-20 pr-5 md:pr-20'>
+    <div className='pt-24 pb-20 pl-5 md:pl-20 pr-5 md:pr-20'>
         <div className='widthclass bg-[url("/performance-bg.png")] bg-cover bg-center bg-no-repeat border border-[#0000001F] rounded-lg'>
             <div className='flex flex-col justify-center items-center p-5 sm:p-10 text-center'>
                 <h1 className='text-[20px] sm:text-[40px] font-medium leading-5 sm:leading-10'>A comprehensive AI observability <br className="hidden md:block" /> and governance platform</h1>
-                <div className='lg:grid grid-cols-2 gap-14 items-center mt-20'>
+                <div className='lg:grid grid-cols-2 gap-14 items-center mt-16'>
                     <div>
                         <Image src="/Visual.png" width={532} height={364} alt='visual'/>
                     </div>

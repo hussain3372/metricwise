@@ -6,7 +6,7 @@ const DataType = () => {
   return (
     <div>
       <div className="widthclass">
-        <div className="p-8 sm:p-16 2xl:p-10">
+        <div className="p-8 sm:p-16 2xl:py-32 2xl:px-10">
           {/* <div className="flex items-center">
             <h1 className=" font-24 black font-normal font-inter flex items-center flex-wrap gap-2">
               Metricwise
@@ -15,7 +15,7 @@ const DataType = () => {
               </span>
             </h1>
           </div> */}
-          <div className="grid md:grid-cols-2 items-center pt-20 md:mt-0">
+          <div className="grid md:grid-cols-2 items-center md:mt-0">
             <div>
               <h1 className="font-36 font-inter font-bold leading-10 text-[#042440]">
               Data Type
