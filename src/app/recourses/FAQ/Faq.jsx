@@ -76,16 +76,16 @@ const Faq = () => {
       title: "What can be done with Metricwise?",
       content:
         "We integrate security efforts throughout the Agile release cycle and conduct continuous security and vulnerability scanning.",
-        list: [
-          "Monitor the real-time quality and health of both data and models.",
-          "Establish a connection between predictions and contextual alignment with business values",
-          "Ensure the clarity, reliability, and accuracy of every Large Language Model (LLM) response.",
-          "Establish a baseline for tracking the behavior of models over time.",
-          "Develop tailored dashboards for each of your production models.",
-          "Apply governance effectively to unleash the full potential of your AI systems.",
-          "Assign, monitor, and track controls for behavior and performance, effortlessly storing evidence and generating reports for various AI use cases.",
-          "Visualize the risk posture of your AI applications, allowing you to identify critical areas that require prioritized governance measures.",
-        ],
+      list: [
+        "Monitor the real-time quality and health of both data and models.",
+        "Establish a connection between predictions and contextual alignment with business values",
+        "Ensure the clarity, reliability, and accuracy of every Large Language Model (LLM) response.",
+        "Establish a baseline for tracking the behavior of models over time.",
+        "Develop tailored dashboards for each of your production models.",
+        "Apply governance effectively to unleash the full potential of your AI systems.",
+        "Assign, monitor, and track controls for behavior and performance, effortlessly storing evidence and generating reports for various AI use cases.",
+        "Visualize the risk posture of your AI applications, allowing you to identify critical areas that require prioritized governance measures.",
+      ],
     },
     {
       title: "How can I begin using Metricwise?",
@@ -130,7 +130,7 @@ const Faq = () => {
     {
       title: "How can I access support for Metricwise?",
       content:
-        "For our Basic and Specialist customers, there are two avenues for assistance: opening a support ticket or posing a question in the community Slack. To initiate a ticket, log in to your Metricwise account, go to the top left-hand side, and select Support Center. Follow the prompts to submit your support request. To ask a question via Slack, join the Metricwise Slack Community. <br> <br> For Enterprise customers, you can use the two methods listed above, in addition to this we offer around-the-clock support availability, complemented by dedicated customer support engineers to assist them with their challenges and issues."
+        "For our Basic and Specialist customers, there are two avenues for assistance: opening a support ticket or posing a question in the community Slack. To initiate a ticket, log in to your Metricwise account, go to the top left-hand side, and select Support Center. Follow the prompts to submit your support request. To ask a question via Slack, join the Metricwise Slack Community. <br> <br> For Enterprise customers, you can use the two methods listed above, in addition to this we offer around-the-clock support availability, complemented by dedicated customer support engineers to assist them with their challenges and issues.",
     },
     {
       title: "Which payment methods are accepted?",
@@ -207,6 +207,84 @@ const Faq = () => {
                   <Accordion items={accordionItems} />
                 </main>
               </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div className="widthclass p-3 md:p-16 flex-col flex justify-center items-center">
+        <h1 className="font-40 font-bold textcolor leading-[72px] mb-10">
+          Support
+        </h1>
+        <div className="grid md:grid-cols-3 gap-10 items-center">
+          <div class="max-w-sm h-full rounded-lg border-2 border-[#EBECF2] flex flex-col justify-center items-center text-center p-7">
+            <Image
+              width={55}
+              height={55}
+              class=""
+              src="/sup1.svg"
+              alt="Sunset in the mountains"
+            />
+            <div class="px-6 py-4">
+              <div class="font-medium gont-inter font-20 leading-7 mb-2 mt-3">
+                Documentation:
+              </div>
+              <p class="text-gray-700 text-base">
+                Gain insights into how Metricwise operates and receive
+                assistance on common issues.
+              </p>
+            </div>
+            <div class="px-6 pt-4 pb-2">
+              <span class="inline-block bg-[#042440] rounded-full px-8 py-2 text-sm font-semibold text-white mr-2 mb-2">
+                Head to Docs
+              </span>
+            </div>
+          </div>
+
+          <div class="max-w-sm h-full rounded-lg overflow-hidden border-2 border-[#EBECF2] flex flex-col justify-center items-center text-center p-7">
+            <Image
+              width={55}
+              height={55}
+              class=""
+              src="/sup2.svg"
+              alt="Sunset in the mountains"
+            />
+            <div class="px-6 py-4">
+              <div class="font-medium gont-inter font-20 leading-7 mb-2 mt-3">
+                Demos:
+              </div>
+              <p class="text-gray-700 text-base">
+                Explore the features of Metricwise through brief and informative
+                video presentations.
+              </p>
+            </div>
+            <div class="px-6 pt-4 pb-2">
+              <span class="inline-block bg-[#042440] rounded-full px-8 py-2 text-sm font-semibold text-white mr-2 mb-2">
+                Explore Demos
+              </span>
+            </div>
+          </div>
+          <div class="max-w-sm h-full rounded-lg overflow-hidden border-2 border-[#EBECF2] flex flex-col justify-center items-center text-center p-7">
+            <Image
+              width={55}
+              height={55}
+              class=""
+              src="/sup3.svg"
+              alt="Sunset in the mountains"
+            />
+            <div class="px-6 py-4">
+              <div class="font-medium gont-inter font-20 leading-7 mb-2 mt-3">
+                Integrations:
+              </div>
+              <p class="text-gray-700 text-base">
+                Enable observability and governance for your ML model and data
+                monitoring.
+              </p>
+            </div>
+            <div class="px-6 pt-4 pb-2">
+              <span class="inline-block bg-[#042440] rounded-full px-8 py-2 text-sm font-semibold text-white mr-2 mb-2">
+                Explore Guidebooks
+              </span>
             </div>
           </div>
         </div>

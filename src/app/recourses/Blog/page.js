@@ -1,12 +1,14 @@
-import React from 'react'
-import Blog from './Blog'
+import React from "react";
+import Blog from "./Blog";
+import Header from "@/app/components/Layout/Header";
 
 const page = () => {
   return (
     <div>
-        <Blog/>
+      <Header />
+      <Blog />
     </div>
-  )
-}
+  );
+};
 
-export default page
+export default page;

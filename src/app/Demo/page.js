@@ -1,12 +1,14 @@
-import React from 'react'
-import Demo from './Demo'
+import React from "react";
+import Demo from "./Demo";
+import Header from "@/app/components/Layout/Header";
 
 const page = () => {
   return (
     <div>
-        <Demo/>
+      <Header />
+      <Demo />
     </div>
-  )
-}
+  );
+};
 
-export default page
+export default page;

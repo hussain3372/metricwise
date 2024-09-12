@@ -54,8 +54,8 @@ const Calendar = () => {
             <Image width={20} height={20} src="/contact_calendar.png" alt="contact_calendar" />
           </div>
         </div>
-        <div className="grid grid-cols-2 items-center px-5 py-3 relative border-b border-[#00000033]">
-          <div className="flex justify-between items-center px-2">
+        <div className="grid grid-cols-2 items-center sm:px-5 py-3 relative border-b border-[#00000033]">
+          <div className="flex flex-col sm:flex-row justify-between items-center sm:px-2">
             <div>
               <h1 className="font-16 font-inter font-medium leading-5">
                 {monthNames[month]}
@@ -81,7 +81,7 @@ const Calendar = () => {
             </div>
           </div>
 
-          <div className="flex justify-between items-center px-2">
+          <div className="flex flex-col sm:flex-row justify-between items-center sm:px-2">
             <div>
               <h1 className="font-16 font-inter font-medium leading-5">
                 {year}

@@ -35,118 +35,116 @@ const Contact = () => {
         <div className="widthclass">
           <div className="grid lg:grid-cols-2 items-center p-5 md:py-10 md:px-20 gap-20 2xl:gap-40">
             <div>
-              <Fade direction="left">
-                <div>
+              <div>
+                <label
+                  htmlFor=""
+                  className="font-64 font-bold leading-[80px] text-[#042440]"
+                >
+                  Contact Us
+                </label>
+                <p className="font-normal font-20 leading-6 mt-2 opacity-60">
+                  Metricwise - A Comprehensive AI Observability and Governance
+                  Platform If you fall into any of the following categories:
+                </p>
+                <ul className="mt-4 list-disc list-inside opacity-60">
+                  <li className="list-disc font-20 font-normal font-inter leading-6">
+                    An inquisitive prospect
+                  </li>
+                  <li className="list-disc font-20 font-normal font-inter leading-6">
+                    A potential partner
+                  </li>
+                  <li className="list-disc font-20 font-normal font-inter leading-6">
+                    A vendor with a tool we should know about
+                  </li>
+                </ul>
+              </div>
+            </div>
+
+            <div className="bg-[#FFFFFF] shadow-lg rounded-2xl pb-2">
+              <form className="p-6">
+                <div className="flex flex-col justify-center items-center">
                   <label
                     htmlFor=""
-                    className="font-64 font-bold leading-[80px] text-[#042440]"
+                    className="font-bold font-36 leading-10 textcolor"
                   >
                     Contact Us
                   </label>
-                  <p className="font-normal font-20 leading-6 mt-2 opacity-60">
-                    Metricwise - A Comprehensive AI Observability and Governance
-                    Platform If you fall into any of the following categories:
+                  <p className="font-16 font-inter font-normal leading-5 mt-3">
+                    You can reach us anytime
                   </p>
-                  <ul className="mt-4 list-disc list-inside opacity-60">
-                    <li className="list-disc font-20 font-normal font-inter leading-6">
-                      An inquisitive prospect
-                    </li>
-                    <li className="list-disc font-20 font-normal font-inter leading-6">
-                      A potential partner
-                    </li>
-                    <li className="list-disc font-20 font-normal font-inter leading-6">
-                      A vendor with a tool we should know about
-                    </li>
-                  </ul>
                 </div>
-              </Fade>
+                <div className="grid sm:grid-cols-2 gap-5 mt-4">
+                  <input
+                    type="text"
+                    className="rounded-[36px] p-3 border border-[#0000001F] font-16 font-normal leading-5 paragraph"
+                    placeholder="First name"
+                    name="name"
+                  />
+                  <input
+                    type="text"
+                    className="rounded-[36px] p-3 border border-[#0000001F] font-16 font-normal leading-5 paragraph"
+                    placeholder="Last name"
+                    name="name"
+                  />
+                </div>
+
+                <div className="relative">
+                  <input
+                    type="email"
+                    required
+                    className="w-full rounded-[36px] pl-10 p-3 border border-[#0000001F] font-16 font-normal leading-5 paragraph mt-3"
+                    placeholder="Your email"
+                  />
+                  <div className="absolute top-6 left-3">
+                    <Image width={20} height={20} src="/email.png" alt="" />
+                  </div>
+                </div>
+
+                <div className="relative mt-3">
+                  <input
+                    type="tel" // Keep 'tel' to work with intl-tel-input
+                    required
+                    id="mobile_code"
+                    className="w-full rounded-[36px] pl-96 p-3 border border-[#0000001F] font-16 font-normal leading-5 paragraph"
+                    placeholder="Phone number"
+                    onInput={(e) => {
+                      e.target.value = e.target.value.replace(/[^0-9]/g, ""); // Only allow numeric input
+                    }}
+                  />
+                </div>
+
+                <input
+                  type="text"
+                  className="w-full rounded-[36px] p-3 border border-[#0000001F] font-16 font-normal leading-5 paragraph mt-3"
+                  placeholder="Organization"
+                />
+                <input
+                  type="text"
+                  className="w-full rounded-[36px] p-3 border border-[#0000001F] font-16 font-normal leading-5 paragraph mt-3"
+                  placeholder="Role"
+                />
+                <input
+                  type="text"
+                  className="w-full rounded-[36px] p-3 border border-[#0000001F] font-16 font-normal leading-5 paragraph mt-3"
+                  placeholder="How did you hear about Metricwise?"
+                />
+                <textarea
+                  type="text"
+                  maxLength={50}
+                  className="w-full h-20 rounded-[17px] p-3 border border-[#0000001F] font-16 font-normal leading-5 paragraph mt-3"
+                  placeholder="Message"
+                />
+                <input
+                  type="submit"
+                  className="w-full flex items-center justify-center border border-[#042440] rounded-[36px] bg-[#042440] text-white font-16 font-medium leading-5 p-3 mt-3 cursor-pointer"
+                />
+              </form>
+              <p className="font-16 font-inter font-normal items-center flex-col flex justify-center text-center opacity-60 mb-4">
+                By contacting us, you agree to our terms of <br /> services and
+                Privacy Policy
+              </p>
             </div>
-            <Fade direction="down">
-              <div className="bg-[#FFFFFF] shadow-lg rounded-2xl pb-2">
-                <form className="p-6">
-                  <div className="flex flex-col justify-center items-center">
-                    <label
-                      htmlFor=""
-                      className="font-bold font-36 leading-10 textcolor"
-                    >
-                      Contact Us
-                    </label>
-                    <p className="font-16 font-inter font-normal leading-5 mt-3">
-                      You can reach us anytime
-                    </p>
-                  </div>
-                  <div className="grid sm:grid-cols-2 gap-5 mt-4">
-                    <input
-                      type="text"
-                      className="rounded-[36px] p-3 border border-[#0000001F] font-16 font-normal leading-5 paragraph"
-                      placeholder="First name"
-                      name="name"
-                    />
-                    <input
-                      type="text"
-                      className="rounded-[36px] p-3 border border-[#0000001F] font-16 font-normal leading-5 paragraph"
-                      placeholder="Last name"
-                      name="name"
-                    />
-                  </div>
-
-                  <div className="relative">
-                    <input
-                      type="email"
-                      required
-                      className="w-full rounded-[36px] pl-10 p-3 border border-[#0000001F] font-16 font-normal leading-5 paragraph mt-3"
-                      placeholder="Your email"
-                    />
-                    <div className="absolute top-6 left-3">
-                      <Image width={20} height={20} src="/email.png" alt="" />
-                    </div>
-                  </div>
-
-                  <div className="relative mt-3">
-                    <input
-                      type="tel" // Keep 'tel' to work with intl-tel-input
-                      required
-                      id="mobile_code"
-                      className="w-full rounded-[36px] pl-96 p-3 border border-[#0000001F] font-16 font-normal leading-5 paragraph"
-                      placeholder="Phone number"
-                      onInput={(e) => {
-                        e.target.value = e.target.value.replace(/[^0-9]/g, ""); // Only allow numeric input
-                      }}
-                    />
-                  </div>
-
-                  <input
-                    type="text"
-                    className="w-full rounded-[36px] p-3 border border-[#0000001F] font-16 font-normal leading-5 paragraph mt-3"
-                    placeholder="Organization"
-                  />
-                  <input
-                    type="text"
-                    className="w-full rounded-[36px] p-3 border border-[#0000001F] font-16 font-normal leading-5 paragraph mt-3"
-                    placeholder="Role"
-                  />
-                  <input
-                    type="text"
-                    className="w-full rounded-[36px] p-3 border border-[#0000001F] font-16 font-normal leading-5 paragraph mt-3"
-                    placeholder="How did you hear about Metricwise?"
-                  />
-                  <textarea
-                    type="text"
-                    maxLength={50}
-                    className="w-full h-20 rounded-[17px] p-3 border border-[#0000001F] font-16 font-normal leading-5 paragraph mt-3"
-                    placeholder="Message"
-                  />
-                  <input
-                    type="submit"
-                    className="w-full flex items-center justify-center border border-[#042440] rounded-[36px] bg-[#042440] text-white font-16 font-medium leading-5 p-3 mt-3 cursor-pointer"
-                  />
-                </form>
-                <p className="font-16 font-inter font-normal items-center flex-col flex justify-center text-center opacity-60 mb-4">
-                  By contacting us, you agree to our terms of <br /> services
-                  and Privacy Policy
-                </p>
-              </div>
-            </Fade>
+            
           </div>
           <div>
             <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-10 p-5 sm:p-16">

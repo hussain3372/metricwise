@@ -27,7 +27,7 @@ import {
   PlayCircleIcon,
 } from "@heroicons/react/20/solid";
 
-import { Fragment, useState } from "react";
+import { Fragment, useEffect, useState } from "react";
 import {
   Products,
   Pricing,
@@ -39,6 +39,7 @@ import {
 } from "../../data/Head";
 import Link from "next/link";
 import Image from "next/image";
+
 function classNames(...classes) {
   return classes.filter(Boolean).join(" ");
 }
@@ -56,8 +57,26 @@ export default function Example() {
   const [isOpen8, setIsOpen8] = useState(false);
   const [activeTab, setActiveTab] = useState("Industries");
 
+  const [scrolled, setScrolled] = useState(false);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      if (window.scrollY > 50) {
+        setScrolled(true);
+      } else {
+        setScrolled(false);
+      }
+    };
+
+    window.addEventListener("scroll", handleScroll);
+
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
+
   return (
-    <header className="bg-white sticky top-0 z-50">
+    <header className={`bg-transparent sticky top-0 z-50 transition-colors duration-300 ${scrolled ? 'bg-white' : 'bg-transparent'}`}>
       <nav
         className="mx-auto flex items-center justify-between px-5 md:px-10 py-4"
         aria-label="Global"
@@ -171,19 +190,21 @@ export default function Example() {
                     <h1 className="font-32 font-bold leading-10">Solution</h1>
                     <div className="flex-col space-y-9 mt-6">
                       <button
-                        className={`font-semibold font-20 ${activeTab === "Industries"
+                        className={`font-semibold font-20 ${
+                          activeTab === "Industries"
                             ? "text-[#000000] hover:text-gray-500 focus:text-gray-500 active:text-gray-500"
                             : "text-[#000000] hover:text-gray-500 focus:text-gray-500 active:text-gray-500"
-                          }`}
+                        }`}
                         onClick={() => setActiveTab("Industries")}
                       >
                         Industries
                       </button>
                       <button
-                        className={`font-semibold font-20 ${activeTab === "Data Types"
+                        className={`font-semibold font-20 ${
+                          activeTab === "Data Types"
                             ? "text-[#000000] hover:text-gray-500 focus:text-gray-500 active:text-gray-500"
                             : "text-[#000000] hover:text-gray-500 focus:text-gray-500 active:text-gray-500"
-                          }`}
+                        }`}
                         onClick={() => setActiveTab("DataTypes")}
                       >
                         Data Types
@@ -420,7 +441,10 @@ export default function Example() {
         </PopoverGroup>
 
         <div className="hidden md:flex md:flex-1 md:justify-end gap-5 items-center">
-          <a href="#" className="font-12 font-normal leading-[16px] text-[#042440] border border-[#04244033] rounded-[4px] pt-3 pb-3 pl-4 pr-4 bg-none">
+          <a
+            href="#"
+            className="font-12 font-normal leading-[16px] text-[#042440] border border-[#04244033] rounded-[4px] pt-3 pb-3 pl-4 pr-4 bg-none"
+          >
             Sign Up
           </a>
           <Link

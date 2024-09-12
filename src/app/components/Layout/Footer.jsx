@@ -75,7 +75,7 @@ const Footer = () => {
       <div className="widthclass">
         <div className="pt-10 pb-0 sm:pb-3 px-5 sm:px-10 xl:px-20 xxl:px-28">
           <div className="bg-[url('/cta-bg.png')] bg-no-repeat bg-cover bg-center rounded-[20px] mx-0 sm:mx-10 md:mx-20 lg:mx-40 py-10 flex justify-between items-center text-center flex-col gap-12">
-            <h1 className="font-28 font-semibold leading-9 px-40">
+            <h1 className="font-28 font-semibold leading-9 px-5 lg:px-40">
               Start your AI monitoring, observability and governance journey with
               Metricwise.
             </h1>
@@ -95,12 +95,12 @@ const Footer = () => {
             </div>
           </div>
         </div>
-        <div className="md:pt-10 px-20">
+        <div className="pt-10 px-5 md:px-20">
           <div className="border-t border-[#00000033]">
-            <div className="grid md:grid-cols-2 py-16 px-5 sm:px-16">
-              <div className="font-16 font-light space-y-6 md:space-y-0 lg:space-x-16 grid grid-cols-1 sm:grid-cols-3 md:grid-cols-2 lg:grid-cols-3 md:mt-0 leading-4">
+            <div className="grid md:grid-cols-2 py-16 px-5 md:px-16">
+              <div className="font-16 font-light space-y-6 sm:space-y-0 lg:space-x-16 grid grid-cols-1 sm:grid-cols-3 md:grid-cols-2 lg:grid-cols-3 md:mt-0 leading-4">
                 {footerNavs.map((item, idx) => (
-                  <ul className="space-y-3" key={idx}>
+                  <ul className="space-y-3.5" key={idx}>
                     <h4 className="font-20 font-bold mt-10 xl:mt-0 mb-4">
                       {item.label}
                     </h4>
