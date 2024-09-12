@@ -15,7 +15,7 @@ const NewHero = () => {
               Detect and analyze model and data issues with speed <br className="hidden md:block"/> .Mitigate
               challenges faster for optimal AI performance.
             </p>
-            <div className="flex justify-center items-center gap-4 mt-10">
+            <div className="flex justify-center items-center gap-4 mt-5">
               <button className="bg-[#042440] border-none rounded-md px-5 py-3 font-12 font-medium text-white">Get Started Now</button>
               <button className="bg-none border border-[#042440] rounded-md px-4 py-3 font-12 font-medium text-[#042440]">Book a demo</button>
             </div>

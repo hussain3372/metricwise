@@ -57,7 +57,7 @@ export default function Example() {
   const [activeTab, setActiveTab] = useState("Industries");
 
   return (
-    <header className="bg-white border-[#042440] border border-1 border-opacity-[12%] sticky top-0 z-50">
+    <header className="bg-white sticky top-0 z-50">
       <nav
         className="mx-auto flex items-center justify-between px-5 md:px-10 py-4"
         aria-label="Global"
@@ -77,7 +77,7 @@ export default function Example() {
         <PopoverGroup className="hidden xl:flex xl:gap-x-8">
           <Popover className="relative">
             <div
-              className="flex items-center gap-x-1 font-16 font-medium leading-6 textcolor"
+              className="flex items-center gap-x-1 font-16 font-medium leading-6 text-[#04244099]"
               onMouseEnter={() => setIsOpen(true)}
               onMouseLeave={() => setIsOpen(false)}
             >
@@ -139,7 +139,7 @@ export default function Example() {
 
           <Popover className="relative">
             <div
-              className="flex items-center gap-x-1 font-16 font-medium leading-6 textcolor"
+              className="flex items-center gap-x-1 font-16 font-medium leading-6 text-[#04244099]"
               onMouseEnter={() => setIsOpen1(true)}
               onMouseLeave={() => setIsOpen1(false)}
             >
@@ -229,7 +229,7 @@ export default function Example() {
           </Popover>
 
           <Popover className="relative">
-            <div className="flex items-center gap-x-1 font-16 font-medium leading-6 textcolor">
+            <div className="flex items-center gap-x-1 font-16 font-medium leading-6 text-[#04244099]">
               <PopoverButton className="flex items-center gap-x-1">
                 <Link href="/Pricing">Pricing</Link>
               </PopoverButton>
@@ -238,7 +238,7 @@ export default function Example() {
 
           <Popover className="relative">
             <div
-              className="flex items-center gap-x-1 font-16 font-medium leading-6 textcolor"
+              className="flex items-center gap-x-1 font-16 font-medium leading-6 text-[#04244099]"
               onMouseEnter={() => setIsOpen3(true)}
               onMouseLeave={() => setIsOpen3(false)}
             >
@@ -298,7 +298,7 @@ export default function Example() {
 
           <Popover className="relative">
             <div
-              className="flex items-center gap-x-1 font-16 font-medium leading-6 textcolor"
+              className="flex items-center gap-x-1 font-16 font-medium leading-6 text-[#04244099]"
               onMouseEnter={() => setIsOpen4(true)}
               onMouseLeave={() => setIsOpen4(false)}
             >
@@ -360,7 +360,7 @@ export default function Example() {
 
           <Popover className="relative">
             <div
-              className="flex items-center gap-x-1 font-16 font-medium leading-6 textcolor"
+              className="flex items-center gap-x-1 font-16 font-medium leading-6 text-[#04244099]"
               onMouseEnter={() => setIsOpen5(true)}
               onMouseLeave={() => setIsOpen5(false)}
             >
@@ -420,12 +420,12 @@ export default function Example() {
         </PopoverGroup>
 
         <div className="hidden md:flex md:flex-1 md:justify-end gap-5 items-center">
-          <a href="#" className="font-16 font-normal leading-[20px] textcolor">
+          <a href="#" className="font-12 font-normal leading-[16px] text-[#042440] border border-[#04244033] rounded-[4px] pt-3 pb-3 pl-4 pr-4 bg-none">
             Sign Up
           </a>
           <Link
             href="/Demo"
-            className="font-16 font-normal leading-[20px] white border border-[#042440] rounded-[15px] pt-3 pb-3 pl-4 pr-4 bg-[#042440]"
+            className="font-12 font-normal leading-[16px] white border border-[#042440] rounded-[4px] pt-3 pb-3 pl-4 pr-4 bg-[#042440]"
           >
             Book a Demo
           </Link>
