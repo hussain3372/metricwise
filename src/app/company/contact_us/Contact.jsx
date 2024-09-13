@@ -40,7 +40,7 @@ const Contact = () => {
                   htmlFor=""
                   className="font-44 font-bold leading-[80px] text-[#042440]"
                 >
-                  We're here to help
+                  {"We're here to help"}
                 </label>
                 <p className="font-normal font-20 leading-6 mt-2 opacity-60">
                   Metricwise - A Comprehensive AI Observability and Governance
