@@ -9,13 +9,13 @@ const AccordionItem = ({ title, content, list }) => {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
-    <div className="mt-5 mb-8 font-18 font-inter font-normal leading-6 border border-[#0000001F] rounded-lg shadow-[0_3px_5px_rgb(0,0,0,0.2)] overflow-hidden">
+    <div className="mt-5 mb-5 font-20 font-inter font-normal leading-7 border-b border-[#0000001F] overflow-hidden">
       <button
         onClick={() => setIsOpen(!isOpen)}
         className="w-full text-left px-4 pt-4 pb-4 bg-[#FFFFFF] text-[#00000099] font-20 font-light leading-5"
       >
         <div className="flex justify-between items-center">
-          <span className="text-[#402604] font-20 font-normal">{title}</span>
+          <span className={`text-[#042440] font-20 ${isOpen ? "font-bold" : "font-normal"}`}>{title}</span>
           <span>
             {isOpen ? (
               <ChevronUpIcon className="h-5 w-5 text-gray-400" />
@@ -26,7 +26,7 @@ const AccordionItem = ({ title, content, list }) => {
         </div>
       </button>
       {isOpen && (
-        <div className="px-4 pb-4 bg-white font-normal text-[#00000099]">
+        <div className="px-4 py-4 my-4 bg-[#E1E8F238] font-normal text-[#00000099]">
           <div dangerouslySetInnerHTML={{ __html: content }}></div>
 
           {/* Render the list if present */}
@@ -166,17 +166,17 @@ const Faq = () => {
 
   return (
     <div className="">
-      <div className="faq">
-        <div className=" relative">
-          <div className="flex flex-col pt-10 md:pt-40 pb-2 md:pb-14 justify-center items-center m-auto text-black widthclass">
-            <h1 className="font-64 font-bold leading-[80px] mb-8">
+      <div className="">
+        <div className="relative faq pb-10">
+          <div className="flex flex-col pt-10 md:pt-40 pb-2 xl:pb-10 2xl:pb-14 justify-center items-center m-auto text-black widthclass">
+            <h1 className="font-52 font-bold leading-[80px] mb-5">
               We are here to help you
             </h1>
             <div className="relative">
               <input
                 type="text"
                 style={{ boxShadow: "0 3px 10px rgba(0, 0, 0, 0.2)" }}
-                className="relative rounded-xl w-[290px] sm:w-[500px] md:w-[700px] xl:w-[800px] h-[60px] sm:h-[72px] p-6 pl-16 pr-24 textcolor"
+                className="relative rounded-xl w-[290px] sm:w-[500px] md:w-[700px] xl:w-[800px] h-[60px] sm:h-[72px] p-6 pl-16 pr-24 textcolor font-normal"
                 placeholder="Ask a question..."
               />
 
@@ -192,14 +192,14 @@ const Faq = () => {
             <h5 className="font-24 font-normal opacity-60 leading-7 mt-6 text-center">
               We are Collecting your search keywords to improve our FAQs.
             </h5>
-            <h1 className="font-40 font-bold leading-[60px] mt-10">FAQ’s</h1>
+            <h1 className="font-40 font-bold leading-[60px] mt-10 bg-white px-5 rounded-lg">FAQ's</h1>
           </div>
         </div>
 
         <div className="widthclass">
           <div>
             <div>
-              <div className="px-7">
+              <div className="px-7 py-20">
                 <Head>
                   <title>FAQ - Metricwise</title>
                 </Head>

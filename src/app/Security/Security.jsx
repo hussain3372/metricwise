@@ -1,10 +1,14 @@
 "use client";
 
 import Image from "next/image";
+import Link from "next/link";
 import React from "react";
 import { PiGreaterThanLight } from "react-icons/pi";
 
 const Term = () => {
+  const handleEmailClick = (email) => {
+    window.location.href = `mailto:${email}`;
+  };
   return (
     <div>
       <div className="bg-[url('/term-bg.png')] bg-no-repeat bg-cover bg-center">
@@ -12,14 +16,15 @@ const Term = () => {
           <h1 className="text-black pl-16 pt-10  font-24 font-normal font-inter flex items-center gap-2">
             Metricwise
             <span className="paragraph font-20 font-normal font-inter opacity-50 flex items-center gap-2">
-              <PiGreaterThanLight /> Company <PiGreaterThanLight /> Data Security & Privacy Policy
+              <PiGreaterThanLight /> Company <PiGreaterThanLight /> Data
+              Security & Privacy Policy
             </span>
           </h1>
         </div>
         <div className="flex justify-center items-center py-28 relative widthclass">
           <div>
             <h1 className="font-64 font-bold lg:leading-40 mb-5 text-black">
-            Data Security & Privacy Policy
+              Data Security & Privacy Policy
             </h1>
           </div>
           {/* <div className="flex justify-center md:justify-end mt-10 md:mt-0">
@@ -167,7 +172,14 @@ const Term = () => {
               <br />
               For users seeking guidance on reinforcing the security of their
               data, kindly get in touch with your account representative or
-              contact support@metricwise.ai.
+              contact <br />
+              <button
+                onClick={() => handleEmailClick("support@metricwise.ai")}
+                className="text-blue-600 underline"
+              >
+                support@metricwise.ai
+              </button>
+              .
             </p>
           </div>
         </div>

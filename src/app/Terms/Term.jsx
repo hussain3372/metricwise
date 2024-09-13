@@ -5,10 +5,14 @@ import React from "react";
 import Terms from "../data/Term";
 import { PiGreaterThanLight } from "react-icons/pi";
 const Term = () => {
+  const handleEmailClick = (email) => {
+    window.location.href = `mailto:${email}`;
+  };
+
   return (
     <div>
       <div className="bg-[url('/term-bg.png')] bg-no-repeat bg-cover bg-center">
-         <div className="flex items-center widthclass">
+        <div className="flex items-center widthclass">
           <h1 className="text-black pl-16 pt-10  font-24 font-normal font-inter flex items-center gap-2">
             Metricwise
             <span className="paragraph font-20 font-normal font-inter opacity-50 flex items-center gap-2">
@@ -29,18 +33,31 @@ const Term = () => {
       </div>
 
       <div className="px-5 sm:px-10 lg:px-36 py-16 2xl:p-16 widthclass">
-      <h1 className="font-36 font-inter font-bold leading-10 text-[#042440]">
-        Terms of Use
-      </h1>
-      <div className="mt-16">
-        {Terms.map((term, termIndex) => (
-          <div key={termIndex}>
+        <h1 className="font-36 font-inter font-bold leading-10 text-[#042440]">
+          Terms of Use
+        </h1>
+        <div className="mt-16">
+          {Terms.map((term, termIndex) => (
+            <div key={termIndex}>
               <div>
                 <h2 className="font-20 font-inter font-semibold mt-5">
                   {term.name}
                 </h2>
                 <p className="font-16 font-normal font-inter leading-6 mt-4 mb-6 opacity-70">
                   {term.para}
+                  {/* Conditionally render the hyperlink if it exists */}
+                  {term.linkText && (
+                    <>
+                      <button
+                        onClick={() =>
+                          handleEmailClick("support@metricwise.ai")
+                        }
+                        className="text-blue-600 underline"
+                      >
+                        {term.linkText}
+                      </button>
+                    </>
+                  )}
                 </p>
                 {term.list && term.list1 && (
                   <div>
@@ -55,10 +72,10 @@ const Term = () => {
                   </div>
                 )}
               </div>
-          </div>
-        ))}
+            </div>
+          ))}
+        </div>
       </div>
-    </div>
     </div>
   );
 };

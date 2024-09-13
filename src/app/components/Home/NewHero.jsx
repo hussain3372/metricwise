@@ -58,8 +58,7 @@ const NewHero = () => {
               <span className="italic">Observability and Governance</span>
             </h1>
             <p className="text-[#00000099] font-20 font-normal leading-6 mt-5">
-              Detect and analyze model and data issues with speed{" "}
-              <br className="hidden md:block" /> .Mitigate challenges faster for
+              Detect and analyze model and data issues with speed.<br className="hidden md:block" />Mitigate challenges faster for
               optimal AI performance.
             </p>
             <div className="flex justify-center items-center gap-4 mt-5">

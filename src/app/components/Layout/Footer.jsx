@@ -123,13 +123,13 @@ const Footer = () => {
                     <Image
                       width={233}
                       height={32}
-                      src="/footerlogo.svg"
+                      src="/logo.svg"
                       className=""
                       alt="footer logo"
                     />
                   </div>
                   <div className="mt-5">
-                    <p className="text-black font-20 font-bold">Social Media</p>
+                    <p className="text-[#00000099] font-20 font-normal">Social Media</p>
                     <div className="flex gap-5 mt-5">
                       <Image
                         width={48}

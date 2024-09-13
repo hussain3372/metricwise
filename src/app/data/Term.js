@@ -50,7 +50,8 @@ const Terms = [
       },
       {
         name: "Limitation on Claims:",
-        para: "Any claim related to Metricwise must be brought within one year. By using Metricwise, you agree to these Terms. If you have any questions, please contact us at support@metricwise.ai.",
+        para: "Any claim related to Metricwise must be brought within one year. By using Metricwise, you agree to these Terms. If you have any questions, please contact us at",
+        linkText: "support@metricwise.ai",
       },
 ];
 
