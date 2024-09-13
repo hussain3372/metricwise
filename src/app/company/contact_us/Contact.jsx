@@ -42,6 +42,7 @@ const Contact = () => {
                 >
                   {"We're here to help"}
                 </label>
+
                 <p className="font-normal font-20 leading-6 mt-2 opacity-60">
                   Metricwise - A Comprehensive AI Observability and Governance
                   Platform If you fall into any of the following categories:
@@ -144,7 +145,6 @@ const Contact = () => {
                 Privacy Policy
               </p>
             </div>
-            
           </div>
           <div>
             <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-10 p-5 sm:p-16">

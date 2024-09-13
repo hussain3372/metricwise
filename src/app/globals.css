@@ -22,7 +22,7 @@ body {
 .faq {
   background-image: url(../../public/faqbg.png);
   background-size: 100%;
-  background-position: top right;
+  background-position: bottom right;
   background-repeat: no-repeat;
 }
 .career {

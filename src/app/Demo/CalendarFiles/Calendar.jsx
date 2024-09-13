@@ -4,6 +4,7 @@ import React, { useState, useEffect } from "react";
 import Image from "next/image";
 import CalendarTable from "./CalendarTable";
 import "./Calendar.css";
+// import { InlineWidget } from "react-calendly";
 
 const Calendar = () => {
   const [month, setMonth] = useState(new Date().getMonth()); // 0-based index (0 = January, 11 = December)
@@ -111,6 +112,8 @@ const Calendar = () => {
 
         <CalendarTable month={month} year={year} />
       </div>
+
+      {/* <InlineWidget url="https://calendly.com/hussainabdullah3372" /> */}
     </div>
   );
 };

@@ -65,7 +65,7 @@ const Faq = () => {
         "How is the model performing in real-time?",
         "Does the accuracy align with training expectations?",
         "Are variations in data quality impacting model outcomes?",
-        "What alterations occurred in the models behavior over time?",
+        "What alterations occurred in the model's behavior over time?",
         "Can the application explain the specifics of a particular prediction?",
         "Which features exerted the most significant influence on a given prediction?",
         "How is fairness maintained across various data subgroups?",
@@ -110,7 +110,7 @@ const Faq = () => {
     {
       title: "How do I get started?",
       content:
-        "Click here to register for a free account and kickstart your journey! The platform will guide you through the process in just a few minutes. <br> <br>If you prefer an overview of the process, check out the Getting Started guide available in the documentation center <br> <br> .Alternatively, contact us to arrange acall with our team. We are delighted to assist you in gaining more insights.",
+        "Click here to register for a free account and kickstart your journey! The platform will guide you through the process in just a few minutes. <br> <br>If you prefer an overview of the process, check out the Getting Started guide available in the documentation center <br> <br> .Alternatively, contact us to arrange acall with our team. We're delighted to assist you in gaining more insights.",
     },
     {
       title: "What kinds of data can I use?",
@@ -125,7 +125,7 @@ const Faq = () => {
     {
       title: "How to upgrade your plan?",
       content:
-        "Upgrading becomes a breeze when you are ready to progress beyond the Basic plan! When you decide to monitor additional projects,  or add more users, you can simply choose the Specialist plan in your profile or contact us  to discuss your account upgrade for the Enterprise upgrade.",
+        "Upgrading becomes a breeze when you're ready to progress beyond the Basic plan! When you decide to monitor additional projects,  or add more users, you can simply choose the Specialist plan in your profile or contact us  to discuss your account upgrade for the Enterprise upgrade.",
     },
     {
       title: "How can I access support for Metricwise?",
@@ -140,12 +140,12 @@ const Faq = () => {
     {
       title: "Has Metricwise obtained SOC 2 certification?",
       content:
-        "Absolutely, Metricwise has successfully undergone our SOC 2 Type 2 examination without any exceptions. If you like to receive our SOC 2 Type 2 report, please reach out to us at support@metricwise.ai. For further insights into security at Metricwise, feel free to explore the data security and privacy page.",
+        "Absolutely, Metricwise has successfully undergone our SOC 2 Type 2 examination without any exceptions. If you'd like to receive our SOC 2 Type 2 report, please reach out to us at support@metricwise.ai. For further insights into security at Metricwise, feel free to explore the data security and privacy page.",
     },
     {
       title: "How can I determine the amount of data required?",
       content:
-        "To estimate the volume of data you will be sending, calculate the size of the baseline data, model prediction volume, and the size of the model features and artifacts for each of your models, then aggregate these values.",
+        "To estimate the volume of data you'll be sending, calculate the size of the baseline data, model prediction volume, and the size of the model features and artifacts for each of your models, then aggregate these values.",
     },
     {
       title: "Is the pricing model for Metricwise based on consumption?",
@@ -155,7 +155,7 @@ const Faq = () => {
     {
       title: "What additional data does Metricwise gather?",
       content:
-        "Metricwise refrains from collecting any additional data. All customer data is treated as confidential and Metricwise securely backs up the customers encrypted data to guarantee its safety. For additional details, please refer to our data security and privacy page.",
+        "Metricwise refrains from collecting any additional data. All customer data is treated as confidential and Metricwise securely backs up the customer's encrypted data to guarantee its safety. For additional details, please refer to our data security and privacy page.",
     },
     {
       title: "What is the data retention policy of Metricwise?",
@@ -167,9 +167,9 @@ const Faq = () => {
   return (
     <div className="">
       <div className="">
-        <div className="relative faq pb-10">
+        <div className="relative faq pb-20">
           <div className="flex flex-col pt-10 md:pt-40 pb-2 xl:pb-10 2xl:pb-14 justify-center items-center m-auto text-black widthclass">
-            <h1 className="font-52 font-bold leading-[80px] mb-5">
+            <h1 className="font-52 font-bold text-center p-3 leading-10 md:leading-[80px] mb-5">
               We are here to help you
             </h1>
             <div className="relative">
@@ -192,14 +192,14 @@ const Faq = () => {
             <h5 className="font-24 font-normal opacity-60 leading-7 mt-6 text-center">
               We are Collecting your search keywords to improve our FAQs.
             </h5>
-            <h1 className="font-40 font-bold leading-[60px] mt-10 bg-white px-5 rounded-lg">FAQs</h1>
+            <h1 className="font-40 font-bold leading-[60px] mt-10 bg-white px-5 rounded-lg">FAQ's</h1>
           </div>
         </div>
 
         <div className="widthclass">
           <div>
             <div>
-              <div className="px-7 py-20">
+              <div className="px-5 md:px-20 py-5 md:py-20">
                 <Head>
                   <title>FAQ - Metricwise</title>
                 </Head>
