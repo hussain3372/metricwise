@@ -1,5 +1,6 @@
 import { HomeBolgs } from "@/app/data/HomeBlogs";
 import Image from "next/image";
+import Link from "next/link";
 import React from "react";
 
 const Blogs = () => {
@@ -10,9 +11,14 @@ const Blogs = () => {
           <h1 className="text-[20px] sm:text-[30px] md:text-[40px] font-semibold leadin-8 md:leading-[44px] text-[#222222]">
             Go through our latest <br /> blogs to learn more
           </h1>
-          <button className="bg-[#042440] border border-[#FFFFFF33] h-[40px] w-[128px] rounded-[4px] text-[#FFFFFF] font-12 leading-4 font-medium mt-5 md:mt-0">
-            Book a demo
-          </button>
+          <div class="darksoul-glowing-button1 w-[166px] h-[50px]">
+            <Link
+              href="/Demo"
+              className="font-16 leading-4 font-medium darksoul-button1 w-[160px] h-[44px]"
+            >
+              Book a demo
+            </Link>
+          </div>
         </div>
         <div className="flex flex-col md:flex-row justify-center items-center gap-5 md:gap-8">
           {HomeBolgs.map((item, index) => (

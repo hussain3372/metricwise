@@ -17,11 +17,9 @@ const Pricing = () => {
           <div className="widthclass">
             <div className="flex flex-col justify-center items-center text-center m-auto pt-10">
               <h1 className="font-36 font-bold leading-10 p-0 md:pt-24 md:pb-32">
-                Unlock Business Potential with <br /> Scalable,
-                <span className="underline underline-offset-8 decoration-[#D9C666]">
-                  Responsible <br className="flex md:hidden" />
-                </span>
-                AI Solutions.
+                Unlock Business Potential with <br /> Scalable, Responsible{" "}
+                <br className="flex md:hidden" />
+                AI Solutions
               </h1>
             </div>
           </div>
@@ -36,66 +34,66 @@ const Pricing = () => {
                 //   scale={scale}
                 //   transitionSpeed={2500}
                 // >
-                  <div
-                    className="bg-[#FFF] shadow-[0_3px_10px_rgb(0,0,0,0.2)] p-6 rounded-[20px] mb-10"
-                    key={`card-${index}`}
-                  >
-                    <h1 className="font-36 font-bold leading-40 textcolor">
-                      {item.title}
-                    </h1>
-                    <ul className="mt-3">
-                      {item.list.map((listItem, listIndex) => (
-                        <li
-                          key={`list-${index}-${listIndex}`}
-                          className="font-20 font-normal leading-6 flex items-center gap-2 mb-3"
-                        >
-                          <Image
-                            width={24}
-                            height={24}
-                            src={item.icon}
-                            alt="tick"
-                          />
-                          {listItem}
-                        </li>
-                      ))}
-                      {item.list1.map((listItem, listIndex) => (
-                        <li
-                          key={`list1-${index}-${listIndex}`}
-                          className="font-20 font-normal leading-6 flex items-center gap-2 mb-3 opacity-50"
-                        >
-                          <Image
-                            width={24}
-                            height={24}
-                            src={item.icon2}
-                            alt="tick"
-                          />
-                          {listItem}
-                        </li>
-                      ))}
-                    </ul>
-                    <div className="mt-24 font-20 leading-6 font-medium">
-                      {item.months}
-                      <span className="font-16 font-medium opacity-60 leading-5">
-                        {item.span}
-                      </span>
-                    </div>
-                    <div className="flex justify-center items-center gap-3 mt-6">
-                      {item.showBtn1 && (
-                        <button
-                          className="font-20 font-inter font-bold leading-6 h-[52px] bg-none text-[#042440] border border-[#042440] rounded-lg"
-                          style={{ width: item.width1 }}
-                        >
-                          {item.btn1}
-                        </button>
-                      )}
-                      <button
-                        className="font-20 font-bold leading-6 h-[52px] bg-[#042440] text-white rounded-lg"
-                        style={{ width: item.width }}
+                <div
+                  className="bg-[#FFF] shadow-[0_3px_10px_rgb(0,0,0,0.2)] p-6 rounded-[20px] mb-10"
+                  key={`card-${index}`}
+                >
+                  <h1 className="font-36 font-bold leading-40 textcolor">
+                    {item.title}
+                  </h1>
+                  <ul className="mt-3">
+                    {item.list.map((listItem, listIndex) => (
+                      <li
+                        key={`list-${index}-${listIndex}`}
+                        className="font-20 font-normal leading-6 flex items-center gap-2 mb-3"
                       >
-                        {item.btn}
-                      </button>
-                    </div>
+                        <Image
+                          width={24}
+                          height={24}
+                          src={item.icon}
+                          alt="tick"
+                        />
+                        {listItem}
+                      </li>
+                    ))}
+                    {item.list1.map((listItem, listIndex) => (
+                      <li
+                        key={`list1-${index}-${listIndex}`}
+                        className="font-20 font-normal leading-6 flex items-center gap-2 mb-3 opacity-50"
+                      >
+                        <Image
+                          width={24}
+                          height={24}
+                          src={item.icon2}
+                          alt="tick"
+                        />
+                        {listItem}
+                      </li>
+                    ))}
+                  </ul>
+                  <div className="mt-24 font-20 leading-6 font-medium">
+                    {item.months}
+                    <span className="font-16 font-medium opacity-60 leading-5">
+                      {item.span}
+                    </span>
                   </div>
+                  <div className="flex flex-col sm:flex-row space-y-4 sm:space-y-0 justify-center items-center gap-3 mt-6">
+                    {item.showBtn1 && (
+                      <button
+                        className="font-20 font-inter font-bold leading-6 h-[52px] bg-none text-[#042440] border border-[#042440] rounded-lg"
+                        style={{ width: item.width1 }}
+                      >
+                        {item.btn1}
+                      </button>
+                    )}
+                    <button
+                      className="font-20 font-bold leading-6 h-[52px] bg-gradient-to-r from-[#B56AFF] via-[#B56AFF] to-[#FFE1B4] bg-[length:110%_100%] text-white rounded-lg"
+                      style={{ width: item.width }}
+                    >
+                      {item.btn}
+                    </button>
+                  </div>
+                </div>
                 // </Tilt>
               ))
             ) : (

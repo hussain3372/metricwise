@@ -35,19 +35,19 @@ const Contact = () => {
         <div className="widthclass">
           <div className="grid lg:grid-cols-2 items-center p-5 md:py-10 md:px-20 gap-20 2xl:gap-40">
             <div>
-              <div>
+              <div className="text-center sm:text-start">
                 <label
                   htmlFor=""
-                  className="font-44 font-bold leading-[80px] text-[#042440]"
+                  className="font-44 font-bold leading-10 md:leading-[80px] text-[#042440]"
                 >
                   {"We're here to help"}
                 </label>
 
-                <p className="font-normal font-20 leading-6 mt-2 opacity-60">
+                <p className="font-normal font-20 leading-6 mt-8 sm:mt-2 opacity-60 text-start">
                   Metricwise - A Comprehensive AI Observability and Governance
                   Platform If you fall into any of the following categories:
                 </p>
-                <ul className="mt-4 list-disc list-inside opacity-60">
+                <ul className="mt-4 list-disc list-inside opacity-60 text-start">
                   <li className="list-disc font-20 font-normal font-inter leading-6">
                     An inquisitive prospect
                   </li>
@@ -137,7 +137,7 @@ const Contact = () => {
                 />
                 <input
                   type="submit"
-                  className="w-full flex items-center justify-center border border-[#042440] rounded-[36px] bg-[#042440] text-white font-16 font-medium leading-5 p-3 mt-3 cursor-pointer"
+                  className="w-full flex items-center justify-center rounded-[36px] bg-gradient-to-r from-[#B56AFF] via-[#B56AFF] to-[#FFE1B4] bg-[length:110%_100%] text-white font-16 font-medium leading-5 p-3 mt-3 cursor-pointer"
                 />
               </form>
               <p className="font-16 font-inter font-normal items-center flex-col flex justify-center text-center opacity-60 mb-4">

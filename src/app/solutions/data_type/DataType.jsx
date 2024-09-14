@@ -25,7 +25,7 @@ const DataType = () => {
               </p>
               <Link
                 href="/Demo"
-                className="font-20 font-normal font-inter leading-6 bg-[#042440] white rounded-[8px] w-[214px] h-[52px] flex gap-3 justify-center   items-center"
+                className="font-20 font-normal font-inter leading-6 bg-gradient-to-r from-[#B56AFF] via-[#B56AFF] to-[#FFE1B4] bg-[length:110%_100%] text-white white rounded-[8px] w-[214px] h-[52px] flex gap-3 justify-center   items-center"
               >
                 Book a Demo
                 <Image

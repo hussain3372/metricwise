@@ -24,7 +24,7 @@ const Blog = () => {
               their respective roles and significant importance in the current
               landscape of machine learning.
             </p>
-            <button className="w-[170px] md:w-[196px] h-[48px] flex justify-center items-center text-white rounded-lg mt-8 font-20 font-normal leading-6 gap-2 bg-[#042440]">
+            <button className="w-[170px] md:w-[196px] h-[48px] flex justify-center items-center rounded-lg mt-8 font-20 font-normal leading-6 gap-2 bg-gradient-to-r from-[#B56AFF] via-[#B56AFF] to-[#FFE1B4] bg-[length:110%_100%] text-white">
               Learn More
               <Image width={24} height={24} src="/free.png" alt="Learn More" />
             </button>
@@ -43,7 +43,7 @@ const Blog = () => {
                 The terms monitoring and observability are prevalent in the
                 field. The terms monitoring and observability.
               </p>
-              <button className="w-[134px] h-[40px] bg-[#042440] font-16 font-normal rounded-lg">
+              <button className="w-[134px] h-[40px] bg-gradient-to-r from-[#B56AFF] via-[#B56AFF] to-[#FFE1B4] bg-[length:110%_100%] text-white font-16 font-normal rounded-lg">
                 Learn more
               </button>
             </div>
@@ -72,7 +72,7 @@ const Blog = () => {
                               dangerouslySetInnerHTML={{ __html: item.data }}
                             />
                           </div>
-                          <button className="w-[134px] h-[40px] bg-[#042440] text-white text-[16px] font-regular rounded-lg mt-3 sm:mt-0">
+                          <button className="w-[134px] h-[40px] bg-gradient-to-r from-[#B56AFF] via-[#B56AFF] to-[#FFE1B4] bg-[length:110%_100%] text-white text-[16px] font-regular rounded-lg mt-3 sm:mt-0">
                             {item.btn}
                           </button>
                         </div>

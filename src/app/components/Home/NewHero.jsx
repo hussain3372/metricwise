@@ -7,6 +7,7 @@ import Platform from "@/app/components/Home/Platform";
 import NewPerformance from "@/app/components/Home/NewPerformance";
 import Card from "@/app/components/Home/Card";
 import Blogs from "@/app/components/Home/Blogs";
+import Link from "next/link";
 
 const NewHero = () => {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -58,16 +59,29 @@ const NewHero = () => {
               <span className="italic">Observability and Governance</span>
             </h1>
             <p className="text-[#00000099] font-20 font-normal leading-6 mt-5">
-              Detect and analyze model and data issues with speed.<br className="hidden md:block" />Mitigate challenges faster for
-              optimal AI performance.
+              Detect and analyze model and data issues with speed.
+              <br className="hidden md:block" />
+              Mitigate challenges faster for optimal AI performance.
             </p>
             <div className="flex justify-center items-center gap-4 mt-5">
-              <button className="bg-[#042440] border-none rounded-md px-5 py-3 font-12 font-medium text-white">
-                Get Started Now
-              </button>
-              <button className="bg-none border border-[#042440] rounded-md px-4 py-3 font-12 font-medium text-[#042440]">
-                Book a demo
-              </button>
+              <div class="darksoul-glowing-button1 w-[166px] h-[50px]">
+                <Link
+                  href="/company/contact_us"
+                  class="darksoul-button1 font-16 leading-4 font-medium w-[160px] h-[44px]"
+                  type="button"
+                >
+                  Get Started Now
+                </Link>
+              </div>
+
+              <div class="darksoul-glowing-button2 flex justify-center items-center w-[166px] h-[50px]">
+                <Link
+                  href="/Demo"
+                  className="font-16 leading-4 font-medium darksoul-button2 w-[160px] h-[44px]"
+                >
+                  Book a demo
+                </Link>
+              </div>
             </div>
           </div>
         </div>

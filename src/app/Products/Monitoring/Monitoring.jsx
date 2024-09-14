@@ -3,7 +3,6 @@
 import { Product } from "@/app/data/Product";
 import Image from "next/image";
 import React from "react";
-import { Fade } from "react-awesome-reveal";
 const Monitoring = () => {
   return (
     <div>
@@ -11,15 +10,6 @@ const Monitoring = () => {
         {/* hero */}
 
         <div className="px-16 mt-5">
-          {/* <div className="flex items-center">
-            <h1 className="font-24 font-normal font-inter flex items-center gap-2">
-              Metricwise
-              <span className="font-20 font-normal font-inter opacity-50 flex items-center gap-2">
-                <PiGreaterThanLight /> Products <PiGreaterThanLight />{" "}
-                Monitoring Hub
-              </span>
-            </h1>
-          </div> */}
           <div className="grid md:grid-cols-2 items-center">
             <div>
               <h1 className="font-36 font-inter font-bold leading-10">
@@ -33,7 +23,7 @@ const Monitoring = () => {
                 dashboards and intuitive interfaces, implementation is seamless,
                 ensuring rapid integration into existing workflows
               </p>
-              <button className="font-20 font-normal font-inter leading-6 bg-[#042440] white rounded-[8px] w-[180px] md:w-[214px] h-[50px] md:h-[52px] flex gap-3 justify-center items-center">
+              <button className="font-20 font-normal font-inter leading-6 bg-gradient-to-r from-[#B56AFF] via-[#B56AFF] to-[#FFE1B4] bg-[length:110%_100%] text-white white rounded-[8px] w-[180px] md:w-[214px] h-[50px] md:h-[52px] flex gap-3 justify-center items-center">
                 Book a Demo
                 <Image
                   width={24}
@@ -112,7 +102,7 @@ const Monitoring = () => {
               dashboards and intuitive interfaces, implementation is seamless,
               ensuring rapid integration into existing workflows
             </p>
-            <button className="font-20 font-normal font-inter leading-6 bg-[#042440] white rounded-[8px] w-[180px] md:w-[214px] h-[50px] md:h-[52px] flex gap-3 justify-center items-center">
+            <button className="font-20 font-normal font-inter leading-6 bg-gradient-to-r from-[#B56AFF] via-[#B56AFF] to-[#FFE1B4] bg-[length:110%_100%] text-white white rounded-[8px] w-[180px] md:w-[214px] h-[50px] md:h-[52px] flex gap-3 justify-center items-center">
               Book a Demo
               <Image
                 width={24}

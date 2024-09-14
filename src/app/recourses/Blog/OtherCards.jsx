@@ -41,7 +41,7 @@ const OtherCards = () => {
                         dangerouslySetInnerHTML={{ __html: item.data }}
                       />
                     </div>
-                    <button className="w-[134px] h-[40px] bg-[#042440] text-white text-[16px] font-regular rounded-lg mt-5 mt-sm-0">
+                    <button className="w-[134px] h-[40px] bg-gradient-to-r from-[#B56AFF] via-[#B56AFF] to-[#FFE1B4] bg-[length:110%_100%] text-white text-[16px] font-regular rounded-lg mt-5 mt-sm-0">
                       {item.btn}
                     </button>
                   </div>

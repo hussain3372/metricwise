@@ -76,23 +76,37 @@ const Footer = () => {
         <div className="pt-10 pb-0 sm:pb-3 px-5 sm:px-10 xl:px-20 xxl:px-28">
           <div className="bg-[url('/cta-bg.png')] bg-no-repeat bg-cover bg-center rounded-[20px] mx-0 sm:mx-10 md:mx-20 lg:mx-40 py-10 flex justify-between items-center text-center flex-col gap-12">
             <h1 className="font-28 font-semibold leading-9 px-5 lg:px-40">
-              Start your AI monitoring, observability and governance journey with
-              Metricwise.
+              Start your AI monitoring, observability and governance journey
+              with Metricwise.
             </h1>
             <div className="flex flex-col sm:flex-row justify-center items-center gap-3">
-              <Link
+              {/* <Link
                 href="/company/contact_us"
-                className="flex justify-center items-center bg-[#042440] h-[44px] w-[160px] rounded-[4px] border-none text-[#fff] font-16 leading-4 font-medium"
+                className="flex justify-center items-center bg-gradient-to-r from-[#B56AFF] via-[#B56AFF] to-[#FFC876] bg-[length:110%_100%] h-[44px] w-[160px] rounded-[4px] border-none text-white font-16 leading-4 font-medium border-3 border-transparent hover:border-red-500"
               >
                 Get Started Now
-              </Link>
-              <Link
-                href="/Demo"
-                className="flex justify-center items-center bg-transparent border border-[#00000033] h-[44px] w-[128px] rounded-[4px] text-[#000000] font-16 leading-4 font-medium"
-              >
-                Book a demo
-              </Link>
-            </div>
+              </Link> */}
+
+              <div class="darksoul-glowing-button1 w-[166px] h-[50px]">
+                <Link
+                  href="/company/contact_us"
+                  class="darksoul-button1 font-16 leading-4 font-medium w-[160px] h-[44px]"
+                  type="button"
+                >
+                  Get Started Now
+                </Link>
+              </div>
+
+              <div class="darksoul-glowing-button2 flex justify-center items-center w-[166px] h-[50px]">
+                <Link
+                  href="/Demo"
+                  className="font-16 leading-4 font-medium darksoul-button2 w-[160px] h-[44px]"
+                > 
+                  Book a demo
+                </Link>
+              </div>
+              
+            </div>  
           </div>
         </div>
         <div className="pt-10 px-5 md:px-20">
@@ -129,7 +143,9 @@ const Footer = () => {
                     />
                   </div>
                   <div className="mt-5">
-                    <p className="text-[#00000099] font-20 font-normal">Social Media</p>
+                    <p className="text-[#00000099] font-20 font-normal">
+                      Social Media
+                    </p>
                     <div className="flex gap-5 mt-5">
                       <Image
                         width={48}

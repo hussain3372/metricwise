@@ -2,30 +2,39 @@
 
 import React, { useState } from "react";
 import Head from "next/head";
-import { ChevronUpIcon, ChevronDownIcon } from "@heroicons/react/24/outline";
-import { Zoom } from "react-awesome-reveal";
+import { ChevronUpIcon, ChevronDownIcon, MinusIcon, PlusIcon } from "@heroicons/react/24/outline";
 
 const AccordionItem = ({ title, content }) => {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
-    <div className="mt-5 font-16 font-inter font-normal leading-6 border border-[#0000001F] rounded-lg shadow-[0_3px_5px_rgb(0,0,0,0.2)] overflow-hidden">
+    <div className="mt-5 mb-5 font-20 font-inter font-normal leading-7 border-b border-[#0000001F] overflow-hidden">
       <button
         onClick={() => setIsOpen(!isOpen)}
         className="w-full text-left px-4 pt-4 pb-4 bg-[#FFFFFF] text-[#00000099] font-20 font-light leading-5"
       >
         <div className="flex justify-between items-center">
-          <span className="text-[#042440] font-20 font-normal">{title}</span>
+          <span
+            className={`text-[#042440] font-20 ${
+              isOpen ? "font-bold" : "font-normal"
+            }`}
+          >
+            {title}
+          </span>
           <span>
             {isOpen ? (
-              <ChevronUpIcon className="h-5 w-5 text-gray-400" />
+              <MinusIcon  className="h-5 w-5 text-gray-400" />
             ) : (
-              <ChevronDownIcon className="h-5 w-5 text-gray-400" />
+              <PlusIcon className="h-5 w-5 text-gray-400" />
             )}
           </span>
         </div>
       </button>
-      {isOpen && <div className="px-4 pb-4 bg-white font-light">{content}</div>}
+      {isOpen && (
+        <div className="px-4 py-4 my-4 bg-[#E1E8F238] font-normal text-[#00000099]">
+          {content}
+        </div>
+      )}
     </div>
   );
 };
@@ -103,7 +112,7 @@ const Faq = () => {
               FAQ’s
             </h1>
 
-            <div className="py-6 px-5 sm:px-20 bg-white mt-14">
+            <div className="py-6 px-5 sm:px-20 mt-14">
               <Head>
                 <title>FAQ - Metricwise</title>
               </Head>

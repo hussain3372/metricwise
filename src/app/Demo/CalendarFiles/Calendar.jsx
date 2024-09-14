@@ -4,7 +4,7 @@ import React, { useState, useEffect } from "react";
 import Image from "next/image";
 import CalendarTable from "./CalendarTable";
 import "./Calendar.css";
-// import { InlineWidget } from "react-calendly";
+import { InlineWidget } from "react-calendly";
 
 const Calendar = () => {
   const [month, setMonth] = useState(new Date().getMonth()); // 0-based index (0 = January, 11 = December)
@@ -46,7 +46,7 @@ const Calendar = () => {
 
   return (
     <div>
-      <div className="bg-white shadow-[0_0_10px_rgba(0,0,16,0.1)] overflow-hidden rounded-lg calendarclass">
+      {/* <div className="bg-white shadow-[0_0_10px_rgba(0,0,16,0.1)] overflow-hidden rounded-lg calendarclass">
         <div className="p-5 grid md:grid-cols-2 border-b border-[#00000033]">
           <p className="font-16 font-inter font-medium leading-5">
             Select Date & Time
@@ -111,9 +111,9 @@ const Calendar = () => {
         </div>
 
         <CalendarTable month={month} year={year} />
-      </div>
+      </div> */}
 
-      {/* <InlineWidget url="https://calendly.com/hussainabdullah3372" /> */}
+      <InlineWidget url="https://calendly.com/hussainabdullah3372" />
     </div>
   );
 };

@@ -3,7 +3,7 @@
 import React, { useState } from "react";
 import Head from "next/head";
 import Image from "next/image";
-import { ChevronUpIcon, ChevronDownIcon } from "@heroicons/react/24/outline";
+import { MinusIcon, PlusIcon } from "@heroicons/react/24/outline";
 
 const AccordionItem = ({ title, content, list }) => {
   const [isOpen, setIsOpen] = useState(false);
@@ -18,9 +18,9 @@ const AccordionItem = ({ title, content, list }) => {
           <span className={`text-[#042440] font-20 ${isOpen ? "font-bold" : "font-normal"}`}>{title}</span>
           <span>
             {isOpen ? (
-              <ChevronUpIcon className="h-5 w-5 text-gray-400" />
+              <MinusIcon  className="h-5 w-5 text-gray-400" />
             ) : (
-              <ChevronDownIcon className="h-5 w-5 text-gray-400" />
+              <PlusIcon className="h-5 w-5 text-gray-400" />
             )}
           </span>
         </div>
@@ -184,7 +184,7 @@ const Faq = () => {
                 <Image width={28} height={28} src="/search.png" alt="" />
               </div>
               <div className="absolute top-3 sm:top-[18px] right-0 pr-3">
-                <button className="font-16 font-normal leading-5 text-white bg-[#042440] pt-2 pb-2 pl-3 pr-3 rounded-[8px]">
+                <button className="font-16 font-normal leading-5 bg-gradient-to-r from-[#B56AFF] via-[#B56AFF] to-[#FFE1B4] bg-[length:110%_100%] text-white pt-2 pb-2 pl-3 pr-3 rounded-[8px]">
                   Search
                 </button>
               </div>
@@ -192,7 +192,6 @@ const Faq = () => {
             <h5 className="font-24 font-normal opacity-60 leading-7 mt-6 text-center">
               We are Collecting your search keywords to improve our FAQs.
             </h5>
-            <h1 className="font-40 font-bold leading-[60px] mt-10 bg-white px-5 rounded-lg">{"FAQ's"}</h1>
           </div>
         </div>
 
@@ -235,7 +234,7 @@ const Faq = () => {
               </p>
             </div>
             <div class="px-6 pt-4 pb-2">
-              <span class="inline-block bg-[#042440] rounded-full px-8 py-2 text-sm font-semibold text-white mr-2 mb-2">
+              <span class="inline-block bg-gradient-to-r from-[#B56AFF] via-[#B56AFF] to-[#FFE1B4] bg-[length:110%_100%] rounded-full px-8 py-2 text-sm font-semibold text-white mr-2 mb-2">
                 Head to Docs
               </span>
             </div>
@@ -259,7 +258,7 @@ const Faq = () => {
               </p>
             </div>
             <div class="px-6 pt-4 pb-2">
-              <span class="inline-block bg-[#042440] rounded-full px-8 py-2 text-sm font-semibold text-white mr-2 mb-2">
+              <span class="inline-block bg-gradient-to-r from-[#B56AFF] via-[#B56AFF] to-[#FFE1B4] bg-[length:110%_100%] rounded-full px-8 py-2 text-sm font-semibold text-white mr-2 mb-2">
                 Explore Demos
               </span>
             </div>
@@ -282,7 +281,7 @@ const Faq = () => {
               </p>
             </div>
             <div class="px-6 pt-4 pb-2">
-              <span class="inline-block bg-[#042440] rounded-full px-8 py-2 text-sm font-semibold text-white mr-2 mb-2">
+              <span class="inline-block bg-gradient-to-r from-[#B56AFF] via-[#B56AFF] to-[#FFE1B4] bg-[length:110%_100%] rounded-full px-8 py-2 text-sm font-semibold text-white mr-2 mb-2">
                 Explore Guidebooks
               </span>
             </div>

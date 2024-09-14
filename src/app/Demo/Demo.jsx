@@ -47,7 +47,7 @@ const Demo = () => {
     <div className="relative">
       <div className="px-5 md:px-10 py-10 md:py-14 demoparent">
         {section === 1 && (
-          <div className="grid lg:grid-cols-2 max-w-[1040px] bg-[#FFFFFF] m-auto rounded-[40px] p-5 md:p-20 gap-20 shadow-[0_0_10px_rgba(0,0,16,0.1)]">
+          <div className="grid lg:grid-cols-2 max-w-[1040px] bg-[#FFFFFF] m-auto rounded-[40px] p-5 md:p-20 shadow-[0_0_10px_rgba(0,0,16,0.1)]">
             <div>
               <Image
                 width={140}
@@ -90,14 +90,14 @@ const Demo = () => {
                   <Calendar />
                 </div>
               </Fade>
-              <div className="flex items-end justify-end mt-5">
+              {/* <div className="flex items-end justify-end mt-5">
                 <button
                   onClick={handleNext}
                   className="flex mt-5 sm:mt-0 items-end justify-end border border-[#042440] rounded-[10px] bg-[#042440] text-white font-16 font-normal leading-6 pt-2 pb-2 pl-5 pr-5"
                 >
                   Next
                 </button>
-              </div>
+              </div> */}
             </div>
           </div>
         )}

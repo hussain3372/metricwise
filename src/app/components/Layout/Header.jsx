@@ -76,7 +76,11 @@ export default function Example() {
   }, []);
 
   return (
-    <header className={`bg-transparent sticky top-0 z-50 transition-colors duration-300 ${scrolled ? 'bg-white' : 'bg-transparent'}`}>
+    <header
+      className={`bg-transparent sticky top-0 z-50 transition-colors duration-300 ${
+        scrolled ? "bg-white" : "bg-transparent"
+      }`}
+    >
       <nav
         className="mx-auto flex items-center justify-between px-5 md:px-10 py-4"
         aria-label="Global"
@@ -440,20 +444,29 @@ export default function Example() {
           </Popover>
         </PopoverGroup>
 
-        <div className="hidden md:flex md:flex-1 md:justify-end gap-5 items-center">
-          <a
-            href="#"
-            className="font-12 font-normal leading-[16px] text-[#042440] border border-[#04244033] rounded-[4px] pt-3 pb-3 pl-4 pr-4 bg-none"
-          >
-            Sign Up
-          </a>
-          <Link
-            href="/Demo"
-            className="font-12 font-normal leading-[16px] white border border-[#042440] rounded-[4px] pt-3 pb-3 pl-4 pr-4 bg-[#042440]"
-          >
-            Book a Demo
-          </Link>
+        <div className="hidden md:flex md:flex-1 md:justify-end items-center space-x-5 ml-10">
+          {/* First button: Sign up */}
+          <div className="darksoul-glowing-button2 flex justify-center items-center w-[166px] h-[50px]">
+            <Link
+              href="/Demo"
+              className="font-16 leading-4 font-medium darksoul-button2 w-[160px] h-[44px]"
+            >
+              Sign up
+            </Link>
+          </div>
+
+          {/* Second button: Book a Demo */}
+          <div className="darksoul-glowing-button1 flex justify-center items-center w-[166px] h-[50px]">
+            <Link
+              href="/company/contact_us"
+              className="font-16 leading-4 font-medium darksoul-button1 w-[160px] h-[44px]"
+              type="button"
+            >
+              Book a Demo
+            </Link>
+          </div>
         </div>
+
         <div className="flex xl:hidden pl-20">
           <button
             type="button"
@@ -465,6 +478,7 @@ export default function Example() {
           </button>
         </div>
       </nav>
+
       <Dialog
         className="xl:hidden"
         open={mobileMenuOpen}

@@ -27,7 +27,7 @@ const Finance = () => {
               </p>
               <Link
                 href="/Demo"
-                className="font-20 font-normal font-inter leading-6 bg-[#042440] white rounded-[8px] w-[180px] md:w-[214px] h-[50px] md:h-[52px] flex gap-3 justify-center   items-center"
+                className="font-20 font-normal font-inter leading-6 bg-gradient-to-r from-[#B56AFF] via-[#B56AFF] to-[#FFE1B4] bg-[length:110%_100%] text-white rounded-[8px] w-[180px] md:w-[214px] h-[50px] md:h-[52px] flex gap-3 justify-center   items-center"
               >
                 Book a Demo
                 <Image
@@ -50,9 +50,9 @@ const Finance = () => {
         <Feature />
       </div>
 
-      <div className="bg-[#042440]">
-        <div className="widthclass">  
-          <div className="flex flex-col justify-center items-center text-center m-auto p-8 sm:p-16 white">
+      <div className="bg-[url('/finance-bg.png')] bg-cover bg-center bg-no-repeat text-black">
+        <div className="widthclass">
+          <div className="flex flex-col justify-center items-center text-center m-auto p-8 sm:p-16">
             <h1 className="font-36 font-inter font-bold leading-8 md:leading-10">
             Transform Your Real Estate <br /> Strategy with AI Model Monitoring
             </h1>
