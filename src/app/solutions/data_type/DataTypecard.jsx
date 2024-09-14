@@ -11,7 +11,7 @@ const DataTypecard = () => {
       {dataType.map((item, index) => (
           <div
             key={index}
-            className={`grid md:grid-cols-2 items-center px-64 py-10 ${
+            className={`grid md:grid-cols-2 items-center px-5 sm:px-10 md:px-20 2xl:px-64 py-10 ${
               index % 2 === 0 ? "bg-[#F4F4F4]" : ""
             }`}
           >
