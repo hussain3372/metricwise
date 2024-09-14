@@ -448,7 +448,7 @@ export default function Example() {
           {/* First button: Sign up */}
           <div className="darksoul-glowing-button2 flex justify-center items-center w-[166px] h-[50px]">
             <Link
-              href="/Demo"
+              href="#"
               className="font-16 leading-4 font-medium darksoul-button2 w-[160px] h-[44px]"
             >
               Sign up
@@ -458,7 +458,7 @@ export default function Example() {
           {/* Second button: Book a Demo */}
           <div className="darksoul-glowing-button1 flex justify-center items-center w-[166px] h-[50px]">
             <Link
-              href="/company/contact_us"
+              href="/Demo"
               className="font-16 leading-4 font-medium darksoul-button1 w-[160px] h-[44px]"
               type="button"
             >
