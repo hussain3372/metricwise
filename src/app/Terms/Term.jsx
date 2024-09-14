@@ -4,10 +4,10 @@ import Image from "next/image";
 import React from "react";
 import Terms from "../data/Term";
 import { PiGreaterThanLight } from "react-icons/pi";
+import EmailButton from "../EmailButton .js"; // Corrected path
+
+
 const Term = () => {
-  const handleEmailClick = (email) => {
-    window.location.href = `mailto:${email}`;
-  };
 
   return (
     <div>
@@ -48,14 +48,12 @@ const Term = () => {
                   {/* Conditionally render the hyperlink if it exists */}
                   {term.linkText && (
                     <>
-                      <button
-                        onClick={() =>
-                          handleEmailClick("support@metricwise.ai")
-                        }
+                      <EmailButton
+                        email="support@metricwise.ai"
                         className="text-blue-600 underline"
                       >
                         {term.linkText}
-                      </button>
+                      </EmailButton>
                     </>
                   )}
                 </p>

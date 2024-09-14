@@ -4,9 +4,24 @@ import React, { useState } from "react";
 import Head from "next/head";
 import Image from "next/image";
 import { MinusIcon, PlusIcon } from "@heroicons/react/24/outline";
+import EmailButton from "@/app/EmailButton ";
 
 const AccordionItem = ({ title, content, list }) => {
   const [isOpen, setIsOpen] = useState(false);
+
+  // Function to convert emails to mailto links while preserving HTML structure
+  const convertEmailsToMailtoLinks = (text) => {
+    const emailRegex = /([a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,})/g;
+
+    // Replace emails with mailto links in the HTML content
+    return text.replace(
+      emailRegex,
+      '<a href="mailto:$1" style="color: #3b82f6;">$1</a>'
+    );
+  };
+
+  // Prepare the HTML content with mailto links
+  const contentWithMailtoLinks = convertEmailsToMailtoLinks(content);
 
   return (
     <div className="mt-5 mb-5 font-20 font-inter font-normal leading-7 border-b border-[#0000001F] overflow-hidden">
@@ -15,10 +30,16 @@ const AccordionItem = ({ title, content, list }) => {
         className="w-full text-left px-4 pt-4 pb-4 bg-[#FFFFFF] text-[#00000099] font-20 font-light leading-5"
       >
         <div className="flex justify-between items-center">
-          <span className={`text-[#042440] font-20 ${isOpen ? "font-bold" : "font-normal"}`}>{title}</span>
+          <span
+            className={`text-[#042440] font-20 ${
+              isOpen ? "font-bold" : "font-normal"
+            }`}
+          >
+            {title}
+          </span>
           <span>
             {isOpen ? (
-              <MinusIcon  className="h-5 w-5 text-gray-400" />
+              <MinusIcon className="h-5 w-5 text-gray-400" />
             ) : (
               <PlusIcon className="h-5 w-5 text-gray-400" />
             )}
@@ -27,7 +48,9 @@ const AccordionItem = ({ title, content, list }) => {
       </button>
       {isOpen && (
         <div className="px-4 py-4 my-4 bg-[#E1E8F238] font-normal text-[#00000099]">
-          <div dangerouslySetInnerHTML={{ __html: content }}></div>
+          <div
+            dangerouslySetInnerHTML={{ __html: contentWithMailtoLinks }}
+          ></div>
 
           {/* Render the list if present */}
           {list && list.length > 0 && (

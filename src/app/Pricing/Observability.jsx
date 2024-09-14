@@ -5,10 +5,10 @@ import React, { useState } from "react";
 import { ChevronUpIcon, ChevronDownIcon } from "@heroicons/react/24/outline";
 
 const Obsevability = () => {
-  const [isInference, setIsInference] = useState(false);
-  const [isPerformance, setIsPerformance] = useState(false);
-  const [isFeature, setIsFeature] = useState(false);
-  const [isBenchmarking, setIsBenchmarking] = useState(false);
+  const [isInference, setIsInference] = useState(true);
+  const [isPerformance, setIsPerformance] = useState(true);
+  const [isFeature, setIsFeature] = useState(true);
+  const [isBenchmarking, setIsBenchmarking] = useState(true);
 
   return (
     <div>

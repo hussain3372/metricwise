@@ -3,7 +3,6 @@
 import React from "react";
 import { dataType } from "../../data/trust"; // Ensure this path is correct
 import Image from "next/image";
-import { Fade } from "react-awesome-reveal";
 
 const DataTypecard = () => {
   return (

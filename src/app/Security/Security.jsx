@@ -1,9 +1,8 @@
 "use client";
 
-import Image from "next/image";
-import Link from "next/link";
 import React from "react";
 import { PiGreaterThanLight } from "react-icons/pi";
+import EmailButton from "../EmailButton .js"; // Corrected path
 
 const Term = () => {
   const handleEmailClick = (email) => {
@@ -173,12 +172,12 @@ const Term = () => {
               For users seeking guidance on reinforcing the security of their
               data, kindly get in touch with your account representative or
               contact <br />
-              <button
-                onClick={() => handleEmailClick("support@metricwise.ai")}
+              <EmailButton
+                email="support@metricwise.ai"
                 className="text-blue-600 underline"
               >
                 support@metricwise.ai
-              </button>
+              </EmailButton>
               .
             </p>
           </div>

@@ -13,6 +13,12 @@ body {
   padding: 0;
 }
 
+/* styles/globals.css */
+.email-button {
+  @apply text-blue-600 underline; /* Tailwind CSS utility classes */
+}
+
+
 .demoparent {
   background-image: url(../../public/wavebg1.png);
   background-position: center;
@@ -309,6 +315,9 @@ body {
   }
   .font-18 {
     font-size: 14px;
+  }
+  .font-44 {
+    font-size: 38px;
   }
 }
 

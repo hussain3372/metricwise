@@ -85,7 +85,9 @@ export default function Example() {
         className="mx-auto flex items-center justify-between px-5 md:px-10 py-4"
         aria-label="Global"
       >
-        <div className="flex xl:flex-1">
+        <div
+          className={`flex xl:flex-1 ${mobileMenuOpen ? "hidden" : "block"}`}
+        >
           <Link href="/" className="-m-1.5 p-1.5">
             <Image
               width={184}
@@ -444,7 +446,7 @@ export default function Example() {
           </Popover>
         </PopoverGroup>
 
-        <div className="hidden md:flex md:flex-1 md:justify-end items-center space-x-5 ml-10">
+        <div className="hidden xl:flex xl:flex-1 xl:justify-end items-center space-x-5 ml-3">
           {/* First button: Sign up */}
           <div className="darksoul-glowing-button2 flex justify-center items-center w-[166px] h-[50px]">
             <Link
@@ -467,7 +469,9 @@ export default function Example() {
           </div>
         </div>
 
-        <div className="flex xl:hidden pl-20">
+        <div
+          className={`flex xl:hidden ${mobileMenuOpen ? "hidden" : "block"}`}
+        >
           <button
             type="button"
             className="-m-2.5 inline-flex items-center justify-center rounded-md p-2.5 text-gray-700"
@@ -487,15 +491,15 @@ export default function Example() {
         <div className="fixed inset-0 z-10" />
         <DialogPanel className="fixed inset-y-0 right-0 z-10 w-full overflow-y-auto bg-white px-6 py-6 sm:max-w-sm sm:ring-1 sm:ring-gray-900/10">
           <div className="flex items-center justify-between">
-            <a href="#" className="-m-1.5 p-1.5">
+            <Link href="/" className="-m-1.5 p-1.5">
               <Image
                 width={184}
                 height={25}
                 className="w-auto"
-                src="/logo.png"
+                src="/logo.svg"
                 alt="logo"
               />
-            </a>
+            </Link>
             <button
               type="button"
               className="-m-2.5 rounded-md p-2.5 text-gray-700"
@@ -511,7 +515,7 @@ export default function Example() {
                 <Disclosure as="div" className="-mx-3">
                   {({ open }) => (
                     <>
-                      <DisclosureButton className="flex text-Inter font-medium w-full items-center justify-between rounded-lg py-2 pl-3 pr-3.5 text-base leading-7 textcolor hover:bg-gray-50">
+                      <DisclosureButton className="flex font-bold text-[16px] w-full items-center justify-between rounded-lg py-2 pl-3 pr-3.5 leading-7 text-[#04244099] hover:bg-gray-50">
                         Product
                         <ChevronDownIcon
                           className={classNames(
@@ -527,7 +531,7 @@ export default function Example() {
                             key={item.name}
                             as="a"
                             href={item.href}
-                            className="block rounded-lg py-2 pl-6 pr-3 text-sm font-semibold leading-7 text-gray-900 hover:bg-gray-50"
+                            className="block rounded-lg py-2 pl-6 pr-3 text-sm font-normal leading-7 text-gray-500 hover:bg-gray-50"
                           >
                             {item.name}
                           </DisclosureButton>
@@ -540,7 +544,7 @@ export default function Example() {
                 <Disclosure as="div" className="-mx-3">
                   {({ open }) => (
                     <>
-                      <DisclosureButton className="flex text-Inter font-medium w-full items-center justify-between rounded-lg py-2 pl-3 pr-3.5 text-base leading-7 textcolor hover:bg-gray-50">
+                      <DisclosureButton className="flex font-bold text-[16px] w-full items-center justify-between rounded-lg py-2 pl-3 pr-3.5 leading-7 text-[#04244099] hover:bg-gray-50">
                         Solutions
                         <ChevronDownIcon
                           className={classNames(
@@ -556,7 +560,7 @@ export default function Example() {
                             key={item.name}
                             as="a"
                             href={item.href}
-                            className="block rounded-lg py-2 pl-6 pr-3 text-sm font-semibold leading-7 text-gray-900 hover:bg-gray-50"
+                            className="block rounded-lg py-2 pl-6 pr-3 text-sm font-normal leading-7 text-gray-500 hover:bg-gray-50"
                           >
                             {item.name}
                           </DisclosureButton>
@@ -567,7 +571,7 @@ export default function Example() {
                 </Disclosure>
 
                 <Disclosure as="div" className="-mx-3">
-                  <DisclosureButton className="flex text-Inter font-medium w-full items-center justify-between rounded-lg py-2 pl-3 pr-3.5 text-base leading-7 textcolor hover:bg-gray-50">
+                  <DisclosureButton className="flex font-bold text-[16px] w-full items-center justify-between rounded-lg py-2 pl-3 pr-3.5 leading-7 text-[#04244099] hover:bg-gray-50">
                     <Link href="/Pricing">Pricing</Link>
                   </DisclosureButton>
                 </Disclosure>
@@ -575,7 +579,7 @@ export default function Example() {
                 <Disclosure as="div" className="-mx-3">
                   {({ open }) => (
                     <>
-                      <DisclosureButton className="flex text-Inter font-medium w-full items-center justify-between rounded-lg py-2 pl-3 pr-3.5 text-base leading-7 textcolor hover:bg-gray-50">
+                      <DisclosureButton className="flex font-bold text-[16px] w-full items-center justify-between rounded-lg py-2 pl-3 pr-3.5 leading-7 text-[#04244099] hover:bg-gray-50">
                         Docs
                         <ChevronDownIcon
                           className={classNames(
@@ -591,7 +595,7 @@ export default function Example() {
                             key={item.name}
                             as="a"
                             href={item.href}
-                            className="block rounded-lg py-2 pl-6 pr-3 text-sm font-semibold leading-7 text-gray-900 hover:bg-gray-50"
+                            className="block rounded-lg py-2 pl-6 pr-3 text-sm font-normal leading-7 text-gray-500 hover:bg-gray-50"
                           >
                             {item.name}
                           </DisclosureButton>
@@ -604,7 +608,7 @@ export default function Example() {
                 <Disclosure as="div" className="-mx-3">
                   {({ open }) => (
                     <>
-                      <DisclosureButton className="flex text-Inter font-medium w-full items-center justify-between rounded-lg py-2 pl-3 pr-3.5 text-base leading-7 textcolor hover:bg-gray-50">
+                      <DisclosureButton className="flex font-bold text-[16px] w-full items-center justify-between rounded-lg py-2 pl-3 pr-3.5 leading-7 text-[#04244099] hover:bg-gray-50">
                         Resources
                         <ChevronDownIcon
                           className={classNames(
@@ -620,7 +624,7 @@ export default function Example() {
                             key={item.name}
                             as="a"
                             href={item.href}
-                            className="block rounded-lg py-2 pl-6 pr-3 text-sm font-semibold leading-7 text-gray-900 hover:bg-gray-50"
+                            className="block rounded-lg py-2 pl-6 pr-3 text-sm font-normal leading-7 text-gray-500 hover:bg-gray-50"
                           >
                             {item.name}
                           </DisclosureButton>
@@ -633,7 +637,7 @@ export default function Example() {
                 <Disclosure as="div" className="-mx-3">
                   {({ open }) => (
                     <>
-                      <DisclosureButton className="flex text-Inter font-medium w-full items-center justify-between rounded-lg py-2 pl-3 pr-3.5 text-base leading-7 textcolor hover:bg-gray-50">
+                      <DisclosureButton className="flex font-bold text-[16px] w-full items-center justify-between rounded-lg py-2 pl-3 pr-3.5 leading-7 text-[#04244099] hover:bg-gray-50">
                         Company
                         <ChevronDownIcon
                           className={classNames(
@@ -649,7 +653,7 @@ export default function Example() {
                             key={item.name}
                             as="a"
                             href={item.href}
-                            className="block rounded-lg py-2 pl-6 pr-3 text-sm font-semibold leading-7 text-gray-900 hover:bg-gray-50"
+                            className="block rounded-lg py-2 pl-6 pr-3 text-sm font-normal leading-7 text-gray-500 hover:bg-gray-50"
                           >
                             {item.name}
                           </DisclosureButton>
@@ -659,16 +663,16 @@ export default function Example() {
                   )}
                 </Disclosure>
               </div>
-              <div className="py-6">
-                <a
+              <div className="py-6 space-y-10">
+                <Link
                   href="#"
-                  className="-mx-3 font-16 textcolor fontregular block rounded-lg px-3 py-2.5 leading-7"
+                  className="-mx-3 font-16 textcolor font-normal block rounded-lg px-3 py-2.5 leading-7"
                 >
-                  Log in
-                </a>
+                  Sign up
+                </Link>
                 <Link
                   href="/Demo"
-                  className="-mx-3 font-16 white fontregular border-[#042440] rounded-[15px] pt-3 pb-3 pl-4 pr-4 bg-[#042440] block px-3 py-2.5 leading-7"
+                  className="-mx-3 font-16 white font-normal border-[#042440] rounded-[15px] pt-3 pb-3 pl-4 pr-4 bg-[#042440] block px-3 py-2.5 leading-7"
                 >
                   Book a Demo
                 </Link>

@@ -3,13 +3,9 @@
 import Image from "next/image";
 import React from "react";
 import { PiGreaterThanLight } from "react-icons/pi";
+import EmailButton from "../EmailButton .js"; // Corrected path
 
 const Term = () => {
-
-  const handleEmailClick = (email) => {
-    window.location.href = `mailto:${email}`;
-  };
-  
   return (
     <div>
       <div className="bg-[url('/term-bg.png')] bg-no-repeat bg-cover bg-center">
@@ -338,14 +334,14 @@ const Term = () => {
             <h1 className="font-20 font-inter font-semibold">Contact Us:</h1>
             <p className="font-16 font-normal font-inter leading-6 mt-5 mb-6 opacity-60">
               For privacy inquiries or complaints, contact us at <br />
-              <button
-                onClick={() => handleEmailClick("support@metricwise.ai")}
-                className="text-blue-600 underline"
-              >
-                support@metricwise.ai
-              </button>
+              <EmailButton
+              email="support@metricwise.ai"
+              className="text-blue-600 underline"
+            >
+              support@metricwise.ai
+            </EmailButton>
               .
-            </p>
+            </p>  
           </div>
           <div>
             <h1 className="font-20 font-inter font-semibold">

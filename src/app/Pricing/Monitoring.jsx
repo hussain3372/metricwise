@@ -5,10 +5,10 @@ import React, { useState } from "react";
 import { ChevronUpIcon, ChevronDownIcon } from "@heroicons/react/24/outline";
 
 const Monitoring = () => {
-  const [isIntegrity, setIsIntegrity] = useState(false);
-  const [isPerformance, setIsPerformance] = useState(false);
-  const [isFeature, setIsFeature] = useState(false);
-  const [isDetection, setIsDetection] = useState(false);
+  const [isIntegrity, setIsIntegrity] = useState(true);
+  const [isPerformance, setIsPerformance] = useState(true);
+  const [isFeature, setIsFeature] = useState(true);
+  const [isDetection, setIsDetection] = useState(true);
 
   return (
     <div>

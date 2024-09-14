@@ -5,10 +5,10 @@ import React, { useState } from "react";
 import { ChevronUpIcon, ChevronDownIcon } from "@heroicons/react/24/outline";
 
 const ExploreAccordion = () => {
-  const [isPlatform, setIsPlatform] = useState(false);
-  const [isScale, setIsScale] = useState(false);
-  const [isData, setIsData] = useState(false);
-  const [isModels, setIsModels] = useState(false);
+  const [isPlatform, setIsPlatform] = useState(true);
+  const [isScale, setIsScale] = useState(true);
+  const [isData, setIsData] = useState(true);
+  const [isModels, setIsModels] = useState(true);
 
   return (
     <div>

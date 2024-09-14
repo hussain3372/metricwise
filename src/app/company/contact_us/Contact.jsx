@@ -33,7 +33,7 @@ const Contact = () => {
     <div className="bg-[#F3F6FF]">
       <div className="contact1">
         <div className="widthclass">
-          <div className="grid lg:grid-cols-2 items-center p-5 md:py-10 md:px-20 gap-20 2xl:gap-40">
+          <div className="grid lg:grid-cols-2 items-center p-5 pt-20 md:py-10 md:px-20 gap-20 2xl:gap-40">
             <div>
               <div className="text-center sm:text-start">
                 <label

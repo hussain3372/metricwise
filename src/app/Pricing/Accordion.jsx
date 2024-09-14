@@ -2,10 +2,26 @@
 
 import React, { useState } from "react";
 import Head from "next/head";
-import { ChevronUpIcon, ChevronDownIcon, MinusIcon, PlusIcon } from "@heroicons/react/24/outline";
+import { MinusIcon, PlusIcon } from "@heroicons/react/24/outline";
+import EmailButton from "../EmailButton ";
 
 const AccordionItem = ({ title, content }) => {
   const [isOpen, setIsOpen] = useState(false);
+
+  // Function to highlight emails and use the EmailButton component
+  const mails = (text) => {
+    const emailRegex = /([a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,})/g;
+
+    // Split the content into parts where emails are replaced with EmailButton
+    const parts = text.split(emailRegex);
+
+    return parts.map((part, index) => {
+      if (emailRegex.test(part)) {
+        return <EmailButton key={index} email={part} className="text-[#3b82f6]" />;
+      }
+      return part;
+    });
+  };
 
   return (
     <div className="mt-5 mb-5 font-20 font-inter font-normal leading-7 border-b border-[#0000001F] overflow-hidden">
@@ -32,7 +48,7 @@ const AccordionItem = ({ title, content }) => {
       </button>
       {isOpen && (
         <div className="px-4 py-4 my-4 bg-[#E1E8F238] font-normal text-[#00000099]">
-          {content}
+          {mails(content)}
         </div>
       )}
     </div>
