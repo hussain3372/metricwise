@@ -82,7 +82,7 @@ export default function Example() {
       }`}
     >
       <nav
-        className="mx-auto flex items-center justify-between px-5 md:px-10 py-4"
+        className="mx-auto flex items-center justify-between px-5 md:px-5 2xl:px-10 py-4"
         aria-label="Global"
       >
         <div
