@@ -113,7 +113,7 @@ const Calendar = () => {
         <CalendarTable month={month} year={year} />
       </div> */}
 
-      <InlineWidget url="https://calendly.com/hussainabdullah3372" />
+      <InlineWidget url="https://calendly.com/hussainabdullah3372" styles={{height: 853}}/>
     </div>
   );
 };

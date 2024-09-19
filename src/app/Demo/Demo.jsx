@@ -85,7 +85,7 @@ const Demo = () => {
             </div>
             <div className="">
               <Fade direction="down">
-                <div className="flex flex-col justify-center items-center">
+                <div>
                   {/* <img src="calendar.png" alt="calendar" /> */}
                   <Calendar />
                 </div>
