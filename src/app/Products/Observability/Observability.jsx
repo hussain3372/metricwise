@@ -100,7 +100,7 @@ const Monitoring = () => {
               tools, empowering enterprises to build trust and drive better
               outcomes.
             </p>
-            <Link href="/Demo" className="hero-btn">
+            <Link  href="/Demo" className="hero-btn">
               Book a Demo
               <Image src="/free.png" width={24} height={24} alt="free" />
             </Link>

@@ -1,11 +1,8 @@
-"use client";
-
 import React from "react";
 import { BlogCard } from "../../data/BlogCard";
-import OtherCards from "./OtherCards";
 import Image from "next/image";
-import Tilt from "react-parallax-tilt";
 import Link from "next/link";
+import OtherCards from "./OtherCards";
 
 const Blog = () => {
   return (
@@ -19,13 +16,9 @@ const Blog = () => {
             <p className="font-16 font-inter font-normal leading-5 text-black">
               The terms monitoring and observability are prevalent in the field
               of AI/ML systems. Although they may initially appear similar,
-              there are notable distinctions between the two concepts. This
-              article explores the precise definitions and subtleties associated
-              with AI/ML monitoring and observability, providing insights into
-              their respective roles and significant importance in the current
-              landscape of machine learning.
+              there are notable distinctions between the two concepts.
             </p>
-            <Link href="/recourses/Blog/blog-detail" className="hero-btn mt-8">
+            <Link href={`/recourses/Blog/1`} className="hero-btn mt-8">
               Learn More
               <Image width={24} height={24} src="/free.png" alt="Learn More" />
             </Link>
@@ -42,12 +35,9 @@ const Blog = () => {
               </h3>
               <p className="font-16 font-inter font-normal leading-5 mt-3 mb-8 opacity-60">
                 The terms monitoring and observability are prevalent in the
-                field. The terms monitoring and observability.
+                field.
               </p>
-              <Link
-                href="/recourses/Blog/blog-detail"
-                className="primary-small-btn"
-              >
+              <Link href={`/recourses/Blog/2`} className="primary-small-btn">
                 Learn more
               </Link>
             </div>
@@ -55,37 +45,40 @@ const Blog = () => {
               <div className="flex flex-col gap-5">
                 {BlogCard && BlogCard.length > 0 ? (
                   BlogCard.map((item, index) => (
-                      <div key={index} className="sm:flex bg-white p-5 gap-10 rounded-[20px]">
-                        {/* Image container */}
-                        <div className="sm:w-[154px] mb-8 sm:mb-0 flex-shrink-0">
-                          <Image
-                            width={254} // Adjust width according to your sm:w size
-                            height={160} // Adjust height based on aspect ratio
-                            src={item.logoimg}
-                            className="rounded-[20px] w-full h-auto object-cover" // Ensure image scales responsively
-                            alt={item.name}
+                    <div
+                      key={index}
+                      className="sm:flex bg-white p-5 gap-10 rounded-[20px]"
+                    >
+                      {/* Image container */}
+                      <div className="sm:w-[154px] mb-8 sm:mb-0 flex-shrink-0">
+                        <Image
+                          width={254}
+                          height={160}
+                          src={item.logoimg}
+                          className="rounded-[20px] w-full h-auto object-cover"
+                          alt={item.name}
+                        />
+                      </div>
+
+                      {/* Content section */}
+                      <div className="flex flex-col justify-around flex-grow">
+                        <div>
+                          <h3 className="text-[20px] font-inter font-semibold leading-6">
+                            {item.name}
+                          </h3>
+                          <p
+                            className="text-[16px] font-inter font-normal leading-5 mt-3 opacity-[60%]"
+                            dangerouslySetInnerHTML={{ __html: item.data }}
                           />
                         </div>
-
-                        {/* Content section */}
-                        <div className="flex flex-col justify-around flex-grow">
-                          <div>
-                            <h3 className="text-[20px] font-inter font-semibold leading-6">
-                              {item.name}
-                            </h3>
-                            <p
-                              className="text-[16px] font-inter font-normal leading-5 mt-3 opacity-[60%]"
-                              dangerouslySetInnerHTML={{ __html: item.data }}
-                            />
-                          </div>
-                          <Link
-                            href="/recourses/Blog/blog-detail"
-                            className="primary-small-btn mt-2"
-                          >
-                            {item.btn}
-                          </Link>
-                        </div>
+                        <Link
+                          href={`/recourses/Blog/${item.id}`} // Correct dynamic blog link
+                          className="primary-small-btn mt-2"
+                        >
+                          {item.btn}
+                        </Link>
                       </div>
+                    </div>
                   ))
                 ) : (
                   <p>No blog posts available.</p>

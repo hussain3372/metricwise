@@ -91,7 +91,7 @@ const Footer = () => {
               </Link>
 
               <Link href="/company/contact_us" className="secondary-btn">
-                Get STarted
+                Get Started
               </Link>
             </div>
           </div>
