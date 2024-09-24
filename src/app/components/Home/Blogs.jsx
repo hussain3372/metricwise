@@ -11,14 +11,10 @@ const Blogs = () => {
           <h1 className="text-[20px] sm:text-[30px] md:text-[40px] font-semibold leadin-8 md:leading-[44px] text-[#222222]">
             Go through our latest <br /> blogs to learn more
           </h1>
-          <div class="darksoul-glowing-button1 w-[166px] h-[50px]">
-            <Link
-              href="/Demo"
-              className="font-16 leading-4 font-medium darksoul-button1 w-[160px] h-[44px]"
-            >
-              Book a demo
-            </Link>
-          </div>
+          <Link href="/Demo" className="primary-btn" type="button">
+            <Image src="/demo-img.svg" width={20} height={20} alt="demo-img" />
+            Book a Demo
+          </Link>
         </div>
         <div className="flex flex-col sm:flex-row justify-center items-center gap-5 md:gap-8">
           {HomeBolgs.map((item, index) => (

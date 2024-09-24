@@ -2,21 +2,12 @@ import Link from "next/link";
 import React from "react";
 import Feature from "./Feature";
 import Realcard from "./Realcard"
-import { PiGreaterThanLight } from "react-icons/pi";
 import Image from "next/image";
 const Finance = () => {
   return (
     <div>
       <div className="widthclass">
         <div className="p-4 sm:p-16 2xl:p-10">
-          {/* <div className="flex items-center">
-            <h1 className="font-24 black font-normal font-inter flex items-center flex-wrap gap-2">
-              Metricwise
-              <span className="font-20 font-normal font-inter opacity-50 flex items-center gap-2">
-              <PiGreaterThanLight size={15}/> Solutions <PiGreaterThanLight size={15}/> Industries <PiGreaterThanLight size={15}/> Real Estate
-              </span>
-            </h1>
-          </div> */}
           <div className="grid md:grid-cols-2 items-center mt-10 md:mt-0">
             <div>
               <h1 className="font-36 font-inter font-bold leading-10">
@@ -25,18 +16,9 @@ const Finance = () => {
               <p className="font-24 font-normal font-inter leading-8 mt-8 mb-10 opacity-60">
                 AI transforms property management and investment decisions, optimizing processes and maximizing returns. However, effective oversight is crucial to mitigate risks such as data privacy breaches and algorithmic biases.
               </p>
-              <Link
-                href="/Demo"
-                className="font-20 font-normal font-inter leading-6 bg-gradient-to-r from-[#B56AFF] via-[#B56AFF] to-[#FFE1B4] bg-[length:110%_100%] text-white rounded-[8px] w-[180px] md:w-[214px] h-[50px] md:h-[52px] flex gap-3 justify-center   items-center"
-              >
+              <Link href="/Demo" className="hero-btn">
                 Book a Demo
-                <Image
-                  src="/free.png"
-                  width={24}
-                  height={24}
-                  className=" "
-                  alt=""
-                />
+                <Image src="/free.png" width={24} height={24} alt="free" />
               </Link>
             </div>
             <div className="flex justify-end items-end mt-10 md:mt-0">

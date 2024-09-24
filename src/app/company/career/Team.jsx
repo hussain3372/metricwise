@@ -132,7 +132,7 @@ const Team = () => {
                     <p className="font-16 font-inter font-normal leading-5">{apply.location}</p>
                   </div>
                   <div>
-                    <button className="font-20 font-inter font-normal leading-6 bg-gradient-to-r from-[#B56AFF] via-[#B56AFF] to-[#FFE1B4] bg-[length:110%_100%] rounded-lg w-[80px] md:w-[110px] h-[40px] md:h-[52px] white mt-5 md:mt-0">
+                    <button className="font-20 font-inter font-normal leading-6 bg-[#2E2E2E] rounded-lg w-[80px] md:w-[110px] h-[40px] md:h-[52px] white mt-5 md:mt-0">
                       <Link href="/company/apply">{apply.applys}</Link>
                     </button>
                   </div>

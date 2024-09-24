@@ -6,14 +6,6 @@ const Career = () => {
     <div>
       <div className=" career border-b border-[#042440]">
         <div className="widthclass relative">
-          {/* <div className="flex items-center widthclass">
-            <h1 className="text-black pl-5 md:pl-16 pt-10 font-24 font-normal font-inter flex items-center flex-wrap gap-2">
-              Metricwise
-              <span className="text-black font-20 font-normal font-inter opacity-50 flex items-center gap-2">
-                <PiGreaterThanLight/> Company <PiGreaterThanLight/> Career
-              </span>
-            </h1>
-          </div> */}
           <div className="flex flex-col p-4 pt-10 md:pt-28 pb-10 md:pb-40 justify-center items-center m-auto text-black widthclass">
             <h1 className="font-24 font-inter font-normal leading-[32px] mb-4 opacity-60">
                 Careers

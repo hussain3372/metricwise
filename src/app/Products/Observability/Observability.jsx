@@ -24,16 +24,10 @@ const Monitoring = () => {
                 and intuitive tools, empowering enterprises to build trust and
                 drive better outcomes.
               </p>
-              <button className="font-20 font-normal font-inter leading-6 bg-gradient-to-r from-[#B56AFF] via-[#B56AFF] to-[#FFE1B4] bg-[length:110%_100%] text-white white rounded-[8px] w-[180px] md:w-[214px] h-[50px] md:h-[52px] flex gap-3 justify-center items-center">
+              <Link href="/Demo" className="hero-btn">
                 Book a Demo
-                <Image
-                  width={24}
-                  height={24}
-                  src="/free.png"
-                  className="w-[26px]"
-                  alt=""
-                />
-              </button>
+                <Image src="/free.png" width={24} height={24} alt="free" />
+              </Link>
             </div>
             <div className="flex justify-end items-end">
               <Image src="/moni.png" width={483} height={590} alt="moni" />
@@ -46,45 +40,47 @@ const Monitoring = () => {
         <div>
           <div>
             {observability.map((item, index) => (
-                <div key={index} className="grid lg:grid-cols-2 items-center xl:gap-36 md:mt-20 pb-10">
-                  <div
-                    className={`${
-                      index % 2 !== 0
-                        ? "order-2 lg:order-2"
-                        : "order-2 lg:order-1"
-                    }`}
-                  >
-                    <Image
-                      src={item.src}
-                      width={item.w}
-                      height={item.h}
-                      alt={item.alt}
-                    />
-                  </div>
-                  <div
-                    className={`p-10 md:p-16 ${
-                      index % 2 !== 0 ? "order-1 lg:order-1" : "order-1"
-                    }`}
-                  >
-                    <Image
-                      src={item.titleImage}
-                      width={32}
-                      height={56}
-                      alt="lambu"
-                      className="mb-10"
-                    />
-                    <h1 className="font-36 font-inter font-bold leading-10">
-                      {item.title}
-                    </h1>
-                    <p className="font-24 font-normal font-inter leading-8 mt-3 mb-10 opacity-60">
-                      {item.para}
-                    </p>
-                  </div>
+              <div
+                key={index}
+                className="grid lg:grid-cols-2 items-center xl:gap-36 md:mt-20 pb-10"
+              >
+                <div
+                  className={`${
+                    index % 2 !== 0
+                      ? "order-2 lg:order-2"
+                      : "order-2 lg:order-1"
+                  }`}
+                >
+                  <Image
+                    src={item.src}
+                    width={item.w}
+                    height={item.h}
+                    alt={item.alt}
+                  />
                 </div>
+                <div
+                  className={`p-10 md:p-16 ${
+                    index % 2 !== 0 ? "order-1 lg:order-1" : "order-1"
+                  }`}
+                >
+                  <Image
+                    src={item.titleImage}
+                    width={32}
+                    height={56}
+                    alt="lambu"
+                    className="mb-10"
+                  />
+                  <h1 className="font-36 font-inter font-bold leading-10">
+                    {item.title}
+                  </h1>
+                  <p className="font-24 font-normal font-inter leading-8 mt-3 mb-10 opacity-60">
+                    {item.para}
+                  </p>
+                </div>
+              </div>
             ))}
           </div>
         </div>
-
       </div>
 
       {/* cta Section */}
@@ -103,16 +99,10 @@ const Monitoring = () => {
               tools, empowering enterprises to build trust and drive better
               outcomes.
             </p>
-            <button className="font-20 font-normal font-inter leading-6 bg-gradient-to-r from-[#B56AFF] via-[#B56AFF] to-[#FFE1B4] bg-[length:110%_100%] text-white white rounded-[8px] w-[180px] md:w-[214px] h-[50px] md:h-[52px] flex gap-3 justify-center items-center">
+            <Link href="/Demo" className="hero-btn">
               Book a Demo
-              <Image
-                width={24}
-                height={24}
-                src="/free.png"
-                className="w-[26px]"
-                alt=""
-              />
-            </button>
+              <Image src="/free.png" width={24} height={24} alt="free" />
+            </Link>
           </div>
         </div>
       </div>

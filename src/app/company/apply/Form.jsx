@@ -118,7 +118,7 @@ const Form = () => {
                 <div className="flex justify-center items-center mt-5">
                   <button
                     type="submit"
-                    className="bg-gradient-to-r from-[#B56AFF] via-[#B56AFF] to-[#FFE1B4] bg-[length:110%_100%] font-medium w-[420px] h-[44px] text-white rounded-[36px]"
+                    className="bg-[#2E2E2E] font-medium w-[420px] h-[44px] text-white rounded-[36px]"
                   >
                     Submit Application
                   </button>

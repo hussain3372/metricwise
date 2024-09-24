@@ -5,6 +5,7 @@ import { BlogCard } from "../../data/BlogCard";
 import OtherCards from "./OtherCards";
 import Image from "next/image";
 import Tilt from "react-parallax-tilt";
+import Link from "next/link";
 
 const Blog = () => {
   return (
@@ -24,10 +25,10 @@ const Blog = () => {
               their respective roles and significant importance in the current
               landscape of machine learning.
             </p>
-            <button className="w-[170px] md:w-[196px] h-[48px] flex justify-center items-center rounded-lg mt-8 font-20 font-normal leading-6 gap-2 bg-gradient-to-r from-[#B56AFF] via-[#B56AFF] to-[#FFE1B4] bg-[length:110%_100%] text-white">
+            <Link href="/recourses/Blog/blog-detail" className="hero-btn mt-8">
               Learn More
               <Image width={24} height={24} src="/free.png" alt="Learn More" />
-            </button>
+            </Link>
           </div>
         </div>
       </div>
@@ -43,26 +44,31 @@ const Blog = () => {
                 The terms monitoring and observability are prevalent in the
                 field. The terms monitoring and observability.
               </p>
-              <button className="w-[134px] h-[40px] bg-gradient-to-r from-[#B56AFF] via-[#B56AFF] to-[#FFE1B4] bg-[length:110%_100%] text-white font-16 font-normal rounded-lg">
+              <Link
+                href="/recourses/Blog/blog-detail"
+                className="primary-small-btn"
+              >
                 Learn more
-              </button>
+              </Link>
             </div>
             <div>
-              <div className="flex flex-col gap-10">
+              <div className="flex flex-col gap-5">
                 {BlogCard && BlogCard.length > 0 ? (
                   BlogCard.map((item, index) => (
-                    <Tilt key={`tilt-${index}`}>
-                      <div className="sm:flex bg-white gap-4 p-5 rounded-[20px]">
-                        <div className="w-[128px] h-[160px] mb-8 sm:mb-0">
+                      <div className="sm:flex bg-white p-5 gap-10 rounded-[20px]">
+                        {/* Image container */}
+                        <div className="sm:w-[154px] mb-8 sm:mb-0 flex-shrink-0">
                           <Image
-                            width={128}
-                            height={160}
+                            width={254} // Adjust width according to your sm:w size
+                            height={160} // Adjust height based on aspect ratio
                             src={item.logoimg}
-                            className="rounded-[20px]"
+                            className="rounded-[20px] w-full h-auto object-cover" // Ensure image scales responsively
                             alt={item.name}
                           />
                         </div>
-                        <div className="flex flex-col justify-around">
+
+                        {/* Content section */}
+                        <div className="flex flex-col justify-around flex-grow">
                           <div>
                             <h3 className="text-[20px] font-inter font-semibold leading-6">
                               {item.name}
@@ -72,12 +78,14 @@ const Blog = () => {
                               dangerouslySetInnerHTML={{ __html: item.data }}
                             />
                           </div>
-                          <button className="w-[134px] h-[40px] bg-gradient-to-r from-[#B56AFF] via-[#B56AFF] to-[#FFE1B4] bg-[length:110%_100%] text-white text-[16px] font-regular rounded-lg mt-3 sm:mt-0">
+                          <Link
+                            href="/recourses/Blog/blog-detail"
+                            className="primary-small-btn mt-2"
+                          >
                             {item.btn}
-                          </button>
+                          </Link>
                         </div>
                       </div>
-                    </Tilt>
                   ))
                 ) : (
                   <p>No blog posts available.</p>

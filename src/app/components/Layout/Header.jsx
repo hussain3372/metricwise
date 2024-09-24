@@ -102,7 +102,7 @@ export default function Example() {
         <PopoverGroup className="hidden xl:flex xl:gap-x-8">
           <Popover className="relative">
             <div
-              className="flex items-center gap-x-1 font-16 font-medium leading-6 text-[#04244099]"
+              className="flex items-center gap-x-1 font-16 font-medium leading-6 text-[#2E2E2E99]"
               onMouseEnter={() => setIsOpen(true)}
               onMouseLeave={() => setIsOpen(false)}
             >
@@ -164,7 +164,7 @@ export default function Example() {
 
           <Popover className="relative">
             <div
-              className="flex items-center gap-x-1 font-16 font-medium leading-6 text-[#04244099]"
+              className="flex items-center gap-x-1 font-16 font-medium leading-6 text-[#2E2E2E99]"
               onMouseEnter={() => setIsOpen1(true)}
               onMouseLeave={() => setIsOpen1(false)}
             >
@@ -256,7 +256,7 @@ export default function Example() {
           </Popover>
 
           <Popover className="relative">
-            <div className="flex items-center gap-x-1 font-16 font-medium leading-6 text-[#04244099]">
+            <div className="flex items-center gap-x-1 font-16 font-medium leading-6 text-[#2E2E2E99]">
               <PopoverButton className="flex items-center gap-x-1">
                 <Link href="/Pricing">Pricing</Link>
               </PopoverButton>
@@ -265,7 +265,7 @@ export default function Example() {
 
           <Popover className="relative">
             <div
-              className="flex items-center gap-x-1 font-16 font-medium leading-6 text-[#04244099]"
+              className="flex items-center gap-x-1 font-16 font-medium leading-6 text-[#2E2E2E99]"
               onMouseEnter={() => setIsOpen3(true)}
               onMouseLeave={() => setIsOpen3(false)}
             >
@@ -325,7 +325,7 @@ export default function Example() {
 
           <Popover className="relative">
             <div
-              className="flex items-center gap-x-1 font-16 font-medium leading-6 text-[#04244099]"
+              className="flex items-center gap-x-1 font-16 font-medium leading-6 text-[#2E2E2E99]"
               onMouseEnter={() => setIsOpen4(true)}
               onMouseLeave={() => setIsOpen4(false)}
             >
@@ -387,7 +387,7 @@ export default function Example() {
 
           <Popover className="relative">
             <div
-              className="flex items-center gap-x-1 font-16 font-medium leading-6 text-[#04244099]"
+              className="flex items-center gap-x-1 font-16 font-medium leading-6 text-[#2E2E2E99]"
               onMouseEnter={() => setIsOpen5(true)}
               onMouseLeave={() => setIsOpen5(false)}
             >
@@ -447,26 +447,14 @@ export default function Example() {
         </PopoverGroup>
 
         <div className="hidden xl:flex xl:flex-1 xl:justify-end items-center space-x-5 ml-3">
-          {/* First button: Sign up */}
-          <div className="darksoul-glowing-button2 flex justify-center items-center w-[166px] h-[50px]">
-            <Link
-              href="#"
-              className="font-16 leading-4 font-medium darksoul-button2 w-[160px] h-[44px]"
-            >
-              Sign up
-            </Link>
-          </div>
+          <Link href="#" className="secondary-btn">
+            Sign up
+          </Link>
 
-          {/* Second button: Book a Demo */}
-          <div className="darksoul-glowing-button1 flex justify-center items-center w-[166px] h-[50px]">
-            <Link
-              href="/Demo"
-              className="font-16 leading-4 font-medium darksoul-button1 w-[160px] h-[44px]"
-              type="button"
-            >
-              Book a Demo
-            </Link>
-          </div>
+          <Link href="/Demo" className="primary-btn" type="button">
+            <Image src="/demo-img.svg" width={20} height={20} alt="demo-img" />
+            Book a Demo
+          </Link>
         </div>
 
         <div
@@ -515,7 +503,7 @@ export default function Example() {
                 <Disclosure as="div" className="-mx-3">
                   {({ open }) => (
                     <>
-                      <DisclosureButton className="flex font-bold text-[16px] w-full items-center justify-between rounded-lg py-2 pl-3 pr-3.5 leading-7 text-[#04244099] hover:bg-gray-50">
+                      <DisclosureButton className="flex font-bold text-[16px] w-full items-center justify-between rounded-lg py-2 pl-3 pr-3.5 leading-7 text-[#2E2E2E99] hover:bg-gray-50">
                         Product
                         <ChevronDownIcon
                           className={classNames(
@@ -544,7 +532,7 @@ export default function Example() {
                 <Disclosure as="div" className="-mx-3">
                   {({ open }) => (
                     <>
-                      <DisclosureButton className="flex font-bold text-[16px] w-full items-center justify-between rounded-lg py-2 pl-3 pr-3.5 leading-7 text-[#04244099] hover:bg-gray-50">
+                      <DisclosureButton className="flex font-bold text-[16px] w-full items-center justify-between rounded-lg py-2 pl-3 pr-3.5 leading-7 text-[#2E2E2E99] hover:bg-gray-50">
                         Solutions
                         <ChevronDownIcon
                           className={classNames(
@@ -571,7 +559,7 @@ export default function Example() {
                 </Disclosure>
 
                 <Disclosure as="div" className="-mx-3">
-                  <DisclosureButton className="flex font-bold text-[16px] w-full items-center justify-between rounded-lg py-2 pl-3 pr-3.5 leading-7 text-[#04244099] hover:bg-gray-50">
+                  <DisclosureButton className="flex font-bold text-[16px] w-full items-center justify-between rounded-lg py-2 pl-3 pr-3.5 leading-7 text-[#2E2E2E99] hover:bg-gray-50">
                     <Link href="/Pricing">Pricing</Link>
                   </DisclosureButton>
                 </Disclosure>
@@ -579,7 +567,7 @@ export default function Example() {
                 <Disclosure as="div" className="-mx-3">
                   {({ open }) => (
                     <>
-                      <DisclosureButton className="flex font-bold text-[16px] w-full items-center justify-between rounded-lg py-2 pl-3 pr-3.5 leading-7 text-[#04244099] hover:bg-gray-50">
+                      <DisclosureButton className="flex font-bold text-[16px] w-full items-center justify-between rounded-lg py-2 pl-3 pr-3.5 leading-7 text-[#2E2E2E99] hover:bg-gray-50">
                         Docs
                         <ChevronDownIcon
                           className={classNames(
@@ -608,7 +596,7 @@ export default function Example() {
                 <Disclosure as="div" className="-mx-3">
                   {({ open }) => (
                     <>
-                      <DisclosureButton className="flex font-bold text-[16px] w-full items-center justify-between rounded-lg py-2 pl-3 pr-3.5 leading-7 text-[#04244099] hover:bg-gray-50">
+                      <DisclosureButton className="flex font-bold text-[16px] w-full items-center justify-between rounded-lg py-2 pl-3 pr-3.5 leading-7 text-[#2E2E2E99] hover:bg-gray-50">
                         Resources
                         <ChevronDownIcon
                           className={classNames(
@@ -637,7 +625,7 @@ export default function Example() {
                 <Disclosure as="div" className="-mx-3">
                   {({ open }) => (
                     <>
-                      <DisclosureButton className="flex font-bold text-[16px] w-full items-center justify-between rounded-lg py-2 pl-3 pr-3.5 leading-7 text-[#04244099] hover:bg-gray-50">
+                      <DisclosureButton className="flex font-bold text-[16px] w-full items-center justify-between rounded-lg py-2 pl-3 pr-3.5 leading-7 text-[#2E2E2E99] hover:bg-gray-50">
                         Company
                         <ChevronDownIcon
                           className={classNames(

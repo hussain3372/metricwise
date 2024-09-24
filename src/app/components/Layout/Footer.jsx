@@ -79,34 +79,21 @@ const Footer = () => {
               Start your AI monitoring, observability and governance journey
               with Metricwise.
             </h1>
-            <div className="flex flex-col sm:flex-row justify-center items-center gap-3">
-              {/* <Link
-                href="/company/contact_us"
-                className="flex justify-center items-center bg-gradient-to-r from-[#B56AFF] via-[#B56AFF] to-[#FFC876] bg-[length:110%_100%] h-[44px] w-[160px] rounded-[4px] border-none text-white font-16 leading-4 font-medium border-3 border-transparent hover:border-red-500"
-              >
-                Get Started Now
-              </Link> */}
+            <div className="flex flex-col sm:flex-row justify-center items-center gap-4 mt-5">
+              <Link href="/Demo" className="primary-btn" type="button">
+                <Image
+                  src="/demo-img.svg"
+                  width={20}
+                  height={20}
+                  alt="demo-img"
+                />
+                Book a Demo
+              </Link>
 
-              <div class="darksoul-glowing-button1 w-[166px] h-[50px]">
-                <Link
-                  href="/company/contact_us"
-                  class="darksoul-button1 font-16 leading-4 font-medium w-[160px] h-[44px]"
-                  type="button"
-                >
-                  Get Started Now
-                </Link>
-              </div>
-
-              <div class="darksoul-glowing-button2 flex justify-center items-center w-[166px] h-[50px]">
-                <Link
-                  href="/Demo"
-                  className="font-16 leading-4 font-medium darksoul-button2 w-[160px] h-[44px]"
-                > 
-                  Book a demo
-                </Link>
-              </div>
-              
-            </div>  
+              <Link href="/company/contact_us" className="secondary-btn">
+                Get STarted
+              </Link>
+            </div>
           </div>
         </div>
         <div className="pt-10 px-5 md:px-20">

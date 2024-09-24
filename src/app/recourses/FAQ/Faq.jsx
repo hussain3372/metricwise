@@ -206,8 +206,8 @@ const Faq = () => {
               <div className="absolute top-4 sm:top-5 pl-3">
                 <Image width={28} height={28} src="/search.png" alt="" />
               </div>
-              <div className="absolute top-3 sm:top-[18px] right-0 pr-3">
-                <button className="font-16 font-normal leading-5 bg-gradient-to-r from-[#B56AFF] via-[#B56AFF] to-[#FFE1B4] bg-[length:110%_100%] text-white pt-2 pb-2 pl-3 pr-3 rounded-[8px]">
+              <div className="absolute top-3 sm:top-[14px] right-0 pr-3">
+                <button className="bg-[#2E2E2E] text-white py-[10px] px-5 flex justify-center items-center font-16 font-normal rounded-lg">
                   Search
                 </button>
               </div>
@@ -239,72 +239,72 @@ const Faq = () => {
           Support
         </h1>
         <div className="grid md:grid-cols-3 gap-10 items-center">
-          <div class="max-w-sm h-full rounded-lg border-2 border-[#EBECF2] flex flex-col justify-center items-center text-center p-7">
+          <div className="max-w-sm h-full rounded-lg border-2 border-[#EBECF2] flex flex-col justify-center items-center text-center p-7">
             <Image
               width={55}
               height={55}
-              class=""
+              className=""
               src="/sup1.svg"
               alt="Sunset in the mountains"
             />
-            <div class="px-6 py-4">
-              <div class="font-medium gont-inter font-20 leading-7 mb-2 mt-3">
+            <div className="px-6 py-4">
+              <div className="font-medium gont-inter font-20 leading-7 mb-2 mt-3">
                 Documentation:
               </div>
-              <p class="text-gray-700 text-base">
+              <p className="text-gray-700 text-base">
                 Gain insights into how Metricwise operates and receive
                 assistance on common issues.
               </p>
             </div>
-            <div class="px-6 pt-4 pb-2">
-              <span class="inline-block bg-gradient-to-r from-[#B56AFF] via-[#B56AFF] to-[#FFE1B4] bg-[length:110%_100%] rounded-full px-8 py-2 text-sm font-semibold text-white mr-2 mb-2">
+            <div className="px-6 pt-4 pb-2">
+              <span className="inline-block bg-[#2E2E2E] rounded-full px-8 py-2 text-sm font-semibold text-white mr-2 mb-2">
                 Head to Docs
               </span>
             </div>
           </div>
 
-          <div class="max-w-sm h-full rounded-lg overflow-hidden border-2 border-[#EBECF2] flex flex-col justify-center items-center text-center p-7">
+          <div className="max-w-sm h-full rounded-lg overflow-hidden border-2 border-[#EBECF2] flex flex-col justify-center items-center text-center p-7">
             <Image
               width={55}
               height={55}
-              class=""
+              className=""
               src="/sup2.svg"
               alt="Sunset in the mountains"
             />
-            <div class="px-6 py-4">
-              <div class="font-medium gont-inter font-20 leading-7 mb-2 mt-3">
+            <div className="px-6 py-4">
+              <div className="font-medium gont-inter font-20 leading-7 mb-2 mt-3">
                 Demos:
               </div>
-              <p class="text-gray-700 text-base">
+              <p className="text-gray-700 text-base">
                 Explore the features of Metricwise through brief and informative
                 video presentations.
               </p>
             </div>
-            <div class="px-6 pt-4 pb-2">
-              <span class="inline-block bg-gradient-to-r from-[#B56AFF] via-[#B56AFF] to-[#FFE1B4] bg-[length:110%_100%] rounded-full px-8 py-2 text-sm font-semibold text-white mr-2 mb-2">
+            <div className="px-6 pt-4 pb-2">
+              <span className="inline-block bg-[#2E2E2E] rounded-full px-8 py-2 text-sm font-semibold text-white mr-2 mb-2">
                 Explore Demos
               </span>
             </div>
           </div>
-          <div class="max-w-sm h-full rounded-lg overflow-hidden border-2 border-[#EBECF2] flex flex-col justify-center items-center text-center p-7">
+          <div className="max-w-sm h-full rounded-lg overflow-hidden border-2 border-[#EBECF2] flex flex-col justify-center items-center text-center p-7">
             <Image
               width={55}
               height={55}
-              class=""
+              className=""
               src="/sup3.svg"
               alt="Sunset in the mountains"
             />
-            <div class="px-6 py-4">
-              <div class="font-medium gont-inter font-20 leading-7 mb-2 mt-3">
+            <div className="px-6 py-4">
+              <div className="font-medium gont-inter font-20 leading-7 mb-2 mt-3">
                 Integrations:
               </div>
-              <p class="text-gray-700 text-base">
+              <p className="text-gray-700 text-base">
                 Enable observability and governance for your ML model and data
                 monitoring.
               </p>
             </div>
-            <div class="px-6 pt-4 pb-2">
-              <span class="inline-block bg-gradient-to-r from-[#B56AFF] via-[#B56AFF] to-[#FFE1B4] bg-[length:110%_100%] rounded-full px-8 py-2 text-sm font-semibold text-white mr-2 mb-2">
+            <div className="px-6 pt-4 pb-2">
+              <span className="inline-block bg-[#2E2E2E] rounded-full px-8 py-2 text-sm font-semibold text-white mr-2 mb-2">
                 Explore Guidebooks
               </span>
             </div>

@@ -9,15 +9,6 @@ const e_commerce = () => {
     <div>
       <div className="widthclass">
         <div className="p-4 sm:p-16 2xl:p-10">
-          {/* <div className="flex items-center">
-            <h1 className="font-24 black font-normal font-inter flex items-center flex-wrap gap-2">
-              Metricwise
-              <span className="font-20 font-normal font-inter opacity-50 flex items-center gap-2">
-                <PiGreaterThanLight size={15}/> Solutions <PiGreaterThanLight size={15}/>
-                Industries <PiGreaterThanLight size={15}/> Retail & Ecommerce
-              </span>
-            </h1>
-          </div> */}
           <div className="grid md:grid-cols-2 items-center mt-10 md:mt-0">
             <div>
               <h1 className="font-36 font-inter font-bold leading-10">
@@ -29,18 +20,9 @@ const e_commerce = () => {
                 data privacy breaches and algorithmic biases, robust governance
                 and continuous monitoring frameworks are indispensable.
               </p>
-              <Link
-                href="/Demo"
-                className="font-20 font-normal font-inter leading-6 bg-gradient-to-r from-[#B56AFF] via-[#B56AFF] to-[#FFE1B4] bg-[length:110%_100%] text-white rounded-[8px] w-[180px] md:w-[214px] h-[50px] md:h-[52px] flex gap-3 justify-center   items-center"
-              >
+              <Link href="/Demo" className="hero-btn">
                 Book a Demo
-                <Image
-                  src="/free.png"
-                  width={24}
-                  height={24}
-                  className=" "
-                  alt=""
-                />
+                <Image src="/free.png" width={24} height={24} alt="free" />
               </Link>
             </div>
             <div className="flex justify-end items-end mt-10 md:mt-0">

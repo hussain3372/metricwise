@@ -54,7 +54,7 @@ const NewHero = () => {
         {/* Hero Content */}
         <div className="pt-20 pb-32 sm:pb-64 m-auto px-4 sm:px-0">
           <div className="flex flex-col justify-start items-center text-center">
-            <h1 className="font-52 font-semibold leading-10 sm:leading-[50px] md:leading-[60px]">
+            <h1 className="font-52 font-semibold leading-10 sm:leading-[50px] md:leading-[60px] text-[#2E2E2E]">
               Empowering AI with Unmatched <br />
               <span className="italic">Observability and Governance</span>
             </h1>
@@ -64,24 +64,14 @@ const NewHero = () => {
               Mitigate challenges faster for optimal AI performance.
             </p>
             <div className="flex justify-center items-center gap-4 mt-5">
-              <div class="darksoul-glowing-button1 w-[166px] h-[50px]">
-                <Link
-                  href="/company/contact_us"
-                  class="darksoul-button1 font-16 leading-4 font-medium w-[160px] h-[44px]"
-                  type="button"
-                >
-                  Get Started Now
-                </Link>
-              </div>
+              <Link href="/Demo" className="primary-btn" type="button">
+                <Image src="/demo-img.svg" width={20} height={20} alt="demo-img" />
+                Book a Demo
+              </Link>
 
-              <div class="darksoul-glowing-button2 flex justify-center items-center w-[166px] h-[50px]">
-                <Link
-                  href="/Demo"
-                  className="font-16 leading-4 font-medium darksoul-button2 w-[160px] h-[44px]"
-                >
-                  Book a demo
-                </Link>
-              </div>
+              <Link href="/company/contact_us" className="secondary-btn">
+                Get STarted
+              </Link>
             </div>
           </div>
         </div>

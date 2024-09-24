@@ -2,7 +2,6 @@ import Link from "next/link";
 import React from "react";
 import Feature from "./Feature";
 import Insurancecard from "./Insurancecard"
-import { PiGreaterThanLight } from "react-icons/pi";
 import Image from "next/image";
 
 const Insurance = () => {
@@ -10,14 +9,6 @@ const Insurance = () => {
     <div>
       <div className="widthclass">
         <div className="p-4 sm:p-16 2xl:p-10">
-          {/* <div className="flex items-center">
-            <h1 className="font-24 black font-normal font-inter flex gap-2 items-center flex-wrap">
-              Metricwise
-              <span className="font-20 font-normal font-inter opacity-50 flex items-center gap-2">
-              <PiGreaterThanLight size={15}/> Solutions <PiGreaterThanLight size={15}/> Industries <PiGreaterThanLight size={15}/> Insurance
-              </span>
-            </h1>
-          </div> */}
           <div className="grid md:grid-cols-2 items-center mt-10 md:mt-0">
             <div>
               <h1 className="font-36 font-inter font-bold leading-10">
@@ -26,18 +17,9 @@ const Insurance = () => {
               <p className="font-24 font-normal font-inter leading-8 mt-8 mb-10 opacity-60">
               AI transforms the insurance landscape, enabling tailored services and precise risk assessment. Yet, to uphold integrity and fairness, rigorous monitoring is indispensable, guaranteeing that AI models are transparent, unbiased, and in line with regulatory requirements.
               </p>
-              <Link
-                href="/Demo"
-                className="font-20 font-normal font-inter leading-6 bg-gradient-to-r from-[#B56AFF] via-[#B56AFF] to-[#FFE1B4] bg-[length:110%_100%] text-white white rounded-[8px] w-[180px] md:w-[214px] h-[50px] md:h-[52px] flex gap-3 justify-center   items-center"
-              >
+              <Link href="/Demo" className="hero-btn">
                 Book a Demo
-                <Image
-                  src="/free.png"
-                  width={24}
-                  height={24}
-                  className=" "
-                  alt=""
-                />
+                <Image src="/free.png" width={24} height={24} alt="free" />
               </Link>
             </div>
             <div className="flex justify-end items-end mt-10 md:mt-0">

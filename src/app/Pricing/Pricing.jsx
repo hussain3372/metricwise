@@ -87,7 +87,7 @@ const Pricing = () => {
                       </button>
                     )}
                     <button
-                      className="font-20 font-bold leading-6 h-[52px] bg-gradient-to-r from-[#B56AFF] via-[#B56AFF] to-[#FFE1B4] bg-[length:110%_100%] text-white rounded-lg"
+                      className="hero-btn"
                       style={{ width: item.width }}
                     >
                       {item.btn}

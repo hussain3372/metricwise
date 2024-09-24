@@ -2,6 +2,7 @@
 
 import { governance } from "@/app/data/Product";
 import Image from "next/image";
+import Link from "next/link";
 import React from "react";
 
 const Monitoring = () => {
@@ -22,16 +23,10 @@ const Monitoring = () => {
                 implementation. Empower your enterprise to mitigate risks and
                 build confidence in your AI-driven decisions
               </p>
-              <button className="font-20 font-normal font-inter leading-6 bg-gradient-to-r from-[#B56AFF] via-[#B56AFF] to-[#FFE1B4] bg-[length:110%_100%] text-white white rounded-[8px] w-[180px] md:w-[214px] h-[50px] md:h-[52px] flex gap-3 justify-center items-center">
+              <Link href="/Demo" className="hero-btn">
                 Book a Demo
-                <Image
-                  width={24}
-                  height={24}
-                  src="/free.png"
-                  className="w-[26px]"
-                  alt=""
-                />
-              </button>
+                <Image src="/free.png" width={24} height={24} alt="free" />
+              </Link>
             </div>
             <div className="flex justify-end items-end">
               <Image width={483} height={590} src="/moni.png" alt="moni" />
@@ -99,16 +94,10 @@ const Monitoring = () => {
               implementation. Empower your enterprise to mitigate risks and
               build confidence in your AI-driven decisions
             </p>
-            <button className="font-20 font-normal font-inter leading-6 bg-gradient-to-r from-[#B56AFF] via-[#B56AFF] to-[#FFE1B4] bg-[length:110%_100%] text-white white rounded-[8px] w-[180px] md:w-[214px] h-[50px] md:h-[52px] flex gap-3 justify-center items-center">
-              Book a Demo
-              <Image
-                width={24}
-                height={24}
-                src="/free.png"
-                className="w-[26px]"
-                alt=""
-              />
-            </button>
+            <Link href="/Demo" className="hero-btn">
+                Book a Demo
+                <Image src="/free.png" width={24} height={24} alt="free" />
+              </Link>
           </div>
         </div>
       </div>

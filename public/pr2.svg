@@ -1,11 +1,11 @@
 <svg width="40" height="42" viewBox="0 0 40 42" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<circle cx="12" cy="8" r="8" fill="#C49AFF"/>
 <mask id="mask0_1271_9410" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="0" y="2" width="40" height="40">
 <rect y="2" width="40" height="40" fill="url(#pattern0_1271_9410)"/>
 </mask>
 <g mask="url(#mask0_1271_9410)">
-<rect y="2" width="40" height="40" fill="black"/>
+<rect y="2" width="40" height="40" fill="#2E2E2E"/>
 </g>
-<path d="M7.06164 0L10 5.09748L7.06164 10.1538L4 5.09748L7.06164 0Z" fill="#FFDB5B"/>
 <defs>
 <pattern id="pattern0_1271_9410" patternContentUnits="objectBoundingBox" width="1" height="1">
 <use xlink:href="#image0_1271_9410" transform="scale(0.00195312)"/>
