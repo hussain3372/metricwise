@@ -2,6 +2,7 @@
 
 import { observability } from "@/app/data/Product";
 import Image from "next/image";
+import Link from "next/link";
 import React from "react";
 
 const Monitoring = () => {

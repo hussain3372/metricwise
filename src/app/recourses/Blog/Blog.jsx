@@ -55,7 +55,7 @@ const Blog = () => {
               <div className="flex flex-col gap-5">
                 {BlogCard && BlogCard.length > 0 ? (
                   BlogCard.map((item, index) => (
-                      <div className="sm:flex bg-white p-5 gap-10 rounded-[20px]">
+                      <div key={index} className="sm:flex bg-white p-5 gap-10 rounded-[20px]">
                         {/* Image container */}
                         <div className="sm:w-[154px] mb-8 sm:mb-0 flex-shrink-0">
                           <Image
