@@ -205,28 +205,6 @@ export const vehicle = [
 
 export const dataType = [
   {
-    id: "tabular",
-    pic: "/type1.png",
-    main: "Tabular",
-    Paragraph: [
-      "Maximize the potential of your tabular models by identifying drift, monitoring key metrics, and scrutinizing production data. This ensures the accuracy, efficacy, and resilience of your tabular models in real-world applications.",
-      "Receive real-time notifications directly through Slack, MS Teams, or email when instances of data integrity, bias, performance degradation, or drift related issues are identified. Effortlessly customize monitors and adapt metrics to align with your specific use case and requirements.",
-      "Leverage the power of explainability within your machine learning workflow to quantify the impact of individual features. This allows for a comprehensive understanding of the factors influencing model predictions, facilitating clear and effective communication of the underlying logic to key stakeholders.   Stakeholders can enhance the interpretability of ther model, providing valuable insights into how each feature contributes to the overall decision-making process. ",
-      "Conduct an in-depth analysis of production data in a tabular format by systematically slicing and dicing information to precisely pinpoint the origin, timing, and causation of any machine learning issues. Uncover new connections, discern patterns, and identify opportunities for refining model performance. ",
-    ],
-  },
-  {
-    id: "text",
-    pic: "/type2.png",
-    main: "Text",
-    Paragraph: [
-      "Maximize the potential of your tabular models by identifying drift, monitoring key metrics, and scrutinizing production data. This ensures the accuracy, efficacy, and resilience of your tabular models in real-world applications.",
-      "Receive real-time notifications directly through Slack, MS Teams, or email when instances of data integrity, bias, performance degradation, or drift related issues are identified. Effortlessly customize monitors and adapt metrics to align with your specific use case and requirements.",
-      "Leverage the power of explainability within your machine learning workflow to quantify the impact of individual features. This allows for a comprehensive understanding of the factors influencing model predictions, facilitating clear and effective communication of the underlying logic to key stakeholders.   Stakeholders can enhance the interpretability of ther model, providing valuable insights into how each feature contributes to the overall decision-making process. ",
-      "Conduct an in-depth analysis of production data in a tabular format by systematically slicing and dicing information to precisely pinpoint the origin, timing, and causation of any machine learning issues. Uncover new connections, discern patterns, and identify opportunities for refining model performance. ",
-    ],
-  },
-  {
     id: "llm",
     pic: "/type3.png",
     main: "LLM",

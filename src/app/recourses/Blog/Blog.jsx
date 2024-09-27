@@ -7,7 +7,7 @@ import OtherCards from "./OtherCards";
 const Blog = () => {
   return (
     <div className="">
-      <div className="blog mt-10 pb-20 xl:pb-36 xl:mt-20">
+      <div className="blog mt-10 pb-20 xl:mt-20">
         <div className="grid md:grid-cols-2 items-center white px-5 md:px-20 py-20 relative widthclass">
           <div>
             <h1 className="font-36 font-bold lg:leading-40 mb-5 text-black">
@@ -37,7 +37,7 @@ const Blog = () => {
                 The terms monitoring and observability are prevalent in the
                 field.
               </p>
-              <Link href={`/recourses/Blog/2`} className="primary-small-btn">
+              <Link href={`/recourses/Blog/1`} className="primary-small-btn">
                 Learn more
               </Link>
             </div>
@@ -72,7 +72,7 @@ const Blog = () => {
                           />
                         </div>
                         <Link
-                          href={`/recourses/Blog/${item.id}`} // Correct dynamic blog link
+                          href={`/recourses/Blog/${item.id}`}
                           className="primary-small-btn mt-2"
                         >
                           {item.btn}

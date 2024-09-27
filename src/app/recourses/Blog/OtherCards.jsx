@@ -36,7 +36,7 @@ const OtherCards = () => {
                     dangerouslySetInnerHTML={{ __html: item.data }}
                   />
                 </div>
-                <Link href={`/recourses/Blog/1`} className="primary-small-btn">
+                <Link href={`/recourses/Blog/${item.id}`} className="primary-small-btn">
                   {/* Link updated to pass dynamic blog ID */}
                   {item.btn}
                 </Link>
