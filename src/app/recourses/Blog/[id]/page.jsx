@@ -6,6 +6,7 @@ import Image from "next/image";
 import React from "react";
 import { PiGreaterThanLight } from "react-icons/pi";
 import Link from "next/link";
+import Header from "@/app/components/Layout/Header";
 
 const BlogDetail = () => {
   const { id } = useParams(); // Get the dynamic id from the URL
@@ -19,6 +20,8 @@ const BlogDetail = () => {
 
   return (
     <div>
+      <Header />
+
       {/* Blog Heading and Main Section */}
       <div className="bg-[#1D285614] relative">
         <div className="flex items-center widthclass relative">
@@ -110,7 +113,12 @@ const BlogDetail = () => {
 
                   {section.descriptionImage && (
                     <div className="flex justify-center items-center my-4">
-                      <Image src={section.descriptionImage} width={800} height={364} alt="section descritption"/>
+                      <Image
+                        src={section.descriptionImage}
+                        width={800}
+                        height={364}
+                        alt="section descritption"
+                      />
                     </div>
                   )}
                 </div>
