@@ -12,17 +12,18 @@ export const Trust = [
       "In today's competitive landscape, delivering exceptional customer experiences is non-negotiable. Our platform enables financial institutions to optimize customer service through AI-driven solutions. Whether it's fraud detection and prevention, credit risk assessment, or customer service optimization, our monitoring tools provide invaluable insights to enhance user experiences",
   },
   {
-    pic: "/finance3.png",
-    main: "Enhance Data Privacy and Security",
-    Paragraph:
-      "Data privacy and security are top priorities in the financial sector. Our platform allows organizations to monitor AI applications without compromising on data privacy. With granular monitoring over both AI models and underlying data, stakeholders can rest assured that sensitive information remains protected at all times.",
-  },
-  {
     pic: "/finance4.png",
     main: "Break Down Silos with Unified Insights",
     Paragraph:
       "Silos hinder progress and innovation. Our platform breaks down these barriers by providing a shared source of truth for all stakeholders. From data scientists to product managers to executives, everyone gains transparent access to AI model performance, data quality, and business KPIs.",
   },
+  {
+    pic: "/finance3.png",
+    main: "Enhance Data Privacy and Security",
+    Paragraph:
+      "Data privacy and security are top priorities in the financial sector. Our platform allows organizations to monitor AI applications without compromising on data privacy. With granular monitoring over both AI models and underlying data, stakeholders can rest assured that sensitive information remains protected at all times.",
+  },
+
 ];
 
 export const insuranceTrust = [

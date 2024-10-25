@@ -24,29 +24,30 @@ export const Banking = [
       ],
     },
   ];
-export const Ins = [
+export const financeCards = [
     {
-      icon: "/in1.svg",
-      head: "Claims Processing Automation",
+      icon: "/credit-card1.svg",
+      title: "Credit Risk <br /> Assessment",
       Items: [
-        "Streamline claims processing workflows by automating manual tasks such as data entry and document verification using AI/ML technologies. ",
-        "Reduce processing times and improve efficiency by integrating AI-driven decision-making algorithms to expedite claims approval processes."
+        "Enhance credit risk assessment processes by leveraging AI/ML algorithms to analyze borrower data and predict ",
+        " default probabilities.",
+        "Improve decision-making by continuously monitoring model performance and adjusting risk assessment criteria based on evolving market conditions."
       ],
     },
     {
-      icon: "/in2.svg",
-      head: "Risk Prediction and Mitigation",
+      icon: "/credit-card2.svg",
+      title: "Fraud Detection and <br /> Prevention",
       Items: [
-        "Predict and mitigate risks associated with insurance claims by leveraging AI/ML models to analyze historical data and identify emerging trends.",
-        "Enhance underwriting processes and pricing strategies by incorporating predictive analytics to assess risk factors and calculate premiums accurately."
+        "Utilize AI/ML models to analyze transactional data and detect anomalies indicative of fraudulent activities.",
+        "Implement real-time monitoring to identify suspicious patterns and prevent fraudulent transactions before they occur."
       ],
     },
     {
-      icon: "/in3.svg",
-      head: "Customer Relationship Management",
+      icon: "/credit-card3.svg",
+      title: "Customer Service  <br /> Optimization",
       Items: [
-        "Enhance customer engagement and retention by leveraging AI-driven insights to personalize insurance offerings and services based on individual needs and preferences.",
-        "Improve customer satisfaction by providing proactive risk management advice and recommendations tailored to customers' specific circumstances and risk profiles."
+        "Implement chatbots powered by AI/ML to provide personalized customer support and assistance with account inquiries and transactions.",
+        "Improve customer satisfaction and retention by analyzing customer interactions and feedback to optimize service offerings and address pain points proactively"
       ],
     },
   ];

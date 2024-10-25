@@ -36,6 +36,7 @@ import {
   Company,
   DataTypes,
   Industry,
+  Solutions,
 } from "../../data/Head";
 import Link from "next/link";
 import Image from "next/image";
@@ -169,7 +170,7 @@ export default function Example() {
               onMouseLeave={() => setIsOpen1(false)}
             >
               <Popover.Button className="flex items-center gap-x-1">
-                Solution
+                Solutions
                 <ChevronDownIcon
                   className="h-5 w-5 flex-none text-gray-400"
                   aria-hidden="true"
@@ -187,69 +188,38 @@ export default function Example() {
               leaveTo="opacity-0 translate-y-1"
             >
               <Popover.Panel
-                className="absolute flex flex-col -left-80 top-full z-10 mt-9 w-screen max-w-5xl sm:h-[400px] md:h-[500px] lg:h-[417px] 2xl:h-[580px] overflow-auto rounded-lg bg-white shadow-lg ring-1 ring-gray-900/5"
+                className="absolute flex justify-around -left-48 top-full z-10 mt-9 w-screen max-w-5xl overflow-hidden rounded-lg bg-white shadow-lg ring-1 ring-gray-900/5"
                 onMouseEnter={() => setIsOpen1(true)}
                 onMouseLeave={() => setIsOpen1(false)}
               >
-                <div className="flex">
-                  <div className="flex flex-col p-10">
-                    <h1 className="font-32 font-bold leading-10">Solution</h1>
-                    <div className="flex-col space-y-9 mt-6">
-                      <button
-                        className={`font-semibold font-20 ${
-                          activeTab === "Industries"
-                            ? "text-[#000000] hover:text-gray-500 focus:text-gray-500 active:text-gray-500"
-                            : "text-[#000000] hover:text-gray-500 focus:text-gray-500 active:text-gray-500"
-                        }`}
-                        onClick={() => setActiveTab("Industries")}
-                      >
-                        Industries
-                      </button>
-                      <button
-                        className={`font-semibold font-20 ${
-                          activeTab === "Data Types"
-                            ? "text-[#000000] hover:text-gray-500 focus:text-gray-500 active:text-gray-500"
-                            : "text-[#000000] hover:text-gray-500 focus:text-gray-500 active:text-gray-500"
-                        }`}
-                        onClick={() => setActiveTab("DataTypes")}
-                      >
-                        Data Types
-                      </button>
-                    </div>
-                  </div>
-                  <div className="p-4 grid grid-cols-2">
-                    {(activeTab === "Industries" ? Industry : DataTypes).map(
-                      (item) => (
-                        <div
-                          key={item.name}
-                          className="group relative flex items-center gap-x-6 rounded-lg text-sm leading-6 p-2 hover:bg-gray-50"
+                <div className="">
+                  <h1 className="p-10 font-32 font-bold leading-10">
+                    Solutions
+                  </h1>
+                </div>
+                <div className="p-4 grid grid-cols-2">
+                  {Solutions.map((item) => (
+                    <div
+                      key={item.name}
+                      className="group relative flex items-center gap-x-6 rounded-lg text-sm leading-6 p-2 hover:bg-gray-50"
+                      onClick={() => setIsOpen1(false)}
+                    >
+                      <div className="flex h-11 w-11 flex-none items-center justify-center rounded-lg">
+                        <Image width={40} height={40} src={item.icon} alt="" />
+                      </div>
+                      <div className="flex-auto">
+                        <Link
+                          href={item.href}
+                          className="block font-semibold text-gray-900"
                           onClick={() => setIsOpen1(false)}
                         >
-                          <div className="flex h-11 w-11 flex-none items-center justify-center rounded-lg">
-                            <Image
-                              width={40}
-                              height={40}
-                              src={item.icon}
-                              alt=""
-                            />
-                          </div>
-                          <div className="flex-auto">
-                            <Link
-                              href={item.href}
-                              className="block font-semibold text-gray-900"
-                              onClick={() => setIsOpen1(false)}
-                            >
-                              {item.name}
-                              <span className="absolute inset-0" />
-                            </Link>
-                            <p className="mt-1 text-gray-600">
-                              {item.description}
-                            </p>
-                          </div>
-                        </div>
-                      )
-                    )}
-                  </div>
+                          {item.name}
+                          <span className="absolute inset-0" />
+                        </Link>
+                        <p className="mt-1 text-gray-600">{item.description}</p>
+                      </div>
+                    </div>
+                  ))}
                 </div>
               </Popover.Panel>
             </Transition>

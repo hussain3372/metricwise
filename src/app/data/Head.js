@@ -21,93 +21,111 @@ export const Products = [
     icon: "/pr3.svg",
   },
 ];
-export const Industry = [
+
+export const Solutions = [
   {
-    name: "Finance and Banking ",
-    description:"Monitor AI/ML algorithms for regulatory compliance, ensuring transparency and accountability in financial services.",
-    href: "/solutions/industry/finance",
-    icon: "/so1.svg",
-  },
-  {
-    name: "Insurance Monitoring ",
-    description:"Ensure transparency and compliance in insurance AI and ML models through rigorous governance, observability, and monitoring of data.",
-    href: "/solutions/industry/insurance",
-    icon: "/so2.svg",
-  },
-  {
-    name: "Real Estate",
-    description:"Monitor AI algorithms to uphold fair housing laws and maintain transparency in property pricing, establishing governance in real estate AI.",
-    href: "/solutions/industry/real_estate",
-    
-    icon: "/so3.svg",
-  },
-  {
-    name: "Retail and E-commerce",
-    description:"Refine decision-making in retail operations by optimizing models for accuracy and reliability.",
-    href: "/solutions/industry/e_commerce",
-    
-    icon: "/so4.svg",
-  },
-  {
-    name: "Healthcare",
-    description:"Maintain transparency and regulatory compliance in healthcare AI models with comprehensive observability and monitoring.",
-    href: "/solutions/industry/healthcare",
-    
-    icon: "/so5.svg",
-  },
-  {
-    name: "Autonoumus Vehicle",
-    description:"Enhance the interpretation and interaction of real-world data to facilitate AI-driven decision-making.",
-    href: "/solutions/industry/vehicle",
-    
-    icon: "/so6.svg",
-  },
-  {
-    name: "Social Media ",
-    description:"Maintain platform integrity and regulatory adherence in social media AI through the implementation of governance protocols and ongoing observability.",
-    href: "/solutions/industry/social_media",
-    
-    icon: "/so7.svg",
-  },
-  {
-    name: "Education",
-    description:"Secure transparency and fairness in education AI/ML models with stringent governance and perpetual observability.",
-    href: "/solutions/industry/education",
-    
-    icon: "/so8.svg",
-  },
-];
-export const DataTypes = [
-  {
-    name: "Tabular",
+    name: "Industries",
     description:
-      "Monitor structured, tabular data to ensure accuracy, bias and fairness.",
+      "Monitor AI/ML algorithms for regulatory compliance, ensuring transparency and accountability in financial services.",
+    href: "/solutions/industry",
+    icon: "/sol1.svg",
+  },
+  {
+    name: "Data Type",
+    description:
+      "Unlock the full potential of your AI/ML models with comprehensive observability and actionable insights",
     href: "/solutions/data_type",
-    
-    icon: "/pri1.svg",
-  },
-  {
-    name: "Text",
-    description:
-      "Ensure ethical language processing in natural language based data sources.",
-    href: "#",
-    icon: "/pri2.svg",
-  },
-  {
-    name: "Image",
-    description:
-      "Detect biases and promote inclusivity in images and medical scans through monitoring and observability.",
-    href: "#",
-    icon: "/pri3.svg",
-  },
-  {
-    name: "LLMs",
-    description:
-      "Monitor ethical language use, hallucination, context accuracy  and misinformation detection.",
-    href: "#",
-    icon: "/pri4.svg",
+    icon: "/sol2.svg",
   },
 ];
+
+// export const Industry = [
+//   {
+//     name: "Finance and Banking ",
+//     description:"Monitor AI/ML algorithms for regulatory compliance, ensuring transparency and accountability in financial services.",
+//     href: "/solutions/industry/finance",
+//     icon: "/so1.svg",
+//   },
+//   {
+//     name: "Insurance Monitoring ",
+//     description:"Ensure transparency and compliance in insurance AI and ML models through rigorous governance, observability, and monitoring of data.",
+//     href: "/solutions/industry/insurance",
+//     icon: "/so2.svg",
+//   },
+//   {
+//     name: "Real Estate",
+//     description:"Monitor AI algorithms to uphold fair housing laws and maintain transparency in property pricing, establishing governance in real estate AI.",
+//     href: "/solutions/industry/real_estate",
+
+//     icon: "/so3.svg",
+//   },
+//   {
+//     name: "Retail and E-commerce",
+//     description:"Refine decision-making in retail operations by optimizing models for accuracy and reliability.",
+//     href: "/solutions/industry/e_commerce",
+
+//     icon: "/so4.svg",
+//   },
+//   {
+//     name: "Healthcare",
+//     description:"Maintain transparency and regulatory compliance in healthcare AI models with comprehensive observability and monitoring.",
+//     href: "/solutions/industry/healthcare",
+
+//     icon: "/so5.svg",
+//   },
+//   {
+//     name: "Autonoumus Vehicle",
+//     description:"Enhance the interpretation and interaction of real-world data to facilitate AI-driven decision-making.",
+//     href: "/solutions/industry/vehicle",
+
+//     icon: "/so6.svg",
+//   },
+//   {
+//     name: "Social Media ",
+//     description:"Maintain platform integrity and regulatory adherence in social media AI through the implementation of governance protocols and ongoing observability.",
+//     href: "/solutions/industry/social_media",
+
+//     icon: "/so7.svg",
+//   },
+//   {
+//     name: "Education",
+//     description:"Secure transparency and fairness in education AI/ML models with stringent governance and perpetual observability.",
+//     href: "/solutions/industry/education",
+
+//     icon: "/so8.svg",
+//   },
+// ];
+// export const DataTypes = [
+//   {
+//     name: "Tabular",
+//     description:
+//       "Monitor structured, tabular data to ensure accuracy, bias and fairness.",
+//     href: "/solutions/data_type",
+
+//     icon: "/pri1.svg",
+//   },
+//   {
+//     name: "Text",
+//     description:
+//       "Ensure ethical language processing in natural language based data sources.",
+//     href: "#",
+//     icon: "/pri2.svg",
+//   },
+//   {
+//     name: "Image",
+//     description:
+//       "Detect biases and promote inclusivity in images and medical scans through monitoring and observability.",
+//     href: "#",
+//     icon: "/pri3.svg",
+//   },
+//   {
+//     name: "LLMs",
+//     description:
+//       "Monitor ethical language use, hallucination, context accuracy  and misinformation detection.",
+//     href: "#",
+//     icon: "/pri4.svg",
+//   },
+// ];
 export const Docs = [
   {
     name: "Resource Library",

@@ -23,8 +23,8 @@ const BlogDetail = () => {
       <Header />
 
       {/* Blog Heading and Main Section */}
-      <div className="bg-[#1D285614] relative">
-        <div className="flex items-center widthclass relative">
+      <div className="bg-white relative">
+        {/* <div className="flex items-center widthclass relative">
           <h1 className="text-black pl-16 pt-10 font-24 font-normal font-inter hidden sm:flex items-center gap-2 z-10">
             Metricwise
             <span className="paragraph font-20 font-normal font-inter opacity-50 flex items-center gap-2">
@@ -36,14 +36,14 @@ const BlogDetail = () => {
           <div className="absolute top-1 -left-1">
             <Image src="/hr1.png" width={138} height={138} alt="path-bg" />
           </div>
-        </div>
-        <div className="pt-20 pb-16 sm:pb-40 md:pb-64 lg:pb-96 relative widthclass px-10 xl:px-[165px] flex justify-center items-center flex-col">
+        </div> */}
+        <div className="pt-20 pb-16 sm:pb-[120px] md:pb-64 lg:pb-96 relative widthclass px-10 xl:px-[165px] flex justify-center items-center flex-col">
           <div className="w-full text-left">
-            <h1 className="font-36 font-bold lg:leading-10 mb-5 primaryblue z-10">
+            <h1 className="font-36 font-bold lg:leading-10 mb-5 primaryblue z-10 text-center">
               {blog.title}
             </h1>
           </div>
-          <div className="absolute top-40 z-10 p-2 sm:p-10">
+          <div className="absolute top-40 z-10 p-2 sm:p-16">
             <Image
               src={blog.imgSrc}
               width={blog.w}
@@ -52,14 +52,14 @@ const BlogDetail = () => {
             />
           </div>
         </div>
-
+        {/* 
         <div className="absolute bottom-0">
           <Image src="/hr2.png" width={108} height={136} alt="path-bg" />
-        </div>
+        </div> */}
       </div>
 
       {/* Blog Content */}
-      <div className="flex flex-col items-start gap-8 mt-64 px-10 xl:px-20 2xl:px-[210px] container m-auto">
+      <div className="flex flex-col items-start gap-8 mt-64 px-10 xl:px-10 container m-auto">
         <div className="flex items-center gap-8">
           <Image src="/facebook.svg" width={24} height={24} alt="social-icon" />
           <Image src="/twitter.svg" width={24} height={24} alt="social-icon" />
@@ -115,8 +115,8 @@ const BlogDetail = () => {
                     <div className="flex justify-center items-center my-4">
                       <Image
                         src={section.descriptionImage}
-                        width={800}
-                        height={364}
+                        width={1168}
+                        height={320}
                         alt="section descritption"
                       />
                     </div>
@@ -369,23 +369,15 @@ const BlogDetail = () => {
       </div>
 
       {/* Recommended Articles */}
-      <div className="bg-[#1D285614] mt-16 px-10 md:px-20 2xl:px-52 py-10">
+      <div className="bg-[#1D285614] bg-[url('/recommended-bg.svg')] bg-no-repeat bg-left-bottom bg-contain mt-16 px-10 md:px-20 2xl:px-52 py-10">
         <div className="container m-auto">
           <div className="flex justify-start items-start flex-col gap-5 relative">
-            <h1 className="font-24 font-bold leading-10">
+            <h1 className="font-36 font-bold leading-10">
               Recommended Articles
             </h1>
-            <p className="font-20 font-normal leading-6 md:leading-8 opacity-60">
-              Sit omnis id iusto aliquam. Similique labore dolore nihil
-              cupiditate natus <br className="hidden lg:block" /> accusantium
-              saepe omnis. Fuga quod aliquid perferendis natus laudantium{" "}
-              <br className="hidden lg:block" /> alias aut assumenda. Est autem
-              maxime.
-            </p>
-
-            <div className="absolute -top-8 -left-20">
+            {/* <div className="absolute -top-8 -left-20">
               <Image src="/hr1.png" width={138} height={138} alt="path-bg" />
-            </div>
+            </div> */}
           </div>
 
           <div className="flex justify-center items-center gap-10 mt-11">
@@ -404,14 +396,14 @@ const BlogDetail = () => {
 
                 <div className="flex flex-col justify-between flex-grow gap-2">
                   <h3 className="text-[20px] font-inter font-semibold leading-6">
-                    Insecure Output Handling
+                    Metricwise: The AI Observability Platform
                   </h3>
-                  <p className="text-[16px] font-inter font-normal leading-5 mt-3 opacity-[60%]">
-                    Insecure output handling occurs when an application
-                    indiscriminately accepts output from a Large Language Model
-                    (LLM) without proper scrutiny.
+                  <p className="text-[16px] font-inter font-normal leading-5 opacity-[60%] text-[#2E2E2E]">
+                    At Metricwise, we're dedicated to making advanced AI tools
+                    accessible to everyone, providing practitioners with the
+                    resources and knowledge.
                   </p>
-                  <Link href="/recourses/Blog/4" className="primary-small-btn">
+                  <Link href="/recourses/Blog/8" className="primary-small-btn">
                     Learn more
                   </Link>
                 </div>
@@ -431,14 +423,12 @@ const BlogDetail = () => {
 
                 <div className="flex flex-col justify-between flex-grow gap-2">
                   <h3 className="text-[20px] font-inter font-semibold leading-6">
-                    Metricwise: The AI Observability Platform
+                  Navigating the Intersection...
                   </h3>
-                  <p className="text-[16px] font-inter font-normal leading-5 mt-3 opacity-[60%]">
-                    At Metricwise, we are dedicated to making advanced AI tools
-                    accessible to everyone, providing practitioners with the
-                    resources and knowledge.
+                  <p className="text-[16px] font-inter font-normal leading-5 opacity-[60%] text-[#2E2E2E]">
+                  In today's fast-changing tech landscape, it's crucial to emphasize the importance of thorough...
                   </p>
-                  <Link href="/recourses/Blog/8" className="primary-small-btn">
+                  <Link href="/recourses/Blog/5" className="primary-small-btn">
                     Learn more
                   </Link>
                 </div>
@@ -446,7 +436,7 @@ const BlogDetail = () => {
             </div>
           </div>
 
-          <div className="flex justify-end items-end mt-12">
+          <div className="flex justify-end items-end mt-6">
             <Link href="/recourses/Blog" className="hero-btn">
               See More
               <Image src="/free.png" width={24} height={24} alt="free" />

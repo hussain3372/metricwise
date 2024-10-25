@@ -37,9 +37,9 @@ body {
   background-repeat: no-repeat;
 }
 .blog {
-  background-image: url(../../public/blogbg.png);
-  background-position: bottom right;
-  background-size: 60%;
+  background-image: url(../../public/blogbg.svg);
+  background-position: center;
+  background-size: cover;
   background-repeat: no-repeat;
 }
 .aboutbg {
@@ -213,6 +213,10 @@ body {
 }
 .font-24 {
   font-size: 24px;
+}
+
+.font-22 {
+  font-size: 22px;
 }
 .font-20 {
   font-size: 20px;
@@ -611,4 +615,14 @@ textarea {
   line-height: 24px;
   width: 214px;
   height: 52px;
+}
+
+
+
+
+.react-tabs__tab--selected {
+  background: #2E2E2E !important;
+  border-color: #2E2E2E !important;
+  color: #fff !important;
+  border-radius: 4px !important;
 }

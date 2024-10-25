@@ -8,9 +8,28 @@ import NewPerformance from "@/app/components/Home/NewPerformance";
 import Card from "@/app/components/Home/Card";
 import Blogs from "@/app/components/Home/Blogs";
 import Link from "next/link";
+import { Fade } from "react-awesome-reveal";
 
 const NewHero = () => {
   const [isScrolled, setIsScrolled] = useState(false);
+
+  const images = [
+    "/hero2.svg",
+    "/hero3.svg",
+    "/hero4.svg", // Add your image paths here
+  ];
+
+  const [currentImageIndex, setCurrentImageIndex] = useState(0);
+
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setCurrentImageIndex((prevIndex) =>
+        prevIndex === images.length - 1 ? 0 : prevIndex + 1
+      );
+    }, 5000); // 2 seconds interval
+
+    return () => clearInterval(interval); // Clean up the interval on component unmount
+  }, [images.length]);
 
   useEffect(() => {
     const handleScroll = () => {
@@ -52,11 +71,11 @@ const NewHero = () => {
         </div>
 
         {/* Hero Content */}
-        <div className="pt-20 pb-32 sm:pb-64 m-auto px-4 sm:px-0">
+        <div className="pt-20 pb-32 sm:pb-64 m-auto px-5">
           <div className="flex flex-col justify-start items-center text-center">
             <h1 className="font-52 font-semibold leading-10 sm:leading-[50px] md:leading-[60px] text-[#2E2E2E]">
               Empowering AI with Unmatched <br />
-              <span className="italic">Observability and Governance</span>
+              <span className="italic text-[#042440]">Observability and Governance</span>
             </h1>
             <p className="text-[#00000099] font-20 font-normal leading-6 mt-5">
               Detect and analyze model and data issues with speed.
@@ -65,7 +84,12 @@ const NewHero = () => {
             </p>
             <div className="flex justify-center items-center gap-4 mt-5">
               <Link href="/Demo" className="primary-btn" type="button">
-                <Image src="/demo-img.svg" width={20} height={20} alt="demo-img" />
+                <Image
+                  src="/demo-img.svg"
+                  width={20}
+                  height={20}
+                  alt="demo-img"
+                />
                 Book a Demo
               </Link>
 
@@ -77,14 +101,16 @@ const NewHero = () => {
         </div>
 
         {/* Hero Section Image */}
-        <div className="flex justify-center items-center">
+        <div className="flex justify-center items-center mt-20">
           <div className="absolute">
-            <Image
-              src="/hero-dashboard.png"
-              width={1128}
-              height={508}
-              alt="Hero section Image"
-            />
+            <Fade key={currentImageIndex} duration={2000}>
+              <Image
+                src={images[currentImageIndex]}
+                width={1128}
+                height={508}
+                alt="Hero section Image"
+              />
+            </Fade>
           </div>
         </div>
       </div>

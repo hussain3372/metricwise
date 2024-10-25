@@ -1,17 +1,49 @@
 "use client";
 
-import React from "react";
+import React, { useState, useEffect } from "react";
 import CardData from "../../data/CardData"; // Ensure this path is correct
 import Image from "next/image";
 import { Fade } from "react-awesome-reveal";
 
 const Card = () => {
+  // Set initial states for each card image index
+  const [imageIndexes, setImageIndexes] = useState(Array(CardData.length).fill(0));
+
+  useEffect(() => {
+    const intervals = CardData.map((_, index) =>
+      setInterval(() => {
+        setImageIndexes((prevIndexes) => {
+          const newIndexes = [...prevIndexes];
+          newIndexes[index] = (newIndexes[index] + 1) % imagesForCard(index).length;
+          return newIndexes;
+        });
+      }, 5000) // Change every 5 seconds
+    );
+
+    // Clean up intervals on component unmount
+    return () => intervals.forEach((interval) => clearInterval(interval));
+  }, []);
+
+  // Function to return image array for each card
+  const imagesForCard = (index) => {
+    switch (index) {
+      case 0:
+        return ["/img1.svg", "/img2.svg", "/img3.svg"];
+      case 1:
+        return ["/img4.svg", "/img5.svg"];
+      case 2:
+        return ["/img6.svg", "/img7.svg"];
+      default:
+        return ["/img1.svg"];
+    }
+  };
+
   return (
     <div className="">
       <div>
         <div className="widthclass">
           {CardData.map((item, index) => (
-            <Fade key={`fade-${index}`} direction={index === 1 ? "right" : "left"}>
+            // <Fade key={`fade-${index}`} direction={index === 1 ? "right" : "left"}>
               <div
                 className={`grid md:grid-cols-2 items-center ${index === 1 ? "md:flex-row-reverse" : ""}`}
                 key={`card-${index}`}
@@ -31,10 +63,18 @@ const Card = () => {
                   </ul>
                 </div>
                 <div className={`flex ${index % 2 === 0 ? "justify-center md:justify-end" : ""}`} key={`image-${index}`}>
-                  <Image src={item.img} alt="Card image" width={539} height={567} />
+                  <Fade key={imageIndexes} duration={2000}>
+
+                  <Image
+                    src={imagesForCard(index)[imageIndexes[index]]}
+                    alt="Card image"
+                    width={460}
+                    height={428}
+                    />
+                    </Fade>
                 </div>
               </div>
-            </Fade>
+            // </Fade>
           ))}
         </div>
       </div>
