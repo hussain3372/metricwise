@@ -9,20 +9,14 @@ const Monitoring = () => {
     <div>
       <div>
         <div className=" bg-[url('/hero-gradient.png')] bg-no-repeat bg-cover">
-        <div className="px-10 md:px-20 xl:px-[120px] py-10 lg:py-[180px] mt-5 bg-center widthclass">
+          <div className="px-10 md:px-20 xl:px-[120px] py-10 lg:py-[180px] mt-5 bg-center widthclass">
             <div className="grid lg:grid-cols-2 items-center">
               <div>
                 <h1 className="font-44 font-semibold leading-[60px] purple-color">
                   Monitoring Hub
                 </h1>
                 <p className="font-20 font-normal leading-7 mt-3 mb-9 opacity-60">
-                  Optimize your AI/ML models effortlessly with our Monitoring
-                  Hub. Our user-friendly platform allows enterprises to easily
-                  monitor model performance and data integrity in real-time,
-                  enabling quick optimization and accurate predictions. With
-                  customizable dashboards and intuitive interfaces,
-                  implementation is seamless, ensuring rapid integration into
-                  existing workflows
+                  {`Optimize your AI/ML models effortlessly with our Monitoring Hub. Our user-friendly platform allows enterprises to easily monitor model performance and data integrity in real-time, enabling quick optimization and accurate predictions. With customizable dashboards and intuitive interfaces, implementation is seamless, ensuring rapid integration into existing workflows`}
                 </p>
                 <Link href="/company/contact_us" className="hero-btn">
                   Get started for free
@@ -81,13 +75,13 @@ const Monitoring = () => {
                   <p className="font-14 font-normal leading-85 my-6">
                     {item.para}
                   </p>
-                  <ul className="mt-7">
+                  <ul className="mt-4">
                     {[item.list, item.list1, item.list2, item.list3].map(
                       (listItem, listIndex) =>
                         listItem && (
                           <li
                             key={`list-${index}-${listIndex}`}
-                            className="mb-5 font-16 font-medium leading-5 text-[#000000] flex items-center gap-2"
+                            className="mb-5 font-14 font-normal leading-5 text-[#000000] flex items-center gap-2"
                           >
                             <Image
                               src={item.logo}

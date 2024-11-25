@@ -160,16 +160,16 @@ export const education = [
     icon: "/edu1.svg",
     title: "Personalized Learning",
     Items: [
-      "Utilize AI/ML models to analyze market trends and property data, accurately estimating property values and rental yields.",
-      "Implement real-time monitoring to detect emerging trends and potential threats, allowing proactive intervention to maintain platform integrity.",
+      "Utilize AI/ML algorithms to tailor educational content and activities to individual student needs and learning styles.",
+      "Implement continuous monitoring to ensure that personalized learning algorithms promote inclusivity and equitable access to educational resources.",
     ],
   },
   {
     icon: "/edu2.svg",
     title: "Student Performance Prediction",
     Items: [
-      "Enhance user engagement by leveraging AI/ML algorithms to personalize content recommendations based on user preferences and behavior.",
-      "Regular monitoring ensures that performance prediction algorithms remain transparent, unbiased, and supportive of student success.Continuous monitoring ensures that recommendation algorithms remain transparent, unbiased, and compliant with content policies and regulations.",
+      "Enhance academic support systems by leveraging AI/ML models to analyze student performance data and predict academic outcomes.",
+      "Regular monitoring ensures that performance prediction algorithms remain transparent, unbiased, and supportive of student success.",
     ],
   },
   {

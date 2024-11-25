@@ -1,6 +1,17 @@
-import React from "react";
+"use client";
+
+import React, { useState } from "react";
 
 const Form = () => {
+  const [fileName, setFileName] = useState("");
+
+  const handleFileChange = (event) => {
+    const file = event.target.files[0];
+    if (file) {
+      setFileName(file.name); // Set the file name when a file is selected
+    }
+  };
+
   return (
     <div className="flex flex-col items-center">
       {/* Heading Section */}
@@ -132,44 +143,69 @@ const Form = () => {
             >
               Resume/CV
             </label>
-            <div className="flex items-center justify-center py-10 px-4 gap-6 border border-dotted border-[#2E2E2E] w-full col-span-2">
-              <div>
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  width="41"
-                  height="40"
-                  viewBox="0 0 41 40"
-                  fill="none"
-                >
-                  <path
-                    d="M35.5 25V31.6667C35.5 32.5507 35.1488 33.3986 34.5237 34.0237C33.8986 34.6488 33.0507 35 32.1667 35H8.83333C7.94928 35 7.10143 34.6488 6.47631 34.0237C5.85119 33.3986 5.5 32.5507 5.5 31.6667V25"
-                    stroke="#2E2E2E"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
+            <div className="flex flex-col items-center justify-center py-10 px-4 gap-6 border border-dotted border-[#2E2E2E] w-full col-span-2">
+              <div className="flex gap-6 items-center justify-center">
+                <div>
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="41"
+                    height="40"
+                    viewBox="0 0 41 40"
+                    fill="none"
+                  >
+                    <path
+                      d="M35.5 25V31.6667C35.5 32.5507 35.1488 33.3986 34.5237 34.0237C33.8986 34.6488 33.0507 35 32.1667 35H8.83333C7.94928 35 7.10143 34.6488 6.47631 34.0237C5.85119 33.3986 5.5 32.5507 5.5 31.6667V25"
+                      stroke="#2E2E2E"
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                    />
+                    <path
+                      d="M28.8346 13.3333L20.5013 5L12.168 13.3333"
+                      stroke="#2E2E2E"
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                    />
+                    <path
+                      d="M20.5 5V25"
+                      stroke="#2E2E2E"
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                    />
+                  </svg>
+                </div>
+                <div className="font-20 font-normal leading-8 textcolor">
+                  <label
+                    htmlFor="fileUpload"
+                    className="cursor-pointer font-20 font-normal leading-8"
+                  >
+                    Upload Resume/CV
+                  </label>
+                  <input
+                    id="fileUpload"
+                    type="file"
+                    className="hidden"
+                    onChange={handleFileChange}
                   />
-                  <path
-                    d="M28.8346 13.3333L20.5013 5L12.168 13.3333"
-                    stroke="#2E2E2E"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                  />
-                  <path
-                    d="M20.5 5V25"
-                    stroke="#2E2E2E"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                  />
-                </svg>
+                </div>
               </div>
-              <div className="font-20 font-normal leading-8 textcolor">
-                Upload Resume/CV
-              </div>
+              {fileName && (
+                <div className="mt-4 text-sm text-gray-600">
+                  Selected File: <span className="font-medium">{fileName}</span>
+                </div>
+              )}
             </div>
           </div>
-          <p className="text-[#8E8E8E] font-10 font-normal leading-4 -mt-10 flex justify-end items-end">Attach file. File size of your documents should not exceed 10MB</p>
+          <p className="text-[#8E8E8E] font-10 font-normal leading-4 -mt-10 flex justify-end items-end">
+            Attach file. File size of your documents should not exceed 10MB
+          </p>
         </form>
         <div className="mt-[108px] flex justify-center items-center">
-          <button type="submit" className="bg-[#2E2E2E] p-4 flex justify-center items-center text-white w-[547px]">Submit</button>
+          <button
+            type="submit"
+            className="bg-[#2E2E2E] p-4 flex justify-center items-center text-white w-[547px]"
+          >
+            Submit
+          </button>
         </div>
       </div>
     </div>

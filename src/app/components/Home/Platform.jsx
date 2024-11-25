@@ -10,18 +10,18 @@ const Platform = () => {
         <div>
           <h1 className="text-[20px] sm:text-[32px] md:text-[40px] lg:text-[48px] font-medium leading-[30px] sm:leading-[56px]">
             A comprehensive AI&nbsp;
-            <span className="text-[#7736B7] italic font-semibold">
-              Observability
+            <span className="text-[#7736B7] font-semibold">
+              <span className="italic">O</span>bservability
             </span>
             &nbsp;and&nbsp;
             <br />
-            <span className="text-[#7736B7] italic font-semibold">
-              Governance
+            <span className="text-[#7736B7] font-semibold">
+              <span className="italic">G</span>overnance
             </span>
             &nbsp;platform
           </h1>
 
-          <p className="font-16 sm:font-20 text-[#00000099] font-normal leading-6 sm:leading-8 opacity-60 mt-4 sm:mt-6 px-4">
+          <p className="font-20 text-[#00000099] font-normal leading-6 mt-4 sm:mt-6 px-4">
             Metricwise enables confident deployment and management of AI models
             with tools for <br className="hidden md:block" /> monitoring,
             observability, and governance

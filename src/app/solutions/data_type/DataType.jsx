@@ -22,11 +22,7 @@ const DataType = () => {
                   Data Type
                 </h1>
                 <p className="font-24 font-normal font-inter leading-8 mt-8 mb-10 opacity-60 text-center">
-                  A data type is an attribute associated with a piece of data
-                  that tells a computer system how to interpret its value.
-                  Understanding data types ensures that data is collected in the
-                  preferred format and the value of each property is as
-                  expected.
+                A data type is an attribute associated with a piece of data that tells a <br className="hidden md:block"/> computer system how to interpret its value. Understanding data <br className="hidden md:block"/> types ensures that data is collected in the preferred format and the <br className="hidden md:block"/>  value of each property is as expected.
                 </p>
                 <Link href="/Demo" className="new-btns">
                   Book a Demo

@@ -41,9 +41,10 @@ const NewHero = () => {
         <div className="pt-20 m-auto px-5">
           <div className="flex flex-col justify-start items-center text-center">
             <h1 className="font-44 font-bold leading-10 sm:leading-[50px] md:leading-[60px] text-[#000000]">
-              Empowering AI with unmatched <br className="hidden sm:block"/>
+              Empowering AI with unmatched <br className="hidden sm:block" />
               <span className="font-semibold text-[#7736B7]">
-                Observability and Governance
+                <span className="italic">O</span>bservability and
+                <span className="italic">G</span>overnance
               </span>
             </h1>
             <p className="text-[#00000099] font-20 font-normal leading-6 mt-5">
@@ -58,7 +59,10 @@ const NewHero = () => {
               >
                 Get started for free
               </Link>
-              <Link href="/company/contact_us" className="bg-white rounded-md px-7 py-4 font-16 font-normal leading-5 text-center">
+              <Link
+                href="/company/contact_us"
+                className="bg-white rounded-md px-7 py-4 font-16 font-normal leading-5 text-center"
+              >
                 Talk to Sales
               </Link>
             </div>

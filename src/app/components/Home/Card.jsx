@@ -3,7 +3,6 @@
 import React from "react";
 import CardData from "../../data/CardData"; // Ensure this path is correct
 import Image from "next/image";
-import { Fade } from "react-awesome-reveal";
 import Link from "next/link";
 
 const Card = () => {
@@ -68,9 +67,9 @@ const Card = () => {
                     <path
                       d="M5.50823 14.8452L14.4926 5.8608M14.4926 5.8608V14.3461M14.4926 5.8608H6.00736"
                       stroke="white"
-                      stroke-width="1.25"
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
+                      strokeWidth="1.25"
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
                     />
                   </svg>
                 </Link>

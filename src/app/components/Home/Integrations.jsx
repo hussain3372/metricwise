@@ -23,12 +23,12 @@ const Integrations = () => {
     "/int11.svg",
     "/int12.svg",
     "/int13.svg",
-    "/int12.svg",
-    "/int13.svg",
-    "/int12.svg",
-    "/int13.svg",
-    "/int12.svg",
-    "/int13.svg",
+    "/int14.svg",
+    "/int15.svg",
+    "/int16.svg",
+    "/int17.svg",
+    "/int18.svg",
+    "/int19.svg",
   ]; // Add your image paths or content here.
 
   return (
@@ -55,8 +55,8 @@ const Integrations = () => {
               {slides.map((slide, index) => (
                 <SwiperSlide key={index}>
                   <Image
-                    width={74}
-                    height={74}
+                    width={90}
+                    height={90}
                     src={slide}
                     alt={`Slide ${index + 1}`}
                     className=""

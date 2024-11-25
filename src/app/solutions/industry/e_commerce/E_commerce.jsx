@@ -9,7 +9,7 @@ const Ecommerce = () => {
     <div>
       <div className="widthclass">
         <div className="pt-10 pb-8 py-[120px] px-2 sm:px-10 flex flex-col justify-center items-center gap-7">
-          <Image src="/e-commerce.png" width={489} height={411} alt="finance" />
+          <Image src="/e-commerce.svg" width={566} height={483} alt="finance" />
           <h1 className="font-40 font-bold">Retail and Ecommerce</h1>
           <p className="font-24 font-normal leading-8 text-[#2E2E2E] text-center opacity-60 px-2 md:px-40 lg:px-64 xl:px-[420px]">
             AI optimizes retail operations, enhancing customer engagement and supply chain

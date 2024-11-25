@@ -1,7 +1,7 @@
 export const Product = [
   {
     src: "/monitoring1.svg",
-    w: "620",
+    w: "472",
     h: "500",
     alt: "Data Integrity & Completeness",
     titleImage: "/Dots.svg",
@@ -16,7 +16,7 @@ export const Product = [
   },
   {
     src: "/monitoring2.svg",
-    w: "620",
+    w: "472",
     h: "500",
     alt: "Model & Feature Performance",
     titleImage: "/Dots.svg",
@@ -31,7 +31,7 @@ export const Product = [
   },
   {
     src: "/monitoring3.svg",
-    w: "620",
+    w: "472",
     h: "500",
     alt: "Anomaly Detection",
     titleImage: "/Dots.svg",
@@ -46,7 +46,7 @@ export const Product = [
   },
   {
     src: "/monitoring4.svg",
-    w: "620",
+    w: "472",
     h: "500",
     alt: "Predictive Maintenance",
     titleImage: "/Dots.svg",

@@ -4,7 +4,6 @@ import React, { useState } from "react";
 import Head from "next/head";
 import Image from "next/image";
 import { MinusIcon, PlusIcon } from "@heroicons/react/24/outline";
-import EmailButton from "@/app/EmailButton ";
 
 const AccordionItem = ({ title, content, list }) => {
   const [isOpen, setIsOpen] = useState(false);
@@ -31,7 +30,7 @@ const AccordionItem = ({ title, content, list }) => {
       >
         <div className="flex justify-between items-center">
           <span
-            className={`text-[#042440] font-20 ${
+            className={`text-[#2E2E2E] font-20 ${
               isOpen ? "font-bold" : "font-normal"
             }`}
           >

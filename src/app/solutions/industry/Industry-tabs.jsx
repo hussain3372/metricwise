@@ -17,8 +17,8 @@ export default function IndustryTabs() {
       <Tabs>
         <div>
           <TabList className="px-2 sm:px-20">
-            <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-3 items-center justify-center widthclass">
-              <Tab className="text-black bg-white rounded-[4px] py-4 flex flex-col justify-start items-start cursor-pointer shadow-lg bg-transparent border border-transparent hover:border-[#2E2E2E] focus:bg-[#2E2E2E] focus:text-white active:bg-[#2E2E2E] active:text-white font-20 inter-medium leading-4 w-full gap-6 px-7">
+            <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-2 items-center justify-center widthclass">
+              <Tab className="text-black bg-white rounded-[4px] py-4 flex flex-col justify-start items-start cursor-pointer shadow-[0px_4px_12px_0_rgb(0,0,0,0.04)] bg-transparent border border-transparent hover:border-[#2E2E2E] focus:bg-[#2E2E2E] focus:text-white active:bg-[#2E2E2E] active:text-white font-20 inter-medium leading-4 w-full gap-6 px-7">
                 <svg
                   width="40"
                   height="40"
@@ -66,7 +66,7 @@ export default function IndustryTabs() {
                 </svg>
                 Financial & Banking
               </Tab>
-              <Tab className="text-black bg-white rounded-[4px] py-4 flex flex-col justify-start items-start cursor-pointer shadow-lg bg-transparent border border-transparent hover:border-[#2E2E2E] focus:bg-[#2E2E2E] focus:text-white active:bg-[#2E2E2E] active:text-white font-20 inter-medium leading-4 w-full gap-6 px-7">
+              <Tab className="text-black bg-white rounded-[4px] py-4 flex flex-col justify-start items-start cursor-pointer shadow-[0px_4px_12px_0_rgb(0,0,0,0.04)] bg-transparent border border-transparent hover:border-[#2E2E2E] focus:bg-[#2E2E2E] focus:text-white active:bg-[#2E2E2E] active:text-white font-20 inter-medium leading-4 w-full gap-6 px-7">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   width="40"
@@ -93,7 +93,7 @@ export default function IndustryTabs() {
                 </svg>
                 Retail & Ecommerce
               </Tab>
-              <Tab className="text-black bg-white rounded-[4px] py-4 flex flex-col justify-start items-start cursor-pointer shadow-lg bg-transparent border border-transparent hover:border-[#2E2E2E] focus:bg-[#2E2E2E] focus:text-white active:bg-[#2E2E2E] active:text-white font-20 inter-medium leading-4 w-full gap-6 px-7">
+              <Tab className="text-black bg-white rounded-[4px] py-4 flex flex-col justify-start items-start cursor-pointer shadow-[0px_4px_12px_0_rgb(0,0,0,0.04)] bg-transparent border border-transparent hover:border-[#2E2E2E] focus:bg-[#2E2E2E] focus:text-white active:bg-[#2E2E2E] active:text-white font-20 inter-medium leading-4 w-full gap-6 px-7">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   width="40"
@@ -119,7 +119,7 @@ export default function IndustryTabs() {
                 </svg>
                 Healthcare
               </Tab>
-              <Tab className="text-black bg-white rounded-[4px] py-4 flex flex-col justify-start items-start cursor-pointer shadow-lg bg-transparent border border-transparent hover:border-[#2E2E2E] focus:bg-[#2E2E2E] focus:text-white active:bg-[#2E2E2E] active:text-white font-20 inter-medium leading-4 w-full gap-6 px-7">
+              <Tab className="text-black bg-white rounded-[4px] py-4 flex flex-col justify-start items-start cursor-pointer shadow-[0px_4px_12px_0_rgb(0,0,0,0.04)] bg-transparent border border-transparent hover:border-[#2E2E2E] focus:bg-[#2E2E2E] focus:text-white active:bg-[#2E2E2E] active:text-white font-20 inter-medium leading-4 w-full gap-6 px-7">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   width="40"
@@ -143,7 +143,7 @@ export default function IndustryTabs() {
                 Insurance
               </Tab>
 
-              <Tab className="text-black bg-white rounded-[4px] py-4 flex flex-col justify-start items-start cursor-pointer shadow-lg bg-transparent border border-transparent hover:border-[#2E2E2E] focus:bg-[#2E2E2E] focus:text-white active:bg-[#2E2E2E] active:text-white font-20 inter-medium leading-4 w-full gap-6 px-7">
+              <Tab className="text-black bg-white rounded-[4px] py-4 flex flex-col justify-start items-start cursor-pointer shadow-[0px_4px_12px_0_rgb(0,0,0,0.04)] bg-transparent border border-transparent hover:border-[#2E2E2E] focus:bg-[#2E2E2E] focus:text-white active:bg-[#2E2E2E] active:text-white font-20 inter-medium leading-4 w-full gap-6 px-7">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   width="40"
@@ -163,7 +163,7 @@ export default function IndustryTabs() {
                 Real Estate
               </Tab>
 
-              <Tab className="text-black bg-white rounded-[4px] py-4 flex flex-col justify-start items-start cursor-pointer shadow-lg bg-transparent border border-transparent hover:border-[#2E2E2E] focus:bg-[#2E2E2E] focus:text-white active:bg-[#2E2E2E] active:text-white font-20 inter-medium leading-4 w-full gap-6 px-7">
+              <Tab className="text-black bg-white rounded-[4px] py-4 flex flex-col justify-start items-start cursor-pointer shadow-[0px_4px_12px_0_rgb(0,0,0,0.04)] bg-transparent border border-transparent hover:border-[#2E2E2E] focus:bg-[#2E2E2E] focus:text-white active:bg-[#2E2E2E] active:text-white font-20 inter-medium leading-4 w-full gap-6 px-7">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   width="40"
@@ -190,7 +190,7 @@ export default function IndustryTabs() {
                 Education
               </Tab>
 
-              <Tab className="text-black bg-white rounded-[4px] py-4 flex flex-col justify-start items-start cursor-pointer shadow-lg bg-transparent border border-transparent hover:border-[#2E2E2E] focus:bg-[#2E2E2E] focus:text-white active:bg-[#2E2E2E] active:text-white font-20 inter-medium leading-4 w-full gap-6 px-7">
+              <Tab className="text-black bg-white rounded-[4px] py-4 flex flex-col justify-start items-start cursor-pointer shadow-[0px_4px_12px_0_rgb(0,0,0,0.04)] bg-transparent border border-transparent hover:border-[#2E2E2E] focus:bg-[#2E2E2E] focus:text-white active:bg-[#2E2E2E] active:text-white font-20 inter-medium leading-4 w-full gap-6 px-7">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   width="40"
@@ -221,7 +221,7 @@ export default function IndustryTabs() {
                 Social Media
               </Tab>
 
-              <Tab className="text-black bg-white rounded-[4px] py-4 flex flex-col justify-start items-start cursor-pointer shadow-lg bg-transparent border border-transparent hover:border-[#2E2E2E] focus:bg-[#2E2E2E] focus:text-white active:bg-[#2E2E2E] active:text-white font-20 inter-medium leading-4 w-full gap-6 px-7">
+              <Tab className="text-black bg-white rounded-[4px] py-4 flex flex-col justify-start items-start cursor-pointer shadow-[0px_4px_12px_0_rgb(0,0,0,0.04)] bg-transparent border border-transparent hover:border-[#2E2E2E] focus:bg-[#2E2E2E] focus:text-white active:bg-[#2E2E2E] active:text-white font-20 inter-medium leading-4 w-full gap-6 px-7">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   width="40"

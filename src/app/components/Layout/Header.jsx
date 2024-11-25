@@ -100,19 +100,16 @@ export default function Example() {
           </Link>
         </div>
 
-        <PopoverGroup className="hidden xl:flex xl:gap-x-8">
+        <PopoverGroup className="hidden xl:flex xl:gap-x-9">
           <Popover className="relative">
             <div
               className="flex items-center gap-x-1 font-16 font-medium leading-6 text-[#2E2E2E99]"
               onMouseEnter={() => setIsOpen(true)}
               onMouseLeave={() => setIsOpen(false)}
             >
-              <Popover.Button className="flex items-center gap-x-1">
+              <Popover.Button className="flex items-center gap-x-1 focus-visible:outline-none focus-visible:shadow-none">
                 Product
-                <ChevronDownIcon
-                  className="h-5 w-5 flex-none text-gray-400"
-                  aria-hidden="true"
-                />
+                
               </Popover.Button>
             </div>
 
@@ -126,20 +123,18 @@ export default function Example() {
               leaveTo="opacity-0 translate-y-1"
             >
               <Popover.Panel
-                className="absolute flex justify-around -left-48 top-full z-10 mt-9 w-screen max-w-5xl overflow-hidden rounded-lg bg-white shadow-lg ring-1 ring-gray-900/5"
+                className="absolute flex justify-around -left-48 top-full z-10 mt-9 w-screen max-w-5xl overflow-hidden rounded-lg bg-white shadow-lg ring-1 ring-gray-900/5 p-10 divide-x-2 gap-5 divide-[#00000066]"
                 onMouseEnter={() => setIsOpen(true)}
                 onMouseLeave={() => setIsOpen(false)}
               >
-                <div className="">
-                  <h1 className="p-10 font-32 font-bold leading-10">
-                    Products
-                  </h1>
+                <div>
+                  <h1 className="font-32 font-bold leading-10">Products</h1>
                 </div>
-                <div className="p-4 grid grid-cols-2">
+                <div className="grid grid-cols-2 gap-1 pl-5">
                   {Products.map((item) => (
                     <div
                       key={item.name}
-                      className="group relative flex items-center gap-x-6 rounded-lg text-sm leading-6 p-2 hover:bg-gray-50"
+                      className="group relative flex items-start gap-x-6 rounded-lg text-sm leading-6 hover:bg-gray-50"
                       onClick={() => setIsOpen(false)}
                     >
                       <div className="flex h-11 w-11 flex-none items-center justify-center rounded-lg">
@@ -169,12 +164,9 @@ export default function Example() {
               onMouseEnter={() => setIsOpen1(true)}
               onMouseLeave={() => setIsOpen1(false)}
             >
-              <Popover.Button className="flex items-center gap-x-1">
+              <Popover.Button className="flex items-center gap-x-1 focus-visible:outline-none focus-visible:shadow-none">
                 Solutions
-                <ChevronDownIcon
-                  className="h-5 w-5 flex-none text-gray-400"
-                  aria-hidden="true"
-                />
+                
               </Popover.Button>
             </div>
 
@@ -188,20 +180,18 @@ export default function Example() {
               leaveTo="opacity-0 translate-y-1"
             >
               <Popover.Panel
-                className="absolute flex justify-around -left-48 top-full z-10 mt-9 w-screen max-w-5xl overflow-hidden rounded-lg bg-white shadow-lg ring-1 ring-gray-900/5"
+                className="absolute flex justify-around -left-48 top-full z-10 mt-9 w-screen max-w-5xl overflow-hidden rounded-lg bg-white shadow-lg ring-1 ring-gray-900/5 p-10 divide-x-2 gap-5 divide-[#00000066]"
                 onMouseEnter={() => setIsOpen1(true)}
                 onMouseLeave={() => setIsOpen1(false)}
               >
                 <div className="">
-                  <h1 className="p-10 font-32 font-bold leading-10">
-                    Solutions
-                  </h1>
+                  <h1 className="font-32 font-bold leading-10">Solutions</h1>
                 </div>
-                <div className="p-4 grid grid-cols-2">
+                <div className="grid grid-cols-2 gap-1 pl-5">
                   {Solutions.map((item) => (
                     <div
                       key={item.name}
-                      className="group relative flex items-center gap-x-6 rounded-lg text-sm leading-6 p-2 hover:bg-gray-50"
+ className="group relative flex items-start gap-x-6 rounded-lg text-sm leading-6 hover:bg-gray-50"
                       onClick={() => setIsOpen1(false)}
                     >
                       <div className="flex h-11 w-11 flex-none items-center justify-center rounded-lg">
@@ -227,7 +217,7 @@ export default function Example() {
 
           <Popover className="relative">
             <div className="flex items-center gap-x-1 font-16 font-medium leading-6 text-[#2E2E2E99]">
-              <PopoverButton className="flex items-center gap-x-1">
+              <PopoverButton className="flex items-center gap-x-1 focus-visible:outline-none focus-visible:shadow-none">
                 <Link href="/Pricing">Pricing</Link>
               </PopoverButton>
             </div>
@@ -239,12 +229,9 @@ export default function Example() {
               onMouseEnter={() => setIsOpen3(true)}
               onMouseLeave={() => setIsOpen3(false)}
             >
-              <Popover.Button className="flex items-center gap-x-1">
+              <Popover.Button className="flex items-center gap-x-1 focus-visible:outline-none focus-visible:shadow-none">
                 Docs
-                <ChevronDownIcon
-                  className="h-5 w-5 flex-none text-gray-400"
-                  aria-hidden="true"
-                />
+                
               </Popover.Button>
             </div>
 
@@ -258,18 +245,18 @@ export default function Example() {
               leaveTo="opacity-0 translate-y-1"
             >
               <Popover.Panel
-                className="absolute flex justify-around -left-[580px] top-full z-10 mt-9 w-screen max-w-5xl overflow-hidden rounded-lg bg-white shadow-lg ring-1 ring-gray-900/5"
+                className="absolute flex justify-around -left-[400px] top-full z-10 mt-9 w-screen max-w-5xl overflow-hidden rounded-lg bg-white shadow-lg ring-1 ring-gray-900/5 p-10 divide-x-2 gap-5 divide-[#00000066]"
                 onMouseEnter={() => setIsOpen3(true)}
                 onMouseLeave={() => setIsOpen3(false)}
               >
                 <div className="">
-                  <h1 className="p-10 font-32 font-bold leading-10">Docs</h1>
+                  <h1 className="font-32 font-bold leading-10">Docs</h1>
                 </div>
-                <div className="p-4 grid grid-cols-2">
+                <div className="grid grid-cols-2 gap-1 pl-5">
                   {Docs.map((item) => (
                     <div
                       key={item.name}
-                      className="group relative flex items-center gap-x-6 rounded-lg text-sm leading-6 p-2 hover:bg-gray-50"
+                      className="group relative flex items-start gap-x-6 rounded-lg text-sm leading-6 hover:bg-gray-50"
                       onClick={() => setIsOpen3(false)}
                     >
                       <div className="flex h-11 w-11 flex-none items-center justify-center rounded-lg">
@@ -299,12 +286,9 @@ export default function Example() {
               onMouseEnter={() => setIsOpen4(true)}
               onMouseLeave={() => setIsOpen4(false)}
             >
-              <Popover.Button className="flex items-center gap-x-1">
+              <Popover.Button className="flex items-center gap-x-1 focus-visible:outline-none focus-visible:shadow-none">
                 Resources
-                <ChevronDownIcon
-                  className="h-5 w-5 flex-none text-gray-400"
-                  aria-hidden="true"
-                />
+                
               </Popover.Button>
             </div>
 
@@ -318,20 +302,18 @@ export default function Example() {
               leaveTo="opacity-0 translate-y-1"
             >
               <Popover.Panel
-                className="absolute flex justify-around -left-[650px] top-full z-10 mt-9 w-screen max-w-5xl overflow-hidden rounded-lg bg-white shadow-lg ring-1 ring-gray-900/5"
+                className="absolute flex justify-around -left-[500px] top-full z-10 mt-9 w-screen max-w-5xl overflow-hidden rounded-lg bg-white shadow-lg ring-1 ring-gray-900/5 p-10 divide-x-2 gap-5 divide-[#00000066]"
                 onMouseEnter={() => setIsOpen4(true)}
                 onMouseLeave={() => setIsOpen4(false)}
               >
                 <div className="">
-                  <h1 className="p-10 font-32 font-bold leading-10">
-                    Resources
-                  </h1>
+                  <h1 className="font-32 font-bold leading-10">Resources</h1>
                 </div>
-                <div className="p-4 grid grid-cols-2">
+                <div className="grid grid-cols-2 gap-1 pl-5">
                   {Recources.map((item) => (
                     <div
                       key={item.name}
-                      className="group relative flex items-center gap-x-6 rounded-lg text-sm leading-6 p-2 hover:bg-gray-50"
+                       className="group relative flex items-start gap-x-6 rounded-lg text-sm leading-6 hover:bg-gray-50"
                       onClick={() => setIsOpen4(false)}
                     >
                       <div className="flex h-11 w-11 flex-none items-center justify-center rounded-lg">
@@ -361,12 +343,9 @@ export default function Example() {
               onMouseEnter={() => setIsOpen5(true)}
               onMouseLeave={() => setIsOpen5(false)}
             >
-              <Popover.Button className="flex items-center gap-x-1">
+              <Popover.Button className="flex items-center gap-x-1 focus-visible:outline-none focus-visible:shadow-none">
                 Company
-                <ChevronDownIcon
-                  className="h-5 w-5 flex-none text-gray-400"
-                  aria-hidden="true"
-                />
+                
               </Popover.Button>
             </div>
 
@@ -380,18 +359,18 @@ export default function Example() {
               leaveTo="opacity-0 translate-y-1"
             >
               <Popover.Panel
-                className="absolute flex justify-around -left-[800px] top-full z-10 mt-9 w-screen max-w-5xl overflow-hidden rounded-lg bg-white shadow-lg ring-1 ring-gray-900/5"
+                className="absolute flex justify-around -left-[700px] top-full z-10 mt-9 w-screen max-w-5xl overflow-hidden rounded-lg bg-white shadow-lg ring-1 ring-gray-900/5 p-10 divide-x-2 gap-5 divide-[#00000066]"
                 onMouseEnter={() => setIsOpen5(true)}
                 onMouseLeave={() => setIsOpen5(false)}
               >
                 <div className="">
-                  <h1 className="p-10 font-32 font-bold leading-10">Company</h1>
+                  <h1 className="font-32 font-bold leading-10">Company</h1>
                 </div>
-                <div className="p-4 grid grid-cols-2">
+                <div className="grid grid-cols-2 gap-1 pl-5">
                   {Company.map((item) => (
                     <div
                       key={item.name}
-                      className="group relative flex items-center gap-x-6 rounded-lg text-sm leading-6 p-2 hover:bg-gray-50"
+                      className="group relative flex items-start gap-x-6 rounded-lg text-sm leading-6 hover:bg-gray-50"
                       onClick={() => setIsOpen5(false)}
                     >
                       <div className="flex h-11 w-11 flex-none items-center justify-center rounded-lg">

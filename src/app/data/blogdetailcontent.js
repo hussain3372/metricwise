@@ -316,7 +316,7 @@ export const blogDetailContent = [
           name2:
             "The intersection of ML monitoring and retraining is a critical consideration in the establishment of a comprehensive system. Key retraining factors to consider within an ML monitoring framework encompass:",
           description:
-            "Evaluate the optimal frequency and associated costs of model retraining, ensuring alignment with performance objectives. <br><br> Consider the method of retraining implementation, whether it involves real-time monitoring of metrics with a trigger-based retraining approach or the establishment of a predetermined retraining schedule. <br><br> Address issues related to the impediments of updating the model too frequently. This includes navigating complex approval processes, governance considerations, adherence to regulations, and the necessity for manual testing procedures",
+            "Evaluate the  optimal frequency and associated costs of model retraining, ensuring alignment with performance objectives. <br><br> Consider the method of retraining implementation, whether it involves real-time monitoring of metrics with a trigger-based retraining approach or the establishment of a predetermined retraining schedule. <br><br> Address issues related to the impediments of updating the model too frequently. This includes navigating complex approval processes, governance considerations, adherence to regulations, and the necessity for manual testing procedures.",
           sectionsImage: "/blog_3.svg",
         },
         {

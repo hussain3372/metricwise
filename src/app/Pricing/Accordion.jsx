@@ -31,7 +31,7 @@ const AccordionItem = ({ title, content }) => {
       >
         <div className="flex justify-between items-center">
           <span
-            className={`text-[#042440] font-20 ${
+            className={`text-[#2e2e2e] font-20 ${
               isOpen ? "font-bold" : "font-normal"
             }`}
           >

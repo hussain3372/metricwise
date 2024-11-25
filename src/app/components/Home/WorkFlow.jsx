@@ -14,21 +14,22 @@ const WorkFlow = () => {
             {`fits your team's workflow.`}
           </h1>
         </div>
-        <div className="grid grid-cols-1 sm:grid-cols-2 gap-11 mt-9">
-          <div
-            className="bg-[#FDFBFF] px-7 py-4 rounded-lg"
-            style={{ boxShadow: "0 3px 10px rgba(0, 0, 0, 0.1)" }}
-          >
-            <h1 className="font-24 text-[#161616] font-medium leading-7">
-              Metricwise Platform
-            </h1>
-            <Image
-              src="/work1.svg"
-              width={380}
-              height={252}
-              alt="work flow image"
-              className="w-full mt-8"
-            />
+        <div className="grid grid-cols-1 sm:grid-cols-2 gap-11 mt-8">
+          <div  className="rounded-2xl p-2 bg-white" style={{ boxShadow: "0 3px 10px rgba(0, 0, 0, 0.1)" }}>
+            <div
+              className="bg-[#FDFBFF] pt-3 pb-4 px-7 rounded-2xl"
+            >
+              <h1 className="font-24 text-[#161616] font-medium leading-7">
+                Metricwise Platform
+              </h1>
+              <Image
+                src="/work1.svg"
+                width={380}
+                height={252}
+                alt="work flow image"
+                className="w-full mt-8"
+              />
+            </div>
           </div>
           <div
             className="bg-[#FDFBFF] px-7 py-4 rounded-lg"
@@ -58,8 +59,8 @@ const WorkFlow = () => {
                 Client VPC
               </h1>
               <p className="mt-2 font-12 text-[#00000099] font-normal leading-4">
-                {` For On-Prem deployment, Metricwise can be installed in the <br />
-                customer's chosen cloud or VPC.`}
+                 For On-Prem deployment, Metricwise can be installed in the <br />
+                {` customer's chosen cloud or VPC.`}
               </p>
             </div>
             <div>

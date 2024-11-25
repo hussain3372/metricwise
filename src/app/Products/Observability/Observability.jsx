@@ -10,14 +10,14 @@ const Observability = () => {
     <div>
       <div>
         <div className=" bg-[url('/hero-gradient.png')] bg-no-repeat bg-cover">
-        <div className="px-10 md:px-20 xl:px-[120px] py-10 lg:py-[180px] mt-5 bg-center widthclass">
+          <div className="px-10 md:px-20 xl:px-[120px] py-10 lg:py-[180px] mt-5 bg-center widthclass">
             <div className="grid lg:grid-cols-2 items-center">
               <div>
                 <h1 className="font-44 font-semibold leading-[60px] purple-color">
-                Observability Hub
+                  Observability Hub
                 </h1>
                 <p className="font-20 font-normal leading-7 mt-3 mb-9 opacity-60">
-                {`Empower your AI/ML workflows with Metricwise's Observability Hub, a comprehensive suite designed to bring transparency, reliability, and accountability to every stage of your AI models. Our platform offers deep insights into model behavior, detection of biases and drifts, and benchmarks performance against industry standards. With customizable features and intuitive tools, Metricwise’s Observability Hub helps organizations foster trust and achieve optimal results.`}
+                  {`Empower your AI/ML workflows with Metricwise's Observability Hub, a comprehensive suite designed to bring transparency, reliability, and accountability to every stage of your AI models. Our platform offers deep insights into model behavior, detection of biases and drifts, and benchmarks performance against industry standards. With customizable features and intuitive tools, Metricwise’s Observability Hub helps organizations foster trust and achieve optimal results.`}
                 </p>
                 <Link href="/company/contact_us" className="hero-btn">
                   Get started for free
@@ -35,7 +35,7 @@ const Observability = () => {
           </div>
         </div>
 
-        {/* cards */} 
+        {/* cards */}
 
         <div className="widthclass">
           <div>
@@ -106,10 +106,15 @@ const Observability = () => {
         <div className="widthclass ">
           <div className="flex flex-col justify-center items-center text-center p-10 md:p-16 pt-20 pb-20">
             <h1 className="font-36 font-inter font-bold leading-10">
-            Observability Hub
+              Observability Hub
             </h1>
             <p className="font-16 font-normal font-inter leading-5 mt-5 mb-10 opacity-60">
-            With Metricwise Observability Hub, organizations can ensure that their AI models are transparent, reliable, and aligned with industry <br /> standards. By providing actionable insights, bias detection, and explainability tools, Metricwise helps build trust in AI systems, <br /> empowering enterprises to achieve fair, accountable, and high-performing AI solutions.
+              With Metricwise Observability Hub, organizations can ensure that
+              their AI models are transparent, reliable, and aligned with
+              industry <br /> standards. By providing actionable insights, bias
+              detection, and explainability tools, Metricwise helps build trust
+              in AI systems, <br /> empowering enterprises to achieve fair,
+              accountable, and high-performing AI solutions.
             </p>
             <Link href="/Demo" className="hero-btn flex">
               Book a Demo

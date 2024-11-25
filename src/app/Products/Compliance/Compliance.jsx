@@ -10,19 +10,17 @@ const Compliance = () => {
     <div>
       <div>
         <div className="bg-[url('/hero-gradient.png')] bg-no-repeat bg-cover">
-          <div className="pt-6 px-6 sm:px-[46px] pb-10 sm:pb-[88px] mt-5 bg-center widthclass">
+          <div className="pt-6 px-6 sm:pl-[120px] pr-[42px] pb-10 sm:pb-[88px] mt-5 bg-center widthclass">
             {/* Heading Section */}
             <div className="flex justify-center items-center flex-col">
               <h1 className="font-44 font-bold leading-8 sm:leading-10 md:leading-[60px] text-[#000000] text-center">
-                Navigate the Future of
+                Navigate the Future of&nbsp;
                 <span className="block sm:inline font-semibold text-[#7736B7]">
                   AI Compliance
                 </span>
                 <br className="hidden sm:block" />
-                with
-                <span className="font-semibold text-[#7736B7]">
-                  Confidence
-                </span>
+                with&nbsp;
+                <span className="font-semibold text-[#7736B7]">Confidence</span>
               </h1>
             </div>
 
@@ -30,13 +28,13 @@ const Compliance = () => {
             <div className="grid lg:grid-cols-2 gap-8 items-center mt-8 sm:mt-[77px]">
               {/* Text Content */}
               <div>
-                <p className="font-16 sm:font-20 font-normal leading-6 sm:leading-7 mt-3 mb-8 sm:mb-9 text-opacity-70 text-[#000000]">
-                 {` In today's fast-paced AI landscape, businesses face evolving
-                  regulations and heightened compliance risks. Non-compliance
-                  can lead to legal issues, financial penalties, and
-                  reputational damage. Metricwise specializes in guiding
-                  organizations through these complexities with confidence and
-                  clarity.`}
+                <p className="font-20 font-normal leading-6 sm:leading-7 mt-3 mb-8 sm:mb-9 opacity-60 text-[#000000]">
+                  {` In today's `} fast-paced AI landscape, businesses face <br className="hidden md:block"/> evolving
+                  regulations and heightened compliance risks. <br className="hidden md:block"/> Non-compliance
+                  can lead to legal issues, financial <br className="hidden md:block"/> penalties, and
+                  reputational damage. Metricwise <br className="hidden md:block"/> specializes in guiding
+                  organizations through these <br className="hidden md:block"/> complexities with confidence and
+                  clarity.
                 </p>
                 <Link href="/company/contact_us" className="hero-btn">
                   Get started for free
@@ -157,7 +155,7 @@ const Compliance = () => {
             </h1>
 
             <p className="font-16 font-normal leading-5 mt-5 mb-10 opacity-60">
-             {` The world of AI is complex and filled with potential pitfalls.
+              {` The world of AI is complex and filled with potential pitfalls.
               Non-compliance is not an option—it can jeopardize your business
               and undermine consumer trust. Metricwise is committed to staying
               ahead of regulatory changes and ensuring that your organization is
