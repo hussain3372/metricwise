@@ -1,34 +1,38 @@
 const CardData = [
     {
-      name: "Monitoring Hub",
-      para: "Optimize your AI/ML models effortlessly with our Monitoring Hub. Our user-friendly platform allows enterprises to easily monitor model performance and data integrity in real-time, enabling quick optimization and accurate predictions. With customizable dashboards and intuitive interfaces, implementation is seamless, ensuring rapid integration into existing workflows.",
-      list: "Data Integrity & Completeness",
-      list1: "Model Performance",
-      list2: "Feature Performance",
-      list3: "Anomaly Detection",
-      logo: "/listimg.png",
-      img: "/img1.png"
+      span: "Monitoring Hub,",
+      name: "Optimize AI models with real-time monitoring.",
+      para: "Effortlessly optimize your AI/ML models with our Monitoring Hub. This user-friendly platform enables real-time monitoring of model performance and data integrity, ensuring quick optimization and accurate predictions. Customizable dashboards and intuitive interfaces allow for seamless integration into existing workflows.",
+      list: "Data Integrity Monitoring",
+      list1: "Feature Monitoring",
+      list2: "Performance Metrics Tracking",
+      list3: "Real-Time Anomaly Detection",
+      logo: "/listimg.svg",
+      img: "/img1.svg"
     },
     {
-      name: "Observability Hub",
-      para: "Enhance transparency and reliability in your AI/ML models with our Observability Hub. Gain deep insights into model inference, trace biases and drifts, and benchmark performance against industry standards. Our platform offers customizable features and intuitive tools, empowering enterprises to build trust and drive better outcomes.",
+      span: "Observability Hub,",
+      name: "Boost AI transparency and reliability.",
+      para: "Enhance your AI/ML workflows with Metricwise’s Observability Hub, offering transparency, reliability, and accountability at every stage. Gain insights into model behavior, detect biases and drifts, and benchmark against industry standards. Customizable features and intuitive tools help build trust and drive optimal results.",
       list: "Model Inference",
       list1: "Bias and Drift Tracing",
-      list2: "Benchmarking and Baselining",
-      list3: "LLM Assessment",
-      logo: "/listimg1.png",
-      img: "/img2.png"
+      list2: "Benchmarking",
+      list3: "Baselining",
+      list4: "LLM Assessment & Tracing",
+      logo: "/listimg.svg",
+      img: "/img2.svg"
     },
     {
-      name: "Governance Hub",
-      para: "Ensure compliance and accountability in your AI/ML initiatives with our Governance Hub. Our platform provides user-friendly tools for explainability, security, and compliance monitoring, with customizable settings and pre-configured templates for easy implementation. Empower your enterprise to mitigate risks and build confidence in your AI-driven decisions",
-      list: "Explainability",
-      list1: "Security and Privacy",
-      list2: "Compliance Monitoring",
-      list3: "Audit Control Assessment",
-      list4: "Risk Assessment",
-      logo: "/listimg.png",
-      img: "/img3.png"
+      span: "Governance Hub,",
+      name: "Achieve compliant, ethical AI.",
+      para: "Metricwise’s Governance Hub ensures compliance, accountability, and ethical AI practices across the AI/ML lifecycle. With tools for transparency, security, and regulatory alignment, it helps mitigate risks, uphold ethical standards, and boost confidence in AI decisions. The platform offers user-friendly interfaces, customizable settings, and pre-configured templates for fast, effective governance.",
+      list: "Model Fariness & Explainability",
+      list1: "Data Security & Privacy",
+      list2: "Adversarial Monitoring",
+      list3: "Compliance Monitoring",
+      list4: "Control & Risk Monitoring",
+      logo: "/listimg.svg",
+      img: "/img3.svg"
     },
   ];
                                                     

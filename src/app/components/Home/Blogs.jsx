@@ -5,37 +5,51 @@ import React from "react";
 
 const Blogs = () => {
   return (
-    <div className="bg-[url('/platforms-bg.png')] bg-cover bg-center bg-no-repeat">
-      <div className=" widthclass p-5 lg:px-20">
-        <div className="sm:flex justify-between items-center px-5 xl:px-24 2xl:px-44 space-y-5 sm:space-y-0">
-          <h1 className="text-[20px] sm:text-[30px] md:text-[40px] font-semibold leadin-8 md:leading-[44px] text-[#222222]">
-            Go through our latest <br /> blogs to learn more
+    <div className="widthclass">
+      <div className="p-5 lg:px-[124px] 2xl:py-11">
+        <div className="flex flex-col sm:flex-row justify-between items-start sm:items-center">
+          <h1 className="text-[20px] sm:text-[30px] md:text-[40px] font-medium leading-8 md:leading-[44px] text-[#222222]">
+            Go through our latest <br className="hidden sm:block"/> blogs to learn more
           </h1>
           <Link href="/Demo" className="primary-btn" type="button">
-            <Image src="/demo-img.svg" width={20} height={20} alt="demo-img" />
             Book a Demo
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="20"
+              height="20"
+              viewBox="0 0 20 20"
+              fill="none"
+            >
+              <path
+                d="M5.50823 14.8452L14.4926 5.8608M14.4926 5.8608V14.3461M14.4926 5.8608H6.00736"
+                stroke="white"
+                stroke-width="1.25"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+            </svg>
           </Link>
         </div>
-        <div className="flex flex-col sm:flex-row justify-center items-center gap-5 md:gap-8">
+        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 xl:grid-cols-4 gap-5 sm:mt-[70px]">
           {HomeBolgs.map((item, index) => (
             <div
               key={index}
-              className="flex flex-col mt-6 text-gray-700 bg-white border border-[#0000001F] rounded-xl w-72"
+              className="flex flex-col mt-6 text-gray-700 bg-white border border-[#0000001F] rounded-xl w-full px-3 py-6"
             >
-              <div className="relative mb-5 mx-4 mt-6 text-white">
+              <div className="relative text-white mb-4">
                 <Image
                   src={item.img}
                   alt="card-image"
                   width={244}
                   height={176}
-                  className=""
+                  className="w-full"
                 />
               </div>
               <div className="font-12 font-normal leading-3 border border-[#00000033] rounded-full p-2 ml-4 flex justify-center items-center w-[116px]">
                 {item.date}
               </div>
-              <div className="p-5">
-                <p className="block font-semibold text-sm leading-relaxed text-inherit">
+              <div className="p-4 flex-1">
+                <p className="block font-semibold font-16 leading-5">
                   {item.title}
                 </p>
               </div>

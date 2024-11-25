@@ -7,174 +7,337 @@ import Tilt from "react-parallax-tilt";
 import { useState } from "react";
 const About = () => {
   const [scale, setScale] = useState(1.15);
+
+  const handleEmailClick = (email) => {
+    window.location.href = `mailto:${email}`;
+  };
   return (
     <div>
-      <div className="aboutbg relative">
+      <div className="bg-gradient-to-l to-[#CFC2FF99] from-[#FFF0BC99]">
         <div className="widthclass ">
-          <div className="flex flex-col justify-center items-center m-auto p-10 md:pt-16 pb-24 black">
-            <label
-              htmlFor=""
-              className="font-24 font-inter font-normal leading-8 opacity-50"
-            >
-              About Us
-            </label>
-            <h1 className="font-36 font-inter font-bold leading-40 mt-8 text-center">
-              We are a leading AI technology company <br /> dedicated to
-              transforming businesses through <br /> innovative and responsible
-              AI solutions.
-            </h1>
-          </div>
-        </div>
-      </div>
-
-      <div className="border-b border-[#042440] border-opacity-[12%] mt-5 md:mt-10">
-        <div className="grid md:grid-cols-2 items-center widthclass p-5 md:p-20">
-          <div>
-            <h1 className="font-36 font-bold  font-inter leading-40 textcolor">
-              Our Story
-            </h1>
-            <p className="font-20 font-inter font-regular text-[#616659] leading-6 mt-8">
-              Observing the remarkable surge in AI applications, we found
-              ourselves deeply immersed in the tech landscape and recognized an
-              urgent need for enhanced transparency and trust within the AI
-              ecosystem. The prevalent issues of mistrust, lack of transparency,
-              and unforeseen challenges in explainability, fairness, and bias
-              within current AI and machine learning applications fueled our
-              drive to embark on and entrepreneurial venture. We founded
-              Metricwise with the goal of introducing a new era of
-              accountability, demystifying the decision- making processes of AI
-              models, and ensuring fairness, transparency, and reliability
-              across all aspects of their functionality. Essentially, our
-              journey was initiated not only to address the challenges within AI
-              but to redefineits trajectory towards a future characterized by
-              ethical soundness and comprehensibility.
-            </p>
-          </div>
-          <Fade direction="right">
-            <div className="flex justify-center mt-10 md:mt-0">
-              <Image width={436} height={474} src="/our.png" alt="" />
+          <div className="pt-[50px] sm:pt-[123px] pl-[27px] sm:pl-[95px] pr-[27px] pb-[39px]">
+            <div>
+              <h1 className="font-36 font-bold leading-10 mb-6 bg-gradient-to-r from-[#6542E4] from-20% via-[#EFCD56] to-[#EFCD56] opacity-60 inline-block text-transparent bg-clip-text">
+                <span className="textcolor">Our Mission:</span> Ensuring
+                Responsible <br className="hidden sm:block"/> AI Through Continuous Oversight
+              </h1>
             </div>
-          </Fade>
-        </div>
-      </div>
-
-      <div className=" border-b border-[#042440] border-opacity-[12%]">
-        <div className="p-5 md:p-20 widthclass">
-          <h1 className="font-36 font-bold  font-inter leading-40 textcolor">
-            Our Vision
-          </h1>
-          <Fade direction="bottom">
-            <div className="p-6 md:p-8 grid sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 2xl:grid-cols-5 gap-y-10 items-center justify-center">
-              <Tilt scale={scale} transitionSpeed={2500}>
-                <div className="flex flex-col justify-center items-center text-center p-8 h-[264px] w-[220px] rounded-lg border border-[#00000033] bg-[#0424401F] shadow-lg shadow-[#0000001F]">
-                  <Image width={80} height={80} src="/v1.svg" alt="" />
-                  <h1 className="font-24 font-inter font-normal opacity-50">
-                    Innovative Excellence
-                  </h1>
-                </div>
-              </Tilt>
-              <Tilt scale={scale} transitionSpeed={2500}>
-                <div className="flex flex-col justify-center items-center text-center p-8 h-[264px] w-[220px] rounded-lg border border-[#00000033] bg-[#0424401F] shadow-lg shadow-[#0000001F]">
-                  <Image width={80} height={80} src="/v2.svg" alt="" />
-                  <h1 className="font-24 font-inter font-normal opacity-50">
-                    Transparency First
-                  </h1>
-                </div>
-              </Tilt>
-              <Tilt scale={scale} transitionSpeed={2500}>
-                <div className="flex flex-col justify-center items-center text-center p-8 h-[264px] w-[220px] rounded-lg border border-[#00000033] bg-[#0424401F] shadow-lg shadow-[#0000001F]">
-                  <Image width={80} height={80} src="/v3.svg" alt="" />
-                  <h1 className="font-24 font-inter font-normal opacity-50">
-                    Ethical Governance
-                  </h1>
-                </div>
-              </Tilt>
-              <Tilt scale={scale} transitionSpeed={2500}>
-                <div className="flex flex-col justify-center items-center text-center p-8 h-[264px] w-[220px] rounded-lg border border-[#00000033] bg-[#0424401F] shadow-lg shadow-[#0000001F]">
-                  <Image width={80} height={80} src="/v5.svg" alt="" />
-                  <h1 className="font-24 font-inter font-normal opacity-50">
-                    Collaborative Synergy
-                  </h1>
-                </div>
-              </Tilt>
-              <Tilt scale={scale} transitionSpeed={2500}>
-                <div className="flex flex-col justify-center items-center text-center p-8 h-[264px] w-[220px] rounded-lg border border-[#00000033] bg-[#0424401F] shadow-lg shadow-[#0000001F]">
-                  <Image width={80} height={80} src="/v4.svg" alt="" />
-                  <h1 className="font-24 font-inter font-normal opacity-50">
-                    Sustainability and Social Responsibility
-                  </h1>
-                </div>
-              </Tilt>
+            <div className="flex flex-col justify-end items-end">
+              <div className="flex flex-col justify-end items-start gap-6">
+                <h1 className="font-36 font-bold leading-10 textcolor opacity-80">
+                  Our Story
+                </h1>
+                <p className="font-22 font-normal leading-6 textcolor opacity-80">
+                  As AI adoption accelerates, we saw a critical need for greater
+                  <br className="hidden md:block"/> transparency and trust in the AI ecosystem. Challenges
+                  around <br className="hidden md:block"/> explainability, fairness, and bias drove us to
+                  launch Metricwise, <br className="hidden md:block"/> with a clear goal: to bring
+                  accountability, clarity and demystifying <br className="hidden md:block"/> the
+                  decision-making processes for AI solutions. We are <br className="hidden md:block"/>
+                  committed to ensuring that AI systems are transparent,
+                  reliable, <br className="hidden md:block"/> and ethical, setting a new standard for the
+                  future of AI.
+                </p>
+              </div>
             </div>
-          </Fade>
+          </div>
         </div>
       </div>
 
       <div className="">
-        <div className="widthclass">
-          <div className="flex flex-col justif-center items-center m-auto p-5 md:p-20">
-            <h1 className="font-36 font-inter font-bold leading-10 mb-10">
-              Our Team
+        <div className="grid md:grid-cols-2 widthclass pl-[27px] sm:pl-[80px] pt-[58px] pb-[98px] pr-[20px] gap-[76px]">
+          <div>
+            <h1 className="font-36 font-bold   leading-40 textcolor">
+              Our Values
             </h1>
-            <p className="font-24 font-inter font-normal leading-8 mb-10 text-center opacity-60">
-              Embark on a journey with our dynamic tech team, where innovation
-              and collaboration converge to shape the future. At Metricwise we
-              are more than just colleagues we are a family of diverse minds
-              united by a shared passion for pushing boundaries to make AI
-              responsible and accessible to all in a safe and secure way.
-              Together, we redefine possibilities and make an impact that
-              resonates across industries. Welcome to a place where your
-              expertise is valued, your ideas are heard, and your growth is our
-              priority.
+            <p className="font-20 font-regular textcolor leading-[26px] mt-6">
+              {`We believe in AI's power to transform lives but recognize the need
+              for accountability and trust. Our company is dedicated to building
+              ethical, responsible AI solutions that empower our customers to
+              create transparent and unbiased solutions. Our commitment is
+              grounded in these guiding principles:`}
             </p>
-            <div className="grid sm:grid-cols-2 lg:grid-cols-4 items-center gap-20 mt-10">
-              <Fade direction="left">
-                <div className="flex flex-col gap-y-2 text-center">
-                  <Image width={417} height={344} src="/t1.png" alt="" />
-                  <h5 className="font-20 font-inter font-semibold leadin-6">
-                    Varun Sharma
-                  </h5>
-                  <span className="font-16 font-inter font-normal">CEO</span>
-                  <span className="font-16 font-inter font-normal">
-                    McKinsey, EY, Coherent
-                  </span>
-                </div>
-                <div className="flex flex-col gap-y-2 text-center">
-                  <Image width={417} height={344} src="/t2.png" alt="" />
-                  <h5 className="font-20 font-inter font-semibold leadin-6">
-                    Varun Sharma
-                  </h5>
-                  <span className="font-16 font-inter font-normal">CEO</span>
-                  <span className="font-16 font-inter font-normal">
-                    McKinsey, EY, Coherent
-                  </span>
-                </div>
-              </Fade>
-              <Fade direction="right">
-                <div className="flex flex-col gap-y-2 text-center">
-                  <Image width={417} height={344} src="/t3.png" alt="" />
-                  <h5 className="font-20 font-inter font-semibold leadin-6">
-                    Varun Sharma
-                  </h5>
-                  <span className="font-16 font-inter font-normal">CEO</span>
-                  <span className="font-16 font-inter font-normal">
-                    McKinsey, EY, Coherent
-                  </span>
-                </div>
-                <div className="flex flex-col gap-y-2 text-center">
-                  <Image width={417} height={344} src="/t4.png" alt="" />
-                  <h5 className="font-20 font-inter font-semibold leadin-6">
-                    Varun Sharma
-                  </h5>
-                  <span className="font-16 font-inter font-normal">CEO</span>
-                  <span className="font-16 font-inter font-normal">
-                    McKinsey, EY, Coherent
-                  </span>
-                </div>
-              </Fade>
+          </div>
+          <div className="flex flex-col items-start justify-start gap-[38px]">
+            <div className="flex items-start justify-start gap-5">
+              <Image
+                src="/our-value1.svg"
+                width={40}
+                height={40}
+                alt="our value image"
+              />
+              <div className="flex flex-col justify-start items-start gap-1">
+                <h1 className="font-26 font-bold leading-10 textcolor">
+                  Social Responsibility
+                </h1>
+                <p className="font-22 font-normal textcolor textcolor">
+                  We are committed to developing AI that contributes to the
+                  greater good, prioritizing solutions that address societal
+                  challenges and promote equity.
+                </p>
+              </div>
+            </div>
+            <div className="flex items-start justify-start gap-5">
+              <Image
+                src="/our-value3.svg"
+                width={40}
+                height={40}
+                alt="our value image"
+              />
+              <div className="flex flex-col justify-start items-start gap-1">
+                <h1 className="font-26 font-bold leading-10 textcolor">
+                  Ethical Governance
+                </h1>
+                <p className="font-22 font-normal textcolor textcolor">
+                  We guide organizations in embedding ethical standards into
+                  their AI systems, ensuring governance that upholds fairness
+                  and integrity at every level.
+                </p>
+              </div>
+            </div>
+            <div className="flex items-start justify-start gap-5">
+              <Image
+                src="/our-value3.svg"
+                width={40}
+                height={40}
+                alt="our value image"
+              />
+              <div className="flex flex-col justify-start items-start gap-1">
+                <h1 className="font-26 font-bold leading-10 textcolor">
+                  Transparent and Accountable
+                </h1>
+                <p className="font-22 font-normal textcolor textcolor">
+                 {` We provide solutions that help in understanding AI's
+                  decision-making process, ensuring transparency and
+                  accountability at every step.`}
+                </p>
+              </div>
             </div>
           </div>
         </div>
+      </div>
+
+      <div className="sm:mt-[77px] px-[51px]">
+        <div className="flex flex-col justify-center items-center gap-14">
+          <h1 className="text-3xl font-bold leading-tight text-primary">
+            Get to Know The Team
+          </h1>
+          <div className="grid sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-x-8 gap-y-12">
+            {/* Card 1 */}
+            <div className="border border-[#EAECF0]">
+              <Image
+                src="/team1.svg"
+                width={310}
+                height={210}
+                alt="team1 image"
+                className="w-full"
+              />
+              <div className="flex flex-col justify-start items-start gap-2 p-4">
+                <h2 className="text-lg font-semibold leading-6 text-[#282828]">
+                  Varun Sharma
+                </h2>
+                <p className="text-sm font-normal text-[#3E3E59]">
+                  Founder, CEO
+                </p>
+                <span className="text-sm font-normal text-[#5F6980]">
+                  McKinsey, EY, Coherent
+                </span>
+              </div>
+            </div>
+            {/* Card 2 */}
+            <div className="border border-[#EAECF0]">
+              <Image
+                src="/team2.svg"
+                width={310}
+                height={210}
+                alt="team1 image"
+                className="w-full"
+              />
+              <div className="flex flex-col justify-start items-start gap-2 p-4">
+                <h2 className="text-lg font-semibold leading-6 text-[#282828]">
+                  Kaibalya Bhuyan
+                </h2>
+                <p className="text-sm font-normal text-[#3E3E59]">
+                  Founder, CTO
+                </p>
+                <span className="text-sm font-normal text-[#5F6980]">
+                  ZCLAP
+                </span>
+              </div>
+            </div>
+            {/* Card 3 */}
+            <div className="border border-[#EAECF0]">
+              <Image
+                src="/team3.svg"
+                width={310}
+                height={210}
+                alt="team1 image"
+                className="w-full"
+              />
+              <div className="flex flex-col justify-start items-start gap-2 p-4">
+                <h2 className="text-lg font-semibold leading-6 text-[#282828]">
+                  Vivek Gulati
+                </h2>
+                <p className="text-sm font-normal text-[#3E3E59]">
+                  Founder, COO
+                </p>
+                <span className="text-sm font-normal text-[#5F6980]">
+                  Morgan Stanley, EY
+                </span>
+              </div>
+            </div>
+            {/* Card 4 */}
+            <div className="border border-[#EAECF0]">
+              <Image
+                src="/team4.svg"
+                width={310}
+                height={210}
+                alt="team1 image"
+                className="w-full"
+              />
+              <div className="flex flex-col justify-start items-start gap-2 p-4">
+                <h2 className="text-lg font-semibold leading-6 text-[#282828]">
+                  Rahul Bhalla
+                </h2>
+                <p className="text-sm font-normal text-[#3E3E59]">
+                  Founder, CFO
+                </p>
+                <span className="text-sm font-normal text-[#5F6980]">
+                  ICW Group, Moodys, Unisys
+                </span>
+              </div>
+            </div>
+            {/* Card 5 */}
+            <div className="border border-[#EAECF0]">
+              <Image
+                src="/team5.svg"
+                width={310}
+                height={210}
+                alt="team1 image"
+                className="w-full"
+              />
+              <div className="flex flex-col justify-start items-start gap-2 p-4">
+                <h2 className="text-lg font-semibold leading-6 text-[#282828]">
+                  Siddharth Singh
+                </h2>
+                <p className="text-sm font-normal text-[#3E3E59]">
+                  Founder, CMO
+                </p>
+                <span className="text-sm font-normal text-[#5F6980]">
+                  Discover, Amazon
+                </span>
+              </div>
+            </div>
+            {/* Card 6 */}
+            <div className="border border-[#EAECF0]">
+              <Image
+                src="/team6.svg"
+                width={310}
+                height={210}
+                alt="team1 image"
+                className="w-full"
+              />
+              <div className="flex flex-col justify-start items-start gap-2 p-4">
+                <h2 className="text-lg font-semibold leading-6 text-[#282828]">
+                  TBD
+                </h2>
+                <p className="text-sm font-normal text-[#3E3E59]">
+                  Software Engineer
+                </p>
+                <span className="text-sm font-normal text-[#5F6980]">TBD</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div className="flex flex-col justify-center items-center sm:mt-[127px] mb-[91px] mx-10 xl:mx-[132px] gap-[51px]">
+        <h1 className="font-36 font-bold leading-10 textcolor">
+          Get in Touch
+        </h1>
+        <div>
+            <div className="grid sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
+              <div
+                onClick={() => handleEmailClick("sales@metricwise.ai")}
+                className="cursor-pointer grid grid-cols-2 bg-[#FFFFFF] p-5 rounded-lg shadow-sm"
+              >
+                <div className="flex flex-col font-20  font-semibold textcolor leading-6">
+                  Sales
+                  <span className="font-12 textcolor opacity-60 font-normal leading-4 mt-2">
+                    sales@metricwise.ai
+                  </span>
+                </div>
+                <div className="flex justify-end items-center">
+                  <Image
+                    width={44}
+                    height={44}
+                    src="/contact1.svg"
+                    alt="Contact Icon"
+                  />
+                </div>
+              </div>
+
+              <div
+                onClick={() => handleEmailClick("support@metricwise.ai")}
+                className="cursor-pointer grid grid-cols-2 bg-[#FFFFFF] p-5 rounded-lg shadow-sm"
+              >
+                <div className="flex flex-col font-20  font-semibold textcolor leading-6">
+                  Support
+                  <span className="font-12 textcolor opacity-60 font-normal leading-4 mt-2">
+                    support@metricwise.ai
+                  </span>
+                </div>
+                <div className="flex justify-end items-center">
+                  <Image
+                    width={44}
+                    height={44}
+                    src="/contact2.svg"
+                    alt="Support Icon"
+                  />
+                </div>
+              </div>
+
+              <div
+                onClick={() => handleEmailClick("careers@metricwise.ai")}
+                className="cursor-pointer grid grid-cols-2 bg-[#FFFFFF] p-5 rounded-lg shadow-sm"
+              >
+                <div className="flex flex-col font-20  font-semibold textcolor leading-6">
+                  Careers
+                  <span className="font-12 textcolor opacity-60 font-normal leading-4 mt-2">
+                    careers@metricwise.ai
+                  </span>
+                </div>
+                <div className="flex justify-end items-center">
+                  <Image
+                    width={44}
+                    height={44}
+                    src="/contact3.svg"
+                    alt="Careers Icon"
+                  />
+                </div>
+              </div>
+
+              <div
+                onClick={() => handleEmailClick("info@metricwise.ai")}
+                className="cursor-pointer grid grid-cols-2 bg-[#FFFFFF] p-5 rounded-lg shadow-sm"
+              >
+                <div className="flex flex-col font-20  font-semibold textcolor leading-6">
+                  General
+                  <span className="font-12 textcolor opacity-60 font-normal leading-4 mt-2">
+                    info@metricwise.ai
+                  </span>
+                </div>
+                <div className="flex justify-end items-center">
+                  <Image
+                    width={44}
+                    height={44}
+                    src="/contact4.svg"
+                    alt="General Icon"
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
       </div>
     </div>
   );

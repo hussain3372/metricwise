@@ -3,7 +3,6 @@
 import Image from "next/image";
 import { useEffect } from "react";
 import React from "react";
-import { Fade } from "react-awesome-reveal";
 import "intl-tel-input/build/css/intlTelInput.css";
 import intlTelInput from "intl-tel-input";
 
@@ -31,11 +30,11 @@ const Contact = () => {
 
   return (
     <div>
-      <div className="bg-[url('/wavebg.png')] bg-cover bg-center bg-no-repeat">
+      <div className="">
         <div className="widthclass">
           <div className="grid lg:grid-cols-2 items-center p-5 pt-20 md:py-10 md:px-20 gap-20 2xl:gap-40">
             <div>
-              <div className="text-center sm:text-start">
+              <div className="text-start">
                 <label
                   htmlFor=""
                   className="font-64 font-bold leading-10 md:leading-[80px] text-[#2E2E2E]"
@@ -48,7 +47,7 @@ const Contact = () => {
                   Platform If you fall into any of the following categories:
                 </p>
                 <div className="mt-5 flex items-center flex-wrap gap-3">
-                  <div className="bg-white py-1 px-2 rounded-sm shadow-xl flex justify-center items-center gap-2">
+                  <div className="bg-white py-1 px-2 rounded-sm flex justify-center items-center gap-2 font-16 font-medium leading-5 text-[#2E2E2E]">
                     <Image
                       src="/search-contact.svg"
                       width={24}
@@ -57,7 +56,7 @@ const Contact = () => {
                     />
                     An inquisitive prospect
                   </div>
-                  <div className="bg-white py-1 px-2 rounded-sm shadow-xl flex justify-center items-center gap-2">
+                  <div className="bg-white py-1 px-2 rounded-sm flex justify-center items-center gap-2 font-16 font-medium leading-5 text-[#2E2E2E]">
                     <Image
                       src="/hand-shake.svg"
                       width={24}
@@ -66,7 +65,7 @@ const Contact = () => {
                     />
                     A potential partner
                   </div>
-                  <div className="bg-white py-1 px-2 rounded-sm shadow-xl flex justify-center items-center gap-2">
+                  <div className="bg-white text-start py-1 px-2 rounded-sm flex justify-center items-center gap-2 font-16 font-medium leading-5 text-[#2E2E2E]">
                     <Image
                       src="/vendor.svg"
                       width={24}
@@ -166,7 +165,7 @@ const Contact = () => {
                   />
                 </button>
               </form>
-              <div className="font-12 font-inter font-normal text-center mb-4 text-[#2E2E2E80] leading-4">
+              <div className="font-12  font-normal text-center mb-4 text-[#2E2E2E80] leading-4">
                 By contacting us, you agree to our{" "}
                 <span className="text-[#2E2E2E]"> terms of services</span> and{" "}
                 <span className="text-[#2E2E2E]"> Privacy Policy</span>
@@ -174,14 +173,14 @@ const Contact = () => {
             </div>
           </div>
           <div>
-            <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-10 p-5 sm:p-16">
+            <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-10 p-5 md:p-16">
               <div
                 onClick={() => handleEmailClick("sales@metricwise.ai")}
-                className="cursor-pointer grid grid-cols-2 bg-[#FFFFFF] p-5 rounded-lg shadow-md"
+                className="cursor-pointer grid grid-cols-2 bg-[#FFFFFF] p-5 rounded-lg shadow-sm"
               >
-                <div className="flex flex-col font-20 font-inter font-semibold textcolor leading-6">
+                <div className="flex flex-col font-20  font-semibold textcolor leading-6">
                   Sales
-                  <span className="font-12 font-inter font-normal leading-4 mt-2">
+                  <span className="font-12 textcolor opacity-60 font-normal leading-4 mt-2">
                     sales@metricwise.ai
                   </span>
                 </div>
@@ -197,11 +196,11 @@ const Contact = () => {
 
               <div
                 onClick={() => handleEmailClick("support@metricwise.ai")}
-                className="cursor-pointer grid grid-cols-2 bg-[#FFFFFF] p-5 rounded-lg shadow-md"
+                className="cursor-pointer grid grid-cols-2 bg-[#FFFFFF] p-5 rounded-lg shadow-sm"
               >
-                <div className="flex flex-col font-20 font-inter font-semibold textcolor leading-6">
+                <div className="flex flex-col font-20  font-semibold textcolor leading-6">
                   Support
-                  <span className="font-12 font-inter font-normal leading-4 mt-2">
+                  <span className="font-12 textcolor opacity-60 font-normal leading-4 mt-2">
                     support@metricwise.ai
                   </span>
                 </div>
@@ -217,11 +216,11 @@ const Contact = () => {
 
               <div
                 onClick={() => handleEmailClick("careers@metricwise.ai")}
-                className="cursor-pointer grid grid-cols-2 bg-[#FFFFFF] p-5 rounded-lg shadow-md"
+                className="cursor-pointer grid grid-cols-2 bg-[#FFFFFF] p-5 rounded-lg shadow-sm"
               >
-                <div className="flex flex-col font-20 font-inter font-semibold textcolor leading-6">
+                <div className="flex flex-col font-20  font-semibold textcolor leading-6">
                   Careers
-                  <span className="font-12 font-inter font-normal leading-4 mt-2">
+                  <span className="font-12 textcolor opacity-60 font-normal leading-4 mt-2">
                     careers@metricwise.ai
                   </span>
                 </div>
@@ -237,11 +236,11 @@ const Contact = () => {
 
               <div
                 onClick={() => handleEmailClick("info@metricwise.ai")}
-                className="cursor-pointer grid grid-cols-2 bg-[#FFFFFF] p-5 rounded-lg shadow-md"
+                className="cursor-pointer grid grid-cols-2 bg-[#FFFFFF] p-5 rounded-lg shadow-sm"
               >
-                <div className="flex flex-col font-20 font-inter font-semibold textcolor leading-6">
+                <div className="flex flex-col font-20  font-semibold textcolor leading-6">
                   General
-                  <span className="font-12 font-inter font-normal leading-4 mt-2">
+                  <span className="font-12 textcolor opacity-60 font-normal leading-4 mt-2">
                     info@metricwise.ai
                   </span>
                 </div>

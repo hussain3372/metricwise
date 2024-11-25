@@ -1,14 +1,14 @@
-import React from 'react'
-import Insurance from './Insurance'
+import React from "react";
 import Header from "@/app/components/Layout/Header";
+import Insurance from "./Insurance";
 
 const page = () => {
   return (
     <div>
       <Header />
-        <Insurance/>
+      <Insurance />
     </div>
-  )
-}
+  );
+};
 
-export default page
+export default page;

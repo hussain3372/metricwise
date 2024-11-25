@@ -1,59 +1,54 @@
+"use client";
+
+import Image from "next/image";
 import Link from "next/link";
 import React from "react";
-import Feature from "./Feature";
-import Educationcard from "./Educationcard"
-import Image from "next/image";
-const Education = () => {
+import Educationcards from "./Education-cards";
+import EstateServices from "../real_estate/Estate-services";
+
+const RealEsatate = () => {
   return (
     <div>
       <div className="widthclass">
-        <div className="p-4 sm:p-16 2xl:p-10">
-          <div className="grid md:grid-cols-2 items-center mt-10">
-            <div>
-              <h1 className="font-36 font-inter font-bold leading-10">
-              Education
-              </h1>
-              <p className="font-24 font-normal font-inter leading-8 mt-8 mb-10 opacity-60">
-              AI revolutionizes teaching and learning experiences, providing personalized education and adaptive learning tools. However, to ensure equity and quality education for all, diligent oversight is essential to address concerns such as data privacy and algorithmic biases.
-              </p>
-              <Link href="/Demo" className="hero-btn">
-                Book a Demo
-                <Image src="/free.png" width={24} height={24} alt="free" />
-              </Link>
-            </div>
-            <div className="flex justify-end items-end mt-10 md:mt-0">
-              <Image src="/education.png" width={540} height={540} alt="moni" />
-            </div>
-          </div>
+        <div className="pt-10 pb-8 py-[120px] px-2 sm:px-10 flex flex-col justify-center items-center gap-7">
+          <Image src="/education.png" width={775} height={422} alt="finance" />
+          <h1 className="font-40 font-bold">Education</h1>
+          <p className="font-24 font-normal leading-8 text-[#2E2E2E] text-center opacity-60 px-2 md:px-40 lg:px-64 xl:px-[420px]">
+            AI revolutionizes teaching and learning experiences, providing personalized education
+            and adaptive learning tools. However, to ensure equity and quality education for all, diligent oversight is
+            essential to address concerns such as data privacy and algorithmic biases.
+          </p>
+          <Link href="/Demo" className="primary-btn" type="button">
+            <Image src="/demo-img.svg" width={20} height={20} alt="demo-img" />
+            Book a Demo
+          </Link>
+        </div>
+
+        <div>
+          <Educationcards />
         </div>
       </div>
 
-      <div className="bg-[#0424400A]">
-        <Feature />
-      </div>
-
-      <div className="bg-[url('/finance-bg.png')] bg-cover bg-center bg-no-repeat text-black">
+      <div className="bg-[url('/finance-bg.svg')] bg-cover bg-center bg-no-repeat">
         <div className="widthclass">
           <div className="flex flex-col justify-center items-center text-center m-auto p-8 sm:p-16">
-            <h1 className="font-36 font-inter font-bold leading-8 md:leading-10">
-            Empower Your Education Efforts <br /> with AI Model Monitoring
+            <h1 className="font-36 font-bold leading-8 md:leading-10 text-[#2E2E2E]">
+              Empower Your Education Efforts <br className="hidden md:block" />
+              with AI Model Monitoring
             </h1>
-            <p className="font-24 font-inter font-normal leading-6 md:leading-8 mt-5 opacity-60">
-            In todays educational landscape, building trust and transparency in <br /> AI-powered systems is vital.
-
+            <p className="font-24 font-normal leading-6 md:leading-8 mt-4 text-[#2E2E2E99]">
+              {`In today's educational landscape, building trust and transparency
+              in <br className="hidden md:block" /> AI-powered systems is vital.`}
             </p>
           </div>
         </div>
       </div>
 
-
-      <div className="">
-        <div>
-          <Educationcard/>
-        </div>
+      <div>
+        <EstateServices />
       </div>
     </div>
   );
 };
 
-export default Education;
+export default RealEsatate;

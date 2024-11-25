@@ -53,28 +53,13 @@ export const careerperks = [
 
 export const careerapply = [
   {
-    position: "Senior Backend Software Engineer (seattle, West Coat, Remote)",
-    location: "Remote - full time  US Remote",
+    position: "Senior Backend Software Engineer ",
+    location: "Remote - full time",
     applys: "Apply",
   },
   {
-    position: "Senior Backend Software Engineer (seattle, West Coat, Remote)",
-    location: "Remote - full time  US Remote",
-    applys: "Apply",
-  },
-  {
-    position: "Senior Backend Software Engineer (seattle, West Coat, Remote)",
-    location: "Remote - full time  US Remote",
-    applys: "Apply",
-  },
-  {
-    position: "Senior Backend Software Engineer (seattle, West Coat, Remote)",
-    location: "Remote - full time  US Remote",
-    applys: "Apply",
-  },
-  {
-    position: "Senior Backend Software Engineer (seattle, West Coat, Remote)",
-    location: "Remote - full time  US Remote",
+    position: "Full Stack Engineer",
+    location: "Remote - full time",
     applys: "Apply",
   },
 ];

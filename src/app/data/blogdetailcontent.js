@@ -115,6 +115,25 @@ export const blogDetailContent = [
       desc1:
         " In conclusion, monitoring and observability stand as integral components within AI/ML systems.  The real-time surveillance, tracking and alert mechanisms provided by monitoring contribute to the timely identification of potential issues. Simultaneously, observability offers a higher-level perspective, aiding stakeholders in understanding system behavior, pinpointing challenges, and optimizing model performance. The integration of observability allows organizations to achieve comprehensive visibility across their AI/ML systems, fostering reliability, explainability, and optimization. As the field of machine learning continues to evolve, the significance of monitoring and observability is increasingly emphasized, playing a pivotal role in ensuring the success of AI-driven applications.",
     },
+
+    // recommended articles
+
+    recommended: [
+      {
+        articleimg: "/navigatings.png",
+        articletitle: "Navigating the Intersection...",
+        articledetail:
+          "In today's fast-changing tech landscape, it's crucial to emphasize the importance of thorough...",
+        articleLink: "/recourses/Blog/5",
+      },
+      {
+        articleimg: "/metric-wise.png",
+        articletitle: "Metricwise: The AI Observability Platform",
+        articledetail:
+          "At Metricwise, we're dedicated to making advanced AI tools accessible to everyone...",
+        articleLink: "/recourses/Blog/8",
+      },
+    ],
   },
 
   {
@@ -178,6 +197,9 @@ export const blogDetailContent = [
           ],
         },
       ],
+
+
+      
     },
 
     observabilityData: {
@@ -218,12 +240,30 @@ export const blogDetailContent = [
       desc2:
         " As generative AI technology becomes more influential, it's crucial to highlight ethical concerns to develop solutions that are fair, transparent, and beneficial for all. Those involved in handling data have a special responsibility to develop ethical AI systems, with addressing bias being a key aspect of this responsibility. By focusing on gathering diverse data, carefully preprocessing it, using algorithms that prioritize fairness, and consistently evaluating with fairness metrics, we can reduce bias in AI systems together. Moreover, promoting collaboration with stakeholders, providing education on AI ethics, and implementing transparency and accountability measures will ensure that AI technologies contribute to a future that is equitable and just for everyone.",
     },
+
+
+    recommended: [
+      {
+        articleimg: "/metric-wise.png",
+        articletitle: "Metricwise: The AI Observability Platform",
+        articledetail:
+          "At Metricwise, we're dedicated to making advanced AI tools accessible to everyone...",
+        articleLink: "/recourses/Blog/8",
+      },
+      {
+        articleimg: "/factors-blog.png",
+        articletitle: "What factors should be taken ...",
+        articledetail:
+          "During the configuration of ML monitoring for a specific model, it is crucial to consider the following...",
+        articleLink: "/recourses/Blog/3",
+      },
+    ],
   },
 
   {
     id: 3,
     title:
-      "What factors should be taken into account when establishing ML monitoring?",
+      "What factors should be taken into account when <br /> establishing ML monitoring?",
     category: "Artificial Intelligence",
     imgSrc: "/factors.svg",
     w: "800",
@@ -293,6 +333,23 @@ export const blogDetailContent = [
         },
       ],
     },
+
+    recommended: [
+      {
+        articleimg: "/metric-wise.png",
+        articletitle: "Metricwise: The AI Observability Platform",
+        articledetail:
+          "At Metricwise, we're dedicated to making advanced AI tools accessible to everyone...",
+        articleLink: "/recourses/Blog/8",
+      },
+      {
+        articleimg: "/monitoring-vs-observability.png",
+        articletitle: "Monitoring V/S Observability",
+        articledetail:
+          "The terms monitoring and observability are prevalent in the field of AI/ML systems. Although they may ,,,",
+        articleLink: "/recourses/Blog/1",
+      },
+    ],
   },
 
   {
@@ -431,12 +488,29 @@ export const blogDetailContent = [
       description:
         "While extensive language models embody sophisticated and advantageous technology, it is imperative to stay alert to the risks associated with their application. The swift evolution of technology, expanding adoption, and the introduction of new tools heighten the potential for novel vulnerabilities. While the OWASP Top 10 list for LLM streamlines threat modeling for LLM-related applications, it is not exhaustive. Sustained vigilance remains crucial for detecting and mitigating emerging vulnerabilities promptly.",
     },
+
+    recommended: [
+      {
+        articleimg: "/navigatings.png",
+        articletitle: "Navigating the Intersection...",
+        articledetail:
+          "In today's fast-changing tech landscape, it's crucial to emphasize the importance of thorough...",
+        articleLink: "/recourses/Blog/5",
+      },
+      {
+        articleimg: "/metric-wise.png",
+        articletitle: "Metricwise: The AI Observability Platform",
+        articledetail:
+          "At Metricwise, we're dedicated to making advanced AI tools accessible to everyone...",
+        articleLink: "/recourses/Blog/8",
+      },
+    ],
   },
 
   {
     id: 5,
     title:
-      "Navigating the Intersection: Comprehensive Governance in the Era of AI and Tech Evolution",
+      "Navigating the Intersection: Comprehensive <br /> Governance in the Era of AI and Tech Evolution",
     category: "Artificial Intelligence",
     imgSrc: "/navigating-blog.svg",
     w: "1110",
@@ -464,12 +538,29 @@ export const blogDetailContent = [
         },
       ],
     },
+
+    recommended: [
+      {
+        articleimg: "/ethical-ai.png",
+        articletitle: "Ethical use of AI...",
+        articledetail:
+          "As AI rapidly progresses, it brings both benefits and ethical challenges....",
+        articleLink: "/recourses/Blog/2",
+      },
+      {
+        articleimg: "/factors-blog.png",
+        articletitle: "Exploring Bias and Equity in Artificial...",
+        articledetail:
+          "In today's digital landscape, artificial intelligence (AI) systems wield immense influence...",
+        articleLink: "/recourses/Blog/6",
+      },
+    ],
   },
 
   {
     id: 6,
     title:
-      "Exploring Bias and Equity in Artificial Intelligence Systems: An Essential Concern",
+      "Exploring Bias and Equity in Artificial Intelligence <br /> Systems: An Essential Concern",
     category: "Artificial Intelligence",
     imgSrc: "/bias.svg",
     w: "945",
@@ -541,13 +632,30 @@ export const blogDetailContent = [
       desc2:
         " By adopting these best practices, organizations can proactively manage AI bias and promote fairness, contributing to more equitable and trustworthy AI systems that benefit society as a whole.",
     },
+
+    recommended: [
+      {
+        articleimg: "/metric-wise.png",
+        articletitle: "Metricwise: The AI Observability Platform",
+        articledetail:
+          "At Metricwise, we're dedicated to making advanced AI tools accessible to everyone...",
+        articleLink: "/recourses/Blog/8",
+      },
+      {
+        articleimg: "/factors-blog.png",
+        articletitle: "What factors should be taken ...",
+        articledetail:
+          "During the configuration of ML monitoring for a specific model, it is crucial to consider the following...",
+        articleLink: "/recourses/Blog/3",
+      },
+    ],
   },
 
   {
     id: 8,
     title: "Metricwise: The AI Observability Platform",
     category: "Artificial Intelligence",
-    imgSrc: "/ai-observability.svg",
+    imgSrc: "/ai-observability.png",
     w: "1216",
     h: "540",
     date: "July 29, 2024",
@@ -594,5 +702,22 @@ export const blogDetailContent = [
         },
       ],
     },
+
+    recommended: [
+      {
+        articleimg: "/factors-blog.png",
+        articletitle: "Exploring Bias and Equity in Artificial...",
+        articledetail:
+          "In today's digital landscape, artificial intelligence (AI) systems wield immense influence...",
+        articleLink: "/recourses/Blog/6",
+      },
+      {
+        articleimg: "/navigatings.png",
+        articletitle: "Navigating the Intersection...",
+        articledetail:
+          "In today's fast-changing tech landscape, it's crucial to emphasize the importance of thorough...",
+        articleLink: "/recourses/Blog/5",
+      },
+    ],
   },
 ];

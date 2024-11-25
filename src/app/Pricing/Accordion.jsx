@@ -123,12 +123,12 @@ const Faq = () => {
     <div>
       <div className="widthclass">
         <div>
-          <div className="mt-28">
+          <div className="py-[81px]">
             <h1 className="font-36 font-inter  font-bold leading-10 flex justify-center items-center">
-              FAQ’s
+            Frequently Asked Questions
             </h1>
 
-            <div className="py-6 px-5 sm:px-20 mt-14">
+            <div className="py-6 px-5 sm:px-20">
               <Head>
                 <title>FAQ - Metricwise</title>
               </Head>

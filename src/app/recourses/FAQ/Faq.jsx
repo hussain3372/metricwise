@@ -191,30 +191,35 @@ const Faq = () => {
     <div className="">
       <div className="">
         <div className="relative faq pb-20">
-          <div className="flex flex-col pt-10 md:pt-40 pb-2 xl:pb-10 2xl:pb-14 justify-center items-center m-auto text-black widthclass">
-            <h1 className="font-52 font-bold text-center p-3 leading-10 md:leading-[80px] mb-5">
+          <div className="flex flex-col px-[320px] pb-[65px] pt-[149px] justify-center items-center m-auto text-black widthclass">
+            <h1 className="font-64 font-bold text-center p-3 leading-10 md:leading-[80px] mb-7 text-[#2E2E2E]">
               We are here to help you
             </h1>
-            <div className="relative">
+            <div className="relative opacity-60">
               <input
                 type="text"
                 style={{ boxShadow: "0 3px 10px rgba(0, 0, 0, 0.2)" }}
-                className="relative rounded-xl w-[290px] sm:w-[500px] md:w-[700px] xl:w-[800px] h-[60px] sm:h-[72px] p-6 pl-16 pr-24 textcolor font-normal"
+                className="relative rounded-xl w-[290px] sm:w-[500px] md:w-[700px] xl:w-[800px] h-[60px] sm:h-[72px] p-4 textcolor font-normal pl-12"
                 placeholder="Ask a question..."
               />
 
-              <div className="absolute top-4 sm:top-5 pl-3">
+              <div className="absolute top-4 sm:top-[21px] pl-3">
                 <Image width={28} height={28} src="/search.png" alt="" />
               </div>
               <div className="absolute top-3 sm:top-[14px] right-0 pr-3">
-                <button className="bg-[#2E2E2E] text-white py-[10px] px-5 flex justify-center items-center font-16 font-normal rounded-lg">
+                <button className="bg-[#2E2E2E] text-white py-2.5 px-5 flex justify-center items-center font-16 font-normal rounded-lg">
                   Search
                 </button>
               </div>
             </div>
-            <h5 className="font-24 font-normal opacity-60 leading-7 mt-6 text-center">
+            <h5 className="font-24 font-normal opacity-60 leading-7 mt-6 text-center text-[#2E2E2E]">
               We are Collecting your search keywords to improve our FAQs.
             </h5>
+            <div>
+              <h1 className="font-40 font-semibold leading-20 mt-7 text-[#2E2E2E]">
+                FAQs
+              </h1>
+            </div>
           </div>
         </div>
 
@@ -248,16 +253,16 @@ const Faq = () => {
               alt="Sunset in the mountains"
             />
             <div className="px-6 py-4">
-              <div className="font-medium gont-inter font-20 leading-7 mb-2 mt-3">
+              <div className="font-medium font-20 leading-7 mb-2 mt-3 text-[#111928]">
                 Documentation:
               </div>
-              <p className="text-gray-700 text-base">
+              <p className="text-[#616659] font-14 font-normal leading-5">
                 Gain insights into how Metricwise operates and receive
                 assistance on common issues.
               </p>
             </div>
             <div className="px-6 pt-4 pb-2">
-              <span className="inline-block bg-[#2E2E2E] rounded-full px-8 py-2 text-sm font-semibold text-white mr-2 mb-2">
+              <span className="inline-block bg-[#2E2E2E] rounded-full px-8 py-2 text-sm font-normal text-white mr-2 mb-2">
                 Head to Docs
               </span>
             </div>
@@ -272,16 +277,16 @@ const Faq = () => {
               alt="Sunset in the mountains"
             />
             <div className="px-6 py-4">
-              <div className="font-medium gont-inter font-20 leading-7 mb-2 mt-3">
+              <div className="font-medium font-20 leading-7 mb-2 mt-3 text-[#111928]">
                 Demos:
               </div>
-              <p className="text-gray-700 text-base">
+              <p className="text-[#616659] font-14 font-normal leading-5">
                 Explore the features of Metricwise through brief and informative
                 video presentations.
               </p>
             </div>
             <div className="px-6 pt-4 pb-2">
-              <span className="inline-block bg-[#2E2E2E] rounded-full px-8 py-2 text-sm font-semibold text-white mr-2 mb-2">
+              <span className="inline-block bg-[#2E2E2E] rounded-full px-8 py-2 text-sm font-normal text-white mr-2 mb-2">
                 Explore Demos
               </span>
             </div>
@@ -295,16 +300,16 @@ const Faq = () => {
               alt="Sunset in the mountains"
             />
             <div className="px-6 py-4">
-              <div className="font-medium gont-inter font-20 leading-7 mb-2 mt-3">
+              <div className="font-medium font-20 leading-7 mb-2 mt-3 text-[#111928]">
                 Integrations:
               </div>
-              <p className="text-gray-700 text-base">
+              <p className="text-[#616659] font-14 font-normal leading-5">
                 Enable observability and governance for your ML model and data
                 monitoring.
               </p>
             </div>
             <div className="px-6 pt-4 pb-2">
-              <span className="inline-block bg-[#2E2E2E] rounded-full px-8 py-2 text-sm font-semibold text-white mr-2 mb-2">
+              <span className="inline-block bg-[#2E2E2E] rounded-full px-8 py-2 text-sm font-normal text-white mr-2 mb-2">
                 Explore Guidebooks
               </span>
             </div>

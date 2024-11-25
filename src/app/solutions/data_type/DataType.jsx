@@ -28,7 +28,7 @@ const DataType = () => {
                   preferred format and the value of each property is as
                   expected.
                 </p>
-                <Link href="/Demo" className="hero-btn">
+                <Link href="/Demo" className="new-btns">
                   Book a Demo
                   <Image src="/free.png" width={24} height={24} alt="free" />
                 </Link>

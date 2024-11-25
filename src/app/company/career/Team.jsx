@@ -2,144 +2,231 @@
 
 import React from "react";
 import Link from "next/link";
-import { careerapply, careerdata, careerperks, careerdatalast } from "../../data/careerdata";
+import { careerapply, careerperks } from "../../data/careerdata";
 import Image from "next/image";
-import { Fade, Zoom } from "react-awesome-reveal";
-import Tilt from "react-parallax-tilt";
 
 const Team = () => {
   return (
     <div>
-      <div>
-        <div className="">
-          <div className="widthclass">
-            <div className="flex flex-col justify-center items-center m-auto p-5 md:p-20">
-              <h1 className="font-36 font-inter font-bold leading-10 mb-10">Our Team</h1>
-              <p className="font-24 font-inter font-normal leading-8 mb-10 text-center opacity-60">
-                Embark on a journey with our dynamic tech team, where innovation and collaboration converge to shape the future. At Metricwise, we are more than just colleagues, we are a family of diverse minds united by a shared passion for pushing boundaries to make AI responsible and accessible to all in a safe and secure way. Together, we redefine possibilities and make an impact that resonates across industries. Welcome to a place where your expertise is valued, your ideas are heard, and your growth is our priority.
-              </p>
-              <div className="grid sm:grid-cols-2 lg:grid-cols-4 items-center gap-20 mt-10">
-                <Fade direction="left">
-                  <div className="flex flex-col gap-y-2 text-center">
-                    <Image width={417} height={344} src="/t1.png" alt="Varun Sharma" />
-                    <h5 className="font-20 font-inter font-semibold leading-6">Varun Sharma</h5>
-                    <span className="font-16 font-inter font-normal">CEO</span>
-                    <span className="font-16 font-inter font-normal">McKinsey, EY, Coherent</span>
-                  </div>
-                  <div className="flex flex-col gap-y-2 text-center">
-                    <Image width={417} height={344} src="/t2.png" alt="Varun Sharma" />
-                    <h5 className="font-20 font-inter font-semibold leading-6">Varun Sharma</h5>
-                    <span className="font-16 font-inter font-normal">CEO</span>
-                    <span className="font-16 font-inter font-normal">McKinsey, EY, Coherent</span>
-                  </div>
-                </Fade>
-                <Fade direction="right">
-                  <div className="flex flex-col gap-y-2 text-center">
-                    <Image width={417} height={344} src="/t3.png" alt="Varun Sharma" />
-                    <h5 className="font-20 font-inter font-semibold leading-6">Varun Sharma</h5>
-                    <span className="font-16 font-inter font-normal">CEO</span>
-                    <span className="font-16 font-inter font-normal">McKinsey, EY, Coherent</span>
-                  </div>
-                  <div className="flex flex-col gap-y-2 text-center">
-                    <Image width={417} height={344} src="/t4.png" alt="Varun Sharma" />
-                    <h5 className="font-20 font-inter font-semibold leading-6">Varun Sharma</h5>
-                    <span className="font-16 font-inter font-normal">CEO</span>
-                    <span className="font-16 font-inter font-normal">McKinsey, EY, Coherent</span>
-                  </div>
-                </Fade>
+      <div className="widthclass">
+        <div>
+          <div className="flex flex-col justify-start items-start pt-[59px] px-5 sm:px-10 lg:px-[125px] pb-[146px]">
+            <h1 className="font-36 font-inter font-bold leading-10 mb-10">
+              Our Team
+            </h1>
+            <p className="font-22 font-normal leading-7 textcolor sm:px-[57px]">
+              {`Embark on a journey with our dynamic tech team, where innovation
+              and collaboration converge to shape the future. At Metricwise
+              we're more than just colleagues we are a family of diverse minds
+              united by a shared passion for pushing boundaries to make AI
+              responsible and accessible to all in a safe and secure way.
+              Together, we redefine possibilities and make an impact that
+              resonates across industries. Welcome to a place where your
+              expertise is valued, your ideas are heard, and your growth is our
+              priority.`}
+            </p>
+          </div>
+        </div>
+
+        <div className="px-5 sm:px-10 lg:px-[125px]">
+          <h1 className="font-36 font-inter font-bold leading-10 mb-[59px]">
+            Our Values
+          </h1>
+          <div className="space-y-8 md:space-y-3">
+            {/* Card 1 - Left */}
+            <div className="grid md:grid-cols-2">
+              <div className="md:flex items-start justify-end gap-5">
+                <Image
+                  src="/value1.svg"
+                  width={60}
+                  height={60}
+                  alt="value icons"
+                />
+                <div>
+                  <h1 className="font-26 font-bold textcolor leading-10">
+                    Innovation First
+                  </h1>
+                  <p className="font-22 textcolor leading-7">
+                    Foster a culture of continuous innovation, encouraging team
+                    members to explore novel ideas, embrace emerging
+                    technologies, and challenge the status quo.
+                  </p>
+                </div>
               </div>
+              <div></div>
+            </div>
+
+            {/* Card 2 - Right */}
+            <div className="grid md:grid-cols-2">
+              <div></div>
+              <div className="md:flex items-start justify-end gap-5">
+                <Image
+                  src="/value2.svg"
+                  width={60}
+                  height={60}
+                  alt="value icons"
+                />
+                <div>
+                  <h1 className="font-26 font-bold textcolor leading-10">
+                    Curiosity
+                  </h1>
+                  <p className="font-22 textcolor leading-7">
+                    Seek continuous growth and absorb knowledge at every
+                    opportunity. We thrive on thinking beyond conventional
+                    boundaries. Refusing to rest on our current understanding,we
+                    commit to perpetual learning. This approach sparks our most
+                    innovative ideas and provides an avenue to embrace novel
+                    perspectives.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            {/* Card 3 - Left */}
+            <div className="grid md:grid-cols-2">
+              <div className="md:flex items-start justify-end gap-5">
+                <Image
+                  src="/value3.svg"
+                  width={60}
+                  height={60}
+                  alt="value icons"
+                />
+                <div>
+                  <h1 className="font-26 font-bold textcolor leading-10">
+                    User-Centric Mindset
+                  </h1>
+                  <p className="font-22 textcolor leading-7">
+                    Prioritize a user-centric mindset in product development.
+                    Empathize with end-users, ensuring that solutions are not
+                    only technologically advanced but also intuitive,
+                    accessible, and designed to enhance users.
+                  </p>
+                </div>
+              </div>
+              <div></div>
+            </div>
+
+            {/* Card 4 - Right */}
+            <div className="grid md:grid-cols-2">
+              <div></div>
+              <div className="md:flex items-start justify-end gap-5">
+                <Image
+                  src="/value4.svg"
+                  width={60}
+                  height={60}
+                  alt="value icons"
+                />
+                <div>
+                  <h1 className="font-26 font-bold textcolor leading-10">
+                    Humility
+                  </h1>
+                  <p className="font-22 textcolor leading-7">
+                    We affirm that an exceptional team thrives on shared
+                    responsibilities, where mutual respect and trust among peers
+                    prevail. Fostering relationships, we actively strive to
+                    comprehend and empower one another.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            {/* Card 5 - Left */}
+            <div className="grid md:grid-cols-2">
+              <div className="md:flex items-start justify-end gap-5">
+                <Image
+                  src="/value5.svg"
+                  width={60}
+                  height={60}
+                  alt="value icons"
+                />
+                <div>
+                  <h1 className="font-26 font-bold textcolor leading-10">
+                    Passion
+                  </h1>
+                  <p className="font-22 textcolor leading-7">
+                    Our endeavors are driven by a shared passion for
+                    collaborative teamwork and the creation of extraordinary
+                    achievements. We draw strength from surpassing conventional
+                    expectations, allowing us to unleash the highest potential
+                    within ourselves.
+                  </p>
+                </div>
+              </div>
+              <div></div>
             </div>
           </div>
         </div>
-      </div>
 
-      <div className="bg-[#f8f8f8]">
-        <div>
-          <div className="widthclass p-3 md:p-16 flex-col flex justify-center items-center">
-            <h1 className="font-36 fon-inter font-bold textcolor leading-[72px] mb-5 md:mb-10">Our Values</h1>
-            <Fade direction="left">
-              <div className="grid sm:grid-cols-2 gap-5">
-                {careerdata.map((item, index) => (
-                  <Tilt key={`careerdata-${index}`}>
-                    <div className="h-full rounded-lg border-2 border-[#EBECF2] flex flex-col justify-start items-start text-start p-7 bg-white shadow-xl">
-                      <Image width={60} height={60} src={item.icon} alt={item.name} />
-                      <div className="py-4">
-                        <div className="font-bold font-inter font-36 leading-8 2xl:leading-10 mb-2 mt-3">{item.name}</div>
-                        <p className="text-[#9F9E9E] font-16 leading-5 mt-4">{item.para}</p>
-                      </div>
-                    </div>
-                  </Tilt>
-                ))}
-              </div>
-            </Fade>
-            <Fade direction="right">
-              <div className="grid grid-cols-1 mt-5">
-                {careerdatalast.map((item, index) => (
-                  <Tilt key={`careerdatalast-${index}`}>
-                    <div className="h-full rounded-lg border-2 border-[#EBECF2] flex flex-col justify-start items-start text-start p-7 bg-white shadow-xl">
-                      <Image width={60} height={60} src={item.icon} alt={item.name} />
-                      <div className="py-4">
-                        <div className="font-bold font-inter font-36 leading-8 2xl:leading-10 mb-2 mt-3">{item.name}</div>
-                        <p className="text-[#9F9E9E] font-16 leading-5 mt-4">{item.para}</p>
-                      </div>
-                    </div>
-                  </Tilt>
-                ))}
-              </div>
-            </Fade>
-          </div>
-        </div>
-      </div>
-
-      <div className="bg-white">
-        <div className="widthclass">
-          <div className="p-3 md:p-16 flex-col flex justify-center items-center">
-            <h1 className="font-36 fon-inter font-bold textcolor leading-[72px] mb-3 md:mb-10">Our Perks</h1>
-            <Fade direction="left">
+        <div className="bg-white">
+          <div className="widthclass">
+            <div className="px-5 sm:px-10 lg:px-[125px] flex-col flex justify-start items-start">
+              <h1 className="font-36 font-bold textcolor leading-10 mb-3 md:mb-14 mt-[105px]">
+                Our Perks
+              </h1>
               <div className="grid md:grid-cols-2 gap-10 items-center">
                 {careerperks.map((item, index) => (
-                  <Tilt key={`careerperks-${index}`} reset={false}>
-                    <div className="h-full rounded-lg flex flex-col justify-start items-start text-start p-7 bg-white shadow-[0_3px_10px_rgb(0,0,0,0.2)]">
-                      <div className="md:flex items-center justify-between w-full">
-                        <div className="font-bold font-inter font-36 leading-8 md:leading-10 mb-2 mt-3">{item.name}</div>
-                        <div>
-                          <Image width={60} height={60} src={item.icon} alt="Icon" />
-                        </div>
+                  <div
+                    key={index}
+                    className="h-full flex flex-col gap-5 justify-start items-start text-start px-5 py-8 bg-white shadow-[4px_4px_12px_0_rgb(0,0,0,0.12)]"
+                  >
+                    <div className="sm:flex items-center justify-start w-full gap-5">
+                      <div>
+                        <Image
+                          width={60}
+                          height={60}
+                          src={item.icon}
+                          alt="Icon"
+                        />
                       </div>
-                      <div className="py-4">
-                        <p className="text-[#9F9E9E] font-16 leading-5">{item.para}</p>
+                      <div className="font-bold font-26 leading-8 md:leading-10">
+                        {item.name}
                       </div>
                     </div>
-                  </Tilt>
+                    <div>
+                      <p className="textcolor font-22 font-normal leading-7">
+                        {item.para}
+                      </p>
+                    </div>
+                  </div>
                 ))}
               </div>
-            </Fade>
+            </div>
           </div>
         </div>
       </div>
 
-      <div className="bg-[#0424401F] positionbg">
-        <div className="widthclass">
-          <Zoom>
-            <div className="px-5 pt-10 pb-8 flex-col flex justify-center items-center">
-              <h1 className="font-40 fon-inter font-bold textcolor leading-10 md:leading-[72px] text-center">List of Open Position</h1>
-            </div>
-            <div className="px-3 md:px-10 pb-10">
-              {careerapply.map((apply, index) => (
-                <div key={`careerapply-${index}`} className="md:flex justify-between items-center bg-white rounded-lg p-4 mt-4">
-                  <div>
-                    <h1 className="font-20 font-inter font-semibold leading-6">{apply.position}</h1>
-                    <p className="font-16 font-inter font-normal leading-5">{apply.location}</p>
-                  </div>
-                  <div>
-                    <button className="font-20 font-inter font-normal leading-6 bg-[#2E2E2E] rounded-lg w-[80px] md:w-[110px] h-[40px] md:h-[52px] white mt-5 md:mt-0">
-                      <Link href="/company/apply">{apply.applys}</Link>
-                    </button>
-                  </div>
+      <div className="bg-[#F1F2F4] positionbg mt-[118px]">
+        <div className="widthclass pt-8 pb-[135px] px-5 sm:px-10 lg:px-[202px]">
+          <div className="flex justify-center items-center">
+            <h1 className="font-36 font-bold textcolor leading-10 text-center">
+              List of Open Position
+            </h1>
+          </div>
+          <div className="mt-[82px]">
+            {careerapply.map((apply, index) => (
+              <div
+                key={`careerapply-${index}`}
+                className="md:flex justify-between items-center bg-white rounded-lg px-5 py-3.5 mt-3"
+              >
+                <div>
+                  <h1 className="font-20 font-semibold leading-6">
+                    {apply.position}
+                  </h1>
+                  <p className="font-16 font-normal leading-5 mt-2">
+                    {apply.location}
+                  </p>
                 </div>
-              ))}
-            </div>
-          </Zoom>
+                <div>
+                  <Link
+                    href="/company/apply"
+                    className="font-20 font-normal leading-6 bg-[#2E2E2E] rounded-lg px-7 py-3.5 white mt-5 md:mt-0 flex justify-center items-center"
+                  >
+                    {apply.applys}
+                  </Link>
+                </div>
+              </div>
+            ))}
+          </div>
         </div>
       </div>
     </div>

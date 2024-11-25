@@ -513,7 +513,7 @@ export default function Example() {
                         />
                       </DisclosureButton>
                       <DisclosurePanel className="mt-2 space-y-2">
-                        {[...Industry].map((item) => (
+                        {[...Solutions].map((item) => (
                           <DisclosureButton
                             key={item.name}
                             as="a"

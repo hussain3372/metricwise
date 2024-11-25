@@ -25,15 +25,15 @@ body {
   background-repeat: no-repeat;
 }
 .faq {
-  background-image: url(../../public/faqbg.png);
-  background-size: 100%;
-  background-position: bottom right;
+  background-image: url(../../public/faq-hero-bg.svg);
+  background-size: cover;
+  background-position: center;
   background-repeat: no-repeat;
 }
 .career {
-  background-image: url(../../public/careebg.png);
+  background-image: url(../../public/wavebg.png);
   background-size: 100%;
-  background-position: bottom;
+  background-position: top;
   background-repeat: no-repeat;
 }
 .blog {
@@ -49,15 +49,15 @@ body {
   background-position: center;
 }
 .cardbg {
-  background-image: url(../../public/cardsbg.png);
+  background-image: url(../../public/cardsbg.svg);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
 }
 .pricebg {
   background-image: url(../../public/faqbg.png);
-  background-position: top;
-  background-size: 100%;
+  background-position: center;
+  background-size: cover;
   background-repeat: no-repeat;
 }
 .monbg {
@@ -80,7 +80,7 @@ body {
 }
 .positionbg {
   background-image: url(../../public/positionbg.png);
-  background-size: 30%;
+  background-size: 100%;
   background-repeat: no-repeat;
   background-position: bottom left;
 }
@@ -104,7 +104,7 @@ body {
   color: #fff;
 }
 .primaryblue {
-  color: #2E2E2E;
+  color: #2e2e2e;
 }
 .secondaryellow {
   color: #d9c666;
@@ -113,11 +113,15 @@ body {
   color: #666666;
 }
 .textcolor {
-  color: #2E2E2E;
+  color: #2e2e2e;
 }
 .paragraph {
   color: #000000;
   opacity: 60%;
+}
+
+.purple-color {
+  color: #7736b7;
 }
 .borderclass {
   border-top: none;
@@ -342,6 +346,9 @@ body {
   }
   .font-56 {
     font-size: 35px;
+  }
+  .font-44 {
+    font-size: 30px;
   }
 }
 .featurebg {
@@ -600,29 +607,78 @@ textarea {
 }
 
 .hero-btn {
-  border-radius: 8px;
-  background: var(--New-Bttn-Color, #2e2e2e);
-  display: flex;
-  padding: 12px 16px;
+  padding: 16px 28px;
   justify-content: center;
   align-items: center;
   gap: 8px;
-  color: var(--White, #fff);
+  border-radius: 6px;
+  background: #2e2e2e;
+  color: #fff;
   text-align: center;
-  font-size: 20px;
+  font-size: 16px;
   font-style: normal;
-  font-weight: 400;
-  line-height: 24px;
-  width: 214px;
-  height: 52px;
+  font-weight: 700;
+  line-height: 20px; /* 125% */
+}
+
+.react-tabs__tab--selected {
+  background: #2e2e2e !important;
+  border-color: #2e2e2e !important;
+  color: #fff !important;
+  border-radius: 4px !important;
+}
+
+.new-btns {
+  display: inline-flex;
+padding: 12px 28px;
+justify-content: center;
+align-items: center;
+gap: 8px;
+border-radius: 8px;
+background: linear-gradient(0deg, #2E2E2E 0%, #2E2E2E 100%);
+color: var(--White, #FFF);
+text-align: center;
+font-size: 20px;
+font-style: normal;
+font-weight: 400;
+line-height: 24px; /* 120% */
+}
+
+.fadeIn {
+  opacity: 0;
+  animation: fadeInAnimation 0.5s forwards;
+}
+
+.fadeOut {
+  opacity: 1;
+  animation: fadeOutAnimation 0.5s forwards;
+}
+
+@keyframes fadeInAnimation {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fadeOutAnimation {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+  }
 }
 
 
 
+input:focus {
+  outline: none !important;
+  box-shadow: none !important;
+}
 
-.react-tabs__tab--selected {
-  background: #2E2E2E !important;
-  border-color: #2E2E2E !important;
-  color: #fff !important;
-  border-radius: 4px !important;
+.red-star {
+  color: #FF0000;
 }

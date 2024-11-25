@@ -11,30 +11,6 @@ import "intl-tel-input/build/css/intlTelInput.css";
 const Demo = () => {
   const [section, setSection] = useState(1);
 
-  useEffect(() => {
-    // Use a small delay to ensure the DOM is fully rendered
-    if (typeof window !== "undefined") {
-      setTimeout(() => {
-        const input = document.querySelector("#phone");
-        console.log(input); // This should now log the input element, not null
-
-        if (input) {
-          const iti = intlTelInput(input, {
-            initialCountry: "us",
-            separateDialCode: true,
-            nationalMode: false,
-            utilsScript:
-              "https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/js/utils.js",
-          });
-
-          return () => {
-            if (iti) iti.destroy();
-          };
-        }
-      }, 100); // Adjust delay if necessary
-    }
-  }, [section]); // This ensures intlTelInput runs every time section changes
-
   const handleNext = () => {
     setSection(section + 1);
   };

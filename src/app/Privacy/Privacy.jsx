@@ -1,15 +1,13 @@
 "use client";
 
-import Image from "next/image";
 import React from "react";
-import { PiGreaterThanLight } from "react-icons/pi";
 import EmailButton from "../EmailButton .js"; // Corrected path
 
 const Term = () => {
   return (
     <div>
       <div className="bg-[url('/term-bg.png')] bg-no-repeat bg-cover bg-center">
-        <div className="flex items-center widthclass">
+        {/* <div className="flex items-center widthclass">
           <h1 className="text-black pl-16 pt-10  font-24 font-normal font-inter flex items-center gap-2">
             Metricwise
             <span className="paragraph font-20 font-normal font-inter opacity-50 flex items-center gap-2">
@@ -17,7 +15,7 @@ const Term = () => {
               Policy
             </span>
           </h1>
-        </div>
+        </div> */}
         <div className="flex justify-center items-center py-28 relative widthclass">
           <div>
             <h1 className="font-64 font-bold lg:leading-40 mb-5 text-black">
@@ -30,11 +28,11 @@ const Term = () => {
         </div>
       </div>
 
-      <div className="px-5 sm:px-10 lg:px-36 py-16 2xl:p-16 widthclass">
+      <div className="px-10 md:px-[150px] lg:px-[224px] py-[80px] widthclass">
         <h1 className="font-36 font-inter font-bold leading-10 text-[#042440]">
-          Metricwise Inc Privacy Policy
+          Privacy Policy
         </h1>
-        <div className="mt-16">
+        <div className="mt-12">
           <div>
             <p className="font-16 font-normal font-inter leading-6 mt-5 mb-6 opacity-60">
               Welcome to MetricWise! Here, we explain how MetricWise AI, LLC.
@@ -333,12 +331,12 @@ const Term = () => {
           <div>
             <h1 className="font-20 font-inter font-semibold">Contact Us:</h1>
             <p className="font-16 font-normal font-inter leading-6 mt-5 mb-6 opacity-60">
-              For privacy inquiries or complaints, contact us at <br />
+              For privacy inquiries or complaints, contact us at
               <EmailButton
               email="support@metricwise.ai"
               className="text-blue-600 underline"
             >
-              support@metricwise.ai
+               support@metricwise.ai
             </EmailButton>
               .
             </p>  

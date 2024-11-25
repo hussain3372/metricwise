@@ -3,7 +3,6 @@ import ExploreAccordion from "./ExploreAccordion";
 import Monitoring from "./Monitoring";
 import Observability from "./Observability";
 import Governance from "./Governance";
-import { Fade } from "react-awesome-reveal";
 
 const Faq = () => {
   return (

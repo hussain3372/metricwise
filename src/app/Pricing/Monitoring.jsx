@@ -12,11 +12,11 @@ const Monitoring = () => {
 
   return (
     <div>
-      {/* Platform Deployment */}
-      <div className="mt-10 shadow-md rounded-lg">
+      {/* Data Integrity & Completeness */}
+      <div className="mt-14 shadow-sm rounded-lg">
         <button
           onClick={() => setIsIntegrity(!isIntegrity)}
-          className="w-full text-left p-4 bg-[#DCEAF7] font-18 font-inter font-normal leading-6 rounded-lg border border-[#0000001F]"
+          className="w-full text-left p-4 bg-[#F4F4F4] font-20 font-inter font-normal leading-6 rounded-lg border border-[#0000001F]"
         >
           <div className="flex justify-between items-center">
             Data Integrity & Completeness
@@ -28,51 +28,41 @@ const Monitoring = () => {
           </div>
         </button>
         {isIntegrity && (
-          <div>
-            <div className="grid grid-cols-4 bg-[#F4F4F4] p-5 rounded-md">
-              <div>Data Integrity Checks</div>
-              <div className="flex justify-center items-center">
-                <Image width={20} height={20} src="/tick.png" alt="" />
+          <div className="border border-[#0000001F] mt-2">
+            {[
+              { title: "Data Integrity Checks" },
+              { title: "Data Quality Checks" },
+              { title: "Data Schema Validation" },
+            ].map((item, index) => (
+              <div
+                key={index}
+                className={`grid grid-cols-4 border-t border-[#0000001F] ${
+                  index === 0 ? "" : ""
+                }`}
+              >
+                <div className="text-left border-r border-[#0000001F] p-5">
+                  {item.title}
+                </div>
+                <div className="flex justify-center items-center border-r border-[#0000001F] p-5">
+                  <Image width={20} height={20} src="/tick.png" alt="Tick" />
+                </div>
+                <div className="flex justify-center items-center border-r border-[#0000001F] p-5">
+                  <Image width={20} height={20} src="/tick.png" alt="Tick" />
+                </div>
+                <div className="flex justify-center items-center p-5">
+                  <Image width={20} height={20} src="/tick.png" alt="Tick" />
+                </div>
               </div>
-              <div className="flex justify-center items-center">
-                <Image width={20} height={20} src="/tick.png" alt="" />
-              </div>
-              <div className="flex justify-center items-center">
-                <Image width={20} height={20} src="/tick.png" alt="" />
-              </div>
-            </div>
-            <div className="grid grid-cols-4 p-5 rounded-md">
-              <div>Data Quality Checks</div>
-              <div className="flex justify-center items-center">
-                <Image width={20} height={20} src="/tick.png" alt="" />
-              </div>
-              <div className="flex justify-center items-center">
-                <Image width={20} height={20} src="/tick.png" alt="" />
-              </div>
-              <div className="flex justify-center items-center">
-                <Image width={20} height={20} src="/tick.png" alt="" />
-              </div>
-            </div>
-            <div className="grid grid-cols-4 bg-[#F4F4F4] p-5 rounded-md">
-              <div>Data Schema Validation</div>
-              <div className="flex justify-center items-center">
-                <Image width={20} height={20} src="/tick.png" alt="" />
-              </div>
-              <div className="flex justify-center items-center">
-                <Image width={20} height={20} src="/tick.png" alt="" />
-              </div>
-              <div className="flex justify-center items-center">
-                <Image width={20} height={20} src="/tick.png" alt="" />
-              </div>
-            </div>
+            ))}
           </div>
         )}
       </div>
+
       {/* Model Performance */}
-      <div className="mt-5 shadow-lg rounded-lg">
+      <div className="mt-5 shadow-sm rounded-lg">
         <button
           onClick={() => setIsPerformance(!isPerformance)}
-          className="w-full text-left p-4 bg-[#DCEAF7] font-18 font-inter font-normal leading-6 rounded-lg border border-[#0000001F]"
+          className="w-full text-left p-4 bg-[#F4F4F4] font-20 font-inter font-normal leading-6 rounded-lg border border-[#0000001F]"
         >
           <div className="flex justify-between items-center">
             Model Performance
@@ -84,47 +74,45 @@ const Monitoring = () => {
           </div>
         </button>
         {isPerformance && (
-          <div>
-            <div className="grid grid-cols-4 bg-[#F4F4F4] p-5 rounded-md">
-              <div>Model Monitoring</div>
-              <div className="flex justify-center items-center">
-                <Image width={20} height={20} src="/tick.png" alt="" />
+          <div className="border border-[#0000001F] mt-2">
+            {[
+              { title: "Model Monitoring", showTick: true },
+              { title: "Model Inference Time", showTick: true },
+              { title: "Embeddings Monitoring", showTick: false },
+            ].map((item, index) => (
+              <div
+                key={index}
+                className={`grid grid-cols-4 border-t border-[#0000001F] ${
+                  index % 2 === 0 ? "" : ""
+                }`}
+              >
+                <div className="text-left border-r border-[#0000001F] p-5">
+                  {item.title}
+                </div>
+                <div className="flex justify-center items-center border-r border-[#0000001F] p-5">
+                  {item.showTick && (
+                    <Image width={20} height={20} src="/tick.png" alt="Tick" />
+                  )}
+                </div>
+                <div className="flex justify-center items-center border-r border-[#0000001F] p-5">
+                  {item.showTick && (
+                    <Image width={20} height={20} src="/tick.png" alt="Tick" />
+                  )}
+                </div>
+                <div className="flex justify-center items-center p-5">
+                  <Image width={20} height={20} src="/tick.png" alt="Tick" />
+                </div>
               </div>
-              <div className="flex justify-center items-center">
-                <Image width={20} height={20} src="/tick.png" alt="" />
-              </div>
-              <div className="flex justify-center items-center">
-                <Image width={20} height={20} src="/tick.png" alt="" />
-              </div>
-            </div>
-            <div className="grid grid-cols-4 p-5 rounded-md">
-              <div>Model Inference Time</div>
-              <div className="flex justify-center items-center">
-                <Image width={20} height={20} src="/tick.png" alt="" />
-              </div>
-              <div className="flex justify-center items-center">
-                <Image width={20} height={20} src="/tick.png" alt="" />
-              </div>
-              <div className="flex justify-center items-center">
-                <Image width={20} height={20} src="/tick.png" alt="" />
-              </div>
-            </div>
-            <div className="grid grid-cols-4 bg-[#F4F4F4] p-5 rounded-md">
-              <div>Embeddings monitoring</div>
-              <div className="flex justify-center items-center"></div>
-              <div className="flex justify-center items-center"></div>
-              <div className="flex justify-center items-center">
-                <Image width={20} height={20} src="/tick.png" alt="" />
-              </div>
-            </div>
+            ))}
           </div>
         )}
       </div>
+
       {/* Feature Performance */}
-      <div className="mt-5 shadow-lg rounded-lg">
+      <div className="mt-5 shadow-sm rounded-lg">
         <button
           onClick={() => setIsFeature(!isFeature)}
-          className="w-full text-left p-4 bg-[#DCEAF7] font-18 font-inter font-normal leading-6 rounded-lg border border-[#0000001F]"
+          className="w-full text-left p-4 bg-[#F4F4F4] font-20 font-inter font-normal leading-6 rounded-lg border border-[#0000001F]"
         >
           <div className="flex justify-between items-center">
             Feature Performance
@@ -136,39 +124,40 @@ const Monitoring = () => {
           </div>
         </button>
         {isFeature && (
-          <div>
-            <div className="grid grid-cols-4 bg-[#F4F4F4] p-5 rounded-md">
-              <div>Feature Monitoring</div>
-              <div className="flex justify-center items-center">
-                <Image width={20} height={20} src="/tick.png" alt="" />
+          <div className="border border-[#0000001F] mt-2">
+            {[
+              { title: "Feature Monitoring" },
+              { title: "Feature Statistics" },
+            ].map((item, index) => (
+              <div
+                key={index}
+                className={`grid grid-cols-4 border-t border-[#0000001F] ${
+                  index === 0 ? "" : ""
+                }`}
+              >
+                <div className="text-left border-r border-[#0000001F] p-5">
+                  {item.title}
+                </div>
+                <div className="flex justify-center items-center border-r border-[#0000001F] p-5">
+                  <Image width={20} height={20} src="/tick.png" alt="Tick" />
+                </div>
+                <div className="flex justify-center items-center border-r border-[#0000001F] p-5">
+                  <Image width={20} height={20} src="/tick.png" alt="Tick" />
+                </div>
+                <div className="flex justify-center items-center p-5">
+                  <Image width={20} height={20} src="/tick.png" alt="Tick" />
+                </div>
               </div>
-              <div className="flex justify-center items-center">
-                <Image width={20} height={20} src="/tick.png" alt="" />
-              </div>
-              <div className="flex justify-center items-center">
-                <Image width={20} height={20} src="/tick.png" alt="" />
-              </div>
-            </div>
-            <div className="grid grid-cols-4 p-5 rounded-md">
-              <div>Feature Statistics</div>
-              <div className="flex justify-center items-center">
-                <Image width={20} height={20} src="/tick.png" alt="" />
-              </div>
-              <div className="flex justify-center items-center">
-                <Image width={20} height={20} src="/tick.png" alt="" />
-              </div>
-              <div className="flex justify-center items-center">
-                <Image width={20} height={20} src="/tick.png" alt="" />
-              </div>
-            </div>
+            ))}
           </div>
         )}
       </div>
+
       {/* Anomaly Detection */}
-      <div className="mt-5 shadow-lg rounded-lg">
+      <div className="mt-5 shadow-sm rounded-lg">
         <button
           onClick={() => setIsDetection(!isDetection)}
-          className="w-full text-left p-4 bg-[#DCEAF7] font-18 font-inter font-normal leading-6 rounded-lg border border-[#0000001F]"
+          className="w-full text-left p-4 bg-[#F4F4F4] font-20 font-inter font-normal leading-6 rounded-lg border border-[#0000001F]"
         >
           <div className="flex justify-between items-center">
             Anomaly Detection
@@ -180,29 +169,33 @@ const Monitoring = () => {
           </div>
         </button>
         {isDetection && (
-          <div>
-            <div className="grid grid-cols-4 bg-[#F4F4F4] p-5 rounded-md">
-              <div>Outlier Detection</div>
-              <div className="flex justify-center items-center">
-                <Image width={20} height={20} src="/tick.png" alt="" />
+          <div className="border border-[#0000001F] mt-2">
+            {[
+              { title: "Outlier Detection", showTick: true },
+              { title: "Root Cause Analysis", showTick: false },
+            ].map((item, index) => (
+              <div
+                key={index}
+                className={`grid grid-cols-4 border-t border-[#0000001F] ${
+                  index % 2 === 0 ? "" : ""
+                }`}
+              >
+                <div className="text-left border-r border-[#0000001F] p-5">
+                  {item.title}
+                </div>
+                <div className="flex justify-center items-center border-r border-[#0000001F] p-5">
+                  {item.showTick && (
+                    <Image width={20} height={20} src="/tick.png" alt="Tick" />
+                  )}
+                </div>
+                <div className="flex justify-center items-center border-r border-[#0000001F] p-5">
+                  <Image width={20} height={20} src="/tick.png" alt="Tick" />
+                </div>
+                <div className="flex justify-center items-center p-5">
+                  <Image width={20} height={20} src="/tick.png" alt="Tick" />
+                </div>
               </div>
-              <div className="flex justify-center items-center">
-                <Image width={20} height={20} src="/tick.png" alt="" />
-              </div>
-              <div className="flex justify-center items-center">
-                <Image width={20} height={20} src="/tick.png" alt="" />
-              </div>
-            </div>
-            <div className="grid grid-cols-4 p-5 rounded-md">
-              <div>Root Cause Analysis</div>
-              <div className="flex justify-center items-center"></div>
-              <div className="flex justify-center items-center">
-                <Image width={20} height={20} src="/tick.png" alt="" />
-              </div>
-              <div className="flex justify-center items-center">
-                <Image width={20} height={20} src="/tick.png" alt="" />
-              </div>
-            </div>
+            ))}
           </div>
         )}
       </div>

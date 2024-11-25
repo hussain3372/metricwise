@@ -1,82 +1,95 @@
 "use client";
 
-import React, { useState, useEffect } from "react";
+import React from "react";
 import CardData from "../../data/CardData"; // Ensure this path is correct
 import Image from "next/image";
 import { Fade } from "react-awesome-reveal";
+import Link from "next/link";
 
 const Card = () => {
-  // Set initial states for each card image index
-  const [imageIndexes, setImageIndexes] = useState(Array(CardData.length).fill(0));
-
-  useEffect(() => {
-    const intervals = CardData.map((_, index) =>
-      setInterval(() => {
-        setImageIndexes((prevIndexes) => {
-          const newIndexes = [...prevIndexes];
-          newIndexes[index] = (newIndexes[index] + 1) % imagesForCard(index).length;
-          return newIndexes;
-        });
-      }, 5000) // Change every 5 seconds
-    );
-
-    // Clean up intervals on component unmount
-    return () => intervals.forEach((interval) => clearInterval(interval));
-  }, []);
-
-  // Function to return image array for each card
-  const imagesForCard = (index) => {
-    switch (index) {
-      case 0:
-        return ["/img1.svg", "/img2.svg", "/img3.svg"];
-      case 1:
-        return ["/img4.svg", "/img5.svg"];
-      case 2:
-        return ["/img6.svg", "/img7.svg"];
-      default:
-        return ["/img1.svg"];
-    }
-  };
-
   return (
-    <div className="">
-      <div>
-        <div className="widthclass">
-          {CardData.map((item, index) => (
-            // <Fade key={`fade-${index}`} direction={index === 1 ? "right" : "left"}>
-              <div
-                className={`grid md:grid-cols-2 items-center ${index === 1 ? "md:flex-row-reverse" : ""}`}
-                key={`card-${index}`}
-              >
-                <div className={`p-10 ${index === 1 ? "md:order-last" : ""}`} key={`text-${index}`}>
-                  <h1 className="text-4xl font-32 font-medium leading-10">{item.name}</h1>
-                  <p className="text-lg font-16 text-[#00000099] font-normal leading-6 mt-5">{item.para}</p>
-                  <ul className="mt-5">
-                    {[item.list, item.list1, item.list2, item.list3, item.list4].map((listItem, listIndex) => 
-                      listItem && (
-                        <li key={`list-${index}-${listIndex}`} className="mb-5 font-14 font-normal leading-4 text-[#000000] flex items-center gap-3">
-                          <Image src={item.logo} alt="List item icon" width={20} height={20} />
-                          {listItem}
-                        </li>
-                      )
-                    )}
-                  </ul>
-                </div>
-                <div className={`flex ${index % 2 === 0 ? "justify-center md:justify-end" : ""}`} key={`image-${index}`}>
-                  <Fade key={imageIndexes} duration={2000}>
-
-                  <Image
-                    src={imagesForCard(index)[imageIndexes[index]]}
-                    alt="Card image"
-                    width={460}
-                    height={428}
-                    />
-                    </Fade>
-                </div>
+    <div>
+      <div className="widthclass ">
+        {CardData.map((item, index) => (
+          <div
+            className={`grid grid-cols-1 md:grid-cols-2 gap-5 xl:gap-[176px] mt-[px] px-8 xl:px-[128px] py-5 lg:py-[52px] ${
+              index === 1 ? "md:flex-row-reverse" : ""
+            }`}
+            key={`card-${index}`}
+          >
+            <div
+              className={`flex flex-col ${
+                index % 2 === 0 ? "md:order-last" : ""
+              }`}
+            >
+              <div className="mb-5">
+                <Image src="/Dots.svg" width={36} height={8} alt="dots" />
               </div>
-            // </Fade>
-          ))}
-        </div>
+              <h1 className="font-40 font-medium leading-[48px]">
+                <span className="text-[#7736B7]">{item.span}</span> <br />
+                {item.name}
+              </h1>
+              <p className="font-14 text-[#000] font-normal leading-5 mt-6">
+                {item.para}
+              </p>
+              <ul className="mt-7">
+                {[item.list, item.list1, item.list2, item.list3, item.list4].map(
+                  (listItem, listIndex) =>
+                    listItem && (
+                      <li
+                        key={`list-${index}-${listIndex}`}
+                        className="mb-5 font-16 font-medium leading-5 text-[#000000] flex items-center gap-2"
+                      >
+                        <Image
+                          src={item.logo}
+                          alt="List item icon"
+                          width={24}
+                          height={24}
+                        />
+                        {listItem}
+                      </li>
+                    )
+                )}
+              </ul>
+              <div className="mt-10 flex">
+                <Link
+                  href="#"
+                  className="rounded-md bg-[#2E2E2E] text-white py-4 px-7 font-14 font-medium leading-4 flex justify-center items-center gap-2"
+                  type="button"
+                >
+                  Learn more
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="20"
+                    height="20"
+                    viewBox="0 0 20 20"
+                    fill="none"
+                  >
+                    <path
+                      d="M5.50823 14.8452L14.4926 5.8608M14.4926 5.8608V14.3461M14.4926 5.8608H6.00736"
+                      stroke="white"
+                      stroke-width="1.25"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                  </svg>
+                </Link>
+              </div>
+            </div>
+
+            <div
+              className={`flex justify-center md:justify-${index % 2 === 0 ? "start" : "end"}`}
+            >
+              <Image
+                src={item.img}
+                alt={`Card image ${index + 1}`}
+                width={460}
+                height={428}
+                className="rounded-lg w-full h-full"
+              />
+            </div>
+          </div>
+        ))}
       </div>
     </div>
   );

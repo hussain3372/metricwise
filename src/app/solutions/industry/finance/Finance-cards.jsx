@@ -5,7 +5,7 @@ import React from "react";
 const FinanceCards = () => {
   return (
     <div>
-      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-20 sm:gap-10 lg:gap-20 px-2 sm:px-10 lg:px-20 xl:px-[158px] my-8">
+      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-20 sm:gap-10 lg:gap-20 px-2 sm:px-10 lg:px-20 xl:px-[158px] mt-10 mb-7">
         {financeCards.map((item, index) => (
           <div
             key={index}

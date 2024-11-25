@@ -23,27 +23,15 @@ const BlogDetail = () => {
       <Header />
 
       {/* Blog Heading and Main Section */}
-      <div className="bg-white relative">
-        {/* <div className="flex items-center widthclass relative">
-          <h1 className="text-black pl-16 pt-10 font-24 font-normal font-inter hidden sm:flex items-center gap-2 z-10">
-            Metricwise
-            <span className="paragraph font-20 font-normal font-inter opacity-50 flex items-center gap-2">
-              <PiGreaterThanLight /> Resources <PiGreaterThanLight /> Blogs
-              <PiGreaterThanLight /> Define Monitoring
-            </span>
-          </h1>
-
-          <div className="absolute top-1 -left-1">
-            <Image src="/hr1.png" width={138} height={138} alt="path-bg" />
-          </div>
-        </div> */}
-        <div className="pt-20 pb-16 sm:pb-[120px] md:pb-64 lg:pb-96 relative widthclass px-10 xl:px-[165px] flex justify-center items-center flex-col">
+      <div className="bg-gradient-to-l from-[#FFF0BC99] to-[#CFC2FF99]">
+        <div className="py-[50px] px-5 sm:px-28 xl:px-[244px] gap-10 lg:gap-[80px] flex justify-center items-center flex-col">
           <div className="w-full text-left">
-            <h1 className="font-36 font-bold lg:leading-10 mb-5 primaryblue z-10 text-center">
-              {blog.title}
-            </h1>
+            <h1
+              className="font-36 font-bold lg:leading-10 mb-5 primaryblue z-10 text-center"
+              dangerouslySetInnerHTML={{ __html: blog.title }}
+            ></h1>
           </div>
-          <div className="absolute top-40 z-10 p-2 sm:p-16">
+          <div className="">
             <Image
               src={blog.imgSrc}
               width={blog.w}
@@ -52,14 +40,10 @@ const BlogDetail = () => {
             />
           </div>
         </div>
-        {/* 
-        <div className="absolute bottom-0">
-          <Image src="/hr2.png" width={108} height={136} alt="path-bg" />
-        </div> */}
       </div>
 
       {/* Blog Content */}
-      <div className="flex flex-col items-start gap-8 mt-64 px-10 xl:px-10 container m-auto">
+      <div className="flex flex-col items-start gap-8 mt-9 widthclass px-5 md:px-[112px] 2xl:px-0 py-9">
         <div className="flex items-center gap-8">
           <Image src="/facebook.svg" width={24} height={24} alt="social-icon" />
           <Image src="/twitter.svg" width={24} height={24} alt="social-icon" />
@@ -74,11 +58,11 @@ const BlogDetail = () => {
 
         <div className="w-full">
           <div className="lg:flex justify-between items-center">
-            <span className="inline-flex items-center rounded-md bg-[#2E2E2E33] px-2 py-1 text-black font-20 font-medium">
+            <span className="inline-flex items-center rounded-lg bg-[#2E2E2E] px-2 py-1 text-white font-20 font-normal">
               {blog.category}
             </span>
-            <div className="text-gray-500 text-sm mt-3 lg:mt-0">
-              <span className="primaryblue font-16 font-normal leading-5">
+            <div className=" mt-3 lg:mt-0">
+              <span className="text-[#2E2E2E] font-16 font-normal leading-5">
                 {blog.date} . {blog.readTime}
               </span>
             </div>
@@ -212,10 +196,10 @@ const BlogDetail = () => {
                     {section.paraheading && (
                       <h3 className="font-16 font-bold">
                         {section.paraheading}
+                        {section.para && (
+                          <span className="font-normal"> {section.para}</span>
+                        )}
                       </h3>
-                    )}
-                    {section.para && (
-                      <span className="font-normal">{section.para}</span>
                     )}
                   </div>
                 ))}
@@ -369,7 +353,7 @@ const BlogDetail = () => {
       </div>
 
       {/* Recommended Articles */}
-      <div className="bg-[#1D285614] bg-[url('/recommended-bg.svg')] bg-no-repeat bg-left-bottom bg-contain mt-16 px-10 md:px-20 2xl:px-52 py-10">
+      <div className="bg-[#1D285614] bg-[url('/recommended-bg.svg')] bg-no-repeat bg-left-bottom bg-contain mt-16 px-5 sm:px-10 lg:px-[68px] py-10">
         <div className="container m-auto">
           <div className="flex justify-start items-start flex-col gap-5 relative">
             <h1 className="font-36 font-bold leading-10">
@@ -381,63 +365,47 @@ const BlogDetail = () => {
           </div>
 
           <div className="flex justify-center items-center gap-10 mt-11">
-            <div className="grid lg:grid-cols-2 gap-10">
-              {/* First Card */}
-              <div className="sm:flex bg-white shadow-[0_3px_15px_rgb(0,0,0,0.2)] gap-5 p-6 rounded-[20px]">
-                <div className="w-[128px] h-[160px] mb-5 sm:mb-0 flex-shrink-0">
-                  <Image
-                    width={128}
-                    height={160}
-                    src="/other.png"
-                    className="rounded-[20px] w-full h-full object-cover"
-                    alt="img"
-                  />
-                </div>
-
-                <div className="flex flex-col justify-between flex-grow gap-2">
-                  <h3 className="text-[20px] font-inter font-semibold leading-6">
-                    Metricwise: The AI Observability Platform
-                  </h3>
-                  <p className="text-[16px] font-inter font-normal leading-5 opacity-[60%] text-[#2E2E2E]">
-                    At Metricwise, we're dedicated to making advanced AI tools
-                    accessible to everyone, providing practitioners with the
-                    resources and knowledge.
-                  </p>
-                  <Link href="/recourses/Blog/8" className="primary-small-btn">
-                    Learn more
-                  </Link>
-                </div>
+            {blog.recommended && (
+              <div className="grid lg:grid-cols-2 gap-10">
+                {/* Recommended Articles */}
+                {blog.recommended.map((article, index) => (
+                  <div
+                    key={`recommended-${index}`}
+                    className="sm:flex bg-white shadow-[0_3px_15px_rgb(0,0,0,0.2)] gap-5 p-6 rounded-[20px]"
+                  >
+                    <div className="w-[128px] h-[160px] mb-5 sm:mb-0 flex-shrink-0">
+                      <Image
+                        width={128}
+                        height={160}
+                        src={article.articleimg}
+                        className="rounded-[20px] w-full h-full object-cover"
+                        alt={`Article ${index}`}
+                      />
+                    </div>
+                    <div className="flex flex-col justify-between flex-grow gap-2">
+                      <div className="space-y-2">
+                        <h3 className="text-[20px] font-inter font-semibold leading-6">
+                          {article.articletitle}
+                        </h3>
+                        <p className="text-[16px] font-inter font-normal leading-5 opacity-[60%] text-[#2E2E2E]">
+                          {article.articledetail}
+                        </p>
+                      </div>
+                      <Link
+                        href={article.articleLink}
+                        className="primary-small-btn"
+                      >
+                        Learn more
+                      </Link>
+                    </div>
+                  </div>
+                ))}
               </div>
-
-              {/* Second Card */}
-              <div className="sm:flex bg-white shadow-[0_3px_15px_rgb(0,0,0,0.2)] gap-5 p-6 rounded-[20px]">
-                <div className="w-[128px] h-[160px] mb-5 sm:mb-0 flex-shrink-0">
-                  <Image
-                    width={128}
-                    height={160}
-                    src="/other.png"
-                    className="rounded-[20px] w-full h-full object-cover"
-                    alt="img"
-                  />
-                </div>
-
-                <div className="flex flex-col justify-between flex-grow gap-2">
-                  <h3 className="text-[20px] font-inter font-semibold leading-6">
-                  Navigating the Intersection...
-                  </h3>
-                  <p className="text-[16px] font-inter font-normal leading-5 opacity-[60%] text-[#2E2E2E]">
-                  In today's fast-changing tech landscape, it's crucial to emphasize the importance of thorough...
-                  </p>
-                  <Link href="/recourses/Blog/5" className="primary-small-btn">
-                    Learn more
-                  </Link>
-                </div>
-              </div>
-            </div>
+            )}
           </div>
 
           <div className="flex justify-end items-end mt-6">
-            <Link href="/recourses/Blog" className="hero-btn">
+            <Link href="/recourses/Blog" className="new-btns">
               See More
               <Image src="/free.png" width={24} height={24} alt="free" />
             </Link>

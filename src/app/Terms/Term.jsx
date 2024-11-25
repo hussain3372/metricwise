@@ -1,9 +1,7 @@
 "use client";
 
-import Image from "next/image";
 import React from "react";
 import Terms from "../data/Term";
-import { PiGreaterThanLight } from "react-icons/pi";
 import EmailButton from "../EmailButton .js"; // Corrected path
 
 
@@ -12,31 +10,20 @@ const Term = () => {
   return (
     <div>
       <div className="bg-[url('/term-bg.png')] bg-no-repeat bg-cover bg-center">
-        <div className="flex items-center widthclass">
-          <h1 className="text-black pl-16 pt-10  font-24 font-normal font-inter flex items-center gap-2">
-            Metricwise
-            <span className="paragraph font-20 font-normal font-inter opacity-50 flex items-center gap-2">
-              <PiGreaterThanLight /> Resources <PiGreaterThanLight /> Blogs
-            </span>
-          </h1>
-        </div>
         <div className="flex justify-center items-center py-28 relative widthclass">
           <div>
             <h1 className="font-64 font-bold lg:leading-40 mb-5 text-black">
               Terms of Use
             </h1>
           </div>
-          {/* <div className="flex justify-center md:justify-end mt-10 md:mt-0">
-            <Image width={1246} height={517} src="/gov.jpg" alt="" />
-          </div> */}
         </div>
       </div>
 
-      <div className="px-5 sm:px-10 lg:px-36 py-16 2xl:p-16 widthclass">
+      <div className="px-10 md:px-[150px] lg:px-[224px] py-[80px] widthclass">
         <h1 className="font-36 font-inter font-bold leading-10 text-[#042440]">
           Terms of Use
         </h1>
-        <div className="mt-16">
+        <div className="mt-12">
           {Terms.map((term, termIndex) => (
             <div key={termIndex}>
               <div>

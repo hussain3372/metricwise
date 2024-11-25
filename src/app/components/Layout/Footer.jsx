@@ -71,27 +71,21 @@ const Footer = () => {
   ];
 
   return (
-    <footer className="text-black bg pt-20 pb-8">
+    <footer className="text-black bg pt-10 pb-8">
       <div className="widthclass">
         <div className="pt-10 pb-0 sm:pb-3 px-5 sm:px-10 xl:px-20 xxl:px-28">
-          <div className="bg-[url('/cta-bg.png')] bg-no-repeat bg-cover bg-center rounded-[20px] mx-0 sm:mx-10 md:mx-20 lg:mx-40 py-10 flex justify-between items-center text-center flex-col gap-12">
-            <h1 className="font-28 font-semibold leading-9 px-5 lg:px-40">
+          <div className="bg-[url('/cta-bg.svg')] bg-no-repeat bg-cover bg-center rounded-[20px] mx-0 sm:mx-10 md:mx-20 lg:mx-40 py-10 flex justify-between items-center text-center flex-col gap-6">
+            <h1 className="font-32 font-medium leading-12 px-5 lg:px-24">
               Start your AI monitoring, observability and governance journey
               with Metricwise.
             </h1>
-            <div className="flex flex-col sm:flex-row justify-center items-center gap-4 mt-5">
-              <Link href="/Demo" className="primary-btn" type="button">
-                <Image
-                  src="/demo-img.svg"
-                  width={20}
-                  height={20}
-                  alt="demo-img"
-                />
-                Book a Demo
+            <div className="flex flex-col sm:flex-row justify-center items-center gap-4">
+              <Link href="/company/contact_us" className="border border-[#2E2E2E] bg-[#2E2E2E] text-white rounded-lg px-4 py-3 font-12 font-medium leading-4">
+                 Get Started Now
               </Link>
 
-              <Link href="/company/contact_us" className="secondary-btn">
-                Get Started
+              <Link href="/Demo" className="border border-[#2E2E2E] rounded-lg px-4 py-3 font-12 font-medium leading-4">
+                Book a demo
               </Link>
             </div>
           </div>

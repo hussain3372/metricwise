@@ -20,6 +20,13 @@ export const Products = [
     href: "/Products/Governance",
     icon: "/pr3.svg",
   },
+  {
+    name: "Compliance",
+    description:
+      "Effortlessly govern your AI/ML models enterprise-wide for compliance and risk management",
+    href: "/Products/Compliance",
+    icon: "/pr4.svg",
+  },
 ];
 
 export const Solutions = [
@@ -168,7 +175,7 @@ export const Recources = [
     name: "Integration ",
     description:
       "Learn about our flexible integration options to ensure smooth AI implementation.",
-    href: "#",
+    href: "/Integration",
     icon: "/r4.svg",
   },
 ];
