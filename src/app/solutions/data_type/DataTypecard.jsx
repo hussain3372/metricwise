@@ -7,162 +7,172 @@ import Image from "next/image";
 const DataTypecard = () => {
   return (
     <div className="">
-      <div className="bg-[#F4F4F4] p-5 md:p-20">
-        <div className="grid xl:grid-cols-2 space-y-20 md:space-y-0 items-center widthclass">
+      <div className="bg-[url('/type1-framebg.svg')] bg-no-repeat bg-center bg-cover px-5 sm:px-10 lg:pr-5 lg:pl-[77px] py-[95px]">
+        <div className="grid lg:grid-cols-2 space-y-20 md:space-y-0 items-center widthclass">
           <div className="p-10 rounded-[24px] bg-[#E6E9EC] shadow-[0px_4px_24px_0_rgb(0,0,0,0.24)]">
             <h1 className="font-36 font-bold leading-10">Tabular</h1>
             <p className="font-16 textcolor font-normal leading-5 mt-10">
               Identify drift and monitor key metrics to ensure accuracy,
-              efficacy, and resilience of <br className="hidden md:block"/> tabular models. <br /><br /> Scrutinize production
-              data to maintain performance in real-world applications. <br /><br /> Get
-              real-time notifications via Slack, MS Teams, or email for issues
-              like data integrity, bias, or performance degradation. Customize
-              monitors and metrics to fit your specific use case and
-              requirements. Use explainability to quantify individual feature
-              impact in machine learning workflows. Enhance model
-              interpretability and provide clear insights for stakeholders.
-              Analyze production data by slicing and dicing to identify the root
-              cause of machine learning issues. Uncover patterns and refine
-              model performance through detailed analysis of production data.
+              efficacy, and resilience of <br className="hidden md:block" />
+              tabular models. <br />
+              <br /> Scrutinize production data to maintain performance in
+              real-world applications. <br />
+              <br /> Get real-time notifications via Slack, MS Teams, or email
+              for issues like data integrity, bias, or performance degradation.
+              <br />
+              <br /> Customize monitors and metrics to fit your specific use
+              case and requirements. <br /> <br /> Use explainability to
+              quantify individual feature impact in machine learning{" "}
+              <br className="hidden md:block" /> workflows. <br />
+              <br /> Enhance model interpretability and provide clear insights
+              for stakeholders. <br />
+              <br /> Analyze production data by slicing and dicing to identify
+              the root cause of machine <br /> learning issues. <br />
+              <br /> Uncover patterns and refine model performance through
+              detailed analysis of
+              <br />
+              production data.
+            </p>
+          </div>
+          <div className="flex justify-center lg:justify-end">
+            <Image src="/type1.png" width={595} height={568} alt="type1" />
+          </div>
+        </div>
+      </div>
+
+      <div className="bg-[url('/type2-framebg.svg')] bg-no-repeat bg-center bg-cover px-5 sm:px-10 lg:pr-5 lg:pl-[77px] py-[95px]">
+      <div className="grid lg:grid-cols-2 space-y-20 md:space-y-0 items-center widthclass">
+          <div className="flex justify-center lg:justify-start order-2 lg:order-1">
+            <Image src="/type2.png" width={633} height={609} alt="type1" />
+          </div>
+          <div className="p-10 rounded-[24px] bg-[#E6E9EC] shadow-[0px_4px_24px_0_rgb(0,0,0,0.24)] order-1 lg:order-2">
+            <h1 className="font-36 font-bold leading-10">Text</h1>
+            <p className="font-16 textcolor font-normal leading-5 mt-10">
+              Implement robust monitoring for unstructured models to handle
+              high-dimensional vectors and ensure stability. <br />
+              <br />
+              Address unique challenges of monitoring unstructured data by
+              tailoring mechanisms to its complexity.
+              <br />
+              <br />
+              Enhance business decision-making by connecting unstructured model
+              outcomes to key KPIs.
+              <br />
+              <br />
+              Incorporate explainability, fairness, and toxicity assessments to
+              boost confidence in unstructured model decisions.
+              <br />
+              <br />
+              Monitor NLP and textual data to detect data distribution shifts
+              and maintain performance.
+              <br />
+              <br />
+              Compare baseline and production data to identify variations
+              affecting model performance.
+              <br />
+              <br />
+              Quantify data and concept drift to enhance the adaptability of NLP
+              models in dynamic environments.
+              <br />
+              <br />
             </p>
           </div>
         </div>
       </div>
 
-      <div className="bg-white p-5 md:p-20">
-        <div className="grid xl:grid-cols-2 space-y-20 md:space-y-0 items-center widthclass">
-          <div className="relative">
-            <div
-              className="bg-[#E6E9EC] rounded-[24px] p-10 w-full md:w-[400px]"
-              style={{ boxShadow: "0 3px 10px rgba(0, 0, 0, 0.2)" }}
-            >
-              <h1 className="text-[#042440] font-36 leading-10 font-bold">
-                Text
-              </h1>
-              <p className="font-16 text-[#2E2E2E] leading-5 pt-10">
-                Maintain constant vigilance over your unstructured models.
-                Unlike models dealing with tabular data, monitoring those
-                working with unstructured data presents unique challenges,
-                primarily due to the high-dimensional nature of their vectors.
-                Ensure the continuous stability and reliability of these models
-                by implementing robust monitoring mechanisms tailored to address
-                the complexities inherent in their unstructured data structures.
-              </p>
-            </div>
-
-            <div
-              className="bg-[#E6E9EC] rounded-[24px] p-10 w-full md:w-[400px] relative left-0 md:left-[80px] 2xl:left-[167px] top-5 md:-top-[18px] 2xl:-top-[23px] z-20"
-              style={{ boxShadow: "0 3px 10px rgba(0, 0, 0, 0.2)" }}
-            >
-              <p className="font-16 text-[#2E2E2E] leading-5">
-                Elevate your business decision-making processes by unraveling
-                the why behind model outcomes, especially in the realm of
-                unstructured data. Establish a clear connection between model
-                predictions and key business Key Performance Indicators (KPIs).
-                Boost confidence in unstructured model decisions by
-                incorporating explainability, fairness assessments, and toxicity
-                evaluations. This holistic approach not only enhances the
-                interpretability of model decisions but also aligns them with
-                ethical considerations, fostering a more informed and
-                responsible decision-making paradigm.
-              </p>
-            </div>
-
-            <div className="absolute top-[470px] -left-[35px] 2xl:left-[26px] z-0 hidden md:block">
-              <Image
-                src="/circle-bg.svg"
-                width={150}
-                height={115}
-                alt="circle-bg"
-              />
-            </div>
-
-            <div
-              className="bg-[#E6E9EC] rounded-[24px] p-10 w-full md:w-[400px] relative left-0 md:left-[186px] lg:left-[250px] x:left-[366px] top-10 md:-top-[40px] xl:-top-[50px] z-20"
-              style={{ boxShadow: "0 3px 10px rgba(0, 0, 0, 0.2)" }}
-            >
-              <p className="font-16 text-[#2E2E2E] leading-5">
-                Precisely monitor NLP and textual data landscapes by deploying
-                strategies to detect shifts in data distribution. Conduct
-                thorough comparisons between baseline and production data to
-                identify variations that may impact model performance. Pinpoint
-                the root causes of underperformance and drift to iteratively
-                enhance model outcomes. Quantify the extent of data and concept
-                drift, providing a quantitative measure of the evolving nature
-                of the textual data. This meticulous monitoring approach ensures
-                the ongoing accuracy and adaptability of NLP models in dynamic
-                environments.
-              </p>
-            </div>
-
-            <div className="absolute top-[789px] xl:top-[860px] left-[101px] lg:left-[166px] xl:left-[156px] z-0 hidden md:block">
-              <Image
-                src="/circle-bg.svg"
-                width={100}
-                height={115}
-                alt="circle-bg"
-              />
-            </div>
-          </div>
-          <div className="relative">
-            <div>
-              <Image src="/type2.png" width={594} height={568} alt="type1" />
-            </div>
-
-            <div className="absolute -right-20 bottom-0 hidden md:block">
-              <Image
-                src="/dataWave.svg"
-                width={170}
-                height={770}
-                alt="data wave"
-              />
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <div className="bg-[url('/ctabg.png')] bg-cover bg-no-repeat bg-center py-20 px-5 md:px-20 rounded-lg">
-        <div className="md:flex justify-center items-center gap-10 xl:gap-[300px] text-white space-y-10 md:space-y-0 widthclass">
+      <div className="bg-gradient-to-l to-[#CFC2FF99] from-[#FFF0BC99] py-20 px-5 sm:px-10 lg:px-[165px] rounded-lg">
+        <div className="md:flex justify-between items-center text-white space-y-10 md:space-y-0 widthclass">
           <div>
-            <h1 className="font-48 font-semibold ">Get Started Now</h1>
+            <h1 className="font-48 font-semibold leaindg-12 text-black text-center">
+              Get Started Now
+            </h1>
           </div>
-          <div className="flex flex-col sm:flex-row items-center gap-2 z-20">
-            <button className="border border-[#EBEBEB] rounded-lg py-3 w-[140px] bg-transparent text-white">
+          <div className="flex flex-col sm:flex-row items-center gap-6 z-20">
+            <button className="border border-[#000000] rounded-[10px] bg-transparent text-black px-10 py-4 font-16 font-bold leading-6">
               Learn More
             </button>
-            <button className="border border-[#EBEBEB] bg-white rounded-lg py-3 w-[140px] text-black">
+            <button className="border border-[##2E2E2E] rounded-[10px] bg-[#2E2E2E] text-white px-10 py-4 font-16 font-bold leading-6">
               Get Started
             </button>
           </div>
         </div>
       </div>
 
-      {dataType.map((item, index) => (
-        <div key={index} className={`${index % 2 === 0 ? "bg-[#F4F4F4]" : ""}`}>
-          <div className="grid md:grid-cols-2 items-center px-5 sm:px-10 md:px-20 py-10 widthclass">
-            <div className={` ${index % 2 === 1 ? "md:order-last" : ""}`}>
-              <h1 className="font-36 font-bold font-inter leading-10">
-                {item.main}
-              </h1>
-              {item.Paragraph.map((para, paraIndex) => (
-                <p
-                  key={paraIndex}
-                  className="font-16 font-inter font-normal leading-[20px] mt-10"
-                >
-                  {para}
-                </p>
-              ))}
-            </div>
-            <div
-              className={` flex justify-start mt-10 md:mt-0 ${
-                index % 2 === 0 ? "md:justify-end" : ""
-              }`}
-            >
-              <Image src={item.pic} alt="Card image" width={481} height={430} />
-            </div>
+      <div className="bg-[url('/type1-framebg.svg')] bg-no-repeat bg-center bg-cover px-5 sm:px-10 lg:pr-5 lg:pl-[77px] py-[95px]">
+        <div className="grid xl:grid-cols-2 space-y-20 md:space-y-0 items-center widthclass">
+          <div className="p-10 rounded-[24px] bg-[#E6E9EC] shadow-[0px_4px_24px_0_rgb(0,0,0,0.24)]">
+            <h1 className="font-36 font-bold leading-10">LLM</h1>
+            <p className="font-16 textcolor font-normal leading-5 mt-10">
+              Monitor and track LLM embeddings to ensure value and reduce
+              hallucinations.
+              <br />
+              <br />
+              Quickly identify anomalies in LLMs to maintain quality and
+              reliability.
+              <br />
+              <br />
+              Make prompt adjustments to fine-tune LLMs for optimal performance.
+              <br />
+              <br />
+              Ensure robustness and accuracy of LLMs in real-world use-cases.
+              <br />
+              <br />
+              Use a unified dashboard to monitor LLM activities like data
+              behavior, hallucinations, and contextual precision.
+              <br />
+              <br />
+              Ensure swift responses to maintain high accuracy and performance
+              in LLMs.
+              <br />
+              <br />
+            </p>
+          </div>
+          <div className="flex justify-center lg:justify-end">
+            <Image src="/type3.png" width={595} height={568} alt="type1" />
           </div>
         </div>
-      ))}
+      </div>
+
+      <div className="bg-[url('/type2-framebg.svg')] bg-no-repeat bg-center bg-cover px-5 sm:px-10 lg:pl-5 lg:pr-[77px] py-[95px]">
+        <div className="grid xl:grid-cols-2 space-y-20 md:space-y-0 items-center widthclass">
+          <div className="flex justify-center lg:justify-start order-2 lg:order-1">
+            <Image src="/type4.png" width={633} height={609} alt="type1" />
+          </div>
+          <div className="p-10 rounded-[24px] bg-[#E6E9EC] shadow-[0px_4px_24px_0_rgb(0,0,0,0.24)] order-1 lg:order-2">
+            <h1 className="font-36 font-bold leading-10">Images</h1>
+            <p className="font-16 textcolor font-normal leading-5 mt-10">
+              Implement continuous monitoring to track data drift and ensure
+              relevance in Computer Vision models.
+              <br />
+              <br />
+              Detect model degradation and biases in object detection and
+              classification to maintain accuracy and fairness.
+              <br />
+              <br />
+              Monitor evolving data patterns to deliver optimal model
+              performance across diverse scenarios.
+              <br />
+              <br />
+              Gain a consolidated view of all vision models for enhanced
+              oversight and management.
+              <br />
+              <br />
+              Scrutinize pixel-level data integrity and detect changes in
+              precision and accuracy in vision models.
+              <br />
+              <br />
+              Use centralized insights for effective decision-making and
+              sustained performance.
+              <br />
+              <br />
+              Collaboratively assess drift, visualize features, and explore
+              embedding projections with explainability insights.
+              <br />
+              <br />
+            </p>
+          </div>
+        </div>
+      </div>
     </div>
   );
 };
