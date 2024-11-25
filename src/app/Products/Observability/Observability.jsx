@@ -17,7 +17,7 @@ const Observability = () => {
                 Observability Hub
                 </h1>
                 <p className="font-20 font-normal leading-7 mt-3 mb-9 opacity-60">
-                Empower your AI/ML workflows with Metricwise’s Observability Hub, a comprehensive suite designed to bring transparency, reliability, and accountability to every stage of your AI models. Our platform offers deep insights into model behavior, detection of biases and drifts, and benchmarks performance against industry standards. With customizable features and intuitive tools, Metricwise’s Observability Hub helps organizations foster trust and achieve optimal results.
+                {`Empower your AI/ML workflows with Metricwise's Observability Hub, a comprehensive suite designed to bring transparency, reliability, and accountability to every stage of your AI models. Our platform offers deep insights into model behavior, detection of biases and drifts, and benchmarks performance against industry standards. With customizable features and intuitive tools, Metricwise’s Observability Hub helps organizations foster trust and achieve optimal results.`}
                 </p>
                 <Link href="/company/contact_us" className="hero-btn">
                   Get started for free
