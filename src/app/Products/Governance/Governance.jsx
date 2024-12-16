@@ -86,7 +86,7 @@ const Governance = () => {
                         listItem && (
                           <li
                             key={`list-${index}-${listIndex}`}
-                            className="mb-5 font-16 font-medium leading-5 text-[#000000] flex items-center gap-2"
+                            className="mb-5 font-14 font-normal leading-5 text-[#000000] flex items-center gap-2"
                           >
                             <Image
                               src={item.logo}

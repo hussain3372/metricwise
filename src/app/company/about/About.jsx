@@ -119,7 +119,7 @@ const About = () => {
 
       <div className="sm:mt-[77px] px-[51px]">
         <div className="flex flex-col justify-center items-center gap-14">
-          <h1 className="text-3xl font-bold leading-tight text-primary">
+          <h1 className="font-36 font-bold leading-tight text-primary">
             Get to Know The Team
           </h1>
           <div className="grid sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-x-8 gap-y-12">
@@ -261,7 +261,7 @@ const About = () => {
                 onClick={() => handleEmailClick("sales@metricwise.ai")}
                 className="cursor-pointer grid grid-cols-2 bg-[#FFFFFF] p-5 rounded-lg shadow-sm"
               >
-                <div className="flex flex-col font-20  font-semibold textcolor leading-6">
+                <div className="flex flex-col font-20 font-semibold textcolor leading-6">
                   Sales
                   <span className="font-12 textcolor opacity-60 font-normal leading-4 mt-2">
                     sales@metricwise.ai

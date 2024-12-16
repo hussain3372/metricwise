@@ -52,7 +52,7 @@ const Card = () => {
               </ul>
               <div className="mt-10 flex">
                 <Link
-                  href="#"
+                  href={item.productLinks}
                   className="rounded-md bg-[#2E2E2E] text-white py-4 px-7 font-14 font-medium leading-4 flex justify-center items-center gap-2"
                   type="button"
                 >

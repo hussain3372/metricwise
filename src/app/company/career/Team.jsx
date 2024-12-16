@@ -11,7 +11,7 @@ const Team = () => {
       <div className="widthclass">
         <div>
           <div className="flex flex-col justify-start items-start pt-[59px] px-5 sm:px-10 lg:px-[125px] pb-[146px]">
-            <h1 className="font-36 font-inter font-bold leading-10 mb-10">
+            <h1 className="font-36 font-bold leading-10 mb-10">
               Our Team
             </h1>
             <p className="font-22 font-normal leading-7 textcolor sm:px-[57px]">
@@ -29,7 +29,7 @@ const Team = () => {
         </div>
 
         <div className="px-5 sm:px-10 lg:px-[125px]">
-          <h1 className="font-36 font-inter font-bold leading-10 mb-[59px]">
+          <h1 className="font-36 font-bold leading-10 mb-[59px]">
             Our Values
           </h1>
           <div className="space-y-8 md:space-y-3">
@@ -46,7 +46,7 @@ const Team = () => {
                   <h1 className="font-26 font-bold textcolor leading-10">
                     Innovation First
                   </h1>
-                  <p className="font-22 textcolor leading-7">
+                  <p className="font-22 font-normal textcolor leading-7">
                     Foster a culture of continuous innovation, encouraging team
                     members to explore novel ideas, embrace emerging
                     technologies, and challenge the status quo.
@@ -70,7 +70,7 @@ const Team = () => {
                   <h1 className="font-26 font-bold textcolor leading-10">
                     Curiosity
                   </h1>
-                  <p className="font-22 textcolor leading-7">
+                  <p className="font-22 font-normal textcolor leading-7">
                     Seek continuous growth and absorb knowledge at every
                     opportunity. We thrive on thinking beyond conventional
                     boundaries. Refusing to rest on our current understanding,we
@@ -95,7 +95,7 @@ const Team = () => {
                   <h1 className="font-26 font-bold textcolor leading-10">
                     User-Centric Mindset
                   </h1>
-                  <p className="font-22 textcolor leading-7">
+                  <p className="font-22 font-normal textcolor leading-7">
                     Prioritize a user-centric mindset in product development.
                     Empathize with end-users, ensuring that solutions are not
                     only technologically advanced but also intuitive,
@@ -120,7 +120,7 @@ const Team = () => {
                   <h1 className="font-26 font-bold textcolor leading-10">
                     Humility
                   </h1>
-                  <p className="font-22 textcolor leading-7">
+                  <p className="font-22 font-normal textcolor leading-7">
                     We affirm that an exceptional team thrives on shared
                     responsibilities, where mutual respect and trust among peers
                     prevail. Fostering relationships, we actively strive to
@@ -143,7 +143,7 @@ const Team = () => {
                   <h1 className="font-26 font-bold textcolor leading-10">
                     Passion
                   </h1>
-                  <p className="font-22 textcolor leading-7">
+                  <p className="font-22 font-normal textcolor leading-7">
                     Our endeavors are driven by a shared passion for
                     collaborative teamwork and the creation of extraordinary
                     achievements. We draw strength from surpassing conventional
@@ -160,7 +160,7 @@ const Team = () => {
         <div className="bg-white">
           <div className="widthclass">
             <div className="px-5 sm:px-10 lg:px-[125px] flex-col flex justify-start items-start">
-              <h1 className="font-36 font-bold textcolor leading-10 mb-3 md:mb-14 mt-[105px]">
+              <h1 className="font-36 font-bold textcolor leading-10 mb-3 md:mb-14 mt-[125px]">
                 Our Perks
               </h1>
               <div className="grid md:grid-cols-2 gap-10 items-center">

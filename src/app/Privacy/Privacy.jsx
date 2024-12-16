@@ -331,15 +331,15 @@ const Term = () => {
           <div>
             <h1 className="font-20 font-inter font-semibold">Contact Us:</h1>
             <p className="font-16 font-normal font-inter leading-6 mt-5 mb-6 opacity-60">
-              For privacy inquiries or complaints, contact us at
+              For privacy inquiries or complaints, contact us at {""}
               <EmailButton
-              email="support@metricwise.ai"
-              className="text-blue-600 underline"
-            >
-               support@metricwise.ai
-            </EmailButton>
+                email="support@metricwise.ai"
+                className="text-blue-600 underline"
+              >
+                support@metricwise.ai
+              </EmailButton>
               .
-            </p>  
+            </p>
           </div>
           <div>
             <h1 className="font-20 font-inter font-semibold">

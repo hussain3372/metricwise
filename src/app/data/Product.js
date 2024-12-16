@@ -159,8 +159,8 @@ export const governance = [
   },
   {
     src: "/mon2.png",
-    w: "620",
-    h: "500",
+    w: "472",
+    h: "466",
     alt: "Regulatory Compliance Scorecards",
     titleImage: "/Dots.svg",
     title: "Regulatory Compliance Monitoring",
@@ -205,7 +205,7 @@ export const governance = [
     logo: "/listimg.svg",
   },
   {
-    src: "/mon3.png",
+    src: "/mon5.png",
     w: "620",
     h: "500",
     alt: "Ethical AI Governance Frameworks",

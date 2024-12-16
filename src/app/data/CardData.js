@@ -8,7 +8,8 @@ const CardData = [
       list2: "Performance Metrics Tracking",
       list3: "Real-Time Anomaly Detection",
       logo: "/listimg.svg",
-      img: "/img1.svg"
+      img: "/img1.svg",
+      productLinks: "/Products/Monitoring"
     },
     {
       span: "Observability Hub,",
@@ -20,7 +21,8 @@ const CardData = [
       list3: "Baselining",
       list4: "LLM Assessment & Tracing",
       logo: "/listimg.svg",
-      img: "/img2.svg"
+      img: "/img2.svg",
+      productLinks: "/Products/Observability"
     },
     {
       span: "Governance Hub,",
@@ -32,7 +34,8 @@ const CardData = [
       list3: "Compliance Monitoring",
       list4: "Control & Risk Monitoring",
       logo: "/listimg.svg",
-      img: "/img3.svg"
+      img: "/img3.svg",
+      productLinks: "/Products/Governance"
     },
   ];
                                                     
