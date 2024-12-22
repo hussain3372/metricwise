@@ -2,7 +2,6 @@
 
 import React, { useState, useEffect } from "react";
 import Image from "next/image";
-import CalendarTable from "./CalendarTable";
 import "./Calendar.css";
 import { InlineWidget } from "react-calendly";
 
@@ -113,7 +112,15 @@ const Calendar = () => {
         <CalendarTable month={month} year={year} />
       </div> */}
 
-      <InlineWidget url="https://calendly.com/hussainabdullah3372" styles={{height: 853}}/>
+      <InlineWidget
+        url="https://calendly.com/hussainabdullah3372"
+        pageSettings={{
+          hideEventTypeDetails: false,
+          hideLandingPageDetails: false,
+          hideGdprBanner: true,
+        }}
+        styles={{ height: 853 }}
+      />
     </div>
   );
 };

@@ -5,8 +5,20 @@ import Head from "next/head";
 import Image from "next/image";
 import { MinusIcon, PlusIcon } from "@heroicons/react/24/outline";
 
-const AccordionItem = ({ title, content, list }) => {
+const AccordionItem = ({ title, content, list, searchTerm }) => {
   const [isOpen, setIsOpen] = useState(false);
+
+  const highlightSearchTerm = (text, term) => {
+    if (!term) return text;
+    const regex = new RegExp(`(${term})`, "gi");
+    return text.replace(
+      regex,
+      '<span style="background-color: yellow;">$1</span>'
+    );
+  };
+
+  const titleWithHighlight = highlightSearchTerm(title, searchTerm);
+  const contentWithHighlight = highlightSearchTerm(content, searchTerm);
 
   // Function to convert emails to mailto links while preserving HTML structure
   const convertEmailsToMailtoLinks = (text) => {
@@ -19,6 +31,10 @@ const AccordionItem = ({ title, content, list }) => {
     );
   };
 
+  const contentWithMailtoLinksAndHighlight = convertEmailsToMailtoLinks(
+    contentWithHighlight
+  );
+
   // Prepare the HTML content with mailto links
   const contentWithMailtoLinks = convertEmailsToMailtoLinks(content);
 
@@ -29,13 +45,12 @@ const AccordionItem = ({ title, content, list }) => {
         className="w-full text-left px-4 pt-4 pb-4 bg-[#FFFFFF] text-[#00000099] font-20 font-light leading-5"
       >
         <div className="flex justify-between items-center">
-          <span
-            className={`text-[#2E2E2E] font-20 ${
+        <span
+            className={`text-[#042440] font-20 ${
               isOpen ? "font-bold" : "font-normal"
             }`}
-          >
-            {title}
-          </span>
+            dangerouslySetInnerHTML={{ __html: titleWithHighlight }}
+          ></span>
           <span>
             {isOpen ? (
               <MinusIcon className="h-5 w-5 text-gray-400" />
@@ -48,7 +63,7 @@ const AccordionItem = ({ title, content, list }) => {
       {isOpen && (
         <div className="px-4 py-4 my-4 bg-[#E1E8F238] font-normal text-[#00000099]">
           <div
-            dangerouslySetInnerHTML={{ __html: contentWithMailtoLinks }}
+            dangerouslySetInnerHTML={{ __html: contentWithMailtoLinksAndHighlight }}
           ></div>
 
           {/* Render the list if present */}
@@ -67,17 +82,28 @@ const AccordionItem = ({ title, content, list }) => {
   );
 };
 
-const Accordion = ({ items }) => {
+const Accordion = ({ items, searchTerm }) => {
   return (
     <div className="rounded-md overflow-hidden">
       {items.map((item, index) => (
-        <AccordionItem key={index} {...item} />
+        <AccordionItem key={index} {...item} searchTerm={searchTerm} />
       ))}
     </div>
   );
 };
 
 const Faq = () => {
+  const [searchTerm, setSearchTerm] = useState("");
+
+  const handleSearch = (e) => {
+    setSearchTerm(e.target.value);
+  };
+
+  const handleKeyDown = (e) => {
+    if (e.key === "Enter") {
+      setSearchTerm(e.target.value);
+    }
+  };
   const accordionItems = [
     {
       title: "What is Metricwise?",
@@ -200,6 +226,8 @@ const Faq = () => {
                 style={{ boxShadow: "0 3px 10px rgba(0, 0, 0, 0.2)" }}
                 className="relative rounded-xl w-[290px] sm:w-[500px] md:w-[700px] xl:w-[800px] h-[60px] sm:h-[72px] p-4 textcolor font-normal pl-12"
                 placeholder="Ask a question..."
+                onChange={handleSearch}
+              onKeyDown={handleKeyDown}
               />
 
               <div className="absolute top-4 sm:top-[21px] pl-3">
@@ -230,7 +258,7 @@ const Faq = () => {
                   <title>FAQ - Metricwise</title>
                 </Head>
                 <main className=" mx-auto">
-                  <Accordion items={accordionItems} />
+                  <Accordion items={accordionItems} searchTerm={searchTerm} />
                 </main>
               </div>
             </div>

@@ -79,7 +79,7 @@ const NewHero = () => {
               key={index}
               src={image}
               alt={`Hero image ${index + 1}`}
-              width={685}
+              width={828}
               height={524}
               className={`absolute transition-opacity duration-500 ${
                 index === currentImageIndex ? "opacity-100" : "opacity-0"
