@@ -1,7 +1,7 @@
 export const Product = [
   {
     src: "/monitoring1.svg",
-    w: "472",
+    w: "472", 
     h: "500",
     alt: "Data Integrity & Completeness",
     titleImage: "/Dots.svg",
@@ -143,7 +143,7 @@ export const observability = [
 
 export const governance = [
   {
-    src: "/mon1.png",
+    src: "/mon1.svg",
     w: "620",
     h: "500",
     alt: "Model Explainability & Fairness",
@@ -158,7 +158,7 @@ export const governance = [
     logo: "/listimg.svg",
   },
   {
-    src: "/mon2.png",
+    src: "/mon2.svg",
     w: "472",
     h: "466",
     alt: "Regulatory Compliance Scorecards",
@@ -173,7 +173,7 @@ export const governance = [
     logo: "/listimg.svg",
   },
   {
-    src: "/mon3.png",
+    src: "/mon3.svg",
     w: "620",
     h: "500",
     alt: "Control Assessment & Evaluation",
@@ -188,7 +188,7 @@ export const governance = [
     logo: "/listimg.svg",
   },
   {
-    src: "/mon4.png",
+    src: "/mon4.svg",
     w: "620",
     h: "500",
     alt: "Risk Assessment & Evaluation",
@@ -205,7 +205,7 @@ export const governance = [
     logo: "/listimg.svg",
   },
   {
-    src: "/mon5.png",
+    src: "/mon5.svg",
     w: "620",
     h: "500",
     alt: "Ethical AI Governance Frameworks",

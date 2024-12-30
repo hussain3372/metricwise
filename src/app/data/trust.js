@@ -29,7 +29,7 @@ export const Trust = [
 export const insuranceTrust = [
   {
     pic: "/insurance1.png",
-    main: "Enhance Customer Relationship Management with Personalization",
+    main: "Enhance Customer Relationship",
     Paragraph:
       "Forge strong bonds with your customers through personalized interactions. Our AI-driven CRM solutions enable insurers to anticipate customer needs, tailor insurance plans, and provide proactive support. From recommending customized coverage options to resolving inquiries promptly, our platform ensures exceptional customer experiences at every touchpoint.",
   },
@@ -129,12 +129,6 @@ export const social = [
 ];
 
 export const estate = [
-  {
-    pic: "/estate1.png",
-    main: "Builder Trust and Equity",
-    Paragraph:
-      "Ensure fairness and equity in every AI-driven decision. Our monitoring tools identify and address biases, fostering trust among your diverse user base.",
-  },
   {
     pic: "/estate2.png",
     main: "Foster Collaboration and Transparency",

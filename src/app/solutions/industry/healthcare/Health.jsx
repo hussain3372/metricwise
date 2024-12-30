@@ -8,19 +8,28 @@ const Finance = () => {
   return (
     <div>
       <div className="widthclass">
-        <div className="pt-10 pb-8 py-[120px] px-2 sm:px-10 flex flex-col justify-center items-center gap-7">
-          <Image src="/health.png" width={448} height={451} alt="finance" />
-          <h1 className="font-40 font-bold">Healthcare</h1>
-          <p className="font-24 font-normal leading-8 text-[#2E2E2E] text-center opacity-60 px-2 md:px-40 lg:px-64 xl:px-[420px]">
-            AI fuels innovation in healthcare, refining diagnostics, treatments,
-            and patient outcomes. To uphold patient safety and confidence,
-            thorough monitoring is paramount, ensuring that AI algorithms are
-            ethically developed, transparent, and accountable.
-          </p>
-          <Link href="/Demo" className="primary-btn" type="button">
-            <Image src="/demo-img.svg" width={20} height={20} alt="demo-img" />
-            Book a Demo
-          </Link>
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-[151px] items-center mt-10 bg-[url('/industry-bg.svg')] bg-no-repeat bg-cover bg-center px-5 md:px-10 lg:px-[94px] pt-[82px] pb-[76px] mx-2.5 md:mx-20 lg:mx-24">
+          <div className="flex flex-col">
+            <Image src="/Dots.svg" width={36} height={8} alt="Dots" />
+            <h1 className="font-40 font-medium text-[#7736B7] mt-4">
+              Healthcare
+            </h1>
+            <p className="font-14 font-normal leading-5 mt-5">
+              AI fuels innovation in healthcare, refining diagnostics,
+              treatments, <br /> and patient outcomes. To uphold patient safety
+              and confidence, <br /> thorough monitoring is paramount, ensuring
+              that AI algorithms are <br /> ethically developed, transparent,
+              and accountable.
+            </p>
+          </div>
+          <div className="h-full w-full">
+            <Image
+              src="/health.png"
+              width={450}
+              height={365}
+              alt="finance"
+            />
+          </div>
         </div>
 
         <div>
@@ -28,19 +37,15 @@ const Finance = () => {
         </div>
       </div>
 
-      <div className="bg-[url('/finance-bg.svg')] bg-cover bg-center bg-no-repeat">
+      <div className="">
         <div className="widthclass">
-          <div className="flex flex-col justify-center items-center text-center m-auto p-8 sm:p-16">
-            <h1 className="font-36 font-bold leading-8 md:leading-10 text-[#2E2E2E]">
-              Revolutionize Your Healthcare <br /> Operations with AI Model
-              <br /> Monitoring
+          <div className="flex flex-col justify-center items-center text-center m-auto py-20">
+            <h1 className="font-40 font-medium leading-[52px] text-[#000]">
+              <span className="text-[#7736B7]">Revolutionize</span> Your Healthcare Operations <br className="hidden md:block" /> with
+              <span className="text-[#7736B7]"> AI Model Monitoring</span>
             </h1>
-            <p className="font-24 font-normal leading-6 md:leading-8 mt-4 text-[#2E2E2E99]">
-              In the ever-evolving realm of healthcare, ensuring the reliability
-              and <br className="hidden md:block" /> transparency of AI-powered
-              systems is paramount to delivering
-              <br className="hidden md:block" /> exceptional patient care and
-              maintaining trust within the industry.
+            <p className="font-20 font-normal leading-6 mt-4 text-[#00000099]">
+            In the ever-evolving realm of healthcare, ensuring the reliability and transparency of <br /> AI-powered systems is paramount to delivering exceptional patient care and <br /> maintaining trust within the industry.
             </p>
           </div>
         </div>

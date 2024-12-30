@@ -8,19 +8,28 @@ const Ecommerce = () => {
   return (
     <div>
       <div className="widthclass">
-        <div className="pt-10 pb-8 py-[120px] px-2 sm:px-10 flex flex-col justify-center items-center gap-7">
-          <Image src="/e-commerce.svg" width={566} height={483} alt="finance" />
-          <h1 className="font-40 font-bold">Retail and Ecommerce</h1>
-          <p className="font-24 font-normal leading-8 text-[#2E2E2E] text-center opacity-60 px-2 md:px-40 lg:px-64 xl:px-[420px]">
-            AI optimizes retail operations, enhancing customer engagement and supply chain
-            efficiency. However, to mitigate
-            risks such as data privacy breaches and algorithmic biases, robust
-            governance and continuous monitoring frameworks are indispensable.
-          </p>
-          <Link href="/Demo" className="primary-btn" type="button">
-            <Image src="/demo-img.svg" width={20} height={20} alt="demo-img" />
-            Book a Demo
-          </Link>
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-[151px] items-center mt-10 bg-[url('/industry-bg.svg')] bg-no-repeat bg-cover bg-center px-5 md:px-10 lg:px-[94px] pt-[82px] pb-[76px] mx-2.5 md:mx-20 lg:mx-24">
+          <div className="flex flex-col">
+            <Image src="/Dots.svg" width={36} height={8} alt="Dots" />
+            <h1 className="font-40 font-medium text-[#7736B7] mt-4">
+              Financial & Banking
+            </h1>
+            <p className="font-14 font-normal leading-5 mt-5">
+              AI drives unparalleled customer satisfaction and optimizes
+              business <br /> strategies. Vigilant supervision ensures that
+              these advantages are <br /> not compromised by the heightened
+              risks associated with AI bias <br /> and opacity.
+            </p>
+          </div>
+          <div className="h-full w-full">
+            <Image
+              src="/finance.png"
+              className="h-full w-full"
+              width={530}
+              height={459}
+              alt="finance"
+            />
+          </div>
         </div>
 
         <div>
@@ -32,11 +41,14 @@ const Ecommerce = () => {
         <div className="widthclass">
           <div className="flex flex-col justify-center items-center text-center m-auto p-8 sm:p-16">
             <h1 className="font-36 font-bold leading-8 md:leading-10 text-[#2E2E2E]">
-              Empower Your Retail and E-commerce <br className="hidden md:block"/> Operations with AI Risk
+              Empower Your Retail and E-commerce{" "}
+              <br className="hidden md:block" /> Operations with AI Risk
               Monitoring
             </h1>
             <p className="font-24 font-normal leading-6 md:leading-8 mt-4 text-[#2E2E2E99]">
-            In the fast-paced world of financial services, maintaining trust and <br className="hidden md:block"/>  reliability in AI-powered systems is paramount. 
+              In the fast-paced world of financial services, maintaining trust
+              and <br className="hidden md:block" /> reliability in AI-powered
+              systems is paramount.
             </p>
           </div>
         </div>

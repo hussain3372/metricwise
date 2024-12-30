@@ -42,11 +42,11 @@ const Team = () => {
                   height={60}
                   alt="value icons"
                 />
-                <div>
+                <div >
                   <h1 className="font-26 font-bold textcolor leading-10">
                     Innovation First
                   </h1>
-                  <p className="font-22 font-normal textcolor leading-7">
+                  <p className="font-22 font-normal textcolor leading-7 pt-1">
                     Foster a culture of continuous innovation, encouraging team
                     members to explore novel ideas, embrace emerging
                     technologies, and challenge the status quo.
@@ -70,7 +70,7 @@ const Team = () => {
                   <h1 className="font-26 font-bold textcolor leading-10">
                     Curiosity
                   </h1>
-                  <p className="font-22 font-normal textcolor leading-7">
+                  <p className="font-22 font-normal textcolor leading-7 pt-1">
                     Seek continuous growth and absorb knowledge at every
                     opportunity. We thrive on thinking beyond conventional
                     boundaries. Refusing to rest on our current understanding,we
@@ -95,7 +95,7 @@ const Team = () => {
                   <h1 className="font-26 font-bold textcolor leading-10">
                     User-Centric Mindset
                   </h1>
-                  <p className="font-22 font-normal textcolor leading-7">
+                  <p className="font-22 font-normal textcolor leading-7 pt-1">
                     Prioritize a user-centric mindset in product development.
                     Empathize with end-users, ensuring that solutions are not
                     only technologically advanced but also intuitive,
@@ -120,7 +120,7 @@ const Team = () => {
                   <h1 className="font-26 font-bold textcolor leading-10">
                     Humility
                   </h1>
-                  <p className="font-22 font-normal textcolor leading-7">
+                  <p className="font-22 font-normal textcolor leading-7 pt-1">
                     We affirm that an exceptional team thrives on shared
                     responsibilities, where mutual respect and trust among peers
                     prevail. Fostering relationships, we actively strive to
@@ -143,7 +143,7 @@ const Team = () => {
                   <h1 className="font-26 font-bold textcolor leading-10">
                     Passion
                   </h1>
-                  <p className="font-22 font-normal textcolor leading-7">
+                  <p className="font-22 font-normal textcolor leading-7 pt-1">
                     Our endeavors are driven by a shared passion for
                     collaborative teamwork and the creation of extraordinary
                     achievements. We draw strength from surpassing conventional

@@ -70,7 +70,7 @@ const About = () => {
                 <h1 className="font-26 font-bold leading-10 textcolor">
                   Social Responsibility
                 </h1>
-                <p className="font-22 font-normal textcolor textcolor">
+                <p className="font-22 font-normal textcolor leading-[26px]">
                   We are committed to developing AI that contributes to the
                   greater good, prioritizing solutions that address societal
                   challenges and promote equity.
@@ -88,7 +88,7 @@ const About = () => {
                 <h1 className="font-26 font-bold leading-10 textcolor">
                   Ethical Governance
                 </h1>
-                <p className="font-22 font-normal textcolor textcolor">
+                <p className="font-22 font-normal textcolor leading-[26px]">
                   We guide organizations in embedding ethical standards into
                   their AI systems, ensuring governance that upholds fairness
                   and integrity at every level.
@@ -106,7 +106,7 @@ const About = () => {
                 <h1 className="font-26 font-bold leading-10 textcolor">
                   Transparent and Accountable
                 </h1>
-                <p className="font-22 font-normal textcolor textcolor">
+                <p className="font-22 font-normal textcolor leading-[26px]">
                  {` We provide solutions that help in understanding AI's
                   decision-making process, ensuring transparency and
                   accountability at every step.`}

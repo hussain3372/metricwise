@@ -681,6 +681,22 @@ input:focus {
   color: #ff0000;
 }
 
-.thmzqwx {
-  display: none !important;
+.slide-track {
+  animation: scroll 15s linear infinite; /* Ensure 'scroll' matches @keyframes name and add animation duration */
+  display: flex;
+  overflow: hidden;
+  width: 100%;
+}
+
+.react-tabs__tab-list {
+  border-bottom: none !important;
+}
+
+@keyframes scroll {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
 }

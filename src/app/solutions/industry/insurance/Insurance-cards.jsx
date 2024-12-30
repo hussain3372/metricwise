@@ -1,4 +1,3 @@
-
 import { insurancecards } from "@/app/data/Finance";
 import Image from "next/image";
 import React from "react";
@@ -6,26 +5,39 @@ import React from "react";
 const InsuranceCards = () => {
   return (
     <div>
-      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-20 sm:gap-10 lg:gap-20 px-2 sm:px-10 lg:px-20 xl:px-[158px] my-8">
+      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-[27px] sm:px-10 xl:px-10 mt-10 mb-7">
         {insurancecards.map((item, index) => (
           <div
             key={index}
-            className="bg-[rgba(231,223,248,0.5)] rounded-lg flex flex-col justify-start items-center gap-4 pt-[57px] pb-[47px] px-5 relative"
+            className="rounded-lg flex flex-col justify-start gap-4 pt-[57px] pb-[47px] px-5 relative"
           >
-            <div className="absolute bg-white p-[6px] rounded-full -top-[46px]">
-              <Image src={item.icon} width={80} height={80} alt="credit cards" />
+            <div className="flex items-center justify-start gap-4">
+              <Image
+                src={item.icon}
+                width={60}
+                height={60}
+                className="h-[60px] w-[60px]"
+                alt="credit cards"
+              />
+              <h1
+                className="font-36 font-medium leading-12 text-[#7736B7] text-start"
+                dangerouslySetInnerHTML={{ __html: item.title }}
+              />
             </div>
-            <h1
-              className="font-20 font-bold leading-6 text-[#2E2E2E] text-center"
-              dangerouslySetInnerHTML={{ __html: item.title }}
-            />
             <div>
-              <ul className="list-disc list-outside px-5">
+              <ul className="list-outside flex flex-col gap-6">
                 {item.Items.map((listItem, listIndex) => (
                   <li
                     key={listIndex}
-                    className="font-16 font-normal text-[#2E2E2E99] leading-5"
+                    className="font-14 font-normal leading-5 flex items-center gap-2 w-full"
                   >
+                    <Image
+                      src="/list-items.svg"
+                      width={24}
+                      height={34}
+                      alt="list-items"
+                      className="h-6 w-6"
+                    />
                     {listItem}
                   </li>
                 ))}
