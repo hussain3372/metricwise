@@ -147,7 +147,7 @@ const Compliance = () => {
             <h1 className="font-36 font-bold leading-10 text-[#000000]">
               Future-Proof Your
               <span className="font-semibold text-[#7736B7]">
-                Compliance Strategy
+                 Compliance Strategy
               </span>
               with
               <br className="hidden sm:block" />

@@ -8,7 +8,7 @@ const Blogs = () => {
     <div className="widthclass">
       <div className="p-5 lg:px-[100px] 2xl:py-11">
         <div className="flex flex-col sm:flex-row justify-between items-start sm:items-center">
-          <h1 className="text-[20px] sm:text-[30px] md:text-[40px] font-medium leading-8 md:leading-[48px] text-[#222222]">
+          <h1 className="text-[20px] sm:text-[30px] md:text-[40px] pro-medium leading-8 md:leading-[48px] text-[#222222]">
             Go through our latest <br className="hidden sm:block"/> blogs to learn more
           </h1>
           <Link href="/recourses/Blog" className="primary-btn" type="button">

@@ -40,14 +40,14 @@ const NewHero = () => {
       <div className="relative bg-[url('/hero-gradient.png')] bg-no-repeat bg-cover bg-center p-5">
         <div className="pt-20 m-auto px-5">
           <div className="flex flex-col justify-start items-center text-center">
-            <h1 className="font-44 font-bold leading-10 sm:leading-[50px] md:leading-[60px] text-[#000000]">
+            <h1 className="font-44 pro-bold leading-10 sm:leading-[50px] md:leading-[60px] text-[#000000]">
               Empowering AI with unmatched <br className="hidden sm:block" />
               <span className="font-semibold text-[#7736B7]">
                 <span className="italic">O</span>bservability and
                 <span className="italic">G</span>overnance
               </span>
             </h1>
-            <p className="text-[#00000099] font-20 font-normal leading-6 mt-5">
+            <p className="text-[#00000099] font-20 pro-normal leading-6 mt-5">
               Detect and analyze model and data issues with speed. Mitigate
               challenges faster <br className="hidden md:block" /> for optimal
               AI performance.
@@ -55,7 +55,7 @@ const NewHero = () => {
             <div className="flex flex-col sm:flex-row justify-center items-center gap-4 mt-7">
               <Link
                 href="/company/contact_us"
-                className="bg-[#2E2E2E] rounded-md px-7 py-4 font-16 font-bold text-white leading-5 text-center"
+                className="bg-[#2E2E2E] rounded-md px-7 py-4 font-16 pro-bold text-white leading-5 text-center"
               >
                 Get started for free
               </Link>

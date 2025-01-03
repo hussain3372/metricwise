@@ -6,7 +6,7 @@ const WorkFlow = () => {
     <div className="bg-[#F8F8F8] py-14 px-10 xl:px-[218px]">
       <div className="widthclass">
         <div className="flex justify-center items-center text-center">
-          <h1 className="text-[20px] sm:text-[40px] font-medium leading-5 sm:leading-[52px]">
+          <h1 className="text-[20px] sm:text-[40px] pro-medium leading-5 sm:leading-[52px]">
             {`Start with `}
             <span className="text-[#7736B7]">Metricwise</span>
             {` in a way that `}
@@ -19,7 +19,7 @@ const WorkFlow = () => {
             <div
               className="bg-[#FDFBFF] pt-3 pb-4 px-7 rounded-2xl"
             >
-              <h1 className="font-24 text-[#161616] font-medium leading-7">
+              <h1 className="font-24 text-[#161616] pro-medium leading-7">
                 Metricwise Platform
               </h1>
               <Image
@@ -35,10 +35,10 @@ const WorkFlow = () => {
             className="bg-[#FDFBFF] px-7 py-4 rounded-lg"
             style={{ boxShadow: "0 3px 10px rgba(0, 0, 0, 0.1)" }}
           >
-            <h1 className="font-24 text-[#161616] font-medium leading-7">
+            <h1 className="font-24 text-[#161616] pro-medium leading-7">
               Metricwise SDK
             </h1>
-            <p className="mt-2 font-12 text-[#00000099] font-normal leading-4">
+            <p className="mt-2 text-[10px] text-[#00000099] pro-normal leading-4">
               In the SaaS or managed deployment of Metricwise, data is logged or
               sent <br /> periodically to the Metricwise Hosted Service.
             </p>
@@ -55,10 +55,10 @@ const WorkFlow = () => {
             style={{ boxShadow: "0 3px 10px rgba(0, 0, 0, 0.1)" }}
           >
             <div>
-              <h1 className="font-24 text-[#161616] font-medium leading-7">
+              <h1 className="font-24 text-[#161616] pro-medium leading-7">
                 Client VPC
               </h1>
-              <p className="mt-2 font-12 text-[#00000099] font-normal leading-4">
+              <p className="mt-2 text-[10px] text-[#00000099] pro-normal leading-4">
                  For On-Prem deployment, Metricwise can be installed in the <br />
                 {` customer's chosen cloud or VPC.`}
               </p>

@@ -8,20 +8,20 @@ const Platform = () => {
     <div className="mt-9">
       <div className="flex flex-col justify-center items-center text-center widthclass px-4">
         <div>
-          <h1 className="text-[20px] sm:text-[32px] md:text-[40px] lg:text-[48px] font-medium leading-[30px] sm:leading-[56px]">
+          <h1 className="text-[20px] sm:text-[32px] md:text-[40px] lg:text-[48px] pro-medium leading-[30px] sm:leading-[56px]">
             A comprehensive AI&nbsp;
-            <span className="text-[#7736B7] font-semibold">
-              <span className="italic">O</span>bservability
+            <span className="text-[#7736B7] pro-semibold">
+              <span className="pro-semibold italic">O</span>bservability
             </span>
             &nbsp;and&nbsp;
             <br />
-            <span className="text-[#7736B7] font-semibold">
-              <span className="italic">G</span>overnance
+            <span className="text-[#7736B7] pro-semibold">
+              <span className="pro-semibold italic">G</span>overnance
             </span>
             &nbsp;platform
           </h1>
 
-          <p className="font-20 text-[#00000099] font-normal leading-6 mt-4 sm:mt-6 px-4">
+          <p className="font-20 text-[#00000099] pro-normal leading-6 mt-4 sm:mt-6 px-4">
             Metricwise enables confident deployment and management of AI models
             with tools for <br className="hidden md:block" /> monitoring,
             observability, and governance

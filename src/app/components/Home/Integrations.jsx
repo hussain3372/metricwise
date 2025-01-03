@@ -33,7 +33,7 @@ const Integrations = () => {
 
   return (
     <div className="px-5">
-      <div className="bg-[url('/int-bg.png')] bg-no-repeat bg-contain bg-center shadow-[4px_4px_0_2px_rgba(0,0,0,0.08)] rounded-xl widthclass">
+      <div className="bg-[url('/int-bg.png')] bg-no-repeat bg-contain bg-center rounded-xl widthclass">
         <div className="flex flex-col justify-center items-center gap-9 mt-40 sm:mt-80 rounded-xl py-16">
           <div>
             <h1 className="font-medium font-32 leading-7 text-center">
@@ -68,7 +68,7 @@ const Integrations = () => {
           <div>
             <Link
               href="/Integration"
-              className="rounded-md bg-[#2E2E2E] text-white py-4 px-7 font-14 font-medium leading-4"
+              className="rounded-md bg-[#2E2E2E] text-white py-4 px-7 font-14 pro-medium leading-4"
               type="button"
             >
               See all integrations

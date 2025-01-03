@@ -17,7 +17,7 @@ export default function IndustryTabs() {
       <Tabs>
         <div>
           <TabList>
-            <div className="slide-track">
+            <div className="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-6 items-center widthclass">
               <Tab className="text-black bg-white rounded-[4px] py-4 flex flex-col justify-start items-start cursor-pointer shadow-[0px_4px_12px_0_rgb(0,0,0,0.04)] bg-transparent border border-transparent hover:border-[#2E2E2E] focus:bg-[#2E2E2E] focus:text-white active:bg-[#2E2E2E] active:text-white font-20 inter-medium leading-4 w-full gap-6 px-7">
                 <svg
                   width="40"

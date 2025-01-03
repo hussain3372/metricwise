@@ -18,6 +18,46 @@ body {
   @apply text-blue-600 underline; /* Tailwind CSS utility classes */
 }
 
+@font-face {
+  font-family: "pro-normal";
+  src: url(../app/fonts/static/SFPRODISPLAYREGULAR.OTF);
+}
+
+@font-face {
+  font-family: "pro-medium";
+  src: url(../app/fonts/static/SFPRODISPLAYMEDIUM.OTF);
+}
+
+@font-face {
+  font-family: "pro-semibold";
+  src: url(../app/fonts/static/SFPRODISPLAYSEMIBOLDITALIC.OTF);
+}
+
+@font-face {
+  font-family: "pro-bold";
+  src: url(../app/fonts/static/SFPRODISPLAYBOLD.OTF);
+}
+
+.pro-normal {
+  font-family: "pro-normal";
+  font-weight: 400;
+}
+
+.pro-medium {
+  font-family: "pro-medium";
+  font-weight: 500;
+}
+
+.pro-semibold {
+  font-family: "pro-semibold";
+  font-weight: 600;
+}
+
+.pro-bold {
+  font-family: "pro-bold";
+  font-weight: 700;
+}
+
 .demoparent {
   background-image: url(../../public/wavebg1.png);
   background-position: center;
