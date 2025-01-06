@@ -83,7 +83,7 @@ export default function Example() {
       }`}
     >
       <nav
-        className="mx-auto flex items-center justify-between px-5 md:px-5 2xl:px-10 py-4"
+        className="mx-auto flex items-center justify-between px-5 xl:px-[120px] py-4"
         aria-label="Global"
       >
         <div
@@ -103,13 +103,12 @@ export default function Example() {
         <PopoverGroup className="hidden xl:flex xl:gap-x-9">
           <Popover className="relative">
             <div
-              className="flex items-center gap-x-1 font-16 font-medium leading-6 text-[#2E2E2E99]"
+              className="flex items-center gap-x-1 font-16 pro-medium leading-5 text-[#000]"
               onMouseEnter={() => setIsOpen(true)}
               onMouseLeave={() => setIsOpen(false)}
             >
               <Popover.Button className="flex items-center gap-x-1 focus-visible:outline-none focus-visible:shadow-none">
                 Product
-                
               </Popover.Button>
             </div>
 
@@ -128,13 +127,15 @@ export default function Example() {
                 onMouseLeave={() => setIsOpen(false)}
               >
                 <div>
-                  <h1 className="font-32 font-bold leading-10">Products</h1>
+                  <h1 className="font-32 font-bold leading-10 text-[#7736B7]">
+                    Products
+                  </h1>
                 </div>
-                <div className="grid grid-cols-2 gap-1 pl-5">
+                <div className="grid grid-cols-2 gap-5 pl-5">
                   {Products.map((item) => (
                     <div
                       key={item.name}
-                      className="group relative flex items-start gap-x-6 rounded-lg text-sm leading-6 hover:bg-gray-50"
+                      className="group relative flex items-start gap-x-6 rounded-lg text-sm leading-6 "
                       onClick={() => setIsOpen(false)}
                     >
                       <div className="flex h-11 w-11 flex-none items-center justify-center rounded-lg">
@@ -143,13 +144,15 @@ export default function Example() {
                       <div className="flex-auto">
                         <Link
                           href={item.href}
-                          className="block font-semibold text-gray-900"
+                          className="block font-medium font-20 text-[#7736B7]"
                           onClick={() => setIsOpen(false)}
                         >
                           {item.name}
                           <span className="absolute inset-0" />
                         </Link>
-                        <p className="mt-1 text-gray-600">{item.description}</p>
+                        <p className="mt-2 font-12 opacity-60 leading-4 text-black">
+                          {item.description}
+                        </p>
                       </div>
                     </div>
                   ))}
@@ -160,13 +163,12 @@ export default function Example() {
 
           <Popover className="relative">
             <div
-              className="flex items-center gap-x-1 font-16 font-medium leading-6 text-[#2E2E2E99]"
+              className="flex items-center gap-x-1 font-16 pro-medium leading-5 text-[#000]"
               onMouseEnter={() => setIsOpen1(true)}
               onMouseLeave={() => setIsOpen1(false)}
             >
               <Popover.Button className="flex items-center gap-x-1 focus-visible:outline-none focus-visible:shadow-none">
                 Solutions
-                
               </Popover.Button>
             </div>
 
@@ -185,13 +187,13 @@ export default function Example() {
                 onMouseLeave={() => setIsOpen1(false)}
               >
                 <div className="">
-                  <h1 className="font-32 font-bold leading-10">Solutions</h1>
+                  <h1 className="font-32 font-bold leading-10 text-[#7736B7]">Solutions</h1>
                 </div>
-                <div className="grid grid-cols-2 gap-1 pl-5">
+                <div className="grid grid-cols-2 gap-5 pl-5">
                   {Solutions.map((item) => (
                     <div
                       key={item.name}
- className="group relative flex items-start gap-x-6 rounded-lg text-sm leading-6 hover:bg-gray-50"
+                      className="group relative flex items-start gap-x-6 rounded-lg text-sm leading-6 "
                       onClick={() => setIsOpen1(false)}
                     >
                       <div className="flex h-11 w-11 flex-none items-center justify-center rounded-lg">
@@ -200,13 +202,13 @@ export default function Example() {
                       <div className="flex-auto">
                         <Link
                           href={item.href}
-                          className="block font-semibold text-gray-900"
+                          className="block font-medium font-20 text-[#7736B7]"
                           onClick={() => setIsOpen1(false)}
                         >
                           {item.name}
                           <span className="absolute inset-0" />
                         </Link>
-                        <p className="mt-1 text-gray-600">{item.description}</p>
+                        <p className="mt-2 font-12 opacity-60 leading-4 text-black">{item.description}</p>
                       </div>
                     </div>
                   ))}
@@ -216,7 +218,7 @@ export default function Example() {
           </Popover>
 
           <Popover className="relative">
-            <div className="flex items-center gap-x-1 font-16 font-medium leading-6 text-[#2E2E2E99]">
+            <div className="flex items-center gap-x-1 font-16 pro-medium leading-5 text-[#000]">
               <PopoverButton className="flex items-center gap-x-1 focus-visible:outline-none focus-visible:shadow-none">
                 <Link href="/Pricing">Pricing</Link>
               </PopoverButton>
@@ -225,13 +227,12 @@ export default function Example() {
 
           <Popover className="relative">
             <div
-              className="flex items-center gap-x-1 font-16 font-medium leading-6 text-[#2E2E2E99]"
+              className="flex items-center gap-x-1 font-16 pro-medium leading-5 text-[#000]"
               onMouseEnter={() => setIsOpen3(true)}
               onMouseLeave={() => setIsOpen3(false)}
             >
               <Popover.Button className="flex items-center gap-x-1 focus-visible:outline-none focus-visible:shadow-none">
                 Docs
-                
               </Popover.Button>
             </div>
 
@@ -250,13 +251,13 @@ export default function Example() {
                 onMouseLeave={() => setIsOpen3(false)}
               >
                 <div className="">
-                  <h1 className="font-32 font-bold leading-10">Docs</h1>
+                  <h1 className="font-32 font-bold leading-10 text-[#7736B7]">Docs</h1>
                 </div>
-                <div className="grid grid-cols-2 gap-1 pl-5">
+                <div className="grid grid-cols-2 gap-5 pl-5">
                   {Docs.map((item) => (
                     <div
                       key={item.name}
-                      className="group relative flex items-start gap-x-6 rounded-lg text-sm leading-6 hover:bg-gray-50"
+                      className="group relative flex items-start gap-x-6 rounded-lg text-sm leading-6 "
                       onClick={() => setIsOpen3(false)}
                     >
                       <div className="flex h-11 w-11 flex-none items-center justify-center rounded-lg">
@@ -265,13 +266,13 @@ export default function Example() {
                       <div className="flex-auto">
                         <Link
                           href={item.href}
-                          className="block font-semibold text-gray-900"
+                          className="block font-medium font-20 text-[#7736B7]"
                           onClick={() => setIsOpen3(false)}
                         >
                           {item.name}
                           <span className="absolute inset-0" />
                         </Link>
-                        <p className="mt-1 text-gray-600">{item.description}</p>
+                        <p className="mt-2 font-12 opacity-60 leading-4 text-black">{item.description}</p>
                       </div>
                     </div>
                   ))}
@@ -282,13 +283,12 @@ export default function Example() {
 
           <Popover className="relative">
             <div
-              className="flex items-center gap-x-1 font-16 font-medium leading-6 text-[#2E2E2E99]"
+              className="flex items-center gap-x-1 font-16 pro-medium leading-5 text-[#000]"
               onMouseEnter={() => setIsOpen4(true)}
               onMouseLeave={() => setIsOpen4(false)}
             >
               <Popover.Button className="flex items-center gap-x-1 focus-visible:outline-none focus-visible:shadow-none">
                 Resources
-                
               </Popover.Button>
             </div>
 
@@ -307,13 +307,13 @@ export default function Example() {
                 onMouseLeave={() => setIsOpen4(false)}
               >
                 <div className="">
-                  <h1 className="font-32 font-bold leading-10">Resources</h1>
+                  <h1 className="font-32 font-bold leading-10 text-[#7736B7]">Resources</h1>
                 </div>
-                <div className="grid grid-cols-2 gap-1 pl-5">
+                <div className="grid grid-cols-2 gap-5 pl-5">
                   {Recources.map((item) => (
                     <div
                       key={item.name}
-                       className="group relative flex items-start gap-x-6 rounded-lg text-sm leading-6 hover:bg-gray-50"
+                      className="group relative flex items-start gap-x-6 rounded-lg text-sm leading-6 "
                       onClick={() => setIsOpen4(false)}
                     >
                       <div className="flex h-11 w-11 flex-none items-center justify-center rounded-lg">
@@ -322,13 +322,13 @@ export default function Example() {
                       <div className="flex-auto">
                         <Link
                           href={item.href}
-                          className="block font-semibold text-gray-900"
+                          className="block font-medium font-20 text-[#7736B7]"
                           onClick={() => setIsOpen4(false)}
                         >
                           {item.name}
                           <span className="absolute inset-0" />
                         </Link>
-                        <p className="mt-1 text-gray-600">{item.description}</p>
+                        <p className="mt-2 font-12 opacity-60 leading-4 text-black">{item.description}</p>
                       </div>
                     </div>
                   ))}
@@ -339,13 +339,12 @@ export default function Example() {
 
           <Popover className="relative">
             <div
-              className="flex items-center gap-x-1 font-16 font-medium leading-6 text-[#2E2E2E99]"
+              className="flex items-center gap-x-1 font-16 pro-medium leading-5 text-[#000]"
               onMouseEnter={() => setIsOpen5(true)}
               onMouseLeave={() => setIsOpen5(false)}
             >
               <Popover.Button className="flex items-center gap-x-1 focus-visible:outline-none focus-visible:shadow-none">
                 Company
-                
               </Popover.Button>
             </div>
 
@@ -364,13 +363,13 @@ export default function Example() {
                 onMouseLeave={() => setIsOpen5(false)}
               >
                 <div className="">
-                  <h1 className="font-32 font-bold leading-10">Company</h1>
+                  <h1 className="font-32 font-bold leading-10 text-[#7736B7]">Company</h1>
                 </div>
-                <div className="grid grid-cols-2 gap-1 pl-5">
+                <div className="grid grid-cols-2 gap-5 pl-5">
                   {Company.map((item) => (
                     <div
                       key={item.name}
-                      className="group relative flex items-start gap-x-6 rounded-lg text-sm leading-6 hover:bg-gray-50"
+                      className="group relative flex items-start gap-x-6 rounded-lg text-sm leading-6 "
                       onClick={() => setIsOpen5(false)}
                     >
                       <div className="flex h-11 w-11 flex-none items-center justify-center rounded-lg">
@@ -379,13 +378,13 @@ export default function Example() {
                       <div className="flex-auto">
                         <Link
                           href={item.href}
-                          className="block font-semibold text-gray-900"
+                          className="block font-medium font-20 text-[#7736B7]"
                           onClick={() => setIsOpen5(false)}
                         >
                           {item.name}
                           <span className="absolute inset-0" />
                         </Link>
-                        <p className="mt-1 text-gray-600">{item.description}</p>
+                        <p className="mt-2 font-12 opacity-60 leading-4 text-black">{item.description}</p>
                       </div>
                     </div>
                   ))}
@@ -395,7 +394,7 @@ export default function Example() {
           </Popover>
         </PopoverGroup>
 
-        <div className="hidden xl:flex xl:flex-1 xl:justify-end items-center space-x-5 ml-3">
+        <div className="hidden xl:flex xl:flex-1 xl:justify-end items-center space-x-5 ml-5">
           <Link href="#" className="secondary-btn">
             Sign up
           </Link>
@@ -452,7 +451,7 @@ export default function Example() {
                 <Disclosure as="div" className="-mx-3">
                   {({ open }) => (
                     <>
-                      <DisclosureButton className="flex font-bold text-[16px] w-full items-center justify-between rounded-lg py-2 pl-3 pr-3.5 leading-7 text-[#2E2E2E99] hover:bg-gray-50">
+                      <DisclosureButton className="flex font-bold text-[16px] w-full items-center justify-between rounded-lg py-2 pl-3 pr-3.5 leading-7 text-[#2E2E2E99] ">
                         Product
                         <ChevronDownIcon
                           className={classNames(
@@ -468,7 +467,7 @@ export default function Example() {
                             key={item.name}
                             as="a"
                             href={item.href}
-                            className="block rounded-lg py-2 pl-6 pr-3 text-sm font-normal leading-7 text-gray-500 hover:bg-gray-50"
+                            className="block rounded-lg py-2 pl-6 pr-3 text-sm font-normal leading-7 text-gray-500 "
                           >
                             {item.name}
                           </DisclosureButton>
@@ -481,7 +480,7 @@ export default function Example() {
                 <Disclosure as="div" className="-mx-3">
                   {({ open }) => (
                     <>
-                      <DisclosureButton className="flex font-bold text-[16px] w-full items-center justify-between rounded-lg py-2 pl-3 pr-3.5 leading-7 text-[#2E2E2E99] hover:bg-gray-50">
+                      <DisclosureButton className="flex font-bold text-[16px] w-full items-center justify-between rounded-lg py-2 pl-3 pr-3.5 leading-7 text-[#2E2E2E99] ">
                         Solutions
                         <ChevronDownIcon
                           className={classNames(
@@ -497,7 +496,7 @@ export default function Example() {
                             key={item.name}
                             as="a"
                             href={item.href}
-                            className="block rounded-lg py-2 pl-6 pr-3 text-sm font-normal leading-7 text-gray-500 hover:bg-gray-50"
+                            className="block rounded-lg py-2 pl-6 pr-3 text-sm font-normal leading-7 text-gray-500 "
                           >
                             {item.name}
                           </DisclosureButton>
@@ -508,7 +507,7 @@ export default function Example() {
                 </Disclosure>
 
                 <Disclosure as="div" className="-mx-3">
-                  <DisclosureButton className="flex font-bold text-[16px] w-full items-center justify-between rounded-lg py-2 pl-3 pr-3.5 leading-7 text-[#2E2E2E99] hover:bg-gray-50">
+                  <DisclosureButton className="flex font-bold text-[16px] w-full items-center justify-between rounded-lg py-2 pl-3 pr-3.5 leading-7 text-[#2E2E2E99] ">
                     <Link href="/Pricing">Pricing</Link>
                   </DisclosureButton>
                 </Disclosure>
@@ -516,7 +515,7 @@ export default function Example() {
                 <Disclosure as="div" className="-mx-3">
                   {({ open }) => (
                     <>
-                      <DisclosureButton className="flex font-bold text-[16px] w-full items-center justify-between rounded-lg py-2 pl-3 pr-3.5 leading-7 text-[#2E2E2E99] hover:bg-gray-50">
+                      <DisclosureButton className="flex font-bold text-[16px] w-full items-center justify-between rounded-lg py-2 pl-3 pr-3.5 leading-7 text-[#2E2E2E99] ">
                         Docs
                         <ChevronDownIcon
                           className={classNames(
@@ -532,7 +531,7 @@ export default function Example() {
                             key={item.name}
                             as="a"
                             href={item.href}
-                            className="block rounded-lg py-2 pl-6 pr-3 text-sm font-normal leading-7 text-gray-500 hover:bg-gray-50"
+                            className="block rounded-lg py-2 pl-6 pr-3 text-sm font-normal leading-7 text-gray-500 "
                           >
                             {item.name}
                           </DisclosureButton>
@@ -545,7 +544,7 @@ export default function Example() {
                 <Disclosure as="div" className="-mx-3">
                   {({ open }) => (
                     <>
-                      <DisclosureButton className="flex font-bold text-[16px] w-full items-center justify-between rounded-lg py-2 pl-3 pr-3.5 leading-7 text-[#2E2E2E99] hover:bg-gray-50">
+                      <DisclosureButton className="flex font-bold text-[16px] w-full items-center justify-between rounded-lg py-2 pl-3 pr-3.5 leading-7 text-[#2E2E2E99] ">
                         Resources
                         <ChevronDownIcon
                           className={classNames(
@@ -561,7 +560,7 @@ export default function Example() {
                             key={item.name}
                             as="a"
                             href={item.href}
-                            className="block rounded-lg py-2 pl-6 pr-3 text-sm font-normal leading-7 text-gray-500 hover:bg-gray-50"
+                            className="block rounded-lg py-2 pl-6 pr-3 text-sm font-normal leading-7 text-gray-500 "
                           >
                             {item.name}
                           </DisclosureButton>
@@ -574,7 +573,7 @@ export default function Example() {
                 <Disclosure as="div" className="-mx-3">
                   {({ open }) => (
                     <>
-                      <DisclosureButton className="flex font-bold text-[16px] w-full items-center justify-between rounded-lg py-2 pl-3 pr-3.5 leading-7 text-[#2E2E2E99] hover:bg-gray-50">
+                      <DisclosureButton className="flex font-bold text-[16px] w-full items-center justify-between rounded-lg py-2 pl-3 pr-3.5 leading-7 text-[#2E2E2E99] ">
                         Company
                         <ChevronDownIcon
                           className={classNames(
@@ -590,7 +589,7 @@ export default function Example() {
                             key={item.name}
                             as="a"
                             href={item.href}
-                            className="block rounded-lg py-2 pl-6 pr-3 text-sm font-normal leading-7 text-gray-500 hover:bg-gray-50"
+                            className="block rounded-lg py-2 pl-6 pr-3 text-sm font-normal leading-7 text-gray-500 "
                           >
                             {item.name}
                           </DisclosureButton>

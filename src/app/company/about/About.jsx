@@ -17,9 +17,12 @@ const About = () => {
         <div className="widthclass ">
           <div className="pt-[50px] sm:pt-[123px] pl-[27px] sm:pl-[95px] pr-[27px] pb-[39px]">
             <div>
-              <h1 className="font-36 font-bold leading-10 mb-6 bg-gradient-to-r from-[#6542E4] from-20% via-[#EFCD56] to-[#EFCD56] opacity-60 inline-block text-transparent bg-clip-text">
-                <span className="textcolor">Our Mission:</span> Ensuring
-                Responsible <br className="hidden sm:block"/> AI Through Continuous Oversight
+              <h1 className="font-44 font-semibold leading-[60px] mb-6 text-[#2E2E2E] opacity-80">
+                Our Mission: Ensuring Responsible
+                <br className="hidden sm:block" />
+                <span className="text-[#7736B7]">
+                  AI Through Continuous Oversight
+                </span>
               </h1>
             </div>
             <div className="flex flex-col justify-end items-end">
@@ -29,14 +32,18 @@ const About = () => {
                 </h1>
                 <p className="font-22 font-normal leading-6 textcolor opacity-80">
                   As AI adoption accelerates, we saw a critical need for greater
-                  <br className="hidden md:block"/> transparency and trust in the AI ecosystem. Challenges
-                  around <br className="hidden md:block"/> explainability, fairness, and bias drove us to
-                  launch Metricwise, <br className="hidden md:block"/> with a clear goal: to bring
-                  accountability, clarity and demystifying <br className="hidden md:block"/> the
-                  decision-making processes for AI solutions. We are <br className="hidden md:block"/>
+                  <br className="hidden md:block" /> transparency and trust in
+                  the AI ecosystem. Challenges around{" "}
+                  <br className="hidden md:block" /> explainability, fairness,
+                  and bias drove us to launch Metricwise,{" "}
+                  <br className="hidden md:block" /> with a clear goal: to bring
+                  accountability, clarity and demystifying{" "}
+                  <br className="hidden md:block" /> the decision-making
+                  processes for AI solutions. We are{" "}
+                  <br className="hidden md:block" />
                   committed to ensuring that AI systems are transparent,
-                  reliable, <br className="hidden md:block"/> and ethical, setting a new standard for the
-                  future of AI.
+                  reliable, <br className="hidden md:block" /> and ethical,
+                  setting a new standard for the future of AI.
                 </p>
               </div>
             </div>
@@ -50,7 +57,7 @@ const About = () => {
             <h1 className="font-36 font-bold   leading-40 textcolor">
               Our Values
             </h1>
-            <p className="font-20 font-regular textcolor leading-[26px] mt-6">
+            <p className="font-20 font-normal textcolor leading-[28px] mt-6">
               {`We believe in AI's power to transform lives but recognize the need
               for accountability and trust. Our company is dedicated to building
               ethical, responsible AI solutions that empower our customers to
@@ -67,10 +74,10 @@ const About = () => {
                 alt="our value image"
               />
               <div className="flex flex-col justify-start items-start gap-1">
-                <h1 className="font-26 font-bold leading-10 textcolor">
+                <h1 className="font-26 font-bold leading-8 text-[#7736B7]">
                   Social Responsibility
                 </h1>
-                <p className="font-22 font-normal textcolor leading-[26px]">
+                <p className="font-20 font-normal textcolor leading-[28px]">
                   We are committed to developing AI that contributes to the
                   greater good, prioritizing solutions that address societal
                   challenges and promote equity.
@@ -85,10 +92,10 @@ const About = () => {
                 alt="our value image"
               />
               <div className="flex flex-col justify-start items-start gap-1">
-                <h1 className="font-26 font-bold leading-10 textcolor">
+                <h1 className="font-26 font-bold leading-8 text-[#7736B7]">
                   Ethical Governance
                 </h1>
-                <p className="font-22 font-normal textcolor leading-[26px]">
+                <p className="font-20 font-normal textcolor leading-[28px]">
                   We guide organizations in embedding ethical standards into
                   their AI systems, ensuring governance that upholds fairness
                   and integrity at every level.
@@ -103,11 +110,11 @@ const About = () => {
                 alt="our value image"
               />
               <div className="flex flex-col justify-start items-start gap-1">
-                <h1 className="font-26 font-bold leading-10 textcolor">
+                <h1 className="font-26 font-bold leading-8 text-[#7736B7]">
                   Transparent and Accountable
                 </h1>
-                <p className="font-22 font-normal textcolor leading-[26px]">
-                 {` We provide solutions that help in understanding AI's
+                <p className="font-20 font-normal textcolor leading-[28px]">
+                  {` We provide solutions that help in understanding AI's
                   decision-making process, ensuring transparency and
                   accountability at every step.`}
                 </p>
@@ -252,92 +259,90 @@ const About = () => {
       </div>
 
       <div className="flex flex-col justify-center items-center sm:mt-[127px] mb-[91px] mx-10 xl:mx-[132px] gap-[51px]">
-        <h1 className="font-36 font-bold leading-10 textcolor">
-          Get in Touch
-        </h1>
+        <h1 className="font-36 font-bold leading-10 textcolor">Get in Touch</h1>
         <div>
-            <div className="grid sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
-              <div
-                onClick={() => handleEmailClick("sales@metricwise.ai")}
-                className="cursor-pointer grid grid-cols-2 bg-[#FFFFFF] p-5 rounded-lg shadow-sm"
-              >
-                <div className="flex flex-col font-20 font-semibold textcolor leading-6">
-                  Sales
-                  <span className="font-12 textcolor opacity-60 font-normal leading-4 mt-2">
-                    sales@metricwise.ai
-                  </span>
-                </div>
-                <div className="flex justify-end items-center">
-                  <Image
-                    width={44}
-                    height={44}
-                    src="/contact1.svg"
-                    alt="Contact Icon"
-                  />
-                </div>
+          <div className="grid sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
+            <div
+              onClick={() => handleEmailClick("sales@metricwise.ai")}
+              className="cursor-pointer grid grid-cols-2 bg-[#FFFFFF] p-5 rounded-lg shadow-sm"
+            >
+              <div className="flex flex-col font-20 font-semibold textcolor leading-6">
+                Sales
+                <span className="font-12 textcolor opacity-60 font-normal leading-4 mt-2">
+                  sales@metricwise.ai
+                </span>
               </div>
-
-              <div
-                onClick={() => handleEmailClick("support@metricwise.ai")}
-                className="cursor-pointer grid grid-cols-2 bg-[#FFFFFF] p-5 rounded-lg shadow-sm"
-              >
-                <div className="flex flex-col font-20  font-semibold textcolor leading-6">
-                  Support
-                  <span className="font-12 textcolor opacity-60 font-normal leading-4 mt-2">
-                    support@metricwise.ai
-                  </span>
-                </div>
-                <div className="flex justify-end items-center">
-                  <Image
-                    width={44}
-                    height={44}
-                    src="/contact2.svg"
-                    alt="Support Icon"
-                  />
-                </div>
+              <div className="flex justify-end items-center">
+                <Image
+                  width={44}
+                  height={44}
+                  src="/contact1.svg"
+                  alt="Contact Icon"
+                />
               </div>
+            </div>
 
-              <div
-                onClick={() => handleEmailClick("careers@metricwise.ai")}
-                className="cursor-pointer grid grid-cols-2 bg-[#FFFFFF] p-5 rounded-lg shadow-sm"
-              >
-                <div className="flex flex-col font-20  font-semibold textcolor leading-6">
-                  Careers
-                  <span className="font-12 textcolor opacity-60 font-normal leading-4 mt-2">
-                    careers@metricwise.ai
-                  </span>
-                </div>
-                <div className="flex justify-end items-center">
-                  <Image
-                    width={44}
-                    height={44}
-                    src="/contact3.svg"
-                    alt="Careers Icon"
-                  />
-                </div>
+            <div
+              onClick={() => handleEmailClick("support@metricwise.ai")}
+              className="cursor-pointer grid grid-cols-2 bg-[#FFFFFF] p-5 rounded-lg shadow-sm"
+            >
+              <div className="flex flex-col font-20  font-semibold textcolor leading-6">
+                Support
+                <span className="font-12 textcolor opacity-60 font-normal leading-4 mt-2">
+                  support@metricwise.ai
+                </span>
               </div>
+              <div className="flex justify-end items-center">
+                <Image
+                  width={44}
+                  height={44}
+                  src="/contact2.svg"
+                  alt="Support Icon"
+                />
+              </div>
+            </div>
 
-              <div
-                onClick={() => handleEmailClick("info@metricwise.ai")}
-                className="cursor-pointer grid grid-cols-2 bg-[#FFFFFF] p-5 rounded-lg shadow-sm"
-              >
-                <div className="flex flex-col font-20  font-semibold textcolor leading-6">
-                  General
-                  <span className="font-12 textcolor opacity-60 font-normal leading-4 mt-2">
-                    info@metricwise.ai
-                  </span>
-                </div>
-                <div className="flex justify-end items-center">
-                  <Image
-                    width={44}
-                    height={44}
-                    src="/contact4.svg"
-                    alt="General Icon"
-                  />
-                </div>
+            <div
+              onClick={() => handleEmailClick("careers@metricwise.ai")}
+              className="cursor-pointer grid grid-cols-2 bg-[#FFFFFF] p-5 rounded-lg shadow-sm"
+            >
+              <div className="flex flex-col font-20  font-semibold textcolor leading-6">
+                Careers
+                <span className="font-12 textcolor opacity-60 font-normal leading-4 mt-2">
+                  careers@metricwise.ai
+                </span>
+              </div>
+              <div className="flex justify-end items-center">
+                <Image
+                  width={44}
+                  height={44}
+                  src="/contact3.svg"
+                  alt="Careers Icon"
+                />
+              </div>
+            </div>
+
+            <div
+              onClick={() => handleEmailClick("info@metricwise.ai")}
+              className="cursor-pointer grid grid-cols-2 bg-[#FFFFFF] p-5 rounded-lg shadow-sm"
+            >
+              <div className="flex flex-col font-20  font-semibold textcolor leading-6">
+                General
+                <span className="font-12 textcolor opacity-60 font-normal leading-4 mt-2">
+                  info@metricwise.ai
+                </span>
+              </div>
+              <div className="flex justify-end items-center">
+                <Image
+                  width={44}
+                  height={44}
+                  src="/contact4.svg"
+                  alt="General Icon"
+                />
               </div>
             </div>
           </div>
+        </div>
       </div>
     </div>
   );

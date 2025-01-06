@@ -37,14 +37,14 @@ const Contact = () => {
               <div className="text-start">
                 <label
                   htmlFor=""
-                  className="font-64 font-bold leading-10 md:leading-[80px] text-[#2E2E2E]"
+                  className="font-44 font-semibold leading-10 md:leading-[80px] text-[#2E2E2E]"
                 >
-                  {"Let's connect!"}
+                  {"Let's"} <span className="text-[#7736B7]">connect!</span>
                 </label>
 
-                <p className="font-normal font-20 leading-6 mt-8 sm:mt-2 opacity-60 text-start">
+                <p className="font-medium font-20 leading-7 mt-8 sm:mt-2 text-[#2E2E2E99] text-start">
                   Metricwise - A Comprehensive AI Observability and Governance
-                  Platform If you fall into any of the following categories:
+                  Platform If you fall into any of the <br /> following categories:
                 </p>
                 <div className="mt-5 flex items-center flex-wrap gap-3">
                   <div className="bg-white py-1 px-2 rounded-sm flex justify-center items-center gap-2 font-16 font-medium leading-5 text-[#2E2E2E]">
@@ -86,12 +86,12 @@ const Contact = () => {
                 <div className="flex flex-col justify-start items-start">
                   <label
                     htmlFor=""
-                    className="font-bold font-28 leading-10 text-[#2E2E2E]"
+                    className="font-bold font-36 leading-[42px] text-[#2E2E2E]"
                   >
                     Send us a message!
                   </label>
-                  <p className="font-14 font-normal leading-5">
-                    You can reach us anytime
+                  <p className="font-16 font-normal leading-5 text-[#000000BF] mt-3">
+                  You can reach us anytime. Our team is available 24/7.
                   </p>
                 </div>
                 <div className="grid sm:grid-cols-2 gap-5 mt-4">
@@ -173,7 +173,7 @@ const Contact = () => {
             </div>
           </div>
           <div>
-            <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-10 p-5 md:p-16">
+            <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-10 p-5 md:px-16">
               <div
                 onClick={() => handleEmailClick("sales@metricwise.ai")}
                 className="cursor-pointer grid grid-cols-2 bg-[#FFFFFF] p-5 rounded-lg shadow-sm"

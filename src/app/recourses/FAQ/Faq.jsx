@@ -217,8 +217,8 @@ const Faq = () => {
       <div className="">
         <div className="relative faq pb-20">
           <div className="flex flex-col px-[320px] pb-[65px] pt-[149px] justify-center items-center m-auto text-black widthclass">
-            <h1 className="font-64 font-bold text-center p-3 leading-10 md:leading-[80px] mb-7 text-[#2E2E2E]">
-              We are here to help you
+            <h1 className="font-44 font-bold text-center p-3 leading-10 md:leading-[80px] mb-5 text-[#2E2E2E] opacity-80">
+              We are here to <span className="text-[#7736B7]">help</span> you
             </h1>
             <div className="relative opacity-60">
               <input

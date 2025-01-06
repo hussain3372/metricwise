@@ -12,8 +12,8 @@ const Term = () => {
       <div className="bg-[url('/term-bg.png')] bg-no-repeat bg-cover bg-center">
         <div className="flex justify-center items-center py-28 relative widthclass">
           <div>
-            <h1 className="font-64 font-bold lg:leading-40 mb-5 text-black">
-              Terms of Use
+            <h1 className="font-44 font-semibold lg:leading-[80px] mb-5 text-black">
+              Terms of <span className="text-[#7736B7]">Use</span>
             </h1>
           </div>
         </div>
@@ -27,10 +27,10 @@ const Term = () => {
           {Terms.map((term, termIndex) => (
             <div key={termIndex}>
               <div>
-                <h2 className="font-20 font-inter font-semibold mt-5">
+                <h2 className="font-20 font-inter font-bold mt-5">
                   {term.name}
                 </h2>
-                <p className="font-16 font-normal font-inter leading-6 mt-4 mb-6 opacity-70">
+                <p className="font-16 font-normal font-inter leading-6 mt-4 mb-6 text-[#2E2E2E99]">
                   {term.para}
                   {/* Conditionally render the hyperlink if it exists */}
                   {term.linkText && (
@@ -47,10 +47,10 @@ const Term = () => {
                 {term.list && term.list1 && (
                   <div>
                     <ul className="list-disc pl-8 space-y-2 pb-6">
-                      <li className="font-16 font-normal font-inter leading-6 mt-5 opacity-70">
+                      <li className="font-16 font-normal font-inter leading-6 mt-5 text-[#2E2E2E99]">
                         {term.list}
                       </li>
-                      <li className="font-16 font-normal font-inter leading-6 mt-5 opacity-70">
+                      <li className="font-16 font-normal font-inter leading-6 mt-5 text-[#2E2E2E99]">
                         {term.list1}
                       </li>
                     </ul>

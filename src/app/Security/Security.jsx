@@ -12,21 +12,21 @@ const Term = () => {
       <div className="bg-[url('/term-bg.png')] bg-no-repeat bg-cover bg-center">
         <div className="flex justify-center items-center py-28 relative widthclass">
           <div>
-            <h1 className="font-64 font-bold lg:leading-40 mb-5 text-black">
-              Data Security & Privacy Policy
+            <h1 className="font-44 font-semibold lg:leading-[80px] mb-5 text-[#2E2E2E]">
+              Data Security & <span className="text-[#7736B7]">Privacy</span> Policy
             </h1>
           </div>
         </div>
       </div>
 
       <div className="px-10 md:px-[150px] lg:px-[224px] py-[80px] widthclass">
-        <h1 className="font-36 font-inter font-bold leading-10 text-[#042440]">
+        <h1 className="font-36 font-bold leading-10 text-[#042440]">
           Data Security & Privacy Policy
         </h1>
         <div className="mt-12">
           <div>
-            <h1 className="font-20 font-inter font-semibold">Data Security:</h1>
-            <p className="font-16 font-normal font-inter leading-6 mt-5 mb-6 opacity-60">
+            <h1 className="font-20 font-semibold">Data Security:</h1>
+            <p className="font-16 font-normal  leading-6 mt-5 mb-6 opacity-60">
               <span className="pl-10"> At Metricwise,</span> we consider product
               security as an utmost priority. Our software development lifecycle
               SDLC adheres to Agile principles, ensuring a dynamic and
@@ -83,8 +83,8 @@ const Term = () => {
             </p>
           </div>
           <div>
-            <h1 className="font-20 font-inter font-semibold">Data Privacy:</h1>
-            <p className="font-16 font-normal font-inter leading-6 mt-5 mb-6 opacity-60">
+            <h1 className="font-20  font-semibold">Data Privacy:</h1>
+            <p className="font-16 font-normal  leading-6 mt-5 mb-6 opacity-60">
               <span className="pl-10">At Metricwise,</span> data privacy and
               security stand as our paramount concerns. Our approach, rooted in
               principles, transcends conventional monitoring methodologies by

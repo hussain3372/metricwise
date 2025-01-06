@@ -1,25 +1,33 @@
 import Image from "next/image";
 import Link from "next/link";
 import React from "react";
-import { alertingInt, deploymentint, frameworkInt, IntegrationCards } from "../data/integrationCards";
+import {
+  alertingInt,
+  deploymentint,
+  frameworkInt,
+  IntegrationCards,
+} from "../data/integrationCards";
 
 const Integration = () => {
   return (
     <div>
       <div className="bg-gradient-to-l to-[#CFC2FF99] from-[#FFF0BC99]">
         <div className="widthclass pt-10 sm:pt-[102px] px-5 sm:px-[62px] pb-[46px]">
-          <h1 className="font-36 font-bold leading-10 textcolor">
+          <h1 className="font-44 font-semibold leading-[42px] text-[#2E2E2E]">
             Integrations
           </h1>
-          <h2 className="text-[30px] font-medium mt-5 leading-10 mb-6 bg-gradient-to-r from-[#6542E4] from-10% via-[#6542E4] to-[#EFCD56] opacity-60 inline-block text-transparent bg-clip-text">
-            Harness the Power of Metricwise <br className="hidden sm:block" />
-            Seamless Integrations
+          <h2 className="text-[30px] font-medium mt-5 leading-10 mb-6 text-[#2E2E2E] opacity-80">
+            Harness the Power of{" "}
+            <span className="text-[#7736B7]">
+              Metricwise <br className="hidden sm:block" />
+              Seamless Integrations
+            </span>
           </h2>
-          <p className="mt-[32px] font-22 font-normal textcolor leading-[26px]">
+          <p className="font-22 font-normal textcolor leading-[26px] opacity-80">
             Explore our GenAI and ML integrations designed to streamline
             <br className="hidden md:block" /> operations and boost efficiency.
           </p>
-          <div className="mt-[65px]">
+          <div className="mt-[65px] opacity-80">
             <button>
               <Link
                 href="/Demo"
@@ -130,7 +138,7 @@ const Integration = () => {
             </div>
             <div>
               <h1 className="text-[30px] font-medium leading-10 textcolor">
-              Alerting
+                Alerting
               </h1>
               <div className="mt-10 px-4 lg:px-0">
                 <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
@@ -160,7 +168,7 @@ const Integration = () => {
             </div>
             <div>
               <h1 className="text-[30px] font-medium leading-10 textcolor">
-              LLM/ ML Frameworks
+                LLM/ ML Frameworks
               </h1>
               <div className="mt-10 px-4 lg:px-0">
                 <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
@@ -190,7 +198,7 @@ const Integration = () => {
             </div>
             <div>
               <h1 className="text-[30px] font-medium leading-10 textcolor">
-              Model Deployment
+                Model Deployment
               </h1>
               <div className="mt-10 px-4 lg:px-0">
                 <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">

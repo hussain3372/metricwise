@@ -11,9 +11,7 @@ const Team = () => {
       <div className="widthclass">
         <div>
           <div className="flex flex-col justify-start items-start pt-[59px] px-5 sm:px-10 lg:px-[125px] pb-[146px]">
-            <h1 className="font-36 font-bold leading-10 mb-10">
-              Our Team
-            </h1>
+            <h1 className="font-36 font-bold leading-[42px] mb-10">Our Team</h1>
             <p className="font-22 font-normal leading-7 textcolor sm:px-[57px]">
               {`Embark on a journey with our dynamic tech team, where innovation
               and collaboration converge to shape the future. At Metricwise
@@ -29,9 +27,7 @@ const Team = () => {
         </div>
 
         <div className="px-5 sm:px-10 lg:px-[125px]">
-          <h1 className="font-36 font-bold leading-10 mb-[59px]">
-            Our Values
-          </h1>
+          <h1 className="font-36 font-bold leading-10 mb-[59px]">Our Values</h1>
           <div className="space-y-8 md:space-y-3">
             {/* Card 1 - Left */}
             <div className="grid md:grid-cols-2">
@@ -42,11 +38,11 @@ const Team = () => {
                   height={60}
                   alt="value icons"
                 />
-                <div >
-                  <h1 className="font-26 font-bold textcolor leading-10">
+                <div>
+                  <h1 className="font-26 font-bold leading-8 text-[#7736B7]">
                     Innovation First
                   </h1>
-                  <p className="font-22 font-normal textcolor leading-7 pt-1">
+                  <p className="font-20 font-normal textcolor leading-7 pt-1">
                     Foster a culture of continuous innovation, encouraging team
                     members to explore novel ideas, embrace emerging
                     technologies, and challenge the status quo.
@@ -67,10 +63,10 @@ const Team = () => {
                   alt="value icons"
                 />
                 <div>
-                  <h1 className="font-26 font-bold textcolor leading-10">
+                  <h1 className="font-26 font-bold leading-8 text-[#7736B7]">
                     Curiosity
                   </h1>
-                  <p className="font-22 font-normal textcolor leading-7 pt-1">
+                  <p className="font-20 font-normal textcolor leading-7 pt-1">
                     Seek continuous growth and absorb knowledge at every
                     opportunity. We thrive on thinking beyond conventional
                     boundaries. Refusing to rest on our current understanding,we
@@ -92,10 +88,10 @@ const Team = () => {
                   alt="value icons"
                 />
                 <div>
-                  <h1 className="font-26 font-bold textcolor leading-10">
+                  <h1 className="font-26 font-bold leading-8 text-[#7736B7]">
                     User-Centric Mindset
                   </h1>
-                  <p className="font-22 font-normal textcolor leading-7 pt-1">
+                  <p className="font-20 font-normal textcolor leading-7 pt-1">
                     Prioritize a user-centric mindset in product development.
                     Empathize with end-users, ensuring that solutions are not
                     only technologically advanced but also intuitive,
@@ -117,10 +113,10 @@ const Team = () => {
                   alt="value icons"
                 />
                 <div>
-                  <h1 className="font-26 font-bold textcolor leading-10">
+                  <h1 className="font-26 font-bold leading-8 text-[#7736B7]">
                     Humility
                   </h1>
-                  <p className="font-22 font-normal textcolor leading-7 pt-1">
+                  <p className="font-20 font-normal textcolor leading-7 pt-1">
                     We affirm that an exceptional team thrives on shared
                     responsibilities, where mutual respect and trust among peers
                     prevail. Fostering relationships, we actively strive to
@@ -140,10 +136,10 @@ const Team = () => {
                   alt="value icons"
                 />
                 <div>
-                  <h1 className="font-26 font-bold textcolor leading-10">
+                  <h1 className="font-26 font-bold leading-8 text-[#7736B7]">
                     Passion
                   </h1>
-                  <p className="font-22 font-normal textcolor leading-7 pt-1">
+                  <p className="font-20 font-normal textcolor leading-7 pt-1">
                     Our endeavors are driven by a shared passion for
                     collaborative teamwork and the creation of extraordinary
                     achievements. We draw strength from surpassing conventional

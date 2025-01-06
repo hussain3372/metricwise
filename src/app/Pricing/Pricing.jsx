@@ -24,19 +24,19 @@ const Pricing = () => {
   };
 
   return (
-    <div>
-      <div className="pricebg">
+    <div className="relative">
+      <div className="faq relative">
         <div className="widthclass">
-          <div className="flex flex-col justify-center items-center text-center m-auto pt-10">
-            <h1 className="font-36 font-bold leading-10 p-0 md:pt-24 md:pb-32">
-              Unlock Business Growth with <br /> Scalable, Ethical AI Solutions
+          <div className="flex flex-col justify-center items-center text-center m-auto pb-[120px] pt-20">
+            <h1 className="font-44 font-semibold leading-[60px] p-0 md:pt-24 md:pb-32">
+              Unleash <span className="text-[#7736B7]">Business Growth</span> with Scalable <br /> and Ethical <span className="text-[#7736B7]">AI Solutions</span>
             </h1>
           </div>
         </div>
       </div>
 
       <div className="widthclass">
-        <div className="grid sm:grid-cols-2 xl:grid-cols-3 gap-10 px-5 md:px-20 py-10 md:py-0">
+        <div className="grid sm:grid-cols-2 xl:grid-cols-3 gap-10 px-5 md:px-20 py-10 md:py-0 absolute z-10 top-[410px]">
           {Price && Price.length > 0 ? (
             Price.map((item, index) => {
               const expandedCount = expandedIndexes[index] || 11;
@@ -113,9 +113,10 @@ const Pricing = () => {
           )}
         </div>
       </div>
+
       <div className="widthclass">
         <div>
-          <div className="mt-20 mb-16 xl:p-10">
+          <div className="mt-[730px] mb-16 xl:p-10">
             <div className="flex flex-col justify-center m-auto text-center">
               <p className="font-24 font-inter font-normal leading-8 mb-4 opacity-60">
                 Plan Comparison

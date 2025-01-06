@@ -1,7 +1,7 @@
 export const blogDetailContent = [
   {
     id: 1,
-    title: "Monitoring V/S Observability",
+    title: "Monitoring V/S <span class='text-[#7736B7]'>Observability</span>",
     category: "Artificial Intelligence",
     imgSrc: "/monitoring-blog.svg",
     w: "945",
@@ -138,7 +138,7 @@ export const blogDetailContent = [
 
   {
     id: 2,
-    title: "Ethical use of AI",
+    title: "Ethical use of <span class='text-[#7736B7]'>AI</span>",
     category: "Artificial Intelligence",
     imgSrc: "/ethical-ai.svg",
     w: "1110",
@@ -197,9 +197,6 @@ export const blogDetailContent = [
           ],
         },
       ],
-
-
-      
     },
 
     observabilityData: {
@@ -241,7 +238,6 @@ export const blogDetailContent = [
         " As generative AI technology becomes more influential, it's crucial to highlight ethical concerns to develop solutions that are fair, transparent, and beneficial for all. Those involved in handling data have a special responsibility to develop ethical AI systems, with addressing bias being a key aspect of this responsibility. By focusing on gathering diverse data, carefully preprocessing it, using algorithms that prioritize fairness, and consistently evaluating with fairness metrics, we can reduce bias in AI systems together. Moreover, promoting collaboration with stakeholders, providing education on AI ethics, and implementing transparency and accountability measures will ensure that AI technologies contribute to a future that is equitable and just for everyone.",
     },
 
-
     recommended: [
       {
         articleimg: "/metric-wise.png",
@@ -263,7 +259,7 @@ export const blogDetailContent = [
   {
     id: 3,
     title:
-      "What factors should be taken into account when <br /> establishing ML monitoring?",
+      "What factors should be taken into account <br /> when <span class='text-[#7736B7]'>establishing ML monitoring?</span>",
     category: "Artificial Intelligence",
     imgSrc: "/factors.svg",
     w: "800",
@@ -354,7 +350,7 @@ export const blogDetailContent = [
 
   {
     id: 4,
-    title: "A Deep Dive into OWASP Top 10 for LLM Applications",
+    title: "A Deep Dive into <span class='text-[#7736B7]'>OWASP </span> Top 10 for <span class='text-[#7736B7]'>LLM Applications</span>",
     category: "Artificial Intelligence",
     imgSrc: "/blog4.png",
     w: "824",
@@ -510,7 +506,7 @@ export const blogDetailContent = [
   {
     id: 5,
     title:
-      "Navigating the Intersection: Comprehensive <br /> Governance in the Era of AI and Tech Evolution",
+      "Navigating the Intersection: Comprehensive <br /> <span class='text-[#7736B7]'>Governance in the Era of AI and Tech Evolution</span>",
     category: "Artificial Intelligence",
     imgSrc: "/navigating-blog.svg",
     w: "1110",
@@ -560,7 +556,7 @@ export const blogDetailContent = [
   {
     id: 6,
     title:
-      "Exploring Bias and Equity in Artificial Intelligence <br /> Systems: An Essential Concern",
+      "Exploring Bias and Equity in <span class='text-[#7736B7]'>Artificial <br /> Intelligence Systems: </span> An Essential Concern",
     category: "Artificial Intelligence",
     imgSrc: "/bias.svg",
     w: "945",
@@ -653,7 +649,7 @@ export const blogDetailContent = [
 
   {
     id: 8,
-    title: "Metricwise: The AI Observability Platform",
+    title: "Metricwise: The <span class='text-[#7736B7]'>AI Observability </span> Platform",
     category: "Artificial Intelligence",
     imgSrc: "/ai-observability.png",
     w: "1216",

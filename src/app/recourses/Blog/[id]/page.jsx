@@ -27,7 +27,7 @@ const BlogDetail = () => {
         <div className="py-[50px] px-5 sm:px-28 xl:px-[244px] gap-10 lg:gap-[80px] flex justify-center items-center flex-col">
           <div className="w-full text-left">
             <h1
-              className="font-36 font-bold lg:leading-10 mb-5 primaryblue z-10 text-center"
+              className="font-44 font-semibold lg:leading-[60px] mb-5 z-10 text-center"
               dangerouslySetInnerHTML={{ __html: blog.title }}
             ></h1>
           </div>

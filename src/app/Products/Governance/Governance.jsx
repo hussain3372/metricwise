@@ -11,7 +11,7 @@ const Governance = () => {
       <div>
         <div className=" bg-[url('/hero-gradient.png')] bg-no-repeat bg-cover">
           <div className="px-10 md:px-20 xl:px-[120px] py-10 lg:py-[180px] mt-5 bg-center widthclass">
-            <div className="grid lg:grid-cols-2 items-center gap-10">
+            <div className="grid lg:grid-cols-2 items-center gap-[38px]">
               <div>
                 <h1 className="font-44 font-semibold leading-[60px] purple-color">
                   Governance Hub
@@ -46,7 +46,7 @@ const Governance = () => {
             {governance.map((item, index) => (
               <div
                 key={index}
-                className="grid lg:grid-cols-2 items-center gap-10 xl:gap-[75px] px-10 md:px-[90px] xl:px-[148px] mt-[125px]"
+                className="grid lg:grid-cols-2 items-center gap-10 xl:gap-[125px] px-10 md:px-[90px] xl:px-[172px] mt-[125px]"
               >
                 <div
                   className={`${

@@ -29,12 +29,15 @@ const Compliance = () => {
               {/* Text Content */}
               <div>
                 <p className="font-20 font-normal leading-6 sm:leading-7 mt-3 mb-8 sm:mb-9 opacity-60 text-[#000000]">
-                  {` In today's `} fast-paced AI landscape, businesses face <br className="hidden md:block"/> evolving
-                  regulations and heightened compliance risks. <br className="hidden md:block"/> Non-compliance
-                  can lead to legal issues, financial <br className="hidden md:block"/> penalties, and
-                  reputational damage. Metricwise <br className="hidden md:block"/> specializes in guiding
-                  organizations through these <br className="hidden md:block"/> complexities with confidence and
-                  clarity.
+                  {` In today's `} fast-paced AI landscape, businesses face{" "}
+                  <br className="hidden md:block" /> evolving regulations and
+                  heightened compliance risks.{" "}
+                  <br className="hidden md:block" /> Non-compliance can lead to
+                  legal issues, financial <br className="hidden md:block" />{" "}
+                  penalties, and reputational damage. Metricwise{" "}
+                  <br className="hidden md:block" /> specializes in guiding
+                  organizations through these <br className="hidden md:block" />{" "}
+                  complexities with confidence and clarity.
                 </p>
                 <Link href="/company/contact_us" className="hero-btn">
                   Get started for free
@@ -145,13 +148,11 @@ const Compliance = () => {
         <div className="widthclass ">
           <div className="flex flex-col justify-center items-center text-center px-10 lg:px-[216px] py-[56px]">
             <h1 className="font-36 font-bold leading-10 text-[#000000]">
-              Future-Proof Your
-              <span className="font-semibold text-[#7736B7]">
-                 Compliance Strategy
-              </span>
-              with
+              Future-Proof Your{""}
+              <span className="text-[#7736B7]">Compliance Strategy</span>
+              with{""}
               <br className="hidden sm:block" />
-              <span className="font-semibold text-[#7736B7]">Metricwise</span>
+              <span className="text-[#7736B7]">Metricwise</span>
             </h1>
 
             <p className="font-16 font-normal leading-5 mt-5 mb-10 opacity-60">

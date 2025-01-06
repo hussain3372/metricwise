@@ -18,8 +18,8 @@ const Term = () => {
         </div> */}
         <div className="flex justify-center items-center py-28 relative widthclass">
           <div>
-            <h1 className="font-64 font-bold lg:leading-40 mb-5 text-black">
-              Privacy Policy
+            <h1 className="font-44 font-semibold lg:leading-[80px] mb-5 text-[#2E2E2E]">
+              Privacy <span className="text-[#7736B7]">Policy</span>
             </h1>
           </div>
           {/* <div className="flex justify-center md:justify-end mt-10 md:mt-0">
@@ -49,7 +49,7 @@ const Term = () => {
             </p>
           </div>
           <div>
-            <h1 className="font-20 font-inter font-semibold">
+            <h1 className="font-20 font-inter font-bold">
               What We Collect About You
             </h1>
             <p className="font-16 font-normal font-inter leading-6 mt-5 mb-6 opacity-60">
@@ -58,7 +58,7 @@ const Term = () => {
             </p>
           </div>
           <div>
-            <h1 className="font-20 font-inter font-semibold">
+            <h1 className="font-20 font-inter font-bold">
               Information Directly From You:
             </h1>
             <p className="font-16 font-normal font-inter leading-6 mt-5 mb-6 opacity-60">
@@ -70,7 +70,7 @@ const Term = () => {
             </p>
           </div>
           <div>
-            <h1 className="font-20 font-inter font-semibold">
+            <h1 className="font-20 font-inter font-bold">
               Information Automatically Collected:
             </h1>
             <p className="font-16 font-normal font-inter leading-6 mt-5 mb-6 opacity-60">
@@ -81,7 +81,7 @@ const Term = () => {
               Tracking Mechanisms section below. This includes:
             </p>
             <div>
-              <ul className="list-disc pl-8 space-y-2 pb-6">
+              <ul className="list-disc pl-8 space-y-1 pb-6">
                 <li className="font-16 font-normal font-inter leading-6 mt-5 opacity-60">
                   Domain name
                 </li>
@@ -104,7 +104,7 @@ const Term = () => {
             </div>
           </div>
           <div>
-            <h1 className="font-20 font-inter font-semibold">
+            <h1 className="font-20 font-inter font-bold">
               How We Use Your Information
             </h1>
             <p className="font-16 font-normal font-inter leading-6 mt-5 mb-6 opacity-60">
@@ -112,7 +112,7 @@ const Term = () => {
               purposes:
             </p>
             <div>
-              <ul className="list-disc pl-8 space-y-2 pb-6">
+              <ul className="list-disc pl-8 space-y-1 pb-6">
                 <li className="font-16 font-normal font-inter leading-6 mt-5 opacity-60">
                   Providing and improving our Site
                 </li>
@@ -152,7 +152,7 @@ const Term = () => {
             </div>
           </div>
           <div>
-            <h1 className="font-20 font-inter font-semibold">
+            <h1 className="font-20 font-inter font-bold">
               How We Share Your Information
             </h1>
             <p className="font-16 font-normal font-inter leading-6 mt-5 mb-6 opacity-60">
@@ -161,7 +161,7 @@ const Term = () => {
               information in these situations:
             </p>
             <div>
-              <ul className="list-disc pl-8 space-y-2 pb-6">
+              <ul className="list-disc pl-8 space-y-1 pb-6">
                 <li className="font-16 font-normal font-inter leading-6 mt-5 opacity-60">
                   Business Transfers: If MetricWise is involved in a business
                   transfer, your information may be transferred as part of that
@@ -180,19 +180,19 @@ const Term = () => {
             </div>
           </div>
           <div>
-            <h1 className="font-20 font-inter font-semibold">
+            <h1 className="font-20 font-inter font-bold">
               Our Use of Cookies and Other Tracking Mechanisms
             </h1>
-            <p className="font-16 font-normal font-inter leading-6 mt-5 mb-6 opacity-60">
+            <p className="font-16 font-normal font-inter leading-6 mt-5 opacity-60">
               We and our third-party service providers use cookies and other
               tracking mechanisms to monitor your interaction with our Site. We
               may merge this data with other personal information collected from
               you and our third-party service providers may do so on our behalf.
             </p>
             <div>
-              <ul className="list-disc pl-8 space-y-2 pb-6 ">
-                <li className="font-16 font-normal font-inter leading-6 mt-5 opacity-60 ">
-                  <span className="font-16 font-inter font-semibold">
+              <ul className="list-disc pl-8 space-y-1 pb-5">
+                <li className="font-16 font-normal font-inter leading-6 mt-4 text-[#2E2E2E99]">
+                  <span className="font-20 text-[#2E2E2E] font-inter font-bold">
                     Cookies:
                   </span>{" "}
                   These are alphanumeric identifiers transferred to your devices
@@ -202,8 +202,8 @@ const Term = () => {
                   activities. There are two types: session and persistent
                   cookies.
                 </li>
-                <li className="font-16 font-normal font-inter leading-6 mt-5 mb-6 opacity-60 ">
-                  <span className="font-16 font-inter font-semibold">
+                <li className="font-16 font-normal font-inter leading-6 mt-4 text-[#2E2E2E99]">
+                  <span className="font-20 text-[#2E2E2E] font-inter font-bold">
                     Session Cookies:
                   </span>{" "}
                   These exist only during an online session, disappearing when
@@ -212,8 +212,8 @@ const Term = () => {
                   facilitating online transactions and verifying your identity
                   as you navigate our Site.
                 </li>
-                <li className="font-16 font-normal font-inter leading-6 mt-5 mb-6 opacity-60 ">
-                  <span className="font-16 font-inter font-semibold">
+                <li className="font-16 font-normal font-inter leading-6 mt-4 text-[#2E2E2E99]">
+                  <span className="font-20 text-[#2E2E2E] font-inter font-bold">
                     Persistent Cookies:
                   </span>{" "}
                   These remain on your device after browser closure or device
@@ -224,7 +224,7 @@ const Term = () => {
             </div>
           </div>
           <div>
-            <h1 className="font-20 font-inter font-semibold">
+            <h1 className="font-20 font-inter font-bold">
               Disabling Cookies:
             </h1>
             <p className="font-16 font-normal font-inter leading-6 mt-5 mb-6 opacity-60">
@@ -236,7 +236,7 @@ const Term = () => {
             </p>
           </div>
           <div>
-            <h1 className="font-20 font-inter font-semibold">
+            <h1 className="font-20 font-inter font-bold">
               Clear GIFs, Pixel Tags, and Other Technologies:
             </h1>
             <p className="font-16 font-normal font-inter leading-6 mt-5 mb-6 opacity-60">
@@ -247,7 +247,7 @@ const Term = () => {
             </p>
           </div>
           <div>
-            <h1 className="font-20 font-inter font-semibold">
+            <h1 className="font-20 font-inter font-bold">
               Third-Party Analytics:
             </h1>
             <p className="font-16 font-normal font-inter leading-6 mt-5 mb-6 opacity-60">
@@ -259,7 +259,7 @@ const Term = () => {
             </p>
           </div>
           <div>
-            <h1 className="font-20 font-inter font-semibold">
+            <h1 className="font-20 font-inter font-bold">
               Cross-Device Use:
             </h1>
             <p className="font-16 font-normal font-inter leading-6 mt-5 mb-6 opacity-60">
@@ -271,7 +271,7 @@ const Term = () => {
             </p>
           </div>
           <div>
-            <h1 className="font-20 font-inter font-semibold">Do-Not-Track:</h1>
+            <h1 className="font-20 font-inter font-bold">Do-Not-Track:</h1>
             <p className="font-16 font-normal font-inter leading-6 mt-5 mb-6 opacity-60">
               While our systems do not currently recognize browser do-not-track
               requests, you can disable certain tracking as discussed in this
@@ -280,7 +280,7 @@ const Term = () => {
             </p>
           </div>
           <div>
-            <h1 className="font-20 font-inter font-semibold">
+            <h1 className="font-20 font-inter font-bold">
               Third-Party Links:
             </h1>
             <p className="font-16 font-normal font-inter leading-6 mt-5 mb-6 opacity-60">
@@ -290,7 +290,7 @@ const Term = () => {
             </p>
           </div>
           <div>
-            <h1 className="font-20 font-inter font-semibold">
+            <h1 className="font-20 font-inter font-bold">
               Security of Personal Information:
             </h1>
             <p className="font-16 font-normal font-inter leading-6 mt-5 mb-6 opacity-60">
@@ -300,7 +300,7 @@ const Term = () => {
             </p>
           </div>
           <div>
-            <h1 className="font-20 font-inter font-semibold">
+            <h1 className="font-20 font-inter font-bold">
               Access to Personal Information:
             </h1>
             <p className="font-16 font-normal font-inter leading-6 mt-5 mb-6 opacity-60">
@@ -311,7 +311,7 @@ const Term = () => {
             </p>
           </div>
           <div>
-            <h1 className="font-20 font-inter font-semibold">
+            <h1 className="font-20 font-inter font-bold">
               Choices Regarding Personal Information Use:
             </h1>
             <p className="font-16 font-normal font-inter leading-6 mt-5 mb-6 opacity-60">
@@ -320,7 +320,7 @@ const Term = () => {
             </p>
           </div>
           <div>
-            <h1 className="font-20 font-inter font-semibold">
+            <h1 className="font-20 font-inter font-bold">
               Children Under 13:
             </h1>
             <p className="font-16 font-normal font-inter leading-6 mt-5 mb-6 opacity-60">
@@ -329,7 +329,7 @@ const Term = () => {
             </p>
           </div>
           <div>
-            <h1 className="font-20 font-inter font-semibold">Contact Us:</h1>
+            <h1 className="font-20 font-inter font-bold">Contact Us:</h1>
             <p className="font-16 font-normal font-inter leading-6 mt-5 mb-6 opacity-60">
               For privacy inquiries or complaints, contact us at {""}
               <EmailButton
@@ -342,7 +342,7 @@ const Term = () => {
             </p>
           </div>
           <div>
-            <h1 className="font-20 font-inter font-semibold">
+            <h1 className="font-20 font-inter font-bold">
               Changes to this Policy:
             </h1>
             <p className="font-16 font-normal font-inter leading-6 mt-5 mb-6 opacity-60">

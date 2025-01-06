@@ -10,10 +10,10 @@ const Blog = () => {
       <div className="blog mb-[76px]">
         <div className="grid md:grid-cols-2 gap-5 lg:gap-14 items-center white px-5 md:px-[61px] pt-20 md:pt-[135px] pb-[90px] relative widthclass">
           <div>
-            <h1 className="font-36 font-bold leading-10 mb-6 bg-gradient-to-r from-[#6542E4] from-20% via-[#EFCD56] to-[#EFCD56] opacity-60 inline-block text-transparent bg-clip-text">
-              Monitoring V/S Observability
+            <h1 className="font-44 font-semibold leading-[42px] mb-6 opacity-80 text-[#2E2E2E]">
+              Monitoring V/S <span className="text-[#7736B7]">Observability</span>
             </h1>
-            <p className="font-22 font-inter font-normal leading-6 text-[#2E2E2E] opacity-80">
+            <p className="font-20 font-normal leading-6 text-[#2E2E2E] opacity-80">
               The terms monitoring and observability are prevalent in the field
               of AI/ML systems. Although they may initially appear similar,
               there are notable distinctions between the two concepts. This
