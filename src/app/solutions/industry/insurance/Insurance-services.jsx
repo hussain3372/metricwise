@@ -13,10 +13,10 @@ const InsuranceServices = () => {
           className="grid md:grid-cols-2 items-center px-2 sm:px-20 xl:px-60 py-10 gap-10"
         >
           <div className={`${index % 2 === 1 ? "md:order-last" : ""}`}>
-            <h1 className="font-40 font-medium leading-[52px] text-[#7736B7]">
+            <h1 className="font-36 font-medium font-inter leading-[48px] text-[#7736B7]">
               {item.main}
             </h1>
-            <p className="font-16 font-inter font-normal leading-[20px] mt-[18px] text-[#2E2E2E]">
+            <p className="font-14 font-inter font-normal leading-[18px] mt-[18px] text-[#2E2E2E]">
               {item.Paragraph}
             </p>
           </div>

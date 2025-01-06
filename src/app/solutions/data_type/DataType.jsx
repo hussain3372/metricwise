@@ -18,11 +18,16 @@ const DataType = () => {
                 />
               </div>
               <div className="flex flex-col justify-center items-center mt-12">
-                <h1 className="font-36 font-inter font-bold leading-10 text-[#2E2E2E]">
+                <h1 className="font-44 font-bold leading-[42px] text-[#7736B7]">
                   Data Type
                 </h1>
-                <p className="font-24 font-normal font-inter leading-8 mt-8 mb-10 opacity-60 text-center">
-                A data type is an attribute associated with a piece of data that tells a <br className="hidden md:block"/> computer system how to interpret its value. Understanding data <br className="hidden md:block"/> types ensures that data is collected in the preferred format and the <br className="hidden md:block"/>  value of each property is as expected.
+                <p className="font-20 font-normal font-inter leading-7 mt-8 mb-10 opacity-60 text-center">
+                  A data type is an attribute associated with a piece of data
+                  that tells a computer <br className="hidden md:block" />
+                  system how to interpret its value. Understanding data types
+                  ensures that data is <br className="hidden md:block" />
+                  collected in the preferred format and the value of each
+                  property is as expected.
                 </p>
                 <Link href="/Demo" className="new-btns">
                   Book a Demo

@@ -10,8 +10,8 @@ const DataTypecard = () => {
       <div className="bg-[url('/type1-framebg.svg')] bg-no-repeat bg-center bg-cover px-5 sm:px-10 lg:pr-5 lg:pl-[77px] py-[95px]">
         <div className="grid lg:grid-cols-2 space-y-20 md:space-y-0 items-center widthclass">
           <div className="p-10 rounded-[24px] bg-[#E6E9EC] shadow-[0px_4px_24px_0_rgb(0,0,0,0.24)]">
-            <h1 className="font-36 font-bold leading-10">Tabular</h1>
-            <p className="font-16 textcolor font-normal leading-5 mt-10">
+            <h1 className="font-36 font-bold leading-[42px] text-[#7736B7]">Tabular</h1>
+            <p className="font-14 textcolor font-normal leading-5 mt-10">
               Identify drift and monitor key metrics to ensure accuracy,
               efficacy, and resilience of <br className="hidden md:block" />
               tabular models. <br />
@@ -46,8 +46,8 @@ const DataTypecard = () => {
             <Image src="/type2.png" width={633} height={609} alt="type1" />
           </div>
           <div className="p-10 rounded-[24px] bg-[#E6E9EC] shadow-[0px_4px_24px_0_rgb(0,0,0,0.24)] order-1 lg:order-2">
-            <h1 className="font-36 font-bold leading-10">Text</h1>
-            <p className="font-16 textcolor font-normal leading-5 mt-10">
+            <h1 className="font-36 font-bold leading-[42px] text-[#7736B7]">Text</h1>
+            <p className="font-14 textcolor font-normal leading-5 mt-10">
               Implement robust monitoring for unstructured models to handle
               high-dimensional vectors and ensure stability. <br />
               <br />
@@ -83,7 +83,7 @@ const DataTypecard = () => {
       <div className="bg-gradient-to-l to-[#CFC2FF99] from-[#FFF0BC99] py-20 px-5 sm:px-10 lg:px-[165px] rounded-lg">
         <div className="md:flex justify-between items-center text-white space-y-10 md:space-y-0 widthclass">
           <div>
-            <h1 className="font-48 font-semibold leaindg-12 text-black text-center">
+            <h1 className="font-48 font-medium leaindg-[48px] text-black text-center">
               Get Started Now
             </h1>
           </div>
@@ -101,8 +101,8 @@ const DataTypecard = () => {
       <div className="bg-[url('/type1-framebg.svg')] bg-no-repeat bg-center bg-cover px-5 sm:px-10 lg:pr-5 lg:pl-[77px] py-[95px]">
         <div className="grid xl:grid-cols-2 space-y-20 md:space-y-0 items-center widthclass">
           <div className="p-10 rounded-[24px] bg-[#E6E9EC] shadow-[0px_4px_24px_0_rgb(0,0,0,0.24)]">
-            <h1 className="font-36 font-bold leading-10">LLM</h1>
-            <p className="font-16 textcolor font-normal leading-5 mt-10">
+            <h1 className="font-36 font-bold leading-[42px] text-[#7736B7]">LLM</h1>
+            <p className="font-14 textcolor font-normal leading-5 mt-10">
               Monitor and track LLM embeddings to ensure value and reduce
               hallucinations.
               <br />
@@ -139,8 +139,8 @@ const DataTypecard = () => {
             <Image src="/type4.png" width={633} height={609} alt="type1" />
           </div>
           <div className="p-10 rounded-[24px] bg-[#E6E9EC] shadow-[0px_4px_24px_0_rgb(0,0,0,0.24)] order-1 lg:order-2">
-            <h1 className="font-36 font-bold leading-10">Images</h1>
-            <p className="font-16 textcolor font-normal leading-5 mt-10">
+            <h1 className="font-36 font-bold leading-[42px] text-[#7736B7]">Images</h1>
+            <p className="font-14 textcolor font-normal leading-5 mt-10">
               Implement continuous monitoring to track data drift and ensure
               relevance in Computer Vision models.
               <br />
