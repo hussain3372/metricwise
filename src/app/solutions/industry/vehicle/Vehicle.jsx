@@ -36,10 +36,10 @@ const Vehicle = () => {
       <div className="">
         <div className="widthclass">
           <div className="flex flex-col justify-center items-center text-center m-auto py-20">
-            <h1 className="font-40 font-medium leading-[52px] text-[#000]">
-              <span className="text-[#7736B7]">Accelerate</span> Your Autonomous Vehicle 
+            <h1 className="font-40 font-medium leading-[48px] text-[#000]">
+              <span className="text-[#7736B7]"><span className='italic'>A</span>ccelerate</span> Your Autonomous Vehicle 
               <br className="hidden md:block" /> Innovation with
-              <span className="text-[#7736B7]"> AI Model Monitoring</span>
+              <span className="text-[#7736B7]"> <span className='italic'>A</span>I <span className='italic'>M</span>odel <span className='italic'>M</span>onitoring</span>
             </h1>
             <p className="font-20 font-normal leading-6 mt-4 text-[#00000099]">
             In the rapidly evolving realm of autonomous vehicles, trust and safety are paramount. Our platform is designed to <br /> empower autonomous vehicle companies by providing real-time observability and monitoring of AI models and <br /> data, ensuring the reliability and ethical integrity of every decision made by autonomous systems.

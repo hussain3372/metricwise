@@ -21,7 +21,7 @@ const About = () => {
                 Our Mission: Ensuring Responsible
                 <br className="hidden sm:block" />
                 <span className="text-[#7736B7]">
-                  AI Through Continuous Oversight
+                <span className="italic">A</span>I <span className="italic">T</span>hrough <span className="italic">C</span>ontinuous <span className="italic">O</span>versight
                 </span>
               </h1>
             </div>

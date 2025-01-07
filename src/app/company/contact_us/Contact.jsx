@@ -39,7 +39,7 @@ const Contact = () => {
                   htmlFor=""
                   className="font-44 font-semibold leading-10 md:leading-[80px] text-[#2E2E2E]"
                 >
-                  {"Let's"} <span className="text-[#7736B7]">connect!</span>
+                  {"Let's"} <span className="text-[#7736B7]"><span className="italic">C</span>onnect!</span>
                 </label>
 
                 <p className="font-medium font-20 leading-7 mt-8 sm:mt-2 text-[#2E2E2E99] text-start">

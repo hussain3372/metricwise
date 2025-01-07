@@ -13,7 +13,7 @@ const Term = () => {
         <div className="flex justify-center items-center py-28 relative widthclass">
           <div>
             <h1 className="font-44 font-semibold lg:leading-[80px] mb-5 text-[#2E2E2E]">
-              Data Security & <span className="text-[#7736B7]">Privacy</span> Policy
+              Data Security & <span className="text-[#7736B7]"><span className="italic">P</span>rivacy</span> Policy
             </h1>
           </div>
         </div>

@@ -11,7 +11,7 @@ const Blog = () => {
         <div className="grid md:grid-cols-2 gap-5 lg:gap-14 items-center white px-5 md:px-[61px] pt-20 md:pt-[135px] pb-[90px] relative widthclass">
           <div>
             <h1 className="font-44 font-semibold leading-[42px] mb-6 opacity-80 text-[#2E2E2E]">
-              Monitoring V/S <span className="text-[#7736B7]">Observability</span>
+              Monitoring V/S <span className="text-[#7736B7]"><span className="italic">O</span>bservability</span>
             </h1>
             <p className="font-20 font-normal leading-6 text-[#2E2E2E] opacity-80">
               The terms monitoring and observability are prevalent in the field

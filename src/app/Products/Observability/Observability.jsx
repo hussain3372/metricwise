@@ -14,7 +14,7 @@ const Observability = () => {
             <div className="grid gap-[38px] lg:grid-cols-2 items-center">
               <div>
                 <h1 className="font-44 font-semibold leading-[60px] purple-color">
-                  Observability Hub
+                <span className="italic">O</span>bservability Hub
                 </h1>
                 <p className="font-20 font-normal leading-7 mt-3 mb-9 opacity-60">
                   {`Empower your AI/ML workflows with Metricwise's Observability Hub, a comprehensive suite designed to bring transparency, reliability, and accountability to every stage of your AI models. Our platform offers deep insights into model behavior, detection of biases and drifts, and benchmarks performance against industry standards. With customizable features and intuitive tools, Metricwise’s Observability Hub helps organizations foster trust and achieve optimal results.`}

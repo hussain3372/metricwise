@@ -40,10 +40,10 @@ const Finance = () => {
       <div className="">
         <div className="widthclass">
           <div className="flex flex-col justify-center items-center text-center m-auto py-20">
-            <h1 className="font-40 font-medium leading-[52px] text-[#000]">
-              <span className="text-[#7736B7]">Empower</span> Your Financial
+            <h1 className="font-40 font-medium leading-[48px] text-[#000]">
+              <span className="text-[#7736B7]"><span className='italic'>E</span>mpower</span> Your Financial
               Services <br className="hidden md:block" /> with{" "}
-              <span className="text-[#7736B7]"> AI Model Monitoring</span>
+              <span className="text-[#7736B7]"> <span className='italic'>A</span>I <span className='italic'>M</span>odel <span className='italic'>M</span>onitoring</span>
             </h1>
             <p className="font-20 font-normal leading-6 mt-4 text-[#00000099]">
               In the fast-paced world of financial services, maintaining trust

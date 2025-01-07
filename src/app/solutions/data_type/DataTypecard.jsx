@@ -128,7 +128,7 @@ const DataTypecard = () => {
             </p>
           </div>
           <div className="flex justify-center lg:justify-end">
-            <Image src="/type3.png" width={595} height={568} alt="type1" />
+            <Image src="/type4.png" width={595} height={568} alt="type1" />
           </div>
         </div>
       </div>
@@ -136,7 +136,7 @@ const DataTypecard = () => {
       <div className="bg-[url('/type2-framebg.svg')] bg-no-repeat bg-center bg-cover px-5 sm:px-10 lg:pl-5 lg:pr-[77px] py-[95px]">
         <div className="grid xl:grid-cols-2 space-y-20 md:space-y-0 items-center widthclass">
           <div className="flex justify-center lg:justify-start order-2 lg:order-1">
-            <Image src="/type4.png" width={633} height={609} alt="type1" />
+            <Image src="/type3.png" width={633} height={609} alt="type1" />
           </div>
           <div className="p-10 rounded-[24px] bg-[#E6E9EC] shadow-[0px_4px_24px_0_rgb(0,0,0,0.24)] order-1 lg:order-2">
             <h1 className="font-36 font-bold leading-[42px] text-[#7736B7]">Images</h1>

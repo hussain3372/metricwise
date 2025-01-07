@@ -15,7 +15,7 @@ const NewHero = () => {
   const [currentImageIndex, setCurrentImageIndex] = useState(0);
   const [fade, setFade] = useState(true);
 
-  const images = ["/hero2.svg", "/hero3.svg", "/hero4.svg"]; // Add your image paths here
+  const images = ["/hero1.svg", "/hero2.svg", "/hero3.svg", "/hero4.svg"]; // Add your image paths here
 
   useEffect(() => {
     const interval = setInterval(() => {

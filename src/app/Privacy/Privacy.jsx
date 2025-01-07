@@ -19,7 +19,7 @@ const Term = () => {
         <div className="flex justify-center items-center py-28 relative widthclass">
           <div>
             <h1 className="font-44 font-semibold lg:leading-[80px] mb-5 text-[#2E2E2E]">
-              Privacy <span className="text-[#7736B7]">Policy</span>
+              Privacy <span className="text-[#7736B7]"><span className="italic">P</span>olicy</span>
             </h1>
           </div>
           {/* <div className="flex justify-center md:justify-end mt-10 md:mt-0">

@@ -13,14 +13,17 @@ const Compliance = () => {
           <div className="pt-6 px-6 sm:pl-[120px] pr-[42px] pb-10 sm:pb-[88px] mt-5 bg-center widthclass">
             {/* Heading Section */}
             <div className="flex justify-center items-center flex-col">
-              <h1 className="font-44 font-bold leading-8 sm:leading-10 md:leading-[60px] text-[#000000] text-center">
+              <h1 className="font-44 font-semibold leading-8 sm:leading-10 md:leading-[60px] text-[#000000] text-center">
                 Navigate the Future of&nbsp;
                 <span className="block sm:inline font-semibold text-[#7736B7]">
-                  AI Compliance
+                  <span className="italic">A</span>I{" "}
+                  <span className="italic">C</span>ompliance
                 </span>
                 <br className="hidden sm:block" />
                 with&nbsp;
-                <span className="font-semibold text-[#7736B7]">Confidence</span>
+                <span className="font-semibold text-[#7736B7]">
+                  <span className="italic">C</span>onfidence
+                </span>
               </h1>
             </div>
 
@@ -62,7 +65,7 @@ const Compliance = () => {
 
         <div className="widthclass">
           <div className="pt-[33px] px-5 md:px-[119px] flex flex-col justify-center items-center gap-3">
-            <h1 className="font-44 font-bold leading-10 sm:leading-[50px] md:leading-[60px] text-[#7736B7] text-center">
+            <h1 className="font-44 font-semibold leading-10 sm:leading-[50px] md:leading-[60px] text-center">
               Why Compliance Matters
             </h1>
             <p className="font-20 font-normal leading-7 opacity-60 text-center">
@@ -147,9 +150,9 @@ const Compliance = () => {
       <div className="monbg mt-[119px]">
         <div className="widthclass ">
           <div className="flex flex-col justify-center items-center text-center px-10 lg:px-[216px] py-[56px]">
-            <h1 className="font-36 font-bold leading-10 text-[#000000]">
-              Future-Proof Your{""}
-              <span className="text-[#7736B7]">Compliance Strategy</span>
+            <h1 className="font-40 font-semibold leading-[36px] text-[#000000]">
+              Future-Proof Your
+              <span className="text-[#7736B7]"> <span className="italic">C</span>ompliance <span className="italic">S</span>trategy </span>
               with{""}
               <br className="hidden sm:block" />
               <span className="text-[#7736B7]">Metricwise</span>

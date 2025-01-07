@@ -39,12 +39,12 @@ const Insurance = () => {
       <div className="">
         <div className="widthclass">
           <div className="flex flex-col justify-center items-center text-center m-auto py-20">
-            <h1 className="font-40 font-medium leading-[52px] text-[#000]">
-              <span className="text-[#7736B7]">Predict and Mitigate</span> Risks
+            <h1 className="font-40 font-medium leading-[48px] text-[#000]">
+              <span className="text-[#7736B7]"><span className='italic'>P</span>redict and <span className='italic'>M</span>itigate</span> Risks
               with
-              <span className="text-[#7736B7]"> Model</span>
+              <span className="text-[#7736B7]"> <span className='italic'>M</span>odel</span>
               <br className="hidden md:block" />
-              <span className="text-[#7736B7]"> Insights</span>
+              <span className="text-[#7736B7]"> <span className='italic'>I</span>nsights</span>
             </h1>
             <p className="font-20 font-normal leading-6 mt-4 text-[#00000099]">
             In the insurance sector, predicting and mitigating risks accurately is paramount. Our advanced AI models leverage <br className="hidden md:block" /> extensive data analysis to identify potential risks, ranging from property damage to health emergencies. By <br className="hidden md:block" /> examining historical patterns and real-time data streams, our platform empowers insurers to proactively manage <br className="hidden md:block" /> risks, minimize losses, and optimize underwriting strategies.

@@ -28,8 +28,8 @@ const Pricing = () => {
       <div className="faq relative">
         <div className="widthclass">
           <div className="flex flex-col justify-center items-center text-center m-auto pb-[120px] pt-20">
-            <h1 className="font-44 font-semibold leading-[60px] p-0 md:pt-24 md:pb-32">
-              Unleash <span className="text-[#7736B7]">Business Growth</span> with Scalable <br /> and Ethical <span className="text-[#7736B7]">AI Solutions</span>
+            <h1 className="font-44 font-semibold leading-[60px] p-0 md:pt-24 md:pb-32 opacity-60">
+              Unleash <span className="text-[#7736B7]"><span className="italic">B</span>usiness <span className="italic">G</span>rowth</span> with Scalable <br /> and Ethical <span className="text-[#7736B7]"><span className="italic">S</span>I <span className="italic">S</span>olutions</span>
             </h1>
           </div>
         </div>

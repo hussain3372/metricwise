@@ -1,7 +1,8 @@
 export const blogDetailContent = [
   {
     id: 1,
-    title: "Monitoring V/S <span class='text-[#7736B7]'>Observability</span>",
+    title:
+      "Monitoring V/S <span class='text-[#7736B7]'><span class='italic'>O</span>bservability</span>",
     category: "Artificial Intelligence",
     imgSrc: "/monitoring-blog.svg",
     w: "945",
@@ -138,7 +139,7 @@ export const blogDetailContent = [
 
   {
     id: 2,
-    title: "Ethical use of <span class='text-[#7736B7]'>AI</span>",
+    title: "Ethical use of <span class='text-[#7736B7]'><span class='italic'>A</span>I</span>",
     category: "Artificial Intelligence",
     imgSrc: "/ethical-ai.svg",
     w: "1110",
@@ -259,7 +260,7 @@ export const blogDetailContent = [
   {
     id: 3,
     title:
-      "What factors should be taken into account <br /> when <span class='text-[#7736B7]'>establishing ML monitoring?</span>",
+      "What factors should be taken into account <br /> when <span class='text-[#7736B7]'><span class='italic'>E</span>stablishing <span class='italic'>M</span>L <span class='italic'>M</span>onitoring?</span>",
     category: "Artificial Intelligence",
     imgSrc: "/factors.svg",
     w: "800",
@@ -350,7 +351,8 @@ export const blogDetailContent = [
 
   {
     id: 4,
-    title: "A Deep Dive into <span class='text-[#7736B7]'>OWASP </span> Top 10 for <span class='text-[#7736B7]'>LLM Applications</span>",
+    title:
+      "A Deep Dive into <span class='text-[#7736B7]'><span class='italic'>O</span>WASP </span> Top 10 for <span class='text-[#7736B7]'><span class='italic'>L</span>LM <span class='italic'>A</span>pplications</span>",
     category: "Artificial Intelligence",
     imgSrc: "/blog4.png",
     w: "824",
@@ -506,7 +508,7 @@ export const blogDetailContent = [
   {
     id: 5,
     title:
-      "Navigating the Intersection: Comprehensive <br /> <span class='text-[#7736B7]'>Governance in the Era of AI and Tech Evolution</span>",
+      "Navigating the Intersection: Comprehensive <br /> <span class='text-[#7736B7]'> <span class='italic'>G</span>overnance in the <span class='italic'>E</span>ra of AI and <span class='italic'>T</span>ech <span class='italic'>E</span>volution</span>",
     category: "Artificial Intelligence",
     imgSrc: "/navigating-blog.svg",
     w: "1110",
@@ -556,7 +558,7 @@ export const blogDetailContent = [
   {
     id: 6,
     title:
-      "Exploring Bias and Equity in <span class='text-[#7736B7]'>Artificial <br /> Intelligence Systems: </span> An Essential Concern",
+      "Exploring Bias and Equity in <span class='text-[#7736B7]'><span class='italic'>A</span>rtificial <br /> <span class='italic'>I</span>ntelligence <span class='italic'>S</span>ystems: </span> An Essential Concern",
     category: "Artificial Intelligence",
     imgSrc: "/bias.svg",
     w: "945",
@@ -649,7 +651,8 @@ export const blogDetailContent = [
 
   {
     id: 8,
-    title: "Metricwise: The <span class='text-[#7736B7]'>AI Observability </span> Platform",
+    title:
+      "Metricwise: The <span class='text-[#7736B7]'><span class='italic'>A</span>I <span class='italic'>O</span>bservability </span> Platform",
     category: "Artificial Intelligence",
     imgSrc: "/ai-observability.png",
     w: "1216",

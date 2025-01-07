@@ -13,7 +13,7 @@ const Monitoring = () => {
             <div className="grid lg:grid-cols-2 gap-[38px] items-center">
               <div>
                 <h1 className="font-44 font-semibold leading-[60px] purple-color">
-                  Monitoring Hub
+                <span className="italic">M</span>onitoring Hub
                 </h1>
                 <p className="font-20 font-normal leading-7 mt-3 mb-9 opacity-60">
                   {`Optimize your AI/ML models effortlessly with our Monitoring Hub. Our user-friendly platform allows enterprises to easily monitor model performance and data integrity in real-time, enabling quick optimization and accurate predictions. With customizable dashboards and intuitive interfaces, implementation is seamless, ensuring rapid integration into existing workflows`}

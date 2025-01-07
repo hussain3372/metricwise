@@ -8,7 +8,7 @@ const Platform = () => {
     <div className="mt-9">
       <div className="flex flex-col justify-center items-center text-center widthclass px-4">
         <div>
-          <h1 className="text-[20px] sm:text-[32px] md:text-[40px] lg:text-[48px] pro-medium leading-[30px] sm:leading-[56px]">
+          <h1 className="text-[20px] sm:text-[32px] md:text-[40px] lg:text-[48px] pro-medium leading-[30px] sm:leading-[52px]">
             A comprehensive AI&nbsp;
             <span className="text-[#7736B7] pro-semibold">
               <span className="pro-semibold italic">O</span>bservability

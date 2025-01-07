@@ -13,7 +13,7 @@ const Term = () => {
         <div className="flex justify-center items-center py-28 relative widthclass">
           <div>
             <h1 className="font-44 font-semibold lg:leading-[80px] mb-5 text-black">
-              Terms of <span className="text-[#7736B7]">Use</span>
+              Terms of <span className="text-[#7736B7]"><span className="italic">U</span>se</span>
             </h1>
           </div>
         </div>

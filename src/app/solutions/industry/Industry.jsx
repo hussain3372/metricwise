@@ -35,9 +35,9 @@ const Industry = () => {
         <div className="widthclass sm:gap-[92px] flex flex-col lg:flex-row justify-center items-center">
           <div className="pt-20 lg:pt-[140px] lg:pb-[129px]">
             <h1 className="font-44 font-semibold sm:leading-[60px] text-center">
-              Ensure <span className="text-[#7736B7]">Robust</span> &{" "}
-              <span className="text-[#7736B7]">Secure</span> AI Systems Across{" "} <br className="hidden xl:block"/>
-              <span className="text-[#7736B7]">Industries</span>
+              Ensure <span className="text-[#7736B7]"><span className='italic'>R</span>obust</span> &{" "}
+              <span className="text-[#7736B7]"><span className='italic'>S</span>ecure</span> AI Systems Across{" "} <br className="hidden xl:block"/>
+              <span className="text-[#7736B7]"><span className='italic'>I</span>ndustries</span>
             </h1>
             <p className="font-20 font-normal leading-7 text-[#00000099] pt-3">
             Safeguard mission-critical AI systems across industries with our scalable, structured solution. <br className="hidden xl:block"/> Seamlessly operationalize AI monitoring and governance to enhance efficiency and protect against <br className="hidden xl:block"/> malfunctions, driving increased customer lifetime value through precise predictions and optimized <br className="hidden xl:block"/> model performance.

@@ -19,8 +19,8 @@ const Integration = () => {
           <h2 className="text-[30px] font-medium mt-5 leading-10 mb-6 text-[#2E2E2E] opacity-80">
             Harness the Power of{" "}
             <span className="text-[#7736B7]">
-              Metricwise <br className="hidden sm:block" />
-              Seamless Integrations
+            <span className="italic">M</span>etricwise <br className="hidden sm:block" />
+            <span className="italic">S</span>eamless <span className="italic">I</span>ntegrations
             </span>
           </h2>
           <p className="font-22 font-normal textcolor leading-[26px] opacity-80">
