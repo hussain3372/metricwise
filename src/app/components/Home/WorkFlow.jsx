@@ -6,15 +6,15 @@ const WorkFlow = () => {
     <div className="bg-[#F8F8F8] py-14 px-10 xl:px-[218px]">
       <div className="widthclass">
         <div className="flex justify-center items-center text-center">
-          <h1 className="text-[20px] sm:text-[40px] pro-medium leading-5 sm:leading-[52px]">
+          <h1 className="text-[20px] sm:text-[40px] pro-bold leading-5 sm:leading-[52px]">
             {`Start with `}
-            <span className="text-[#7736B7]">Metricwise</span>
+            <span className="text-[#7736B7]"><span className="pro-semibold">M</span>etricwise</span>
             {` in a way that `}
             <br className="hidden md:block" />
             {`fits your team's workflow.`}
           </h1>
         </div>
-        <div className="grid grid-cols-1 sm:grid-cols-2 gap-11 mt-8">
+        <div className="grid grid-cols-1 sm:grid-cols-2 gap-8 mt-8">
           <div  className="rounded-2xl p-2 bg-white" style={{ boxShadow: "0 3px 10px rgba(0, 0, 0, 0.1)" }}>
             <div
               className="bg-[#FDFBFF] pt-3 pb-4 px-7 rounded-2xl"
@@ -32,7 +32,7 @@ const WorkFlow = () => {
             </div>
           </div>
           <div
-            className="bg-[#FDFBFF] px-7 py-4 rounded-lg"
+            className="bg-[#FDFBFF] px-7 py-4 rounded-2xl"
             style={{ boxShadow: "0 3px 10px rgba(0, 0, 0, 0.1)" }}
           >
             <h1 className="font-24 text-[#161616] pro-medium leading-7">
@@ -51,7 +51,7 @@ const WorkFlow = () => {
             />
           </div>
           <div
-            className="bg-[#FDFBFF] p-9 rounded-lg flex justify-between items-center"
+            className="bg-[#FDFBFF] p-9 rounded-2xl flex justify-between items-center"
             style={{ boxShadow: "0 3px 10px rgba(0, 0, 0, 0.1)" }}
           >
             <div>
@@ -73,7 +73,7 @@ const WorkFlow = () => {
             </div>
           </div>
           <div
-            className="bg-[#FDFBFF] p-9 rounded-lg flex justify-between items-center"
+            className="bg-[#FDFBFF] p-9 rounded-2xl flex justify-between items-center"
             style={{ boxShadow: "0 3px 10px rgba(0, 0, 0, 0.1)" }}
           >
             <div>

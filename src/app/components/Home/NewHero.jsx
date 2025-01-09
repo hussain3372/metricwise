@@ -42,8 +42,8 @@ const NewHero = () => {
           <div className="flex flex-col justify-start items-center text-center">
             <h1 className="font-44 pro-bold leading-10 sm:leading-[50px] md:leading-[60px] text-[#000000]">
               Empowering AI with unmatched <br className="hidden sm:block" />
-              <span className="font-semibold text-[#7736B7]">
-                <span className="italic">O</span>bservability and
+              <span className="pro-semibold text-[#7736B7]">
+                <span className="italic">O</span>bservability and {""}
                 <span className="italic">G</span>overnance
               </span>
             </h1>

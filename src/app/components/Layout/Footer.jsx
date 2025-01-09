@@ -42,7 +42,7 @@ const Footer = () => {
           name: "Blogs",
         },
         {
-          href: "#",
+          href: "/integration",
           name: "Integrations",
         },
         {

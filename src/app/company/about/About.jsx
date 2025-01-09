@@ -17,7 +17,7 @@ const About = () => {
         <div className="widthclass ">
           <div className="pt-[50px] sm:pt-[123px] pl-[27px] sm:pl-[95px] pr-[27px] pb-[39px]">
             <div>
-              <h1 className="font-44 font-semibold leading-[60px] mb-6 text-[#2E2E2E] opacity-80">
+              <h1 className="font-44 font-semibold leading-[60px] text-[#2E2E2E] opacity-80">
                 Our Mission: Ensuring Responsible
                 <br className="hidden sm:block" />
                 <span className="text-[#7736B7]">
@@ -54,7 +54,7 @@ const About = () => {
       <div className="">
         <div className="grid md:grid-cols-2 widthclass pl-[27px] sm:pl-[80px] pt-[58px] pb-[98px] pr-[20px] gap-[76px]">
           <div>
-            <h1 className="font-36 font-bold   leading-40 textcolor">
+            <h1 className="font-36 font-bold leading-40 textcolor">
               Our Values
             </h1>
             <p className="font-20 font-normal textcolor leading-[28px] mt-6">
@@ -65,7 +65,7 @@ const About = () => {
               grounded in these guiding principles:`}
             </p>
           </div>
-          <div className="flex flex-col items-start justify-start gap-[38px]">
+          <div className="flex flex-col items-start justify-start gap-[32px]">
             <div className="flex items-start justify-start gap-5">
               <Image
                 src="/our-value1.svg"
@@ -125,7 +125,7 @@ const About = () => {
       </div>
 
       <div className="sm:mt-[77px] px-[51px]">
-        <div className="flex flex-col justify-center items-center gap-14">
+        <div className="flex flex-col justify-center items-center gap-8">
           <h1 className="font-36 font-bold leading-tight text-primary">
             Get to Know The Team
           </h1>

@@ -18,8 +18,8 @@ const DataType = () => {
                 />
               </div>
               <div className="flex flex-col justify-center items-center mt-12">
-                <h1 className="font-44 font-bold leading-[42px] text-[#7736B7]">
-                  Data Type
+                <h1 className="font-44 font-semibold leading-[42px] text-[#7736B7]">
+                <span className="italic">D</span>ata <span className="italic">T</span>ype
                 </h1>
                 <p className="font-20 font-normal font-inter leading-7 mt-8 mb-10 opacity-60 text-center">
                   A data type is an attribute associated with a piece of data

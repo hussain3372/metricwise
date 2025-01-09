@@ -10,8 +10,8 @@ const Team = () => {
     <div>
       <div className="widthclass">
         <div>
-          <div className="flex flex-col justify-start items-start pt-[59px] px-5 sm:px-10 lg:px-[125px] pb-[146px]">
-            <h1 className="font-36 font-bold leading-[42px] mb-10">Our Team</h1>
+          <div className="flex flex-col justify-start items-start pt-[59px] px-5 sm:px-10 lg:px-[125px] pb-[72px]">
+            <h1 className="font-36 font-bold leading-[42px] mb-8">Our Team</h1>
             <p className="font-22 font-normal leading-7 textcolor sm:px-[57px]">
               {`Embark on a journey with our dynamic tech team, where innovation
               and collaboration converge to shape the future. At Metricwise
@@ -27,8 +27,8 @@ const Team = () => {
         </div>
 
         <div className="px-5 sm:px-10 lg:px-[125px]">
-          <h1 className="font-36 font-bold leading-10 mb-[59px]">Our Values</h1>
-          <div className="space-y-8 md:space-y-3">
+          <h1 className="font-36 font-bold leading-10 mb-[32px]">Our Values</h1>
+          <div className="space-y-8 md:space-y-8">
             {/* Card 1 - Left */}
             <div className="grid md:grid-cols-2">
               <div className="md:flex items-start justify-end gap-5">
@@ -156,7 +156,7 @@ const Team = () => {
         <div className="bg-white">
           <div className="widthclass">
             <div className="px-5 sm:px-10 lg:px-[125px] flex-col flex justify-start items-start">
-              <h1 className="font-36 font-bold textcolor leading-10 mb-3 md:mb-14 mt-[125px]">
+              <h1 className="font-36 font-bold textcolor leading-10 mb-3 md:mb-[34px] mt-[120px]">
                 Our Perks
               </h1>
               <div className="grid md:grid-cols-2 gap-10 items-center">
@@ -165,7 +165,7 @@ const Team = () => {
                     key={index}
                     className="h-full flex flex-col gap-5 justify-start items-start text-start px-5 py-8 bg-white shadow-[4px_4px_12px_0_rgb(0,0,0,0.12)]"
                   >
-                    <div className="sm:flex items-center justify-start w-full gap-5">
+                    <div className="sm:flex items-center justify-start w-full gap-4">
                       <div>
                         <Image
                           width={60}
@@ -191,14 +191,14 @@ const Team = () => {
         </div>
       </div>
 
-      <div className="bg-[#F1F2F4] positionbg mt-[118px]">
+      <div className="bg-[#F1F2F4] positionbg mt-[120px]">
         <div className="widthclass pt-8 pb-[135px] px-5 sm:px-10 lg:px-[202px]">
           <div className="flex justify-center items-center">
             <h1 className="font-36 font-bold textcolor leading-10 text-center">
               List of Open Position
             </h1>
           </div>
-          <div className="mt-[82px]">
+          <div className="mt-[88px]">
             {careerapply.map((apply, index) => (
               <div
                 key={`careerapply-${index}`}

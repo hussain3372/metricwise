@@ -150,12 +150,12 @@ const Compliance = () => {
       <div className="monbg mt-[119px]">
         <div className="widthclass ">
           <div className="flex flex-col justify-center items-center text-center px-10 lg:px-[216px] py-[56px]">
-            <h1 className="font-40 font-semibold leading-[36px] text-[#000000]">
+            <h1 className="font-36 font-semibold leading-[40px] text-[#000000]">
               Future-Proof Your
               <span className="text-[#7736B7]"> <span className="italic">C</span>ompliance <span className="italic">S</span>trategy </span>
               with{""}
               <br className="hidden sm:block" />
-              <span className="text-[#7736B7]">Metricwise</span>
+              <span className="text-[#7736B7]"><span className="italic">M</span>etricwise</span>
             </h1>
 
             <p className="font-16 font-normal leading-5 mt-5 mb-10 opacity-60">

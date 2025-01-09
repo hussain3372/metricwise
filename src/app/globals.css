@@ -662,9 +662,10 @@ textarea {
 }
 
 .react-tabs__tab--selected {
-  background: none !important;
+  background: #121212 !important;
   border-color: none !important;
   border: none !important;
+  color: white !important;
   border-radius: 4px !important;
 }
 

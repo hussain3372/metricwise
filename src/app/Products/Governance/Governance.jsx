@@ -14,7 +14,7 @@ const Governance = () => {
             <div className="grid lg:grid-cols-2 items-center gap-[38px]">
               <div>
                 <h1 className="font-44 font-semibold leading-[60px] purple-color">
-                <span className="italic">G</span>overnance Hub
+                <span className="italic">G</span>overnance <span className="italic">H</span>ub
                 </h1>
                 <p className="font-20 font-normal leading-7 mt-3 mb-9 opacity-60">
                   {`Metricwise's Governance Hub is designed to help organizations
