@@ -9,7 +9,7 @@ const NewPlatform = () => {
           <h1 className="text-[20px] sm:text-[40px] font-medium leading-5 sm:leading-[52px]">
             <span className="text-[#7736B7] "> <span className="italic">D</span>etect</span>, {""}
             <span className="text-[#7736B7] "><span className="italic">A</span>nalyze</span>, {""}
-            <span className="text-[#7736B7] "><span className="italic">M</span>itigate</span> model and
+            <span className="text-[#7736B7] "><span className="italic">M</span> itigate</span> model and
             <br className="hidden md:block" /> data performance issues faster
           </h1>
           <p className="text-[#00000099] font-20 leading-6">
